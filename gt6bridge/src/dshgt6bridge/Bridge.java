@@ -102,6 +102,9 @@ public final class Bridge {
             RecipeAdder adder = new RecipeAdder(cfg, rep);
             adder.run();
             sentinels = adder.sentinels();
+            SpaceRecipeMigrator migrator = new SpaceRecipeMigrator(settings, rep);
+            migrator.run();
+            sentinels.putAll(migrator.sentinels());
             rep.count("timing.recipePass.ms", (int) (System.currentTimeMillis() - t));
         } catch (Throwable t) {
             rep.error("recipe pass crashed: " + t);

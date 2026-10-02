@@ -11,19 +11,24 @@ package net.minecraft.item;
 public class ItemStack {
 
     public int field_77994_a; // MCP: stackSize
+    private final Item item;
+    private final int metadata;
 
     public ItemStack(Item item, int size, int meta) {
+        this.item = item;
+        this.field_77994_a = size;
+        this.metadata = meta;
     }
 
     public Item func_77973_b() { // MCP: getItem()
-        return null;
+        return item;
     }
 
     public int func_77960_j() { // MCP: getItemDamage()  (obf add.k() returns the meta field)
-        return 0;
+        return metadata;
     }
 
     public ItemStack func_77946_l() { // MCP: copy()
-        return null;
+        return new ItemStack(item, field_77994_a, metadata);
     }
 }

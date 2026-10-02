@@ -1,6 +1,6 @@
 # gt6bridge 开发进度文档
 
-> 生成时间：2026-10-03 00:05（本会话第 24 轮）
+> 更新：2026-10-03 01:50
 > 目标实例：`E:\game\minecraft\gt6\.minecraft\versions\GT6`（MC 1.7.10 / Forge 10.13.4.1614 / GT6 6.17.06）
 > 本文档只写**本会话中实际用工具核实过**的内容；未核实的一律标注。
 
@@ -8,9 +8,9 @@
 
 ## 1. 一句话状态
 
-**mod 本体已完成并可编译、部署（v0.6，82,576 字节已装进 mods/），构建与审计共 9 道闸门全绿；差最后一步：一次游戏内启动来产出真实报告并据此配置三份表。**
+**v0.6 已经在游戏内运行：材料绑定 360/360 验证、运行期链接检查通过；后处理发现并修复了 IC2 机器后端路由错误。修复版已构建、安装且 9 道自动化闸门全绿，仍需重新启动游戏核验真实删除计数。**
 
-当前阻塞点：**从未用 v0.6 跑过游戏** —— 磁盘上的报告仍是旧版 0.4 留下的（`links.failed: 24`、`errors: 36`），因此 ①层的真实绑定数字、NEI/机器实测、③层的真实删除效果都还没有数据。
+当前报告生成于 01:26，来自修复前的 0.6：`links.failed: 0`、`bindings: 360`、`bindings.verified: 360`，但有 3 条 IC2 后端路由错误。修复版尚未进游戏；NEI/机器实测及删除干跑计数仍待重启核验。
 
 ---
 
@@ -18,7 +18,7 @@
 
 | 类别 | 路径 | 状态 |
 |---|---|---|
-| mod jar | `mods\gt6bridge.jar`（v0.6，82,576 B，SHA256 `FB44A2A9…C2934`） | 已部署（哈希与构建产物一致） |
+| mod jar | `mods\gt6bridge.jar`（82,599 B） | 修复版已安装；SHA256 与构建产物一致 |
 | 源码 | `gt6bridge\src\dshgt6bridge\`（19 个 .java） | 完成 |
 | 编译桩 | `gt6bridge\stub\`（SRG 名字的手写桩，仅编译期，不进 jar） | 完成 |
 | 构建/测试 | `gt6bridge\build.ps1`、`test.ps1`、`deploy.cmd` | 完成 |
@@ -57,22 +57,23 @@
 
 ### 3.3 ③ 删除层
 
-20 个后端 + 10 个前缀族注册：
+28 个显式后端 + 11 个 IC2 机器别名：
 
 | 目标 | 覆盖 |
 |---|---|
 | `crafting` / `furnace` | 原版工作台、熔炉 |
-| `te_*` | TE 打粉机、红石炉、锯木机、坩埚、充能器、感应炉、种植机、沉淀器、挤出机（9） |
+| `te_*` | TE 打粉机、红石炉、锯木机、坩埚、充能器、感应炉、种植机、沉淀器、挤出机、透热石（填充/提取）（11） |
 | `ic2_<machine>` | IC2 任意机器（打粉/压缩/提取/离心/切割/洗涤…），族注册 |
 | `ae2_inscriber` | AE2 压印器 |
 | `actuallyadditions_crusher` | AA 粉碎机 |
 | `railcraft_*` | 碎石机等 4 个 |
 | `enderio_*` | 合金炉、切片机、研磨机、魂炉等 5 个 |
 | `galacticraft_*` | 压缩机、电路制造台 |
+| `advancedrocketry_machines` | Advanced Rocketry 注册的 LibVulpes 机器配方 |
 
-* 选择器：`mod:name[:meta]`、`mod:*`、`*:name`、`*:ore*`、`*:*`、`ore:<词典名>`。
-* **默认干跑**（`removalDryRun=true`）：只统计"会删多少"，报告逐后端列出；改成 false 才真正删除，且删除只发生在内存，重启即恢复。
-* 预设 14 行（TE/IC2/AA/Railcraft/EnderIO/GC 的"矿石→粉"等），首次运行即可看到干跑计数。
+* 选择器：`mod:name[:meta]`、`mod:*`、`*:name`、`*:ore*`、`*:*`、`ore:<词典名>`；`|` 可组合多个精确选择器。
+* 当前 `removals.csv` 仅筛选常见基础金属与已知合金的粉、锭/粒、板输出；独有机器配方不在清单中。`settings.csv` 使用 `removalDryRun=true`，只预览命中数。
+* 确认新报告和 NEI 命中范围后，才切换到实际移除；移除仅作用于当前会话，停用规则并重启可恢复原始配方。
 
 ### 3.4 CraftTweaker / MineTweaker 脚本 API（v0.6 新增）
 
@@ -116,14 +117,14 @@ Bridge.apply();  Bridge.status();  Bridge.version();
 
 ## 5. 未完成内容（按优先级）
 
-### P0 —— 必须由我在你启动游戏后才能做
+### P0 —— 修复版安装后需要游戏内验证
 
 | 项 | 说明 | 验收依据 |
 |---|---|---|
-| ① 真实绑定数据 | v0.6 从未运行；报告的 `bindings` / `bindings.verified` / 未知 token 清单都还是空的 | `report.txt` 出现 `links.failed: 0` 且 `bindings > 0` |
-| ① NEI / 机器实测 | 对准外部 mod 的锭按 U 应出现 GT6 机器页；外部矿石/粉进 GT6 粉碎机应能加工 | `ACCEPTANCE.md` B、C 段 |
-| ③ 真实删除 | 目前 `removalDryRun=true`，只干跑；未验证过任何后端实际删除 | 报告 `removed per backend` 各后端计数 + NEI 页消失 |
-| ② 生效配方 | `recipes.csv` 现在只有注释示例，`autorules.csv` 全部 `enabled=false` | 报告 `added per recipe map` / `autorules.added` |
+| ① 真实绑定数据 | 已验证：`links.failed: 0`、`bindings: 360`、`bindings.verified: 360`（100%）；未知材料 token 为 0 | 新报告再次达到相同检查 |
+| ① NEI / 机器实测 | 尚未确认外部物品的 NEI 机器页及实际加工 | `ACCEPTANCE.md` B、C 段 |
+| ③ 删除层 | 配置已改为精确矿词条目，仅筛选基础金属和已知合金的粉、锭/粒、板输出；`removalDryRun=true`。尚未用新清单完成游戏内预览 | 新报告 `errors: 0`，逐项核对命中数与示例；GT6、原版及独有功能配方保持不变 |
+| ② 生效配方 | `recipes.csv` 只有注释示例，`autorules.csv` 全部 `enabled=false` | 按实际可用前缀决定是否启用 |
 
 ### P1 —— 数据到手后我才能定的事
 
@@ -133,7 +134,7 @@ Bridge.apply();  Bridge.status();  Bridge.version();
 
 ### P2 —— 待确认/低优先级
 
-* `materials-known.txt`（运行期材料表 dump）首次运行后才会出现；出现后分析器的材料匹配会从静态 1544 个名单升级为运行时全表（**2313** 个）。
+* `materials-known.txt` 已由 01:26 的运行生成，包含 **2313** 个运行期材料名。
 * 实例目录曾在 23:42:02 出现"内容回退到 22:26 状态"的现象（`report.txt` 内容是旧的但 mtime 是新的、我写的 settings 新键消失、`scripts\` 目录一度消失）。**原因未确认**，需你确认是否用过启动器回滚/还原；若不是，说明有后台同步工具在动这个目录，后续部署需先哈希校验。
 * 与目标无关的遗留崩溃：`crash-2026-10-02_21.55.53-client.txt`（Alfheim `ItemSplashPotion.func_77624_a` NPE，既有 `dim0guard` mixin 无效）。曾提出可修，未动手。
 
@@ -178,14 +179,10 @@ Bridge.apply();  Bridge.status();  Bridge.version();
 
 ## 8. 需要你做的事（解除阻塞）
 
-1. **启动一次游戏**（进不进世界都行；绑定发生在主菜单之前的 LoadComplete 阶段）。
-2. 启动后告诉我一声，我会跑 `tools\gt6bridge-postrun.ps1`，然后给你：
-   * 加载证据链（`gt6bridge{0.6}` 状态位无 `E`、CrT 注册行、`pass finished ... 0 error(s)`）；
-   * 真实绑定数与未知 token 清单（含物品数、示例物品、来源 mod）；
-   * 每个删除后端的干跑计数；
-   * 分析器建议 + 验收判定。
-3. 顺便确认：23:42 那次实例目录内容回退是**你**做的（启动器回滚/还原）吗？
-4. 若中途需要重新部署：**先正常退出游戏**再让我动 jar（运行中替换会 `NoClassDefFoundError`）。
+1. 启动一次游戏（修复版 `mods\gt6bridge.jar` 已安装；进不进世界都行）。
+2. 启动后运行 `tools\gt6bridge-postrun.ps1`，确认 IC2 错误消失并审阅每个后端的干跑计数。
+3. 在 NEI/机器中确认 `ACCEPTANCE.md` B、C、D 段的实际表现；若要先预览，把 `removalDryRun` 设为 `true`。
+4. 若中途需要重新部署：**先正常退出游戏**再替换 jar（运行中替换会 `NoClassDefFoundError`）。
 
 ---
 
@@ -196,4 +193,5 @@ Bridge.apply();  Bridge.status();  Bridge.version();
 | 0.1–0.3 | stub 构建流水线、三层骨架、CSV 读取、报告与诊断成型 | 早期阶段；本会话未见到这些版本的报告，故不列细节 |
 | 0.4 | 首次真机运行（22:10 / 22:23 / 22:26 / 22:58 多次会话） | 暴露 MCP/SRG 链接失败（`links.failed: 24`） |
 | 0.5 | 全部改 SRG 名字；TE 熔炉类名；`skipMods`/`skipItems`/`onlyPrefixes`；多值 CSV；扫描分桶+预算；多输入配方；概率产物；`materials-known.txt` | 本次部署前磁盘上的版本 |
-| **0.6** | **CraftTweaker/MineTweaker 脚本 API**；报告 `errors: 0` 自描述；`bind()` 回读校验；工具链 9 道闸门（含端到端仿真闭环与配置 lint） | **当前已部署**（82,576 B，`FB44A2A9…`） |
+| **0.6** | **CraftTweaker/MineTweaker 脚本 API**；报告 `errors: 0` 自描述；`bind()` 回读校验；工具链 9 道闸门（含端到端仿真闭环与配置 lint） | 初始构建曾部署并完成一次实机运行 |
+| **0.6 IC2 修复构建** | `ic2_<machine>` 目标正确路由到共享 IC2 后端；新增目标回归测试 | 已构建、安装并通过自动化闸门，待实机重新验收 |

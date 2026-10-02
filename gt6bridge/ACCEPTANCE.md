@@ -25,13 +25,16 @@
 1. 把外部 mod 的**矿石/粉碎矿**放进 GT6 的 Crusher / Mortar → 能加工并给出 GT6 产物（外部物品已被统一到 GT6 材料）。
 2. 启用 `ingot,Generifier,same,1,0,1,true,true` 后，把外部 mod 的锭放进 GT6 的 Generifier → 变成 GT6 的锭。
 3. 反向（③层之外的桥接，属于后续扩展）：GT6 的物品进 TE/IC2 机器仍走它们自己的配方。
+4. 星系整合：`migrateSpaceRecipes,true` 且 `removalDryRun,false` 时，查看 `report.txt` 的 `spaceRecipes.migrated`；已迁移配方应可在对应 GT6 Compressor / Assembler 查询，原模组最终火箭组装仍可用。
+5. 报告应说明最终火箭组装、氧气/燃料等无等价处理被保留；未知输入/输出或可选输入配方须计入 `spaceRecipes.preserved`，且原配方仍可用。
 
-## D. 删除层验收（先把 `removalDryRun` 改成 `false`）
+## D. 删除层验收
 
-1. `removals.csv` 里保留你确认要删的行（`removals-final.csv` 是分析器按干跑结果筛出来的版本）。
-2. 启动后 `report.txt` 的 `-- removed per backend --` 会列出每个后端实际删掉的条数。
-3. 游戏内：TE 打粉机 / IC2 打粉机 / EnderIO 研磨机里，矿石→粉的配方应消失（NEI 对应页同步消失）。
-4. **不满意可直接改回**：删除只发生在内存，重启即恢复原样；把 `removalDryRun` 改回 `true` 就只统计不删。
+1. 当前 `removals.csv` 使用精确矿词条目筛选基础金属与已知合金的粉、锭/粒、板输出；多个精确选择器可用 `|` 连接。不要改回 `*:*`。
+2. 当前 `settings.csv` 的 `removalDryRun` 为 `true`，启动只预览命中数，不会删除配方。先检查报告中的各后端计数及示例，再在测试世界验证 NEI 和机器行为。
+3. 只有确认命中范围正确、GT6 替代链完整后，才可将 `removalDryRun` 改为 `false`；实际移除仍应限于审核过的输出项。
+4. 当前清单保留木材、化学、压印、工作台和其他独有功能配方；核实这些功能仍可用。
+5. 删除仅发生在内存；停用规则或改回干跑并重启，可恢复各模组原始配方。
 
 ## E. 出问题怎么反馈
 

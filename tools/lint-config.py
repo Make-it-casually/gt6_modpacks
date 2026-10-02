@@ -34,6 +34,8 @@ def parse_backends(path):
     names = set(re.findall(r'registerStackApi\(\s*"([^"]+)"', text))
     names |= set(re.findall(r'new \w*Backend\(\s*"([^"]+)"', text))
     names |= set(re.findall(r'backends\.put\(\s*"([^"]+)"', text))
+    if re.search(r'register\(\s*new AdvancedRocketryBackend\(\s*\)\s*\)', text):
+        names.add('advancedrocketry_machines')
     families = set(re.findall(r'target\.startsWith\(\s*"([^"]+)"\s*\)', text))
     return names, families
 
@@ -56,22 +58,26 @@ def read_rows(path):
 
 
 def main():
+    repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    tools = os.path.join(repo, 'tools')
     ap = argparse.ArgumentParser()
-    ap.add_argument('--config', default=r'E:\game\minecraft\gt6\.minecraft\versions\GT6\config\gt6bridge')
-    ap.add_argument('--classes', default=r'E:\game\minecraft\gt6\tools\_tmp_gt6')
-    ap.add_argument('--materials', default=r'E:\game\minecraft\gt6\tools\gt6-material-names.txt')
+    ap.add_argument('--config', default=os.path.join(repo, 'config', 'gt6bridge'))
+    ap.add_argument('--classes', default=os.path.join(tools, '_tmp_gt6'))
+    ap.add_argument('--materials', default=os.path.join(tools, 'gt6-material-names.txt'))
+    ap.add_argument('--prefixes', default=os.path.join(tools, 'gt6-prefixes.txt'))
+    ap.add_argument('--source', default=os.path.join(repo, 'gt6bridge', 'src', 'dshgt6bridge', 'RecipeRemover.java'))
+    ap.add_argument('--settings', default=os.path.join(repo, 'gt6bridge', 'src', 'dshgt6bridge', 'Settings.java'))
     args = ap.parse_args()
 
     maps = parse_rm_maps(args.classes)
-    backends, families = parse_backends(r'E:\game\minecraft\gt6\gt6bridge\src\dshgt6bridge\RecipeRemover.java')
-    keys = parse_settings_keys(r'E:\game\minecraft\gt6\gt6bridge\src\dshgt6bridge\Settings.java')
+    backends, families = parse_backends(args.source)
+    keys = parse_settings_keys(args.settings)
     materials = set()
     if os.path.isfile(args.materials):
         materials = set(l.strip() for l in open(args.materials, encoding='utf-8', errors='replace') if l.strip())
     prefixes = set()
-    prefix_file = r'E:\game\minecraft\gt6\tools\gt6-prefixes.txt'
-    if os.path.isfile(prefix_file):
-        prefixes = set(l.strip() for l in open(prefix_file, encoding='utf-8', errors='replace') if l.strip())
+    if os.path.isfile(args.prefixes):
+        prefixes = set(l.strip() for l in open(args.prefixes, encoding='utf-8', errors='replace') if l.strip())
     known_creations = set()
     for _, cells in read_rows(os.path.join(args.config, 'materials.csv')):
         if len(cells) > 1 and cells[1].lower().startswith('create'):

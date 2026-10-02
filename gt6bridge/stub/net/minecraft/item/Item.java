@@ -8,5 +8,5 @@ import net.minecraft.util.RegistryNamespaced;
  */
 public class Item {
 
-    public static final RegistryNamespaced field_150901_e = null; // MCP: itemRegistry
+    public static final RegistryNamespaced field_150901_e = new RegistryNamespaced(); // MCP: itemRegistry
 }

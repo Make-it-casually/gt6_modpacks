@@ -113,10 +113,27 @@ public final class Items {
         if (selector == null) return out;
         selector = selector.trim();
         if (selector.isEmpty()) return out;
+        if (selector.indexOf('|') >= 0) {
+            String[] alternatives = selector.split("\\|");
+            for (String alternative : alternatives) {
+                for (ItemStack candidate : candidates(alternative)) {
+                    boolean duplicate = false;
+                    for (ItemStack existing : out) {
+                        if (sameItem(existing, candidate)) {
+                            duplicate = true;
+                            break;
+                        }
+                    }
+                    if (!duplicate) out.add(candidate);
+                }
+            }
+            return out;
+        }
         if (selector.startsWith("ore:")) return resolve(selector);
         String[] sel = selector.split(":");
         boolean wildcardMod = sel.length > 0 && "*".equals(sel[0]);
         boolean wildcardName = sel.length > 1 && sel[1].indexOf('*') >= 0;
+        boolean allItems = wildcardMod && sel.length > 1 && "*".equals(sel[1]);
         if (sel.length < 2 || (!wildcardMod && !wildcardName)) {
             ItemStack s = stack(selector);
             if (s != null) out.add(s);
@@ -130,7 +147,6 @@ public final class Items {
         }
         int[] metas;
         if (explicitMeta >= 0) metas = new int[] { explicitMeta };
-        else if (wildcardMod && wildcardName) metas = new int[] { 0 };
         else metas = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
 
         try {
@@ -149,7 +165,7 @@ public final class Items {
                 for (int meta : metas) {
                     ItemStack s = make((Item) o, 1, meta);
                     if (s != null) out.add(s);
-                    if (out.size() >= 8192) return out;
+                    if (!allItems && out.size() >= 8192) return out;
                 }
             }
         } catch (Throwable ignored) {}
@@ -219,11 +235,18 @@ public final class Items {
     /**
      * selector matching for the removals table:
      *   mod:name[:meta] | mod:* | *:name | *:* | *:glob* | ore:&lt;OreDictName&gt;
+     *   selector|selector for an explicit alternative list
      */
     public static boolean matches(String selector, ItemStack stack) {
         if (selector == null || stack == null) return false;
         selector = selector.trim();
         if (selector.isEmpty()) return false;
+        if (selector.indexOf('|') >= 0) {
+            for (String alternative : selector.split("\\|")) {
+                if (matches(alternative, stack)) return true;
+            }
+            return false;
+        }
         if (selector.startsWith("ore:")) {
             String ore = selector.substring(4).trim();
             try {

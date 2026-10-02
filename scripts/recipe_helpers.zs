@@ -881,3 +881,93 @@ function recipe_mods_tconstruct_Modifiers_remove_1(arg0 as string) {
     mods.tconstruct.Modifiers.remove(arg0);
 }
 
+// Magic ritual recipe helpers for the installed ModTweaker 0.9.6 integrations.
+// Botania
+function magicBotaniaAddManaInfusion(output as IItemStack, input as IIngredient, mana as int) {
+    mods.botania.ManaInfusion.addInfusion(output, input, mana);
+}
+
+function magicBotaniaAddAlchemy(output as IItemStack, input as IIngredient, mana as int) {
+    mods.botania.ManaInfusion.addAlchemy(output, input, mana);
+}
+
+function magicBotaniaAddConjuration(output as IItemStack, input as IIngredient, mana as int) {
+    mods.botania.ManaInfusion.addConjuration(output, input, mana);
+}
+
+function magicBotaniaAddRuneAltar(output as IItemStack, inputs as IIngredient[], mana as int) {
+    mods.botania.RuneAltar.addRecipe(output, inputs, mana);
+}
+
+function magicBotaniaAddApothecary(output as IItemStack, inputs as IIngredient[]) {
+    mods.botania.Apothecary.addRecipe(output, inputs);
+}
+
+function magicBotaniaAddElvenTrade(output as IItemStack, inputs as IIngredient[]) {
+    mods.botania.ElvenTrade.addRecipe(output, inputs);
+}
+
+function magicBotaniaAddBrew(inputs as IIngredient[], brewKey as string) {
+    mods.botania.Brew.addRecipe(inputs, brewKey);
+}
+
+function magicBotaniaRemoveManaRecipe(output as IIngredient) {
+    mods.botania.ManaInfusion.removeRecipe(output);
+}
+
+function magicBotaniaRemoveRuneAltar(output as IIngredient) {
+    mods.botania.RuneAltar.removeRecipe(output);
+}
+
+function magicBotaniaRemoveApothecary(output as IIngredient) {
+    mods.botania.Apothecary.removeRecipe(output);
+}
+
+function magicBotaniaRemoveElvenTrade(output as IIngredient) {
+    mods.botania.ElvenTrade.removeRecipe(output);
+}
+
+function magicBotaniaRemoveBrew(brewKey as string) {
+    mods.botania.Brew.removeRecipe(brewKey);
+}
+
+// Thaumcraft
+function magicThaumcraftAddCrucible(research as string, output as IItemStack, catalyst as IIngredient, aspects as string) {
+    mods.thaumcraft.Crucible.addRecipe(research, output, catalyst, aspects);
+}
+
+function magicThaumcraftRemoveCrucible(output as IIngredient) {
+    mods.thaumcraft.Crucible.removeRecipe(output);
+}
+
+function magicThaumcraftAddArcaneShaped(research as string, output as IItemStack, visCosts as string, ingredients as IIngredient[][]) {
+    mods.thaumcraft.Arcane.addShaped(research, output, visCosts, ingredients);
+}
+
+function magicThaumcraftAddArcaneShapeless(research as string, output as IItemStack, visCosts as string, ingredients as IIngredient[]) {
+    mods.thaumcraft.Arcane.addShapeless(research, output, visCosts, ingredients);
+}
+
+function magicThaumcraftRemoveArcane(output as IIngredient) {
+    mods.thaumcraft.Arcane.removeRecipe(output);
+}
+
+function magicThaumcraftAddInfusion(research as string, output as IItemStack, ingredients as IItemStack[], aspects as string, centralItem as IItemStack, instability as int) {
+    mods.thaumcraft.Infusion.addRecipe(research, output, ingredients, aspects, centralItem, instability);
+}
+
+function magicThaumcraftAddInfusionWithAlternates(research as string, output as IItemStack, ingredients as IItemStack[], aspects as string, centralItem as IItemStack, instability as int, alternateCentral as bool, alternateIngredients as bool[]) {
+    mods.thaumcraft.Infusion.addRecipe(research, output, ingredients, aspects, centralItem, instability, alternateCentral, alternateIngredients);
+}
+
+function magicThaumcraftRemoveInfusion(output as IIngredient) {
+    mods.thaumcraft.Infusion.removeRecipe(output);
+}
+
+function magicThaumcraftAddInfusionEnchantment(research as string, enchantmentId as int, instability as int, aspects as string, ingredients as IItemStack[]) {
+    mods.thaumcraft.Infusion.addEnchantment(research, enchantmentId, instability, aspects, ingredients);
+}
+
+function magicThaumcraftRemoveInfusionEnchantment(enchantmentId as int) {
+    mods.thaumcraft.Infusion.removeEnchant(enchantmentId);
+}

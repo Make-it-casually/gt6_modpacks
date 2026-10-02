@@ -182,6 +182,7 @@ public final class Cfg {
         "#   <target>  : vanilla: crafting | furnace\n" +
         "#               Thermal Expansion: te_pulverizer te_furnace te_sawmill te_crucible te_charger\n" +
         "#                                  te_smelter te_insolator te_precipitator te_extruder\n" +
+        "#                                  te_transposer_fill te_transposer_extraction\n" +
         "#               IC2: ic2_<machine> with machine one of\n" +
         "#                    macerator extractor compressor centrifuge blockcutter blastfurance\n" +
         "#                    recycler metalformerRolling metalformerCutting metalformerExtruding oreWashing\n" +
@@ -190,13 +191,16 @@ public final class Cfg {
         "#               Actually Additions: actuallyadditions_crusher\n" +
         "#               Railcraft: railcraft_rockcrusher railcraft_cokeoven railcraft_blastfurnace railcraft_rolling\n" +
         "#               EnderIO: enderio_sagmill enderio_alloy enderio_slicensplice enderio_vat enderio_soulbinder\n" +
+        "#               Advanced Rocketry: advancedrocketry_machines\n" +
         "#               Galacticraft: galacticraft_compressor galacticraft_circuitfabricator\n" +
+        "#                 compatible recipes are migrated by migrateSpaceRecipes before removals run\n" +
         "#   selector  : matched against the recipe OUTPUT\n" +
         "#       mod:name[:meta]     exact item\n" +
         "#       mod:*               every item of that mod (metadata 0..15 tried)\n" +
         "#       *:name              that registry name in any mod\n" +
         "#       *:*                 every recipe of that backend (wipes the machine)\n" +
         "#       ore:<OreDictName>   every item registered under that ore dictionary entry\n" +
+        "#       selector|selector   any of the exact selectors (e.g. ore:dustCopper|ore:dustTin)\n" +
         "# examples:\n" +
         "# te_pulverizer,ore:ingotIron\n" +
         "# ic2_macerator,*:iron_ore\n" +

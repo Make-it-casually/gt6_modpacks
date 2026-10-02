@@ -57,10 +57,11 @@ if ((Test-Path $py) -and (Test-Path $audit) -and (Test-Path $srg)) {
 
 # 5) the removal backends call other mods by reflection: verify every target still exists
 $modAudit = Join-Path (Split-Path -Parent $root) 'tools\audit-mod-targets.py'
+$researchEx = Join-Path (Split-Path -Parent $root) 'tools\research\ex'
 $removals = 'E:\game\minecraft\gt6\.minecraft\versions\GT6\config\gt6bridge\removals.csv'
 if ((Test-Path $py) -and (Test-Path $modAudit)) {
     Write-Host '[5/6] removal target audit against the installed mods'
-    & $py $modAudit --source (Join-Path $root 'src\dshgt6bridge\RecipeRemover.java') --removals $removals
+    & $py $modAudit --ex $researchEx --source (Join-Path $root 'src\dshgt6bridge\RecipeRemover.java') --removals $removals
     $modCode = $LASTEXITCODE
     if ($modCode -ne 0) { Write-Host 'mod target audit failed'; exit $modCode }
 } else {
@@ -71,7 +72,7 @@ if ((Test-Path $py) -and (Test-Path $modAudit)) {
 $crtAudit = Join-Path (Split-Path -Parent $root) 'tools\audit-crt-refs.py'
 if ((Test-Path $py) -and (Test-Path $crtAudit)) {
     Write-Host '[6/6] CraftTweaker script API audit'
-    & $py $crtAudit --classes (Join-Path $outDir 'dshgt6bridge\crt')
+    & $py $crtAudit --classes (Join-Path $outDir 'dshgt6bridge\crt') --crt (Join-Path $researchEx 'crafttweaker')
     $crtCode = $LASTEXITCODE
     if ($crtCode -ne 0) { Write-Host 'script API audit failed'; exit $crtCode }
 } else {
@@ -105,6 +106,8 @@ if (Test-Path $fixture) {
     $lint = Join-Path $toolsDir 'tools\lint-config.py'
     if ((Test-Path $py) -and (Test-Path $lint)) {
         & $py $lint --config $fixtureCfg | Select-String -Pattern 'LINT' | ForEach-Object { "  $($_.Line)" }
+        $lintCode = $LASTEXITCODE
+        if ($lintCode -ne 0) { Write-Host 'config lint failed on the fixture config'; exit $lintCode }
     } else {
         Write-Host '  config lint skipped'
     }

@@ -5,7 +5,7 @@
 #                           auto-created for unknown names are tagged invalid - this keeps us on real ones
 #   enableMaterialCreation: create GT6 materials for materials.csv "create:" rows during PreInit (default true)
 #   dryRun                : analyse and report, but change nothing at all (default false)
-#   removalDryRun         : removals.csv only counts and reports what it would delete (default true)
+#   removalDryRun         : true only counts; false removes matching non-GT6 machine recipes in memory
 #   bindLimit             : stop the material pass after N bindings, 0 = no limit (default 0)
 #   scanBudgetMs          : stop the ore dictionary scan after N ms, 0 = no limit (default 20000)
 #                           the pack registers ~300k ore dictionary names, so a budget is wise
@@ -27,3 +27,4 @@ skipItems,
 onlyPrefixes,
 logEveryBinding,false
 enableAutoRules,false
+migrateSpaceRecipes,true

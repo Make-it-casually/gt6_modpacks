@@ -25,6 +25,7 @@ public final class Settings {
         "#   onlyPrefixes          : bind only these ore dictionary prefixes (default empty = all of GT6's 450+)\n" +
         "#   logEveryBinding       : also print every binding to the game log (default false)\n" +
         "#   enableAutoRules       : generate recipes from autorules.csv (default false)\n" +
+        "#   migrateSpaceRecipes   : move compatible Galacticraft/add-on machine recipes into GT6 (default true)\n" +
         "# examples:\n" +
         "# enableMaterialBinding,true\n" +
         "# removalDryRun,true\n";
@@ -44,6 +45,8 @@ public final class Settings {
         set("enableMaterialCreation", "true");
         // generate recipes from autorules.csv - every rule also has its own enabled flag
         set("enableAutoRules", "false");
+        // migrate only recipe shapes that GT6 can represent; unsupported special machines stay intact
+        set("migrateSpaceRecipes", "true");
         // removals: count what would be deleted instead of deleting it (safe first look)
         set("removalDryRun", "true");
         // safety valve: stop binding after N stacks (0 = no limit)

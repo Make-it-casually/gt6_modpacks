@@ -26,6 +26,7 @@ MOD_DIR = {
     'railcraft_': 'railcraft',
     'enderio_': 'enderio',
     'galacticraft_': 'galacticraft',
+    'advancedrocketry_': 'advancedrocketry',
 }
 
 
@@ -69,6 +70,9 @@ def parse_source(path):
                       'instance': m.group(3), 'list': m.group(4)})
     for m in re.finditer(r'new RegistryOnlyBackend\(\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*"([^"]+)"\s*\)', text):
         specs.append({'name': m.group(1), 'kind': 'registry', 'class': m.group(2), 'key': m.group(3)})
+    if re.search(r'register\(\s*new AdvancedRocketryBackend\(\s*\)\s*\)', text):
+        specs.append({'name': 'advancedrocketry_machines', 'kind': 'advancedrocketry',
+                      'class': 'zmaster587.advancedRocketry.AdvancedRocketry'})
     return specs
 
 
@@ -128,6 +132,12 @@ def main():
                 if not re.search(r'\b%s\b' % re.escape(member), dump):
                     problems.append('%s: %s has no %s' % (name, spec['class'], member))
                     failed += 1
+        elif spec['kind'] == 'advancedrocketry':
+            libvulpes = javap(os.path.join(args.ex, 'libvulpes'),
+                              'zmaster587.libVulpes.recipe.RecipesMachine') or ''
+            if 'getInstance' not in libvulpes or 'recipeList' not in libvulpes:
+                problems.append('%s: LibVulpes RecipesMachine registry API missing' % name)
+                failed += 1
 
     # IC2 machine names referenced by the active removals.csv rows
     ic2_dir = os.path.join(args.ex, 'ic2')

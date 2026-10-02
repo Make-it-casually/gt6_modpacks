@@ -1,6 +1,7 @@
 // ============================================================================
 //  gt6bridge - CraftTweaker / MineTweaker 3 脚本示例
 //  （本文件默认全部注释，去掉行首的 // 即可生效）
+//  本文件全部注释，仅作 API 参考；具体配方修改请放入按模组命名的脚本文件。
 //
 //  加载时机：MineTweaker 在 PostInit 执行脚本，gt6bridge 的自动绑定在 LoadComplete，
 //  所以脚本里的 bind/skip 会在随后那次自动扫描中生效；addRecipe/removeRecipe 会先入队，

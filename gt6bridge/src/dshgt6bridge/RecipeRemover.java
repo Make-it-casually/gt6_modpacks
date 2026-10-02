@@ -1,5 +1,6 @@
 package dshgt6bridge;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -57,6 +58,10 @@ public final class RecipeRemover {
             "cofh.thermalexpansion.util.crafting.PrecipitatorManager", "recipeMap"));
         register(new PrivateMapBackend("te_extruder",
             "cofh.thermalexpansion.util.crafting.ExtruderManager", "recipeMap"));
+        register(new PrivateMapBackend("te_transposer_fill",
+            "cofh.thermalexpansion.util.crafting.TransposerManager", "recipeMapFill"));
+        register(new PrivateMapBackend("te_transposer_extraction",
+            "cofh.thermalexpansion.util.crafting.TransposerManager", "recipeMapExtraction"));
 
         // ---- Galacticraft
         registerStackApi("galacticraft_compressor",
@@ -90,6 +95,7 @@ public final class RecipeRemover {
             "crazypants.enderio.machine.vat.VatRecipeManager", "getInstance", "getRecipes", "blockVat"));
         register(new RegistryOnlyBackend("enderio_soulbinder",
             "crazypants.enderio.machine.MachineRecipeRegistry", "blockSoulBinder"));
+        register(new AdvancedRocketryBackend());
     }
 
     public void register(Backend b) {
@@ -140,6 +146,7 @@ public final class RecipeRemover {
     /** removes - or just counts, in dry run - everything a single target/selector pair matches. */
     private int applyOne(String target, String selector, Report rep) {
         Backend b = backends.get(target);
+        if (b == null && target.startsWith("ic2_")) b = backends.get("ic2");
         if (b == null) {
             rep.error("unknown removal backend '" + target + "' (known: " + backendNames() + ")");
             return 0;
@@ -180,12 +187,23 @@ public final class RecipeRemover {
 
     /** best effort detection of the class a backend needs, to skip cleanly when the mod is absent. */
     private static String classNameOf(String target) {
-        if (target.startsWith("te_")) return "cofh.thermalexpansion.util.crafting.PulverizerManager";
-        if (target.startsWith("ic2_")) return "ic2.api.recipe.Recipes";        if (target.startsWith("ae2_")) return "appeng.api.AEApi";
+        if ("te_pulverizer".equals(target)) return "cofh.thermalexpansion.util.crafting.PulverizerManager";
+        if ("te_furnace".equals(target)) return "cofh.thermalexpansion.util.crafting.FurnaceManager";
+        if ("te_sawmill".equals(target)) return "cofh.thermalexpansion.util.crafting.SawmillManager";
+        if ("te_crucible".equals(target)) return "cofh.thermalexpansion.util.crafting.CrucibleManager";
+        if ("te_charger".equals(target)) return "cofh.thermalexpansion.util.crafting.ChargerManager";
+        if ("te_smelter".equals(target)) return "cofh.thermalexpansion.util.crafting.SmelterManager";
+        if ("te_insolator".equals(target)) return "cofh.thermalexpansion.util.crafting.InsolatorManager";
+        if ("te_precipitator".equals(target)) return "cofh.thermalexpansion.util.crafting.PrecipitatorManager";
+        if ("te_extruder".equals(target)) return "cofh.thermalexpansion.util.crafting.ExtruderManager";
+        if (target.startsWith("te_transposer_")) return "cofh.thermalexpansion.util.crafting.TransposerManager";
+        if (target.startsWith("ic2_")) return "ic2.api.recipe.Recipes";
+        if (target.startsWith("ae2_")) return "appeng.api.AEApi";
         if (target.startsWith("actuallyadditions")) return "de.ellpeck.actuallyadditions.api.ActuallyAdditionsAPI";
         if (target.startsWith("railcraft_")) return "mods.railcraft.common.util.crafting.RockCrusherCraftingManager";
         if (target.startsWith("enderio_")) return "crazypants.enderio.machine.MachineRecipeRegistry";
         if (target.startsWith("galacticraft_")) return "micdoodle8.mods.galacticraft.api.recipe.CompressorRecipes";
+        if (target.startsWith("advancedrocketry_")) return "zmaster587.advancedRocketry.AdvancedRocketry";
         return "";
     }
 
@@ -222,6 +240,10 @@ public final class RecipeRemover {
     static boolean matchesAny(String selector, List<ItemStack> stacks) {
         for (ItemStack s : stacks) if (Items.matches(selector, s)) return true;
         return false;
+    }
+
+    private static boolean matchesAll(String selector) {
+        return selector != null && "*:*".equals(selector.trim());
     }
 
     // ---------------------------------------------------------------- backends
@@ -319,6 +341,18 @@ public final class RecipeRemover {
         public int remove(String target, String selector, Report rep) {
             Class<?> c = Reflect.cls(className);
             if (c == null) return 0;
+            if (matchesAll(selector)) {
+                int removed = clearAllMap(c, "recipeMap", name, rep);
+                if (removed >= 0 && !isDryRun()
+                    && ("cofh.thermalexpansion.util.crafting.SmelterManager".equals(className)
+                        || "cofh.thermalexpansion.util.crafting.InsolatorManager".equals(className))) {
+                    clearThermalInputSets(c, rep);
+                }
+                return Math.max(removed, 0);
+            }
+            if (className.startsWith("cofh.thermalexpansion.")) {
+                return removeThermalOutputs(c, target, selector, rep);
+            }
             if (isDryRun()) {
                 // count from the (fresh) recipe array without calling the removing API
                 Object listObj = Reflect.callStatic(c, "getRecipeList");
@@ -357,6 +391,53 @@ public final class RecipeRemover {
         }
     }
 
+    private static int removeThermalOutputs(Class<?> managerClass, String target, String selector, Report rep) {
+        Object mapObj = Reflect.staticField(managerClass, "recipeMap");
+        if (!(mapObj instanceof Map)) {
+            rep.error(target + ": " + managerClass.getName() + ".recipeMap is not a Map");
+            return 0;
+        }
+        Map<?, ?> map = (Map<?, ?>) mapObj;
+        List<Object> keys = new ArrayList<Object>();
+        List<Object> descriptions = new ArrayList<Object>();
+        for (Map.Entry<?, ?> entry : map.entrySet()) {
+            if (!matchesAny(selector, outputsOf(entry.getValue()))) continue;
+            keys.add(entry.getKey());
+            descriptions.add(String.valueOf(Reflect.pick(entry.getValue(),
+                "getPrimaryOutput", "getOutput", "getRecipeOutput")));
+        }
+        int removed = 0;
+        for (int i = 0; i < keys.size(); i++) {
+            if (isDryRun()) {
+                reportDryRun(rep, target, String.valueOf(descriptions.get(i)));
+                removed++;
+            } else if (map.remove(keys.get(i)) != null) {
+                rep.recipeRemoved(target, String.valueOf(descriptions.get(i)));
+                removed++;
+            }
+        }
+        if (!isDryRun() && removed > 0
+            && ("te_smelter".equals(target) || "te_insolator".equals(target))) {
+            removeThermalValidationEntries(managerClass, keys);
+        }
+        return removed;
+    }
+
+    private static void removeThermalValidationEntries(Class<?> managerClass, List<Object> recipeKeys) {
+        for (String fieldName : new String[] { "validationSet", "lockSet" }) {
+            Object setObj = Reflect.staticField(managerClass, fieldName);
+            if (!(setObj instanceof Collection)) continue;
+            Collection<?> values = (Collection<?>) setObj;
+            for (Object key : recipeKeys) {
+                if (key instanceof Iterable) {
+                    for (Object value : (Iterable<?>) key) values.remove(value);
+                } else {
+                    values.remove(key);
+                }
+            }
+        }
+    }
+
     /** IC2: iterate the cache aware map view returned by Recipes.<machine>.getRecipes(). */
     private static final class Ic2Backend implements Backend {
         @Override
@@ -369,7 +450,14 @@ public final class RecipeRemover {
             String machine = target.startsWith("ic2_") ? target.substring(4) : target;
             Class<?> recipes = Reflect.cls("ic2.api.recipe.Recipes");
             if (recipes == null) return 0;
-            Object manager = Reflect.staticField(recipes, machine);
+            Object manager = null;
+            for (Field field : recipes.getFields()) {
+                if (field.getName().equalsIgnoreCase(machine)) {
+                    machine = field.getName();
+                    manager = Reflect.staticField(recipes, machine);
+                    break;
+                }
+            }
             if (manager == null) {
                 rep.error("IC2: no Recipes." + machine);
                 return 0;
@@ -583,6 +671,7 @@ public final class RecipeRemover {
                 return 0;
             }
             Map<?, ?> map = (Map<?, ?>) mapObj;
+            if (matchesAll(selector)) return clearAllMap(c, fieldName, name, rep);
             List<Object> keys = new ArrayList<Object>();
             for (Map.Entry<?, ?> e : map.entrySet()) {
                 if (matchesAny(selector, outputsOf(e.getValue()))) keys.add(e.getKey());
@@ -596,6 +685,82 @@ public final class RecipeRemover {
                 } else if (map.remove(k) != null) {
                     removed++;
                     rep.recipeRemoved(name, desc);
+                }
+            }
+            return removed;
+        }
+    }
+
+    private static int clearAllMap(Class<?> managerClass, String fieldName, String backend, Report rep) {
+        Object mapObj = Reflect.staticField(managerClass, fieldName);
+        if (!(mapObj instanceof Map)) {
+            rep.error(backend + ": " + managerClass.getName() + "." + fieldName + " is not a Map");
+            return -1;
+        }
+        Map<?, ?> map = (Map<?, ?>) mapObj;
+        List<Object> keys = new ArrayList<Object>(map.keySet());
+        for (Object key : keys) {
+            if (isDryRun()) {
+                reportDryRun(rep, backend, String.valueOf(key));
+            } else {
+                rep.recipeRemoved(backend, String.valueOf(key));
+            }
+        }
+        if (!isDryRun()) map.clear();
+        return keys.size();
+    }
+
+    private static void clearThermalInputSets(Class<?> managerClass, Report rep) {
+        for (String fieldName : new String[] { "validationSet", "lockSet" }) {
+            Object setObj = Reflect.staticField(managerClass, fieldName);
+            if (!(setObj instanceof Collection)) {
+                rep.error(managerClass.getName() + "." + fieldName + " is not a Collection");
+                continue;
+            }
+            ((Collection<?>) setObj).clear();
+        }
+    }
+
+    /** Advanced Rocketry recipes are keyed by machine class in LibVulpes' shared registry. */
+    private static final class AdvancedRocketryBackend implements Backend {
+        @Override
+        public String name() {
+            return "advancedrocketry_machines";
+        }
+
+        @Override
+        public int remove(String target, String selector, Report rep) {
+            Class<?> recipesClass = Reflect.cls("zmaster587.libVulpes.recipe.RecipesMachine");
+            Object recipes = Reflect.callStatic(recipesClass, "getInstance");
+            if (recipes == null) {
+                rep.error(name() + ": LibVulpes RecipesMachine is unavailable");
+                return 0;
+            }
+            Object recipeMapObj = Reflect.field(recipes, "recipeList");
+            if (!(recipeMapObj instanceof Map)) {
+                rep.error(name() + ": LibVulpes RecipesMachine.recipeList is unavailable");
+                return 0;
+            }
+
+            int removed = 0;
+            for (Map.Entry<?, ?> entry : ((Map<?, ?>) recipeMapObj).entrySet()) {
+                Object machine = entry.getKey();
+                if (!(machine instanceof Class)
+                    || !((Class<?>) machine).getName().startsWith("zmaster587.advancedRocketry.")) continue;
+                if (!(entry.getValue() instanceof List)) continue;
+                List<?> machineRecipes = (List<?>) entry.getValue();
+                Iterator<?> iterator = machineRecipes.iterator();
+                while (iterator.hasNext()) {
+                    Object recipe = iterator.next();
+                    List<ItemStack> outputs = outputsOf(recipe);
+                    if (!matchesAll(selector) && !matchesAny(selector, outputs)) continue;
+                    if (isDryRun()) {
+                        reportDryRun(rep, name(), String.valueOf(outputs));
+                    } else {
+                        iterator.remove();
+                        rep.recipeRemoved(name(), String.valueOf(outputs));
+                    }
+                    removed++;
                 }
             }
             return removed;

@@ -9,9 +9,16 @@ import java.util.List;
 import dshgt6bridge.Cfg;
 import dshgt6bridge.Items;
 import dshgt6bridge.LinkCheck;
+import dshgt6bridge.RecipeRemover;
 import dshgt6bridge.Reflect;
 import dshgt6bridge.Report;
 import dshgt6bridge.Settings;
+import cofh.thermalexpansion.util.crafting.SmelterManager;
+import cofh.thermalexpansion.util.crafting.TransposerManager;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import zmaster587.libVulpes.recipe.RecipesMachine;
+import zmaster587.advancedRocketry.tile.multiblock.machine.TileTestMachine;
 
 /**
  * Plain JVM self test for everything that does not need Minecraft running: CSV parsing,
@@ -32,6 +39,9 @@ public final class TestMain {
         testCsvParsing();
         testDefaultCreation();
         testSettings();
+        testIc2MachineTargets();
+        testThermalExpansionRemoval();
+        testAdvancedRocketryRemoval();
         testReport();
         testItemTokens();
         testPrefixSplit();
@@ -106,6 +116,7 @@ public final class TestMain {
         check("'yes' counts as true", s.getBool("enableAutoRules"));
         check("explicit false overrides the default true", !s.getBool("bindOnlyWithGt6Item"));
         check("default applied when absent", s.getBool("enableMaterialBinding"));
+        check("space recipe migration defaults on", s.getBool("migrateSpaceRecipes"));
         check("unknown key is false", !s.getBool("doesNotExist"));
         check("keys are case insensitive", s.getBool("DRYRUN"));
         check("removal dry run defaults to on", new Settings(new Cfg()).getBool("removalDryRun"));
@@ -122,6 +133,80 @@ public final class TestMain {
             skips.size() == 2 && skips.contains("*:itemalloy:6") && skips.contains("enderio:*"));
         java.util.Set<String> prefixes = s.getList("onlyPrefixes");
         check("onlyPrefixes parsed", prefixes.size() == 2 && prefixes.contains("ingot") && prefixes.contains("dust"));
+    }
+
+    private static void testIc2MachineTargets() throws Exception {
+        write("config/gt6bridge/removals.csv",
+            "# IC2 machine targets use the shared IC2 backend\n" +
+            "ic2_macerator,*:ore*\n" +
+            "ic2_compressor,*:dust*\n" +
+            "ic2_extractor,*:*\n" +
+            "ic2_centrifuge,*:*\n" +
+            "ic2_blockcutter,*:*\n" +
+            "ic2_blastfurance,*:*\n" +
+            "ic2_recycler,*:*\n" +
+            "ic2_metalformerExtruding,*:*\n" +
+            "ic2_metalformerCutting,*:*\n" +
+            "ic2_metalformerRolling,*:*\n" +
+            "ic2_oreWashing,*:*\n" +
+            "ic2_matterAmplifier,*:*\n");
+        Cfg cfg = new Cfg();
+        Report rep = new Report();
+        new RecipeRemover(cfg, new Settings(cfg), rep).run();
+        check("IC2 machine targets resolve case-insensitively through the shared backend", rep.errors() == 0);
+    }
+
+    private static void testThermalExpansionRemoval() throws Exception {
+        Item metalOutput = new Item();
+        Item otherOutput = new Item();
+        Item.field_150901_e.register("fixture:metal_output", metalOutput);
+        Item.field_150901_e.register("fixture:other_output", otherOutput);
+        SmelterManager.addFixture("metal-recipe", new RecipeEntry(new ItemStack(metalOutput, 1, 0)));
+        SmelterManager.addFixture("other-recipe", new RecipeEntry(new ItemStack(otherOutput, 1, 0)));
+        write("config/gt6bridge/settings.csv", "# test settings\nremovalDryRun,false\n");
+        write("config/gt6bridge/removals.csv", "# test removals\nte_smelter,fixture:metal_output\n");
+        Cfg cfg = new Cfg();
+        Report rep = new Report();
+        new RecipeRemover(cfg, new Settings(cfg), rep).run();
+        check("Thermal Expansion selective removal matches recipe outputs",
+            rep.errors() == 0 && SmelterManager.recipeCount() == 1);
+
+        SmelterManager.addFixture("pair-a", new RecipeEntry(new ItemStack(new Item(), 1, 0)));
+        SmelterManager.addFixture("pair-b", new RecipeEntry(new ItemStack(new Item(), 1, 0)));
+        write("config/gt6bridge/settings.csv", "# test settings\nremovalDryRun,false\n");
+        write("config/gt6bridge/removals.csv", "# test removals\nte_smelter,*:*\n");
+        rep = new Report();
+        new RecipeRemover(cfg, new Settings(cfg), rep).run();
+        check("Thermal Expansion smelter wildcard clears every paired-input recipe",
+            rep.errors() == 0 && SmelterManager.recipeCount() == 0);
+        check("Thermal Expansion smelter clear resets input validation caches",
+            SmelterManager.validationCount() == 0 && SmelterManager.lockCount() == 0);
+        TransposerManager.addFillFixture("fill", new RecipeEntry());
+        TransposerManager.addExtractionFixture("extraction", new RecipeEntry());
+        write("config/gt6bridge/removals.csv",
+            "# test removals\nte_transposer_fill,*:*\nte_transposer_extraction,*:*\n");
+        rep = new Report();
+        new RecipeRemover(cfg, new Settings(cfg), rep).run();
+        check("Thermal Expansion transposer fill and extraction recipes are cleared",
+            rep.errors() == 0 && TransposerManager.fillCount() == 0
+                && TransposerManager.extractionCount() == 0);
+    }
+
+    private static void testAdvancedRocketryRemoval() throws Exception {
+        RecipesMachine recipes = RecipesMachine.getInstance();
+        recipes.recipeList.clear();
+        recipes.addRecipe(TileTestMachine.class, new RecipeEntry(new ItemStack(new Item(), 1, 0)));
+        recipes.addRecipe(TileTestMachine.class, new RecipeEntry());
+        recipes.addRecipe(String.class, new RecipeEntry(new ItemStack(new Item(), 1, 0)));
+        write("config/gt6bridge/settings.csv", "# test settings\nremovalDryRun,false\n");
+        write("config/gt6bridge/removals.csv", "# test removals\nadvancedrocketry_machines,*:*\n");
+        Cfg cfg = new Cfg();
+        Report rep = new Report();
+        new RecipeRemover(cfg, new Settings(cfg), rep).run();
+        check("Advanced Rocketry wildcard clears item and fluid-only machine recipes",
+            rep.errors() == 0 && recipes.getRecipes(TileTestMachine.class).isEmpty());
+        check("Advanced Rocketry removal leaves unrelated LibVulpes recipe lists untouched",
+            recipes.getRecipes(String.class).size() == 1);
     }
 
     private static void testReport() throws Exception {
@@ -165,6 +250,24 @@ public final class TestMain {
         check("resolve is null safe", Items.resolve(null).isEmpty());
         check("matches is null safe", !Items.matches("mod:*", null));
         check("candidates is null safe", Items.candidates(null).isEmpty());
+        Item firstFixtureItem = new Item();
+        Item secondFixtureItem = new Item();
+        Item.field_150901_e.register("fixture:item0", firstFixtureItem);
+        Item.field_150901_e.register("fixture:item1", secondFixtureItem);
+        for (int i = 2; i < 513; i++) {
+            Item.field_150901_e.register("fixture:item" + i, new Item());
+        }
+        List<ItemStack> allItemCandidates = Items.candidates("*:*");
+        check("*:* candidates include every item beyond the old cap", allItemCandidates.size() == 513 * 16);
+        check("*:* candidates include all metadata values",
+            allItemCandidates.get(0).func_77960_j() == 0
+                && allItemCandidates.get(15).func_77960_j() == 15
+                && allItemCandidates.get(16).func_77960_j() == 0);
+        ItemStack fixture = new ItemStack(firstFixtureItem, 1, 0);
+        check("selector alternatives match exact item", Items.matches("fixture:missing|fixture:item0", fixture));
+        check("selector alternatives reject unrelated item", !Items.matches("fixture:missing|fixture:item1", fixture));
+        check("candidate alternatives combine exact items",
+            Items.candidates("fixture:item0|fixture:item1").size() == 2);
         // chance suffix parsing for recipes.csv outputs
         check("no suffix keeps the default", Items.chanceOf("minecraft:iron_ingot", 10000L) == 10000L);
         check("percent form", Items.chanceOf("minecraft:gold_ingot@50", 10000L) == 5000L);
@@ -387,6 +490,18 @@ public final class TestMain {
         /** mimics EnderIO's IMachineRecipe.getCompletedResult(float, MachineRecipeInput...) shape. */
         public float scaled(float factor, String... rest) {
             return factor * (rest == null ? 1 : rest.length + 1);
+        }
+    }
+
+    public static final class RecipeEntry {
+        private final List<ItemStack> output;
+
+        RecipeEntry(ItemStack... output) {
+            this.output = java.util.Arrays.asList(output);
+        }
+
+        public List<ItemStack> getOutput() {
+            return output;
         }
     }
 

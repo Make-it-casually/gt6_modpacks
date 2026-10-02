@@ -9,10 +9,22 @@
 | ⓪ 材料建档 | 给 GT6 不认识的矿物词典材料在 **PreInit** 建真材料（GT6 只给 PreInit 及更早创建的材料生成物品） | `materials.csv` 的 `create:` 行 |
 | ① 材料绑定 | 扫描整个 Forge 矿物词典，把外部 mod 的矿/锭/粉/板/齿轮/粒/块按 `前缀 + 材料名` 挂到 GT6 的 `OreDictMaterial` 上 | `materials.csv`（可强制映射/跳过） |
 | ② 补 GT6 配方 | 往 GT6 的 80+ 个配方表（Crusher/Mortar/Shredder/Smelter/Mixer/Centrifuge/Electrolyzer/Compressor…）里加配方，也可按前缀批量生成 | `recipes.csv`、`autorules.csv` |
-| ③ 删别人的配方 | 删除其它科技 mod 自带配方（原版 + TE/IC2/AE2/AA/Railcraft/EnderIO/Galacticraft 共 15 个后端） | `removals.csv` |
+| ③ 配方迁移/删除 | 将可表达的星系机器配方先迁入 GT6；再按 `removals.csv` 删除选中的其它 mod 配方（不动 GT6 与原版工作台/熔炉） | `settings.csv`、`removals.csv` |
 | 开关 | 干跑、只绑定有 GT6 对应物品的材料、自动规则总开关 | `settings.csv` |
 
 配置文件与报告在 `config/gt6bridge/`，第一次启动时自动生成（含格式说明），**改配方不需要重新编译 mod**。
+
+## 星系及附属整合
+
+`migrateSpaceRecipes,true` 会在删除原配方前，将可表达为普通物品输入/输出的配方迁入 GT6：
+
+* Galacticraft 压缩机 → GT6 Compressor；Galacticraft 与复用其 API 的附属配方一起处理。
+* Galacticraft / AmunRa 电路制造台 → GT6 Assembler。
+* GalaxySpace 装配机及火箭锥体、箭身、引擎、助推器、尾翼、氧气罐、核反应堆接口部件 → GT6 Assembler。
+* 只有 GT6 配方成功加入后，才从对应原注册表移除该条；无法识别输入、输出或带可选输入的条目会保留原配方并写入报告。
+* 最终火箭蓝图/组装仍由原模组工作台或火箭装配机处理；氧气、燃料、温室、糖果提取等没有等价 GT6 机器语义的配方不迁移。
+
+星系火箭统一按共同的 **T1–T10** 数字阶梯映射：Galacticraft 原生 T1–T3，More Planets 的 T4–T8 保持映射为 T4–T8，ExtraPlanets 的 T4–T10 保持映射为 T4–T10，GalaxySpace 的 T4–T6 映射为 T4–T6。相同编号表示相同阶段，不改各星球访问用途；火箭实体、目的地许可和蓝图仍由各模组负责，不把不同模组的火箭实体强行替换成同一物品。
 
 ## 为什么①层就够了（关键机制）
 
@@ -32,7 +44,7 @@ GT6 机器和 NEI 就会**当场为它生成对应配方**——不需要我们�
 gt6bridge/
   build.ps1          # 纯 javac + jar 构建（无需 Gradle/网络）
   src/dshgt6bridge/  # mod 源码
-  stub/              # 编译期 stub（net.minecraft.* / cpw.mods.fml.*），不打进 jar
+  stub/              # 编译期 stub 与自检用 IC2 fixture，不打进 jar
   out/ out-stub/     # 编译产物
   gt6bridge.jar      # 成品
 ```
@@ -107,6 +119,10 @@ Crusher,ore:ingotEnderium,gt:dust:Enderium,20,16,true,示例
 crafting,EnderIO:itemAlloy:6
 furnace,*:iron_ingot
 ```
+`*:*` 表示清空该目标机器的全部配方；当前实例不使用全量通配，而是按精确矿词条目筛选常见基础金属与已知合金的粉、锭/粒、板输出。多个精确选择器可用 `|` 连接，例如 `ore:dustCopper|ore:dustTin`。
+当前 `settings.csv` 的 `removalDryRun=true`，启动只预览命中数。先核对报告与 NEI，再决定是否启用实际移除。木材、化学、压印、工作台和其他独有功能配方不在当前清单中。
+配方改动只在内存中；停用规则并重启即可恢复原始配方。`advancedrocketry_machines` 等未纳入本次金属重复配方清理的后端保持原样。
+全物品通配会为所有已注册物品尝试 metadata 0–15，不设候选数量上限。
 
 ## CraftTweaker / MineTweaker 脚本支持
 
