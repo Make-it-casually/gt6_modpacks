@@ -17,7 +17,7 @@
 # are for the gaps (Smelter/Furnace) and for conversions.
 ore,Crusher,crushed,2,16,32,true,false
 crushed,Crusher,dust,1,16,32,true,false
-purified,Crusher,dust,1,16,32,true,false
+crushedPurified,Crusher,dust,1,16,32,true,false
 dust,Smelter,ingot,1,16,32,true,false
 dustTiny,Smelter,nugget,4,16,16,true,false
 nugget,Smelter,ingot,9,16,16,true,false

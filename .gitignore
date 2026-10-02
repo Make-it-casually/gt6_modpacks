@@ -3,6 +3,7 @@
 !/.gitignore
 !/config/
 !/mods/
+!/scripts/
 !/GT6.jar
 !/GT6.json
 !/options.txt

@@ -4,10 +4,37 @@
 #   <gt6Material>          : GT6 material name to bind it to (see GregTech's material list), or '-' to skip binding
 #   unmatched tokens are listed in report.txt so you can add lines here
 #
-# After the first run, report.txt contains a section "unknown material tokens" - paste the
-# entries you want to act on below. Material names are Capitalised and case sensitive.
+# After every run, report.txt lists the "unknown material tokens" - paste the ones you want to act
+# on below. Material names are Capitalised and case sensitive.
 #
-# examples:
+# sources of the rows below: GT6's own logs/oredict.log "Outputting Unknown Materials" list, cross
+# referenced with the registering jar (TofuCraft/TofuFactory = food+decor, Alfheim = plants/decor,
+# More-Planets/ExtraPlanets/GalaxySpace = space content, chisel/etfuturum = blocks). Nothing in that
+# list belongs to EnderIO/TE/AE2/IC2 - GT6 already knows all of their materials, so no material has
+# to be created for the tech mods.
+#
+# --- alias bindings (same material under a different name) ---
+Cobaltum,Cobalt,GalaxySpace oreCobaltum/ingotCobaltum
+Adaminite,Adamantite,Alfheim spelling variant
+Adamintite,Adamantite,Alfheim spelling variant
+# --- intentionally not bound (item, mixture or decorative, not a metal) ---
+TofuMetal,-,TofuCraft food metal
+Jelly,-,More-Planets decoration
+Mutton,-,food
+Zunda,-,food
+Debris,-,etfuturum ancient debris block
+EMP,-,More-Planets decoration
+BlackDiamond,-,More-Planets decoration
+Mineral,-,generic ore name without a material
+Meteor,-,generic name
+#
+# examples of the two other forms:
 # Enderium,Enderium
-# Signalum,Lumium
 # Unobtainium,-,intentionally skipped
+#
+# To create a material GT6 does not know at all, put create:<Name> in the SECOND column instead
+# of a material name, e.g.
+#   Fronisium,create:Fronisium          - created during PreInit (GT6 only generates items for
+#   Norium,create:Norium:2500           - materials created that early; optional explicit id)
+# Candidates that are real metals are listed in tools\create-candidates-metals.txt (mostly space
+# mods). They are deliberately left out here because every created material also adds NEI entries.
