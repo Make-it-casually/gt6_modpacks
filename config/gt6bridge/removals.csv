@@ -18,36 +18,39 @@
 #       *:*                 every recipe of that backend (wipes that machine)
 #       ore:<OreDictName>   every item registered under that ore dictionary entry
 #
-# The rows below are PRESETS - they are commented out on purpose. Look at report.txt,
-# then uncomment the lines you want. Each run lists what it removed per backend.
+# SAFETY: removalDryRun in settings.csv is ON, so every row below is only COUNTED and listed
+# as "would remove ..." in report.txt. Nothing is deleted until you set removalDryRun,false.
+# Recipe removals are in-memory only anyway - a restart brings the recipes back.
 #
-# SAFETY: removalDryRun in settings.csv is ON by default, so removals only get counted and
-# listed ("would remove ..."). Set removalDryRun,false once the numbers look right.
-#
+# The rows are grouped; delete the ones you do not want after reading the counts.
+
 # --- 1) take ore processing away from the other tech mods (GT6 becomes the only path) ---
-# te_pulverizer,*:ore*
-# te_pulverizer,*:raw*
-# te_furnace,*:ore*
-# te_sawmill,*:ore*
-# ic2_macerator,*:ore*
-# actuallyadditions_crusher,*:ore*
-# railcraft_rockcrusher,*:ore*
-# enderio_sagmill,*:ore*
-# galacticraft_compressor,*:ore*
-#
-# --- 2) take dust/ingot doubling away (smelting chains) ---
-# te_smelter,*:dust*
-# te_furnace,*:dust*
-# ic2_compressor,*:dust*
-#
-# --- 3) nuclear option: wipe a machine completely ---
+te_pulverizer,*:ore*
+te_furnace,*:ore*
+te_sawmill,*:ore*
+ic2_macerator,*:ore*
+actuallyadditions_crusher,*:ore*
+railcraft_rockcrusher,*:ore*
+enderio_sagmill,*:ore*
+galacticraft_compressor,*:ore*
+
+# --- 2) raw ore variants / chunks ---
+te_pulverizer,*:raw*
+te_pulverizer,*:crushed*
+ic2_macerator,*:raw*
+
+# --- 3) dust handling in the other mods' furnaces (GT6 smelter does this) ---
+te_furnace,*:dust*
+te_smelter,*:dust*
+ic2_compressor,*:dust*
+
+# --- 4) single item examples (kept disabled) ---
+# crafting,EnderIO:itemAlloy:6
+# enderio_alloy,ore:ingotEnderium
+
+# --- 5) nuclear option: wipe a machine completely (kept disabled - check the counts first) ---
 # te_pulverizer,*:*
 # ic2_macerator,*:*
 # actuallyadditions_crusher,*:*
 # railcraft_rockcrusher,*:*
 # enderio_sagmill,*:*
-#
-# --- 4) examples for single items ---
-# crafting,EnderIO:itemAlloy:6
-# furnace,*:iron_ingot
-# enderio_alloy,ore:ingotEnderium

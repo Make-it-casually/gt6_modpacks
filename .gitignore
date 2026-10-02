@@ -1,0 +1,9 @@
+# Keep only these top-level game files and folders in the repository.
+/*
+!/.gitignore
+!/config/
+!/mods/
+!/GT6.jar
+!/GT6.json
+!/options.txt
+!/optionsnf.txt
