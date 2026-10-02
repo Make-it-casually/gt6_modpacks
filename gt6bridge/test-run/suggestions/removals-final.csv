@@ -1,0 +1,4 @@
+﻿# gt6bridge removals - only the rows whose dry run matched (generated from report.txt)
+# set removalDryRun,false in settings.csv to actually delete them
+te_pulverizer,*:ore*   # 13 recipe(s)
+ic2_macerator,*:ore*   # 5 recipe(s)

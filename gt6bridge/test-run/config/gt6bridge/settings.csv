@@ -1,0 +1,13 @@
+# fixture settings - all keys the mod knows
+enableMaterialBinding,true
+bindOnlyWithGt6Item,true
+enableMaterialCreation,true
+dryRun,false
+removalDryRun,true
+bindLimit,0
+scanBudgetMs,20000
+skipMods,
+skipItems,
+onlyPrefixes,
+logEveryBinding,false
+enableAutoRules,false

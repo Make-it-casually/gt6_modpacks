@@ -1,0 +1,30 @@
+﻿gt6bridge report analysis - 2026-10-03 00:04:38
+report: E:\game\minecraft\gt6\gt6bridge\test-run\config\gt6bridge\report.txt
+timing.linkCheck.ms: 24
+bindings.verified: 249
+oredict.stacks: 412330
+alreadyBound: 9021
+autorules.added: 1
+skipped: 1
+bindings: 250
+timing.materialPass.ms: 8421
+skipped.lockedAutoInvalid: 7
+skipped.noGt6Item: 1020
+timing.recipeReInit.ms: 263
+skipped.gt6OwnItems: 388412
+bound.byMod.TestMod: 250
+removed.total: 17
+links.failed: 0
+errors: 0
+materials.table.rows: 11
+gt6.prefixes: 453
+bindings.verifyFailed: 1
+oredict.names: 300955
+bound.byPrefix.ingot: 250
+unparsedOreNames: 2
+errorsInReport: 0
+
+unknown material tokens (sorted by item count):
+  Cobaltum                         3  -> Cobalt  [close spelling (distance 2)]
+  TofuMetal                        1  -> create
+  Fronisium                        1  -> create

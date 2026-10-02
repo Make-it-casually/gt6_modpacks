@@ -1,0 +1,14 @@
+[
+  {
+    "modid": "gt6bridge",
+    "name": "GT6 Recipe Bridge",
+    "description": "Data driven bridge between GregTech 6 and the other mods in the pack: binds foreign ores/ingots/dusts/plates/gears to GT6 materials, adds GT6 machine recipes and removes other tech mods' own recipes. Configured through config/gt6bridge/*.csv.",
+    "version": "0.6",
+    "mcversion": "1.7.10",
+    "authorList": [ "dsh" ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": [ "gregtech" ]
+  }
+]

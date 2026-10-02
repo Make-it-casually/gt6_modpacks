@@ -1,0 +1,8 @@
+﻿gt6bridge next steps
+===================
+[removals] wrote E:\game\minecraft\gt6\gt6bridge\test-run\suggestions\removals-final.csv (2 matching row(s))
+           review it, then copy over config\gt6bridge\removals.csv and set removalDryRun,false
+           ic2_macerator                    would remove 5
+           te_pulverizer                    would remove 13
+[materials] review materials-suggested.csv, then merge the rows into config\gt6bridge\materials.csv
+[verify]    after the next run, report.txt should show bindings.verified close to bindings

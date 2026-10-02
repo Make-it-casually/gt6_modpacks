@@ -1,0 +1,323 @@
+GT6 Recipe Bridge 0.6 report
+generated: 2026-10-03 00:04:16
+phase: ?
+links.failed: 0
+oredict.names: 300955
+oredict.stacks: 412330
+gt6.prefixes: 453
+materials.table.rows: 11
+alreadyBound: 9021
+skipped.gt6OwnItems: 388412
+skipped.noGt6Item: 1020
+skipped.lockedAutoInvalid: 7
+timing.materialPass.ms: 8421
+timing.linkCheck.ms: 24
+timing.recipeReInit.ms: 263
+bindings: 250
+bound.byPrefix.ingot: 250
+bound.byMod.TestMod: 250
+bindings.verified: 249
+bindings.verifyFailed: 1
+skipped: 1
+removed.total: 17
+autorules.added: 1
+errors: 0
+
+-- unknown material tokens (add them to materials.csv) --
+  Cobaltum : 3 item(s)   e.g. GalaxySpace:oreCobaltum
+  Fronisium : 1 item(s)   e.g. MorePlanets:item.fronisiumIngot
+  TofuMetal : 1 item(s)   e.g. TofuCraft:item.tofuMetal
+
+-- ore dictionary names without a GT6 prefix --
+  uranium : 1
+  zundaBlock : 1
+
+-- bindings --
+  ingotTest0  ->  TestMod:ingot0  =  ingot/Iron
+  ingotTest1  ->  TestMod:ingot1  =  ingot/Iron
+  ingotTest2  ->  TestMod:ingot2  =  ingot/Iron
+  ingotTest3  ->  TestMod:ingot3  =  ingot/Iron
+  ingotTest4  ->  TestMod:ingot4  =  ingot/Iron
+  ingotTest5  ->  TestMod:ingot5  =  ingot/Iron
+  ingotTest6  ->  TestMod:ingot6  =  ingot/Iron
+  ingotTest7  ->  TestMod:ingot7  =  ingot/Iron
+  ingotTest8  ->  TestMod:ingot8  =  ingot/Iron
+  ingotTest9  ->  TestMod:ingot9  =  ingot/Iron
+  ingotTest10  ->  TestMod:ingot10  =  ingot/Iron
+  ingotTest11  ->  TestMod:ingot11  =  ingot/Iron
+  ingotTest12  ->  TestMod:ingot12  =  ingot/Iron
+  ingotTest13  ->  TestMod:ingot13  =  ingot/Iron
+  ingotTest14  ->  TestMod:ingot14  =  ingot/Iron
+  ingotTest15  ->  TestMod:ingot15  =  ingot/Iron
+  ingotTest16  ->  TestMod:ingot16  =  ingot/Iron
+  ingotTest17  ->  TestMod:ingot17  =  ingot/Iron
+  ingotTest18  ->  TestMod:ingot18  =  ingot/Iron
+  ingotTest19  ->  TestMod:ingot19  =  ingot/Iron
+  ingotTest20  ->  TestMod:ingot20  =  ingot/Iron
+  ingotTest21  ->  TestMod:ingot21  =  ingot/Iron
+  ingotTest22  ->  TestMod:ingot22  =  ingot/Iron
+  ingotTest23  ->  TestMod:ingot23  =  ingot/Iron
+  ingotTest24  ->  TestMod:ingot24  =  ingot/Iron
+  ingotTest25  ->  TestMod:ingot25  =  ingot/Iron
+  ingotTest26  ->  TestMod:ingot26  =  ingot/Iron
+  ingotTest27  ->  TestMod:ingot27  =  ingot/Iron
+  ingotTest28  ->  TestMod:ingot28  =  ingot/Iron
+  ingotTest29  ->  TestMod:ingot29  =  ingot/Iron
+  ingotTest30  ->  TestMod:ingot30  =  ingot/Iron
+  ingotTest31  ->  TestMod:ingot31  =  ingot/Iron
+  ingotTest32  ->  TestMod:ingot32  =  ingot/Iron
+  ingotTest33  ->  TestMod:ingot33  =  ingot/Iron
+  ingotTest34  ->  TestMod:ingot34  =  ingot/Iron
+  ingotTest35  ->  TestMod:ingot35  =  ingot/Iron
+  ingotTest36  ->  TestMod:ingot36  =  ingot/Iron
+  ingotTest37  ->  TestMod:ingot37  =  ingot/Iron
+  ingotTest38  ->  TestMod:ingot38  =  ingot/Iron
+  ingotTest39  ->  TestMod:ingot39  =  ingot/Iron
+  ingotTest40  ->  TestMod:ingot40  =  ingot/Iron
+  ingotTest41  ->  TestMod:ingot41  =  ingot/Iron
+  ingotTest42  ->  TestMod:ingot42  =  ingot/Iron
+  ingotTest43  ->  TestMod:ingot43  =  ingot/Iron
+  ingotTest44  ->  TestMod:ingot44  =  ingot/Iron
+  ingotTest45  ->  TestMod:ingot45  =  ingot/Iron
+  ingotTest46  ->  TestMod:ingot46  =  ingot/Iron
+  ingotTest47  ->  TestMod:ingot47  =  ingot/Iron
+  ingotTest48  ->  TestMod:ingot48  =  ingot/Iron
+  ingotTest49  ->  TestMod:ingot49  =  ingot/Iron
+  ingotTest50  ->  TestMod:ingot50  =  ingot/Iron
+  ingotTest51  ->  TestMod:ingot51  =  ingot/Iron
+  ingotTest52  ->  TestMod:ingot52  =  ingot/Iron
+  ingotTest53  ->  TestMod:ingot53  =  ingot/Iron
+  ingotTest54  ->  TestMod:ingot54  =  ingot/Iron
+  ingotTest55  ->  TestMod:ingot55  =  ingot/Iron
+  ingotTest56  ->  TestMod:ingot56  =  ingot/Iron
+  ingotTest57  ->  TestMod:ingot57  =  ingot/Iron
+  ingotTest58  ->  TestMod:ingot58  =  ingot/Iron
+  ingotTest59  ->  TestMod:ingot59  =  ingot/Iron
+  ingotTest60  ->  TestMod:ingot60  =  ingot/Iron
+  ingotTest61  ->  TestMod:ingot61  =  ingot/Iron
+  ingotTest62  ->  TestMod:ingot62  =  ingot/Iron
+  ingotTest63  ->  TestMod:ingot63  =  ingot/Iron
+  ingotTest64  ->  TestMod:ingot64  =  ingot/Iron
+  ingotTest65  ->  TestMod:ingot65  =  ingot/Iron
+  ingotTest66  ->  TestMod:ingot66  =  ingot/Iron
+  ingotTest67  ->  TestMod:ingot67  =  ingot/Iron
+  ingotTest68  ->  TestMod:ingot68  =  ingot/Iron
+  ingotTest69  ->  TestMod:ingot69  =  ingot/Iron
+  ingotTest70  ->  TestMod:ingot70  =  ingot/Iron
+  ingotTest71  ->  TestMod:ingot71  =  ingot/Iron
+  ingotTest72  ->  TestMod:ingot72  =  ingot/Iron
+  ingotTest73  ->  TestMod:ingot73  =  ingot/Iron
+  ingotTest74  ->  TestMod:ingot74  =  ingot/Iron
+  ingotTest75  ->  TestMod:ingot75  =  ingot/Iron
+  ingotTest76  ->  TestMod:ingot76  =  ingot/Iron
+  ingotTest77  ->  TestMod:ingot77  =  ingot/Iron
+  ingotTest78  ->  TestMod:ingot78  =  ingot/Iron
+  ingotTest79  ->  TestMod:ingot79  =  ingot/Iron
+  ingotTest80  ->  TestMod:ingot80  =  ingot/Iron
+  ingotTest81  ->  TestMod:ingot81  =  ingot/Iron
+  ingotTest82  ->  TestMod:ingot82  =  ingot/Iron
+  ingotTest83  ->  TestMod:ingot83  =  ingot/Iron
+  ingotTest84  ->  TestMod:ingot84  =  ingot/Iron
+  ingotTest85  ->  TestMod:ingot85  =  ingot/Iron
+  ingotTest86  ->  TestMod:ingot86  =  ingot/Iron
+  ingotTest87  ->  TestMod:ingot87  =  ingot/Iron
+  ingotTest88  ->  TestMod:ingot88  =  ingot/Iron
+  ingotTest89  ->  TestMod:ingot89  =  ingot/Iron
+  ingotTest90  ->  TestMod:ingot90  =  ingot/Iron
+  ingotTest91  ->  TestMod:ingot91  =  ingot/Iron
+  ingotTest92  ->  TestMod:ingot92  =  ingot/Iron
+  ingotTest93  ->  TestMod:ingot93  =  ingot/Iron
+  ingotTest94  ->  TestMod:ingot94  =  ingot/Iron
+  ingotTest95  ->  TestMod:ingot95  =  ingot/Iron
+  ingotTest96  ->  TestMod:ingot96  =  ingot/Iron
+  ingotTest97  ->  TestMod:ingot97  =  ingot/Iron
+  ingotTest98  ->  TestMod:ingot98  =  ingot/Iron
+  ingotTest99  ->  TestMod:ingot99  =  ingot/Iron
+  ingotTest100  ->  TestMod:ingot100  =  ingot/Iron
+  ingotTest101  ->  TestMod:ingot101  =  ingot/Iron
+  ingotTest102  ->  TestMod:ingot102  =  ingot/Iron
+  ingotTest103  ->  TestMod:ingot103  =  ingot/Iron
+  ingotTest104  ->  TestMod:ingot104  =  ingot/Iron
+  ingotTest105  ->  TestMod:ingot105  =  ingot/Iron
+  ingotTest106  ->  TestMod:ingot106  =  ingot/Iron
+  ingotTest107  ->  TestMod:ingot107  =  ingot/Iron
+  ingotTest108  ->  TestMod:ingot108  =  ingot/Iron
+  ingotTest109  ->  TestMod:ingot109  =  ingot/Iron
+  ingotTest110  ->  TestMod:ingot110  =  ingot/Iron
+  ingotTest111  ->  TestMod:ingot111  =  ingot/Iron
+  ingotTest112  ->  TestMod:ingot112  =  ingot/Iron
+  ingotTest113  ->  TestMod:ingot113  =  ingot/Iron
+  ingotTest114  ->  TestMod:ingot114  =  ingot/Iron
+  ingotTest115  ->  TestMod:ingot115  =  ingot/Iron
+  ingotTest116  ->  TestMod:ingot116  =  ingot/Iron
+  ingotTest117  ->  TestMod:ingot117  =  ingot/Iron
+  ingotTest118  ->  TestMod:ingot118  =  ingot/Iron
+  ingotTest119  ->  TestMod:ingot119  =  ingot/Iron
+  ingotTest120  ->  TestMod:ingot120  =  ingot/Iron
+  ingotTest121  ->  TestMod:ingot121  =  ingot/Iron
+  ingotTest122  ->  TestMod:ingot122  =  ingot/Iron
+  ingotTest123  ->  TestMod:ingot123  =  ingot/Iron
+  ingotTest124  ->  TestMod:ingot124  =  ingot/Iron
+  ingotTest125  ->  TestMod:ingot125  =  ingot/Iron
+  ingotTest126  ->  TestMod:ingot126  =  ingot/Iron
+  ingotTest127  ->  TestMod:ingot127  =  ingot/Iron
+  ingotTest128  ->  TestMod:ingot128  =  ingot/Iron
+  ingotTest129  ->  TestMod:ingot129  =  ingot/Iron
+  ingotTest130  ->  TestMod:ingot130  =  ingot/Iron
+  ingotTest131  ->  TestMod:ingot131  =  ingot/Iron
+  ingotTest132  ->  TestMod:ingot132  =  ingot/Iron
+  ingotTest133  ->  TestMod:ingot133  =  ingot/Iron
+  ingotTest134  ->  TestMod:ingot134  =  ingot/Iron
+  ingotTest135  ->  TestMod:ingot135  =  ingot/Iron
+  ingotTest136  ->  TestMod:ingot136  =  ingot/Iron
+  ingotTest137  ->  TestMod:ingot137  =  ingot/Iron
+  ingotTest138  ->  TestMod:ingot138  =  ingot/Iron
+  ingotTest139  ->  TestMod:ingot139  =  ingot/Iron
+  ingotTest140  ->  TestMod:ingot140  =  ingot/Iron
+  ingotTest141  ->  TestMod:ingot141  =  ingot/Iron
+  ingotTest142  ->  TestMod:ingot142  =  ingot/Iron
+  ingotTest143  ->  TestMod:ingot143  =  ingot/Iron
+  ingotTest144  ->  TestMod:ingot144  =  ingot/Iron
+  ingotTest145  ->  TestMod:ingot145  =  ingot/Iron
+  ingotTest146  ->  TestMod:ingot146  =  ingot/Iron
+  ingotTest147  ->  TestMod:ingot147  =  ingot/Iron
+  ingotTest148  ->  TestMod:ingot148  =  ingot/Iron
+  ingotTest149  ->  TestMod:ingot149  =  ingot/Iron
+  ingotTest150  ->  TestMod:ingot150  =  ingot/Iron
+  ingotTest151  ->  TestMod:ingot151  =  ingot/Iron
+  ingotTest152  ->  TestMod:ingot152  =  ingot/Iron
+  ingotTest153  ->  TestMod:ingot153  =  ingot/Iron
+  ingotTest154  ->  TestMod:ingot154  =  ingot/Iron
+  ingotTest155  ->  TestMod:ingot155  =  ingot/Iron
+  ingotTest156  ->  TestMod:ingot156  =  ingot/Iron
+  ingotTest157  ->  TestMod:ingot157  =  ingot/Iron
+  ingotTest158  ->  TestMod:ingot158  =  ingot/Iron
+  ingotTest159  ->  TestMod:ingot159  =  ingot/Iron
+  ingotTest160  ->  TestMod:ingot160  =  ingot/Iron
+  ingotTest161  ->  TestMod:ingot161  =  ingot/Iron
+  ingotTest162  ->  TestMod:ingot162  =  ingot/Iron
+  ingotTest163  ->  TestMod:ingot163  =  ingot/Iron
+  ingotTest164  ->  TestMod:ingot164  =  ingot/Iron
+  ingotTest165  ->  TestMod:ingot165  =  ingot/Iron
+  ingotTest166  ->  TestMod:ingot166  =  ingot/Iron
+  ingotTest167  ->  TestMod:ingot167  =  ingot/Iron
+  ingotTest168  ->  TestMod:ingot168  =  ingot/Iron
+  ingotTest169  ->  TestMod:ingot169  =  ingot/Iron
+  ingotTest170  ->  TestMod:ingot170  =  ingot/Iron
+  ingotTest171  ->  TestMod:ingot171  =  ingot/Iron
+  ingotTest172  ->  TestMod:ingot172  =  ingot/Iron
+  ingotTest173  ->  TestMod:ingot173  =  ingot/Iron
+  ingotTest174  ->  TestMod:ingot174  =  ingot/Iron
+  ingotTest175  ->  TestMod:ingot175  =  ingot/Iron
+  ingotTest176  ->  TestMod:ingot176  =  ingot/Iron
+  ingotTest177  ->  TestMod:ingot177  =  ingot/Iron
+  ingotTest178  ->  TestMod:ingot178  =  ingot/Iron
+  ingotTest179  ->  TestMod:ingot179  =  ingot/Iron
+  ingotTest180  ->  TestMod:ingot180  =  ingot/Iron
+  ingotTest181  ->  TestMod:ingot181  =  ingot/Iron
+  ingotTest182  ->  TestMod:ingot182  =  ingot/Iron
+  ingotTest183  ->  TestMod:ingot183  =  ingot/Iron
+  ingotTest184  ->  TestMod:ingot184  =  ingot/Iron
+  ingotTest185  ->  TestMod:ingot185  =  ingot/Iron
+  ingotTest186  ->  TestMod:ingot186  =  ingot/Iron
+  ingotTest187  ->  TestMod:ingot187  =  ingot/Iron
+  ingotTest188  ->  TestMod:ingot188  =  ingot/Iron
+  ingotTest189  ->  TestMod:ingot189  =  ingot/Iron
+  ingotTest190  ->  TestMod:ingot190  =  ingot/Iron
+  ingotTest191  ->  TestMod:ingot191  =  ingot/Iron
+  ingotTest192  ->  TestMod:ingot192  =  ingot/Iron
+  ingotTest193  ->  TestMod:ingot193  =  ingot/Iron
+  ingotTest194  ->  TestMod:ingot194  =  ingot/Iron
+  ingotTest195  ->  TestMod:ingot195  =  ingot/Iron
+  ingotTest196  ->  TestMod:ingot196  =  ingot/Iron
+  ingotTest197  ->  TestMod:ingot197  =  ingot/Iron
+  ingotTest198  ->  TestMod:ingot198  =  ingot/Iron
+  ingotTest199  ->  TestMod:ingot199  =  ingot/Iron
+  ingotTest200  ->  TestMod:ingot200  =  ingot/Iron
+  ingotTest201  ->  TestMod:ingot201  =  ingot/Iron
+  ingotTest202  ->  TestMod:ingot202  =  ingot/Iron
+  ingotTest203  ->  TestMod:ingot203  =  ingot/Iron
+  ingotTest204  ->  TestMod:ingot204  =  ingot/Iron
+  ingotTest205  ->  TestMod:ingot205  =  ingot/Iron
+  ingotTest206  ->  TestMod:ingot206  =  ingot/Iron
+  ingotTest207  ->  TestMod:ingot207  =  ingot/Iron
+  ingotTest208  ->  TestMod:ingot208  =  ingot/Iron
+  ingotTest209  ->  TestMod:ingot209  =  ingot/Iron
+  ingotTest210  ->  TestMod:ingot210  =  ingot/Iron
+  ingotTest211  ->  TestMod:ingot211  =  ingot/Iron
+  ingotTest212  ->  TestMod:ingot212  =  ingot/Iron
+  ingotTest213  ->  TestMod:ingot213  =  ingot/Iron
+  ingotTest214  ->  TestMod:ingot214  =  ingot/Iron
+  ingotTest215  ->  TestMod:ingot215  =  ingot/Iron
+  ingotTest216  ->  TestMod:ingot216  =  ingot/Iron
+  ingotTest217  ->  TestMod:ingot217  =  ingot/Iron
+  ingotTest218  ->  TestMod:ingot218  =  ingot/Iron
+  ingotTest219  ->  TestMod:ingot219  =  ingot/Iron
+  ingotTest220  ->  TestMod:ingot220  =  ingot/Iron
+  ingotTest221  ->  TestMod:ingot221  =  ingot/Iron
+  ingotTest222  ->  TestMod:ingot222  =  ingot/Iron
+  ingotTest223  ->  TestMod:ingot223  =  ingot/Iron
+  ingotTest224  ->  TestMod:ingot224  =  ingot/Iron
+  ingotTest225  ->  TestMod:ingot225  =  ingot/Iron
+  ingotTest226  ->  TestMod:ingot226  =  ingot/Iron
+  ingotTest227  ->  TestMod:ingot227  =  ingot/Iron
+  ingotTest228  ->  TestMod:ingot228  =  ingot/Iron
+  ingotTest229  ->  TestMod:ingot229  =  ingot/Iron
+  ingotTest230  ->  TestMod:ingot230  =  ingot/Iron
+  ingotTest231  ->  TestMod:ingot231  =  ingot/Iron
+  ingotTest232  ->  TestMod:ingot232  =  ingot/Iron
+  ingotTest233  ->  TestMod:ingot233  =  ingot/Iron
+  ingotTest234  ->  TestMod:ingot234  =  ingot/Iron
+  ingotTest235  ->  TestMod:ingot235  =  ingot/Iron
+  ingotTest236  ->  TestMod:ingot236  =  ingot/Iron
+  ingotTest237  ->  TestMod:ingot237  =  ingot/Iron
+  ingotTest238  ->  TestMod:ingot238  =  ingot/Iron
+  ingotTest239  ->  TestMod:ingot239  =  ingot/Iron
+  ingotTest240  ->  TestMod:ingot240  =  ingot/Iron
+  ingotTest241  ->  TestMod:ingot241  =  ingot/Iron
+  ingotTest242  ->  TestMod:ingot242  =  ingot/Iron
+  ingotTest243  ->  TestMod:ingot243  =  ingot/Iron
+  ingotTest244  ->  TestMod:ingot244  =  ingot/Iron
+  ingotTest245  ->  TestMod:ingot245  =  ingot/Iron
+  ingotTest246  ->  TestMod:ingot246  =  ingot/Iron
+  ingotTest247  ->  TestMod:ingot247  =  ingot/Iron
+  ingotTest248  ->  TestMod:ingot248  =  ingot/Iron
+  ingotTest249  ->  TestMod:ingot249  =  ingot/Iron
+
+-- skipped --
+  ingotTofuMetal  ->  TofuCraft:item.tofuMetal  :  materials.csv skip
+
+-- recipe changes --
+  - [te_pulverizer] would remove *:ore* (12)
+  - [te_pulverizer] would remove ore 0
+  - [te_pulverizer] would remove ore 1
+  - [te_pulverizer] would remove ore 2
+  - [te_pulverizer] would remove ore 3
+  - [te_pulverizer] would remove ore 4
+  - [te_pulverizer] would remove ore 5
+  - [te_pulverizer] would remove ore 6
+  - [te_pulverizer] would remove ore 7
+  - [te_pulverizer] would remove ore 8
+  - [te_pulverizer] would remove ore 9
+  - [te_pulverizer] would remove ore 10
+  - [te_pulverizer] would remove ore 11
+  - [ic2_macerator] would remove ore 0
+  - [ic2_macerator] would remove ore 1
+  - [ic2_macerator] would remove ore 2
+  - [ic2_macerator] would remove ore 3
+  - [ic2_macerator] would remove ore 4
+  + [Smelter] gt:dust:Iron -> gt:ingot:Iron  [32t, 16EU/t]
+
+-- added per recipe map --
+  Smelter: 1
+
+-- removed per backend --
+  ic2_macerator: 5
+  te_pulverizer: 13
+
+-- notes --
+  scan budget of 20000 ms reached after 300955 ore dictionary names
+
+-- free form --
+
+-- errors --
