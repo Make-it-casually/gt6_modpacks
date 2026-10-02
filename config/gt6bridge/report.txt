@@ -1,14 +1,14 @@
 GT6 Recipe Bridge 0.4 report
-generated: 2026-10-02 23:03:18
-phase: load-complete
-links.failed: 12
-errors: 14
-timing.linkCheck.ms: 25
+generated: 2026-10-02 23:38:42
+phase: config-changed
+links.failed: 24
+errors: 36
+timing.linkCheck.ms: 0
 materials.table.rows: 0
 gt6.prefixes: 468
 oredict.names: 1
 oredict.stacks: 196
-timing.recipeReInit.ms: 276
+timing.recipeReInit.ms: 242
 autorules.available.nugget: 0
 autorules.available.purified: 0
 autorules.available.ore: 0
@@ -18,9 +18,10 @@ autorules.available.ingot: 0
 autorules.available.crushed: 0
 autorules.available.dust: 0
 autorules.available.gear: 0
-timing.autoRules.ms: 6
-timing.recipePass.ms: 4
-timing.removalPass.ms: 21
+timing.autoRules.ms: 1
+timing.recipePass.ms: 0
+removed.total: 0
+timing.removalPass.ms: 65
 
 -- unknown material tokens (add them to materials.csv) --
 
@@ -39,6 +40,11 @@ timing.removalPass.ms: 21
 -- notes --
   Recipe.reInit() called - GT6 recipe item index rebuilt after the bindings
   autorules.csv has 9 rule(s) but they are disabled by settings.csv (enableAutoRules=false)
+  removals.csv: [te_furnace] '*:ore*' matched nothing
+  removals.csv: [railcraft_rockcrusher] '*:ore*' matched nothing
+  galacticraft_compressor: dry run not available (no getRecipeList), 0 candidate stack(s) would be tried
+  removals.csv: [galacticraft_compressor] '*:ore*' matched nothing
+  removals.csv: [te_furnace] '*:dust*' matched nothing
 
 -- free form --
 
@@ -50,13 +56,13 @@ timing.removalPass.ms: 21
   forge ore dict    : true
   FML loader        : true
   FML log           : true
-  missing links     : 12
+  missing links     : 24
 
 == GT6 API diagnostics ==
   OreDictManager.INSTANCE reachable : true
   GT6 prefixes                      : 468
   GT6 materials (MATERIAL_MAP)      : 2313
-  forge ore dictionary names        : 300955
+  forge ore dictionary names        : 301028
 
 -- errors --
   link check: ItemStack.getItem() -> method not found
@@ -71,5 +77,27 @@ timing.removalPass.ms: 21
   link check: IRecipe.getRecipeOutput() -> method not found
   link check: FurnaceRecipes.smelting() -> method not found
   link check: FurnaceRecipes.getSmeltingList() -> method not found
+  link check: ItemStack.getItem() -> method not found
+  link check: ItemStack.getItemDamage() -> method not found
+  link check: ItemStack.copy() -> method not found
+  link check: Item.itemRegistry -> field not found
+  link check: RegistryNamespaced.getNameForObject(Object) -> method not found
+  link check: RegistryNamespaced.getObject(String) -> method not found
+  link check: RegistryNamespaced.getKeys() -> method not found
+  link check: CraftingManager.getInstance() -> method not found
+  link check: CraftingManager.getRecipeList() -> method not found
+  link check: IRecipe.getRecipeOutput() -> method not found
+  link check: FurnaceRecipes.smelting() -> method not found
+  link check: FurnaceRecipes.getSmeltingList() -> method not found
   diagnostics crashed: java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
   material pass crashed: java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
+  removal backend te_pulverizer failed on '*:ore*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
+  removal backend te_sawmill failed on '*:ore*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
+  unknown removal backend 'ic2_macerator' (known: [crafting, furnace, te_pulverizer, te_furnace, te_sawmill, te_crucible, te_charger, te_smelter, te_insolator, te_precipitator, te_extruder, galacticraft_compressor, galacticraft_circuitfabricator, ic2, actuallyadditions_crusher, ae2_inscriber, railcraft_rockcrusher, railcraft_cokeoven, railcraft_blastfurnace, railcraft_rolling, enderio_sagmill, enderio_alloy, enderio_slicensplice, enderio_vat, enderio_soulbinder])
+  removal backend actuallyadditions_crusher failed on '*:ore*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
+  removal backend enderio_sagmill failed on '*:ore*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
+  removal backend te_pulverizer failed on '*:raw*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
+  removal backend te_pulverizer failed on '*:crushed*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
+  unknown removal backend 'ic2_macerator' (known: [crafting, furnace, te_pulverizer, te_furnace, te_sawmill, te_crucible, te_charger, te_smelter, te_insolator, te_precipitator, te_extruder, galacticraft_compressor, galacticraft_circuitfabricator, ic2, actuallyadditions_crusher, ae2_inscriber, railcraft_rockcrusher, railcraft_cokeoven, railcraft_blastfurnace, railcraft_rolling, enderio_sagmill, enderio_alloy, enderio_slicensplice, enderio_vat, enderio_soulbinder])
+  removal backend te_smelter failed on '*:dust*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
+  unknown removal backend 'ic2_compressor' (known: [crafting, furnace, te_pulverizer, te_furnace, te_sawmill, te_crucible, te_charger, te_smelter, te_insolator, te_precipitator, te_extruder, galacticraft_compressor, galacticraft_circuitfabricator, ic2, actuallyadditions_crusher, ae2_inscriber, railcraft_rockcrusher, railcraft_cokeoven, railcraft_blastfurnace, railcraft_rolling, enderio_sagmill, enderio_alloy, enderio_slicensplice, enderio_vat, enderio_soulbinder])

@@ -177,7 +177,7 @@ key_ae2fc.key.Restock:0
 key_botaniamisc.toggleLoki:0
 key_botaniamisc.ringOfLokiClear:0
 key_botaniamisc.ringOfLokiMirror:0
-key_[GC] 星系地图:26
+key_[GC] 星系地图:55
 key_[GC]打开飞船仓库:0
 key_[GC]切换传感器护目镜模式:0
 key_iris.keybind.reload:0
@@ -265,10 +265,6 @@ key_enchiridion.key.wiki:35
 key_key.activate:47
 key_key.toggle:21
 key_nei.options.keys.gui.botania_corporea_request:46
-key_railcraft.keybind.aura.anchor:67
-key_railcraft.keybind.aura.tuning:25
-key_railcraft.keybind.aura.surveying:24
-key_railcraft.keybind.aura.signalling:23
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0

@@ -9,6 +9,10 @@
 #   bindLimit             : stop the material pass after N bindings, 0 = no limit (default 0)
 #   scanBudgetMs          : stop the ore dictionary scan after N ms, 0 = no limit (default 20000)
 #                           the pack registers ~300k ore dictionary names, so a budget is wise
+#   skipMods              : never bind items of these mod ids, comma separated (default empty)
+#   skipItems             : never bind these items - selectors like "*:itemAlloy:6" or "EnderIO:*"
+#   onlyPrefixes          : bind only these ore dictionary prefixes, e.g. "ingot,dust,plate,gear"
+#                           (empty = all of GT6's 450+ prefixes; use this to keep the first run small)
 #   logEveryBinding       : also print every binding to the game log (default false)
 #   enableAutoRules       : generate recipes from autorules.csv (default false)
 enableMaterialBinding,true
@@ -18,5 +22,8 @@ dryRun,false
 removalDryRun,true
 bindLimit,0
 scanBudgetMs,20000
+skipMods,
+skipItems,
+onlyPrefixes,
 logEveryBinding,false
 enableAutoRules,false

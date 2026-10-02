@@ -1,10 +1,13 @@
 # gt6bridge recipe additions (applied to GT6 recipe maps)
 # syntax: <map>,<inputs>,<outputs>[,eut,duration,optimize,note]
 #   <map>     : GT6 recipe map field of gregapi.data.RM, e.g. Crusher, Mortar, Shredder,
-#               Smelter, Melter, Mixer, Centrifuge, Electrolyzer, Compressor, Hammer,
-#               Bath, Canner, Boxinator, Unboxinator, Wiremill, RollingMill, Assembler ...
-#   inputs    : item tokens joined with '+'
-#   outputs   : item tokens joined with '+'
+#               Smelter, Mixer, Centrifuge, Electrolyzer, Compressor, Hammer, Bath,
+#               Canner, Boxinator, Unboxinator, Wiremill, RollingMill, Assembler, ...
+#               (report.txt lists every map name the pack has)
+#   inputs    : item tokens joined with '+' -> ONE recipe with SEVERAL inputs (not alternatives);
+#               each token may still expand to one recipe per matching stack
+#   outputs   : item tokens joined with '+'; optional '@chance' per output
+#               '@50' = 50%, '@5000' = 50% (values up to 100 = percent, above = GT6's 1/10000 unit)
 #   eut       : GT6 energy per tick (default 16)
 #   duration  : ticks (default 16, must be > 0)
 #   optimize  : GT6's first addRecipe1 flag (default true)
@@ -14,9 +17,11 @@
 #   gt:<prefix>:<material> e.g. gt:dust:Iron           (the GT6 item for that prefix+material)
 #
 # Note: for everything the material pass binds, GT6 generates machine recipes itself
-# (Crusher/Mortar/Shredder/Anvil/...). Add rows here only for what that does not cover,
-# for example Smelter/Furnace recipes or hand written conversions.
+# (Crusher/Mortar/Shredder/Anvil/...). Add rows here for the rest - alloys in the Mixer,
+# smelting chains, and conversions.
 #
-# examples:
+# examples (all disabled - remove the leading '# ' to enable):
 # Crusher,ore:ingotEnderium,gt:dust:Enderium,16,20,true,bridge test
 # Smelter,gt:dust:Enderium,gt:ingot:Enderium,16,32,true
+# Mixer,ore:ingotCopper+ore:ingotTin,gt:ingot:Bronze,30,64,true,bronze from two inputs
+# Mixer,ore:ingotGold+ore:dustRedstone+ore:dustGlowstone,gt:ingot:Electrum@100+gt:dustTiny:Redstone@25,32,128,true,byproduct example
