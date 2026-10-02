@@ -27,7 +27,7 @@ snooperEnabled:false
 fullscreen:false
 enableVsync:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 showCape:true
 touchscreen:false
@@ -265,10 +265,10 @@ key_enchiridion.key.wiki:35
 key_key.activate:47
 key_key.toggle:21
 key_nei.options.keys.gui.botania_corporea_request:46
-key_railcraft.keybind.aura.anchor:0
-key_railcraft.keybind.aura.tuning:0
-key_railcraft.keybind.aura.surveying:0
-key_railcraft.keybind.aura.signalling:0
+key_railcraft.keybind.aura.anchor:67
+key_railcraft.keybind.aura.tuning:25
+key_railcraft.keybind.aura.surveying:24
+key_railcraft.keybind.aura.signalling:23
 soundCategory_master:1.0
 soundCategory_music:1.0
 soundCategory_record:1.0

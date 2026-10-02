@@ -15966,3 +15966,1210 @@ java.lang.ArrayIndexOutOfBoundsException: 4
 [22:27:28] [ForkJoinPool.commonPool-worker-12/INFO] [OK Core]: Loaded 73 recipes
 [22:27:28] [ForkJoinPool.commonPool-worker-12/INFO] [OK Core]: DataLoader: Vanilla crafting & furnace recipes synced.
 [22:27:28] [ForkJoinPool.commonPool-worker-12/INFO] [OK Core]: DataLoader: All data successfully reloaded in Total: 380 ms.
+[22:29:05] [ForkJoinPool.commonPool-worker-27/DEBUG] [NotEnoughItems]: Loaded cofh.plugins.nei.NEICoFHConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-27/DEBUG] [NotEnoughItems]: Loaded com.InfinityRaider.AgriCraft.compatibility.NEI.NEIConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-6/INFO] [Hooklib]: Injecting hooks into class vazkii.botania.client.integration.nei.recipe.RecipeHandlerPetalApothecary
+[22:29:05] [ForkJoinPool.commonPool-worker-6/INFO] [Hooklib]: Patching method vazkii.botania.client.integration.nei.recipe.RecipeHandlerPetalApothecary#getRecipes()
+[22:29:05] [ForkJoinPool.commonPool-worker-8/DEBUG] [NotEnoughItems]: Loaded cofh.thermalfoundation.plugins.nei.NEIThermalFoundationConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-18/INFO] [ActuallyAdditions]: Initializing Not Enough Items Plugin...
+[22:29:05] [ForkJoinPool.commonPool-worker-12/INFO] [STDOUT]: [ic2.neiIntegration.core.NEIIC2Config:loadConfig:37]: IC2 NEI Submodule initialized
+[22:29:05] [ForkJoinPool.commonPool-worker-5/DEBUG] [NotEnoughItems]: Loaded zmaster587.libVulpes.NEILibVulpesConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-7/DEBUG] [NotEnoughItems]: Loaded thaumic.tinkerer.client.nei.NEIConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-7/DEBUG] [NotEnoughItems]: Loaded cpw.mods.ironchest.plugins.nei.NEIConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-29/DEBUG] [NotEnoughItems]: Loaded net.blay09.mods.cookingbook.addon.NEICookingForBlockheadsConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-24/DEBUG] [NotEnoughItems]: Loaded stevekung.mods.moreplanets.planets.kapteynb.nei.NEIKapteynBConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-26/DEBUG] [NotEnoughItems]: Loaded com.cleanroommc.modularui.integration.nei.NEIModularUIConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-13/DEBUG] [NotEnoughItems]: Loaded com.pyding.deathlyhallows.integrations.nei.NEIDHConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-9/DEBUG] [NotEnoughItems]: Loaded stevekung.mods.moreplanets.planets.nibiru.nei.NEINibiruConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-0/DEBUG] [NotEnoughItems]: Loaded bq_standard.integration.nei.NEIConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-0/INFO] [Forestry]: Loading: Forestry NEI Integration
+[22:29:05] [ForkJoinPool.commonPool-worker-4/DEBUG] [NotEnoughItems]: Loaded stevekung.mods.moreplanets.planets.diona.nei.NEIDionaConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-5/DEBUG] [NotEnoughItems]: Loaded stevekung.mods.moreplanets.planets.polongnius.nei.NEIPolongniusConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-26/DEBUG] [NotEnoughItems]: Loaded team.chisel.compat.nei.NEIChiselConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-17/DEBUG] [NotEnoughItems]: Loaded ganymedes01.etfuturum.compat.NEIEtFuturumConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-31/DEBUG] [NotEnoughItems]: Loaded micdoodle8.mods.galacticraft.planets.mars.nei.NEIGalacticraftMarsConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-24/DEBUG] [NotEnoughItems]: Loaded stevekung.mods.moreplanets.planets.fronos.nei.NEIFronosConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-30/DEBUG] [NotEnoughItems]: Loaded zmaster587.advancedRocketry.integration.nei.NEIAdvancedRocketryConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-29/DEBUG] [NotEnoughItems]: Loaded com.fouristhenumber.utilitiesinexcess.compat.nei.NEIConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-6/DEBUG] [NotEnoughItems]: Loaded alfheim.client.integration.nei.NEIAlfheimConfig
+[22:29:05] [ForkJoinPool.commonPool-worker-13/DEBUG] [NotEnoughItems]: Loaded fox.spiteful.avaritia.compat.nei.NEIAvaritiaConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-14/DEBUG] [NotEnoughItems]: Loaded tsuteto.tofufactory.integration.nei.NEIConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-8/DEBUG] [NotEnoughItems]: Loaded com.emoniph.witchery.integration.NEIWitcheryConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-14/DEBUG] [NotEnoughItems]: Loaded com.teammetallurgy.atum.integration.NEIAtumConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-28/DEBUG] [NotEnoughItems]: Loaded gregapi.NEI_GT_API_Config
+[22:29:06] [ForkJoinPool.commonPool-worker-17/DEBUG] [NotEnoughItems]: Loaded net.glease.tc4tweak.nei.NEIConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-10/DEBUG] [NotEnoughItems]: Loaded WayofTime.alchemicalWizardry.client.nei.NEIConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-26/DEBUG] [NotEnoughItems]: Loaded binnie.extratrees.nei.NEIExtraTreesConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-6/DEBUG] [NotEnoughItems]: Loaded ruiseki.okbackpack.compat.nei.NEIConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-16/INFO] [Hooklib]: Injecting hooks into class vazkii.botania.client.integration.nei.NEIInputHandler
+[22:29:06] [ForkJoinPool.commonPool-worker-16/INFO] [Hooklib]: Patching method vazkii.botania.client.integration.nei.NEIInputHandler#keyTyped(Lnet/minecraft/client/gui/inventory/GuiContainer;CI)
+[22:29:06] [ForkJoinPool.commonPool-worker-16/DEBUG] [NotEnoughItems]: Loaded vazkii.botania.client.integration.nei.NEIBotaniaConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-25/DEBUG] [NotEnoughItems]: Loaded tsuteto.tofu.recipe.nei.NEIConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-8/DEBUG] [NotEnoughItems]: Loaded lumien.randomthings.Handler.ModCompability.NEI.NEIRandomThingsConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-11/DEBUG] [NotEnoughItems]: Loaded galaxyspace.core.client.nei.NEIGalaxySpaceConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-15/DEBUG] [NotEnoughItems]: Loaded li.cil.oc.integration.nei.NEIOpenComputersConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-22/DEBUG] [NotEnoughItems]: Loaded mariculture.plugins.nei.NEIConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-19/DEBUG] [NotEnoughItems]: Loaded micdoodle8.mods.galacticraft.core.nei.NEIGalacticraftConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-18/DEBUG] [NotEnoughItems]: Loaded de.ellpeck.actuallyadditions.mod.nei.NEIActuallyAdditionsConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-28/DEBUG] [NotEnoughItems]: Loaded com.mjr.extraplanets.nei.NEIExtraPlanetsConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-0/DEBUG] [NotEnoughItems]: Loaded forestry.core.recipes.nei.NEIIntegrationConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-12/DEBUG] [NotEnoughItems]: Loaded ic2.neiIntegration.core.NEIIC2Config
+[22:29:06] [ForkJoinPool.commonPool-worker-29/DEBUG] [NotEnoughItems]: Loaded cofh.thermalexpansion.plugins.nei.NEIThermalExpansionConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-16/DEBUG] [NotEnoughItems]: Loaded com.kuba6000.mobsinfo.nei.NEI_Config
+[22:29:06] [ForkJoinPool.commonPool-worker-0/DEBUG] [NotEnoughItems]: Loaded de.katzenpapst.amunra.nei.NEIAmunRaConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-16/DEBUG] [NotEnoughItems]: Loaded micdoodle8.mods.galacticraft.planets.asteroids.nei.NEIGalacticraftAsteroidsConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-16/DEBUG] [NotEnoughItems]: Loaded stevekung.mods.moreplanets.core.nei.NEIMorePlanetsConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-22/DEBUG] [NotEnoughItems]: Loaded binnie.genetics.nei.NEIGeneticsConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-18/DEBUG] [NotEnoughItems]: Loaded crazypants.enderio.nei.NEIEnderIOConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-22/DEBUG] [NotEnoughItems]: Loaded ganymedes01.ganyssurface.integration.NEIGanysSurfaceConfig
+[22:29:06] [ForkJoinPool.commonPool-worker-15/ERROR] [NotEnoughItems]: Ommiting mariculture.core.blocks.items.ItemBlockRock@3af9d91:5 ItemBlockRock
+java.lang.NullPointerException
+	at mariculture.lib.base.ItemBlockBase.func_77653_i(ItemBlockBase.java:29) ~[?:?]
+	at net.minecraft.item.ItemStack.func_82833_r(ItemStack.java:427) ~[?:?]
+	at codechicken.nei.ItemListLoader.damageSearch(ItemListLoader.java:52) ~[?:?]
+	at codechicken.nei.ItemListLoader.getPermutations(ItemListLoader.java:122) ~[?:?]
+	at codechicken.nei.ItemListLoader.lambda$gatherItems$12(ItemListLoader.java:202) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:06] [ForkJoinPool.commonPool-worker-8/ERROR] [NotEnoughItems]: Removing item: vazkii.botania.common.item.brew.ItemIncenseStick@2b21852c from list.
+null: java.lang.NullPointerException
+	at vazkii.botania.common.item.brew.ItemIncenseStick.getItemForBrew(ItemIncenseStick.java:131)
+	at vazkii.botania.common.item.brew.ItemIncenseStick.func_150895_a(ItemIncenseStick.java:52)
+	at codechicken.nei.ItemListLoader.getPermutations(ItemListLoader.java:118)
+	at codechicken.nei.ItemListLoader.lambda$gatherItems$12(ItemListLoader.java:202)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source)
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+[22:29:06] [ForkJoinPool.commonPool-worker-15/ERROR] [NotEnoughItems]: Ommiting mariculture.core.blocks.items.ItemBlockMetal@6d46e4c4:6 ItemBlockMetal
+java.lang.NullPointerException
+	at mariculture.lib.base.ItemBlockBase.func_77653_i(ItemBlockBase.java:29) ~[?:?]
+	at net.minecraft.item.ItemStack.func_82833_r(ItemStack.java:427) ~[?:?]
+	at codechicken.nei.ItemListLoader.damageSearch(ItemListLoader.java:52) ~[?:?]
+	at codechicken.nei.ItemListLoader.getPermutations(ItemListLoader.java:122) ~[?:?]
+	at codechicken.nei.ItemListLoader.lambda$gatherItems$12(ItemListLoader.java:202) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:06] [ForkJoinPool.commonPool-worker-17/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xic2.itemToolHoe@26(ic2.core.item.tool.ItemElectricToolHoe@3cd5807)
+[22:29:06] [ForkJoinPool.commonPool-worker-27/WARN] [FML]: NEI: Forced tag update with reason (getFluid) for 1xic2.itemFluidCell@0(ic2.core.item.ItemFluidCell@7a40407e)
+[22:29:06] [ForkJoinPool.commonPool-worker-6/WARN] [FML]: NEI: Forced tag update with reason (showDurabilityBar) for 1xitem.manaTablet@0(vazkii.botania.common.item.ItemManaTablet@5b148c6)
+[22:29:06] [ForkJoinPool.commonPool-worker-6/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.manaMirror@0(vazkii.botania.common.item.ItemManaMirror@4f377e74)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xic2.itemTurningBlanks@349525(ic2.core.item.resources.ItemLatheDefault@3b14c369)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xic2.itemTurningBlanksWood@209715(ic2.core.item.resources.ItemLatheDefault@2e71258c)
+[22:29:06] [ForkJoinPool.commonPool-worker-6/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.manaRing@10000(vazkii.botania.common.item.equipment.bauble.ItemManaRing@1b762614)
+[22:29:06] [ForkJoinPool.commonPool-worker-6/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.manaRingGreater@10000(vazkii.botania.common.item.equipment.bauble.ItemGreaterManaRing@2f4d27e)
+[22:29:06] [ForkJoinPool.commonPool-worker-6/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.manaInkwell@150(vazkii.botania.common.item.interaction.thaumcraft.ItemManaInkwell@62cd5800)
+[22:29:06] [ForkJoinPool.commonPool-worker-6/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.manaInkwell@0(vazkii.botania.common.item.interaction.thaumcraft.ItemManaInkwell@62cd5800)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getFluid) for 1xic2.itemFoamSprayer@0(ic2.core.item.tool.ItemSprayer@6395a1be)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xic2.itemToolDrill@26(ic2.core.item.tool.ItemDrillStandard@46e4089d)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xic2.itemToolDDrill@26(ic2.core.item.tool.ItemDrillDiamond@7961afc3)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xic2.itemToolChainsaw@26(ic2.core.item.tool.ItemElectricToolChainsaw@121703e7)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xic2.itemTreetapElectric@26(ic2.core.item.tool.ItemTreetapElectric@19c4ad16)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xic2.itemToolMiningLaser@26(ic2.core.item.tool.ItemToolMiningLaser@77b2eb7b)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xic2.itemNanoSaber@26(ic2.core.item.tool.ItemNanoSaber@6cf628)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xic2.plasmaLauncher@26(ic2.core.item.tool.PlasmaLauncher@5654b82a)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xic2.windmeter@26(ic2.core.item.tool.ItemWindmeter@dff2821)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getFluid) for 1xic2.itemArmorJetpack@27(ic2.core.item.armor.ItemArmorJetpack@217d82a2)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getFluid) for 1xic2.itemArmorJetpackElectric@27(ic2.core.item.armor.ItemArmorJetpackElectric@6135e255)
+[22:29:06] [ForkJoinPool.commonPool-worker-25/WARN] [FML]: NEI: Forced tag update with reason (getFluid) for 1xic2.itemArmorCFPack@27(ic2.core.item.armor.ItemArmorCFPack@1ff1a685)
+[22:29:07] [ForkJoinPool.commonPool-worker-6/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.FenrirClaws@0(alfheim.common.item.equipment.tool.ItemFenrirClaws@14c8aa28)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.manaMirrorImba@0(alfheim.common.item.ItemManaMirrorImba@6d87e856)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.ManaRingElven@1000(alfheim.common.item.equipment.bauble.ItemManaStorageRing@7dd9d236)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.ManaRingGod@1000(alfheim.common.item.equipment.bauble.ItemManaStorageRing@7dea0723)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.ManaRingPink@1000(alfheim.common.item.equipment.bauble.ItemManaStorageRing@494c6181)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.ManaStone@1000(alfheim.common.item.ItemManaStorage@5ebfcc60)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getDamage) for 1xitem.ManaStoneGreater@1000(alfheim.common.item.ItemManaStorage@a6272b8)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@0(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@1(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@2(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@3(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@4(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@5(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@6(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@7(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@8(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@9(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@10(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (isDamaged) for 1xitem.witchery:poppet@11(com.emoniph.witchery.item.ItemPoppet@4617f1e3)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (showDurabilityBar) for 1xitem.SoulSword@0(alfheim.common.item.equipment.tool.ItemSoulSword@7430ab7f)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xitem.draconicevolution:draconicDistructionStaff@0(com.brandon3055.draconicevolution.common.items.tools.DraconicDistructionStaff@275900ec)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xitem.draconicevolution:draconicPickaxe@0(com.brandon3055.draconicevolution.common.items.tools.DraconicPickaxe@55daf364)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xitem.draconicevolution:draconicAxe@0(com.brandon3055.draconicevolution.common.items.tools.DraconicAxe@6c79370f)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xitem.draconicevolution:draconicShovel@0(com.brandon3055.draconicevolution.common.items.tools.DraconicShovel@5e413d7b)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundHelmetWater@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourWater@5970e9ce)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundPlateWater@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourWater@3cb1ebdd)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundLeggingsWater@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourWater@36a9a92d)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundBootsWater@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourWater@2d504b33)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundHelmetEarth@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourEarth@591fedfd)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundPlateEarth@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourEarth@612ad1a0)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundLeggingsEarth@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourEarth@41124f0d)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundBootsEarth@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourEarth@6c4e6d62)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xitem.draconicevolution:wyvernPickaxe@0(com.brandon3055.draconicevolution.common.items.tools.WyvernPickaxe@17c3f272)
+[22:29:07] [ForkJoinPool.commonPool-worker-18/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xitem.draconicevolution:wyvernShovel@0(com.brandon3055.draconicevolution.common.items.tools.WyvernShovel@45daa00c)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundHelmetWind@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourWind@484f37df)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundPlateWind@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourWind@79b957a4)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundLeggingsWind@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourWind@4bcab3d0)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundBootsWind@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourWind@4632b95e)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundHelmetFire@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourFire@f850759)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundPlateFire@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourFire@2e52dfed)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundLeggingsFire@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourFire@3c3436f2)
+[22:29:07] [ForkJoinPool.commonPool-worker-12/WARN] [FML]: NEI: Forced tag update with reason (getAttributeModifiers) for 1xitem.boundBootsFire@0(WayofTime.alchemicalWizardry.common.items.armour.OmegaArmourFire@34ef9ec8)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xitem.boundPickaxe@0(WayofTime.alchemicalWizardry.common.items.BoundPickaxe@75a3989d)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xitem.boundAxe@0(WayofTime.alchemicalWizardry.common.items.BoundAxe@3a5cc811)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getDigSpeed) for 1xitem.boundShovel@0(WayofTime.alchemicalWizardry.common.items.BoundShovel@552a4fb9)
+[22:29:07] [ForkJoinPool.commonPool-worker-19/WARN] [FML]: NEI: Forced tag update with reason (getToolClasses) for 1xitem.multiTool@0(WayofTime.alchemicalWizardry.api.items.ItemSpellMultiTool@713417a3)
+[22:29:07] [ForkJoinPool.commonPool-worker-25/DEBUG] [MobsInfo[Random comparisons]]: Optimized 3 random comparisons in enviromine.items.EnviroItemPolymerWaterBottle
+[22:29:09] [ForkJoinPool.commonPool-worker-22/INFO] [SuperWrapper]: Patching SuperWrapper container alfheim.common.core.asm.superwrapper.SuperWrapperHandler
+[22:29:09] [ForkJoinPool.commonPool-worker-22/INFO] [SuperWrapper]: Patching SuperWrapper addInformation
+[22:29:09] [ForkJoinPool.commonPool-worker-22/INFO] [SuperWrapper]: Patching SuperWrapper container alfheim.common.core.asm.superwrapper.SuperWrapperHandler
+[22:29:09] [ForkJoinPool.commonPool-worker-22/INFO] [SuperWrapper]: Patching SuperWrapper canDespawn
+[22:29:09] [ForkJoinPool.commonPool-worker-22/INFO] [SuperWrapper]: Patching SuperWrapper container alfheim.common.core.asm.superwrapper.SuperWrapperHandler
+[22:29:09] [ForkJoinPool.commonPool-worker-22/INFO] [SuperWrapper]: Patching SuperWrapper canPlaceBlockOn
+[22:29:09] [ForkJoinPool.commonPool-worker-22/INFO] [SuperWrapper]: Patching SuperWrapper container alfheim.common.core.asm.superwrapper.SuperWrapperHandler
+[22:29:09] [ForkJoinPool.commonPool-worker-22/INFO] [SuperWrapper]: Patching SuperWrapper dropRareDrop
+[22:29:09] [ForkJoinPool.commonPool-worker-22/INFO] [SuperWrapper]: Trying to make 4 changes in alfheim.common.core.asm.superwrapper.SuperWrapperHandler(alfheim.common.core.asm.superwrapper.SuperWrapperHandler)
+[22:29:11] [ForkJoinPool.commonPool-worker-5/ERROR] [Brandon's Core]: Invalid Lore Format! Lore myst start with the number of lines "3Line 1\nLine 2\nLine 3"
+[22:29:11] [ForkJoinPool.commonPool-worker-5/ERROR] [Brandon's Core]: Invalid Lore Format! Lore myst start with the number of lines "3Line 1\nLine 2\nLine 3"
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@4809533e:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelArmor.addDetailedEntries(ItemDarkSteelArmor.java:197) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@542b5760:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelArmor.addDetailedEntries(ItemDarkSteelArmor.java:197) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@334deb5f:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelArmor.addDetailedEntries(ItemDarkSteelArmor.java:197) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@6a3a56b0:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelArmor.addDetailedEntries(ItemDarkSteelArmor.java:197) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@17e2fee5:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelSword.addDetailedEntries(ItemDarkSteelSword.java:315) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@19fc3b2e:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelPickaxe.addDetailedEntries(ItemDarkSteelPickaxe.java:315) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@45b72c5d:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelAxe.addDetailedEntries(ItemDarkSteelAxe.java:304) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@7d006d8d:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelArmor.addDetailedEntries(ItemDarkSteelArmor.java:197) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@7d15b11e:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelArmor.addDetailedEntries(ItemDarkSteelArmor.java:197) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@548c0d9:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelArmor.addDetailedEntries(ItemDarkSteelArmor.java:197) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@79e1c1e9:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelArmor.addDetailedEntries(ItemDarkSteelArmor.java:197) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@773b75d:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelSword.addDetailedEntries(ItemDarkSteelSword.java:315) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@57be6bec:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelPickaxe.addDetailedEntries(ItemDarkSteelPickaxe.java:315) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@143327ca:
+java.lang.ArrayIndexOutOfBoundsException: 4
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.getAbsorptionRatio(EnergyUpgrade.java:262) ~[?:?]
+	at crazypants.enderio.item.darksteel.upgrade.EnergyUpgrade.addDetailedEntries(EnergyUpgrade.java:225) ~[?:?]
+	at crazypants.enderio.item.darksteel.DarkSteelRecipeManager.addAdvancedTooltipEntries(DarkSteelRecipeManager.java:213) ~[?:?]
+	at crazypants.enderio.item.darksteel.ItemDarkSteelAxe.addDetailedEntries(ItemDarkSteelAxe.java:304) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.hasDetailedTooltip(SpecialTooltipHandler.java:136) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addInformation(SpecialTooltipHandler.java:119) ~[?:?]
+	at com.enderio.core.client.handlers.SpecialTooltipHandler.addTooltip(SpecialTooltipHandler.java:62) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_1662_SpecialTooltipHandler_addTooltip_ItemTooltipEvent.invoke(.dynamic) ~[?:?]
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraftforge.event.ForgeEventFactory.onItemTooltip(ForgeEventFactory.java:169) ~[forge-1.7.10-10.13.4.1614-1.7.10.jar:?]
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:626) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getTooltip(TooltipFilter.java:56) ~[?:?]
+	at codechicken.nei.search.TooltipFilter.getSearchTooltip(TooltipFilter.java:43) ~[?:?]
+	at codechicken.nei.ItemListLoader$2.lambda$execute$0(ItemListLoader.java:309) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) [?:1.8.0_421]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source) [?:1.8.0_421]
+	at java.util.stream.ForEachOps$ForEachTask.compute(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.CountedCompleter.exec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_421]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_421]
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: Index: 29 Listeners:
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 0: HIGHEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 1: ASM: gregapi.GT_API_Proxy_Client@4705451b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 2: ASM: alfheim.common.block.BlockRaceSelector$Companion@1a716a65 addInfoWhenESMDisabled(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 3: ASM: vazkii.botania.client.core.handler.TooltipHandler@780d19a5 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 4: NORMAL
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 5: ASM: thaumcraft.common.lib.events.EventHandlerRunic@68124a13 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 6: ASM: forestry.apiculture.EventHandlerApiculture@6ade395b addFrameTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 7: ASM: minetweaker.mc1710.ForgeEventHandler@731990f0 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 8: ASM: alfheim.common.core.handler.WorkInProgressItemsHandler@445585ba onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 9: ASM: com.brandon3055.draconicevolution.common.handler.MinecraftForgeEventHandler@1ae29e6 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 10: ASM: crazypants.enderio.machine.painter.BlockPaintedGlowstone$PainterTemplate@19b9fade onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 11: ASM: mariculture.core.gui.GuiItemToolTip@5ef78067 addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 12: ASM: mariculture.fishery.BaitListingsHandler@7bac12dd addToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 13: ASM: com.pam.harvestcraft.PamTooltipEventHandler@2d7cbe21 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 14: ASM: lumien.randomthings.Handler.RTEventHandler@450d6dbe toolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 15: ASM: com.pengu.thaumcraft.additions.proxy.KeyBindings@25f0a716 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 16: ASM: de.ellpeck.actuallyadditions.mod.event.TooltipEvent@200ff9a0 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 17: ASM: serverutils.handlers.ServerUtilitiesClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 18: ASM: com.gtnewhorizon.gtnhlib.util.AnimatedTooltipHandler renderTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 19: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addClipperTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 20: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addSeedStatsTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 21: ASM: com.InfinityRaider.AgriCraft.handler.ItemToolTipHandler@636763e9 addTrowelTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 22: ASM: alfheim.common.block.BlockDoubleCamo$Companion@cdfc2ba provideCompositeDetails(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 23: ASM: alfheim.common.crafting.recipe.tuner.IncantationEquipmentElementalTuning$Companion@5b434ef4 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 24: ASM: alfheim.common.core.handler.SheerColdHandler@36ca0cbd blockTemperatureInfo(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 25: ASM: alfheim.client.core.handler.EventHandlerClient@12e038a8 drawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 26: ASM: fox.spiteful.avaritia.LudicrousEvents@3ba4ceea onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 27: ASM: fox.spiteful.forbidden.FMEventHandler@5ff9afc2 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 28: ASM: com.pyding.deathlyhallows.events.DHEvents@199245bd tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 29: ASM: INSTANCE addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 30: ASM: com.enderio.core.client.handlers.OreDictTooltipHandler@52b62ef6 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 31: ASM: com.enderio.core.client.handlers.EnchantTooltipHandler@41ed44fb handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 32: ASM: crazypants.enderio.conduit.item.filter.ClearFilterRecipe@37ff501 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 33: ASM: crazypants.enderio.machine.ClearConfigRecipe@638e6081 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 34: ASM: enviromine.handlers.EM_EventManager@5265beb3 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 35: ASM: ganymedes01.etfuturum.core.handlers.ClientEventHandler@79dd5297 toolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 36: ASM: modtweaker2.ClientEvents@65e60dae onDrawTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 37: ASM: thebetweenlands.event.item.ItemTooltipHandler@e22f2cb onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 38: ASM: taintedmagic.common.handler.TMEventHandler@5be3e874 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 39: ASM: tb.common.event.TBEventHandler@2637a9f makeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 40: ASM: com.ilya3point999k.thaumicconcilium.common.events.TCEntityEventHandler@1d568f0c on(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 41: LOWEST
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 42: ASM: net.glease.tc4tweak.ClientProxy@7f21eeee onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 43: ASM: alfheim.common.integration.thaumcraft.ThaumcraftAlfheimModule@38a000f3 showAspects(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 44: ASM: alexsocol.patcher.handler.PatcherEventHandlerClient@5807e053 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:13] [ForkJoinPool.commonPool-worker-5/ERROR] [FML]: 45: ASM: iguanaman.hungeroverhaul.util.IguanaEventHook@1aa4d9d5 renderTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[22:29:14] [ForkJoinPool.commonPool-worker-0/DEBUG] [MobsInfo[Random comparisons]]: Optimized 2 random comparisons in alfheim.common.world.gen.HeartWoodTreeGen
