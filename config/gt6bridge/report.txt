@@ -1,0 +1,75 @@
+GT6 Recipe Bridge 0.4 report
+generated: 2026-10-02 22:26:44
+phase: load-complete
+links.failed: 12
+errors: 14
+timing.linkCheck.ms: 24
+materials.table.rows: 0
+gt6.prefixes: 468
+oredict.names: 1
+oredict.stacks: 196
+timing.recipeReInit.ms: 259
+autorules.available.nugget: 0
+autorules.available.purified: 0
+autorules.available.ore: 0
+autorules.available.dusttiny: 0
+autorules.available.plate: 0
+autorules.available.ingot: 0
+autorules.available.crushed: 0
+autorules.available.dust: 0
+autorules.available.gear: 0
+timing.autoRules.ms: 10
+timing.recipePass.ms: 4
+timing.removalPass.ms: 27
+
+-- unknown material tokens (add them to materials.csv) --
+
+-- ore dictionary names without a GT6 prefix --
+
+-- bindings --
+
+-- skipped --
+
+-- recipe changes --
+
+-- added per recipe map --
+
+-- removed per backend --
+
+-- notes --
+  Recipe.reInit() called - GT6 recipe item index rebuilt after the bindings
+  autorules.csv has 9 rule(s) but they are disabled by settings.csv (enableAutoRules=false)
+
+-- free form --
+
+== runtime link check (do the compile-time stubs match the real classes?) ==
+  vanilla itemstack : false
+  vanilla registry  : false
+  vanilla crafting  : false
+  vanilla furnace   : false
+  forge ore dict    : true
+  FML loader        : true
+  FML log           : true
+  missing links     : 12
+
+== GT6 API diagnostics ==
+  OreDictManager.INSTANCE reachable : true
+  GT6 prefixes                      : 468
+  GT6 materials (MATERIAL_MAP)      : 2313
+  forge ore dictionary names        : 300955
+
+-- errors --
+  link check: ItemStack.getItem() -> method not found
+  link check: ItemStack.getItemDamage() -> method not found
+  link check: ItemStack.copy() -> method not found
+  link check: Item.itemRegistry -> field not found
+  link check: RegistryNamespaced.getNameForObject(Object) -> method not found
+  link check: RegistryNamespaced.getObject(String) -> method not found
+  link check: RegistryNamespaced.getKeys() -> method not found
+  link check: CraftingManager.getInstance() -> method not found
+  link check: CraftingManager.getRecipeList() -> method not found
+  link check: IRecipe.getRecipeOutput() -> method not found
+  link check: FurnaceRecipes.smelting() -> method not found
+  link check: FurnaceRecipes.getSmeltingList() -> method not found
+  diagnostics crashed: java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
+  material pass crashed: java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;

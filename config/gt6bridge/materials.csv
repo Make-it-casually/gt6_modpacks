@@ -1,0 +1,13 @@
+# gt6bridge material table
+# syntax: <oredictMaterialToken>,<gt6Material>[,note]
+#   <oredictMaterialToken> : the part of an ore dictionary name behind the prefix, e.g. 'Enderium' for 'ingotEnderium'
+#   <gt6Material>          : GT6 material name to bind it to (see GregTech's material list), or '-' to skip binding
+#   unmatched tokens are listed in report.txt so you can add lines here
+#
+# After the first run, report.txt contains a section "unknown material tokens" - paste the
+# entries you want to act on below. Material names are Capitalised and case sensitive.
+#
+# examples:
+# Enderium,Enderium
+# Signalum,Lumium
+# Unobtainium,-,intentionally skipped

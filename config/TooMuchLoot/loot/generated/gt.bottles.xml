@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LootGroup category="gt.bottles" loading_mode="OVERRIDE" count_min="8" count_max="24">
+    <loot item="minecraft:experience_bottle" damage="0" weight="288" count_min="1" count_max="1"/>
+    <loot item="minecraft:glass_bottle" damage="0" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="1100" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="1102" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="1200" weight="144" count_min="1" count_max="1"/>
+    <loot item="etfuturum:honey_bottle" damage="0" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="32763" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="2200" weight="72" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="2201" weight="36" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="2200" weight="36" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="32762" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="32766" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="32764" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="32765" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="1700" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="32000" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="32001" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="701" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="1600" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="3500" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="3700" weight="36" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="30000" weight="36" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="30001" weight="36" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.bottles" damage="204" weight="36" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="8194" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="16394" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="8201" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="16392" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="8193" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="16389" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="16388" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="16396" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="8195" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="8198" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="8205" weight="144" count_min="1" count_max="1"/>
+    <loot item="minecraft:potion" damage="8206" weight="144" count_min="1" count_max="1"/>
+</LootGroup>

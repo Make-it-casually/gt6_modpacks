@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LootGroup category="strongholdLibrary" loading_mode="OVERRIDE" count_min="9" count_max="21">
+    <loot item="minecraft:book" damage="0" weight="20" count_min="1" count_max="3"/>
+    <loot item="minecraft:paper" damage="0" weight="20" count_min="2" count_max="7"/>
+    <loot item="minecraft:map" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="minecraft:compass" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="minecraft:enchanted_book" damage="0" weight="2" count_min="1" count_max="5"/>
+    <loot item="MagicBees:frameOblivion" damage="0" weight="23" count_min="1" count_max="3"/>
+    <loot item="VillageNames:codex" damage="0" weight="20" count_min="1" count_max="3"/>
+    <loot item="MineFactoryReloaded:rubberwood.sapling" damage="3" weight="1" count_min="1" count_max="1"/>
+    <loot item="OpenComputers:item" damage="4" weight="5" count_min="1" count_max="1"/>
+    <loot item="HardcoreEnderExpansion:adventurers_diary" damage="0" weight="8" count_min="1" count_max="1"/>
+    <loot item="HardcoreEnderExpansion:temple_caller" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="HardcoreEnderExpansion:knowledge_note" damage="0" weight="9" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemLootBag" damage="0" weight="4" count_min="1" count_max="3"/>
+    <loot item="Thaumcraft:ItemResource" damage="2" weight="4" count_min="1" count_max="3"/>
+    <loot item="Thaumcraft:ItemResource" damage="6" weight="4" count_min="1" count_max="3"/>
+    <loot item="Thaumcraft:ItemLootBag" damage="1" weight="3" count_min="1" count_max="2"/>
+    <loot item="Thaumcraft:ItemBaubleBlanks" damage="0" weight="3" count_min="1" count_max="2"/>
+    <loot item="Thaumcraft:ItemBaubleBlanks" damage="1" weight="3" count_min="1" count_max="2"/>
+    <loot item="Thaumcraft:ItemBaubleBlanks" damage="2" weight="3" count_min="1" count_max="2"/>
+    <loot item="Thaumcraft:ItemResource" damage="9" weight="3" count_min="1" count_max="2"/>
+    <loot item="Thaumcraft:ItemResource" damage="9" weight="20" count_min="3" count_max="6"/>
+    <loot item="Thaumcraft:ItemLootBag" damage="2" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemThaumonomicon" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemSwordThaumium" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemPickThaumium" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemAxeThaumium" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemHoeThaumium" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemRingRunic" damage="0" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemBaubleBlanks" damage="3" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemBaubleBlanks" damage="4" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemBaubleBlanks" damage="5" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemBaubleBlanks" damage="6" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemBaubleBlanks" damage="7" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemBaubleBlanks" damage="8" weight="1" count_min="1" count_max="1"/>
+    <loot item="Thaumcraft:ItemAmuletVis" damage="0" nbt="{aer:0,perditio:200,aqua:0,ignis:300,terra:100,ordo:400}" weight="1" count_min="1" count_max="1"/>
+    <loot item="etfuturum:beetroot_seeds" damage="0" weight="5" count_min="1" count_max="2"/>
+    <loot item="ThaumicConcilium:ItemResource" damage="3" weight="10" count_min="1" count_max="1"/>
+    <loot item="waystones:warpScroll" damage="0" weight="2" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="7990" weight="1" count_min="1" count_max="9"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="7991" weight="1" count_min="1" count_max="8"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="7992" weight="1" count_min="1" count_max="7"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="7993" weight="1" count_min="1" count_max="6"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="7994" weight="1" count_min="1" count_max="5"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="7995" weight="1" count_min="1" count_max="4"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="7996" weight="1" count_min="1" count_max="3"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="7997" weight="1" count_min="1" count_max="2"/>
+    <loot item="gregtech:gt.multiitem.randomtools" damage="7998" weight="1" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.multiitem.books" damage="32765" weight="40" count_min="4" count_max="8"/>
+    <loot item="gregtech:gt.multiitem.books" damage="32766" weight="20" count_min="4" count_max="16"/>
+</LootGroup>

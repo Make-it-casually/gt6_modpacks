@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LootGroup category="gt.flawless" loading_mode="OVERRIDE" count_min="8" count_max="24">
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8300" weight="2160" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8424" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8301" weight="1152" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8323" weight="432" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8324" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8384" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8385" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8386" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8387" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8302" weight="720" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8328" weight="576" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8305" weight="576" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8383" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8315" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8314" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8322" weight="144" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8313" weight="576" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8310" weight="576" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8321" weight="576" count_min="1" count_max="1"/>
+    <loot item="gregtech:gt.meta.gemFlawless" damage="8333" weight="432" count_min="1" count_max="1"/>
+</LootGroup>

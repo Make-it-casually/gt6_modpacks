@@ -1,0 +1,5 @@
+gt6bridge 0.4 - pre-init material creation
+
+nothing created (no 'create:' rows, or all materials already existed)
+
+materials now known by GT6: 2200

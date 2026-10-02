@@ -1,0 +1,3318 @@
+<!-->
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="true">
+	<Recipe timeRequired="40" power="20">
+		<input>
+			<itemStack>advancedRocketry:item.carbonScrubberCartridge;1;32767</itemStack>
+		</input>
+		<output>
+			<itemStack>advancedRocketry:item.carbonScrubberCartridge</itemStack>
+			<itemStack>minecraft:coal;1;1</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="1">
+		<input>
+			<itemStack>minecraft:bone</itemStack>
+			<fluidStack>advancedRocketry:nitrogen;10</fluidStack>
+		</input>
+		<output>
+			<itemStack>minecraft:dye;5;15</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<fluidStack>advancedRocketry:oxygen;10</fluidStack>
+			<fluidStack>advancedRocketry:hydrogen;10</fluidStack>
+		</input>
+		<output>
+			<fluidStack>advancedRocketry:rocketfuel;20</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:iridium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:iridium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorNanoChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorNanoChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I50</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I50;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemBootsRobe</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemBootsRobe;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:white_crystal_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:white_crystal_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemBootsCultist</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemBootsCultist;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:whiteGemHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:whiteGemHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorNanoBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorNanoBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemChestplateVoid</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemChestplateVoid;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:greenDiamondChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:greenDiamondChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:manaweaveHelm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:manaweaveHelm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:mercuryLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:mercuryLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemLeggingsVoidFortress</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemLeggingsVoidFortress;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:chainmail_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:chainmail_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemBootsCrystalBlack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemBootsCrystalBlack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:manasteelBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:manasteelBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorQuantumHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorQuantumHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:tungstenChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:tungstenChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:zincChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:zincChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemPantsEmerald</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemPantsEmerald;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:terrasteelHelm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:terrasteelHelm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:iron_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:iron_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I7</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I7;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemBootsVoid</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemBootsVoid;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:purple_crystal_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:purple_crystal_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemLeggingsThaumium</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemLeggingsThaumium;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemChestplateCultistRobe</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemChestplateCultistRobe;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:fronisium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:fronisium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorJetpackElectric</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorJetpackElectric;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:fronisium_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:fronisium_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorJetpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorJetpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemChestplateThaumium</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemChestplateThaumium;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:magnesiumChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:magnesiumChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:koentus_meteor_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:koentus_meteor_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:terrasteelHelmReveal</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:terrasteelHelmReveal;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I72</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I72;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:redGemLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:redGemLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:scuba_suit</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:scuba_suit;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorHazmatLeggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorHazmatLeggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:jetpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:jetpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:iridium_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:iridium_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:cheese_leather_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:cheese_leather_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:elementiumHelmReveal</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:elementiumHelmReveal;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:uraniumLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:uraniumLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:greenDiamondLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:greenDiamondLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:palladiumLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:palladiumLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:blueGemHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:blueGemHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBronzeBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBronzeBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemLeggingsCultistLeaderPlate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemLeggingsCultistLeaderPlate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemLeggingsCultistRobe</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemLeggingsCultistRobe;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftMars:item.titanium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftMars:item.titanium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:scuba_tank</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:scuba_tank;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorAdvBatpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorAdvBatpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:BootsTraveller</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:BootsTraveller;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftCore:item.steel_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftCore:item.steel_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:diving_pants</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:diving_pants;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemHelmCrystalWhite</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemHelmCrystalWhite;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemPantsCrystalBlack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemPantsCrystalBlack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:carbonLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:carbonLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemPantsCrystalBlue</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemPantsCrystalBlue;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemBootsCrystalLightBlue</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemBootsCrystalLightBlue;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:purple_crystal_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:purple_crystal_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:redGemChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:redGemChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:polongnius_meteor_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:polongnius_meteor_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemChestQuartz</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemChestQuartz;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>etfuturum:netherite_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>etfuturum:netherite_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.biochemgas.chest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.biochemgas.chest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:palladium_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:palladium_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:ice_crystal_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:ice_crystal_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:purple_crystal_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:purple_crystal_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:cheese_leather_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:cheese_leather_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>etfuturum:netherite_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>etfuturum:netherite_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:elementiumLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:elementiumLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:elementiumChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:elementiumChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:yellowDiamondChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:yellowDiamondChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:red_gem_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:red_gem_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBronzeHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBronzeHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:leather_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:leather_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:yellowDiamondLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:yellowDiamondLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemChestEmerald</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemChestEmerald;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:ice_crystal_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:ice_crystal_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalaxySpace:item.cobalt_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalaxySpace:item.cobalt_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:quontonium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:quontonium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:diamond_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:diamond_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemBootsCrystalWhite</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemBootsCrystalWhite;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftMars:item.deshChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftMars:item.deshChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.insect.head</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.insect.head;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I75</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I75;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:iridium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:iridium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemStaticBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemStaticBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemBootsEmerald</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemBootsEmerald;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemBootsQuartz</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemBootsQuartz;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:fronisium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:fronisium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:uraniumChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:uraniumChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_ice_crystal_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_ice_crystal_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.insect.legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.insect.legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemChestCrystalBlue</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemChestCrystalBlue;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemHelmCrystalGreen</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemHelmCrystalGreen;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:scuba_mask</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:scuba_mask;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:sulfur_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:sulfur_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>etfuturum:netherite_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>etfuturum:netherite_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.universal.chest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.universal.chest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:whiteGemChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:whiteGemChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:sulfur_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:sulfur_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:red_gem_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:red_gem_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:quontonium_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:quontonium_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemSolarHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemSolarHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:redDiamondChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:redDiamondChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:koentus_meteor_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:koentus_meteor_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorNanoHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorNanoHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:frozen_iron_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:frozen_iron_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:white_crystal_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:white_crystal_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:zincLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:zincLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:greenDiamondBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:greenDiamondBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:diamond_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:diamond_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:black_diamond_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:black_diamond_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_sulfur_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_sulfur_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.heat.chest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.heat.chest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Railcraft:armor.goggles</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Railcraft:armor.goggles;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:tungstenBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:tungstenBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemBootsCrystalGreen</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemBootsCrystalGreen;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:zincBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:zincBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:norium_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:norium_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:chainmail_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:chainmail_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:crystalLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:crystalLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:palladiumChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:palladiumChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemHelmCrystalRed</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemHelmCrystalRed;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftCore:item.steel_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftCore:item.steel_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemPantsCrystalWhite</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemPantsCrystalWhite;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:yellowDiamondHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:yellowDiamondHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:frozen_iron_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:frozen_iron_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorAlloyChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorAlloyChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemChestObsidian</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemChestObsidian;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:magnesiumBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:magnesiumBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_frozen_iron_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_frozen_iron_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.biochemgas.head</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.biochemgas.head;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftMars:item.titanium_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftMars:item.titanium_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:blueDiamondChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:blueDiamondChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.radiation.chest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.radiation.chest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>EnderIO:item.darkSteel_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>EnderIO:item.darkSteel_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalaxySpace:item.spacesuit_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalaxySpace:item.spacesuit_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Railcraft:armor.steel.legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Railcraft:armor.steel.legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:purple_crystal_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:purple_crystal_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemLeggingsCultistPlate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemLeggingsCultistPlate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.biochemgas.legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.biochemgas.legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftCore:item.steel_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftCore:item.steel_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:snorkel</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:snorkel;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I29</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I29;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemNightvisionGoggles</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemNightvisionGoggles;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:polongnius_meteor_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:polongnius_meteor_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:carbonChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:carbonChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:white_crystal_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:white_crystal_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalaxySpace:item.cobalt_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalaxySpace:item.cobalt_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:swimfin</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:swimfin;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Railcraft:armor.steel.plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Railcraft:armor.steel.plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:frozen_iron_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:frozen_iron_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:golden_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:golden_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:crystalHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:crystalHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:elementiumHelm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:elementiumHelm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I10</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I10;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:HoverHarness</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:HoverHarness;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:fishinghat</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:fishinghat;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemChestCrystalLightBlue</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemChestCrystalLightBlue;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:red_gem_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:red_gem_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:ice_crystal_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:ice_crystal_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I70</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I70;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:polongnius_meteor_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:polongnius_meteor_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:redGemBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:redGemBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:tungstenLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:tungstenLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemBootsCrystalBlue</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemBootsCrystalBlue;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemPantsQuartz</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemPantsQuartz;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemPantsCrystalGreen</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemPantsCrystalGreen;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.biochemgas.boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.biochemgas.boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_koentus_meteor_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_koentus_meteor_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:manaweaveChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:manaweaveChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:uranium_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:uranium_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:whiteGemLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:whiteGemLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:manasteelHelmReveal</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:manasteelHelmReveal;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.insect.chest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.insect.chest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:chainmail_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:chainmail_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I53</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I53;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:redDiamondLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:redDiamondLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:elementiumBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:elementiumBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:yellowDiamondBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:yellowDiamondBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorCFPack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorCFPack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>etfuturum:netherite_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>etfuturum:netherite_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:diving_top</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:diving_top;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:palladium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:palladium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBatpack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBatpack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:manasteelLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:manasteelLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemChestCrystalWhite</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemChestCrystalWhite;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftMars:item.deshHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftMars:item.deshHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemHelmetCultistLeaderPlate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemHelmetCultistLeaderPlate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_quontonium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_quontonium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:iron_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:iron_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>EnderIO:item.darkSteel_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>EnderIO:item.darkSteel_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:mercuryHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:mercuryHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:redDiamondHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:redDiamondHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:black_diamond_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:black_diamond_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:uraniumBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:uraniumBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Railcraft:armor.overalls</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Railcraft:armor.overalls;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalaxySpace:item.spacesuit_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalaxySpace:item.spacesuit_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:purpleDiamondHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:purpleDiamondHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemHelmEmerald</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemHelmEmerald;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.universal.boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.universal.boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemBootsCrystalRed</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemBootsCrystalRed;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftCore:item.sensorGlasses</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftCore:item.sensorGlasses;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.universal.head</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.universal.head;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:whiteGemBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:whiteGemBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:diving_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:diving_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:magnesiumHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:magnesiumHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_black_diamond_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_black_diamond_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:redDiamondBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:redDiamondBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:chainmail_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:chainmail_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalaxySpace:item.cobalt_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalaxySpace:item.cobalt_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemHelmCrystalBlue</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemHelmCrystalBlue;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.universal.legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.universal.legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemHelmetVoid</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemHelmetVoid;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I28</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I28;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:fronisium_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:fronisium_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:sulfur_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:sulfur_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:iridium_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:iridium_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorRubBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorRubBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:frozen_iron_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:frozen_iron_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.heat.boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.heat.boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorHazmatHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorHazmatHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:norium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:norium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:norium_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:norium_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemChestCrystalGreen</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemChestCrystalGreen;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemHelmObsidian</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemHelmObsidian;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:gravity_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:gravity_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:polongnius_meteor_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:polongnius_meteor_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorEnergypack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorEnergypack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemLeggingsFortress</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemLeggingsFortress;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_polongnius_meteor_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_polongnius_meteor_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:blueDiamondHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:blueDiamondHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:palladiumBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:palladiumBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_fronisium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_fronisium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.frost.chest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.frost.chest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorNanoLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorNanoLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemChestplateVoidFortress</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemChestplateVoidFortress;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I52</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I52;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:iron_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:iron_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemChestCrystalBlack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemChestCrystalBlack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:blueDiamondBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:blueDiamondBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.radiation.boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.radiation.boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.heat.head</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.heat.head;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>EnderIO:item.darkSteel_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>EnderIO:item.darkSteel_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Railcraft:armor.steel.helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Railcraft:armor.steel.helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemChestplateCultistPlate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemChestplateCultistPlate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:mercuryChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:mercuryChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:leather_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:leather_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemHelmetVoidFortress</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemHelmetVoidFortress;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:palladium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:palladium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:purpleDiamondLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:purpleDiamondLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.heat.legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.heat.legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:carbonBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:carbonBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:uranium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:uranium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftMars:item.deshLeggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftMars:item.deshLeggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalaxySpace:item.spacesuit_leg</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalaxySpace:item.spacesuit_leg;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:koentus_meteor_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:koentus_meteor_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorQuantumLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorQuantumLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBronzeLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBronzeLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:blueGemLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:blueGemLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemHelmetCultistPlate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemHelmetCultistPlate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I31</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I31;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:terrasteelChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:terrasteelChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftMars:item.titanium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftMars:item.titanium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:redGemHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:redGemHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:quontonium_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:quontonium_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:blueGemChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:blueGemChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:crystalChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:crystalChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:purpleDiamondChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:purpleDiamondChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_iridium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_iridium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorQuantumBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorQuantumBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I9</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I9;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:magnesiumLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:magnesiumLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:carbonHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:carbonHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemHelmQuartz</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemHelmQuartz;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:leather_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:leather_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemChestCrystalRed</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemChestCrystalRed;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:manaweaveBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:manaweaveBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:golden_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:golden_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:manasteelHelm</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:manasteelHelm;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.insect.boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.insect.boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemHelmetFortress</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemHelmetFortress;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemPantsObsidian</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemPantsObsidian;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Railcraft:armor.steel.boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Railcraft:armor.steel.boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemLeggingsRobe</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemLeggingsRobe;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.frost.head</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.frost.head;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorBronzeChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorBronzeChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:manasteelChest</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:manasteelChest;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:diamond_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:diamond_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftMars:item.deshBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftMars:item.deshBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.frost.legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.frost.legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:cheese_leather_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:cheese_leather_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemPantsCrystalLightBlue</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemPantsCrystalLightBlue;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftMars:item.titanium_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftMars:item.titanium_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemHelmetCultistRobe</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemHelmetCultistRobe;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemBootsThaumium</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemBootsThaumium;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:zincHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:zincHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:manaweaveLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:manaweaveLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemPantsCrystalRed</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemPantsCrystalRed;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemLeggingsVoid</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemLeggingsVoid;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>EnderIO:item.darkSteel_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>EnderIO:item.darkSteel_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:uranium_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:uranium_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:black_diamond_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:black_diamond_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I51</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I51;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalaxySpace:item.cobalt_leg</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalaxySpace:item.cobalt_leg;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:golden_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:golden_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalaxySpace:item.JetPack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalaxySpace:item.JetPack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:terrasteelLegs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:terrasteelLegs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:white_crystal_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:white_crystal_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:blueDiamondLegings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:blueDiamondLegings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorQuantumChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorQuantumChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:norium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:norium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:uraniumHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:uraniumHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalaxySpace:item.spacesuit_plate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalaxySpace:item.spacesuit_plate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemHelmetThaumium</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemHelmetThaumium;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:diving_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:diving_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:greenDiamondHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:greenDiamondHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I30</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I30;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_palladium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_palladium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemHelmCrystalLightBlue</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemHelmCrystalLightBlue;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:palladium_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:palladium_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>candycraftmod:I8</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>candycraftmod:I8;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemChestplateCultistLeaderPlate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemChestplateCultistLeaderPlate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:koentus_meteor_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:koentus_meteor_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:ice_crystal_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:ice_crystal_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_norium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_norium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:leather_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:leather_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.radiation.head</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.radiation.head;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:palladiumHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:palladiumHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:iron_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:iron_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>GalacticraftCore:item.steel_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>GalacticraftCore:item.steel_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>IC2:itemArmorHazmatChestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>IC2:itemArmorHazmatChestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.frost.boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.frost.boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_red_gem_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_red_gem_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:cheese_leather_chestplate</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:cheese_leather_chestplate;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:black_diamond_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:black_diamond_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:quontonium_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:quontonium_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:lifejacket</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:lifejacket;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>gregtech:gt.armor.hazmat.radiation.legs</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>gregtech:gt.armor.hazmat.radiation.legs;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:diamond_boots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:diamond_boots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Mariculture:fludd</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Mariculture:fludd;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:uranium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:uranium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:tungstenHelmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:tungstenHelmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemGoggles</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemGoggles;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:mercuryBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:mercuryBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:sulfur_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:sulfur_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemChestplateFortress</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemChestplateFortress;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemHelmCrystalBlack</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemHelmCrystalBlack;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Thaumcraft:ItemChestplateRobe</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Thaumcraft:ItemChestplateRobe;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_white_crystal_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_white_crystal_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>minecraft:golden_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:golden_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:red_gem_leggings</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:red_gem_leggings;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ActuallyAdditions:itemBootsObsidian</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ActuallyAdditions:itemBootsObsidian;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>Botania:terrasteelBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>Botania:terrasteelBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:blueGemBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:blueGemBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>utilitiesinexcess:xray_glasses</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>utilitiesinexcess:xray_glasses;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>MorePlanet:breathable_uranium_helmet</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>MorePlanet:breathable_uranium_helmet;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:crystalBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:crystalBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="10">
+		<input>
+			<itemStack>ExtraPlanets:purpleDiamondBoots</itemStack>
+			<oreDict>gemDiamond</oreDict>
+		</input>
+		<output>
+			<itemStack>ExtraPlanets:purpleDiamondBoots;1;0;{ench:[0:{lvl:1s,id:128s}]}</itemStack>
+		</output>
+	</Recipe>
+</Recipes>

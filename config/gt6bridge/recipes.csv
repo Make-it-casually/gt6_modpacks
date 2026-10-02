@@ -1,0 +1,22 @@
+# gt6bridge recipe additions (applied to GT6 recipe maps)
+# syntax: <map>,<inputs>,<outputs>[,eut,duration,optimize,note]
+#   <map>     : GT6 recipe map field of gregapi.data.RM, e.g. Crusher, Mortar, Shredder,
+#               Smelter, Melter, Mixer, Centrifuge, Electrolyzer, Compressor, Hammer,
+#               Bath, Canner, Boxinator, Unboxinator, Wiremill, RollingMill, Assembler ...
+#   inputs    : item tokens joined with '+'
+#   outputs   : item tokens joined with '+'
+#   eut       : GT6 energy per tick (default 16)
+#   duration  : ticks (default 16, must be > 0)
+#   optimize  : GT6's first addRecipe1 flag (default true)
+# item tokens:
+#   mod:name[:meta]        e.g. minecraft:iron_ingot  or  EnderIO:itemAlloy:6
+#   ore:<OreDictName>      e.g. ore:ingotIron          (one recipe per matching stack)
+#   gt:<prefix>:<material> e.g. gt:dust:Iron           (the GT6 item for that prefix+material)
+#
+# Note: for everything the material pass binds, GT6 generates machine recipes itself
+# (Crusher/Mortar/Shredder/Anvil/...). Add rows here only for what that does not cover,
+# for example Smelter/Furnace recipes or hand written conversions.
+#
+# examples:
+# Crusher,ore:ingotEnderium,gt:dust:Enderium,16,20,true,bridge test
+# Smelter,gt:dust:Enderium,gt:ingot:Enderium,16,32,true

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LootGroup category="oceanFloorChest" loading_mode="OVERRIDE" count_min="0" count_max="0">
+    <loot item="VillageNames:codex" damage="0" weight="20" count_min="1" count_max="1"/>
+    <loot item="minecraft:dye" damage="3" weight="17" count_min="3" count_max="7"/>
+    <loot item="minecraft:bone" damage="0" weight="25" count_min="5" count_max="10"/>
+    <loot item="minecraft:skull" damage="0" weight="5" count_min="5" count_max="5"/>
+    <loot item="minecraft:skull" damage="1" weight="3" count_min="2" count_max="3"/>
+    <loot item="minecraft:tnt" damage="0" weight="4" count_min="2" count_max="4"/>
+    <loot item="minecraft:paper" damage="0" weight="20" count_min="2" count_max="3"/>
+    <loot item="minecraft:book" damage="0" weight="15" count_min="2" count_max="3"/>
+    <loot item="minecraft:experience_bottle" damage="0" weight="20" count_min="5" count_max="10"/>
+    <loot item="minecraft:writable_book" damage="0" weight="4" count_min="1" count_max="4"/>
+    <loot item="minecraft:map" damage="0" weight="5" count_min="1" count_max="1"/>
+    <loot item="minecraft:gold_ingot" damage="0" weight="10" count_min="10" count_max="20"/>
+    <loot item="minecraft:diamond" damage="0" weight="3" count_min="1" count_max="2"/>
+    <loot item="Mariculture:materials" damage="2" weight="4" count_min="1" count_max="3"/>
+    <loot item="Mariculture:rod_reed" damage="0" weight="6" count_min="1" count_max="2"/>
+    <loot item="Mariculture:rod_wood" damage="0" weight="4" count_min="1" count_max="2"/>
+    <loot item="Mariculture:rod_titanium" damage="0" weight="2" count_min="1" count_max="1"/>
+    <loot item="Mariculture:fludd" damage="0" weight="1" count_min="1" count_max="2"/>
+</LootGroup>

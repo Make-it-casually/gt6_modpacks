@@ -1,0 +1,85 @@
+GT_API: ======================
+GT_API: PreInit-Phase started!
+GT_API: PreInit-Phase finished!
+GT_API: =======================
+GT_API_POST: ======================
+GT_API_POST: PreInit-Phase started!
+Item does not exist for Unification Target despite Mod being loaded: alfheim:MauftriumBlock
+Item does not exist for Unification Target despite Mod being loaded: alfheim:ElvoriumBlock
+GT_API_POST: PreInit-Phase finished!
+GT_API_POST: =======================
+GT_Mod: ======================
+GT_Mod: PreInit-Phase started!
+GT_Mod: Removing all original Scrapbox Drops.
+GT_Mod: Adding Scrap with a Weight of 200.0F to the Scrapbox Drops.
+GT_Mod: PreInit-Phase finished!
+GT_Mod: =======================
+GT_API: ===================
+GT_API: Init-Phase started!
+GT_API: If the Loading Bar somehow Freezes at this Point, then you definetly ran out of Memory or permgenspace, look at the other Logs to confirm it.
+GT_API: Init-Phase finished!
+GT_API: ====================
+GT_API_POST: ===================
+GT_API_POST: Init-Phase started!
+GT_API_POST: Init-Phase finished!
+GT_API_POST: ====================
+GT_Mod: ===================
+GT_Mod: Init-Phase started!
+GT_Mod: Register Late Bullshit for Atum.
+GT_Mod: Init-Phase finished!
+GT_Mod: ====================
+GT_API: =======================
+GT_API: PostInit-Phase started!
+GT_API: If the Loading Bar somehow Freezes at this Point, then you definetly ran out of Memory or permgenspace, look at the other Logs to confirm it.
+GT_API: PostInit-Phase finished!
+GT_API: ========================
+GT_API_POST: =======================
+GT_API_POST: PostInit-Phase started!
+GT_API_POST: PostInit-Phase finished!
+GT_API_POST: ========================
+GT_Mod: =======================
+GT_Mod: PostInit-Phase started!
+GT_Mod: PostInit-Phase finished!
+GT_Mod: Doing Recipes of the Future.
+GT_Mod: Doing Recipes for Ganys Surface.
+GT_Mod: Doing Chisel Mod Recipes.
+GT_Mod: Doing IC2-Exp Things.
+The Enum 'ARS_DesertNova' has not been set to an Item at this time!
+The Enum 'ARS_DesertNova' has not been set to an Item at this time!
+The Enum 'ARS_Cerublossom' has not been set to an Item at this time!
+The Enum 'ARS_Cerublossom' has not been set to an Item at this time!
+GT_Mod: Doing RC Recipes.
+GT_Mod: Doing Thermal Foundation Recipes.
+GT_Mod: Doing Thermal Expansion Recipes.
+GT_Mod: Doing Forestry Recipes.
+GT_Mod: Doing Magic Bees Recipes.
+GT_Mod: Doing Binnie Extra Trees Recipes.
+GT_Mod: Doing Binnie Genetics Recipes.
+GT_Mod: Doing Binnie Botany Recipes.
+GT_Mod: Doing Binnie Extra Bees Recipes.
+GT_Mod: Doing Atum Recipes.
+GT_Mod: Doing CandyCraft Recipes.
+GT_Mod: Doing MineFactory Reloaded Recipes.
+GT_Mod: Doing AE Recipes.
+GT_Mod: Doing Open Computers Recipes.
+GT_Mod: Doing HarvestCraft Recipes.
+GT_Mod: Doing Betweenlands Recipes.
+GT_Mod: Doing Enviromine Recipes.
+GT_Mod: Doing BoP Recipes.
+GT_Mod: Doing Mariculture Recipes.
+GT_Mod: Doing Galacticraft Recipes.
+GT_Mod: Doing Galacticraft Planets Recipes.
+GT_Mod: Doing LibVulpes Recipes.
+GT_Mod: Doing Advanced Rocketry Recipes.
+GT_Mod: Doing Galaxy Space Recipes.
+GT_Mod: Doing Witchery Recipes.
+GT_Mod: Doing TC Recipes and Research.
+GT_Mod: Doing TC Forbidden Magic Recipes.
+GT_Mod: Doing Botania Recipes.
+GT_Mod: Doing RandomThings Recipes.
+GT_Mod: Actually Adding Recipes.
+GT_Mod: Replacing Vanilla alike Recipes.
+GT_Mod: Copying all of the Forestry Centrifuge/Squeezer Recipes to GT Machines
+GT_Mod: ========================
+GT_API: Remapping ItemStackMaps due to ID Map change. Those damn Items should have a consistent Hashcode, but noooo, ofcourse they break Basic Code Conventions! Thanks Forge and Mojang!
+Loading World! 新的世界

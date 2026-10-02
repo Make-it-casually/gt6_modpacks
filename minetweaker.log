@@ -1,0 +1,46 @@
+ERROR: system: Anvil is already defined in that package
+ERROR: system: Casting is already defined in that package
+ERROR: system: Crucible is already defined in that package
+ERROR: system: Fishing is already defined in that package
+ERROR: system: Vat is already defined in that package
+INFO: Loaded class registry: IC2 mod support
+INFO: Loaded class registry: NEI mod support
+ERROR: system: AutoSpawner is already defined in that package
+INFO: Loaded class registry: MFR mod support
+INFO: MineTweaker: Building registry
+INFO: MineTweaker: Sucessfully built item registry
+INFO: Adding command minetweaker
+INFO: Adding minetweaker command tooltips
+INFO: 
+INFO: Adding minetweaker command appeng
+INFO: Adding minetweaker command lexiconCategories
+INFO: Adding minetweaker command lexiconPages
+INFO: Adding minetweaker command botaniaBrews
+INFO: Adding minetweaker command lexiconKnowledgeTypes
+INFO: Adding minetweaker command botaniaOrechid
+INFO: Adding minetweaker command botania
+INFO: Adding minetweaker command chiselGroups
+INFO: Adding minetweaker command chiselVariations
+INFO: Adding minetweaker command railcraft
+INFO: Adding minetweaker command research
+INFO: Adding minetweaker command aspectList
+INFO: Adding minetweaker command thermalexpansion
+INFO: Adding minetweaker command mfr
+INFO: Adding minetweaker command forgottenKnowledge
+INFO: Dummy action for catching reload event
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 
+INFO: 

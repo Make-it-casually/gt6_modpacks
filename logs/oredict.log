@@ -1,0 +1,467 @@
+**********************************************************************
+* This is the complete Log of the GregTech OreDictionary Handler     *
+**********************************************************************
+GT_API: ======================
+GT_API: PreInit-Phase started!
+GT_API: PreInit-Phase finished!
+GT_API: =======================
+GT_API_POST: ======================
+GT_API_POST: PreInit-Phase started!
+GT_API_POST: PreInit-Phase finished!
+GT_API_POST: =======================
+GT_Mod: ======================
+GT_Mod: PreInit-Phase started!
+GT_Mod: PreInit-Phase finished!
+GT_Mod: =======================
+GT_API: ===================
+GT_API: Init-Phase started!
+GT_API: Init-Phase finished!
+GT_API: ====================
+GT_API_POST: ===================
+GT_API_POST: Init-Phase started!
+GT_API_POST: Init-Phase finished!
+GT_API_POST: ====================
+GT_Mod: ===================
+GT_Mod: Init-Phase started!
+GT_Mod: Init-Phase finished!
+GT_Mod: ====================
+GT_API: =======================
+GT_API: PostInit-Phase started!
+GT_API: PostInit-Phase finished!
+GT_API: ========================
+GT_API_POST: =======================
+GT_API_POST: PostInit-Phase started!
+GT_API_POST: PostInit-Phase finished!
+GT_API_POST: ========================
+GT_Mod: =======================
+GT_Mod: PostInit-Phase started!
+GT_Mod: PostInit-Phase finished!
+GT_Mod: ========================
+============================
+Outputting Unknown Materials
+============================
+bottleSoySauce
+compressedBlackDiamond
+compressedFronisium
+compressedKoentusMeteoricIron
+compressedMetalMeteoricIron
+compressedMetallic
+compressedNorium
+compressedPolongniusMeteoricIron
+compressedQuontonium
+compressedRedGem
+compressedWhiteCrystal
+dustDiamondTofu
+dustLuna
+dustMithrilTofu
+dustSol
+dustThermite
+dustTofuSteel
+gemAdvTofu
+gemBlueGem
+gemEmeraldTofu
+gemPeridotTofu
+gemRedGem
+gemRubyTofu
+gemSapphireTofu
+gemSugiliteTofu
+gemTopazTofu
+gemWhiteGem
+ingotAdaminite
+ingotAdamintite
+ingotFronisium
+ingotGoldBrass
+ingotInverted
+ingotKoentusMeteoricIron
+ingotLuna
+ingotMetalMeteoricIron
+ingotMetallic
+ingotMithrilTofu
+ingotMithrillium
+ingotNorium
+ingotPolongniusMeteoricIron
+ingotQuontonium
+ingotShadow
+ingotSol
+ingotThauminite
+ingotTofuMetal
+ingotTofuSteel
+ingotZunda
+nuggetInverted
+oreAmberAlfheim
+oreBecterialFossil
+oreBlackDiamond
+oreBlueGem
+oreCinnabarAlfheim
+oreCobaltum
+oreDebris
+oreDeepslateVanillastoneAmber
+oreDeepslateVanillastoneAnySapphire
+oreDeepslateVanillastoneAnySiliconDioxide
+oreDeepslateVanillastoneAnyThaumicCrystal
+oreDeepslateVanillastoneCertusQuartz
+oreDeepslateVanillastoneChargedCertusQuartz
+oreDeepslateVanillastoneCinnabar
+oreDeepslateVanillastoneDraconium
+oreDeepslateVanillastoneInfusedAir
+oreDeepslateVanillastoneInfusedEarth
+oreDeepslateVanillastoneInfusedEntropy
+oreDeepslateVanillastoneInfusedFire
+oreDeepslateVanillastoneInfusedOrder
+oreDeepslateVanillastoneInfusedWater
+oreDeepslateVanillastoneMalachite
+oreDeepslateVanillastoneOlivine
+oreDeepslateVanillastonePeridot
+oreDeepslateVanillastoneQuartz
+oreDeepslateVanillastoneRuby
+oreDeepslateVanillastoneSaphire
+oreDeepslateVanillastoneSapphire
+oreDeepslateVanillastoneTanzanite
+oreDeepslateVanillastoneTopaz
+oreDragonstone
+oreEMP
+oreFlonium
+oreFronisium
+oreGoldAlfheim
+oreIchorius
+oreInfusedAirAlfheim
+oreInfusedEarthAlfheim
+oreInfusedEntropyAlfheim
+oreInfusedFireAlfheim
+oreInfusedOrderAlfheim
+oreInfusedWaterAlfheim
+oreJelly
+oreLapisAlfheim
+oreMetalMeteor
+oreMetallic
+oreMeteor
+oreMineral
+oreMithrilTofu
+oreNamerium
+oreNifleur
+oreNorium
+orePurpleCrystal
+oreQuartzElven
+oreQuontonium
+oreRawCalamari
+oreRawMutton
+oreRedGem
+oreSiriusGlowstone
+oreSlime
+oreTitanium
+oreTitaniumIron
+oreTofuDiamond
+oreWhiteCrystal
+oreWhiteGem
+oreXeonium
+plateLuna
+plateMithrilTofu
+plateSol
+plateTofuSteel
+ringLuna
+ringSol
+============================
+============================
+Outputting Colors of unknown Materials
+============================
+Ium  -  RGB: 139, 124, 134  -  ¥÷Ó—; 
+PeridotTofu  -  RGB: 26, 149, 86  -  ÈœÈ≠ Ø∂π∏Ø; 
+Fronisium  -  RGB: 176, 176, 176  -  ∑Ωƒ·Àπ∂ß; 
+Fronisium  -  RGB: 220, 220, 220  -  ÷¬√‹∑Ωƒ·Àπ∞Â; 
+Luna  -  RGB: 157, 132, 5  -  ‘¬÷Æ∂ß; 
+Luna  -  RGB: 174, 146, 6  -  ‘¬÷Æ∑€; 
+Luna  -  RGB: 164, 142, 0  -  ‘¬÷Æª∑; 
+Luna  -  RGB: 160, 134, 6  -  ‘¬÷Æ≥›¬÷; 
+Luna  -  RGB: 168, 154, 7  -  ‘¬÷Æ∞Â; 
+MithrilTofu  -  RGB: 194, 194, 194  -  √ÿ“¯∂π∏Ø∂ß; 
+MithrilTofu  -  RGB: 212, 212, 212  -  √ÿ“¯∂π∏Ø∑€; 
+MithrilTofu  -  RGB: 196, 196, 196  -  √ÿ“¯∂π∏Ø≥›¬÷; 
+MithrilTofu  -  RGB: 209, 209, 209  -  √ÿ“¯∂π∏Ø∞Â; 
+DiamondTofu  -  RGB: 187, 225, 246  -  ◊Í Ø∂π∏Ø∑€; 
+Quontonium  -  RGB: 106, 106, 199  -  ¿•∂Ÿ∂ß; 
+Quontonium  -  RGB: 131, 131, 227  -  ÷¬√‹¿•∂Ÿ∞Â; 
+Metallic  -  RGB: 97, 97, 97  -  Ω Ù∂ß; 
+Metallic  -  RGB: 89, 89, 89  -  ÷¬√‹Ω Ù∞Â; 
+Dark  -  RGB: 22, 20, 19  -  —Ã—¨ Ø”¢; 
+TopazTofu  -  RGB: 111, 97, 26  -  ª∆±¶ Ø∂π∏Ø; 
+BlackDiamond  -  RGB: 32, 32, 32  -  ÷¬√‹∫⁄◊Í∞Â; 
+MetalMeteoricIron  -  RGB: 66, 66, 66  -  Ω Ù‘…Ã˙∂ß; 
+MetalMeteoricIron  -  RGB: 59, 59, 59  -  ÷¬√‹Ω Ù‘…Ã˙∞Â; 
+AdvTofu  -  RGB: 250, 177, 117  -  èäªØ∂π∏Ø±¶ Ø; 
+RedGem  -  RGB: 190, 93, 70  -  ∫Ï…´±¶ Ø; 
+RedGem  -  RGB: 183, 0, 0  -  ÷¬√‹∫Ï±¶ Ø∞Â; 
+SugiliteTofu  -  RGB: 111, 88, 164  -  …º Ø∂π∏Ø; 
+Sol  -  RGB: 217, 110, 57  -  »’÷Æ∑€; 
+Sol  -  RGB: 207, 95, 40  -  »’÷Æ∂ß; 
+Sol  -  RGB: 226, 102, 40  -  »’÷Æª∑; 
+Sol  -  RGB: 241, 117, 64  -  »’÷Æ∞Â; 
+Sol  -  RGB: 210, 98, 43  -  »’÷Æ≥›¬÷; 
+Poison  -  RGB: 84, 47, 19  -  ƒæÕ∞; 
+Poison  -  RGB: 136, 105, 138  -  ∂æ“∫∆ø; 
+Poison  -  RGB: 61, 45, 35  -  ƒæÕ∞; 
+Poison  -  RGB: 49, 37, 22  -  ƒæÕ∞; 
+Poison  -  RGB: 84, 49, 22  -  ƒæÕ∞; 
+Poison  -  RGB: 44, 90, 34  -  æÁ∂æ“©ÀÆ; 
+Poison  -  RGB: 44, 90, 34  -  æÁ∂æ“©ÀÆ; 
+Poison  -  RGB: 44, 90, 34  -  æÁ∂æ“©ÀÆ; 
+Poison  -  RGB: 46, 84, 31  -  ≈ÁΩ¶–Õ æÁ∂æ“©ÀÆ; 
+Poison  -  RGB: 46, 84, 31  -  ≈ÁΩ¶–Õ æÁ∂æ“©ÀÆ; 
+Poison  -  RGB: 46, 84, 31  -  ≈ÁΩ¶–Õ æÁ∂æ“©ÀÆ; 
+Poison  -  RGB: 79, 50, 40  -  ƒæÕ∞; 
+Poison  -  RGB: 53, 27, 24  -  ƒæÕ∞; 
+Poison  -  RGB: 78, 39, 18  -  ƒæÕ∞; 
+Poison  -  RGB: 86, 57, 32  -  ƒæÕ∞; 
+Poison  -  RGB: 75, 52, 42  -  ƒæÕ∞; 
+Poison  -  RGB: 38, 64, 20  -  ÷Õ¡Ù–Õ æÁ∂æ“©ÀÆ; 
+Poison  -  RGB: 38, 64, 20  -  ÷Õ¡Ù–Õ æÁ∂æ“©ÀÆ; 
+Poison  -  RGB: 38, 64, 20  -  ÷Õ¡Ù–Õ æÁ∂æ“©ÀÆ; 
+Blood  -  RGB: 168, 105, 102  -  œ —™∆ø; 
+WhiteGem  -  RGB: 171, 171, 171  -  ∞◊…´±¶ Ø; 
+Shadow  -  RGB: 13, 10, 26  -  ∞µ”∞∂ß; 
+Norium  -  RGB: 101, 136, 176  -  œ°Õ¡∂ß; 
+Norium  -  RGB: 144, 175, 213  -  ÷¬√‹œ°Õ¡∞Â; 
+KoentusMeteoricIron  -  RGB: 2, 64, 157  -  ÷¬√‹ø®∂˜À˛Àπ‘…Ã˙∞Â; 
+KoentusMeteoricIron  -  RGB: 58, 100, 164  -  ø®∂˜À˛Àπ‘…Ã˙∂ß; 
+Tar  -  RGB: 57, 57, 57  -  Ωπ”Õ∆ø; 
+Tar  -  RGB: 19, 19, 19  -  Tar Drip; 
+Tar  -  RGB: 47, 52, 23  -  Weedwood Tar Bucket; 
+Adaminite  -  RGB: 128, 26, 31  -  °ÏcAdaminite Ingot; 
+Coral  -  RGB: 44, 111, 121  -  Deep Water Coral; 
+Coral  -  RGB: 204, 123, 49  -  Mire Coral; 
+Mutton  -  RGB: 172, 101, 89  -  Raw Mutton; 
+TofuMetal  -  RGB: 209, 218, 222  -  ∏÷∂π∏Ø; 
+RubyTofu  -  RGB: 176, 29, 26  -  ∫Ï±¶ Ø∂π∏Ø; 
+Thermite  -  RGB: 149, 134, 117  -  ¬¡»»º¡; 
+PolongniusMeteoricIron  -  RGB: 224, 168, 0  -  ÷¬√‹ƒÃ¿“–«‘…Ã˙∞Â; 
+PolongniusMeteoricIron  -  RGB: 219, 179, 58  -  ƒÃ¿“–«‘…Ã˙∂ß; 
+Zunda  -  RGB: 124, 158, 62  -  √´∂πƒ‡∂ß; 
+Thauminite  -  RGB: 97, 104, 191  -  Thauminite Ingot; 
+Soymilk  -  RGB: 141, 152, 157  -  ∂πƒÃ; 
+SoySauce  -  RGB: 38, 24, 6  -  ·n”Õ∆ø; 
+WhiteCrystal  -  RGB: 205, 235, 235  -  ÷¬√‹∞◊ÀÆæß∞Â; 
+BlueGem  -  RGB: 71, 166, 189  -  ¿∂…´±¶ Ø; 
+Inverted  -  RGB: 163, 179, 182  -  Stable Inverted Nugget; 
+Calamari  -  RGB: 118, 117, 134  -  Raw Calamari; 
+Adamintite  -  RGB: 128, 26, 31  -  °ÏcAdaminite Ingot; 
+Mithrillium  -  RGB: 25, 169, 219  -  °Ï3Mithrillium Ingot; 
+SapphireTofu  -  RGB: 41, 74, 115  -  ¿∂±¶ Ø∂π∏Ø; 
+TofuSteel  -  RGB: 146, 178, 190  -  ∏÷∂π∏Ø∑€; 
+TofuSteel  -  RGB: 71, 120, 148  -  ∏÷∂π∏Ø∂ß; 
+TofuSteel  -  RGB: 73, 125, 154  -  ∏÷∂π∏Ø∞Â; 
+TofuSteel  -  RGB: 53, 99, 125  -  ∏÷∂π∏Ø≥›¬÷; 
+GoldBrass  -  RGB: 230, 193, 66  -  Ω∂ß; 
+Osmonium  -  RGB: 79, 105, 140  -  Ô∞¿∂≤›÷÷◊”; 
+EmeraldTofu  -  RGB: 31, 84, 51  -  ¬Ã±¶ Ø∂π∏Ø; 
+============================
+================================
+Outputting Unknown OreDict Names
+================================
+EnchantedGreatwood
+EnchantedSilverwood
+TTTBurger
+activatedHellTofu
+activatedTofuGem
+advTofuGem
+anyCertusCrystal
+apricot
+apricotSeed
+bedWood
+blackDiamond
+boatChestWood
+boatWood
+candy
+candyCane
+capacitorAdvanced
+capacitorBasic
+capacitorCrystalline
+capacitorEnder
+capacitorMelodic
+capacitorStellar
+capacitorTotemic
+cheeseSandstone
+chikuwa
+chipDiamond
+clayHardened
+coalFlame
+coilAluminum
+coilCopper
+coilGold
+coilIridium
+coilTitanium
+cookie
+dashi
+defattingPotion
+doubanjiang
+edamame
+edamameBoiled
+endstone
+fanSteel
+filterCloth
+fronosSandstone
+furFenrir
+gelatin
+glotek
+goheimochi
+hamburg
+hempcretesand
+holyPendant
+inari
+irisDirt
+irisDirtAurora
+irisDirtBlack
+irisDirtBlue
+irisDirtBrown
+irisDirtCyan
+irisDirtGray
+irisDirtGreen
+irisDirtLightBlue
+irisDirtLightGray
+irisDirtLime
+irisDirtMagenta
+irisDirtOrange
+irisDirtPink
+irisDirtPurple
+irisDirtRainbow
+irisDirtRed
+irisDirtWhite
+irisDirtYellow
+irisLeaves
+irisLeavesAurora
+irisLeavesBlack
+irisLeavesBlue
+irisLeavesBrown
+irisLeavesCyan
+irisLeavesGray
+irisLeavesGreen
+irisLeavesLightBlue
+irisLeavesLightGray
+irisLeavesLime
+irisLeavesMagenta
+irisLeavesOrange
+irisLeavesPink
+irisLeavesPurple
+irisLeavesRainbow
+irisLeavesRed
+irisLeavesWhite
+irisLeavesYellow
+irisWood
+irisWoodAurora
+irisWoodBlack
+irisWoodBlue
+irisWoodBrown
+irisWoodCyan
+irisWoodGray
+irisWoodGreen
+irisWoodLightBlue
+irisWoodLightGray
+irisWoodLime
+irisWoodMagenta
+irisWoodOrange
+irisWoodPink
+irisWoodPurple
+irisWoodRainbow
+irisWoodRed
+irisWoodWhite
+irisWoodYellow
+kinako
+kinakoMochi
+kouji
+kyoninso
+leek
+melonSalt
+mincedPotato
+miso
+misoSoup
+morijio
+mossyCobblestone
+natto
+neonite
+niflStone
+nigari
+oage
+okara
+okaraStick
+onigiri
+onigiriMiso
+onigiriSalt
+onigiriSoySauce
+overchargeIngredient_
+overchargeIngredient_aer_big
+overchargeIngredient_aer_small
+overchargeIngredient_all_small
+overchargeIngredient_aqua_big
+overchargeIngredient_aqua_small
+overchargeIngredient_ignis_big
+overchargeIngredient_ignis_small
+overchargeIngredient_ordo_big
+overchargeIngredient_ordo_small
+overchargeIngredient_perditio_big
+overchargeIngredient_perditio_small
+overchargeIngredient_terra_big
+overchargeIngredient_terra_small
+ramenNoodles
+rollingPin
+salt
+sapphire
+sesame
+signWood
+somenTsuyuBowl
+soulSoil
+soupStock
+soyOil
+soybeans
+soybeansHell
+soybeansParched
+splinterNetherwood
+splinterThunderwood
+sprouts
+starch
+strawberryJam
+tfCapacitor
+tfCircuitBoard
+tfCoil
+tfOscillator
+tofuAnnin
+tofuChikuwa
+tofuCookie
+tofuDiamond
+tofuDiamondNugget
+tofuDried
+tofuEgg
+tofuFried
+tofuFriedPouch
+tofuGem
+tofuGlow
+tofuGrilled
+tofuHamburg
+tofuHamburgRaw
+tofuHell
+tofuIshi
+tofuMetal
+tofuMinced
+tofuMiso
+tofuMomen
+tofuScoop
+tofuSesame
+tofuSomen
+tofuSteak
+tofuStrawberry
+tofuZunda
+tofufishCooked
+tofufishRaw
+turfMoon
+twigDreamwoodInfused
+twigNetherwood
+twigThunderwood
+udonNoodles
+uranium
+vegetableLeek
+voidBlock
+whiteSandstone
+yuba
+zunda
+zundaArrow
+zundaBow
+zundaMochi
+zundama
+================================

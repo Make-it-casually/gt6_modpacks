@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LootGroup category="actuallyadditions.jamHouseChest" loading_mode="OVERRIDE" count_min="5" count_max="10">
+    <loot item="ActuallyAdditions:itemJam" damage="0" weight="10" count_min="1" count_max="1"/>
+    <loot item="ActuallyAdditions:itemJam" damage="1" weight="10" count_min="1" count_max="1"/>
+    <loot item="ActuallyAdditions:itemJam" damage="2" weight="10" count_min="1" count_max="1"/>
+    <loot item="ActuallyAdditions:itemJam" damage="3" weight="10" count_min="1" count_max="1"/>
+    <loot item="ActuallyAdditions:itemJam" damage="4" weight="10" count_min="1" count_max="1"/>
+    <loot item="ActuallyAdditions:itemJam" damage="5" weight="10" count_min="1" count_max="1"/>
+    <loot item="ActuallyAdditions:itemJam" damage="6" weight="10" count_min="1" count_max="1"/>
+    <loot item="minecraft:glass_bottle" damage="0" weight="30" count_min="1" count_max="2"/>
+    <loot item="minecraft:potion" damage="0" weight="20" count_min="1" count_max="1"/>
+</LootGroup>

@@ -1,0 +1,23 @@
+# gt6bridge switches (key,value)
+#   enableMaterialBinding : bind foreign ore dictionary items to GT6 materials (default true)
+#   bindOnlyWithGt6Item   : only bind when GT6 also has an item for that prefix+material (default true)
+#                           GT6 refuses to re-bind stacks that already carry data, and materials it
+#                           auto-created for unknown names are tagged invalid - this keeps us on real ones
+#   enableMaterialCreation: create GT6 materials for materials.csv "create:" rows during PreInit (default true)
+#                           (GT6 only generates items for materials created in PreInit or earlier)
+#   dryRun                : analyse and report, but change nothing at all (default false)
+#                           set true for a completely safe first look: the report lists every binding
+#                           it *would* make, and GT6's recipe index is not rebuilt
+#   removalDryRun         : removals.csv only counts and reports what it would delete (default true)
+#                           -> after you have seen the numbers, set it to false to really delete
+#   bindLimit             : stop the material pass after N bindings, 0 = no limit (default 0)
+#   logEveryBinding       : also print every binding to the game log (default false)
+#   enableAutoRules       : generate recipes from autorules.csv (default false; each rule also has its own flag)
+enableMaterialBinding,true
+bindOnlyWithGt6Item,true
+enableMaterialCreation,true
+dryRun,false
+removalDryRun,true
+bindLimit,0
+logEveryBinding,false
+enableAutoRules,false
