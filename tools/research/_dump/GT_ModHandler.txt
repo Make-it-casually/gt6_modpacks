@@ -1,0 +1,292 @@
+﻿Compiled from "GT_ModHandler.java"
+public class gregapi.recipes.GT_ModHandler {
+  public gregapi.recipes.GT_ModHandler();
+    Code:
+       0: aload_0
+       1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static boolean addCraftingRecipe(net.minecraft.item.ItemStack, java.lang.Object[]);
+    Code:
+       0: aload_0
+       1: getstatic     #31                 // Field gregapi/util/CR.DEF:J
+       4: aload_1
+       5: invokestatic  #35                 // Method gregapi/util/CR.shaped:(Lnet/minecraft/item/ItemStack;J[Ljava/lang/Object;)Z
+       8: ireturn
+
+  public static boolean addCraftingRecipe(net.minecraft.item.ItemStack, long, java.lang.Object[]);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: aload_3
+       3: invokestatic  #35                 // Method gregapi/util/CR.shaped:(Lnet/minecraft/item/ItemStack;J[Ljava/lang/Object;)Z
+       6: ireturn
+
+  public static boolean addShapelessCraftingRecipe(net.minecraft.item.ItemStack, java.lang.Object[]);
+    Code:
+       0: aload_0
+       1: getstatic     #31                 // Field gregapi/util/CR.DEF:J
+       4: aload_1
+       5: invokestatic  #44                 // Method gregapi/util/CR.shapeless:(Lnet/minecraft/item/ItemStack;J[Ljava/lang/Object;)Z
+       8: ireturn
+
+  public static boolean addShapelessCraftingRecipe(net.minecraft.item.ItemStack, long, java.lang.Object[]);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: aload_3
+       3: invokestatic  #44                 // Method gregapi/util/CR.shapeless:(Lnet/minecraft/item/ItemStack;J[Ljava/lang/Object;)Z
+       6: ireturn
+
+  public static boolean addSmeltingRecipe(net.minecraft.item.ItemStack, net.minecraft.item.ItemStack);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: fconst_0
+       3: iconst_0
+       4: iconst_0
+       5: iconst_0
+       6: invokestatic  #52                 // Method gregapi/data/RM.add_smelting:(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;FZZZ)Z
+       9: ireturn
+
+  public static int chargeElectricItem(net.minecraft.item.ItemStack, int, int, boolean, boolean);
+    Code:
+       0: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+       3: ifnull        52
+       6: aload_0
+       7: invokestatic  #68                 // Method gregapi/util/ST.valid:(Lnet/minecraft/item/ItemStack;)Z
+      10: ifeq          52
+      13: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      16: aload_0
+      17: invokeinterface #73,  2           // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.is:(Lnet/minecraft/item/ItemStack;)Z
+      22: ifeq          52
+      25: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      28: aload_0
+      29: iload_1
+      30: i2l
+      31: iload         4
+      33: ifne          40
+      36: iconst_1
+      37: goto          41
+      40: iconst_0
+      41: invokeinterface #79,  5           // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.charge:(Lnet/minecraft/item/ItemStack;JZ)J
+      46: invokestatic  #83                 // Method gregapi/util/UT$Code.bindInt:(J)I
+      49: goto          53
+      52: iconst_0
+      53: ireturn
+
+  public static int dischargeElectricItem(net.minecraft.item.ItemStack, int, int, boolean, boolean, boolean);
+    Code:
+       0: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+       3: ifnull        52
+       6: aload_0
+       7: invokestatic  #68                 // Method gregapi/util/ST.valid:(Lnet/minecraft/item/ItemStack;)Z
+      10: ifeq          52
+      13: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      16: aload_0
+      17: invokeinterface #73,  2           // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.is:(Lnet/minecraft/item/ItemStack;)Z
+      22: ifeq          52
+      25: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      28: aload_0
+      29: iload_1
+      30: i2l
+      31: iload         4
+      33: ifne          40
+      36: iconst_1
+      37: goto          41
+      40: iconst_0
+      41: invokeinterface #95,  5           // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.decharge:(Lnet/minecraft/item/ItemStack;JZ)J
+      46: invokestatic  #83                 // Method gregapi/util/UT$Code.bindInt:(J)I
+      49: goto          53
+      52: iconst_0
+      53: ireturn
+
+  public static boolean canUseElectricItem(net.minecraft.item.ItemStack, int);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public static boolean useElectricItem(net.minecraft.item.ItemStack, int, net.minecraft.entity.player.EntityPlayer);
+    Code:
+       0: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+       3: ifnull        46
+       6: aload_0
+       7: invokestatic  #68                 // Method gregapi/util/ST.valid:(Lnet/minecraft/item/ItemStack;)Z
+      10: ifeq          46
+      13: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      16: aload_0
+      17: invokeinterface #73,  2           // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.is:(Lnet/minecraft/item/ItemStack;)Z
+      22: ifeq          46
+      25: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      28: aload_0
+      29: iload_1
+      30: i2l
+      31: iconst_1
+      32: invokeinterface #95,  5           // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.decharge:(Lnet/minecraft/item/ItemStack;JZ)J
+      37: lconst_0
+      38: lcmp
+      39: ifle          46
+      42: iconst_1
+      43: goto          47
+      46: iconst_0
+      47: ireturn
+
+  public static boolean isChargerItem(net.minecraft.item.ItemStack);
+    Code:
+       0: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+       3: ifnull        41
+       6: aload_0
+       7: invokestatic  #68                 // Method gregapi/util/ST.valid:(Lnet/minecraft/item/ItemStack;)Z
+      10: ifeq          41
+      13: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      16: aload_0
+      17: invokeinterface #73,  2           // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.is:(Lnet/minecraft/item/ItemStack;)Z
+      22: ifeq          41
+      25: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      28: aload_0
+      29: invokeinterface #106,  2          // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.provider:(Lnet/minecraft/item/ItemStack;)Z
+      34: ifeq          41
+      37: iconst_1
+      38: goto          42
+      41: iconst_0
+      42: ireturn
+
+  public static boolean isElectricItem(net.minecraft.item.ItemStack);
+    Code:
+       0: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+       3: ifnull        29
+       6: aload_0
+       7: invokestatic  #68                 // Method gregapi/util/ST.valid:(Lnet/minecraft/item/ItemStack;)Z
+      10: ifeq          29
+      13: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      16: aload_0
+      17: invokeinterface #73,  2           // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.is:(Lnet/minecraft/item/ItemStack;)Z
+      22: ifeq          29
+      25: iconst_1
+      26: goto          30
+      29: iconst_0
+      30: ireturn
+
+  public static boolean isElectricItem(net.minecraft.item.ItemStack, byte);
+    Code:
+       0: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+       3: ifnull        42
+       6: aload_0
+       7: invokestatic  #68                 // Method gregapi/util/ST.valid:(Lnet/minecraft/item/ItemStack;)Z
+      10: ifeq          42
+      13: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      16: aload_0
+      17: invokeinterface #73,  2           // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.is:(Lnet/minecraft/item/ItemStack;)Z
+      22: ifeq          42
+      25: getstatic     #62                 // Field gregapi/data/CS.COMPAT_EU_ITEM:Lgregapi/compat/industrialcraft/ICompatIC2EUItem;
+      28: aload_0
+      29: invokeinterface #112,  2          // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2EUItem.tier:(Lnet/minecraft/item/ItemStack;)B
+      34: iload_1
+      35: if_icmpne     42
+      38: iconst_1
+      39: goto          43
+      42: iconst_0
+      43: ireturn
+
+  public static boolean isReactorItem(net.minecraft.item.ItemStack);
+    Code:
+       0: getstatic     #118                // Field gregapi/data/CS.COMPAT_IC2:Lgregapi/compat/industrialcraft/ICompatIC2;
+       3: ifnull        22
+       6: getstatic     #118                // Field gregapi/data/CS.COMPAT_IC2:Lgregapi/compat/industrialcraft/ICompatIC2;
+       9: aload_0
+      10: invokeinterface #122,  2          // InterfaceMethod gregapi/compat/industrialcraft/ICompatIC2.isReactorItem:(Lnet/minecraft/item/ItemStack;)Z
+      15: ifeq          22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: ireturn
+
+  public static boolean damageOrDechargeItem(net.minecraft.item.ItemStack, int, int, net.minecraft.entity.EntityLivingBase);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public static boolean useSolderingIron(net.minecraft.item.ItemStack, net.minecraft.entity.EntityLivingBase);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public static boolean addSawmillRecipe(net.minecraft.item.ItemStack, net.minecraft.item.ItemStack, net.minecraft.item.ItemStack);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public static boolean addAlloySmelterRecipe(net.minecraft.item.ItemStack, net.minecraft.item.ItemStack, net.minecraft.item.ItemStack, int, int, boolean);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public static boolean addInductionSmelterRecipe(net.minecraft.item.ItemStack, net.minecraft.item.ItemStack, net.minecraft.item.ItemStack, net.minecraft.item.ItemStack, int, int);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public static boolean addCraftingRecipe(net.minecraft.item.ItemStack, net.minecraft.enchantment.Enchantment[], int[], java.lang.Object[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #147                // Method gregapi/util/CR.shaped:(Lnet/minecraft/item/ItemStack;[Lnet/minecraft/enchantment/Enchantment;[I[Ljava/lang/Object;)Z
+       7: ireturn
+
+  public static boolean addShapelessEnchantingRecipe(net.minecraft.item.ItemStack, net.minecraft.enchantment.Enchantment[], int[], java.lang.Object[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #154                // Method gregapi/util/CR.shapeless:(Lnet/minecraft/item/ItemStack;[Lnet/minecraft/enchantment/Enchantment;[I[Ljava/lang/Object;)Z
+       7: ireturn
+
+  public static net.minecraft.item.ItemStack removeRecipe(net.minecraft.item.ItemStack...);
+    Code:
+       0: aload_0
+       1: invokestatic  #159                // Method gregapi/util/CR.remove:([Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+       4: areturn
+
+  public static boolean removeRecipeByOutput(net.minecraft.item.ItemStack);
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: iconst_0
+       3: iconst_0
+       4: iconst_0
+       5: invokestatic  #165                // Method gregapi/util/CR.remout:(Lnet/minecraft/item/ItemStack;ZZZZ)Z
+       8: ireturn
+
+  public static boolean removeRecipeByOutput(net.minecraft.item.ItemStack, boolean, boolean, boolean, boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: iload_3
+       4: iload         4
+       6: invokestatic  #165                // Method gregapi/util/CR.remout:(Lnet/minecraft/item/ItemStack;ZZZZ)Z
+       9: ireturn
+
+  public static net.minecraft.item.ItemStack getAllRecipeOutput(net.minecraft.world.World, net.minecraft.item.ItemStack...);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #174                // Method gregapi/util/CR.getany:(Lnet/minecraft/world/World;[Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+       5: areturn
+
+  public static net.minecraft.item.ItemStack getRecipeOutput(net.minecraft.item.ItemStack...);
+    Code:
+       0: aload_0
+       1: invokestatic  #180                // Method gregapi/util/CR.get:([Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+       4: areturn
+
+  public static net.minecraft.item.ItemStack getRecipeOutput(boolean, net.minecraft.item.ItemStack...);
+    Code:
+       0: iload_0
+       1: aload_1
+       2: invokestatic  #183                // Method gregapi/util/CR.get:(Z[Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+       5: areturn
+}

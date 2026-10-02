@@ -1,4 +1,4 @@
-gt6bridge 0.4 - pre-init material creation
+gt6bridge 0.6 - pre-init material creation
 
 nothing created (no 'create:' rows, or all materials already existed)
 

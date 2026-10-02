@@ -1,0 +1,76 @@
+﻿Compiled from "RecipeMapHandlerPrefixShredding.java"
+public class gregapi.recipes.handlers.RecipeMapHandlerPrefixShredding extends gregapi.recipes.handlers.RecipeMapHandlerPrefix {
+  public gregapi.recipes.handlers.RecipeMapHandlerPrefixShredding(gregapi.oredict.OreDictPrefix, long, net.minecraftforge.fluids.FluidStack, long, long, long, net.minecraftforge.fluids.FluidStack, gregapi.oredict.OreDictPrefix, long, net.minecraft.item.ItemStack, net.minecraft.item.ItemStack, boolean, boolean, boolean, gregapi.code.ICondition);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: lload_2
+       3: aload         4
+       5: lload         5
+       7: lload         7
+       9: lload         9
+      11: aload         11
+      13: aload         12
+      15: lload         13
+      17: aload         15
+      19: aload         16
+      21: iload         17
+      23: iload         18
+      25: iload         19
+      27: aload         20
+      29: invokespecial #9                  // Method gregapi/recipes/handlers/RecipeMapHandlerPrefix."<init>":(Lgregapi/oredict/OreDictPrefix;JLnet/minecraftforge/fluids/FluidStack;JJJLnet/minecraftforge/fluids/FluidStack;Lgregapi/oredict/OreDictPrefix;JLnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;ZZZLgregapi/code/ICondition;)V
+      32: return
+
+  public gregapi.recipes.handlers.RecipeMapHandlerPrefixShredding(gregapi.oredict.OreDictPrefix, long, gregapi.oredict.OreDictPrefix, long, net.minecraftforge.fluids.FluidStack, long, long, long, net.minecraftforge.fluids.FluidStack, gregapi.oredict.OreDictPrefix, long, gregapi.oredict.OreDictPrefix, long, net.minecraft.item.ItemStack, net.minecraft.item.ItemStack, boolean, boolean, boolean, gregapi.code.ICondition);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: lload_2
+       3: aload         4
+       5: lload         5
+       7: aload         7
+       9: lload         8
+      11: lload         10
+      13: lload         12
+      15: aload         14
+      17: aload         15
+      19: lload         16
+      21: aload         18
+      23: lload         19
+      25: aload         21
+      27: aload         22
+      29: iload         23
+      31: iload         24
+      33: iload         25
+      35: aload         26
+      37: invokespecial #35                 // Method gregapi/recipes/handlers/RecipeMapHandlerPrefix."<init>":(Lgregapi/oredict/OreDictPrefix;JLgregapi/oredict/OreDictPrefix;JLnet/minecraftforge/fluids/FluidStack;JJJLnet/minecraftforge/fluids/FluidStack;Lgregapi/oredict/OreDictPrefix;JLgregapi/oredict/OreDictPrefix;JLnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;ZZZLgregapi/code/ICondition;)V
+      40: return
+
+  public gregapi.recipes.handlers.RecipeMapHandlerPrefixShredding(gregapi.oredict.OreDictPrefix[], long[], net.minecraftforge.fluids.FluidStack, long, long, long, net.minecraftforge.fluids.FluidStack, gregapi.oredict.OreDictPrefix[], long[], net.minecraft.item.ItemStack, net.minecraft.item.ItemStack, boolean, boolean, boolean, gregapi.code.ICondition);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: lload         4
+       6: lload         6
+       8: lload         8
+      10: aload         10
+      12: aload         11
+      14: aload         12
+      16: aload         13
+      18: aload         14
+      20: iload         15
+      22: iload         16
+      24: iload         17
+      26: aload         18
+      28: invokespecial #46                 // Method gregapi/recipes/handlers/RecipeMapHandlerPrefix."<init>":([Lgregapi/oredict/OreDictPrefix;[JLnet/minecraftforge/fluids/FluidStack;JJJLnet/minecraftforge/fluids/FluidStack;[Lgregapi/oredict/OreDictPrefix;[JLnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;ZZZLgregapi/code/ICondition;)V
+      31: return
+
+  public gregapi.oredict.OreDictMaterial getOutputMaterial(gregapi.oredict.OreDictMaterial);
+    Code:
+       0: aload_1
+       1: getfield      #58                 // Field gregapi/oredict/OreDictMaterial.mTargetPulver:Lgregapi/oredict/OreDictMaterialStack;
+       4: getfield      #64                 // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+       7: areturn
+}

@@ -1,0 +1,46 @@
+﻿gt6bridge report analysis - 2026-10-02 23:18:31
+report: E:\game\minecraft\gt6\tools\test-analyze2\report.txt
+autorules.disabled: 13877
+timing.diagnostics.ms: 118
+bound.byPrefix.dust: 2980
+timing.autoRules.ms: 7
+gt6.prefixes: 468
+oredict.names: 300955
+errors: 0
+timing.removalPass.ms: 640
+skipped.noGt6Item: 1020
+bound.byPrefix.plate: 2210
+skipped.gt6OwnItems: 388412
+bindings: 13877
+timing.recipeReInit.ms: 263
+materials.table.rows: 0
+bindings.verified: 13870
+timing.linkCheck.ms: 22
+bound.byPrefix.ore: 1804
+removed.total: 148
+bound.byMod.ThermalFoundation: 388
+bound.byPrefix.ingot: 3121
+bound.byMod.EnderIO: 402
+bound.byMod.IC2: 210
+skipped: 0
+bound.byPrefix.dustSmall: 588
+bound.byMod.ActuallyAdditions: 141
+bound.byPrefix.gear: 940
+bound.byMod.appliedenergistics2: 261
+bound.byPrefix.nugget: 612
+timing.materialPass.ms: 8421
+bindings.verifyFailed: 7
+links.failed: 0
+timing.recipePass.ms: 3
+alreadyBound: 9021
+oredict.stacks: 412330
+unparsedOreNames: 2
+errorsInReport: 0
+
+unknown material tokens (sorted by item count):
+  Enderium                        14  -> Enderium  [exact]
+  Signalum                        11  -> Signalum  [exact]
+  Manyullyn                        9  -> Manyullyn  [exact]
+  Lumium                           9  -> Lumium  [exact]
+  Unobtainium                      4  -> create
+  WeirdStuff                       1  -> create

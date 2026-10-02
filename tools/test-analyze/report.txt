@@ -1,0 +1,52 @@
+GT6 Recipe Bridge 0.3 report
+generated: 2026-10-02 22:10:00
+phase: load-complete
+materials.table.rows: 4
+gt6.prefixes: 118
+oredict.names: 2311
+oredict.stacks: 6842
+skipped.gt6OwnItems: 1902
+alreadyBound: 2530
+bindings: 1180
+bindings.overwrittenAutoInvalid: 0
+skipped: 12
+skipped.noGt6Item: 74
+removed.total: 0
+errors: 2
+
+-- unknown material tokens (add them to materials.csv) --
+  Enderium : 14 item(s)   e.g. EnderIO:itemAlloy:6
+  Signalum : 11 item(s)   e.g. ThermalFoundation:ingot:1
+  tungstensteel : 6 item(s)   e.g. AdvancedRocketry:item:.ingotTungstenSteel
+  Manyullyn : 9 item(s)   e.g. TConstruct:ingot:4
+  Unobtainium : 4 item(s)   e.g. Avaritia:Resource:0
+  WeirdStuff : 1 item(s)   e.g. RandomThings:item:3
+
+-- ore dictionary names without a GT6 prefix --
+  oddlyNamedThing : 1
+  notAPrefixMaterial : 3
+
+-- bindings --
+  ingotIron  ->  minecraft:iron_ingot  =  ingot/Iron
+  oreCopper  ->  IC2:blockOreCopper  =  ore/Copper
+  dustTin  ->  ThermalFoundation:itemDust:4  =  dust/Tin
+
+-- skipped --
+  ingotUnobtainium  ->  Avaritia:Resource:0  :  materials.csv skip
+
+-- recipe changes --
+  + [Crusher] ore:ingotEnderium -> gt:dust:Enderium  [16t, 20EU/t]
+  - [te_pulverizer] minecraft:iron_ore
+
+-- added per recipe map --
+  Crusher: 1
+
+-- removed per backend --
+  te_pulverizer: 1
+
+-- notes --
+  Recipe.reInit() called - GT6 recipe item index rebuilt after the bindings
+
+-- errors --
+  bind failed: ingotWeird -> RandomThings:item:3
+  unknown removal backend 'te_precipitator' (known: [crafting, furnace, te_pulverizer])

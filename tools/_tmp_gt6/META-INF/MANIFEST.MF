@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+FMLCorePluginContainsFMLMod: true
+FMLAT: gregtech_at.cfg
+FMLCorePlugin: gregtech.asm.GT_ASM
+

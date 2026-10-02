@@ -1,0 +1,24 @@
+﻿gt6bridge report analysis - 2026-10-02 22:06:03
+report: E:\game\minecraft\gt6\tools\test-analyze\report.txt
+bindings: 1180
+skipped.noGt6Item: 74
+materials.table.rows: 4
+bindings.overwrittenAutoInvalid: 0
+alreadyBound: 2530
+skipped: 12
+errors: 2
+removed.total: 0
+gt6.prefixes: 118
+oredict.stacks: 6842
+oredict.names: 2311
+skipped.gt6OwnItems: 1902
+unparsedOreNames: 2
+errorsInReport: 2
+
+unknown material tokens (sorted by item count):
+  Enderium                        14  -> Enderium  [exact]
+  Signalum                        11  -> Signalum  [exact]
+  Manyullyn                        9  -> Manyullyn  [exact]
+  tungstensteel                    6  -> TungstenSteel  [case insensitive]
+  Unobtainium                      4  -> create
+  WeirdStuff                       1  -> create

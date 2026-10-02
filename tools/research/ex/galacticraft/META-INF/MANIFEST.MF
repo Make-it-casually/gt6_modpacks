@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: micdoodle8.mods.galacticraft
+Implementation-Version: 3.0.12.504
+FMLCorePluginContainsFMLMod: true
+Specification-Vendor: TeamGalacticraft
+Specification-Title: Galacticraft
+FMLAT: accesstransformer.cfg
+Implementation-Timestamp: 2023-04-20T18:02:38-0500
+Specification-Version: 3.0.12.504
+FMLCorePlugin: micdoodle8.mods.miccore.MicdoodlePlugin
+Implementation-Vendor: Galacticraft
+

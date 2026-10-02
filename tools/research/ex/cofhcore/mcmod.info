@@ -1,0 +1,21 @@
+[
+    {
+        "modid": "CoFHCore",
+        "name": "CoFH Core",
+        "description": "Required for all CoFH Mods. Also provides some customization options for Minecraft.",
+        "version": "3.1.4",
+        "credits": "Team CoFH",
+        "logoFile": "assets/cofh/textures/logo.png",
+        "mcversion": "1.7.10",
+        "url": "http://www.teamcofh.com",
+        "updateUrl": "",
+        "authorList": [
+            "Team CoFH"
+        ],
+        "parent": "",
+        "screenshots": [],
+        "dependencies": [
+            "MinecraftForge"
+        ]
+    }
+]

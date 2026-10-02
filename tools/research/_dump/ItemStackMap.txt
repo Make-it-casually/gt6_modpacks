@@ -1,0 +1,464 @@
+﻿Compiled from "ItemStackMap.java"
+public class gregapi.code.ItemStackMap<K extends gregapi.code.ItemStackContainer, V> extends java.util.HashMap<gregapi.code.ItemStackContainer, V> {
+  private static final long serialVersionUID;
+
+  private boolean mHasWildcards;
+
+  public gregapi.code.ItemStackMap();
+    Code:
+       0: aload_0
+       1: invokespecial #16                 // Method java/util/HashMap."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #18                 // Field mHasWildcards:Z
+       9: getstatic     #24                 // Field gregapi/GT_API.STACKMAPS:Ljava/util/Collection;
+      12: aload_0
+      13: invokeinterface #30,  2           // InterfaceMethod java/util/Collection.add:(Ljava/lang/Object;)Z
+      18: pop
+      19: return
+
+  public boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: if_acmpne     9
+       5: iconst_1
+       6: goto          10
+       9: iconst_0
+      10: ireturn
+
+  public boolean containsKey(long, long, boolean);
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field mHasWildcards:Z
+       4: ifeq          43
+       7: iload         5
+       9: ifeq          53
+      12: aload_0
+      13: new           #40                 // class gregapi/code/ItemStackContainer
+      16: dup
+      17: lload_1
+      18: lconst_1
+      19: ldc2_w        #41                 // long 32767l
+      22: invokespecial #45                 // Method gregapi/code/ItemStackContainer."<init>":(JJJ)V
+      25: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      28: ifeq          33
+      31: iconst_1
+      32: ireturn
+      33: lload_3
+      34: ldc2_w        #41                 // long 32767l
+      37: lcmp
+      38: ifne          53
+      41: iconst_0
+      42: ireturn
+      43: lload_3
+      44: ldc2_w        #41                 // long 32767l
+      47: lcmp
+      48: ifne          53
+      51: iconst_0
+      52: ireturn
+      53: aload_0
+      54: new           #40                 // class gregapi/code/ItemStackContainer
+      57: dup
+      58: lload_1
+      59: lconst_1
+      60: lload_3
+      61: invokespecial #45                 // Method gregapi/code/ItemStackContainer."<init>":(JJJ)V
+      64: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      67: ireturn
+
+  public boolean containsKey(net.minecraft.item.Item, long, boolean);
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field mHasWildcards:Z
+       4: ifeq          43
+       7: iload         4
+       9: ifeq          53
+      12: aload_0
+      13: new           #40                 // class gregapi/code/ItemStackContainer
+      16: dup
+      17: aload_1
+      18: lconst_1
+      19: ldc2_w        #41                 // long 32767l
+      22: invokespecial #54                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/Item;JJ)V
+      25: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      28: ifeq          33
+      31: iconst_1
+      32: ireturn
+      33: lload_2
+      34: ldc2_w        #41                 // long 32767l
+      37: lcmp
+      38: ifne          53
+      41: iconst_0
+      42: ireturn
+      43: lload_2
+      44: ldc2_w        #41                 // long 32767l
+      47: lcmp
+      48: ifne          53
+      51: iconst_0
+      52: ireturn
+      53: aload_0
+      54: new           #40                 // class gregapi/code/ItemStackContainer
+      57: dup
+      58: aload_1
+      59: lconst_1
+      60: lload_2
+      61: invokespecial #54                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/Item;JJ)V
+      64: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      67: ireturn
+
+  public boolean containsKey(net.minecraft.block.Block, long, boolean);
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field mHasWildcards:Z
+       4: ifeq          43
+       7: iload         4
+       9: ifeq          53
+      12: aload_0
+      13: new           #40                 // class gregapi/code/ItemStackContainer
+      16: dup
+      17: aload_1
+      18: lconst_1
+      19: ldc2_w        #41                 // long 32767l
+      22: invokespecial #60                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/block/Block;JJ)V
+      25: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      28: ifeq          33
+      31: iconst_1
+      32: ireturn
+      33: lload_2
+      34: ldc2_w        #41                 // long 32767l
+      37: lcmp
+      38: ifne          53
+      41: iconst_0
+      42: ireturn
+      43: lload_2
+      44: ldc2_w        #41                 // long 32767l
+      47: lcmp
+      48: ifne          53
+      51: iconst_0
+      52: ireturn
+      53: aload_0
+      54: new           #40                 // class gregapi/code/ItemStackContainer
+      57: dup
+      58: aload_1
+      59: lconst_1
+      60: lload_2
+      61: invokespecial #60                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/block/Block;JJ)V
+      64: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      67: ireturn
+
+  public boolean containsKey(net.minecraft.item.ItemStack, boolean);
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field mHasWildcards:Z
+       4: ifeq          43
+       7: iload_2
+       8: ifeq          55
+      11: aload_0
+      12: new           #40                 // class gregapi/code/ItemStackContainer
+      15: dup
+      16: aload_1
+      17: ldc2_w        #41                 // long 32767l
+      20: invokespecial #66                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;J)V
+      23: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      26: ifeq          31
+      29: iconst_1
+      30: ireturn
+      31: aload_1
+      32: invokestatic  #72                 // Method gregapi/util/ST.meta:(Lnet/minecraft/item/ItemStack;)S
+      35: sipush        32767
+      38: if_icmpne     55
+      41: iconst_0
+      42: ireturn
+      43: aload_1
+      44: invokestatic  #72                 // Method gregapi/util/ST.meta:(Lnet/minecraft/item/ItemStack;)S
+      47: sipush        32767
+      50: if_icmpne     55
+      53: iconst_0
+      54: ireturn
+      55: aload_0
+      56: new           #40                 // class gregapi/code/ItemStackContainer
+      59: dup
+      60: aload_1
+      61: invokespecial #75                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;)V
+      64: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      67: ireturn
+
+  public boolean containsKey(gregapi.code.ItemStackContainer, boolean);
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field mHasWildcards:Z
+       4: ifeq          51
+       7: iload_2
+       8: ifeq          63
+      11: aload_1
+      12: getfield      #82                 // Field gregapi/code/ItemStackContainer.mMetaData:S
+      15: sipush        32767
+      18: if_icmpne     27
+      21: aload_0
+      22: aload_1
+      23: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      26: ireturn
+      27: aload_0
+      28: new           #40                 // class gregapi/code/ItemStackContainer
+      31: dup
+      32: aload_1
+      33: getfield      #85                 // Field gregapi/code/ItemStackContainer.mItem:Lnet/minecraft/item/Item;
+      36: lconst_1
+      37: ldc2_w        #41                 // long 32767l
+      40: invokespecial #54                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/Item;JJ)V
+      43: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      46: ifeq          63
+      49: iconst_1
+      50: ireturn
+      51: aload_1
+      52: getfield      #82                 // Field gregapi/code/ItemStackContainer.mMetaData:S
+      55: sipush        32767
+      58: if_icmpne     63
+      61: iconst_0
+      62: ireturn
+      63: aload_0
+      64: aload_1
+      65: invokevirtual #47                 // Method containsKey:(Ljava/lang/Object;)Z
+      68: ireturn
+
+  public V get(gregapi.code.IItemContainer);
+    Code:
+       0: aload_0
+       1: new           #40                 // class gregapi/code/ItemStackContainer
+       4: dup
+       5: aload_1
+       6: lconst_1
+       7: iconst_0
+       8: anewarray     #90                 // class java/lang/Object
+      11: invokeinterface #95,  4           // InterfaceMethod gregapi/code/IItemContainer.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+      16: invokespecial #75                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;)V
+      19: invokevirtual #98                 // Method get:(Ljava/lang/Object;)Ljava/lang/Object;
+      22: areturn
+
+  public V get(net.minecraft.item.ItemStack);
+    Code:
+       0: aload_0
+       1: new           #40                 // class gregapi/code/ItemStackContainer
+       4: dup
+       5: aload_1
+       6: invokespecial #75                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;)V
+       9: invokevirtual #98                 // Method get:(Ljava/lang/Object;)Ljava/lang/Object;
+      12: areturn
+
+  public V get(net.minecraft.item.ItemStack, long);
+    Code:
+       0: aload_0
+       1: new           #40                 // class gregapi/code/ItemStackContainer
+       4: dup
+       5: aload_1
+       6: lload_2
+       7: invokespecial #66                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;J)V
+      10: invokevirtual #98                 // Method get:(Ljava/lang/Object;)Ljava/lang/Object;
+      13: areturn
+
+  public V get(long, long);
+    Code:
+       0: aload_0
+       1: new           #40                 // class gregapi/code/ItemStackContainer
+       4: dup
+       5: lload_1
+       6: lconst_1
+       7: lload_3
+       8: invokespecial #45                 // Method gregapi/code/ItemStackContainer."<init>":(JJJ)V
+      11: invokevirtual #98                 // Method get:(Ljava/lang/Object;)Ljava/lang/Object;
+      14: areturn
+
+  public V get(net.minecraft.item.Item, long);
+    Code:
+       0: aload_0
+       1: new           #40                 // class gregapi/code/ItemStackContainer
+       4: dup
+       5: aload_1
+       6: lconst_1
+       7: lload_2
+       8: invokespecial #54                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/Item;JJ)V
+      11: invokevirtual #98                 // Method get:(Ljava/lang/Object;)Ljava/lang/Object;
+      14: areturn
+
+  public V get(net.minecraft.block.Block, long);
+    Code:
+       0: aload_0
+       1: new           #40                 // class gregapi/code/ItemStackContainer
+       4: dup
+       5: aload_1
+       6: lconst_1
+       7: lload_2
+       8: invokespecial #60                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/block/Block;JJ)V
+      11: invokevirtual #98                 // Method get:(Ljava/lang/Object;)Ljava/lang/Object;
+      14: areturn
+
+  public V get(gregapi.code.ModData, java.lang.String, long);
+    Code:
+       0: aload_1
+       1: getfield      #110                // Field gregapi/code/ModData.mLoaded:Z
+       4: ifeq          28
+       7: aload_0
+       8: new           #40                 // class gregapi/code/ItemStackContainer
+      11: dup
+      12: aload_1
+      13: aload_2
+      14: lconst_1
+      15: lload_3
+      16: invokestatic  #114                // Method gregapi/util/ST.make:(Lgregapi/code/ModData;Ljava/lang/String;JJ)Lnet/minecraft/item/ItemStack;
+      19: invokespecial #75                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;)V
+      22: invokevirtual #98                 // Method get:(Ljava/lang/Object;)Ljava/lang/Object;
+      25: goto          29
+      28: aconst_null
+      29: areturn
+
+  public V put(gregapi.code.ItemStackContainer, V);
+    Code:
+       0: aload_1
+       1: getfield      #82                 // Field gregapi/code/ItemStackContainer.mMetaData:S
+       4: sipush        32767
+       7: if_icmpne     15
+      10: aload_0
+      11: iconst_1
+      12: putfield      #18                 // Field mHasWildcards:Z
+      15: aload_0
+      16: aload_1
+      17: aload_2
+      18: invokespecial #123                // Method java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      21: areturn
+
+  public V put(gregapi.code.IItemContainer, V);
+    Code:
+       0: new           #40                 // class gregapi/code/ItemStackContainer
+       3: dup
+       4: aload_1
+       5: lconst_1
+       6: iconst_0
+       7: anewarray     #90                 // class java/lang/Object
+      10: invokeinterface #95,  4           // InterfaceMethod gregapi/code/IItemContainer.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+      15: invokespecial #75                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;)V
+      18: astore_3
+      19: aload_3
+      20: getfield      #82                 // Field gregapi/code/ItemStackContainer.mMetaData:S
+      23: sipush        32767
+      26: if_icmpne     34
+      29: aload_0
+      30: iconst_1
+      31: putfield      #18                 // Field mHasWildcards:Z
+      34: aload_0
+      35: aload_3
+      36: aload_2
+      37: invokevirtual #129                // Method put:(Lgregapi/code/ItemStackContainer;Ljava/lang/Object;)Ljava/lang/Object;
+      40: areturn
+
+  public V put(net.minecraft.item.ItemStack, V);
+    Code:
+       0: new           #40                 // class gregapi/code/ItemStackContainer
+       3: dup
+       4: aload_1
+       5: invokespecial #75                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;)V
+       8: astore_3
+       9: aload_3
+      10: getfield      #82                 // Field gregapi/code/ItemStackContainer.mMetaData:S
+      13: sipush        32767
+      16: if_icmpne     24
+      19: aload_0
+      20: iconst_1
+      21: putfield      #18                 // Field mHasWildcards:Z
+      24: aload_0
+      25: aload_3
+      26: aload_2
+      27: invokevirtual #129                // Method put:(Lgregapi/code/ItemStackContainer;Ljava/lang/Object;)Ljava/lang/Object;
+      30: areturn
+
+  public V put(long, long, V);
+    Code:
+       0: lload_3
+       1: ldc2_w        #41                 // long 32767l
+       4: lcmp
+       5: ifne          13
+       8: aload_0
+       9: iconst_1
+      10: putfield      #18                 // Field mHasWildcards:Z
+      13: aload_0
+      14: new           #40                 // class gregapi/code/ItemStackContainer
+      17: dup
+      18: lload_1
+      19: lconst_1
+      20: lload_3
+      21: invokespecial #45                 // Method gregapi/code/ItemStackContainer."<init>":(JJJ)V
+      24: aload         5
+      26: invokevirtual #129                // Method put:(Lgregapi/code/ItemStackContainer;Ljava/lang/Object;)Ljava/lang/Object;
+      29: areturn
+
+  public V put(net.minecraft.item.Item, long, V);
+    Code:
+       0: lload_2
+       1: ldc2_w        #41                 // long 32767l
+       4: lcmp
+       5: ifne          13
+       8: aload_0
+       9: iconst_1
+      10: putfield      #18                 // Field mHasWildcards:Z
+      13: aload_0
+      14: new           #40                 // class gregapi/code/ItemStackContainer
+      17: dup
+      18: aload_1
+      19: lconst_1
+      20: lload_2
+      21: invokespecial #54                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/Item;JJ)V
+      24: aload         4
+      26: invokevirtual #129                // Method put:(Lgregapi/code/ItemStackContainer;Ljava/lang/Object;)Ljava/lang/Object;
+      29: areturn
+
+  public V put(net.minecraft.block.Block, long, V);
+    Code:
+       0: lload_2
+       1: ldc2_w        #41                 // long 32767l
+       4: lcmp
+       5: ifne          13
+       8: aload_0
+       9: iconst_1
+      10: putfield      #18                 // Field mHasWildcards:Z
+      13: aload_0
+      14: new           #40                 // class gregapi/code/ItemStackContainer
+      17: dup
+      18: aload_1
+      19: lconst_1
+      20: lload_2
+      21: invokespecial #60                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/block/Block;JJ)V
+      24: aload         4
+      26: invokevirtual #129                // Method put:(Lgregapi/code/ItemStackContainer;Ljava/lang/Object;)Ljava/lang/Object;
+      29: areturn
+
+  public V put(gregapi.code.ModData, java.lang.String, long, V);
+    Code:
+       0: lload_3
+       1: ldc2_w        #41                 // long 32767l
+       4: lcmp
+       5: ifne          13
+       8: aload_0
+       9: iconst_1
+      10: putfield      #18                 // Field mHasWildcards:Z
+      13: aload_0
+      14: new           #40                 // class gregapi/code/ItemStackContainer
+      17: dup
+      18: aload_1
+      19: aload_2
+      20: lconst_1
+      21: lload_3
+      22: invokestatic  #114                // Method gregapi/util/ST.make:(Lgregapi/code/ModData;Ljava/lang/String;JJ)Lnet/minecraft/item/ItemStack;
+      25: invokespecial #75                 // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;)V
+      28: aload         5
+      30: invokevirtual #129                // Method put:(Lgregapi/code/ItemStackContainer;Ljava/lang/Object;)Ljava/lang/Object;
+      33: areturn
+
+  public java.lang.Object put(java.lang.Object, java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #40                 // class gregapi/code/ItemStackContainer
+       5: aload_2
+       6: invokevirtual #129                // Method put:(Lgregapi/code/ItemStackContainer;Ljava/lang/Object;)Ljava/lang/Object;
+       9: areturn
+}

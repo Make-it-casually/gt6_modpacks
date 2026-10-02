@@ -1,0 +1,70 @@
+# generated from GT6's own "Outputting Unknown Materials" list (logs/oredict.log)
+# syntax: <oredictMaterialToken>,<gt6Material|create|->[,note]
+# rows below are suggestions - review before merging into materials.csv
+Adaminite,Adamantite,auto: bind to existing GT6 material (close spelling (distance 2, shared prefix 4))
+Adamintite,Adamantite,auto: bind to existing GT6 material (close spelling (distance 1, shared prefix 4))
+Cobaltum,Cobalt,auto: bind to existing GT6 material (close spelling (distance 2, shared prefix 6))
+Dragonstone,Dragonstone,auto: bind to existing GT6 material (exact)
+Titanium,Titanium,auto: bind to existing GT6 material (exact)
+AdvTofu,create,auto: unknown material, first seen as gemAdvTofu
+AmberAlfheim,create,auto: unknown material, first seen as oreAmberAlfheim
+BecterialFossil,create,auto: unknown material, first seen as oreBecterialFossil
+BlackDiamond,create,auto: unknown material, first seen as oreBlackDiamond
+BlueGem,create,auto: unknown material, first seen as gemBlueGem
+Calamari,create,auto: unknown material, first seen as oreRawCalamari
+CinnabarAlfheim,create,auto: unknown material, first seen as oreCinnabarAlfheim
+Debris,create,auto: unknown material, first seen as oreDebris
+DiamondTofu,create,auto: unknown material, first seen as dustDiamondTofu
+EMP,create,auto: unknown material, first seen as oreEMP
+EmeraldTofu,create,auto: unknown material, first seen as gemEmeraldTofu
+Flonium,create,auto: unknown material, first seen as oreFlonium
+Fronisium,create,auto: unknown material, first seen as ingotFronisium
+GoldAlfheim,create,auto: unknown material, first seen as oreGoldAlfheim
+GoldBrass,create,auto: unknown material, first seen as ingotGoldBrass
+Ichorius,create,auto: unknown material, first seen as oreIchorius
+InfusedAirAlfheim,create,auto: unknown material, first seen as oreInfusedAirAlfheim
+InfusedEarthAlfheim,create,auto: unknown material, first seen as oreInfusedEarthAlfheim
+InfusedEntropyAlfheim,create,auto: unknown material, first seen as oreInfusedEntropyAlfheim
+InfusedFireAlfheim,create,auto: unknown material, first seen as oreInfusedFireAlfheim
+InfusedOrderAlfheim,create,auto: unknown material, first seen as oreInfusedOrderAlfheim
+InfusedWaterAlfheim,create,auto: unknown material, first seen as oreInfusedWaterAlfheim
+Inverted,create,auto: unknown material, first seen as ingotInverted
+Jelly,create,auto: unknown material, first seen as oreJelly
+KoentusMeteoricIron,create,auto: unknown material, first seen as ingotKoentusMeteoricIron
+LapisAlfheim,create,auto: unknown material, first seen as oreLapisAlfheim
+Luna,create,auto: unknown material, first seen as dustLuna
+MetalMeteor,create,auto: unknown material, first seen as oreMetalMeteor
+MetalMeteoricIron,create,auto: unknown material, first seen as ingotMetalMeteoricIron
+Metallic,create,auto: unknown material, first seen as ingotMetallic
+Meteor,create,auto: unknown material, first seen as oreMeteor
+Mineral,create,auto: unknown material, first seen as oreMineral
+MithrilTofu,create,auto: unknown material, first seen as dustMithrilTofu
+Mithrillium,create,auto: unknown material, first seen as ingotMithrillium
+Mutton,create,auto: unknown material, first seen as oreRawMutton
+Namerium,create,auto: unknown material, first seen as oreNamerium
+Nifleur,create,auto: unknown material, first seen as oreNifleur
+Norium,create,auto: unknown material, first seen as ingotNorium
+PeridotTofu,create,auto: unknown material, first seen as gemPeridotTofu
+PolongniusMeteoricIron,create,auto: unknown material, first seen as ingotPolongniusMeteoricIron
+PurpleCrystal,create,auto: unknown material, first seen as orePurpleCrystal
+QuartzElven,create,auto: unknown material, first seen as oreQuartzElven
+Quontonium,create,auto: unknown material, first seen as ingotQuontonium
+RedGem,create,auto: unknown material, first seen as gemRedGem
+RubyTofu,create,auto: unknown material, first seen as gemRubyTofu
+SapphireTofu,create,auto: unknown material, first seen as gemSapphireTofu
+Shadow,create,auto: unknown material, first seen as ingotShadow
+SiriusGlowstone,create,auto: unknown material, first seen as oreSiriusGlowstone
+Slime,create,auto: unknown material, first seen as oreSlime
+Sol,create,auto: unknown material, first seen as dustSol
+SugiliteTofu,create,auto: unknown material, first seen as gemSugiliteTofu
+Thauminite,create,auto: unknown material, first seen as ingotThauminite
+Thermite,create,auto: unknown material, first seen as dustThermite
+TitaniumIron,create,auto: unknown material, first seen as oreTitaniumIron
+TofuDiamond,create,auto: unknown material, first seen as oreTofuDiamond
+TofuMetal,create,auto: unknown material, first seen as ingotTofuMetal
+TofuSteel,create,auto: unknown material, first seen as dustTofuSteel
+TopazTofu,create,auto: unknown material, first seen as gemTopazTofu
+WhiteCrystal,create,auto: unknown material, first seen as oreWhiteCrystal
+WhiteGem,create,auto: unknown material, first seen as gemWhiteGem
+Xeonium,create,auto: unknown material, first seen as oreXeonium
+Zunda,create,auto: unknown material, first seen as ingotZunda

@@ -1,0 +1,13 @@
+﻿# gt6bridge removals - only the rows whose dry run matched (generated from report.txt)
+# set removalDryRun,false in settings.csv to actually delete them
+te_pulverizer,*:ore*   # 42 recipe(s)
+te_furnace,*:ore*   # 6 recipe(s)
+te_sawmill,*:ore*   # 3 recipe(s)
+ic2_macerator,*:ore*   # 51 recipe(s)
+actuallyadditions_crusher,*:ore*   # 18 recipe(s)
+railcraft_rockcrusher,*:ore*   # 12 recipe(s)
+enderio_sagmill,*:ore*   # 16 recipe(s)
+te_pulverizer,*:raw*   # 42 recipe(s)
+te_pulverizer,*:crushed*   # 42 recipe(s)
+ic2_macerator,*:raw*   # 51 recipe(s)
+te_furnace,*:dust*   # 6 recipe(s)

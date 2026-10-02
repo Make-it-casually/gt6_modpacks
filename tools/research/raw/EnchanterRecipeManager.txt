@@ -1,0 +1,12 @@
+Compiled from "EnchanterRecipeManager.java"
+public class crazypants.enderio.machine.enchanter.EnchanterRecipeManager {
+  private static final crazypants.enderio.machine.enchanter.EnchanterRecipeManager instance;
+  private final java.util.List<crazypants.enderio.machine.enchanter.EnchanterRecipe> recipes;
+  public crazypants.enderio.machine.enchanter.EnchanterRecipeManager();
+  public static crazypants.enderio.machine.enchanter.EnchanterRecipeManager getInstance();
+  public void loadRecipesFromConfig();
+  public crazypants.enderio.machine.enchanter.EnchanterRecipe getEnchantmentRecipeForInput(net.minecraft.item.ItemStack);
+  public void addCustomRecipes(java.lang.String);
+  public java.util.List<crazypants.enderio.machine.enchanter.EnchanterRecipe> getRecipes();
+  static {};
+}

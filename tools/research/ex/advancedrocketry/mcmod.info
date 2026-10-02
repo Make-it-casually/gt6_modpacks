@@ -1,0 +1,16 @@
+[
+{
+  "modid": "advancedRocketry",
+  "name": "Advanced Rocketry Continuation",
+  "description": "A space mod for minecraft, adds planets, rockets, and some machines",
+  "version": "1.7.10-1.4.3-continuation",
+  "mcversion": "1.7.10",
+  "url": "http://minecraft.curseforge.com/projects/advanced-rocketry",
+  "updateUrl": "",
+  "authorList": ["zmaster587"],
+  "credits": "Continuation work includes selected AGPL-3.0 changes from AdvancedRocketry-TFRU.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

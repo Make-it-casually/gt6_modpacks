@@ -1,0 +1,1226 @@
+# Configuration file
+
+blocks {
+    #  [default: true]
+    B:enableBlackoutCurtains=true
+
+    #  [default: true]
+    B:enableBlockUpdateDetector=true
+
+    #  [default: true]
+    B:enableCollector=true
+
+    #  [default: true]
+    B:enableCompressedCobblestone=true
+
+    #  [default: true]
+    B:enableCompressedDirt=true
+
+    #  [default: true]
+    B:enableCompressedGravel=true
+
+    #  [default: true]
+    B:enableCompressedSand=true
+
+    #  [default: true]
+    B:enableConveyor=true
+
+    #  [default: true]
+    B:enableDecorativeBlocks=true
+
+    #  [default: true]
+    B:enableDecorativeGlass=true
+
+    #  [default: true]
+    B:enableDrum=true
+
+    # Enable the end of time portal block
+    # Can be disabled without disabling the end of time dimension [default: true]
+    B:enableEndOfTimePortal=true
+
+    #  [default: true]
+    B:enableEnderLocus=true
+
+    #  [default: true]
+    B:enableEndspark=true
+
+    #  [default: true]
+    B:enableEtherealGlass=true
+
+    #  [default: true]
+    B:enableFloatingBlock=true
+
+    #  [default: true]
+    B:enableLapisAetherius=true
+
+    #  [default: true]
+    B:enableMagicWood=true
+
+    #  [default: true]
+    B:enableMarginallyMaximisedChest=true
+
+    #  [default: true]
+    B:enableRadicallyReducedChest=true
+
+    #  [default: true]
+    B:enableRedstoneClock=true
+
+    #  [default: true]
+    B:enableSignificantlyShrunkChest=true
+
+    #  [default: true]
+    B:enableTradingPost=true
+
+    #  [default: true]
+    B:enableTrashCanEnergy=true
+
+    #  [default: true]
+    B:enableTrashCanFluid=true
+
+    #  [default: true]
+    B:enableTrashCanItem=true
+
+    #  [default: true]
+    B:enableTrueGreenscreen=true
+
+    # Enable the underworld portal block
+    # Can be disabled without disabling the underworld dimension [default: true]
+    B:enableUnderWorldPortal=true
+
+    # If enabled, inverted block will have a similar X-Ray effect to Extra Utilities' Unstable Block. [default: false]
+    B:invertedBlockDoesXRay=false
+
+    spikes {
+        #  [default: true]
+        B:enableDiamondSpike=true
+
+        #  [default: true]
+        B:enableGoldSpike=true
+
+        #  [default: true]
+        B:enableIronSpike=true
+
+        #  [default: true]
+        B:enableWoodenSpike=true
+    }
+
+    ##########################################################################################################
+    # cursedearth
+    #--------------------------------------------------------------------------------------------------------#
+    # Cursed Earth Configuration
+    ##########################################################################################################
+
+    cursedearth {
+        # Chance that a mob is spawned on a Blessed Earth block on a random tick. [range: 0 ~ 100, default: 40]
+        I:blessedEarthSpawnRate=40
+
+        # Chance that a mob is spawned on a Cursed Earth block on a random tick. [range: 0 ~ 100, default: 40]
+        I:cursedEarthSpawnRate=40
+
+        # Should blessed and cursed earth spread to nearby grass [default: true]
+        B:cursedEarthSpreads=true
+
+        #  [default: true]
+        B:enableBlessedEarth=true
+
+        # Should blessed earth burn in darkness like cursed earth burns in the light [default: false]
+        B:enableBlessedEarthBurn=false
+
+        #  [default: true]
+        B:enableCursedEarth=true
+
+        # Should blessed and cursed earth explode upon contacting each other. cursedEarthSpreads must be true! [default: true]
+        B:volatileReaction=true
+    }
+
+    mufflers {
+        #  [default: true]
+        B:enableRainMuffler=true
+
+        #  [default: true]
+        B:enableSoundMuffler=true
+
+        # The radius a rain muffler operates in (as a square box) [range: 1 ~ 256, default: 64]
+        I:rainMufflerRange=64
+
+        # The radius a sound muffler operates in (as a square box) [range: 1 ~ 64, default: 8]
+        I:soundMufflerRange=8
+
+        # The volume reduction of sounds by the sound muffler. 0 = silent, 100 = normal level [range: 0 ~ 100, default: 5]
+        I:soundMufflerReduction=5
+    }
+
+    chandelier {
+        #  [default: true]
+        B:Enable=true
+
+        # The radius chandeliers blocks mob spawns (as a square box) [range: 1 ~ 256, default: 16]
+        I:Range=16
+    }
+
+    gigatorch {
+        #  [default: true]
+        B:Enable=true
+
+        # The radius a giga torch blocks mob spawns (as a square box) [range: 1 ~ 256, default: 64]
+        I:Range=64
+    }
+
+    smartpump {
+        #  [default: true]
+        B:Enable=true
+
+        #  [range: 1 ~ 2147483647, default: 10000]
+        I:smartPumpEnergyStorage=10000
+
+        #  [range: 0 ~ 2147483647, default: 100]
+        I:smartPumpEnergyUsePerBlock=100
+
+        # The Smart Pump's cooldown (in ticks). [range: 1 ~ 2147483647, default: 200]
+        I:smartPumpStallCooldown=200
+    }
+
+    voidquarry {
+        #  [default: true]
+        B:Enable=true
+
+        # Base factor of RF that is used per operation. Is influenced by upgrades & block hardness. [range: 100 ~ 1024000, default: 100]
+        I:voidQuarryBaseRFCost=100
+
+        # The amount of blocks the quarry tries to mine per tick, without speed upgrades. [range: 1 ~ 1048, default: 2]
+        I:voidQuarryBaseSpeed=2
+
+        # Default amount of blocks the quarry will mine upwards, added to its own y position. [range: 1 ~ 64, default: 5]
+        I:voidQuarryDefaultTopPadding=5
+
+        # Energy (RF) capacity of the machine. [range: 256000 ~ 100000000, default: 10000000]
+        I:voidQuarryEnergyStorage=10000000
+
+        # The energy multiplier applied when the upgrade is active. [range: 1.0 ~ 64.0, default: 3.0]
+        D:voidQuarryFluidPumpEnergyMultiplier=3.0
+
+        # Amount of fluid tanks, with one for each fluid type. [range: 1 ~ 4, default: 2]
+        I:voidQuarryFluidTankAmount=2
+
+        # Amount of fluid (in mB) that can be stored per tank. Will have +1000mb of buffer for overflow. [range: 15000 ~ 1023000, default: 127000]
+        I:voidQuarryFluidTankStorage=127000
+
+        # The energy multiplier applied when the upgrade is active. [range: 1.0 ~ 128.0, default: 12.0]
+        D:voidQuarryFortune1EnergyMultiplier=12.0
+
+        # The energy multiplier applied when the upgrade is active. [range: 1.0 ~ 256.0, default: 40.0]
+        D:voidQuarryFortune2EnergyMultiplier=40.0
+
+        # The energy multiplier applied when the upgrade is active. [range: 1.0 ~ 512.0, default: 100.0]
+        D:voidQuarryFortune3EnergyMultiplier=100.0
+
+        # Block type to replace mined blocks with if the world hole upgrade isn't present. [default: COBBLE]
+        S:voidQuarryReplaceBlock=COBBLE
+
+        # The energy multiplier applied when the upgrade is active. [range: 1.0 ~ 128.0, default: 8.0]
+        D:voidQuarrySilkTouchEnergyMultiplier=8.0
+
+        # The energy multiplier applied when the upgrade is active. [range: 1.0 ~ 80.0, default: 8.0]
+        D:voidQuarrySpeed1EnergyMultiplier=8.0
+
+        # The multiplier applied to the base mine speed. [range: 1.0 ~ 80.0, default: 2.0]
+        D:voidQuarrySpeed1Multiplier=2.0
+
+        # The energy multiplier applied when the upgrade is active. [range: 1.0 ~ 160.0, default: 16.0]
+        D:voidQuarrySpeed2EnergyMultiplier=16.0
+
+        # The multiplier applied to the base speed mine speed. [range: 1.0 ~ 160.0, default: 4.0]
+        D:voidQuarrySpeed2Multiplier=4.0
+
+        # The energy multiplier applied when the upgrade is active. [range: 1.0 ~ 320.0, default: 32.0]
+        D:voidQuarrySpeed3EnergyMultiplier=32.0
+
+        # The multiplier applied to the base speed mine speed. [range: 1.0 ~ 320.0, default: 7.0]
+        D:voidQuarrySpeed3Multiplier=7.0
+
+        # The energy multiplier applied when the upgrade is active. [range: 1.0 ~ 64.0, default: 1.2]
+        D:voidQuarryWorldHoleEnergyMultiplier=1.2
+    }
+
+    purelove {
+        #  [default: true]
+        B:Enable=true
+
+        # Radius within which animals fall in love [range: 1 ~ 16, default: 8]
+        I:"Pure Love range"=8
+    }
+
+    pacifistsbench {
+        # The Pacifist's Bench cooldown (in ticks). [range: -2147483648 ~ 2147483647, default: 600]
+        I:Cooldown=600
+
+        #  [default: true]
+        B:Enable=true
+
+        # Enable the Pacifist's Bench to work outside of peaceful mode. [default: false]
+        B:pacifistsBenchInNonPeaceful=false
+    }
+
+    enderlotus {
+        #  [default: true]
+        B:Enable=true
+
+        # Chance to drop an extra seed when harvested from a fully grown plant on endspark [range: 0.001 ~ 1.0, default: 0.2]
+        D:extraSeedChanceOnEndspark=0.2
+
+        # Chance to drop an extra seed when harvested from a fully grown plant on endstone [range: 0.001 ~ 1.0, default: 0.02]
+        D:extraSeedChanceOnEndstone=0.02
+
+        # Average growth ticks to increase growth stage while planted on dirt/grass [range: 1 ~ 1000, default: 100]
+        I:growthTicksOnDirt=100
+
+        # Average growth ticks to increase growth stage while planted on endspark [range: 1 ~ 1000, default: 4]
+        I:growthTicksOnEndspark=4
+
+        # Average growth ticks to increase growth stage while planted on endstone [range: 1 ~ 1000, default: 25]
+        I:growthTicksOnEndstone=25
+
+        # Spawn Ender Lotuses in the End [default: true]
+        B:spawnEnderLotusesInEnd=true
+
+        # Ender Lotuses hurt players and mobs when they walk on them [default: true]
+        B:thornyLotuses=true
+    }
+
+    coloredblocks {
+        #  [default: true]
+        B:"Enable Colored Blocks"=true
+
+        #  [default: true]
+        B:"Enable Paint Roller"=true
+
+        # Register oredictionary entries for colored blocks.
+        # Will allow colored blocks to work in recipes, but will also bloat NEI for recipes that people will likely never use... [default: false]
+        B:coloredBlockOredict=false
+
+        # Instead of 16 static colors, with this enabled a paint roller will be added which can be used to dye colored blocks
+        # Requires EndlessIDs
+        # Paint roller and colored blocks must be enabled too [default: true]
+        B:enableDying=true
+
+        # WARNING! THIS IS AN ADVANCED CONFIG OPTION!
+        # If you don't know what you're doing do not touch.
+        # 
+        # Add extra blocks to be turned into colored blocks
+        # 
+        # Format: MODID;BLOCKNAME;BRIGHTNESS;TEXTUREDOMAIN;TEXTURENAME
+        #    MODID: Mod ID of the mod that adds the block. NOT DOMAIN. (example: "minecraft")
+        #    BLOCKNAME: Name of the block (example: "wool")
+        #    BRIGHTNESS: Brightness multiplier (example: "1.5")
+        #    TEXTUREDOMAIN: Domain for texture (example: "utilitiesinexcess")
+        #    TEXTURENAME: Texture location (example: "textures/blocks/block_update_detector_active.png")
+        # 
+        # Example: minecraft;double_stone_slab;1;minecraft;textures/blocks/stone_slab_top.png
+        # Example: utilitiesinexcess;block_update_detector;1.5;utilitiesinexcess;textures/blocks/block_update_detector_active.png
+        #  [default: ]
+        S:extraColoredBlocks <
+         >
+    }
+
+    ##########################################################################################################
+    # filingcabinets
+    #--------------------------------------------------------------------------------------------------------#
+    # Filing Cabinet Configuration
+    ##########################################################################################################
+
+    filingcabinets {
+        #  [default: true]
+        B:Enable=true
+
+        # Amount of additional capacity added per capacity upgrade. [range: 1 ~ 2147483647, default: 4096]
+        I:"Upgrade Capacity"=4096
+
+        # Maximum number of capacity upgrades that can be installed in a single filing cabinet.
+        # If this is reduced, existing cabinets will retain all of their upgrades beyond the limit. [range: 0 ~ 64, default: 14]
+        I:"Upgrade Limit"=14
+
+        ##########################################################################################################
+        # basic cabinet settings
+        #--------------------------------------------------------------------------------------------------------#
+        # Configuration for basic filing cabinets.
+        ##########################################################################################################
+
+        "basic cabinet settings" {
+            # To disable the cabinet [default: true]
+            B:Enable=true
+
+            # The capacity of the cabinet; corresponds to the total number of items that can be held across all slots.
+            # WARNING: Reducing this may cause data loss in filing cabinets with more than that many total items! [range: 1 ~ 2147483647, default: 8192]
+            I:"Number of Items"=8192
+
+            # The number of slots in the cabinet; corresponds to the number of distinct item types that can be held.
+            # WARNING: Reducing this may cause data loss in filing cabinets with more than that many item types!
+            # WARNING: Making this too large may make the cabinet GUI difficult to scroll through! [range: 1 ~ 2147483647, default: 256]
+            I:"Number of Slots"=256
+        }
+
+        ##########################################################################################################
+        # advanced cabinet settings
+        #--------------------------------------------------------------------------------------------------------#
+        # Configuration for advanced filing cabinets.
+        ##########################################################################################################
+
+        "advanced cabinet settings" {
+            # To disable the cabinet [default: true]
+            B:Enable=true
+
+            # The capacity of the cabinet; corresponds to the total number of items that can be held across all slots.
+            # WARNING: Reducing this may cause data loss in filing cabinets with more than that many total items! [range: 1 ~ 2147483647, default: 8192]
+            I:"Number of Items"=8192
+
+            # The number of slots in the cabinet; corresponds to the number of distinct item types that can be held.
+            # WARNING: Reducing this may cause data loss in filing cabinets with more than that many item types!
+            # WARNING: Making this too large may make the cabinet GUI difficult to scroll through! [range: 1 ~ 2147483647, default: 512]
+            I:"Number of Slots"=512
+        }
+
+        ##########################################################################################################
+        # elite cabinet settings
+        #--------------------------------------------------------------------------------------------------------#
+        # Configuration for elite filing cabinets.
+        ##########################################################################################################
+
+        "elite cabinet settings" {
+            # To disable the cabinet [default: true]
+            B:Enable=true
+
+            # The capacity of the cabinet; corresponds to the total number of items that can be held across all slots.
+            # WARNING: Reducing this may cause data loss in filing cabinets with more than that many total items! [range: 1 ~ 2147483647, default: 8192]
+            I:"Number of Items"=8192
+
+            # The number of slots in the cabinet; corresponds to the number of distinct item types that can be held.
+            # WARNING: Reducing this may cause data loss in filing cabinets with more than that many item types!
+            # WARNING: Making this too large may make the cabinet GUI difficult to scroll through! [range: 1 ~ 2147483647, default: 128]
+            I:"Number of Slots"=128
+        }
+
+    }
+
+}
+
+
+dimensions {
+
+    underworld {
+        #  [default: true]
+        B:Enable=true
+
+        # The biome to populate the underworld with [range: -2147483648 ~ 2147483647, default: 50]
+        I:defaultBiomeId=50
+
+        # Enables increased ore rates and aggressive mob spawning in certain regions [default: true]
+        B:enableDifficulty=true
+
+        # Enables the underworld biome [default: true]
+        B:enableUnderWorldBiome=true
+
+        # Enables custom ore spawning (typically used by mods to generate their ore) [default: true]
+        B:spawnCustomOre=true
+
+        # Enables vanilla ore spawning [default: true]
+        B:spawnVanillaOre=true
+
+        # The biome ID for the underworld biome [range: -2147483648 ~ 2147483647, default: 50]
+        I:underWorldBiomeId=50
+
+        #  [range: -2147483648 ~ 2147483647, default: 10]
+        I:underWorldDimensionId=10
+    }
+
+    endoftime {
+        #  [default: true]
+        B:Enable=true
+
+        # The biome to populate the End of Time with [range: -2147483648 ~ 2147483647, default: 51]
+        I:defaultBiomeId=51
+
+        # Enables the End of Time biome [default: true]
+        B:enableEndOfTimeBiome=true
+
+        # The biome ID for the End of Time biome [range: -2147483648 ~ 2147483647, default: 51]
+        I:endOfTimeBiomeId=51
+
+        #  [range: -2147483648 ~ 2147483647, default: 11]
+        I:endOfTimeDimensionId=11
+
+        # Enables rain in the End of Time [default: false]
+        B:endOfTimeRain=false
+
+        # Enables natural mob spawning in the End of Time [default: false]
+        B:endOfTimeSpawning=false
+    }
+
+}
+
+
+generators {
+    #  [default: true]
+    B:TNTGeneratorExplosions=true
+
+    #  [range: 0 ~ 2147483647, default: 32000]
+    I:TNTGeneratorGunpowderFuelValue=32000
+
+    #  [range: 1 ~ 2147483647, default: 1000000]
+    I:TNTGeneratorRFCapacity=1000000
+
+    #  [range: 0 ~ 2147483647, default: 480000]
+    I:TNTGeneratorTNTFuelValue=480000
+
+    #  [default: true]
+    B:enableEnderGenerator=true
+
+    #  [default: true]
+    B:enableFoodGenerator=true
+
+    #  [default: true]
+    B:enableFurnaceGenerator=true
+
+    #  [default: true]
+    B:enableHighTemperatureFurnaceGenerator=true
+
+    #  [default: true]
+    B:enableLavaGenerator=true
+
+    #  [default: true]
+    B:enableLowTemperatureFurnaceGenerator=true
+
+    #  [default: true]
+    B:enableNetherStarGenerator=true
+
+    #  [default: true]
+    B:enablePinkGenerator=true
+
+    #  [default: true]
+    B:enablePotionGenerator=true
+
+    #  [default: true]
+    B:enableRedstoneGenerator=true
+
+    #  [default: true]
+    B:enableSolarGenerator=true
+
+    #  [default: true]
+    B:enableTNTGenerator=true
+
+    #  [range: 0 ~ 2147483647, default: 3000]
+    I:enderGeneratorEnderEyeBurnTime=3000
+
+    #  [range: 0 ~ 2147483647, default: 12000]
+    I:enderGeneratorEnderLotusSeedBurnTime=12000
+
+    #  [range: 0 ~ 2147483647, default: 800]
+    I:enderGeneratorEnderPearlBurnTime=800
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:enderGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 40]
+    I:enderGeneratorRFPerTick=40
+
+    #  [range: 1 ~ 2147483647, default: 900]
+    I:foodGeneratorBurnTimeMultiplier=900
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:foodGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 4]
+    I:foodGeneratorRFMultiplier=4
+
+    #  [range: 1.0E-4 ~ 10000.0, default: 0.3125]
+    S:furnaceGeneratorFuelUsageRatio=0.3125
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:furnaceGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 40]
+    I:furnaceGeneratorRFPerTick=40
+
+    #  [range: 1.0E-4 ~ 10000.0, default: 0.0075]
+    S:highTemperatureFurnaceGeneratorFuelUsageRatio=0.0075
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:highTemperatureFurnaceGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 400]
+    I:highTemperatureFurnaceGeneratorRFPerTick=400
+
+    #  [range: 1 ~ 2147483647, default: 50]
+    I:lavaGeneratorFuelBurnTime=50
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:lavaGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 40]
+    I:lavaGeneratorRFPerTick=40
+
+    #  [range: 1.0E-4 ~ 10000.0, default: 0.5]
+    S:lowTemperatureFurnaceGeneratorFuelUsageRatio=0.5
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:lowTemperatureFurnaceGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 5]
+    I:lowTemperatureFurnaceGeneratorRFPerTick=5
+
+    #  [range: 1 ~ 2147483647, default: 2400]
+    I:netherStarGeneratorFuelBurnTime=2400
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:netherStarGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 40000]
+    I:netherStarGeneratorRFPerTick=40000
+
+    #  [range: 1 ~ 2147483647, default: 400]
+    I:pinkGeneratorFuelBurnTime=400
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:pinkGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 40]
+    I:pinkGeneratorRFPerTick=40
+
+    #  [range: 0 ~ 2147483647, default: 800]
+    I:potionGeneratorBurnTime=800
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:potionGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 20]
+    I:potionGeneratorRFMultiplier=20
+
+    #  [range: 1 ~ 2147483647, default: 320]
+    I:redstoneGeneratorFuelBurnTime=320
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:redstoneGeneratorRFCapacity=100000
+
+    #  [range: 1 ~ 2147483647, default: 80]
+    I:redstoneGeneratorRFPerTick=80
+
+    #  [range: 0 ~ 2147483647, default: 40]
+    I:solarGeneratorNoSkyGeneration=40
+
+    #  [range: 1 ~ 2147483647, default: 100000]
+    I:solarGeneratorRFCapacity=100000
+
+    #  [range: 0 ~ 2147483647, default: 40]
+    I:solarGeneratorTopGeneration=40
+}
+
+
+items {
+    #  [default: true]
+    B:enableBedrockium=true
+
+    #  [default: true]
+    B:enableBlockAnalyzer=true
+
+    #  [default: true]
+    B:enableGlove=true
+
+    #  [default: true]
+    B:enableGoldenBagOfHolding=true
+
+    #  [default: true]
+    B:enableMobJar=true
+
+    #  [default: true]
+    B:enableXRayGlasses=true
+
+    invertedtools {
+
+        ethericswordconfig {
+            #  [default: true]
+            B:Enable=true
+
+            #  [default: true]
+            B:Unbreakable=true
+
+            #  [range: 0.0 ~ 20.0, default: 3.0]
+            S:magicDamage=3.0
+
+            #  [range: 0.0 ~ 20.0, default: 4.0]
+            S:normalDamage=4.0
+        }
+
+        destructionpickaxeconfig {
+            #  [default: true]
+            B:Enable=true
+
+            #  [default: true]
+            B:Unbreakable=true
+
+            #  [range: 0.0 ~ 100.0, default: 5.0]
+            S:effectiveSpeedModifier=5.0
+
+            # Which blocks the pickaxe is effective against. Format as modid:blockid:meta - if meta is not specified, will use any meta. [default: [minecraft:stone], [minecraft:cobblestone], [minecraft:sandstone], [minecraft:netherrack], [minecraft:hardened_clay], [minecraft:stained_hardened_clay]]
+            S:includeEffective <
+                minecraft:stone
+                minecraft:cobblestone
+                minecraft:sandstone
+                minecraft:netherrack
+                minecraft:hardened_clay
+                minecraft:stained_hardened_clay
+             >
+
+            #  [range: 0.0 ~ 100.0, default: 0.0625]
+            S:ineffectiveSpeedModifier=0.0625
+
+            #  [default: false]
+            B:voidMinedBlock=false
+        }
+
+        gourmandsaxeconfig {
+            #  [default: true]
+            B:Enable=true
+
+            #  [default: true]
+            B:Unbreakable=true
+
+            #  [range: 0.0 ~ 100.0, default: 15.0]
+            S:damageAgainstUndead=15.0
+
+            #  [default: true]
+            B:drainHp=true
+
+            #  [range: 0 ~ 20, default: 1]
+            I:foodGain=1
+
+            #  [range: 0 ~ 100, default: 3]
+            I:maxHeal=3
+
+            #  [range: 0.0 ~ 1.0, default: 0.25]
+            S:saturationGain=0.25
+
+            #  [default: true]
+            B:spawnParticles=true
+
+            #  [default: true]
+            B:useHungerAlways=true
+
+            #  [default: false]
+            B:voidMinedBlock=false
+        }
+
+        antigravityshovelconfig {
+            #  [default: true]
+            B:Enable=true
+
+            #  [default: true]
+            B:Unbreakable=true
+
+            #  [default: true]
+            B:breakFallingAbove=true
+
+            #  [default: true]
+            B:voidMinedBlocks=true
+        }
+
+        reversinghoeconfig {
+            #  [default: true]
+            B:Enable=true
+
+            #  [default: true]
+            B:Unbreakable=true
+
+            # Which block transformations the reversing hoe will work on. Format as modid:blockid:meta->modid:blockid:meta - if meta of source block is not specified, will work on any meta. If meta of target block is not specified, will transform into meta 0. [default: [minecraft:dirt->minecraft:grass], [minecraft:cobblestone->minecraft:stone], [utilitiesinexcess:cursed_earth->utilitiesinexcess:blessed_earth], [utilitiesinexcess:blessed_earth->utilitiesinexcess:cursed_earth]]
+            S:blockTransformations <
+                minecraft:dirt->minecraft:grass
+                minecraft:cobblestone->minecraft:stone
+                utilitiesinexcess:cursed_earth->utilitiesinexcess:blessed_earth
+                utilitiesinexcess:blessed_earth->utilitiesinexcess:cursed_earth
+             >
+        }
+
+        precisionshearsconfig {
+            #  [default: true]
+            B:Enable=true
+
+            #  [default: true]
+            B:Unbreakable=true
+
+            #  [range: 0 ~ 2147483647, default: 20]
+            I:cooldown=20
+
+            #  [range: 0.0 ~ 100.0, default: 4.0]
+            S:efficiency=4.0
+
+            #  [default: true]
+            B:spawnParticles=true
+
+            #  [range: 0 ~ 2147483647, default: 1]
+            I:toolLevel=1
+        }
+
+    }
+
+    inversion {
+        # Set to 0 for unlimited uses [range: 0 ~ 2147483647, default: 256]
+        I:awakenedInversionDurability=256
+
+        # Whether or not vanilla splash potions should also be valid if a regular potion of the same type is found. [default: true]
+        B:chestSplashPotionsValid=true
+
+        # Amount of unique items in the list the east chest has to contain for the pseudo-reversion ritual [range: 1 ~ 10000, default: 12]
+        I:eastChestRequiredItems=12
+
+        # List of valid items the east chest can contain. Must be item ids in the form 'modid:itemname:meta'. Enable splash potions with chestSplashPotionsValid (applies for other chests too). [default: [minecraft:potion:8193], [minecraft:potion:8194], [minecraft:potion:8195], [minecraft:potion:8196], [minecraft:potion:8197], [minecraft:potion:8198], [minecraft:potion:8200], [minecraft:potion:8201], [minecraft:potion:8202], [minecraft:potion:8204], [minecraft:potion:8205], [minecraft:potion:8206], [minecraft:potion:8225], [minecraft:potion:8226], [minecraft:potion:8228], [minecraft:potion:8229], [minecraft:potion:8232], [minecraft:potion:8233], [minecraft:potion:8234], [minecraft:potion:8236], [minecraft:potion:8257], [minecraft:potion:8258], [minecraft:potion:8259], [minecraft:potion:8260], [minecraft:potion:8262], [minecraft:potion:8264], [minecraft:potion:8265], [minecraft:potion:8267], [minecraft:potion:8268], [minecraft:potion:8269], [minecraft:potion:8270]]
+        S:eastChestValidItems <
+            minecraft:potion:8193
+            minecraft:potion:8194
+            minecraft:potion:8195
+            minecraft:potion:8196
+            minecraft:potion:8197
+            minecraft:potion:8198
+            minecraft:potion:8200
+            minecraft:potion:8201
+            minecraft:potion:8202
+            minecraft:potion:8204
+            minecraft:potion:8205
+            minecraft:potion:8206
+            minecraft:potion:8225
+            minecraft:potion:8226
+            minecraft:potion:8228
+            minecraft:potion:8229
+            minecraft:potion:8232
+            minecraft:potion:8233
+            minecraft:potion:8234
+            minecraft:potion:8236
+            minecraft:potion:8257
+            minecraft:potion:8258
+            minecraft:potion:8259
+            minecraft:potion:8260
+            minecraft:potion:8262
+            minecraft:potion:8264
+            minecraft:potion:8265
+            minecraft:potion:8267
+            minecraft:potion:8268
+            minecraft:potion:8269
+            minecraft:potion:8270
+         >
+
+        #  [default: true]
+        B:enableInvertedIngot=true
+
+        #  [default: true]
+        B:enableReversionSigil=true
+
+        #  [range: -2147483648 ~ 2147483647, default: 300]
+        I:invertedIngotImplosionTimer=300
+
+        # What happens when you run out of time while handling Inverted Ingots
+        #  IMPLODE: Die, ingots are destroyed
+        #  DISAPPEAR: Ingots are destroyed
+        #  DECAY: Ingots become Stable Inverted Nuggets
+        #  OFF: No timer
+        # Possible values: [OFF, IMPLODE, DISAPPEAR, DECAY]
+        #  [default: IMPLODE]
+        S:invertedIngotMode=IMPLODE
+
+        # Amount of unique items in the list the north chest has to contain for the pseudo-reversion ritual [range: 1 ~ 10000, default: 12]
+        I:northChestRequiredItems=12
+
+        # List of valid items the north chest can contain. Must be item ids in the form 'modid:itemname:meta' [default: [minecraft:stone], [minecraft:brick], [minecraft:glass], [minecraft:cooked_fished], [minecraft:hardened_clay], [minecraft:dye:2], [minecraft:coal:1], [minecraft:cooked_beef], [minecraft:iron_ingot], [minecraft:cooked_chicken], [minecraft:gold_ingot], [minecraft:baked_potato], [minecraft:cooked_porkchop], [minecraft:netherbrick]]
+        S:northChestValidItems <
+            minecraft:stone
+            minecraft:brick
+            minecraft:glass
+            minecraft:cooked_fished
+            minecraft:hardened_clay
+            minecraft:dye:2
+            minecraft:coal:1
+            minecraft:cooked_beef
+            minecraft:iron_ingot
+            minecraft:cooked_chicken
+            minecraft:gold_ingot
+            minecraft:baked_potato
+            minecraft:cooked_porkchop
+            minecraft:netherbrick
+         >
+
+        # Amount of mobs needed to kill to pass the siege of the ritual [range: 4 ~ 2147483647, default: 100]
+        I:siegeRequiredMobsKill=100
+
+        # Amount of unique items in the list the south chest has to contain for the pseudo-reversion ritual [range: 1 ~ 10000, default: 12]
+        I:southChestRequiredItems=12
+
+        # List of valid items the south chest can contain. Must be item ids in the form 'modid:itemname:meta' [default: [minecraft:grass], [minecraft:lapis_ore], [minecraft:dirt], [minecraft:obsidian], [minecraft:sand], [minecraft:diamond_ore], [minecraft:gravel], [minecraft:redstone_ore], [minecraft:gold_ore], [minecraft:clay], [minecraft:iron_ore], [minecraft:emerald_ore], [minecraft:coal_ore]]
+        S:southChestValidItems <
+            minecraft:grass
+            minecraft:lapis_ore
+            minecraft:dirt
+            minecraft:obsidian
+            minecraft:sand
+            minecraft:diamond_ore
+            minecraft:gravel
+            minecraft:redstone_ore
+            minecraft:gold_ore
+            minecraft:clay
+            minecraft:iron_ore
+            minecraft:emerald_ore
+            minecraft:coal_ore
+         >
+
+        # Amount of unique items in the list the west chest has to contain for the pseudo-reversion ritual [range: 1 ~ 10000, default: 12]
+        I:westChestRequiredItems=12
+
+        # List of valid items the west chest can contain. Must be item ids in the form 'modid:itemname:meta' [default: [minecraft:record_13], [minecraft:record_mellohi], [minecraft:record_cat], [minecraft:record_stal], [minecraft:record_blocks], [minecraft:record_strad], [minecraft:record_chirp], [minecraft:record_ward], [minecraft:record_far], [minecraft:record_11], [minecraft:record_mall], [minecraft:record_wait]]
+        S:westChestValidItems <
+            minecraft:record_13
+            minecraft:record_mellohi
+            minecraft:record_cat
+            minecraft:record_stal
+            minecraft:record_blocks
+            minecraft:record_strad
+            minecraft:record_chirp
+            minecraft:record_ward
+            minecraft:record_far
+            minecraft:record_11
+            minecraft:record_mall
+            minecraft:record_wait
+         >
+    }
+
+    architectswands {
+        #  [range: -2147483648 ~ 2147483647, default: 9]
+        I:architectsWandBuildLimit=9
+
+        #  [range: -2147483648 ~ 2147483647, default: 200]
+        I:architectsWandCreativeBuildLimit=200
+
+        # [GT5U] Durability damage dealt to Trowels per block placed by the Architect's Wand. (Set to 0 to disable) [range: -2147483648 ~ 2147483647, default: 100]
+        I:damageTrowelWithArchitectsWand=100
+
+        #  [default: true]
+        B:enableArchitectsWand=true
+
+        #  [default: true]
+        B:enableSuperArchitectsWand=true
+
+        #  [range: -2147483648 ~ 2147483647, default: 49]
+        I:superArchitectsWandBuildLimit=49
+    }
+
+    wateringcan {
+        # If true, the watering can can be used by FakePlayers. [default: false]
+        B:"Allow Automated Watering"=false
+
+        # If true, the watering can can be toggled on and off by Crouch + right-clicking. [default: true]
+        B:"Allow Watering Can Toggle"=true
+
+        # If true, the player will be slowed down while using the watering can. [default: true]
+        B:"Walking Speed Penalty"=true
+
+        tier {
+            # Enable or disable the Advanced Watering Can item. [default: true]
+            B:"Enable Advanced Watering Can"=true
+
+            # Enable or disable the Basic Watering Can item. [default: true]
+            B:"Enable Basic Watering Can"=true
+
+            # Enable or disable the Elite Watering Can item. [default: true]
+            B:"Enable Elite Watering Can"=true
+        }
+
+        flowering {
+            # If true, using the watering can on a flower will duplicate that flower. [default: true]
+            B:"Allow Flower Duplication"=true
+
+            # If true, using the watering can on a grass block will spawn random flowers on that block. [default: true]
+            B:"Allow Flower Spawning"=true
+
+            # If true, when targeting short blocks (height < 0.85), the flower’s spawn height is lowered by the block’s height to attempt spawning beside the block instead of directly on top. [default: true]
+            B:"Spawn Flowers Beside Short Blocks"=true
+        }
+
+    }
+
+    chunchunmaru {
+        #  [default: true]
+        B:Enable=true
+
+        #  [range: 0.0 ~ 200.0, default: 8.0]
+        S:creativeDamage=8.0
+
+        #  [default: true]
+        B:damageCreativePlayers=true
+
+        #  [range: -2147483648 ~ 2147483647, default: 4096]
+        I:durability=4096
+
+        #  [range: 0.0 ~ 200.0, default: 8.0]
+        S:normalDamage=8.0
+
+        #  [default: true]
+        B:unbreakable=true
+    }
+
+    firebattery {
+        #  [default: true]
+        B:Enable=true
+
+        # RF consumed per burn tick. [range: 1 ~ 2147483647, default: 50]
+        I:fireBatteryBurnTime=50
+
+        # Maximum charge rate. [range: 1 ~ 2147483647, default: 1500000]
+        I:fireBatteryRFCharge=1500000
+
+        # Maximum RF storage value. [range: 1 ~ 2147483647, default: 1500000]
+        I:fireBatteryRFStorage=1500000
+
+        # Maximum RF consumption. [range: 0 ~ 2147483647, default: 15000]
+        I:fireBatteryRFUsage=15000
+    }
+
+    heavenlyring {
+        #  [default: true]
+        B:Enable=true
+
+        # With this off, when baubles is loaded players must put heavenly rings in the baubles slot to use them
+        # Recommended to keep off for better performance [default: false]
+        B:enableInInventoryWithBaubles=false
+    }
+
+}
+
+
+other {
+    # 315 is the tinkers material ID Extra Utilities uses for bedrockium and will therefore migrate tools automatically. Must change if both mods are installed! [range: -2147483648 ~ 2147483647, default: 315]
+    I:bedrockiumTinkersID=315
+
+    # Enable rendering some UIE baubles on players who have them equipped [default: true]
+    B:enableBaubleRenders=true
+
+    # Enables Tinkers' integration for bedrockium, inverted ingots, and magical wood [default: true]
+    B:enableTinkersIntegration=true
+
+    # Enable the Extra Utilities to Utilities In Excess world conversion system [default: true]
+    B:enableWorldConversion=true
+
+    # 314 is the tinkers material ID Extra Utilities uses for unstable and will therefore migrate tools automatically. Must change if both mods are installed! [range: -2147483648 ~ 2147483647, default: 314]
+    I:invertedTinkersID=314
+
+    # 316 is the tinkers material ID Extra Utilities uses for magical wood and will therefore migrate tools automatically. Must change if both mods are installed! [range: -2147483648 ~ 2147483647, default: 316]
+    I:magicalWoodTinkersID=316
+}
+
+
+recipes {
+    #  [default: true]
+    B:enableAdvancedBlockUpdateDetectorRecipe=true
+
+    #  [default: true]
+    B:enableAntiGravityShovelRecipe=true
+
+    #  [default: true]
+    B:enableArchitectsWandRecipe=true
+
+    #  [default: true]
+    B:enableBedrockiumBlockRecipe=true
+
+    #  [default: true]
+    B:enableBedrockiumDrumRecipe=true
+
+    #  [default: true]
+    B:enableBedrockiumIngotRecipe=true
+
+    #  [default: true]
+    B:enableBlackoutCurtainsRecipe=true
+
+    #  [default: true]
+    B:enableBlockAnalyzerRecipe=true
+
+    #  [default: true]
+    B:enableBlockUpdateDetectorRecipe=true
+
+    #  [default: true]
+    B:enableChandelierRecipe=true
+
+    #  [default: true]
+    B:enableChunchunmaruRecipe=true
+
+    #  [default: true]
+    B:enableCollectorRecipe=true
+
+    #  [default: true]
+    B:enableColoredBlockRecipes=true
+
+    #  [default: true]
+    B:enableCompressedBlockRecipes=true
+
+    #  [default: true]
+    B:enableConvergenceCrystalRecipe=true
+
+    #  [default: true]
+    B:enableConveyorRecipe=true
+
+    #  [default: true]
+    B:enableDecorativeBlockRecipes=true
+
+    #  [default: true]
+    B:enableDecorativeGlassRecipes=true
+
+    #  [default: true]
+    B:enableDestructionPickaxeRecipe=true
+
+    #  [default: true]
+    B:enableDrumRecipe=true
+
+    #  [default: true]
+    B:enableEndOfTimePortalRecipe=true
+
+    #  [default: true]
+    B:enableEnderLocusOreRecipes=true
+
+    #  [default: true]
+    B:enableEnderLocusRecipe=true
+
+    #  [default: true]
+    B:enableEndsparkRecipe=true
+
+    #  [default: true]
+    B:enableEtherealGlassRecipes=true
+
+    #  [default: true]
+    B:enableEthericSwordRecipe=true
+
+    #  [default: true]
+    B:enableFilingCabinetRecipes=true
+
+    #  [default: true]
+    B:enableFilingCabinetUpgradeRecipe=true
+
+    #  [default: true]
+    B:enableFireBatteryRecipe=true
+
+    #  [default: true]
+    B:enableFloatingBlockRecipe=true
+
+    #  [default: true]
+    B:enableGeneratorRecipes=true
+
+    #  [default: true]
+    B:enableGigaTorchRecipe=true
+
+    #  [default: true]
+    B:enableGloveRecipe=true
+
+    #  [default: true]
+    B:enableGoldenBagRecipe=true
+
+    #  [default: true]
+    B:enableGourmandsAxeRecipe=true
+
+    #  [default: true]
+    B:enableHeavenlyRingRecipes=true
+
+    #  [default: true]
+    B:enableInvertedBlockRecipe=true
+
+    #  [default: true]
+    B:enableInvertedIngotFromNuggetsRecipe=true
+
+    #  [default: true]
+    B:enableInvertedIngotQuasiNormalizedRecipe=true
+
+    #  [default: true]
+    B:enableInvertedIngotRecipe=true
+
+    #  [default: true]
+    B:enableInvertedNuggetRecipe=true
+
+    #  [default: true]
+    B:enableLapisAetheriusRecipes=true
+
+    #  [default: true]
+    B:enableMagicWoodRecipe=true
+
+    #  [default: true]
+    B:enableMarginallyMaximisedChestRecipe=true
+
+    #  [default: true]
+    B:enableMobJarRecipe=true
+
+    #  [default: true]
+    B:enablePacifistsBenchRecipe=true
+
+    #  [default: true]
+    B:enablePaintRollerRecipe=true
+
+    #  [default: true]
+    B:enablePrecisionShearsRecipe=true
+
+    #  [default: true]
+    B:enablePureLoveRecipe=true
+
+    #  [default: true]
+    B:enableRadicallyReducedChestRecipe=true
+
+    #  [default: true]
+    B:enableRainMufflerRecipe=true
+
+    #  [default: true]
+    B:enableRedstoneClockRecipe=true
+
+    #  [default: true]
+    B:enableReversingHoeRecipe=true
+
+    #  [default: true]
+    B:enableSignificantlyShrunkChestRecipe=true
+
+    #  [default: true]
+    B:enableSmartPumpRecipe=true
+
+    #  [default: true]
+    B:enableSoundMufflerRecipe=true
+
+    #  [default: true]
+    B:enableSpikeRecipes=true
+
+    #  [default: true]
+    B:enableSuperArchitectsWandRecipe=true
+
+    #  [default: true]
+    B:enableTradingPostRecipe=true
+
+    #  [default: true]
+    B:enableTrashCanEnergyRecipe=true
+
+    #  [default: true]
+    B:enableTrashCanFluidRecipe=true
+
+    #  [default: true]
+    B:enableTrashCanItemRecipe=true
+
+    #  [default: true]
+    B:enableUnderworldPortalRecipe=true
+
+    #  [default: true]
+    B:enableVoidMarkerRecipe=true
+
+    #  [default: true]
+    B:enableVoidQuarryRecipe=true
+
+    #  [default: true]
+    B:enableVoidQuarryUpgradeRecipes=true
+
+    #  [default: true]
+    B:enableWateringCanAdvancedRecipe=true
+
+    #  [default: true]
+    B:enableWateringCanBasicRecipe=true
+
+    #  [default: true]
+    B:enableWateringCanEliteRecipe=true
+
+    #  [default: true]
+    B:enableXRayGlassesRecipe=true
+}
+
+

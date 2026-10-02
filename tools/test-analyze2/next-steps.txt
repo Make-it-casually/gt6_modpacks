@@ -1,0 +1,18 @@
+﻿gt6bridge next steps
+===================
+[removals] wrote E:\game\minecraft\gt6\tools\test-analyze2\removals-final.csv (11 matching row(s))
+           review it, then copy over config\gt6bridge\removals.csv and set removalDryRun,false
+           actuallyadditions_crusher        would remove 18
+           enderio_sagmill                  would remove 16
+           galacticraft_compressor          would remove 0
+           ic2_macerator                    would remove 51
+           railcraft_rockcrusher            would remove 12
+           te_furnace                       would remove 6
+           te_pulverizer                    would remove 42
+           te_sawmill                       would remove 3
+[autorules] ore -> Crusher: 1804 binding(s), GT6 generates these itself - no need
+[autorules] dust -> Smelter: 2980 binding(s), NO handler on that map -> enable
+[autorules] nugget -> Smelter: 612 binding(s), NO handler on that map -> enable
+[autorules] wrote E:\game\minecraft\gt6\tools\test-analyze2\autorules-suggested.csv
+[materials] review materials-suggested.csv, then merge the rows into config\gt6bridge\materials.csv
+[verify]    after the next run, report.txt should show bindings.verified close to bindings

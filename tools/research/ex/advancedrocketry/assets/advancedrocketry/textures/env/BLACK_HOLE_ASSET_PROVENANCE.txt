@@ -1,0 +1,14 @@
+The following fallback textures were copied unchanged from:
+
+  Project: Advanced-Rocketry/AdvancedRocketry
+  Repository: https://github.com/Advanced-Rocketry/AdvancedRocketry
+  Source commit: c5cd5af62fc07cd4e0d24f06a16033f181c47c04
+  Source paths:
+    src/main/resources/assets/advancedrocketry/textures/env/blackhole.png
+    src/main/resources/assets/advancedrocketry/textures/env/accretiondisk.png
+    src/main/resources/assets/advancedrocketry/textures/env/blackhole_icon.png
+
+The source project identifies its code and assets under the MIT license.  The
+Continuation repository retains its existing LICENSE-MIT file.  No
+MatterOverdrive/MOCE shader code or assets were used.  The GLSL programs in
+assets/advancedrocketry/shaders are an original implementation for this fork.

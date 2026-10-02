@@ -1,0 +1,21 @@
+[
+    {
+        "modid": "ThermalFoundation",
+        "name": "Thermal Foundation",
+        "description": "The foundation of a Thermally enhanced world!",
+        "version": "1.2.6",
+        "credits": "Team CoFH",
+        "logoFile": "assets/thermalfoundation/textures/logo.png",
+        "mcversion": "1.7.10",
+        "url": "http://www.teamcofh.com",
+        "updateUrl": "",
+        "authorList": [
+            "Team CoFH"
+        ],
+        "parent": "",
+        "screenshots": [],
+        "dependencies": [
+            "MinecraftForge,CoFHCore"
+        ]
+    }
+]

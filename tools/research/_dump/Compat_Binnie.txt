@@ -1,0 +1,3062 @@
+﻿Compiled from "Compat_Recipes_Binnie.java"
+public class gregtech.compat.Compat_Recipes_Binnie extends gregapi.compat.CompatMods {
+  public gregtech.compat.Compat_Recipes_Binnie(gregapi.code.ModData, gregapi.api.Abstract_Mod);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #23                 // Method gregapi/compat/CompatMods."<init>":(Lgregapi/code/ModData;Lgregapi/api/Abstract_Mod;)V
+       6: return
+
+  public void onPostLoad(cpw.mods.fml.common.event.FMLPostInitializationEvent);
+    Code:
+       0: getstatic     #36                 // Field gregapi/data/MD.BINNIE_TREE:Lgregapi/code/ModData;
+       3: getfield      #42                 // Field gregapi/code/ModData.mLoaded:Z
+       6: ifeq          26
+       9: getstatic     #48                 // Field gregapi/data/CS.OUT:Ljava/io/PrintStream;
+      12: ldc           #50                 // String GT_Mod: Doing Binnie Extra Trees Recipes.
+      14: invokevirtual #56                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      17: new           #9                  // class gregtech/compat/Compat_Recipes_Binnie$1
+      20: dup
+      21: aload_0
+      22: invokespecial #59                 // Method gregtech/compat/Compat_Recipes_Binnie$1."<init>":(Lgregtech/compat/Compat_Recipes_Binnie;)V
+      25: pop
+      26: getstatic     #62                 // Field gregapi/data/MD.BINNIE_GENETICS:Lgregapi/code/ModData;
+      29: getfield      #42                 // Field gregapi/code/ModData.mLoaded:Z
+      32: ifeq          102
+      35: getstatic     #48                 // Field gregapi/data/CS.OUT:Ljava/io/PrintStream;
+      38: ldc           #64                 // String GT_Mod: Doing Binnie Genetics Recipes.
+      40: invokevirtual #56                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      43: getstatic     #62                 // Field gregapi/data/MD.BINNIE_GENETICS:Lgregapi/code/ModData;
+      46: ldc           #66                 // String misc
+      48: iconst_4
+      49: iconst_0
+      50: newarray       int
+      52: invokestatic  #72                 // Method gregapi/util/CR.delate:(Lgregapi/code/ModData;Ljava/lang/String;I[I)V
+      55: getstatic     #78                 // Field gregapi/data/RM.Mixer:Lgregapi/recipes/Recipe$RecipeMap;
+      58: iconst_1
+      59: ldc2_w        #79                 // long 16l
+      62: ldc2_w        #81                 // long 32l
+      65: getstatic     #86                 // Field gregapi/data/MT.Bone:Lgregapi/oredict/OreDictMaterial;
+      68: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+      71: getstatic     #95                 // Field gregapi/data/MT.Sugar:Lgregapi/oredict/OreDictMaterial;
+      74: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+      77: iconst_1
+      78: anewarray     #97                 // class net/minecraft/item/ItemStack
+      81: dup
+      82: iconst_0
+      83: getstatic     #62                 // Field gregapi/data/MD.BINNIE_GENETICS:Lgregapi/code/ModData;
+      86: ldc           #66                 // String misc
+      88: ldc2_w        #98                 // long 2l
+      91: ldc2_w        #100                // long 4l
+      94: invokestatic  #107                // Method gregapi/util/ST.make:(Lgregapi/code/ModData;Ljava/lang/String;JJ)Lnet/minecraft/item/ItemStack;
+      97: aastore
+      98: invokevirtual #111                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe2:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     101: pop
+     102: getstatic     #114                // Field gregapi/data/MD.BINNIE_BOTANY:Lgregapi/code/ModData;
+     105: getfield      #42                 // Field gregapi/code/ModData.mLoaded:Z
+     108: ifeq          211
+     111: getstatic     #48                 // Field gregapi/data/CS.OUT:Ljava/io/PrintStream;
+     114: ldc           #116                // String GT_Mod: Doing Binnie Botany Recipes.
+     116: invokevirtual #56                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     119: getstatic     #114                // Field gregapi/data/MD.BINNIE_BOTANY:Lgregapi/code/ModData;
+     122: ldc           #66                 // String misc
+     124: bipush        6
+     126: iconst_0
+     127: newarray       int
+     129: invokestatic  #72                 // Method gregapi/util/CR.delate:(Lgregapi/code/ModData;Ljava/lang/String;I[I)V
+     132: new           #7                  // class gregtech/compat/Compat_Recipes_Binnie$2
+     135: dup
+     136: aload_0
+     137: invokespecial #117                // Method gregtech/compat/Compat_Recipes_Binnie$2."<init>":(Lgregtech/compat/Compat_Recipes_Binnie;)V
+     140: pop
+     141: getstatic     #114                // Field gregapi/data/MD.BINNIE_BOTANY:Lgregapi/code/ModData;
+     144: ldc           #66                 // String misc
+     146: bipush        7
+     148: iconst_0
+     149: newarray       int
+     151: invokestatic  #72                 // Method gregapi/util/CR.delate:(Lgregapi/code/ModData;Ljava/lang/String;I[I)V
+     154: getstatic     #78                 // Field gregapi/data/RM.Mixer:Lgregapi/recipes/Recipe$RecipeMap;
+     157: iconst_1
+     158: ldc2_w        #79                 // long 16l
+     161: ldc2_w        #118                // long 64l
+     164: getstatic     #125                // Field net/minecraft/init/Items.field_151014_N:Lnet/minecraft/item/Item;
+     167: ldc2_w        #126                // long 3l
+     170: ldc2_w        #128                // long 32767l
+     173: invokestatic  #132                // Method gregapi/util/ST.make:(Lnet/minecraft/item/Item;JJ)Lnet/minecraft/item/ItemStack;
+     176: getstatic     #135                // Field net/minecraft/init/Items.field_151070_bp:Lnet/minecraft/item/Item;
+     179: lconst_1
+     180: ldc2_w        #128                // long 32767l
+     183: invokestatic  #132                // Method gregapi/util/ST.make:(Lnet/minecraft/item/Item;JJ)Lnet/minecraft/item/ItemStack;
+     186: iconst_1
+     187: anewarray     #97                 // class net/minecraft/item/ItemStack
+     190: dup
+     191: iconst_0
+     192: getstatic     #114                // Field gregapi/data/MD.BINNIE_BOTANY:Lgregapi/code/ModData;
+     195: ldc           #66                 // String misc
+     197: ldc2_w        #100                // long 4l
+     200: ldc2_w        #136                // long 7l
+     203: invokestatic  #107                // Method gregapi/util/ST.make:(Lgregapi/code/ModData;Ljava/lang/String;JJ)Lnet/minecraft/item/ItemStack;
+     206: aastore
+     207: invokevirtual #111                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe2:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     210: pop
+     211: getstatic     #140                // Field gregapi/data/MD.BINNIE_BEE:Lgregapi/code/ModData;
+     214: getfield      #42                 // Field gregapi/code/ModData.mLoaded:Z
+     217: ifeq          6347
+     220: getstatic     #48                 // Field gregapi/data/CS.OUT:Ljava/io/PrintStream;
+     223: ldc           #142                // String GT_Mod: Doing Binnie Extra Bees Recipes.
+     225: invokevirtual #56                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     228: getstatic     #140                // Field gregapi/data/MD.BINNIE_BEE:Lgregapi/code/ModData;
+     231: ldc           #144                // String hiveFrame.cocoa
+     233: lconst_1
+     234: lconst_0
+     235: invokestatic  #107                // Method gregapi/util/ST.make:(Lgregapi/code/ModData;Ljava/lang/String;JJ)Lnet/minecraft/item/ItemStack;
+     238: bipush        7
+     240: anewarray     #146                // class java/lang/Object
+     243: dup
+     244: iconst_0
+     245: ldc           #148                // String  C
+     247: aastore
+     248: dup
+     249: iconst_1
+     250: ldc           #150                // String CFC
+     252: aastore
+     253: dup
+     254: iconst_2
+     255: ldc           #148                // String  C
+     257: aastore
+     258: dup
+     259: iconst_3
+     260: bipush        67
+     262: invokestatic  #156                // Method java/lang/Character.valueOf:(C)Ljava/lang/Character;
+     265: aastore
+     266: dup
+     267: iconst_4
+     268: getstatic     #161                // Field gregapi/data/OP.dust:Lgregapi/oredict/OreDictPrefix;
+     271: getstatic     #164                // Field gregapi/data/MT.Cocoa:Lgregapi/oredict/OreDictMaterial;
+     274: invokevirtual #170                // Method gregapi/oredict/OreDictPrefix.dat:(Lgregapi/oredict/OreDictMaterial;)Lgregapi/oredict/OreDictItemData;
+     277: aastore
+     278: dup
+     279: iconst_5
+     280: bipush        70
+     282: invokestatic  #156                // Method java/lang/Character.valueOf:(C)Ljava/lang/Character;
+     285: aastore
+     286: dup
+     287: bipush        6
+     289: getstatic     #173                // Field gregapi/data/MD.FR:Lgregapi/code/ModData;
+     292: ldc           #175                // String frameImpregnated
+     294: lconst_1
+     295: lconst_0
+     296: invokestatic  #107                // Method gregapi/util/ST.make:(Lgregapi/code/ModData;Ljava/lang/String;JJ)Lnet/minecraft/item/ItemStack;
+     299: aastore
+     300: invokestatic  #179                // Method gregapi/util/CR.shaped:(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)Z
+     303: pop
+     304: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     307: iconst_1
+     308: ldc2_w        #79                 // long 16l
+     311: ldc2_w        #118                // long 64l
+     314: getstatic     #188                // Field gregapi/data/IL.BINNIE_Comb_Barren:Lgregapi/data/IL;
+     317: lconst_1
+     318: iconst_0
+     319: anewarray     #146                // class java/lang/Object
+     322: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     325: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     328: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+     331: ldc2_w        #203                // long 50l
+     334: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+     337: iconst_1
+     338: anewarray     #97                 // class net/minecraft/item/ItemStack
+     341: dup
+     342: iconst_0
+     343: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+     346: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+     349: aastore
+     350: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     353: pop
+     354: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     357: iconst_1
+     358: ldc2_w        #79                 // long 16l
+     361: ldc2_w        #118                // long 64l
+     364: getstatic     #217                // Field gregapi/data/IL.BINNIE_Comb_Old:Lgregapi/data/IL;
+     367: lconst_1
+     368: iconst_0
+     369: anewarray     #146                // class java/lang/Object
+     372: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     375: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     378: getstatic     #220                // Field gregapi/data/FL.Honeydew:Lgregapi/data/FL;
+     381: ldc2_w        #221                // long 90l
+     384: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+     387: iconst_1
+     388: anewarray     #97                 // class net/minecraft/item/ItemStack
+     391: dup
+     392: iconst_0
+     393: getstatic     #225                // Field gregapi/data/MT.WaxParaffin:Lgregapi/oredict/OreDictMaterial;
+     396: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+     399: aastore
+     400: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     403: pop
+     404: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     407: iconst_1
+     408: ldc2_w        #79                 // long 16l
+     411: ldc2_w        #118                // long 64l
+     414: iconst_2
+     415: newarray       long
+     417: dup
+     418: iconst_0
+     419: ldc2_w        #226                // long 10000l
+     422: lastore
+     423: dup
+     424: iconst_1
+     425: ldc2_w        #228                // long 8000l
+     428: lastore
+     429: getstatic     #232                // Field gregapi/data/IL.BINNIE_Comb_Rotten:Lgregapi/data/IL;
+     432: lconst_1
+     433: iconst_0
+     434: anewarray     #146                // class java/lang/Object
+     437: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     440: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     443: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+     446: ldc2_w        #233                // long 20l
+     449: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+     452: iconst_2
+     453: anewarray     #97                 // class net/minecraft/item/ItemStack
+     456: dup
+     457: iconst_0
+     458: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+     461: ldc2_w        #235                // long 162162000l
+     464: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+     467: aastore
+     468: dup
+     469: iconst_1
+     470: getstatic     #242                // Field net/minecraft/init/Items.field_151078_bh:Lnet/minecraft/item/Item;
+     473: lconst_1
+     474: lconst_0
+     475: invokestatic  #132                // Method gregapi/util/ST.make:(Lnet/minecraft/item/Item;JJ)Lnet/minecraft/item/ItemStack;
+     478: aastore
+     479: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     482: pop
+     483: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     486: iconst_1
+     487: ldc2_w        #79                 // long 16l
+     490: ldc2_w        #118                // long 64l
+     493: iconst_2
+     494: newarray       long
+     496: dup
+     497: iconst_0
+     498: ldc2_w        #226                // long 10000l
+     501: lastore
+     502: dup
+     503: iconst_1
+     504: ldc2_w        #228                // long 8000l
+     507: lastore
+     508: getstatic     #248                // Field gregapi/data/IL.BINNIE_Comb_Bone:Lgregapi/data/IL;
+     511: lconst_1
+     512: iconst_0
+     513: anewarray     #146                // class java/lang/Object
+     516: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     519: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     522: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+     525: ldc2_w        #233                // long 20l
+     528: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+     531: iconst_2
+     532: anewarray     #97                 // class net/minecraft/item/ItemStack
+     535: dup
+     536: iconst_0
+     537: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+     540: ldc2_w        #235                // long 162162000l
+     543: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+     546: aastore
+     547: dup
+     548: iconst_1
+     549: getstatic     #251                // Field gregapi/data/IL.Dye_Bonemeal:Lgregapi/data/IL;
+     552: lconst_1
+     553: iconst_0
+     554: anewarray     #146                // class java/lang/Object
+     557: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     560: aastore
+     561: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     564: pop
+     565: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     568: iconst_1
+     569: ldc2_w        #79                 // long 16l
+     572: ldc2_w        #118                // long 64l
+     575: iconst_2
+     576: newarray       long
+     578: dup
+     579: iconst_0
+     580: ldc2_w        #226                // long 10000l
+     583: lastore
+     584: dup
+     585: iconst_1
+     586: ldc2_w        #252                // long 6000l
+     589: lastore
+     590: getstatic     #256                // Field gregapi/data/IL.BINNIE_Comb_Oil:Lgregapi/data/IL;
+     593: lconst_1
+     594: iconst_0
+     595: anewarray     #146                // class java/lang/Object
+     598: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     601: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     604: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+     607: ldc2_w        #203                // long 50l
+     610: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+     613: iconst_2
+     614: anewarray     #97                 // class net/minecraft/item/ItemStack
+     617: dup
+     618: iconst_0
+     619: getstatic     #225                // Field gregapi/data/MT.WaxParaffin:Lgregapi/oredict/OreDictMaterial;
+     622: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+     625: aastore
+     626: dup
+     627: iconst_1
+     628: getstatic     #259                // Field gregapi/data/IL.BINNIE_Propolis_Oil:Lgregapi/data/IL;
+     631: lconst_1
+     632: iconst_0
+     633: anewarray     #146                // class java/lang/Object
+     636: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     639: aastore
+     640: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     643: pop
+     644: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     647: iconst_1
+     648: ldc2_w        #79                 // long 16l
+     651: ldc2_w        #118                // long 64l
+     654: iconst_2
+     655: newarray       long
+     657: dup
+     658: iconst_0
+     659: ldc2_w        #226                // long 10000l
+     662: lastore
+     663: dup
+     664: iconst_1
+     665: ldc2_w        #252                // long 6000l
+     668: lastore
+     669: getstatic     #262                // Field gregapi/data/IL.BINNIE_Comb_Petroleum:Lgregapi/data/IL;
+     672: lconst_1
+     673: iconst_0
+     674: anewarray     #146                // class java/lang/Object
+     677: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     680: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     683: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+     686: ldc2_w        #203                // long 50l
+     689: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+     692: iconst_2
+     693: anewarray     #97                 // class net/minecraft/item/ItemStack
+     696: dup
+     697: iconst_0
+     698: getstatic     #225                // Field gregapi/data/MT.WaxParaffin:Lgregapi/oredict/OreDictMaterial;
+     701: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+     704: aastore
+     705: dup
+     706: iconst_1
+     707: getstatic     #265                // Field gregapi/data/IL.BINNIE_Propolis_Petroleum:Lgregapi/data/IL;
+     710: lconst_1
+     711: iconst_0
+     712: anewarray     #146                // class java/lang/Object
+     715: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     718: aastore
+     719: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     722: pop
+     723: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     726: iconst_1
+     727: ldc2_w        #79                 // long 16l
+     730: ldc2_w        #118                // long 64l
+     733: getstatic     #268                // Field gregapi/data/IL.BINNIE_Comb_Damp:Lgregapi/data/IL;
+     736: lconst_1
+     737: iconst_0
+     738: anewarray     #146                // class java/lang/Object
+     741: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     744: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     747: getstatic     #271                // Field gregapi/data/FL.Water:Lgregapi/data/FL;
+     750: ldc2_w        #272                // long 500l
+     753: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+     756: iconst_1
+     757: anewarray     #97                 // class net/minecraft/item/ItemStack
+     760: dup
+     761: iconst_0
+     762: getstatic     #276                // Field gregapi/data/IL.BINNIE_Propolis_Water:Lgregapi/data/IL;
+     765: lconst_1
+     766: iconst_0
+     767: anewarray     #146                // class java/lang/Object
+     770: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     773: aastore
+     774: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     777: pop
+     778: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     781: iconst_1
+     782: ldc2_w        #79                 // long 16l
+     785: ldc2_w        #118                // long 64l
+     788: getstatic     #279                // Field gregapi/data/IL.BINNIE_Comb_Milk:Lgregapi/data/IL;
+     791: lconst_1
+     792: iconst_0
+     793: anewarray     #146                // class java/lang/Object
+     796: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     799: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     802: getstatic     #282                // Field gregapi/data/FL.Milk:Lgregapi/data/FL;
+     805: ldc2_w        #283                // long 400l
+     808: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+     811: iconst_1
+     812: anewarray     #97                 // class net/minecraft/item/ItemStack
+     815: dup
+     816: iconst_0
+     817: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+     820: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+     823: aastore
+     824: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     827: pop
+     828: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     831: iconst_1
+     832: ldc2_w        #79                 // long 16l
+     835: ldc2_w        #118                // long 64l
+     838: getstatic     #287                // Field gregapi/data/IL.BINNIE_Comb_Fruit:Lgregapi/data/IL;
+     841: lconst_1
+     842: iconst_0
+     843: anewarray     #146                // class java/lang/Object
+     846: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     849: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     852: getstatic     #290                // Field gregapi/data/FL.Juice:Lgregapi/data/FL;
+     855: ldc2_w        #283                // long 400l
+     858: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+     861: iconst_1
+     862: anewarray     #97                 // class net/minecraft/item/ItemStack
+     865: dup
+     866: iconst_0
+     867: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+     870: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+     873: aastore
+     874: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     877: pop
+     878: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     881: iconst_1
+     882: ldc2_w        #79                 // long 16l
+     885: ldc2_w        #118                // long 64l
+     888: getstatic     #293                // Field gregapi/data/IL.BINNIE_Comb_Seed:Lgregapi/data/IL;
+     891: lconst_1
+     892: iconst_0
+     893: anewarray     #146                // class java/lang/Object
+     896: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     899: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     902: ldc_w         #295                // String seedoil
+     905: ldc2_w        #283                // long 400l
+     908: invokestatic  #298                // Method gregapi/data/FL.make:(Ljava/lang/String;J)Lnet/minecraftforge/fluids/FluidStack;
+     911: iconst_1
+     912: anewarray     #97                 // class net/minecraft/item/ItemStack
+     915: dup
+     916: iconst_0
+     917: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+     920: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+     923: aastore
+     924: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     927: pop
+     928: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     931: iconst_1
+     932: ldc2_w        #79                 // long 16l
+     935: ldc2_w        #118                // long 64l
+     938: getstatic     #301                // Field gregapi/data/IL.BINNIE_Comb_Alcohol:Lgregapi/data/IL;
+     941: lconst_1
+     942: iconst_0
+     943: anewarray     #146                // class java/lang/Object
+     946: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     949: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     952: ldc_w         #303                // String short.mead
+     955: ldc2_w        #283                // long 400l
+     958: invokestatic  #298                // Method gregapi/data/FL.make:(Ljava/lang/String;J)Lnet/minecraftforge/fluids/FluidStack;
+     961: iconst_1
+     962: anewarray     #97                 // class net/minecraft/item/ItemStack
+     965: dup
+     966: iconst_0
+     967: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+     970: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+     973: aastore
+     974: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+     977: pop
+     978: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+     981: iconst_1
+     982: ldc2_w        #79                 // long 16l
+     985: ldc2_w        #118                // long 64l
+     988: getstatic     #306                // Field gregapi/data/IL.BINNIE_Comb_Coffee:Lgregapi/data/IL;
+     991: lconst_1
+     992: iconst_0
+     993: anewarray     #146                // class java/lang/Object
+     996: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+     999: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1002: ldc_w         #308                // String potion.coffee
+    1005: ldc2_w        #272                // long 500l
+    1008: invokestatic  #298                // Method gregapi/data/FL.make:(Ljava/lang/String;J)Lnet/minecraftforge/fluids/FluidStack;
+    1011: iconst_2
+    1012: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1015: dup
+    1016: iconst_0
+    1017: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1020: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1023: aastore
+    1024: dup
+    1025: iconst_1
+    1026: getstatic     #311                // Field gregapi/data/MT.Coffee:Lgregapi/oredict/OreDictMaterial;
+    1029: ldc2_w        #312                // long 486486000l
+    1032: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    1035: aastore
+    1036: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1039: pop
+    1040: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1043: iconst_1
+    1044: ldc2_w        #79                 // long 16l
+    1047: ldc2_w        #118                // long 64l
+    1050: getstatic     #316                // Field gregapi/data/IL.BINNIE_Comb_Mint:Lgregapi/data/IL;
+    1053: lconst_1
+    1054: iconst_0
+    1055: anewarray     #146                // class java/lang/Object
+    1058: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1061: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1064: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    1067: ldc2_w        #317                // long 80l
+    1070: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1073: iconst_2
+    1074: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1077: dup
+    1078: iconst_0
+    1079: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1082: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1085: aastore
+    1086: dup
+    1087: iconst_1
+    1088: getstatic     #321                // Field gregapi/data/MT.Mint:Lgregapi/oredict/OreDictMaterial;
+    1091: ldc2_w        #312                // long 486486000l
+    1094: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    1097: aastore
+    1098: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1101: pop
+    1102: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1105: iconst_1
+    1106: ldc2_w        #79                 // long 16l
+    1109: ldc2_w        #118                // long 64l
+    1112: getstatic     #324                // Field gregapi/data/IL.BINNIE_Comb_Citrus:Lgregapi/data/IL;
+    1115: lconst_1
+    1116: iconst_0
+    1117: anewarray     #146                // class java/lang/Object
+    1120: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1123: getstatic     #328                // Field gregapi/data/CS.ZL_FS:[Lnet/minecraftforge/fluids/FluidStack;
+    1126: iconst_5
+    1127: anewarray     #330                // class net/minecraftforge/fluids/FluidStack
+    1130: dup
+    1131: iconst_0
+    1132: getstatic     #333                // Field gregapi/data/FL.Juice_Orange:Lgregapi/data/FL;
+    1135: ldc2_w        #334                // long 100l
+    1138: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1141: aastore
+    1142: dup
+    1143: iconst_1
+    1144: getstatic     #338                // Field gregapi/data/FL.Juice_Persimmon:Lgregapi/data/FL;
+    1147: ldc2_w        #334                // long 100l
+    1150: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1153: aastore
+    1154: dup
+    1155: iconst_2
+    1156: getstatic     #341                // Field gregapi/data/FL.Juice_Lemon:Lgregapi/data/FL;
+    1159: ldc2_w        #334                // long 100l
+    1162: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1165: aastore
+    1166: dup
+    1167: iconst_3
+    1168: getstatic     #344                // Field gregapi/data/FL.Juice_Lime:Lgregapi/data/FL;
+    1171: ldc2_w        #334                // long 100l
+    1174: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1177: aastore
+    1178: dup
+    1179: iconst_4
+    1180: getstatic     #347                // Field gregapi/data/FL.Juice_Kiwi:Lgregapi/data/FL;
+    1183: ldc2_w        #334                // long 100l
+    1186: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1189: aastore
+    1190: invokestatic  #351                // Method gregapi/data/FL.array:([Lnet/minecraftforge/fluids/FluidStack;)[Lnet/minecraftforge/fluids/FluidStack;
+    1193: iconst_1
+    1194: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1197: dup
+    1198: iconst_0
+    1199: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1202: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1205: aastore
+    1206: invokevirtual #354                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;[Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1209: pop
+    1210: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1213: iconst_1
+    1214: ldc2_w        #79                 // long 16l
+    1217: ldc2_w        #118                // long 64l
+    1220: getstatic     #357                // Field gregapi/data/IL.BINNIE_Comb_Venom:Lgregapi/data/IL;
+    1223: lconst_1
+    1224: iconst_0
+    1225: anewarray     #146                // class java/lang/Object
+    1228: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1231: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1234: ldc_w         #359                // String poison
+    1237: ldc2_w        #360                // long 200l
+    1240: invokestatic  #298                // Method gregapi/data/FL.make:(Ljava/lang/String;J)Lnet/minecraftforge/fluids/FluidStack;
+    1243: iconst_1
+    1244: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1247: dup
+    1248: iconst_0
+    1249: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1252: ldc2_w        #362                // long 576576000l
+    1255: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    1258: aastore
+    1259: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1262: pop
+    1263: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1266: iconst_1
+    1267: ldc2_w        #79                 // long 16l
+    1270: ldc2_w        #118                // long 64l
+    1273: getstatic     #366                // Field gregapi/data/IL.BINNIE_Comb_Glacial:Lgregapi/data/IL;
+    1276: lconst_1
+    1277: iconst_0
+    1278: anewarray     #146                // class java/lang/Object
+    1281: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1284: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1287: ldc_w         #368                // String liquidnitrogen
+    1290: ldc2_w        #360                // long 200l
+    1293: invokestatic  #298                // Method gregapi/data/FL.make:(Ljava/lang/String;J)Lnet/minecraftforge/fluids/FluidStack;
+    1296: iconst_1
+    1297: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1300: dup
+    1301: iconst_0
+    1302: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1305: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1308: aastore
+    1309: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1312: pop
+    1313: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1316: iconst_1
+    1317: ldc2_w        #79                 // long 16l
+    1320: ldc2_w        #118                // long 64l
+    1323: iconst_2
+    1324: newarray       long
+    1326: dup
+    1327: iconst_0
+    1328: ldc2_w        #369                // long 9000l
+    1331: lastore
+    1332: dup
+    1333: iconst_1
+    1334: ldc2_w        #369                // long 9000l
+    1337: lastore
+    1338: getstatic     #373                // Field gregapi/data/IL.BINNIE_Comb_Fungal:Lgregapi/data/IL;
+    1341: lconst_1
+    1342: iconst_0
+    1343: anewarray     #146                // class java/lang/Object
+    1346: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1349: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1352: ldc_w         #375                // String mushroomsoup
+    1355: ldc2_w        #376                // long 1000l
+    1358: invokestatic  #298                // Method gregapi/data/FL.make:(Ljava/lang/String;J)Lnet/minecraftforge/fluids/FluidStack;
+    1361: iconst_2
+    1362: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1365: dup
+    1366: iconst_0
+    1367: getstatic     #383                // Field net/minecraft/init/Blocks.field_150419_aX:Lnet/minecraft/block/Block;
+    1370: lconst_1
+    1371: lconst_0
+    1372: invokestatic  #386                // Method gregapi/util/ST.make:(Lnet/minecraft/block/Block;JJ)Lnet/minecraft/item/ItemStack;
+    1375: aastore
+    1376: dup
+    1377: iconst_1
+    1378: getstatic     #389                // Field net/minecraft/init/Blocks.field_150420_aW:Lnet/minecraft/block/Block;
+    1381: lconst_1
+    1382: lconst_0
+    1383: invokestatic  #386                // Method gregapi/util/ST.make:(Lnet/minecraft/block/Block;JJ)Lnet/minecraft/item/ItemStack;
+    1386: aastore
+    1387: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1390: pop
+    1391: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1394: iconst_1
+    1395: ldc2_w        #79                 // long 16l
+    1398: ldc2_w        #118                // long 64l
+    1401: getstatic     #392                // Field gregapi/data/IL.BINNIE_Comb_Peat:Lgregapi/data/IL;
+    1404: lconst_1
+    1405: iconst_0
+    1406: anewarray     #146                // class java/lang/Object
+    1409: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1412: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1415: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    1418: ldc2_w        #203                // long 50l
+    1421: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1424: iconst_1
+    1425: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1428: dup
+    1429: iconst_0
+    1430: getstatic     #395                // Field gregapi/data/IL.BINNIE_Propolis_Peat:Lgregapi/data/IL;
+    1433: lconst_1
+    1434: iconst_0
+    1435: anewarray     #146                // class java/lang/Object
+    1438: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1441: aastore
+    1442: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1445: pop
+    1446: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1449: iconst_1
+    1450: ldc2_w        #79                 // long 16l
+    1453: ldc2_w        #118                // long 64l
+    1456: getstatic     #398                // Field gregapi/data/IL.BINNIE_Comb_Mulch:Lgregapi/data/IL;
+    1459: lconst_1
+    1460: iconst_0
+    1461: anewarray     #146                // class java/lang/Object
+    1464: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1467: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1470: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    1473: ldc2_w        #203                // long 50l
+    1476: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1479: iconst_2
+    1480: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1483: dup
+    1484: iconst_0
+    1485: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1488: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1491: aastore
+    1492: dup
+    1493: iconst_1
+    1494: getstatic     #401                // Field gregapi/data/IL.FR_Mulch:Lgregapi/data/IL;
+    1497: lconst_1
+    1498: iconst_0
+    1499: anewarray     #146                // class java/lang/Object
+    1502: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1505: aastore
+    1506: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1509: pop
+    1510: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1513: iconst_1
+    1514: ldc2_w        #79                 // long 16l
+    1517: ldc2_w        #118                // long 64l
+    1520: getstatic     #404                // Field gregapi/data/IL.BINNIE_Comb_Decomposed:Lgregapi/data/IL;
+    1523: lconst_1
+    1524: iconst_0
+    1525: anewarray     #146                // class java/lang/Object
+    1528: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1531: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1534: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    1537: ldc2_w        #203                // long 50l
+    1540: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1543: iconst_2
+    1544: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1547: dup
+    1548: iconst_0
+    1549: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1552: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1555: aastore
+    1556: dup
+    1557: iconst_1
+    1558: getstatic     #407                // Field gregapi/data/IL.FR_Compost:Lgregapi/data/IL;
+    1561: lconst_1
+    1562: iconst_0
+    1563: anewarray     #146                // class java/lang/Object
+    1566: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1569: aastore
+    1570: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1573: pop
+    1574: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1577: iconst_1
+    1578: ldc2_w        #79                 // long 16l
+    1581: ldc2_w        #118                // long 64l
+    1584: getstatic     #410                // Field gregapi/data/IL.BINNIE_Comb_Dusty:Lgregapi/data/IL;
+    1587: lconst_1
+    1588: iconst_0
+    1589: anewarray     #146                // class java/lang/Object
+    1592: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1595: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1598: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    1601: ldc2_w        #233                // long 20l
+    1604: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1607: iconst_2
+    1608: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1611: dup
+    1612: iconst_0
+    1613: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1616: ldc2_w        #411                // long 324324000l
+    1619: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    1622: aastore
+    1623: dup
+    1624: iconst_1
+    1625: getstatic     #415                // Field gregapi/data/MT.Wood:Lgregapi/oredict/OreDictMaterial;
+    1628: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1631: aastore
+    1632: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1635: pop
+    1636: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1639: iconst_1
+    1640: ldc2_w        #79                 // long 16l
+    1643: ldc2_w        #118                // long 64l
+    1646: getstatic     #418                // Field gregapi/data/IL.BINNIE_Comb_Pulp:Lgregapi/data/IL;
+    1649: lconst_1
+    1650: iconst_0
+    1651: anewarray     #146                // class java/lang/Object
+    1654: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1657: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1660: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    1663: ldc2_w        #233                // long 20l
+    1666: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1669: iconst_2
+    1670: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1673: dup
+    1674: iconst_0
+    1675: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1678: ldc2_w        #235                // long 162162000l
+    1681: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    1684: aastore
+    1685: dup
+    1686: iconst_1
+    1687: getstatic     #415                // Field gregapi/data/MT.Wood:Lgregapi/oredict/OreDictMaterial;
+    1690: ldc2_w        #419                // long 1297296000l
+    1693: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    1696: aastore
+    1697: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1700: pop
+    1701: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1704: iconst_1
+    1705: ldc2_w        #79                 // long 16l
+    1708: ldc2_w        #118                // long 64l
+    1711: getstatic     #423                // Field gregapi/data/IL.BINNIE_Comb_Rock:Lgregapi/data/IL;
+    1714: lconst_1
+    1715: iconst_0
+    1716: anewarray     #146                // class java/lang/Object
+    1719: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1722: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1725: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    1728: ldc2_w        #424                // long 30l
+    1731: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1734: iconst_2
+    1735: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1738: dup
+    1739: iconst_0
+    1740: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1743: ldc2_w        #411                // long 324324000l
+    1746: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    1749: aastore
+    1750: dup
+    1751: iconst_1
+    1752: getstatic     #428                // Field gregapi/data/MT.Stone:Lgregapi/oredict/OreDictMaterial;
+    1755: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1758: aastore
+    1759: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1762: pop
+    1763: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1766: iconst_1
+    1767: ldc2_w        #79                 // long 16l
+    1770: ldc2_w        #118                // long 64l
+    1773: iconst_2
+    1774: newarray       long
+    1776: dup
+    1777: iconst_0
+    1778: ldc2_w        #226                // long 10000l
+    1781: lastore
+    1782: dup
+    1783: iconst_1
+    1784: ldc2_w        #429                // long 7000l
+    1787: lastore
+    1788: getstatic     #433                // Field gregapi/data/IL.BINNIE_Comb_Tar:Lgregapi/data/IL;
+    1791: lconst_1
+    1792: iconst_0
+    1793: anewarray     #146                // class java/lang/Object
+    1796: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1799: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1802: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    1805: ldc2_w        #203                // long 50l
+    1808: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1811: iconst_1
+    1812: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1815: dup
+    1816: iconst_0
+    1817: getstatic     #436                // Field gregapi/data/IL.BINNIE_Propolis_Creosote:Lgregapi/data/IL;
+    1820: lconst_1
+    1821: iconst_0
+    1822: anewarray     #146                // class java/lang/Object
+    1825: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1828: aastore
+    1829: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1832: pop
+    1833: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1836: iconst_1
+    1837: ldc2_w        #79                 // long 16l
+    1840: ldc2_w        #118                // long 64l
+    1843: iconst_2
+    1844: newarray       long
+    1846: dup
+    1847: iconst_0
+    1848: ldc2_w        #226                // long 10000l
+    1851: lastore
+    1852: dup
+    1853: iconst_1
+    1854: ldc2_w        #437                // long 7500l
+    1857: lastore
+    1858: getstatic     #441                // Field gregapi/data/IL.BINNIE_Comb_Amber:Lgregapi/data/IL;
+    1861: lconst_1
+    1862: iconst_0
+    1863: anewarray     #146                // class java/lang/Object
+    1866: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1869: iconst_2
+    1870: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1873: dup
+    1874: iconst_0
+    1875: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1878: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1881: aastore
+    1882: dup
+    1883: iconst_1
+    1884: getstatic     #444                // Field gregapi/data/IL.FR_Propolis:Lgregapi/data/IL;
+    1887: ldc2_w        #98                 // long 2l
+    1890: iconst_0
+    1891: anewarray     #146                // class java/lang/Object
+    1894: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1897: aastore
+    1898: invokevirtual #447                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1901: pop
+    1902: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1905: iconst_1
+    1906: ldc2_w        #79                 // long 16l
+    1909: ldc2_w        #118                // long 64l
+    1912: getstatic     #450                // Field gregapi/data/IL.BINNIE_Comb_Latex:Lgregapi/data/IL;
+    1915: lconst_1
+    1916: iconst_0
+    1917: anewarray     #146                // class java/lang/Object
+    1920: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1923: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1926: getstatic     #453                // Field gregapi/data/FL.Latex:Lgregapi/data/FL;
+    1929: ldc2_w        #454                // long 144l
+    1932: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1935: iconst_1
+    1936: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1939: dup
+    1940: iconst_0
+    1941: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    1944: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    1947: aastore
+    1948: invokevirtual #214                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    1951: pop
+    1952: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    1955: iconst_1
+    1956: ldc2_w        #79                 // long 16l
+    1959: ldc2_w        #118                // long 64l
+    1962: iconst_1
+    1963: newarray       long
+    1965: dup
+    1966: iconst_0
+    1967: ldc2_w        #437                // long 7500l
+    1970: lastore
+    1971: getstatic     #458                // Field gregapi/data/IL.BINNIE_Comb_Shadow:Lgregapi/data/IL;
+    1974: lconst_1
+    1975: iconst_0
+    1976: anewarray     #146                // class java/lang/Object
+    1979: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    1982: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    1985: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    1988: ldc2_w        #203                // long 50l
+    1991: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    1994: iconst_1
+    1995: anewarray     #97                 // class net/minecraft/item/ItemStack
+    1998: dup
+    1999: iconst_0
+    2000: getstatic     #461                // Field gregapi/data/MT.Obsidian:Lgregapi/oredict/OreDictMaterial;
+    2003: ldc2_w        #462                // long 2594592000l
+    2006: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2009: aastore
+    2010: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2013: pop
+    2014: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2017: iconst_1
+    2018: ldc2_w        #79                 // long 16l
+    2021: ldc2_w        #118                // long 64l
+    2024: iconst_1
+    2025: newarray       long
+    2027: dup
+    2028: iconst_0
+    2029: ldc2_w        #437                // long 7500l
+    2032: lastore
+    2033: getstatic     #466                // Field gregapi/data/IL.BINNIE_Comb_Energetic:Lgregapi/data/IL;
+    2036: lconst_1
+    2037: iconst_0
+    2038: anewarray     #146                // class java/lang/Object
+    2041: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2044: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2047: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2050: ldc2_w        #203                // long 50l
+    2053: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2056: iconst_1
+    2057: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2060: dup
+    2061: iconst_0
+    2062: getstatic     #469                // Field gregapi/data/MT.Redstone:Lgregapi/oredict/OreDictMaterial;
+    2065: ldc2_w        #419                // long 1297296000l
+    2068: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2071: aastore
+    2072: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2075: pop
+    2076: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2079: iconst_1
+    2080: ldc2_w        #79                 // long 16l
+    2083: ldc2_w        #118                // long 64l
+    2086: iconst_2
+    2087: newarray       long
+    2089: dup
+    2090: iconst_0
+    2091: ldc2_w        #437                // long 7500l
+    2094: lastore
+    2095: dup
+    2096: iconst_1
+    2097: ldc2_w        #437                // long 7500l
+    2100: lastore
+    2101: getstatic     #472                // Field gregapi/data/IL.BINNIE_Comb_Glowing:Lgregapi/data/IL;
+    2104: lconst_1
+    2105: iconst_0
+    2106: anewarray     #146                // class java/lang/Object
+    2109: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2112: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2115: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2118: ldc2_w        #424                // long 30l
+    2121: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2124: iconst_2
+    2125: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2128: dup
+    2129: iconst_0
+    2130: getstatic     #475                // Field gregapi/data/MT.Glowstone:Lgregapi/oredict/OreDictMaterial;
+    2133: ldc2_w        #476                // long 648648000l
+    2136: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2139: aastore
+    2140: dup
+    2141: iconst_1
+    2142: getstatic     #480                // Field gregapi/data/MT.Gloomstone:Lgregapi/oredict/OreDictMaterial;
+    2145: ldc2_w        #476                // long 648648000l
+    2148: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2151: aastore
+    2152: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2155: pop
+    2156: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2159: iconst_1
+    2160: ldc2_w        #79                 // long 16l
+    2163: ldc2_w        #118                // long 64l
+    2166: iconst_1
+    2167: newarray       long
+    2169: dup
+    2170: iconst_0
+    2171: ldc2_w        #437                // long 7500l
+    2174: lastore
+    2175: getstatic     #483                // Field gregapi/data/IL.BINNIE_Comb_Static:Lgregapi/data/IL;
+    2178: lconst_1
+    2179: iconst_0
+    2180: anewarray     #146                // class java/lang/Object
+    2183: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2186: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2189: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2192: ldc2_w        #203                // long 50l
+    2195: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2198: iconst_1
+    2199: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2202: dup
+    2203: iconst_0
+    2204: getstatic     #486                // Field gregapi/data/MT.Nikolite:Lgregapi/oredict/OreDictMaterial;
+    2207: ldc2_w        #462                // long 2594592000l
+    2210: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2213: aastore
+    2214: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2217: pop
+    2218: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2221: iconst_1
+    2222: ldc2_w        #79                 // long 16l
+    2225: ldc2_w        #118                // long 64l
+    2228: iconst_3
+    2229: newarray       long
+    2231: dup
+    2232: iconst_0
+    2233: ldc2_w        #487                // long 4000l
+    2236: lastore
+    2237: dup
+    2238: iconst_1
+    2239: ldc2_w        #489                // long 3000l
+    2242: lastore
+    2243: dup
+    2244: iconst_2
+    2245: ldc2_w        #489                // long 3000l
+    2248: lastore
+    2249: getstatic     #493                // Field gregapi/data/IL.BINNIE_Comb_Certus:Lgregapi/data/IL;
+    2252: lconst_1
+    2253: iconst_0
+    2254: anewarray     #146                // class java/lang/Object
+    2257: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2260: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2263: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2266: ldc2_w        #233                // long 20l
+    2269: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2272: iconst_3
+    2273: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2276: dup
+    2277: iconst_0
+    2278: getstatic     #496                // Field gregapi/data/OP.gem:Lgregapi/oredict/OreDictPrefix;
+    2281: getstatic     #499                // Field gregapi/data/MT.CertusQuartz:Lgregapi/oredict/OreDictMaterial;
+    2284: lconst_1
+    2285: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2288: aastore
+    2289: dup
+    2290: iconst_1
+    2291: getstatic     #496                // Field gregapi/data/OP.gem:Lgregapi/oredict/OreDictPrefix;
+    2294: getstatic     #505                // Field gregapi/data/MT.NetherQuartz:Lgregapi/oredict/OreDictMaterial;
+    2297: lconst_1
+    2298: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2301: aastore
+    2302: dup
+    2303: iconst_2
+    2304: getstatic     #496                // Field gregapi/data/OP.gem:Lgregapi/oredict/OreDictPrefix;
+    2307: getstatic     #508                // Field gregapi/data/MT.MilkyQuartz:Lgregapi/oredict/OreDictMaterial;
+    2310: lconst_1
+    2311: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2314: aastore
+    2315: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2318: pop
+    2319: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2322: iconst_1
+    2323: ldc2_w        #79                 // long 16l
+    2326: ldc2_w        #118                // long 64l
+    2329: iconst_1
+    2330: newarray       long
+    2332: dup
+    2333: iconst_0
+    2334: ldc2_w        #437                // long 7500l
+    2337: lastore
+    2338: getstatic     #511                // Field gregapi/data/IL.BINNIE_Comb_Lapis:Lgregapi/data/IL;
+    2341: lconst_1
+    2342: iconst_0
+    2343: anewarray     #146                // class java/lang/Object
+    2346: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2349: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2352: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2355: ldc2_w        #233                // long 20l
+    2358: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2361: iconst_1
+    2362: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2365: dup
+    2366: iconst_0
+    2367: getstatic     #496                // Field gregapi/data/OP.gem:Lgregapi/oredict/OreDictPrefix;
+    2370: getstatic     #514                // Field gregapi/data/MT.Lapis:Lgregapi/oredict/OreDictMaterial;
+    2373: ldc2_w        #515                // long 9l
+    2376: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2379: aastore
+    2380: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2383: pop
+    2384: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2387: iconst_1
+    2388: ldc2_w        #79                 // long 16l
+    2391: ldc2_w        #118                // long 64l
+    2394: iconst_1
+    2395: newarray       long
+    2397: dup
+    2398: iconst_0
+    2399: ldc2_w        #437                // long 7500l
+    2402: lastore
+    2403: getstatic     #519                // Field gregapi/data/IL.BINNIE_Comb_Sodalite:Lgregapi/data/IL;
+    2406: lconst_1
+    2407: iconst_0
+    2408: anewarray     #146                // class java/lang/Object
+    2411: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2414: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2417: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2420: ldc2_w        #233                // long 20l
+    2423: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2426: iconst_1
+    2427: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2430: dup
+    2431: iconst_0
+    2432: getstatic     #496                // Field gregapi/data/OP.gem:Lgregapi/oredict/OreDictPrefix;
+    2435: getstatic     #522                // Field gregapi/data/MT.Sodalite:Lgregapi/oredict/OreDictMaterial;
+    2438: ldc2_w        #515                // long 9l
+    2441: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2444: aastore
+    2445: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2448: pop
+    2449: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2452: iconst_1
+    2453: ldc2_w        #79                 // long 16l
+    2456: ldc2_w        #118                // long 64l
+    2459: bipush        6
+    2461: newarray       long
+    2463: dup
+    2464: iconst_0
+    2465: ldc2_w        #523                // long 1250l
+    2468: lastore
+    2469: dup
+    2470: iconst_1
+    2471: ldc2_w        #523                // long 1250l
+    2474: lastore
+    2475: dup
+    2476: iconst_2
+    2477: ldc2_w        #523                // long 1250l
+    2480: lastore
+    2481: dup
+    2482: iconst_3
+    2483: ldc2_w        #523                // long 1250l
+    2486: lastore
+    2487: dup
+    2488: iconst_4
+    2489: ldc2_w        #523                // long 1250l
+    2492: lastore
+    2493: dup
+    2494: iconst_5
+    2495: ldc2_w        #523                // long 1250l
+    2498: lastore
+    2499: getstatic     #527                // Field gregapi/data/IL.BINNIE_Comb_Emerald:Lgregapi/data/IL;
+    2502: lconst_1
+    2503: iconst_0
+    2504: anewarray     #146                // class java/lang/Object
+    2507: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2510: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2513: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2516: ldc2_w        #233                // long 20l
+    2519: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2522: bipush        6
+    2524: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2527: dup
+    2528: iconst_0
+    2529: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2532: getstatic     #533                // Field gregapi/data/MT.Maxixe:Lgregapi/oredict/OreDictMaterial;
+    2535: lconst_1
+    2536: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2539: aastore
+    2540: dup
+    2541: iconst_1
+    2542: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2545: getstatic     #536                // Field gregapi/data/MT.Aquamarine:Lgregapi/oredict/OreDictMaterial;
+    2548: lconst_1
+    2549: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2552: aastore
+    2553: dup
+    2554: iconst_2
+    2555: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2558: getstatic     #539                // Field gregapi/data/MT.Morganite:Lgregapi/oredict/OreDictMaterial;
+    2561: lconst_1
+    2562: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2565: aastore
+    2566: dup
+    2567: iconst_3
+    2568: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2571: getstatic     #542                // Field gregapi/data/MT.Heliodor:Lgregapi/oredict/OreDictMaterial;
+    2574: lconst_1
+    2575: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2578: aastore
+    2579: dup
+    2580: iconst_4
+    2581: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2584: getstatic     #545                // Field gregapi/data/MT.Goshenite:Lgregapi/oredict/OreDictMaterial;
+    2587: lconst_1
+    2588: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2591: aastore
+    2592: dup
+    2593: iconst_5
+    2594: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2597: getstatic     #548                // Field gregapi/data/MT.Bixbite:Lgregapi/oredict/OreDictMaterial;
+    2600: lconst_1
+    2601: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2604: aastore
+    2605: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2608: pop
+    2609: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2612: iconst_1
+    2613: ldc2_w        #79                 // long 16l
+    2616: ldc2_w        #118                // long 64l
+    2619: iconst_1
+    2620: newarray       long
+    2622: dup
+    2623: iconst_0
+    2624: ldc2_w        #437                // long 7500l
+    2627: lastore
+    2628: getstatic     #551                // Field gregapi/data/IL.BINNIE_Comb_Ruby:Lgregapi/data/IL;
+    2631: lconst_1
+    2632: iconst_0
+    2633: anewarray     #146                // class java/lang/Object
+    2636: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2639: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2642: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2645: ldc2_w        #233                // long 20l
+    2648: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2651: iconst_1
+    2652: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2655: dup
+    2656: iconst_0
+    2657: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2660: getstatic     #554                // Field gregapi/data/MT.Ruby:Lgregapi/oredict/OreDictMaterial;
+    2663: lconst_1
+    2664: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2667: aastore
+    2668: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2671: pop
+    2672: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2675: iconst_1
+    2676: ldc2_w        #79                 // long 16l
+    2679: ldc2_w        #118                // long 64l
+    2682: iconst_5
+    2683: newarray       long
+    2685: dup
+    2686: iconst_0
+    2687: ldc2_w        #555                // long 1500l
+    2690: lastore
+    2691: dup
+    2692: iconst_1
+    2693: ldc2_w        #555                // long 1500l
+    2696: lastore
+    2697: dup
+    2698: iconst_2
+    2699: ldc2_w        #555                // long 1500l
+    2702: lastore
+    2703: dup
+    2704: iconst_3
+    2705: ldc2_w        #555                // long 1500l
+    2708: lastore
+    2709: dup
+    2710: iconst_4
+    2711: ldc2_w        #555                // long 1500l
+    2714: lastore
+    2715: getstatic     #559                // Field gregapi/data/IL.BINNIE_Comb_Sapphire:Lgregapi/data/IL;
+    2718: lconst_1
+    2719: iconst_0
+    2720: anewarray     #146                // class java/lang/Object
+    2723: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2726: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2729: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2732: ldc2_w        #233                // long 20l
+    2735: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2738: iconst_5
+    2739: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2742: dup
+    2743: iconst_0
+    2744: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2747: getstatic     #562                // Field gregapi/data/MT.BlueSapphire:Lgregapi/oredict/OreDictMaterial;
+    2750: lconst_1
+    2751: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2754: aastore
+    2755: dup
+    2756: iconst_1
+    2757: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2760: getstatic     #565                // Field gregapi/data/MT.GreenSapphire:Lgregapi/oredict/OreDictMaterial;
+    2763: lconst_1
+    2764: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2767: aastore
+    2768: dup
+    2769: iconst_2
+    2770: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2773: getstatic     #568                // Field gregapi/data/MT.YellowSapphire:Lgregapi/oredict/OreDictMaterial;
+    2776: lconst_1
+    2777: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2780: aastore
+    2781: dup
+    2782: iconst_3
+    2783: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2786: getstatic     #571                // Field gregapi/data/MT.OrangeSapphire:Lgregapi/oredict/OreDictMaterial;
+    2789: lconst_1
+    2790: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2793: aastore
+    2794: dup
+    2795: iconst_4
+    2796: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2799: getstatic     #574                // Field gregapi/data/MT.PurpleSapphire:Lgregapi/oredict/OreDictMaterial;
+    2802: lconst_1
+    2803: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2806: aastore
+    2807: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2810: pop
+    2811: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2814: iconst_1
+    2815: ldc2_w        #79                 // long 16l
+    2818: ldc2_w        #118                // long 64l
+    2821: iconst_1
+    2822: newarray       long
+    2824: dup
+    2825: iconst_0
+    2826: ldc2_w        #437                // long 7500l
+    2829: lastore
+    2830: getstatic     #577                // Field gregapi/data/IL.BINNIE_Comb_Olivine:Lgregapi/data/IL;
+    2833: lconst_1
+    2834: iconst_0
+    2835: anewarray     #146                // class java/lang/Object
+    2838: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2841: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2844: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2847: ldc2_w        #233                // long 20l
+    2850: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2853: iconst_1
+    2854: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2857: dup
+    2858: iconst_0
+    2859: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2862: getstatic     #580                // Field gregapi/data/MT.Peridot:Lgregapi/oredict/OreDictMaterial;
+    2865: lconst_1
+    2866: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2869: aastore
+    2870: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2873: pop
+    2874: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2877: iconst_1
+    2878: ldc2_w        #79                 // long 16l
+    2881: ldc2_w        #118                // long 64l
+    2884: iconst_1
+    2885: newarray       long
+    2887: dup
+    2888: iconst_0
+    2889: ldc2_w        #437                // long 7500l
+    2892: lastore
+    2893: getstatic     #583                // Field gregapi/data/IL.BINNIE_Comb_Diamond:Lgregapi/data/IL;
+    2896: lconst_1
+    2897: iconst_0
+    2898: anewarray     #146                // class java/lang/Object
+    2901: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2904: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    2907: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2910: ldc2_w        #233                // long 20l
+    2913: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2916: iconst_1
+    2917: anewarray     #97                 // class net/minecraft/item/ItemStack
+    2920: dup
+    2921: iconst_0
+    2922: getstatic     #530                // Field gregapi/data/OP.gemChipped:Lgregapi/oredict/OreDictPrefix;
+    2925: getstatic     #586                // Field gregapi/data/MT.Diamond:Lgregapi/oredict/OreDictMaterial;
+    2928: lconst_1
+    2929: invokevirtual #502                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    2932: aastore
+    2933: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    2936: pop
+    2937: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    2940: iconst_1
+    2941: ldc2_w        #79                 // long 16l
+    2944: ldc2_w        #118                // long 64l
+    2947: getstatic     #589                // Field gregapi/data/IL.BINNIE_Comb_Mucous:Lgregapi/data/IL;
+    2950: lconst_1
+    2951: iconst_0
+    2952: anewarray     #146                // class java/lang/Object
+    2955: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    2958: getstatic     #328                // Field gregapi/data/CS.ZL_FS:[Lnet/minecraftforge/fluids/FluidStack;
+    2961: iconst_4
+    2962: anewarray     #330                // class net/minecraftforge/fluids/FluidStack
+    2965: dup
+    2966: iconst_0
+    2967: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    2970: ldc2_w        #233                // long 20l
+    2973: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    2976: aastore
+    2977: dup
+    2978: iconst_1
+    2979: getstatic     #592                // Field gregapi/data/FL.Slime_Green:Lgregapi/data/FL;
+    2982: getstatic     #595                // Field gregapi/data/FL.Slime_Blue:Lgregapi/data/FL;
+    2985: invokevirtual #599                // Method gregapi/data/FL.exists:()Z
+    2988: ifeq          2997
+    2991: ldc2_w        #334                // long 100l
+    2994: goto          3000
+    2997: ldc2_w        #360                // long 200l
+    3000: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3003: aastore
+    3004: dup
+    3005: iconst_2
+    3006: getstatic     #605                // Field gregapi/data/FL.Slime_Pink:Lgregapi/data/FL;
+    3009: ldc2_w        #203                // long 50l
+    3012: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3015: aastore
+    3016: dup
+    3017: iconst_3
+    3018: getstatic     #595                // Field gregapi/data/FL.Slime_Blue:Lgregapi/data/FL;
+    3021: ldc2_w        #334                // long 100l
+    3024: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3027: aastore
+    3028: invokevirtual #608                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJLnet/minecraft/item/ItemStack;[Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraftforge/fluids/FluidStack;)Lgregapi/recipes/Recipe;
+    3031: pop
+    3032: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3035: iconst_1
+    3036: ldc2_w        #79                 // long 16l
+    3039: ldc2_w        #118                // long 64l
+    3042: iconst_1
+    3043: newarray       long
+    3045: dup
+    3046: iconst_0
+    3047: ldc2_w        #437                // long 7500l
+    3050: lastore
+    3051: getstatic     #611                // Field gregapi/data/IL.BINNIE_Comb_Blaze:Lgregapi/data/IL;
+    3054: lconst_1
+    3055: iconst_0
+    3056: anewarray     #146                // class java/lang/Object
+    3059: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3062: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3065: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3068: ldc2_w        #233                // long 20l
+    3071: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3074: iconst_1
+    3075: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3078: dup
+    3079: iconst_0
+    3080: getstatic     #614                // Field gregapi/data/MT.Blaze:Lgregapi/oredict/OreDictMaterial;
+    3083: ldc2_w        #615                // long 144144000l
+    3086: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3089: aastore
+    3090: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3093: pop
+    3094: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3097: iconst_1
+    3098: ldc2_w        #79                 // long 16l
+    3101: ldc2_w        #118                // long 64l
+    3104: iconst_1
+    3105: newarray       long
+    3107: dup
+    3108: iconst_0
+    3109: ldc2_w        #437                // long 7500l
+    3112: lastore
+    3113: getstatic     #619                // Field gregapi/data/IL.BINNIE_Comb_Shimmering:Lgregapi/data/IL;
+    3116: lconst_1
+    3117: iconst_0
+    3118: anewarray     #146                // class java/lang/Object
+    3121: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3124: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3127: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3130: ldc2_w        #233                // long 20l
+    3133: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3136: iconst_1
+    3137: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3140: dup
+    3141: iconst_0
+    3142: getstatic     #622                // Field gregapi/data/MT.EnderPearl:Lgregapi/oredict/OreDictMaterial;
+    3145: ldc2_w        #411                // long 324324000l
+    3148: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3151: aastore
+    3152: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3155: pop
+    3156: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3159: iconst_1
+    3160: ldc2_w        #79                 // long 16l
+    3163: ldc2_w        #118                // long 64l
+    3166: bipush        6
+    3168: newarray       long
+    3170: dup
+    3171: iconst_0
+    3172: ldc2_w        #623                // long 2500l
+    3175: lastore
+    3176: dup
+    3177: iconst_1
+    3178: ldc2_w        #623                // long 2500l
+    3181: lastore
+    3182: dup
+    3183: iconst_2
+    3184: ldc2_w        #623                // long 2500l
+    3187: lastore
+    3188: dup
+    3189: iconst_3
+    3190: ldc2_w        #623                // long 2500l
+    3193: lastore
+    3194: dup
+    3195: iconst_4
+    3196: ldc2_w        #623                // long 2500l
+    3199: lastore
+    3200: dup
+    3201: iconst_5
+    3202: ldc2_w        #623                // long 2500l
+    3205: lastore
+    3206: getstatic     #627                // Field gregapi/data/IL.BINNIE_Comb_Clay:Lgregapi/data/IL;
+    3209: lconst_1
+    3210: iconst_0
+    3211: anewarray     #146                // class java/lang/Object
+    3214: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3217: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3220: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3223: ldc2_w        #233                // long 20l
+    3226: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3229: bipush        6
+    3231: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3234: dup
+    3235: iconst_0
+    3236: getstatic     #630                // Field net/minecraft/init/Items.field_151119_aD:Lnet/minecraft/item/Item;
+    3239: lconst_1
+    3240: lconst_0
+    3241: invokestatic  #132                // Method gregapi/util/ST.make:(Lnet/minecraft/item/Item;JJ)Lnet/minecraft/item/ItemStack;
+    3244: aastore
+    3245: dup
+    3246: iconst_1
+    3247: getstatic     #633                // Field gregapi/data/IL.Clay_Ball_Brown:Lgregapi/data/IL;
+    3250: lconst_1
+    3251: iconst_0
+    3252: anewarray     #146                // class java/lang/Object
+    3255: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3258: aastore
+    3259: dup
+    3260: iconst_2
+    3261: getstatic     #636                // Field gregapi/data/IL.Clay_Ball_Red:Lgregapi/data/IL;
+    3264: lconst_1
+    3265: iconst_0
+    3266: anewarray     #146                // class java/lang/Object
+    3269: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3272: aastore
+    3273: dup
+    3274: iconst_3
+    3275: getstatic     #639                // Field gregapi/data/IL.Clay_Ball_Yellow:Lgregapi/data/IL;
+    3278: lconst_1
+    3279: iconst_0
+    3280: anewarray     #146                // class java/lang/Object
+    3283: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3286: aastore
+    3287: dup
+    3288: iconst_4
+    3289: getstatic     #642                // Field gregapi/data/IL.Clay_Ball_Blue:Lgregapi/data/IL;
+    3292: lconst_1
+    3293: iconst_0
+    3294: anewarray     #146                // class java/lang/Object
+    3297: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3300: aastore
+    3301: dup
+    3302: iconst_5
+    3303: getstatic     #645                // Field gregapi/data/IL.Clay_Ball_White:Lgregapi/data/IL;
+    3306: lconst_1
+    3307: iconst_0
+    3308: anewarray     #146                // class java/lang/Object
+    3311: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3314: aastore
+    3315: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3318: pop
+    3319: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3322: iconst_1
+    3323: ldc2_w        #79                 // long 16l
+    3326: ldc2_w        #118                // long 64l
+    3329: iconst_1
+    3330: newarray       long
+    3332: dup
+    3333: iconst_0
+    3334: ldc2_w        #437                // long 7500l
+    3337: lastore
+    3338: getstatic     #648                // Field gregapi/data/IL.BINNIE_Comb_Fossil:Lgregapi/data/IL;
+    3341: lconst_1
+    3342: iconst_0
+    3343: anewarray     #146                // class java/lang/Object
+    3346: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3349: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3352: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3355: ldc2_w        #233                // long 20l
+    3358: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3361: iconst_1
+    3362: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3365: dup
+    3366: iconst_0
+    3367: getstatic     #651                // Field gregapi/data/MT.Coal:Lgregapi/oredict/OreDictMaterial;
+    3370: ldc2_w        #411                // long 324324000l
+    3373: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3376: aastore
+    3377: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3380: pop
+    3381: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3384: iconst_1
+    3385: ldc2_w        #79                 // long 16l
+    3388: ldc2_w        #118                // long 64l
+    3391: iconst_1
+    3392: newarray       long
+    3394: dup
+    3395: iconst_0
+    3396: ldc2_w        #437                // long 7500l
+    3399: lastore
+    3400: getstatic     #654                // Field gregapi/data/IL.BINNIE_Comb_Brimstone:Lgregapi/data/IL;
+    3403: lconst_1
+    3404: iconst_0
+    3405: anewarray     #146                // class java/lang/Object
+    3408: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3411: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3414: getstatic     #657                // Field gregapi/data/MT.H2SO4:Lgregapi/oredict/OreDictMaterial;
+    3417: ldc2_w        #658                // long 64864800l
+    3420: iconst_0
+    3421: invokevirtual #665                // Method gregapi/oredict/OreDictMaterial.liquid:(JZ)Lnet/minecraftforge/fluids/FluidStack;
+    3424: iconst_1
+    3425: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3428: dup
+    3429: iconst_0
+    3430: getstatic     #668                // Field gregapi/data/MT.S:Lgregapi/oredict/OreDictMaterial;
+    3433: ldc2_w        #419                // long 1297296000l
+    3436: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3439: aastore
+    3440: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3443: pop
+    3444: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3447: iconst_1
+    3448: ldc2_w        #79                 // long 16l
+    3451: ldc2_w        #118                // long 64l
+    3454: iconst_2
+    3455: newarray       long
+    3457: dup
+    3458: iconst_0
+    3459: ldc2_w        #437                // long 7500l
+    3462: lastore
+    3463: dup
+    3464: iconst_1
+    3465: ldc2_w        #437                // long 7500l
+    3468: lastore
+    3469: getstatic     #671                // Field gregapi/data/IL.BINNIE_Comb_Unstable:Lgregapi/data/IL;
+    3472: lconst_1
+    3473: iconst_0
+    3474: anewarray     #146                // class java/lang/Object
+    3477: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3480: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3483: getstatic     #674                // Field gregapi/data/MT.HNO3:Lgregapi/oredict/OreDictMaterial;
+    3486: ldc2_w        #658                // long 64864800l
+    3489: iconst_0
+    3490: invokevirtual #665                // Method gregapi/oredict/OreDictMaterial.liquid:(JZ)Lnet/minecraftforge/fluids/FluidStack;
+    3493: iconst_2
+    3494: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3497: dup
+    3498: iconst_0
+    3499: getstatic     #677                // Field gregapi/data/MT.KNO3:Lgregapi/oredict/OreDictMaterial;
+    3502: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    3505: aastore
+    3506: dup
+    3507: iconst_1
+    3508: getstatic     #680                // Field gregapi/data/MT.NaNO3:Lgregapi/oredict/OreDictMaterial;
+    3511: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    3514: aastore
+    3515: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3518: pop
+    3519: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3522: iconst_1
+    3523: ldc2_w        #79                 // long 16l
+    3526: ldc2_w        #118                // long 64l
+    3529: iconst_1
+    3530: newarray       long
+    3532: dup
+    3533: iconst_0
+    3534: ldc2_w        #437                // long 7500l
+    3537: lastore
+    3538: getstatic     #683                // Field gregapi/data/IL.BINNIE_Comb_Pyrite:Lgregapi/data/IL;
+    3541: lconst_1
+    3542: iconst_0
+    3543: anewarray     #146                // class java/lang/Object
+    3546: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3549: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3552: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3555: ldc2_w        #233                // long 20l
+    3558: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3561: iconst_1
+    3562: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3565: dup
+    3566: iconst_0
+    3567: getstatic     #686                // Field gregapi/data/MT.Pyrite:Lgregapi/oredict/OreDictMaterial;
+    3570: ldc2_w        #419                // long 1297296000l
+    3573: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3576: aastore
+    3577: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3580: pop
+    3581: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3584: iconst_1
+    3585: ldc2_w        #79                 // long 16l
+    3588: ldc2_w        #118                // long 64l
+    3591: iconst_1
+    3592: newarray       long
+    3594: dup
+    3595: iconst_0
+    3596: ldc2_w        #437                // long 7500l
+    3599: lastore
+    3600: getstatic     #689                // Field gregapi/data/IL.BINNIE_Comb_Bauxite:Lgregapi/data/IL;
+    3603: lconst_1
+    3604: iconst_0
+    3605: anewarray     #146                // class java/lang/Object
+    3608: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3611: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3614: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3617: ldc2_w        #233                // long 20l
+    3620: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3623: iconst_1
+    3624: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3627: dup
+    3628: iconst_0
+    3629: getstatic     #692                // Field gregapi/data/MT$OREMATS.Bauxite:Lgregapi/oredict/OreDictMaterial;
+    3632: ldc2_w        #419                // long 1297296000l
+    3635: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3638: aastore
+    3639: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3642: pop
+    3643: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3646: iconst_1
+    3647: ldc2_w        #79                 // long 16l
+    3650: ldc2_w        #118                // long 64l
+    3653: iconst_1
+    3654: newarray       long
+    3656: dup
+    3657: iconst_0
+    3658: ldc2_w        #437                // long 7500l
+    3661: lastore
+    3662: getstatic     #695                // Field gregapi/data/IL.BINNIE_Comb_Cinnabar:Lgregapi/data/IL;
+    3665: lconst_1
+    3666: iconst_0
+    3667: anewarray     #146                // class java/lang/Object
+    3670: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3673: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3676: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3679: ldc2_w        #233                // long 20l
+    3682: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3685: iconst_1
+    3686: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3689: dup
+    3690: iconst_0
+    3691: getstatic     #698                // Field gregapi/data/MT$OREMATS.Cinnabar:Lgregapi/oredict/OreDictMaterial;
+    3694: ldc2_w        #419                // long 1297296000l
+    3697: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3700: aastore
+    3701: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3704: pop
+    3705: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3708: iconst_1
+    3709: ldc2_w        #79                 // long 16l
+    3712: ldc2_w        #118                // long 64l
+    3715: iconst_1
+    3716: newarray       long
+    3718: dup
+    3719: iconst_0
+    3720: ldc2_w        #437                // long 7500l
+    3723: lastore
+    3724: getstatic     #701                // Field gregapi/data/IL.BINNIE_Comb_Sphalerite:Lgregapi/data/IL;
+    3727: lconst_1
+    3728: iconst_0
+    3729: anewarray     #146                // class java/lang/Object
+    3732: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3735: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3738: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3741: ldc2_w        #233                // long 20l
+    3744: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3747: iconst_1
+    3748: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3751: dup
+    3752: iconst_0
+    3753: getstatic     #704                // Field gregapi/data/MT$OREMATS.Sphalerite:Lgregapi/oredict/OreDictMaterial;
+    3756: ldc2_w        #419                // long 1297296000l
+    3759: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3762: aastore
+    3763: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3766: pop
+    3767: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3770: iconst_1
+    3771: ldc2_w        #79                 // long 16l
+    3774: ldc2_w        #118                // long 64l
+    3777: iconst_1
+    3778: newarray       long
+    3780: dup
+    3781: iconst_0
+    3782: ldc2_w        #437                // long 7500l
+    3785: lastore
+    3786: getstatic     #707                // Field gregapi/data/IL.BINNIE_Comb_Iron:Lgregapi/data/IL;
+    3789: lconst_1
+    3790: iconst_0
+    3791: anewarray     #146                // class java/lang/Object
+    3794: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3797: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3800: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3803: ldc2_w        #233                // long 20l
+    3806: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3809: iconst_1
+    3810: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3813: dup
+    3814: iconst_0
+    3815: getstatic     #710                // Field gregapi/data/MT.Fe:Lgregapi/oredict/OreDictMaterial;
+    3818: ldc2_w        #411                // long 324324000l
+    3821: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3824: aastore
+    3825: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3828: pop
+    3829: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3832: iconst_1
+    3833: ldc2_w        #79                 // long 16l
+    3836: ldc2_w        #118                // long 64l
+    3839: iconst_1
+    3840: newarray       long
+    3842: dup
+    3843: iconst_0
+    3844: ldc2_w        #437                // long 7500l
+    3847: lastore
+    3848: getstatic     #713                // Field gregapi/data/IL.BINNIE_Comb_Gold:Lgregapi/data/IL;
+    3851: lconst_1
+    3852: iconst_0
+    3853: anewarray     #146                // class java/lang/Object
+    3856: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3859: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3862: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3865: ldc2_w        #233                // long 20l
+    3868: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3871: iconst_1
+    3872: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3875: dup
+    3876: iconst_0
+    3877: getstatic     #716                // Field gregapi/data/MT.Au:Lgregapi/oredict/OreDictMaterial;
+    3880: ldc2_w        #411                // long 324324000l
+    3883: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3886: aastore
+    3887: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3890: pop
+    3891: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3894: iconst_1
+    3895: ldc2_w        #79                 // long 16l
+    3898: ldc2_w        #118                // long 64l
+    3901: iconst_1
+    3902: newarray       long
+    3904: dup
+    3905: iconst_0
+    3906: ldc2_w        #437                // long 7500l
+    3909: lastore
+    3910: getstatic     #719                // Field gregapi/data/IL.BINNIE_Comb_Copper:Lgregapi/data/IL;
+    3913: lconst_1
+    3914: iconst_0
+    3915: anewarray     #146                // class java/lang/Object
+    3918: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3921: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3924: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3927: ldc2_w        #233                // long 20l
+    3930: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3933: iconst_1
+    3934: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3937: dup
+    3938: iconst_0
+    3939: getstatic     #722                // Field gregapi/data/MT.Cu:Lgregapi/oredict/OreDictMaterial;
+    3942: ldc2_w        #411                // long 324324000l
+    3945: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    3948: aastore
+    3949: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    3952: pop
+    3953: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    3956: iconst_1
+    3957: ldc2_w        #79                 // long 16l
+    3960: ldc2_w        #118                // long 64l
+    3963: iconst_1
+    3964: newarray       long
+    3966: dup
+    3967: iconst_0
+    3968: ldc2_w        #437                // long 7500l
+    3971: lastore
+    3972: getstatic     #725                // Field gregapi/data/IL.BINNIE_Comb_Tin:Lgregapi/data/IL;
+    3975: lconst_1
+    3976: iconst_0
+    3977: anewarray     #146                // class java/lang/Object
+    3980: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    3983: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    3986: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    3989: ldc2_w        #233                // long 20l
+    3992: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    3995: iconst_1
+    3996: anewarray     #97                 // class net/minecraft/item/ItemStack
+    3999: dup
+    4000: iconst_0
+    4001: getstatic     #728                // Field gregapi/data/MT.Sn:Lgregapi/oredict/OreDictMaterial;
+    4004: ldc2_w        #411                // long 324324000l
+    4007: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4010: aastore
+    4011: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4014: pop
+    4015: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4018: iconst_1
+    4019: ldc2_w        #79                 // long 16l
+    4022: ldc2_w        #118                // long 64l
+    4025: iconst_1
+    4026: newarray       long
+    4028: dup
+    4029: iconst_0
+    4030: ldc2_w        #437                // long 7500l
+    4033: lastore
+    4034: getstatic     #731                // Field gregapi/data/IL.BINNIE_Comb_Silver:Lgregapi/data/IL;
+    4037: lconst_1
+    4038: iconst_0
+    4039: anewarray     #146                // class java/lang/Object
+    4042: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4045: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4048: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4051: ldc2_w        #233                // long 20l
+    4054: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4057: iconst_1
+    4058: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4061: dup
+    4062: iconst_0
+    4063: getstatic     #734                // Field gregapi/data/MT.Ag:Lgregapi/oredict/OreDictMaterial;
+    4066: ldc2_w        #411                // long 324324000l
+    4069: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4072: aastore
+    4073: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4076: pop
+    4077: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4080: iconst_1
+    4081: ldc2_w        #79                 // long 16l
+    4084: ldc2_w        #118                // long 64l
+    4087: iconst_1
+    4088: newarray       long
+    4090: dup
+    4091: iconst_0
+    4092: ldc2_w        #437                // long 7500l
+    4095: lastore
+    4096: getstatic     #737                // Field gregapi/data/IL.BINNIE_Comb_Bronze:Lgregapi/data/IL;
+    4099: lconst_1
+    4100: iconst_0
+    4101: anewarray     #146                // class java/lang/Object
+    4104: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4107: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4110: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4113: ldc2_w        #233                // long 20l
+    4116: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4119: iconst_1
+    4120: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4123: dup
+    4124: iconst_0
+    4125: getstatic     #740                // Field gregapi/data/MT.Bronze:Lgregapi/oredict/OreDictMaterial;
+    4128: ldc2_w        #411                // long 324324000l
+    4131: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4134: aastore
+    4135: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4138: pop
+    4139: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4142: iconst_1
+    4143: ldc2_w        #79                 // long 16l
+    4146: ldc2_w        #118                // long 64l
+    4149: iconst_1
+    4150: newarray       long
+    4152: dup
+    4153: iconst_0
+    4154: ldc2_w        #437                // long 7500l
+    4157: lastore
+    4158: getstatic     #743                // Field gregapi/data/IL.BINNIE_Comb_Lead:Lgregapi/data/IL;
+    4161: lconst_1
+    4162: iconst_0
+    4163: anewarray     #146                // class java/lang/Object
+    4166: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4169: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4172: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4175: ldc2_w        #233                // long 20l
+    4178: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4181: iconst_1
+    4182: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4185: dup
+    4186: iconst_0
+    4187: getstatic     #746                // Field gregapi/data/MT.Pb:Lgregapi/oredict/OreDictMaterial;
+    4190: ldc2_w        #411                // long 324324000l
+    4193: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4196: aastore
+    4197: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4200: pop
+    4201: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4204: iconst_1
+    4205: ldc2_w        #79                 // long 16l
+    4208: ldc2_w        #118                // long 64l
+    4211: iconst_1
+    4212: newarray       long
+    4214: dup
+    4215: iconst_0
+    4216: ldc2_w        #437                // long 7500l
+    4219: lastore
+    4220: getstatic     #749                // Field gregapi/data/IL.BINNIE_Comb_Brass:Lgregapi/data/IL;
+    4223: lconst_1
+    4224: iconst_0
+    4225: anewarray     #146                // class java/lang/Object
+    4228: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4231: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4234: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4237: ldc2_w        #233                // long 20l
+    4240: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4243: iconst_1
+    4244: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4247: dup
+    4248: iconst_0
+    4249: getstatic     #752                // Field gregapi/data/MT.Brass:Lgregapi/oredict/OreDictMaterial;
+    4252: ldc2_w        #411                // long 324324000l
+    4255: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4258: aastore
+    4259: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4262: pop
+    4263: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4266: iconst_1
+    4267: ldc2_w        #79                 // long 16l
+    4270: ldc2_w        #118                // long 64l
+    4273: iconst_1
+    4274: newarray       long
+    4276: dup
+    4277: iconst_0
+    4278: ldc2_w        #437                // long 7500l
+    4281: lastore
+    4282: getstatic     #755                // Field gregapi/data/IL.BINNIE_Comb_Electrum:Lgregapi/data/IL;
+    4285: lconst_1
+    4286: iconst_0
+    4287: anewarray     #146                // class java/lang/Object
+    4290: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4293: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4296: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4299: ldc2_w        #233                // long 20l
+    4302: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4305: iconst_1
+    4306: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4309: dup
+    4310: iconst_0
+    4311: getstatic     #758                // Field gregapi/data/MT.Electrum:Lgregapi/oredict/OreDictMaterial;
+    4314: ldc2_w        #411                // long 324324000l
+    4317: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4320: aastore
+    4321: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4324: pop
+    4325: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4328: iconst_1
+    4329: ldc2_w        #79                 // long 16l
+    4332: ldc2_w        #118                // long 64l
+    4335: iconst_1
+    4336: newarray       long
+    4338: dup
+    4339: iconst_0
+    4340: ldc2_w        #437                // long 7500l
+    4343: lastore
+    4344: getstatic     #761                // Field gregapi/data/IL.BINNIE_Comb_Zinc:Lgregapi/data/IL;
+    4347: lconst_1
+    4348: iconst_0
+    4349: anewarray     #146                // class java/lang/Object
+    4352: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4355: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4358: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4361: ldc2_w        #233                // long 20l
+    4364: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4367: iconst_1
+    4368: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4371: dup
+    4372: iconst_0
+    4373: getstatic     #764                // Field gregapi/data/MT.Zn:Lgregapi/oredict/OreDictMaterial;
+    4376: ldc2_w        #411                // long 324324000l
+    4379: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4382: aastore
+    4383: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4386: pop
+    4387: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4390: iconst_1
+    4391: ldc2_w        #79                 // long 16l
+    4394: ldc2_w        #118                // long 64l
+    4397: iconst_1
+    4398: newarray       long
+    4400: dup
+    4401: iconst_0
+    4402: ldc2_w        #437                // long 7500l
+    4405: lastore
+    4406: getstatic     #767                // Field gregapi/data/IL.BINNIE_Comb_Titanium:Lgregapi/data/IL;
+    4409: lconst_1
+    4410: iconst_0
+    4411: anewarray     #146                // class java/lang/Object
+    4414: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4417: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4420: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4423: ldc2_w        #233                // long 20l
+    4426: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4429: iconst_1
+    4430: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4433: dup
+    4434: iconst_0
+    4435: getstatic     #770                // Field gregapi/data/MT.TiO2:Lgregapi/oredict/OreDictMaterial;
+    4438: ldc2_w        #411                // long 324324000l
+    4441: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4444: aastore
+    4445: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4448: pop
+    4449: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4452: iconst_1
+    4453: ldc2_w        #79                 // long 16l
+    4456: ldc2_w        #118                // long 64l
+    4459: iconst_1
+    4460: newarray       long
+    4462: dup
+    4463: iconst_0
+    4464: ldc2_w        #437                // long 7500l
+    4467: lastore
+    4468: getstatic     #773                // Field gregapi/data/IL.BINNIE_Comb_Tungsten:Lgregapi/data/IL;
+    4471: lconst_1
+    4472: iconst_0
+    4473: anewarray     #146                // class java/lang/Object
+    4476: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4479: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4482: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4485: ldc2_w        #233                // long 20l
+    4488: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4491: iconst_1
+    4492: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4495: dup
+    4496: iconst_0
+    4497: getstatic     #776                // Field gregapi/data/MT.WO3:Lgregapi/oredict/OreDictMaterial;
+    4500: ldc2_w        #411                // long 324324000l
+    4503: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4506: aastore
+    4507: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4510: pop
+    4511: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4514: iconst_1
+    4515: ldc2_w        #79                 // long 16l
+    4518: ldc2_w        #118                // long 64l
+    4521: iconst_1
+    4522: newarray       long
+    4524: dup
+    4525: iconst_0
+    4526: ldc2_w        #437                // long 7500l
+    4529: lastore
+    4530: getstatic     #779                // Field gregapi/data/IL.BINNIE_Comb_Steel:Lgregapi/data/IL;
+    4533: lconst_1
+    4534: iconst_0
+    4535: anewarray     #146                // class java/lang/Object
+    4538: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4541: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4544: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4547: ldc2_w        #233                // long 20l
+    4550: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4553: iconst_1
+    4554: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4557: dup
+    4558: iconst_0
+    4559: getstatic     #782                // Field gregapi/data/MT.Steel:Lgregapi/oredict/OreDictMaterial;
+    4562: ldc2_w        #411                // long 324324000l
+    4565: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4568: aastore
+    4569: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4572: pop
+    4573: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4576: iconst_1
+    4577: ldc2_w        #79                 // long 16l
+    4580: ldc2_w        #118                // long 64l
+    4583: iconst_1
+    4584: newarray       long
+    4586: dup
+    4587: iconst_0
+    4588: ldc2_w        #437                // long 7500l
+    4591: lastore
+    4592: getstatic     #785                // Field gregapi/data/IL.BINNIE_Comb_Iridium:Lgregapi/data/IL;
+    4595: lconst_1
+    4596: iconst_0
+    4597: anewarray     #146                // class java/lang/Object
+    4600: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4603: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4606: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4609: ldc2_w        #233                // long 20l
+    4612: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4615: iconst_1
+    4616: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4619: dup
+    4620: iconst_0
+    4621: getstatic     #788                // Field gregapi/data/MT.Ir:Lgregapi/oredict/OreDictMaterial;
+    4624: ldc2_w        #411                // long 324324000l
+    4627: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4630: aastore
+    4631: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4634: pop
+    4635: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4638: iconst_1
+    4639: ldc2_w        #79                 // long 16l
+    4642: ldc2_w        #118                // long 64l
+    4645: iconst_1
+    4646: newarray       long
+    4648: dup
+    4649: iconst_0
+    4650: ldc2_w        #437                // long 7500l
+    4653: lastore
+    4654: getstatic     #791                // Field gregapi/data/IL.BINNIE_Comb_Platinum:Lgregapi/data/IL;
+    4657: lconst_1
+    4658: iconst_0
+    4659: anewarray     #146                // class java/lang/Object
+    4662: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4665: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4668: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4671: ldc2_w        #233                // long 20l
+    4674: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4677: iconst_1
+    4678: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4681: dup
+    4682: iconst_0
+    4683: getstatic     #794                // Field gregapi/data/MT.Pt:Lgregapi/oredict/OreDictMaterial;
+    4686: ldc2_w        #411                // long 324324000l
+    4689: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4692: aastore
+    4693: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4696: pop
+    4697: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4700: iconst_1
+    4701: ldc2_w        #79                 // long 16l
+    4704: ldc2_w        #118                // long 64l
+    4707: iconst_1
+    4708: newarray       long
+    4710: dup
+    4711: iconst_0
+    4712: ldc2_w        #437                // long 7500l
+    4715: lastore
+    4716: getstatic     #797                // Field gregapi/data/IL.BINNIE_Comb_Nickel:Lgregapi/data/IL;
+    4719: lconst_1
+    4720: iconst_0
+    4721: anewarray     #146                // class java/lang/Object
+    4724: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4727: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4730: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4733: ldc2_w        #233                // long 20l
+    4736: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4739: iconst_1
+    4740: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4743: dup
+    4744: iconst_0
+    4745: getstatic     #800                // Field gregapi/data/MT.Ni:Lgregapi/oredict/OreDictMaterial;
+    4748: ldc2_w        #411                // long 324324000l
+    4751: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4754: aastore
+    4755: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4758: pop
+    4759: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4762: iconst_1
+    4763: ldc2_w        #79                 // long 16l
+    4766: ldc2_w        #118                // long 64l
+    4769: iconst_1
+    4770: newarray       long
+    4772: dup
+    4773: iconst_0
+    4774: ldc2_w        #437                // long 7500l
+    4777: lastore
+    4778: getstatic     #803                // Field gregapi/data/IL.BINNIE_Comb_Invar:Lgregapi/data/IL;
+    4781: lconst_1
+    4782: iconst_0
+    4783: anewarray     #146                // class java/lang/Object
+    4786: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4789: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4792: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4795: ldc2_w        #233                // long 20l
+    4798: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4801: iconst_1
+    4802: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4805: dup
+    4806: iconst_0
+    4807: getstatic     #806                // Field gregapi/data/MT.Invar:Lgregapi/oredict/OreDictMaterial;
+    4810: ldc2_w        #411                // long 324324000l
+    4813: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4816: aastore
+    4817: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4820: pop
+    4821: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4824: iconst_1
+    4825: ldc2_w        #79                 // long 16l
+    4828: ldc2_w        #118                // long 64l
+    4831: iconst_2
+    4832: newarray       long
+    4834: dup
+    4835: iconst_0
+    4836: ldc2_w        #228                // long 8000l
+    4839: lastore
+    4840: dup
+    4841: iconst_1
+    4842: ldc2_w        #228                // long 8000l
+    4845: lastore
+    4846: getstatic     #809                // Field gregapi/data/IL.BINNIE_Comb_Uranium:Lgregapi/data/IL;
+    4849: lconst_1
+    4850: iconst_0
+    4851: anewarray     #146                // class java/lang/Object
+    4854: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4857: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4860: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4863: ldc2_w        #233                // long 20l
+    4866: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4869: iconst_2
+    4870: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4873: dup
+    4874: iconst_0
+    4875: getstatic     #812                // Field gregapi/data/MT.U_238:Lgregapi/oredict/OreDictMaterial;
+    4878: ldc2_w        #813                // long 972972000l
+    4881: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4884: aastore
+    4885: dup
+    4886: iconst_1
+    4887: getstatic     #817                // Field gregapi/data/MT.U_235:Lgregapi/oredict/OreDictMaterial;
+    4890: ldc2_w        #411                // long 324324000l
+    4893: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4896: aastore
+    4897: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4900: pop
+    4901: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4904: iconst_1
+    4905: ldc2_w        #79                 // long 16l
+    4908: ldc2_w        #118                // long 64l
+    4911: iconst_1
+    4912: newarray       long
+    4914: dup
+    4915: iconst_0
+    4916: ldc2_w        #489                // long 3000l
+    4919: lastore
+    4920: getstatic     #820                // Field gregapi/data/IL.BINNIE_Comb_Yellorium:Lgregapi/data/IL;
+    4923: lconst_1
+    4924: iconst_0
+    4925: anewarray     #146                // class java/lang/Object
+    4928: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4931: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4934: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4937: ldc2_w        #233                // long 20l
+    4940: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    4943: iconst_1
+    4944: anewarray     #97                 // class net/minecraft/item/ItemStack
+    4947: dup
+    4948: iconst_0
+    4949: getstatic     #823                // Field gregapi/data/MT.Yellorium:Lgregapi/oredict/OreDictMaterial;
+    4952: ldc2_w        #235                // long 162162000l
+    4955: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    4958: aastore
+    4959: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    4962: pop
+    4963: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    4966: iconst_1
+    4967: ldc2_w        #79                 // long 16l
+    4970: ldc2_w        #118                // long 64l
+    4973: iconst_1
+    4974: newarray       long
+    4976: dup
+    4977: iconst_0
+    4978: ldc2_w        #489                // long 3000l
+    4981: lastore
+    4982: getstatic     #826                // Field gregapi/data/IL.BINNIE_Comb_Cyanite:Lgregapi/data/IL;
+    4985: lconst_1
+    4986: iconst_0
+    4987: anewarray     #146                // class java/lang/Object
+    4990: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    4993: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    4996: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    4999: ldc2_w        #233                // long 20l
+    5002: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5005: iconst_1
+    5006: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5009: dup
+    5010: iconst_0
+    5011: getstatic     #829                // Field gregapi/data/MT.Cyanite:Lgregapi/oredict/OreDictMaterial;
+    5014: ldc2_w        #235                // long 162162000l
+    5017: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    5020: aastore
+    5021: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5024: pop
+    5025: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5028: iconst_1
+    5029: ldc2_w        #79                 // long 16l
+    5032: ldc2_w        #118                // long 64l
+    5035: iconst_1
+    5036: newarray       long
+    5038: dup
+    5039: iconst_0
+    5040: ldc2_w        #489                // long 3000l
+    5043: lastore
+    5044: getstatic     #832                // Field gregapi/data/IL.BINNIE_Comb_Blutonium:Lgregapi/data/IL;
+    5047: lconst_1
+    5048: iconst_0
+    5049: anewarray     #146                // class java/lang/Object
+    5052: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5055: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5058: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5061: ldc2_w        #233                // long 20l
+    5064: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5067: iconst_1
+    5068: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5071: dup
+    5072: iconst_0
+    5073: getstatic     #835                // Field gregapi/data/MT.Blutonium:Lgregapi/oredict/OreDictMaterial;
+    5076: ldc2_w        #235                // long 162162000l
+    5079: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    5082: aastore
+    5083: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5086: pop
+    5087: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5090: iconst_1
+    5091: ldc2_w        #79                 // long 16l
+    5094: ldc2_w        #118                // long 64l
+    5097: iconst_2
+    5098: newarray       long
+    5100: dup
+    5101: iconst_0
+    5102: ldc2_w        #226                // long 10000l
+    5105: lastore
+    5106: dup
+    5107: iconst_1
+    5108: ldc2_w        #437                // long 7500l
+    5111: lastore
+    5112: getstatic     #838                // Field gregapi/data/IL.BINNIE_Comb_Red:Lgregapi/data/IL;
+    5115: lconst_1
+    5116: iconst_0
+    5117: anewarray     #146                // class java/lang/Object
+    5120: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5123: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5126: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5129: ldc2_w        #221                // long 90l
+    5132: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5135: iconst_2
+    5136: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5139: dup
+    5140: iconst_0
+    5141: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5144: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5147: aastore
+    5148: dup
+    5149: iconst_1
+    5150: getstatic     #841                // Field gregapi/data/IL.BINNIE_Dye_Red:Lgregapi/data/IL;
+    5153: ldc2_w        #126                // long 3l
+    5156: iconst_0
+    5157: anewarray     #146                // class java/lang/Object
+    5160: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5163: aastore
+    5164: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5167: pop
+    5168: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5171: iconst_1
+    5172: ldc2_w        #79                 // long 16l
+    5175: ldc2_w        #118                // long 64l
+    5178: iconst_2
+    5179: newarray       long
+    5181: dup
+    5182: iconst_0
+    5183: ldc2_w        #226                // long 10000l
+    5186: lastore
+    5187: dup
+    5188: iconst_1
+    5189: ldc2_w        #437                // long 7500l
+    5192: lastore
+    5193: getstatic     #844                // Field gregapi/data/IL.BINNIE_Comb_Yellow:Lgregapi/data/IL;
+    5196: lconst_1
+    5197: iconst_0
+    5198: anewarray     #146                // class java/lang/Object
+    5201: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5204: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5207: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5210: ldc2_w        #221                // long 90l
+    5213: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5216: iconst_2
+    5217: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5220: dup
+    5221: iconst_0
+    5222: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5225: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5228: aastore
+    5229: dup
+    5230: iconst_1
+    5231: getstatic     #847                // Field gregapi/data/IL.BINNIE_Dye_Yellow:Lgregapi/data/IL;
+    5234: ldc2_w        #126                // long 3l
+    5237: iconst_0
+    5238: anewarray     #146                // class java/lang/Object
+    5241: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5244: aastore
+    5245: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5248: pop
+    5249: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5252: iconst_1
+    5253: ldc2_w        #79                 // long 16l
+    5256: ldc2_w        #118                // long 64l
+    5259: iconst_2
+    5260: newarray       long
+    5262: dup
+    5263: iconst_0
+    5264: ldc2_w        #226                // long 10000l
+    5267: lastore
+    5268: dup
+    5269: iconst_1
+    5270: ldc2_w        #437                // long 7500l
+    5273: lastore
+    5274: getstatic     #850                // Field gregapi/data/IL.BINNIE_Comb_Blue:Lgregapi/data/IL;
+    5277: lconst_1
+    5278: iconst_0
+    5279: anewarray     #146                // class java/lang/Object
+    5282: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5285: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5288: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5291: ldc2_w        #221                // long 90l
+    5294: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5297: iconst_2
+    5298: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5301: dup
+    5302: iconst_0
+    5303: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5306: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5309: aastore
+    5310: dup
+    5311: iconst_1
+    5312: getstatic     #853                // Field gregapi/data/IL.BINNIE_Dye_Blue:Lgregapi/data/IL;
+    5315: ldc2_w        #126                // long 3l
+    5318: iconst_0
+    5319: anewarray     #146                // class java/lang/Object
+    5322: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5325: aastore
+    5326: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5329: pop
+    5330: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5333: iconst_1
+    5334: ldc2_w        #79                 // long 16l
+    5337: ldc2_w        #118                // long 64l
+    5340: iconst_2
+    5341: newarray       long
+    5343: dup
+    5344: iconst_0
+    5345: ldc2_w        #226                // long 10000l
+    5348: lastore
+    5349: dup
+    5350: iconst_1
+    5351: ldc2_w        #437                // long 7500l
+    5354: lastore
+    5355: getstatic     #856                // Field gregapi/data/IL.BINNIE_Comb_Green:Lgregapi/data/IL;
+    5358: lconst_1
+    5359: iconst_0
+    5360: anewarray     #146                // class java/lang/Object
+    5363: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5366: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5369: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5372: ldc2_w        #221                // long 90l
+    5375: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5378: iconst_2
+    5379: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5382: dup
+    5383: iconst_0
+    5384: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5387: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5390: aastore
+    5391: dup
+    5392: iconst_1
+    5393: getstatic     #859                // Field gregapi/data/IL.BINNIE_Dye_Green:Lgregapi/data/IL;
+    5396: ldc2_w        #126                // long 3l
+    5399: iconst_0
+    5400: anewarray     #146                // class java/lang/Object
+    5403: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5406: aastore
+    5407: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5410: pop
+    5411: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5414: iconst_1
+    5415: ldc2_w        #79                 // long 16l
+    5418: ldc2_w        #118                // long 64l
+    5421: iconst_2
+    5422: newarray       long
+    5424: dup
+    5425: iconst_0
+    5426: ldc2_w        #226                // long 10000l
+    5429: lastore
+    5430: dup
+    5431: iconst_1
+    5432: ldc2_w        #437                // long 7500l
+    5435: lastore
+    5436: getstatic     #862                // Field gregapi/data/IL.BINNIE_Comb_Black:Lgregapi/data/IL;
+    5439: lconst_1
+    5440: iconst_0
+    5441: anewarray     #146                // class java/lang/Object
+    5444: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5447: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5450: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5453: ldc2_w        #221                // long 90l
+    5456: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5459: iconst_2
+    5460: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5463: dup
+    5464: iconst_0
+    5465: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5468: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5471: aastore
+    5472: dup
+    5473: iconst_1
+    5474: getstatic     #865                // Field gregapi/data/IL.BINNIE_Dye_Black:Lgregapi/data/IL;
+    5477: ldc2_w        #126                // long 3l
+    5480: iconst_0
+    5481: anewarray     #146                // class java/lang/Object
+    5484: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5487: aastore
+    5488: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5491: pop
+    5492: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5495: iconst_1
+    5496: ldc2_w        #79                 // long 16l
+    5499: ldc2_w        #118                // long 64l
+    5502: iconst_2
+    5503: newarray       long
+    5505: dup
+    5506: iconst_0
+    5507: ldc2_w        #226                // long 10000l
+    5510: lastore
+    5511: dup
+    5512: iconst_1
+    5513: ldc2_w        #437                // long 7500l
+    5516: lastore
+    5517: getstatic     #868                // Field gregapi/data/IL.BINNIE_Comb_White:Lgregapi/data/IL;
+    5520: lconst_1
+    5521: iconst_0
+    5522: anewarray     #146                // class java/lang/Object
+    5525: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5528: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5531: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5534: ldc2_w        #221                // long 90l
+    5537: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5540: iconst_2
+    5541: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5544: dup
+    5545: iconst_0
+    5546: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5549: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5552: aastore
+    5553: dup
+    5554: iconst_1
+    5555: getstatic     #871                // Field gregapi/data/IL.BINNIE_Dye_White:Lgregapi/data/IL;
+    5558: ldc2_w        #126                // long 3l
+    5561: iconst_0
+    5562: anewarray     #146                // class java/lang/Object
+    5565: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5568: aastore
+    5569: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5572: pop
+    5573: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5576: iconst_1
+    5577: ldc2_w        #79                 // long 16l
+    5580: ldc2_w        #118                // long 64l
+    5583: iconst_2
+    5584: newarray       long
+    5586: dup
+    5587: iconst_0
+    5588: ldc2_w        #226                // long 10000l
+    5591: lastore
+    5592: dup
+    5593: iconst_1
+    5594: ldc2_w        #437                // long 7500l
+    5597: lastore
+    5598: getstatic     #874                // Field gregapi/data/IL.BINNIE_Comb_Brown:Lgregapi/data/IL;
+    5601: lconst_1
+    5602: iconst_0
+    5603: anewarray     #146                // class java/lang/Object
+    5606: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5609: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5612: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5615: ldc2_w        #221                // long 90l
+    5618: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5621: iconst_2
+    5622: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5625: dup
+    5626: iconst_0
+    5627: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5630: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5633: aastore
+    5634: dup
+    5635: iconst_1
+    5636: getstatic     #877                // Field gregapi/data/IL.BINNIE_Dye_Brown:Lgregapi/data/IL;
+    5639: ldc2_w        #126                // long 3l
+    5642: iconst_0
+    5643: anewarray     #146                // class java/lang/Object
+    5646: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5649: aastore
+    5650: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5653: pop
+    5654: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5657: iconst_1
+    5658: ldc2_w        #79                 // long 16l
+    5661: ldc2_w        #118                // long 64l
+    5664: iconst_2
+    5665: newarray       long
+    5667: dup
+    5668: iconst_0
+    5669: ldc2_w        #226                // long 10000l
+    5672: lastore
+    5673: dup
+    5674: iconst_1
+    5675: ldc2_w        #437                // long 7500l
+    5678: lastore
+    5679: getstatic     #880                // Field gregapi/data/IL.BINNIE_Comb_Orange:Lgregapi/data/IL;
+    5682: lconst_1
+    5683: iconst_0
+    5684: anewarray     #146                // class java/lang/Object
+    5687: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5690: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5693: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5696: ldc2_w        #221                // long 90l
+    5699: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5702: iconst_2
+    5703: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5706: dup
+    5707: iconst_0
+    5708: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5711: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5714: aastore
+    5715: dup
+    5716: iconst_1
+    5717: getstatic     #883                // Field gregapi/data/MT.Orange:Lgregapi/oredict/OreDictMaterial;
+    5720: ldc2_w        #884                // long 1945944000l
+    5723: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    5726: aastore
+    5727: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5730: pop
+    5731: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5734: iconst_1
+    5735: ldc2_w        #79                 // long 16l
+    5738: ldc2_w        #118                // long 64l
+    5741: iconst_2
+    5742: newarray       long
+    5744: dup
+    5745: iconst_0
+    5746: ldc2_w        #226                // long 10000l
+    5749: lastore
+    5750: dup
+    5751: iconst_1
+    5752: ldc2_w        #437                // long 7500l
+    5755: lastore
+    5756: getstatic     #888                // Field gregapi/data/IL.BINNIE_Comb_Cyan:Lgregapi/data/IL;
+    5759: lconst_1
+    5760: iconst_0
+    5761: anewarray     #146                // class java/lang/Object
+    5764: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5767: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5770: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5773: ldc2_w        #221                // long 90l
+    5776: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5779: iconst_2
+    5780: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5783: dup
+    5784: iconst_0
+    5785: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5788: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5791: aastore
+    5792: dup
+    5793: iconst_1
+    5794: getstatic     #891                // Field gregapi/data/MT.Cyan:Lgregapi/oredict/OreDictMaterial;
+    5797: ldc2_w        #884                // long 1945944000l
+    5800: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    5803: aastore
+    5804: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5807: pop
+    5808: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5811: iconst_1
+    5812: ldc2_w        #79                 // long 16l
+    5815: ldc2_w        #118                // long 64l
+    5818: iconst_2
+    5819: newarray       long
+    5821: dup
+    5822: iconst_0
+    5823: ldc2_w        #226                // long 10000l
+    5826: lastore
+    5827: dup
+    5828: iconst_1
+    5829: ldc2_w        #437                // long 7500l
+    5832: lastore
+    5833: getstatic     #894                // Field gregapi/data/IL.BINNIE_Comb_Purple:Lgregapi/data/IL;
+    5836: lconst_1
+    5837: iconst_0
+    5838: anewarray     #146                // class java/lang/Object
+    5841: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5844: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5847: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5850: ldc2_w        #221                // long 90l
+    5853: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5856: iconst_2
+    5857: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5860: dup
+    5861: iconst_0
+    5862: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5865: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5868: aastore
+    5869: dup
+    5870: iconst_1
+    5871: getstatic     #897                // Field gregapi/data/MT.Purple:Lgregapi/oredict/OreDictMaterial;
+    5874: ldc2_w        #884                // long 1945944000l
+    5877: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    5880: aastore
+    5881: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5884: pop
+    5885: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5888: iconst_1
+    5889: ldc2_w        #79                 // long 16l
+    5892: ldc2_w        #118                // long 64l
+    5895: iconst_2
+    5896: newarray       long
+    5898: dup
+    5899: iconst_0
+    5900: ldc2_w        #226                // long 10000l
+    5903: lastore
+    5904: dup
+    5905: iconst_1
+    5906: ldc2_w        #437                // long 7500l
+    5909: lastore
+    5910: getstatic     #900                // Field gregapi/data/IL.BINNIE_Comb_Gray:Lgregapi/data/IL;
+    5913: lconst_1
+    5914: iconst_0
+    5915: anewarray     #146                // class java/lang/Object
+    5918: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5921: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    5924: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    5927: ldc2_w        #221                // long 90l
+    5930: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    5933: iconst_2
+    5934: anewarray     #97                 // class net/minecraft/item/ItemStack
+    5937: dup
+    5938: iconst_0
+    5939: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    5942: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    5945: aastore
+    5946: dup
+    5947: iconst_1
+    5948: getstatic     #903                // Field gregapi/data/MT.Gray:Lgregapi/oredict/OreDictMaterial;
+    5951: ldc2_w        #884                // long 1945944000l
+    5954: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    5957: aastore
+    5958: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    5961: pop
+    5962: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    5965: iconst_1
+    5966: ldc2_w        #79                 // long 16l
+    5969: ldc2_w        #118                // long 64l
+    5972: iconst_2
+    5973: newarray       long
+    5975: dup
+    5976: iconst_0
+    5977: ldc2_w        #226                // long 10000l
+    5980: lastore
+    5981: dup
+    5982: iconst_1
+    5983: ldc2_w        #437                // long 7500l
+    5986: lastore
+    5987: getstatic     #906                // Field gregapi/data/IL.BINNIE_Comb_LightBlue:Lgregapi/data/IL;
+    5990: lconst_1
+    5991: iconst_0
+    5992: anewarray     #146                // class java/lang/Object
+    5995: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    5998: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    6001: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    6004: ldc2_w        #221                // long 90l
+    6007: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    6010: iconst_2
+    6011: anewarray     #97                 // class net/minecraft/item/ItemStack
+    6014: dup
+    6015: iconst_0
+    6016: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    6019: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    6022: aastore
+    6023: dup
+    6024: iconst_1
+    6025: getstatic     #909                // Field gregapi/data/MT.LightBlue:Lgregapi/oredict/OreDictMaterial;
+    6028: ldc2_w        #884                // long 1945944000l
+    6031: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    6034: aastore
+    6035: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    6038: pop
+    6039: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    6042: iconst_1
+    6043: ldc2_w        #79                 // long 16l
+    6046: ldc2_w        #118                // long 64l
+    6049: iconst_2
+    6050: newarray       long
+    6052: dup
+    6053: iconst_0
+    6054: ldc2_w        #226                // long 10000l
+    6057: lastore
+    6058: dup
+    6059: iconst_1
+    6060: ldc2_w        #437                // long 7500l
+    6063: lastore
+    6064: getstatic     #912                // Field gregapi/data/IL.BINNIE_Comb_Pink:Lgregapi/data/IL;
+    6067: lconst_1
+    6068: iconst_0
+    6069: anewarray     #146                // class java/lang/Object
+    6072: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    6075: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    6078: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    6081: ldc2_w        #221                // long 90l
+    6084: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    6087: iconst_2
+    6088: anewarray     #97                 // class net/minecraft/item/ItemStack
+    6091: dup
+    6092: iconst_0
+    6093: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    6096: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    6099: aastore
+    6100: dup
+    6101: iconst_1
+    6102: getstatic     #915                // Field gregapi/data/MT.Pink:Lgregapi/oredict/OreDictMaterial;
+    6105: ldc2_w        #884                // long 1945944000l
+    6108: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    6111: aastore
+    6112: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    6115: pop
+    6116: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    6119: iconst_1
+    6120: ldc2_w        #79                 // long 16l
+    6123: ldc2_w        #118                // long 64l
+    6126: iconst_2
+    6127: newarray       long
+    6129: dup
+    6130: iconst_0
+    6131: ldc2_w        #226                // long 10000l
+    6134: lastore
+    6135: dup
+    6136: iconst_1
+    6137: ldc2_w        #437                // long 7500l
+    6140: lastore
+    6141: getstatic     #918                // Field gregapi/data/IL.BINNIE_Comb_Lime:Lgregapi/data/IL;
+    6144: lconst_1
+    6145: iconst_0
+    6146: anewarray     #146                // class java/lang/Object
+    6149: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    6152: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    6155: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    6158: ldc2_w        #221                // long 90l
+    6161: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    6164: iconst_2
+    6165: anewarray     #97                 // class net/minecraft/item/ItemStack
+    6168: dup
+    6169: iconst_0
+    6170: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    6173: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    6176: aastore
+    6177: dup
+    6178: iconst_1
+    6179: getstatic     #921                // Field gregapi/data/MT.Lime:Lgregapi/oredict/OreDictMaterial;
+    6182: ldc2_w        #884                // long 1945944000l
+    6185: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    6188: aastore
+    6189: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    6192: pop
+    6193: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    6196: iconst_1
+    6197: ldc2_w        #79                 // long 16l
+    6200: ldc2_w        #118                // long 64l
+    6203: iconst_2
+    6204: newarray       long
+    6206: dup
+    6207: iconst_0
+    6208: ldc2_w        #226                // long 10000l
+    6211: lastore
+    6212: dup
+    6213: iconst_1
+    6214: ldc2_w        #437                // long 7500l
+    6217: lastore
+    6218: getstatic     #924                // Field gregapi/data/IL.BINNIE_Comb_Magenta:Lgregapi/data/IL;
+    6221: lconst_1
+    6222: iconst_0
+    6223: anewarray     #146                // class java/lang/Object
+    6226: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    6229: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    6232: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    6235: ldc2_w        #221                // long 90l
+    6238: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    6241: iconst_2
+    6242: anewarray     #97                 // class net/minecraft/item/ItemStack
+    6245: dup
+    6246: iconst_0
+    6247: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    6250: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    6253: aastore
+    6254: dup
+    6255: iconst_1
+    6256: getstatic     #927                // Field gregapi/data/MT.Magenta:Lgregapi/oredict/OreDictMaterial;
+    6259: ldc2_w        #884                // long 1945944000l
+    6262: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    6265: aastore
+    6266: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    6269: pop
+    6270: getstatic     #182                // Field gregapi/data/RM.Centrifuge:Lgregapi/recipes/Recipe$RecipeMap;
+    6273: iconst_1
+    6274: ldc2_w        #79                 // long 16l
+    6277: ldc2_w        #118                // long 64l
+    6280: iconst_2
+    6281: newarray       long
+    6283: dup
+    6284: iconst_0
+    6285: ldc2_w        #226                // long 10000l
+    6288: lastore
+    6289: dup
+    6290: iconst_1
+    6291: ldc2_w        #437                // long 7500l
+    6294: lastore
+    6295: getstatic     #930                // Field gregapi/data/IL.BINNIE_Comb_LightGray:Lgregapi/data/IL;
+    6298: lconst_1
+    6299: iconst_0
+    6300: anewarray     #146                // class java/lang/Object
+    6303: invokevirtual #192                // Method gregapi/data/IL.get:(J[Ljava/lang/Object;)Lnet/minecraft/item/ItemStack;
+    6306: getstatic     #196                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+    6309: getstatic     #202                // Field gregapi/data/FL.Honey:Lgregapi/data/FL;
+    6312: ldc2_w        #221                // long 90l
+    6315: invokevirtual #207                // Method gregapi/data/FL.make:(J)Lnet/minecraftforge/fluids/FluidStack;
+    6318: iconst_2
+    6319: anewarray     #97                 // class net/minecraft/item/ItemStack
+    6322: dup
+    6323: iconst_0
+    6324: getstatic     #210                // Field gregapi/data/MT.WaxBee:Lgregapi/oredict/OreDictMaterial;
+    6327: invokestatic  #92                 // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;)Lnet/minecraft/item/ItemStack;
+    6330: aastore
+    6331: dup
+    6332: iconst_1
+    6333: getstatic     #933                // Field gregapi/data/MT.LightGray:Lgregapi/oredict/OreDictMaterial;
+    6336: ldc2_w        #884                // long 1945944000l
+    6339: invokestatic  #239                // Method gregapi/util/OM.dust:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+    6342: aastore
+    6343: invokevirtual #245                // Method gregapi/recipes/Recipe$RecipeMap.addRecipe1:(ZJJ[JLnet/minecraft/item/ItemStack;Lnet/minecraftforge/fluids/FluidStack;Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Lgregapi/recipes/Recipe;
+    6346: pop
+    6347: return
+}

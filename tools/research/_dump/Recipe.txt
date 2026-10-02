@@ -1,0 +1,1757 @@
+﻿Compiled from "Recipe.java"
+public class gregapi.recipes.Recipe {
+  public net.minecraft.item.ItemStack[] mInputs;
+
+  public net.minecraft.item.ItemStack[] mOutputs;
+
+  public net.minecraftforge.fluids.FluidStack[] mFluidInputs;
+
+  public net.minecraftforge.fluids.FluidStack[] mFluidOutputs;
+
+  public long[] mChances;
+
+  public long[] mMaxChances;
+
+  public java.lang.Object mSpecialItems;
+
+  public long mDuration;
+
+  public long mEUt;
+
+  public long mSpecialValue;
+
+  public boolean mEnabled;
+
+  public boolean mHidden;
+
+  public boolean mFakeRecipe;
+
+  public boolean mCanBeBuffered;
+
+  public boolean mNeedsEmptyOutput;
+
+  public static void reInit();
+    Code:
+       0: getstatic     #40                 // Field gregapi/recipes/Recipe$RecipeMap.RECIPE_MAPS:Ljava/util/Map;
+       3: invokeinterface #46,  1           // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+       8: invokeinterface #52,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      13: astore_0
+      14: aload_0
+      15: invokeinterface #58,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      20: ifeq          40
+      23: aload_0
+      24: invokeinterface #62,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      29: checkcast     #7                  // class gregapi/recipes/Recipe$RecipeMap
+      32: astore_1
+      33: aload_1
+      34: invokevirtual #64                 // Method gregapi/recipes/Recipe$RecipeMap.reInit:()V
+      37: goto          14
+      40: return
+
+  public int getOutputChance(long);
+    Code:
+       0: lload_1
+       1: lconst_0
+       2: lcmp
+       3: iflt          17
+       6: lload_1
+       7: aload_0
+       8: getfield      #70                 // Field mChances:[J
+      11: arraylength
+      12: i2l
+      13: lcmp
+      14: iflt          23
+      17: aload_0
+      18: lload_1
+      19: invokevirtual #73                 // Method getMaxChance:(J)I
+      22: ireturn
+      23: aload_0
+      24: getfield      #70                 // Field mChances:[J
+      27: lload_1
+      28: l2i
+      29: laload
+      30: l2i
+      31: ireturn
+
+  public int getMaxChance(long);
+    Code:
+       0: lload_1
+       1: lconst_0
+       2: lcmp
+       3: iflt          17
+       6: lload_1
+       7: aload_0
+       8: getfield      #78                 // Field mMaxChances:[J
+      11: arraylength
+      12: i2l
+      13: lcmp
+      14: iflt          21
+      17: sipush        10000
+      20: ireturn
+      21: aload_0
+      22: getfield      #78                 // Field mMaxChances:[J
+      25: lload_1
+      26: l2i
+      27: laload
+      28: l2i
+      29: ireturn
+
+  public net.minecraft.item.ItemStack getRepresentativeInput(long);
+    Code:
+       0: lload_1
+       1: lconst_0
+       2: lcmp
+       3: iflt          17
+       6: lload_1
+       7: aload_0
+       8: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      11: arraylength
+      12: i2l
+      13: lcmp
+      14: iflt          19
+      17: aconst_null
+      18: areturn
+      19: aload_0
+      20: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      23: lload_1
+      24: l2i
+      25: aaload
+      26: invokestatic  #88                 // Method gregapi/util/ST.copy:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+      29: areturn
+
+  public net.minecraft.item.ItemStack getOutput(long);
+    Code:
+       0: lload_1
+       1: lconst_0
+       2: lcmp
+       3: iflt          17
+       6: lload_1
+       7: aload_0
+       8: getfield      #91                 // Field mOutputs:[Lnet/minecraft/item/ItemStack;
+      11: arraylength
+      12: i2l
+      13: lcmp
+      14: iflt          19
+      17: aconst_null
+      18: areturn
+      19: aload_0
+      20: getfield      #91                 // Field mOutputs:[Lnet/minecraft/item/ItemStack;
+      23: lload_1
+      24: l2i
+      25: aaload
+      26: invokestatic  #88                 // Method gregapi/util/ST.copy:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+      29: areturn
+
+  public net.minecraftforge.fluids.FluidStack getRepresentativeFluidInput(long);
+    Code:
+       0: lload_1
+       1: lconst_0
+       2: lcmp
+       3: iflt          27
+       6: lload_1
+       7: aload_0
+       8: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+      11: arraylength
+      12: i2l
+      13: lcmp
+      14: ifge          27
+      17: aload_0
+      18: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+      21: lload_1
+      22: l2i
+      23: aaload
+      24: ifnonnull     29
+      27: aconst_null
+      28: areturn
+      29: aload_0
+      30: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+      33: lload_1
+      34: l2i
+      35: aaload
+      36: invokevirtual #100                // Method net/minecraftforge/fluids/FluidStack.copy:()Lnet/minecraftforge/fluids/FluidStack;
+      39: areturn
+
+  public net.minecraftforge.fluids.FluidStack getFluidOutput(long);
+    Code:
+       0: lload_1
+       1: lconst_0
+       2: lcmp
+       3: iflt          27
+       6: lload_1
+       7: aload_0
+       8: getfield      #103                // Field mFluidOutputs:[Lnet/minecraftforge/fluids/FluidStack;
+      11: arraylength
+      12: i2l
+      13: lcmp
+      14: ifge          27
+      17: aload_0
+      18: getfield      #103                // Field mFluidOutputs:[Lnet/minecraftforge/fluids/FluidStack;
+      21: lload_1
+      22: l2i
+      23: aaload
+      24: ifnonnull     29
+      27: aconst_null
+      28: areturn
+      29: aload_0
+      30: getfield      #103                // Field mFluidOutputs:[Lnet/minecraftforge/fluids/FluidStack;
+      33: lload_1
+      34: l2i
+      35: aaload
+      36: invokevirtual #100                // Method net/minecraftforge/fluids/FluidStack.copy:()Lnet/minecraftforge/fluids/FluidStack;
+      39: areturn
+
+  public gregapi.recipes.Recipe copy();
+    Code:
+       0: new           #2                  // class gregapi/recipes/Recipe
+       3: dup
+       4: aload_0
+       5: invokespecial #108                // Method "<init>":(Lgregapi/recipes/Recipe;)V
+       8: areturn
+
+  public gregapi.recipes.Recipe setSpecialNumber(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: putfield      #112                // Field mSpecialValue:J
+       5: aload_0
+       6: areturn
+
+  public gregapi.recipes.Recipe setNoBuffering();
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: putfield      #116                // Field mCanBeBuffered:Z
+       5: aload_0
+       6: areturn
+
+  public gregapi.recipes.Recipe setNeedEmptyOut();
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: putfield      #119                // Field mNeedsEmptyOutput:Z
+       5: aload_0
+       6: areturn
+
+  public boolean blockINblockOUT();
+    Code:
+       0: aload_0
+       1: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+       4: arraylength
+       5: iconst_1
+       6: if_icmpne     94
+       9: aload_0
+      10: getfield      #91                 // Field mOutputs:[Lnet/minecraft/item/ItemStack;
+      13: arraylength
+      14: iconst_1
+      15: if_icmpne     94
+      18: aload_0
+      19: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+      22: arraylength
+      23: ifne          94
+      26: aload_0
+      27: getfield      #103                // Field mFluidOutputs:[Lnet/minecraftforge/fluids/FluidStack;
+      30: arraylength
+      31: ifne          94
+      34: aload_0
+      35: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      38: iconst_0
+      39: aaload
+      40: invokestatic  #124                // Method gregapi/util/ST.block:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/block/Block;
+      43: getstatic     #130                // Field gregapi/data/CS.NB:Lnet/minecraft/block/Block;
+      46: if_acmpeq     94
+      49: aload_0
+      50: getfield      #91                 // Field mOutputs:[Lnet/minecraft/item/ItemStack;
+      53: iconst_0
+      54: aaload
+      55: invokestatic  #124                // Method gregapi/util/ST.block:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/block/Block;
+      58: getstatic     #130                // Field gregapi/data/CS.NB:Lnet/minecraft/block/Block;
+      61: if_acmpeq     94
+      64: aload_0
+      65: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      68: iconst_0
+      69: aaload
+      70: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+      73: iconst_1
+      74: if_icmpne     94
+      77: aload_0
+      78: getfield      #91                 // Field mOutputs:[Lnet/minecraft/item/ItemStack;
+      81: iconst_0
+      82: aaload
+      83: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+      86: iconst_1
+      87: if_icmpne     94
+      90: iconst_1
+      91: goto          95
+      94: iconst_0
+      95: ireturn
+
+  public long getAbsoluteTotalPower();
+    Code:
+       0: aload_0
+       1: getfield      #140                // Field mEUt:J
+       4: aload_0
+       5: getfield      #142                // Field mDuration:J
+       8: lmul
+       9: invokestatic  #148                // Method java/lang/Math.abs:(J)J
+      12: lreturn
+
+  public net.minecraftforge.fluids.FluidStack[] getFluidOutputs();
+    Code:
+       0: aload_0
+       1: getstatic     #154                // Field gregapi/data/CS.RNGSUS:Ljava/util/Random;
+       4: iconst_1
+       5: invokevirtual #157                // Method getFluidOutputs:(Ljava/util/Random;I)[Lnet/minecraftforge/fluids/FluidStack;
+       8: areturn
+
+  public net.minecraftforge.fluids.FluidStack[] getFluidOutputs(java.util.Random);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_1
+       3: invokevirtual #157                // Method getFluidOutputs:(Ljava/util/Random;I)[Lnet/minecraftforge/fluids/FluidStack;
+       6: areturn
+
+  public net.minecraftforge.fluids.FluidStack[] getFluidOutputs(java.util.Random, int);
+    Code:
+       0: aload_0
+       1: getfield      #103                // Field mFluidOutputs:[Lnet/minecraftforge/fluids/FluidStack;
+       4: arraylength
+       5: anewarray     #97                 // class net/minecraftforge/fluids/FluidStack
+       8: astore_3
+       9: iconst_0
+      10: istore        4
+      12: iload         4
+      14: aload_3
+      15: arraylength
+      16: if_icmpge     41
+      19: aload_3
+      20: iload         4
+      22: aload_0
+      23: iload         4
+      25: i2l
+      26: invokevirtual #162                // Method getFluidOutput:(J)Lnet/minecraftforge/fluids/FluidStack;
+      29: iload_2
+      30: i2l
+      31: invokestatic  #168                // Method gregapi/data/FL.mul:(Lnet/minecraftforge/fluids/FluidStack;J)Lnet/minecraftforge/fluids/FluidStack;
+      34: aastore
+      35: iinc          4, 1
+      38: goto          12
+      41: aload_3
+      42: areturn
+
+  public net.minecraft.item.ItemStack[] getOutputs();
+    Code:
+       0: aload_0
+       1: getstatic     #154                // Field gregapi/data/CS.RNGSUS:Ljava/util/Random;
+       4: iconst_1
+       5: invokevirtual #176                // Method getOutputs:(Ljava/util/Random;I)[Lnet/minecraft/item/ItemStack;
+       8: areturn
+
+  public net.minecraft.item.ItemStack[] getOutputs(java.util.Random);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_1
+       3: invokevirtual #176                // Method getOutputs:(Ljava/util/Random;I)[Lnet/minecraft/item/ItemStack;
+       6: areturn
+
+  public net.minecraft.item.ItemStack[] getOutputs(java.util.Random, int);
+    Code:
+       0: aload_0
+       1: getfield      #91                 // Field mOutputs:[Lnet/minecraft/item/ItemStack;
+       4: arraylength
+       5: anewarray     #132                // class net/minecraft/item/ItemStack
+       8: astore_3
+       9: aload_1
+      10: ifnonnull     21
+      13: new           #179                // class java/util/Random
+      16: dup
+      17: invokespecial #181                // Method java/util/Random."<init>":()V
+      20: astore_1
+      21: iconst_0
+      22: istore        4
+      24: iload         4
+      26: aload_3
+      27: arraylength
+      28: if_icmpge     173
+      31: aload_0
+      32: iload         4
+      34: i2l
+      35: invokevirtual #184                // Method getOutput:(J)Lnet/minecraft/item/ItemStack;
+      38: astore        5
+      40: aload         5
+      42: ifnull        167
+      45: aload_0
+      46: iload         4
+      48: i2l
+      49: invokevirtual #186                // Method getOutputChance:(J)I
+      52: istore        6
+      54: iload         6
+      56: ifle          161
+      59: aload_0
+      60: iload         4
+      62: i2l
+      63: invokevirtual #73                 // Method getMaxChance:(J)I
+      66: istore        7
+      68: iload         6
+      70: iload         7
+      72: if_icmplt     89
+      75: aload_3
+      76: iload         4
+      78: iload_2
+      79: i2l
+      80: aload         5
+      82: invokestatic  #190                // Method gregapi/util/ST.mul_:(JLnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+      85: aastore
+      86: goto          158
+      89: iconst_0
+      90: istore        8
+      92: aload         5
+      94: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+      97: iload_2
+      98: imul
+      99: istore        9
+     101: iload         8
+     103: iload         9
+     105: if_icmpge     158
+     108: aload_1
+     109: iload         7
+     111: invokevirtual #194                // Method java/util/Random.nextInt:(I)I
+     114: iload         6
+     116: if_icmpge     152
+     119: aload_3
+     120: iload         4
+     122: aaload
+     123: ifnonnull     139
+     126: aload_3
+     127: iload         4
+     129: lconst_1
+     130: aload         5
+     132: invokestatic  #197                // Method gregapi/util/ST.amount:(JLnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+     135: aastore
+     136: goto          152
+     139: aload_3
+     140: iload         4
+     142: aaload
+     143: dup
+     144: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     147: iconst_1
+     148: iadd
+     149: putfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     152: iinc          8, 1
+     155: goto          101
+     158: goto          167
+     161: aload_3
+     162: iload         4
+     164: aload         5
+     166: aastore
+     167: iinc          4, 1
+     170: goto          24
+     173: aload_3
+     174: areturn
+
+  public boolean checkStacksEqual(boolean, boolean, net.minecraft.item.ItemStack...);
+    Code:
+       0: aload_3
+       1: arraylength
+       2: newarray       boolean
+       4: astore        4
+       6: aload_0
+       7: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      10: astore        5
+      12: aload         5
+      14: arraylength
+      15: istore        6
+      17: iconst_0
+      18: istore        7
+      20: iload         7
+      22: iload         6
+      24: if_icmpge     177
+      27: aload         5
+      29: iload         7
+      31: aaload
+      32: astore        8
+      34: aload         8
+      36: invokestatic  #211                // Method gregapi/util/ST.valid:(Lnet/minecraft/item/ItemStack;)Z
+      39: ifeq          171
+      42: iconst_1
+      43: istore        9
+      45: iconst_0
+      46: istore        10
+      48: iload         10
+      50: aload_3
+      51: arraylength
+      52: if_icmpge     164
+      55: aload         4
+      57: iload         10
+      59: baload
+      60: ifne          158
+      63: aload_3
+      64: iload         10
+      66: aaload
+      67: astore        11
+      69: aload         11
+      71: invokestatic  #211                // Method gregapi/util/ST.valid:(Lnet/minecraft/item/ItemStack;)Z
+      74: ifeq          152
+      77: iload_2
+      78: ifne          94
+      81: aload         11
+      83: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+      86: aload         8
+      88: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+      91: if_icmplt     158
+      94: getstatic     #217                // Field gregapi/oredict/OreDictManager.INSTANCE:Lgregapi/oredict/OreDictManager;
+      97: iconst_0
+      98: aload         11
+     100: aload         8
+     102: aload         8
+     104: invokevirtual #220                // Method net/minecraft/item/ItemStack.func_77942_o:()Z
+     107: ifne          114
+     110: iconst_1
+     111: goto          115
+     114: iconst_0
+     115: invokevirtual #224                // Method gregapi/oredict/OreDictManager.equal_:(ZLnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;Z)Z
+     118: ifeq          158
+     121: iload_1
+     122: ifeq          140
+     125: aload         11
+     127: dup
+     128: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     131: aload         8
+     133: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     136: isub
+     137: putfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     140: aload         4
+     142: iload         10
+     144: iconst_1
+     145: bastore
+     146: iconst_0
+     147: istore        9
+     149: goto          164
+     152: aload         4
+     154: iload         10
+     156: iconst_1
+     157: bastore
+     158: iinc          10, 1
+     161: goto          48
+     164: iload         9
+     166: ifeq          171
+     169: iconst_0
+     170: ireturn
+     171: iinc          7, 1
+     174: goto          20
+     177: iconst_1
+     178: ireturn
+
+  public boolean isRecipeInputEqual(boolean, net.minecraftforge.fluids.FluidStack[], net.minecraft.item.ItemStack...);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iconst_0
+       3: aload_2
+       4: aload_3
+       5: invokevirtual #237                // Method isRecipeInputEqual:(ZZ[Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraft/item/ItemStack;)Z
+       8: ireturn
+
+  public boolean isRecipeInputEqual(boolean, boolean, net.minecraftforge.fluids.FluidStack[], net.minecraft.item.ItemStack...);
+    Code:
+       0: aload_0
+       1: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+       4: arraylength
+       5: ifle          20
+       8: aload_3
+       9: ifnull        18
+      12: aload_3
+      13: arraylength
+      14: iconst_1
+      15: if_icmpge     20
+      18: iconst_0
+      19: ireturn
+      20: aload_0
+      21: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      24: arraylength
+      25: ifle          42
+      28: aload         4
+      30: ifnull        40
+      33: aload         4
+      35: arraylength
+      36: iconst_1
+      37: if_icmpge     42
+      40: iconst_0
+      41: ireturn
+      42: aload_0
+      43: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+      46: astore        5
+      48: aload         5
+      50: arraylength
+      51: istore        6
+      53: iconst_0
+      54: istore        7
+      56: iload         7
+      58: iload         6
+      60: if_icmpge     160
+      63: aload         5
+      65: iload         7
+      67: aaload
+      68: astore        8
+      70: aload         8
+      72: ifnull        154
+      75: iconst_1
+      76: istore        9
+      78: aload_3
+      79: astore        10
+      81: aload         10
+      83: arraylength
+      84: istore        11
+      86: iconst_0
+      87: istore        12
+      89: iload         12
+      91: iload         11
+      93: if_icmpge     147
+      96: aload         10
+      98: iload         12
+     100: aaload
+     101: astore        13
+     103: aload         13
+     105: ifnull        141
+     108: aload         13
+     110: aload         8
+     112: invokevirtual #242                // Method net/minecraftforge/fluids/FluidStack.isFluidEqual:(Lnet/minecraftforge/fluids/FluidStack;)Z
+     115: ifeq          141
+     118: iload_2
+     119: ifne          135
+     122: aload         13
+     124: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     127: aload         8
+     129: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     132: if_icmplt     141
+     135: iconst_0
+     136: istore        9
+     138: goto          147
+     141: iinc          12, 1
+     144: goto          89
+     147: iload         9
+     149: ifeq          154
+     152: iconst_0
+     153: ireturn
+     154: iinc          7, 1
+     157: goto          56
+     160: aload_0
+     161: iconst_0
+     162: iload_2
+     163: aload         4
+     165: invokevirtual #246                // Method checkStacksEqual:(ZZ[Lnet/minecraft/item/ItemStack;)Z
+     168: ifne          173
+     171: iconst_0
+     172: ireturn
+     173: iload_1
+     174: ifeq          302
+     177: aload_0
+     178: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+     181: astore        5
+     183: aload         5
+     185: arraylength
+     186: istore        6
+     188: iconst_0
+     189: istore        7
+     191: iload         7
+     193: iload         6
+     195: if_icmpge     293
+     198: aload         5
+     200: iload         7
+     202: aaload
+     203: astore        8
+     205: aload         8
+     207: ifnull        287
+     210: aload_3
+     211: astore        9
+     213: aload         9
+     215: arraylength
+     216: istore        10
+     218: iconst_0
+     219: istore        11
+     221: iload         11
+     223: iload         10
+     225: if_icmpge     287
+     228: aload         9
+     230: iload         11
+     232: aaload
+     233: astore        12
+     235: aload         12
+     237: ifnull        281
+     240: aload         12
+     242: aload         8
+     244: invokevirtual #242                // Method net/minecraftforge/fluids/FluidStack.isFluidEqual:(Lnet/minecraftforge/fluids/FluidStack;)Z
+     247: ifeq          281
+     250: aload         12
+     252: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     255: aload         8
+     257: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     260: if_icmplt     281
+     263: aload         12
+     265: dup
+     266: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     269: aload         8
+     271: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     274: isub
+     275: putfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     278: goto          287
+     281: iinc          11, 1
+     284: goto          221
+     287: iinc          7, 1
+     290: goto          191
+     293: aload_0
+     294: iconst_1
+     295: iconst_0
+     296: aload         4
+     298: invokevirtual #246                // Method checkStacksEqual:(ZZ[Lnet/minecraft/item/ItemStack;)Z
+     301: pop
+     302: iconst_1
+     303: ireturn
+
+  public boolean isRecipeInputEqual(boolean, boolean, net.minecraftforge.fluids.IFluidTank[], net.minecraft.item.ItemStack...);
+    Code:
+       0: aload_0
+       1: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+       4: arraylength
+       5: ifle          20
+       8: aload_3
+       9: ifnull        18
+      12: aload_3
+      13: arraylength
+      14: iconst_1
+      15: if_icmpge     20
+      18: iconst_0
+      19: ireturn
+      20: aload_0
+      21: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      24: arraylength
+      25: ifle          42
+      28: aload         4
+      30: ifnull        40
+      33: aload         4
+      35: arraylength
+      36: iconst_1
+      37: if_icmpge     42
+      40: iconst_0
+      41: ireturn
+      42: aload_0
+      43: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+      46: astore        5
+      48: aload         5
+      50: arraylength
+      51: istore        6
+      53: iconst_0
+      54: istore        7
+      56: iload         7
+      58: iload         6
+      60: if_icmpge     169
+      63: aload         5
+      65: iload         7
+      67: aaload
+      68: astore        8
+      70: aload         8
+      72: ifnull        163
+      75: iconst_1
+      76: istore        9
+      78: aload_3
+      79: astore        10
+      81: aload         10
+      83: arraylength
+      84: istore        11
+      86: iconst_0
+      87: istore        12
+      89: iload         12
+      91: iload         11
+      93: if_icmpge     156
+      96: aload         10
+      98: iload         12
+     100: aaload
+     101: astore        13
+     103: aload         13
+     105: invokeinterface #257,  1          // InterfaceMethod net/minecraftforge/fluids/IFluidTank.getFluid:()Lnet/minecraftforge/fluids/FluidStack;
+     110: astore        14
+     112: aload         14
+     114: ifnull        150
+     117: aload         14
+     119: aload         8
+     121: invokevirtual #242                // Method net/minecraftforge/fluids/FluidStack.isFluidEqual:(Lnet/minecraftforge/fluids/FluidStack;)Z
+     124: ifeq          150
+     127: iload_2
+     128: ifne          144
+     131: aload         14
+     133: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     136: aload         8
+     138: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     141: if_icmplt     150
+     144: iconst_0
+     145: istore        9
+     147: goto          156
+     150: iinc          12, 1
+     153: goto          89
+     156: iload         9
+     158: ifeq          163
+     161: iconst_0
+     162: ireturn
+     163: iinc          7, 1
+     166: goto          56
+     169: aload_0
+     170: iconst_0
+     171: iload_2
+     172: aload         4
+     174: invokevirtual #246                // Method checkStacksEqual:(ZZ[Lnet/minecraft/item/ItemStack;)Z
+     177: ifne          182
+     180: iconst_0
+     181: ireturn
+     182: iload_1
+     183: ifeq          319
+     186: aload_0
+     187: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+     190: astore        5
+     192: aload         5
+     194: arraylength
+     195: istore        6
+     197: iconst_0
+     198: istore        7
+     200: iload         7
+     202: iload         6
+     204: if_icmpge     310
+     207: aload         5
+     209: iload         7
+     211: aaload
+     212: astore        8
+     214: aload         8
+     216: ifnull        304
+     219: aload_3
+     220: astore        9
+     222: aload         9
+     224: arraylength
+     225: istore        10
+     227: iconst_0
+     228: istore        11
+     230: iload         11
+     232: iload         10
+     234: if_icmpge     304
+     237: aload         9
+     239: iload         11
+     241: aaload
+     242: astore        12
+     244: aload         12
+     246: invokeinterface #257,  1          // InterfaceMethod net/minecraftforge/fluids/IFluidTank.getFluid:()Lnet/minecraftforge/fluids/FluidStack;
+     251: astore        13
+     253: aload         13
+     255: ifnull        298
+     258: aload         13
+     260: aload         8
+     262: invokevirtual #242                // Method net/minecraftforge/fluids/FluidStack.isFluidEqual:(Lnet/minecraftforge/fluids/FluidStack;)Z
+     265: ifeq          298
+     268: aload         13
+     270: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     273: aload         8
+     275: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     278: if_icmplt     298
+     281: aload         12
+     283: aload         8
+     285: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     288: iconst_1
+     289: invokeinterface #261,  3          // InterfaceMethod net/minecraftforge/fluids/IFluidTank.drain:(IZ)Lnet/minecraftforge/fluids/FluidStack;
+     294: pop
+     295: goto          304
+     298: iinc          11, 1
+     301: goto          230
+     304: iinc          7, 1
+     307: goto          200
+     310: aload_0
+     311: iconst_1
+     312: iconst_0
+     313: aload         4
+     315: invokevirtual #246                // Method checkStacksEqual:(ZZ[Lnet/minecraft/item/ItemStack;)Z
+     318: pop
+     319: iconst_1
+     320: ireturn
+
+  public int isRecipeInputEqual(int, net.minecraftforge.fluids.IFluidTank[], net.minecraft.item.ItemStack...);
+    Code:
+       0: iload_1
+       1: ifgt          6
+       4: iconst_0
+       5: ireturn
+       6: aload_0
+       7: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+      10: arraylength
+      11: ifle          26
+      14: aload_2
+      15: ifnull        24
+      18: aload_2
+      19: arraylength
+      20: iconst_1
+      21: if_icmpge     26
+      24: iconst_0
+      25: ireturn
+      26: aload_0
+      27: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      30: arraylength
+      31: ifle          46
+      34: aload_3
+      35: ifnull        44
+      38: aload_3
+      39: arraylength
+      40: iconst_1
+      41: if_icmpge     46
+      44: iconst_0
+      45: ireturn
+      46: iconst_0
+      47: istore        4
+      49: iload         4
+      51: iload_1
+      52: if_icmpge     330
+      55: aload_0
+      56: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+      59: astore        5
+      61: aload         5
+      63: arraylength
+      64: istore        6
+      66: iconst_0
+      67: istore        7
+      69: iload         7
+      71: iload         6
+      73: if_icmpge     179
+      76: aload         5
+      78: iload         7
+      80: aaload
+      81: astore        8
+      83: aload         8
+      85: ifnull        173
+      88: iconst_1
+      89: istore        9
+      91: aload_2
+      92: astore        10
+      94: aload         10
+      96: arraylength
+      97: istore        11
+      99: iconst_0
+     100: istore        12
+     102: iload         12
+     104: iload         11
+     106: if_icmpge     165
+     109: aload         10
+     111: iload         12
+     113: aaload
+     114: astore        13
+     116: aload         13
+     118: invokeinterface #257,  1          // InterfaceMethod net/minecraftforge/fluids/IFluidTank.getFluid:()Lnet/minecraftforge/fluids/FluidStack;
+     123: astore        14
+     125: aload         14
+     127: ifnull        159
+     130: aload         14
+     132: aload         8
+     134: invokevirtual #242                // Method net/minecraftforge/fluids/FluidStack.isFluidEqual:(Lnet/minecraftforge/fluids/FluidStack;)Z
+     137: ifeq          159
+     140: aload         14
+     142: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     145: aload         8
+     147: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     150: if_icmplt     159
+     153: iconst_0
+     154: istore        9
+     156: goto          165
+     159: iinc          12, 1
+     162: goto          102
+     165: iload         9
+     167: ifeq          173
+     170: iload         4
+     172: ireturn
+     173: iinc          7, 1
+     176: goto          69
+     179: aload_0
+     180: iconst_0
+     181: iconst_0
+     182: aload_3
+     183: invokevirtual #246                // Method checkStacksEqual:(ZZ[Lnet/minecraft/item/ItemStack;)Z
+     186: ifne          192
+     189: iload         4
+     191: ireturn
+     192: aload_0
+     193: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+     196: astore        5
+     198: aload         5
+     200: arraylength
+     201: istore        6
+     203: iconst_0
+     204: istore        7
+     206: iload         7
+     208: iload         6
+     210: if_icmpge     316
+     213: aload         5
+     215: iload         7
+     217: aaload
+     218: astore        8
+     220: aload         8
+     222: ifnull        310
+     225: aload_2
+     226: astore        9
+     228: aload         9
+     230: arraylength
+     231: istore        10
+     233: iconst_0
+     234: istore        11
+     236: iload         11
+     238: iload         10
+     240: if_icmpge     310
+     243: aload         9
+     245: iload         11
+     247: aaload
+     248: astore        12
+     250: aload         12
+     252: invokeinterface #257,  1          // InterfaceMethod net/minecraftforge/fluids/IFluidTank.getFluid:()Lnet/minecraftforge/fluids/FluidStack;
+     257: astore        13
+     259: aload         13
+     261: ifnull        304
+     264: aload         13
+     266: aload         8
+     268: invokevirtual #242                // Method net/minecraftforge/fluids/FluidStack.isFluidEqual:(Lnet/minecraftforge/fluids/FluidStack;)Z
+     271: ifeq          304
+     274: aload         13
+     276: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     279: aload         8
+     281: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     284: if_icmplt     304
+     287: aload         12
+     289: aload         8
+     291: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     294: iconst_1
+     295: invokeinterface #261,  3          // InterfaceMethod net/minecraftforge/fluids/IFluidTank.drain:(IZ)Lnet/minecraftforge/fluids/FluidStack;
+     300: pop
+     301: goto          310
+     304: iinc          11, 1
+     307: goto          236
+     310: iinc          7, 1
+     313: goto          206
+     316: aload_0
+     317: iconst_1
+     318: iconst_0
+     319: aload_3
+     320: invokevirtual #246                // Method checkStacksEqual:(ZZ[Lnet/minecraft/item/ItemStack;)Z
+     323: pop
+     324: iinc          4, 1
+     327: goto          49
+     330: iload         4
+     332: ireturn
+
+  private gregapi.recipes.Recipe(gregapi.recipes.Recipe);
+    Code:
+       0: aload_0
+       1: invokespecial #267                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_1
+       6: putfield      #269                // Field mEnabled:Z
+       9: aload_0
+      10: iconst_0
+      11: putfield      #271                // Field mHidden:Z
+      14: aload_0
+      15: iconst_0
+      16: putfield      #273                // Field mFakeRecipe:Z
+      19: aload_0
+      20: iconst_1
+      21: putfield      #116                // Field mCanBeBuffered:Z
+      24: aload_0
+      25: iconst_0
+      26: putfield      #119                // Field mNeedsEmptyOutput:Z
+      29: aload_0
+      30: aload_1
+      31: getfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      34: invokestatic  #277                // Method gregapi/util/ST.copyArray:([Lnet/minecraft/item/ItemStack;)[Lnet/minecraft/item/ItemStack;
+      37: putfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+      40: aload_0
+      41: aload_1
+      42: getfield      #91                 // Field mOutputs:[Lnet/minecraft/item/ItemStack;
+      45: invokestatic  #277                // Method gregapi/util/ST.copyArray:([Lnet/minecraft/item/ItemStack;)[Lnet/minecraft/item/ItemStack;
+      48: putfield      #91                 // Field mOutputs:[Lnet/minecraft/item/ItemStack;
+      51: aload_0
+      52: aload_1
+      53: getfield      #279                // Field mSpecialItems:Ljava/lang/Object;
+      56: putfield      #279                // Field mSpecialItems:Ljava/lang/Object;
+      59: aload_0
+      60: aload_1
+      61: getfield      #70                 // Field mChances:[J
+      64: aload_1
+      65: getfield      #70                 // Field mChances:[J
+      68: arraylength
+      69: invokestatic  #285                // Method java/util/Arrays.copyOf:([JI)[J
+      72: putfield      #70                 // Field mChances:[J
+      75: aload_0
+      76: aload_1
+      77: getfield      #78                 // Field mMaxChances:[J
+      80: aload_1
+      81: getfield      #78                 // Field mMaxChances:[J
+      84: arraylength
+      85: invokestatic  #285                // Method java/util/Arrays.copyOf:([JI)[J
+      88: putfield      #78                 // Field mMaxChances:[J
+      91: aload_0
+      92: aload_1
+      93: getfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+      96: invokestatic  #288                // Method gregapi/data/FL.copy:([Lnet/minecraftforge/fluids/FluidStack;)[Lnet/minecraftforge/fluids/FluidStack;
+      99: putfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+     102: aload_0
+     103: aload_1
+     104: getfield      #103                // Field mFluidOutputs:[Lnet/minecraftforge/fluids/FluidStack;
+     107: invokestatic  #288                // Method gregapi/data/FL.copy:([Lnet/minecraftforge/fluids/FluidStack;)[Lnet/minecraftforge/fluids/FluidStack;
+     110: putfield      #103                // Field mFluidOutputs:[Lnet/minecraftforge/fluids/FluidStack;
+     113: aload_0
+     114: aload_1
+     115: getfield      #140                // Field mEUt:J
+     118: putfield      #140                // Field mEUt:J
+     121: aload_0
+     122: aload_1
+     123: getfield      #142                // Field mDuration:J
+     126: putfield      #142                // Field mDuration:J
+     129: aload_0
+     130: aload_1
+     131: getfield      #112                // Field mSpecialValue:J
+     134: putfield      #112                // Field mSpecialValue:J
+     137: aload_0
+     138: aload_1
+     139: getfield      #119                // Field mNeedsEmptyOutput:Z
+     142: putfield      #119                // Field mNeedsEmptyOutput:Z
+     145: aload_0
+     146: aload_1
+     147: getfield      #116                // Field mCanBeBuffered:Z
+     150: putfield      #116                // Field mCanBeBuffered:Z
+     153: aload_0
+     154: aload_1
+     155: getfield      #273                // Field mFakeRecipe:Z
+     158: putfield      #273                // Field mFakeRecipe:Z
+     161: aload_0
+     162: aload_1
+     163: getfield      #269                // Field mEnabled:Z
+     166: putfield      #269                // Field mEnabled:Z
+     169: aload_0
+     170: aload_1
+     171: getfield      #271                // Field mHidden:Z
+     174: putfield      #271                // Field mHidden:Z
+     177: return
+
+  public gregapi.recipes.Recipe(boolean, boolean, net.minecraft.item.ItemStack[], net.minecraft.item.ItemStack[], java.lang.Object, long[], net.minecraftforge.fluids.FluidStack[], net.minecraftforge.fluids.FluidStack[], long, long, long);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: iconst_1
+       4: aload_3
+       5: aload         4
+       7: aload         5
+       9: aload         6
+      11: aload         7
+      13: aload         8
+      15: lload         9
+      17: lload         11
+      19: lload         13
+      21: invokespecial #293                // Method "<init>":(ZZZ[Lnet/minecraft/item/ItemStack;[Lnet/minecraft/item/ItemStack;Ljava/lang/Object;[J[Lnet/minecraftforge/fluids/FluidStack;[Lnet/minecraftforge/fluids/FluidStack;JJJ)V
+      24: return
+
+  public gregapi.recipes.Recipe(boolean, boolean, boolean, net.minecraft.item.ItemStack[], net.minecraft.item.ItemStack[], java.lang.Object, long[], net.minecraftforge.fluids.FluidStack[], net.minecraftforge.fluids.FluidStack[], long, long, long);
+    Code:
+       0: aload_0
+       1: invokespecial #267                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_1
+       6: putfield      #269                // Field mEnabled:Z
+       9: aload_0
+      10: iconst_0
+      11: putfield      #271                // Field mHidden:Z
+      14: aload_0
+      15: iconst_0
+      16: putfield      #273                // Field mFakeRecipe:Z
+      19: aload_0
+      20: iconst_1
+      21: putfield      #116                // Field mCanBeBuffered:Z
+      24: aload_0
+      25: iconst_0
+      26: putfield      #119                // Field mNeedsEmptyOutput:Z
+      29: aload_0
+      30: iload_3
+      31: putfield      #116                // Field mCanBeBuffered:Z
+      34: aload         4
+      36: ifnonnull     44
+      39: getstatic     #305                // Field gregapi/data/CS.ZL_IS:[Lnet/minecraft/item/ItemStack;
+      42: astore        4
+      44: aload         5
+      46: ifnonnull     54
+      49: getstatic     #305                // Field gregapi/data/CS.ZL_IS:[Lnet/minecraft/item/ItemStack;
+      52: astore        5
+      54: aload         8
+      56: ifnonnull     64
+      59: getstatic     #309                // Field gregapi/data/CS.ZL_FS:[Lnet/minecraftforge/fluids/FluidStack;
+      62: astore        8
+      64: aload         9
+      66: ifnonnull     74
+      69: getstatic     #309                // Field gregapi/data/CS.ZL_FS:[Lnet/minecraftforge/fluids/FluidStack;
+      72: astore        9
+      74: aload         7
+      76: ifnonnull     98
+      79: aload         5
+      81: arraylength
+      82: ifgt          91
+      85: getstatic     #312                // Field gregapi/data/CS.ZL_LONG:[J
+      88: goto          96
+      91: aload         5
+      93: arraylength
+      94: newarray       long
+      96: astore        7
+      98: aload         7
+     100: arraylength
+     101: aload         5
+     103: arraylength
+     104: if_icmpge     117
+     107: aload         7
+     109: aload         5
+     111: arraylength
+     112: invokestatic  #285                // Method java/util/Arrays.copyOf:([JI)[J
+     115: astore        7
+     117: aload         4
+     119: invokestatic  #316                // Method gregapi/util/UT$Code.getWithoutTrailingNulls:([Ljava/lang/Object;)Ljava/util/ArrayList;
+     122: getstatic     #305                // Field gregapi/data/CS.ZL_IS:[Lnet/minecraft/item/ItemStack;
+     125: invokevirtual #322                // Method java/util/ArrayList.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+     128: checkcast     #182                // class "[Lnet/minecraft/item/ItemStack;"
+     131: astore        4
+     133: aload         5
+     135: invokestatic  #316                // Method gregapi/util/UT$Code.getWithoutTrailingNulls:([Ljava/lang/Object;)Ljava/util/ArrayList;
+     138: getstatic     #305                // Field gregapi/data/CS.ZL_IS:[Lnet/minecraft/item/ItemStack;
+     141: invokevirtual #322                // Method java/util/ArrayList.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+     144: checkcast     #182                // class "[Lnet/minecraft/item/ItemStack;"
+     147: astore        5
+     149: iload_2
+     150: ifeq          173
+     153: getstatic     #217                // Field gregapi/oredict/OreDictManager.INSTANCE:Lgregapi/oredict/OreDictManager;
+     156: iconst_1
+     157: aload         4
+     159: invokevirtual #326                // Method gregapi/oredict/OreDictManager.setStackArray_:(Z[Lnet/minecraft/item/ItemStack;)[Lnet/minecraft/item/ItemStack;
+     162: pop
+     163: getstatic     #217                // Field gregapi/oredict/OreDictManager.INSTANCE:Lgregapi/oredict/OreDictManager;
+     166: iconst_1
+     167: aload         5
+     169: invokevirtual #326                // Method gregapi/oredict/OreDictManager.setStackArray_:(Z[Lnet/minecraft/item/ItemStack;)[Lnet/minecraft/item/ItemStack;
+     172: pop
+     173: iconst_0
+     174: istore        16
+     176: iload         16
+     178: aload         9
+     180: arraylength
+     181: if_icmpge     209
+     184: aload         9
+     186: iload         16
+     188: aaload
+     189: invokestatic  #329                // Method gregapi/data/FL.zero:(Lnet/minecraftforge/fluids/FluidStack;)Z
+     192: ifeq          203
+     195: aload         9
+     197: iload         16
+     199: getstatic     #332                // Field gregapi/data/CS.NF:Lnet/minecraftforge/fluids/FluidStack;
+     202: aastore
+     203: iinc          16, 1
+     206: goto          176
+     209: aload         8
+     211: invokestatic  #335                // Method gregapi/util/UT$Code.getWithoutNulls:([Ljava/lang/Object;)Ljava/util/ArrayList;
+     214: getstatic     #309                // Field gregapi/data/CS.ZL_FS:[Lnet/minecraftforge/fluids/FluidStack;
+     217: invokevirtual #322                // Method java/util/ArrayList.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+     220: checkcast     #160                // class "[Lnet/minecraftforge/fluids/FluidStack;"
+     223: astore        8
+     225: aload         9
+     227: invokestatic  #335                // Method gregapi/util/UT$Code.getWithoutNulls:([Ljava/lang/Object;)Ljava/util/ArrayList;
+     230: getstatic     #309                // Field gregapi/data/CS.ZL_FS:[Lnet/minecraftforge/fluids/FluidStack;
+     233: invokevirtual #322                // Method java/util/ArrayList.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+     236: checkcast     #160                // class "[Lnet/minecraftforge/fluids/FluidStack;"
+     239: astore        9
+     241: lload         10
+     243: ldc2_w        #336                // long 16l
+     246: ldiv
+     247: invokestatic  #340                // Method gregapi/util/UT$Code.bindInt:(J)I
+     250: istore        16
+     252: iconst_0
+     253: istore        17
+     255: iload         17
+     257: aload         7
+     259: arraylength
+     260: if_icmpge     287
+     263: aload         7
+     265: iload         17
+     267: laload
+     268: lconst_0
+     269: lcmp
+     270: ifgt          281
+     273: aload         7
+     275: iload         17
+     277: ldc2_w        #341                // long 10000l
+     280: lastore
+     281: iinc          17, 1
+     284: goto          255
+     287: iconst_0
+     288: istore        17
+     290: iload         17
+     292: aload         4
+     294: arraylength
+     295: if_icmpge     351
+     298: aload         4
+     300: iload         17
+     302: aaload
+     303: ifnull        345
+     306: aload         4
+     308: iload         17
+     310: aload         4
+     312: iload         17
+     314: aaload
+     315: invokestatic  #345                // Method gregapi/util/ST.copy_:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+     318: aastore
+     319: aload         4
+     321: iload         17
+     323: aaload
+     324: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     327: ifeq          345
+     330: aload         4
+     332: iload         17
+     334: aaload
+     335: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     338: iload         16
+     340: invokestatic  #349                // Method java/lang/Math.min:(II)I
+     343: istore        16
+     345: iinc          17, 1
+     348: goto          290
+     351: iconst_0
+     352: istore        17
+     354: iload         17
+     356: aload         5
+     358: arraylength
+     359: if_icmpge     415
+     362: aload         5
+     364: iload         17
+     366: aaload
+     367: ifnull        409
+     370: aload         5
+     372: iload         17
+     374: aload         5
+     376: iload         17
+     378: aaload
+     379: invokestatic  #352                // Method gregapi/util/ST.validMeta_:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+     382: aastore
+     383: aload         5
+     385: iload         17
+     387: aaload
+     388: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     391: ifeq          409
+     394: aload         5
+     396: iload         17
+     398: aaload
+     399: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     402: iload         16
+     404: invokestatic  #349                // Method java/lang/Math.min:(II)I
+     407: istore        16
+     409: iinc          17, 1
+     412: goto          354
+     415: iconst_0
+     416: istore        17
+     418: iload         17
+     420: aload         8
+     422: arraylength
+     423: if_icmpge     471
+     426: aload         8
+     428: iload         17
+     430: aload         8
+     432: iload         17
+     434: aaload
+     435: invokevirtual #100                // Method net/minecraftforge/fluids/FluidStack.copy:()Lnet/minecraftforge/fluids/FluidStack;
+     438: aastore
+     439: aload         8
+     441: iload         17
+     443: aaload
+     444: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     447: ifeq          465
+     450: aload         8
+     452: iload         17
+     454: aaload
+     455: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     458: iload         16
+     460: invokestatic  #349                // Method java/lang/Math.min:(II)I
+     463: istore        16
+     465: iinc          17, 1
+     468: goto          418
+     471: iconst_0
+     472: istore        17
+     474: iload         17
+     476: aload         9
+     478: arraylength
+     479: if_icmpge     527
+     482: aload         9
+     484: iload         17
+     486: aload         9
+     488: iload         17
+     490: aaload
+     491: invokevirtual #100                // Method net/minecraftforge/fluids/FluidStack.copy:()Lnet/minecraftforge/fluids/FluidStack;
+     494: aastore
+     495: aload         9
+     497: iload         17
+     499: aaload
+     500: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     503: ifeq          521
+     506: aload         9
+     508: iload         17
+     510: aaload
+     511: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     514: iload         16
+     516: invokestatic  #349                // Method java/lang/Math.min:(II)I
+     519: istore        16
+     521: iinc          17, 1
+     524: goto          474
+     527: iload_1
+     528: ifeq          1064
+     531: iconst_0
+     532: istore        17
+     534: iload         17
+     536: aload         4
+     538: arraylength
+     539: if_icmpge     717
+     542: aload         4
+     544: iload         17
+     546: aaload
+     547: getstatic     #355                // Field gregapi/data/CS.NI:Lnet/minecraft/item/ItemStack;
+     550: if_acmpeq     711
+     553: aload         4
+     555: iload         17
+     557: aaload
+     558: invokestatic  #359                // Method gregapi/util/ST.meta_:(Lnet/minecraft/item/ItemStack;)S
+     561: sipush        32767
+     564: if_icmpeq     711
+     567: iconst_0
+     568: istore        18
+     570: iload         18
+     572: aload         5
+     574: arraylength
+     575: if_icmpge     711
+     578: aload         5
+     580: iload         18
+     582: aaload
+     583: ifnull        705
+     586: aload         4
+     588: iload         17
+     590: aaload
+     591: aload         5
+     593: iload         18
+     595: aaload
+     596: iconst_0
+     597: invokestatic  #362                // Method gregapi/util/ST.equal_:(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;Z)Z
+     600: ifeq          705
+     603: aload         4
+     605: iload         17
+     607: aaload
+     608: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     611: aload         5
+     613: iload         18
+     615: aaload
+     616: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     619: if_icmplt     669
+     622: aload         4
+     624: iload         17
+     626: aaload
+     627: dup
+     628: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     631: aload         5
+     633: iload         18
+     635: aaload
+     636: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     639: isub
+     640: putfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     643: aload         4
+     645: iload         17
+     647: aaload
+     648: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     651: iload         16
+     653: invokestatic  #349                // Method java/lang/Math.min:(II)I
+     656: istore        16
+     658: aload         5
+     660: iload         18
+     662: getstatic     #355                // Field gregapi/data/CS.NI:Lnet/minecraft/item/ItemStack;
+     665: aastore
+     666: goto          705
+     669: aload         5
+     671: iload         18
+     673: aaload
+     674: dup
+     675: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     678: aload         4
+     680: iload         17
+     682: aaload
+     683: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     686: isub
+     687: putfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     690: aload         5
+     692: iload         17
+     694: aaload
+     695: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     698: iload         16
+     700: invokestatic  #349                // Method java/lang/Math.min:(II)I
+     703: istore        16
+     705: iinc          18, 1
+     708: goto          570
+     711: iinc          17, 1
+     714: goto          534
+     717: iload         16
+     719: iconst_1
+     720: if_icmple     1064
+     723: iconst_1
+     724: istore        17
+     726: iconst_0
+     727: istore        18
+     729: iload         17
+     731: ifeq          773
+     734: iload         18
+     736: aload         4
+     738: arraylength
+     739: if_icmpge     773
+     742: aload         4
+     744: iload         18
+     746: aaload
+     747: ifnull        767
+     750: aload         4
+     752: iload         18
+     754: aaload
+     755: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     758: iload         16
+     760: irem
+     761: ifeq          767
+     764: iconst_0
+     765: istore        17
+     767: iinc          18, 1
+     770: goto          729
+     773: iconst_0
+     774: istore        18
+     776: iload         17
+     778: ifeq          820
+     781: iload         18
+     783: aload         5
+     785: arraylength
+     786: if_icmpge     820
+     789: aload         5
+     791: iload         18
+     793: aaload
+     794: ifnull        814
+     797: aload         5
+     799: iload         18
+     801: aaload
+     802: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     805: iload         16
+     807: irem
+     808: ifeq          814
+     811: iconst_0
+     812: istore        17
+     814: iinc          18, 1
+     817: goto          776
+     820: iconst_0
+     821: istore        18
+     823: iload         17
+     825: ifeq          859
+     828: iload         18
+     830: aload         8
+     832: arraylength
+     833: if_icmpge     859
+     836: aload         8
+     838: iload         18
+     840: aaload
+     841: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     844: iload         16
+     846: irem
+     847: ifeq          853
+     850: iconst_0
+     851: istore        17
+     853: iinc          18, 1
+     856: goto          823
+     859: iconst_0
+     860: istore        18
+     862: iload         17
+     864: ifeq          898
+     867: iload         18
+     869: aload         9
+     871: arraylength
+     872: if_icmpge     898
+     875: aload         9
+     877: iload         18
+     879: aaload
+     880: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+     883: iload         16
+     885: irem
+     886: ifeq          892
+     889: iconst_0
+     890: istore        17
+     892: iinc          18, 1
+     895: goto          862
+     898: iload         17
+     900: ifeq          1058
+     903: iconst_0
+     904: istore        18
+     906: iload         18
+     908: aload         4
+     910: arraylength
+     911: if_icmpge     943
+     914: aload         4
+     916: iload         18
+     918: aaload
+     919: ifnull        937
+     922: aload         4
+     924: iload         18
+     926: aaload
+     927: dup
+     928: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     931: iload         16
+     933: idiv
+     934: putfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     937: iinc          18, 1
+     940: goto          906
+     943: iconst_0
+     944: istore        18
+     946: iload         18
+     948: aload         5
+     950: arraylength
+     951: if_icmpge     983
+     954: aload         5
+     956: iload         18
+     958: aaload
+     959: ifnull        977
+     962: aload         5
+     964: iload         18
+     966: aaload
+     967: dup
+     968: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     971: iload         16
+     973: idiv
+     974: putfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+     977: iinc          18, 1
+     980: goto          946
+     983: iconst_0
+     984: istore        18
+     986: iload         18
+     988: aload         8
+     990: arraylength
+     991: if_icmpge     1015
+     994: aload         8
+     996: iload         18
+     998: aaload
+     999: dup
+    1000: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+    1003: iload         16
+    1005: idiv
+    1006: putfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+    1009: iinc          18, 1
+    1012: goto          986
+    1015: iconst_0
+    1016: istore        18
+    1018: iload         18
+    1020: aload         9
+    1022: arraylength
+    1023: if_icmpge     1047
+    1026: aload         9
+    1028: iload         18
+    1030: aaload
+    1031: dup
+    1032: getfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+    1035: iload         16
+    1037: idiv
+    1038: putfield      #244                // Field net/minecraftforge/fluids/FluidStack.amount:I
+    1041: iinc          18, 1
+    1044: goto          1018
+    1047: lload         10
+    1049: iload         16
+    1051: i2l
+    1052: ldiv
+    1053: lstore        10
+    1055: goto          1064
+    1058: iinc          16, -1
+    1061: goto          717
+    1064: iconst_0
+    1065: istore        17
+    1067: iload         17
+    1069: aload         4
+    1071: arraylength
+    1072: if_icmpge     1115
+    1075: aload         4
+    1077: iload         17
+    1079: aaload
+    1080: getstatic     #355                // Field gregapi/data/CS.NI:Lnet/minecraft/item/ItemStack;
+    1083: if_acmpeq     1109
+    1086: aload         4
+    1088: iload         17
+    1090: aaload
+    1091: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+    1094: bipush        64
+    1096: if_icmple     1109
+    1099: aload         4
+    1101: iload         17
+    1103: aaload
+    1104: bipush        64
+    1106: putfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+    1109: iinc          17, 1
+    1112: goto          1067
+    1115: iconst_0
+    1116: istore        17
+    1118: iload         17
+    1120: aload         5
+    1122: arraylength
+    1123: if_icmpge     1179
+    1126: aload         5
+    1128: iload         17
+    1130: aaload
+    1131: getstatic     #355                // Field gregapi/data/CS.NI:Lnet/minecraft/item/ItemStack;
+    1134: if_acmpeq     1173
+    1137: aload         5
+    1139: iload         17
+    1141: aload         5
+    1143: iload         17
+    1145: aaload
+    1146: invokestatic  #365                // Method gregapi/util/ST.update:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+    1149: aastore
+    1150: aload         5
+    1152: iload         17
+    1154: aaload
+    1155: getfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+    1158: bipush        64
+    1160: if_icmple     1173
+    1163: aload         5
+    1165: iload         17
+    1167: aaload
+    1168: bipush        64
+    1170: putfield      #136                // Field net/minecraft/item/ItemStack.field_77994_a:I
+    1173: iinc          17, 1
+    1176: goto          1118
+    1179: aload_0
+    1180: aload         4
+    1182: putfield      #82                 // Field mInputs:[Lnet/minecraft/item/ItemStack;
+    1185: aload_0
+    1186: aload         5
+    1188: putfield      #91                 // Field mOutputs:[Lnet/minecraft/item/ItemStack;
+    1191: aload_0
+    1192: aload         6
+    1194: putfield      #279                // Field mSpecialItems:Ljava/lang/Object;
+    1197: aload_0
+    1198: aload         7
+    1200: putfield      #70                 // Field mChances:[J
+    1203: aload_0
+    1204: aload         7
+    1206: arraylength
+    1207: newarray       long
+    1209: dup_x1
+    1210: putfield      #78                 // Field mMaxChances:[J
+    1213: ldc2_w        #341                // long 10000l
+    1216: invokestatic  #369                // Method java/util/Arrays.fill:([JJ)V
+    1219: aload_0
+    1220: aload         8
+    1222: putfield      #95                 // Field mFluidInputs:[Lnet/minecraftforge/fluids/FluidStack;
+    1225: aload_0
+    1226: aload         9
+    1228: putfield      #103                // Field mFluidOutputs:[Lnet/minecraftforge/fluids/FluidStack;
+    1231: aload_0
+    1232: lload         10
+    1234: putfield      #142                // Field mDuration:J
+    1237: aload_0
+    1238: lload         14
+    1240: putfield      #112                // Field mSpecialValue:J
+    1243: aload_0
+    1244: lload         12
+    1246: putfield      #140                // Field mEUt:J
+    1249: return
+}

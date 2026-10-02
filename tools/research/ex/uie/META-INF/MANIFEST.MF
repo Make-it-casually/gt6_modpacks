@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+FMLCorePluginContainsFMLMod: true
+FMLAT: utilitiesinexcess_at.cfg
+FMLCorePlugin: com.fouristhenumber.utilitiesinexcess.mixins.UIEMixinLoad
+ er
+TweakClass: org.spongepowered.asm.launch.MixinTweaker
+MixinConfigs: mixins.utilitiesinexcess.json
+ForceLoadAsMod: true
+JvmDowngrader-Version: 1.3.5
+Multi-Release: true
+

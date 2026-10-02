@@ -1,0 +1,421 @@
+unknown ore dictionary entry -> registering jar(s)
+418 entries, 213 attributed
+
+Adaminite  -  RGB: 128, 26, 31  -  §cAdaminite Ingot; (not found - registered dynamically or by GT itself)
+Adamintite  -  RGB: 128, 26, 31  -  §cAdaminite Ingot; (not found - registered dynamically or by GT itself)
+AdvTofu  -  RGB: 250, 177, 117  -  強化豆腐宝石; (not found - registered dynamically or by GT itself)
+BlackDiamond  -  RGB: 32, 32, 32  -  致密黑钻板; (not found - registered dynamically or by GT itself)
+Blood  -  RGB: 168, 105, 102  -  鲜血瓶; (not found - registered dynamically or by GT itself)
+BlueGem  -  RGB: 71, 166, 189  -  蓝色宝石; (not found - registered dynamically or by GT itself)
+Calamari  -  RGB: 118, 117, 134  -  Raw Calamari; (not found - registered dynamically or by GT itself)
+Coral  -  RGB: 204, 123, 49  -  Mire Coral; (not found - registered dynamically or by GT itself)
+Coral  -  RGB: 44, 111, 121  -  Deep Water Coral; (not found - registered dynamically or by GT itself)
+Dark  -  RGB: 22, 20, 19  -  烟熏石英;   (not found - registered dynamically or by GT itself)
+DiamondTofu  -  RGB: 187, 225, 246  -  钻石豆腐粉; (not found - registered dynamically or by GT itself)
+EmeraldTofu  -  RGB: 31, 84, 51  -  绿宝石豆腐; (not found - registered dynamically or by GT itself)
+EnchantedGreatwood                   [1.7.10] Thaumic Additions - 0.41.jar
+EnchantedSilverwood                  [1.7.10] Thaumic Additions - 0.41.jar
+Fronisium  -  RGB: 176, 176, 176  -  方尼斯锭; (not found - registered dynamically or by GT itself)
+Fronisium  -  RGB: 220, 220, 220  -  致密方尼斯板; (not found - registered dynamically or by GT itself)
+GoldBrass  -  RGB: 230, 193, 66  -  金锭; (not found - registered dynamically or by GT itself)
+Inverted  -  RGB: 163, 179, 182  -  Stable Inverted Nugget; (not found - registered dynamically or by GT itself)
+Ium  -  RGB: 139, 124, 134  -  粗钛;   (not found - registered dynamically or by GT itself)
+KoentusMeteoricIron  -  RGB: 2, 64, 157  -  致密卡恩塔斯陨铁板; (not found - registered dynamically or by GT itself)
+KoentusMeteoricIron  -  RGB: 58, 100, 164  -  卡恩塔斯陨铁锭; (not found - registered dynamically or by GT itself)
+Luna  -  RGB: 157, 132, 5  -  月之锭;   (not found - registered dynamically or by GT itself)
+Luna  -  RGB: 160, 134, 6  -  月之齿轮;  (not found - registered dynamically or by GT itself)
+Luna  -  RGB: 164, 142, 0  -  月之环;   (not found - registered dynamically or by GT itself)
+Luna  -  RGB: 168, 154, 7  -  月之板;   (not found - registered dynamically or by GT itself)
+Luna  -  RGB: 174, 146, 6  -  月之粉;   (not found - registered dynamically or by GT itself)
+MetalMeteoricIron  -  RGB: 59, 59, 59  -  致密金属陨铁板; (not found - registered dynamically or by GT itself)
+MetalMeteoricIron  -  RGB: 66, 66, 66  -  金属陨铁锭; (not found - registered dynamically or by GT itself)
+Metallic  -  RGB: 89, 89, 89  -  致密金属板; (not found - registered dynamically or by GT itself)
+Metallic  -  RGB: 97, 97, 97  -  金属锭; (not found - registered dynamically or by GT itself)
+MithrilTofu  -  RGB: 194, 194, 194  -  秘银豆腐锭; (not found - registered dynamically or by GT itself)
+MithrilTofu  -  RGB: 196, 196, 196  -  秘银豆腐齿轮; (not found - registered dynamically or by GT itself)
+MithrilTofu  -  RGB: 209, 209, 209  -  秘银豆腐板; (not found - registered dynamically or by GT itself)
+MithrilTofu  -  RGB: 212, 212, 212  -  秘银豆腐粉; (not found - registered dynamically or by GT itself)
+Mithrillium  -  RGB: 25, 169, 219  -  §3Mithrillium Ingot; (not found - registered dynamically or by GT itself)
+Mutton  -  RGB: 172, 101, 89  -  Raw Mutton; (not found - registered dynamically or by GT itself)
+Norium  -  RGB: 101, 136, 176  -  稀土锭; (not found - registered dynamically or by GT itself)
+Norium  -  RGB: 144, 175, 213  -  致密稀土板; (not found - registered dynamically or by GT itself)
+Osmonium  -  RGB: 79, 105, 140  -  锇蓝草种子; (not found - registered dynamically or by GT itself)
+Outputting Colors of unknown Materials (not found - registered dynamically or by GT itself)
+Outputting Unknown OreDict Names     (not found - registered dynamically or by GT itself)
+PeridotTofu  -  RGB: 26, 149, 86  -  橄榄石豆腐; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 136, 105, 138  -  毒液瓶; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 38, 64, 20  -  滞留型 剧毒药水; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 38, 64, 20  -  滞留型 剧毒药水; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 38, 64, 20  -  滞留型 剧毒药水; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 44, 90, 34  -  剧毒药水; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 44, 90, 34  -  剧毒药水; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 44, 90, 34  -  剧毒药水; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 46, 84, 31  -  喷溅型 剧毒药水; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 46, 84, 31  -  喷溅型 剧毒药水; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 46, 84, 31  -  喷溅型 剧毒药水; (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 49, 37, 22  -  木桶;   (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 53, 27, 24  -  木桶;   (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 61, 45, 35  -  木桶;   (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 75, 52, 42  -  木桶;   (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 78, 39, 18  -  木桶;   (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 79, 50, 40  -  木桶;   (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 84, 47, 19  -  木桶;   (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 84, 49, 22  -  木桶;   (not found - registered dynamically or by GT itself)
+Poison  -  RGB: 86, 57, 32  -  木桶;   (not found - registered dynamically or by GT itself)
+PolongniusMeteoricIron  -  RGB: 219, 179, 58  -  奶酪星陨铁锭; (not found - registered dynamically or by GT itself)
+PolongniusMeteoricIron  -  RGB: 224, 168, 0  -  致密奶酪星陨铁板; (not found - registered dynamically or by GT itself)
+Quontonium  -  RGB: 106, 106, 199  -  昆顿锭; (not found - registered dynamically or by GT itself)
+Quontonium  -  RGB: 131, 131, 227  -  致密昆顿板; (not found - registered dynamically or by GT itself)
+RedGem  -  RGB: 183, 0, 0  -  致密红宝石板; (not found - registered dynamically or by GT itself)
+RedGem  -  RGB: 190, 93, 70  -  红色宝石; (not found - registered dynamically or by GT itself)
+RubyTofu  -  RGB: 176, 29, 26  -  红宝石豆腐; (not found - registered dynamically or by GT itself)
+SapphireTofu  -  RGB: 41, 74, 115  -  蓝宝石豆腐; (not found - registered dynamically or by GT itself)
+Shadow  -  RGB: 13, 10, 26  -  暗影锭;  (not found - registered dynamically or by GT itself)
+Sol  -  RGB: 207, 95, 40  -  日之锭;    (not found - registered dynamically or by GT itself)
+Sol  -  RGB: 210, 98, 43  -  日之齿轮;   (not found - registered dynamically or by GT itself)
+Sol  -  RGB: 217, 110, 57  -  日之粉;   (not found - registered dynamically or by GT itself)
+Sol  -  RGB: 226, 102, 40  -  日之环;   (not found - registered dynamically or by GT itself)
+Sol  -  RGB: 241, 117, 64  -  日之板;   (not found - registered dynamically or by GT itself)
+SoySauce  -  RGB: 38, 24, 6  -  醤油瓶; (not found - registered dynamically or by GT itself)
+Soymilk  -  RGB: 141, 152, 157  -  豆奶; (not found - registered dynamically or by GT itself)
+SugiliteTofu  -  RGB: 111, 88, 164  -  杉石豆腐; (not found - registered dynamically or by GT itself)
+TTTBurger                            TofuCraft-2.1.7-MC1.7.10.jar
+Tar  -  RGB: 19, 19, 19  -  Tar Drip; (not found - registered dynamically or by GT itself)
+Tar  -  RGB: 47, 52, 23  -  Weedwood Tar Bucket; (not found - registered dynamically or by GT itself)
+Tar  -  RGB: 57, 57, 57  -  焦油瓶;     (not found - registered dynamically or by GT itself)
+Thauminite  -  RGB: 97, 104, 191  -  Thauminite Ingot; (not found - registered dynamically or by GT itself)
+Thermite  -  RGB: 149, 134, 117  -  铝热剂; (not found - registered dynamically or by GT itself)
+TofuMetal  -  RGB: 209, 218, 222  -  钢豆腐; (not found - registered dynamically or by GT itself)
+TofuSteel  -  RGB: 146, 178, 190  -  钢豆腐粉; (not found - registered dynamically or by GT itself)
+TofuSteel  -  RGB: 53, 99, 125  -  钢豆腐齿轮; (not found - registered dynamically or by GT itself)
+TofuSteel  -  RGB: 71, 120, 148  -  钢豆腐锭; (not found - registered dynamically or by GT itself)
+TofuSteel  -  RGB: 73, 125, 154  -  钢豆腐板; (not found - registered dynamically or by GT itself)
+TopazTofu  -  RGB: 111, 97, 26  -  黄宝石豆腐; (not found - registered dynamically or by GT itself)
+WhiteCrystal  -  RGB: 205, 235, 235  -  致密白水晶板; (not found - registered dynamically or by GT itself)
+WhiteGem  -  RGB: 171, 171, 171  -  白色宝石; (not found - registered dynamically or by GT itself)
+Zunda  -  RGB: 124, 158, 62  -  毛豆泥锭; (not found - registered dynamically or by GT itself)
+activatedHellTofu                    TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+activatedTofuGem                     TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+advTofuGem                           TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+anyCertusCrystal                     ae2fc-1.5.111-gtnh.jar
+apricot                              Forestry-4.11.38.jar, Pam's HarvestCraft 1.7.10Lb.jar, TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+apricotSeed                          TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+bedWood                              etfuturum-2.6.2.jar
+blackDiamond                         More-Planets-1.7.10-1.4.4-GC502.jar
+boatChestWood                        etfuturum-2.6.2.jar
+boatWood                             etfuturum-2.6.2.jar
+candy                                (not found - registered dynamically or by GT itself)
+candyCane                            More-Planets-1.7.10-1.4.4-GC502.jar
+capacitorAdvanced                    (not found - registered dynamically or by GT itself)
+capacitorBasic                       MineFactoryReloaded-[1.7.10]2.8.2B1-201.jar, ThermalExpansion-[1.7.10]4.1.5-248.jar
+capacitorCrystalline                 (not found - registered dynamically or by GT itself)
+capacitorEnder                       EnderIO-2.10.48.jar
+capacitorMelodic                     (not found - registered dynamically or by GT itself)
+capacitorStellar                     (not found - registered dynamically or by GT itself)
+capacitorTotemic                     (not found - registered dynamically or by GT itself)
+cheeseSandstone                      More-Planets-1.7.10-1.4.4-GC502.jar
+chikuwa                              TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+chipDiamond                          OpenComputers-MC1.7.10-1.8.10+667626d-universal.jar
+clayHardened                         Ganys Surface-1.12.8.jar
+coalFlame                            Alfheim-67.jar
+coilAluminum                         AdvancedRocketry-Continuation-1.7.10-1.4.3-continuation.jar, LibVulpes-Continuation-1.7.10-0.2.11-universal.jar
+coilCopper                           AdvancedRocketry-Continuation-1.7.10-1.4.3-continuation.jar, LibVulpes-Continuation-1.7.10-0.2.11-universal.jar
+coilGold                             LibVulpes-Continuation-1.7.10-0.2.11-universal.jar
+coilIridium                          (not found - registered dynamically or by GT itself)
+coilTitanium                         LibVulpes-Continuation-1.7.10-0.2.11-universal.jar
+compressedBlackDiamond               More-Planets-1.7.10-1.4.4-GC502.jar
+compressedFronisium                  More-Planets-1.7.10-1.4.4-GC502.jar
+compressedKoentusMeteoricIron        More-Planets-1.7.10-1.4.4-GC502.jar
+compressedMetalMeteoricIron          More-Planets-1.7.10-1.4.4-GC502.jar
+compressedMetallic                   More-Planets-1.7.10-1.4.4-GC502.jar
+compressedNorium                     More-Planets-1.7.10-1.4.4-GC502.jar
+compressedPolongniusMeteoricIron     (not found - registered dynamically or by GT itself)
+compressedQuontonium                 More-Planets-1.7.10-1.4.4-GC502.jar
+compressedRedGem                     More-Planets-1.7.10-1.4.4-GC502.jar
+compressedWhiteCrystal               More-Planets-1.7.10-1.4.4-GC502.jar
+cookie                               TofuCraft-2.1.7-MC1.7.10.jar, falsepatternlib-mc1.7.10-1.12.2.jar
+dashi                                (not found - registered dynamically or by GT itself)
+defattingPotion                      TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+doubanjiang                          TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+dustDiamondTofu                      TofuFactoryR-1.3.0-MC1.7.10.jar
+dustLuna                             TofuFactoryR-1.3.0-MC1.7.10.jar
+dustMithrilTofu                      TofuFactoryR-1.3.0-MC1.7.10.jar
+dustSol                              (not found - registered dynamically or by GT itself)
+dustThermite                         AdvancedRocketry-Continuation-1.7.10-1.4.3-continuation.jar
+dustTofuSteel                        TofuFactoryR-1.3.0-MC1.7.10.jar
+edamame                              TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+edamameBoiled                        TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+endstone                             Alfheim-67.jar, Mariculture-Deluxe-1.7.10-1.3.0-6.jar, OpenComputers-MC1.7.10-1.8.10+667626d-universal.jar, waystones-1.0.15.jar, witchery-1.7.10-0.24.1.jar
+fanSteel                             AdvancedRocketry-Continuation-1.7.10-1.4.3-continuation.jar
+filterCloth                          TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+fronosSandstone                      More-Planets-1.7.10-1.4.4-GC502.jar
+furFenrir                            Alfheim-67.jar
+gelatin                              TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+gemAdvTofu                           TofuCraft-2.1.7-MC1.7.10.jar
+gemBlueGem                           ExtraPlanets-1.7.10-2.1.4.jar
+gemEmeraldTofu                       (not found - registered dynamically or by GT itself)
+gemPeridotTofu                       (not found - registered dynamically or by GT itself)
+gemRedGem                            ExtraPlanets-1.7.10-2.1.4.jar
+gemRubyTofu                          (not found - registered dynamically or by GT itself)
+gemSapphireTofu                      (not found - registered dynamically or by GT itself)
+gemSugiliteTofu                      (not found - registered dynamically or by GT itself)
+gemTopazTofu                         (not found - registered dynamically or by GT itself)
+gemWhiteGem                          ExtraPlanets-1.7.10-2.1.4.jar
+glotek                               chisel-2.17.33-GTNH.jar
+goheimochi                           TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+hamburg                              TofuCraft-2.1.7-MC1.7.10.jar
+hempcretesand                        chisel-2.17.33-GTNH.jar
+holyPendant                          Alfheim-67.jar
+inari                                (not found - registered dynamically or by GT itself)
+ingotAdaminite                       [1.7.10] Thaumic Additions - 0.41.jar
+ingotAdamintite                      [1.7.10] Thaumic Additions - 0.41.jar
+ingotFronisium                       More-Planets-1.7.10-1.4.4-GC502.jar
+ingotGoldBrass                       enviromine-1.3.148-ESE-0x01.jar
+ingotInverted                        utilitiesinexcess-1.0.0-alpha02.jar
+ingotKoentusMeteoricIron             More-Planets-1.7.10-1.4.4-GC502.jar
+ingotLuna                            TofuFactoryR-1.3.0-MC1.7.10.jar
+ingotMetalMeteoricIron               More-Planets-1.7.10-1.4.4-GC502.jar
+ingotMetallic                        More-Planets-1.7.10-1.4.4-GC502.jar
+ingotMithrilTofu                     TofuFactoryR-1.3.0-MC1.7.10.jar
+ingotMithrillium                     [1.7.10] Thaumic Additions - 0.41.jar
+ingotNorium                          More-Planets-1.7.10-1.4.4-GC502.jar
+ingotPolongniusMeteoricIron          More-Planets-1.7.10-1.4.4-GC502.jar
+ingotQuontonium                      More-Planets-1.7.10-1.4.4-GC502.jar
+ingotShadow                          Alfheim-67.jar, Tainted-Magic-1.7.10-8.1.1.jar
+ingotSol                             TofuFactoryR-1.3.0-MC1.7.10.jar
+ingotThauminite                      ThaumicBasesReboot-1.7.10-2.4.2.jar
+ingotTofuMetal                       TofuFactoryR-1.3.0-MC1.7.10.jar
+ingotTofuSteel                       TofuFactoryR-1.3.0-MC1.7.10.jar
+ingotZunda                           TofuFactoryR-1.3.0-MC1.7.10.jar
+irisDirt                             Alfheim-67.jar
+irisDirtAurora                       (not found - registered dynamically or by GT itself)
+irisDirtBlack                        (not found - registered dynamically or by GT itself)
+irisDirtBlue                         (not found - registered dynamically or by GT itself)
+irisDirtBrown                        (not found - registered dynamically or by GT itself)
+irisDirtCyan                         (not found - registered dynamically or by GT itself)
+irisDirtGray                         (not found - registered dynamically or by GT itself)
+irisDirtGreen                        (not found - registered dynamically or by GT itself)
+irisDirtLightBlue                    (not found - registered dynamically or by GT itself)
+irisDirtLightGray                    (not found - registered dynamically or by GT itself)
+irisDirtLime                         (not found - registered dynamically or by GT itself)
+irisDirtMagenta                      (not found - registered dynamically or by GT itself)
+irisDirtOrange                       (not found - registered dynamically or by GT itself)
+irisDirtPink                         (not found - registered dynamically or by GT itself)
+irisDirtPurple                       (not found - registered dynamically or by GT itself)
+irisDirtRainbow                      (not found - registered dynamically or by GT itself)
+irisDirtRed                          (not found - registered dynamically or by GT itself)
+irisDirtWhite                        (not found - registered dynamically or by GT itself)
+irisDirtYellow                       (not found - registered dynamically or by GT itself)
+irisLeaves                           Alfheim-67.jar
+irisLeavesAurora                     (not found - registered dynamically or by GT itself)
+irisLeavesBlack                      (not found - registered dynamically or by GT itself)
+irisLeavesBlue                       (not found - registered dynamically or by GT itself)
+irisLeavesBrown                      (not found - registered dynamically or by GT itself)
+irisLeavesCyan                       (not found - registered dynamically or by GT itself)
+irisLeavesGray                       (not found - registered dynamically or by GT itself)
+irisLeavesGreen                      (not found - registered dynamically or by GT itself)
+irisLeavesLightBlue                  (not found - registered dynamically or by GT itself)
+irisLeavesLightGray                  (not found - registered dynamically or by GT itself)
+irisLeavesLime                       (not found - registered dynamically or by GT itself)
+irisLeavesMagenta                    (not found - registered dynamically or by GT itself)
+irisLeavesOrange                     (not found - registered dynamically or by GT itself)
+irisLeavesPink                       (not found - registered dynamically or by GT itself)
+irisLeavesPurple                     (not found - registered dynamically or by GT itself)
+irisLeavesRainbow                    (not found - registered dynamically or by GT itself)
+irisLeavesRed                        (not found - registered dynamically or by GT itself)
+irisLeavesWhite                      (not found - registered dynamically or by GT itself)
+irisLeavesYellow                     (not found - registered dynamically or by GT itself)
+irisWood                             Alfheim-67.jar
+irisWoodAurora                       (not found - registered dynamically or by GT itself)
+irisWoodBlack                        (not found - registered dynamically or by GT itself)
+irisWoodBlue                         (not found - registered dynamically or by GT itself)
+irisWoodBrown                        (not found - registered dynamically or by GT itself)
+irisWoodCyan                         (not found - registered dynamically or by GT itself)
+irisWoodGray                         (not found - registered dynamically or by GT itself)
+irisWoodGreen                        (not found - registered dynamically or by GT itself)
+irisWoodLightBlue                    (not found - registered dynamically or by GT itself)
+irisWoodLightGray                    (not found - registered dynamically or by GT itself)
+irisWoodLime                         (not found - registered dynamically or by GT itself)
+irisWoodMagenta                      (not found - registered dynamically or by GT itself)
+irisWoodOrange                       (not found - registered dynamically or by GT itself)
+irisWoodPink                         (not found - registered dynamically or by GT itself)
+irisWoodPurple                       (not found - registered dynamically or by GT itself)
+irisWoodRainbow                      (not found - registered dynamically or by GT itself)
+irisWoodRed                          (not found - registered dynamically or by GT itself)
+irisWoodWhite                        (not found - registered dynamically or by GT itself)
+irisWoodYellow                       (not found - registered dynamically or by GT itself)
+kinako                               TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+kinakoMochi                          TofuCraft-2.1.7-MC1.7.10.jar
+kouji                                (not found - registered dynamically or by GT itself)
+kyoninso                             TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+leek                                 (not found - registered dynamically or by GT itself)
+melonSalt                            TofuCraft-2.1.7-MC1.7.10.jar
+mincedPotato                         TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+miso                                 (not found - registered dynamically or by GT itself)
+misoSoup                             Mariculture-Deluxe-1.7.10-1.3.0-6.jar, TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+morijio                              TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+mossyCobblestone                     ThaumicBasesReboot-1.7.10-2.4.2.jar
+natto                                (not found - registered dynamically or by GT itself)
+neonite                              chisel-2.17.33-GTNH.jar
+niflStone                            Alfheim-67.jar
+nigari                               TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+nuggetInverted                       utilitiesinexcess-1.0.0-alpha02.jar
+oage                                 (not found - registered dynamically or by GT itself)
+okara                                (not found - registered dynamically or by GT itself)
+okaraStick                           TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+onigiri                              TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+onigiriMiso                          TofuCraft-2.1.7-MC1.7.10.jar
+onigiriSalt                          TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+onigiriSoySauce                      TofuCraft-2.1.7-MC1.7.10.jar
+oreAmberAlfheim                      Alfheim-67.jar
+oreBecterialFossil                   More-Planets-1.7.10-1.4.4-GC502.jar
+oreBlackDiamond                      More-Planets-1.7.10-1.4.4-GC502.jar
+oreBlueGem                           ExtraPlanets-1.7.10-2.1.4.jar
+oreCinnabarAlfheim                   Alfheim-67.jar
+oreCobaltum                          GalaxySpace-1.7.10-1.2.15.jar
+oreDebris                            etfuturum-2.6.2.jar
+oreDeepslateVanillastoneAmber        (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneAnySapphire  (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneAnySiliconDioxide (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneAnyThaumicCrystal (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneCertusQuartz (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneChargedCertusQuartz (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneCinnabar     (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneDraconium    (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneInfusedAir   (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneInfusedEarth (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneInfusedEntropy (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneInfusedFire  (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneInfusedOrder (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneInfusedWater (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneMalachite    (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneOlivine      (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastonePeridot      (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneQuartz       (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneRuby         (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneSaphire      (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneSapphire     (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneTanzanite    (not found - registered dynamically or by GT itself)
+oreDeepslateVanillastoneTopaz        (not found - registered dynamically or by GT itself)
+oreDragonstone                       AgriCraft-1.5.2-unofficial.jar, Alfheim-67.jar, Botania-1.13.36-GTNH.jar
+oreEMP                               More-Planets-1.7.10-1.4.4-GC502.jar
+oreFlonium                           More-Planets-1.7.10-1.4.4-GC502.jar
+oreFronisium                         More-Planets-1.7.10-1.4.4-GC502.jar
+oreGoldAlfheim                       Alfheim-67.jar
+oreIchorius                          More-Planets-1.7.10-1.4.4-GC502.jar
+oreInfusedAirAlfheim                 Alfheim-67.jar
+oreInfusedEarthAlfheim               Alfheim-67.jar
+oreInfusedEntropyAlfheim             Alfheim-67.jar
+oreInfusedFireAlfheim                Alfheim-67.jar
+oreInfusedOrderAlfheim               Alfheim-67.jar
+oreInfusedWaterAlfheim               Alfheim-67.jar
+oreJelly                             More-Planets-1.7.10-1.4.4-GC502.jar
+oreLapisAlfheim                      Alfheim-67.jar
+oreMetalMeteor                       More-Planets-1.7.10-1.4.4-GC502.jar
+oreMetallic                          More-Planets-1.7.10-1.4.4-GC502.jar
+oreMeteor                            More-Planets-1.7.10-1.4.4-GC502.jar
+oreMineral                           More-Planets-1.7.10-1.4.4-GC502.jar
+oreMithrilTofu                       TofuFactoryR-1.3.0-MC1.7.10.jar
+oreNamerium                          More-Planets-1.7.10-1.4.4-GC502.jar
+oreNifleur                           Alfheim-67.jar
+oreNorium                            More-Planets-1.7.10-1.4.4-GC502.jar
+orePurpleCrystal                     More-Planets-1.7.10-1.4.4-GC502.jar
+oreQuartzElven                       Alfheim-67.jar
+oreQuontonium                        More-Planets-1.7.10-1.4.4-GC502.jar
+oreRawCalamari                       (not found - registered dynamically or by GT itself)
+oreRawMutton                         (not found - registered dynamically or by GT itself)
+oreRedGem                            ExtraPlanets-1.7.10-2.1.4.jar, More-Planets-1.7.10-1.4.4-GC502.jar
+oreSiriusGlowstone                   More-Planets-1.7.10-1.4.4-GC502.jar
+oreSlime                             ExtraPlanets-1.7.10-2.1.4.jar
+oreTitanium                          AmunRa-GC-0.4.8.jar, gregtech_1.7.10-6.17.06.jar
+oreTitaniumIron                      (not found - registered dynamically or by GT itself)
+oreTofuDiamond                       TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+oreWhiteCrystal                      More-Planets-1.7.10-1.4.4-GC502.jar
+oreWhiteGem                          ExtraPlanets-1.7.10-2.1.4.jar
+oreXeonium                           More-Planets-1.7.10-1.4.4-GC502.jar
+overchargeIngredient_                Alfheim-67.jar
+overchargeIngredient_aer_big         Alfheim-67.jar
+overchargeIngredient_aer_small       Alfheim-67.jar
+overchargeIngredient_all_small       Alfheim-67.jar
+overchargeIngredient_aqua_big        Alfheim-67.jar
+overchargeIngredient_aqua_small      Alfheim-67.jar
+overchargeIngredient_ignis_big       Alfheim-67.jar
+overchargeIngredient_ignis_small     (not found - registered dynamically or by GT itself)
+overchargeIngredient_ordo_big        Alfheim-67.jar
+overchargeIngredient_ordo_small      Alfheim-67.jar
+overchargeIngredient_perditio_big    (not found - registered dynamically or by GT itself)
+overchargeIngredient_perditio_small  (not found - registered dynamically or by GT itself)
+overchargeIngredient_terra_big       Alfheim-67.jar
+overchargeIngredient_terra_small     (not found - registered dynamically or by GT itself)
+plateLuna                            (not found - registered dynamically or by GT itself)
+plateMithrilTofu                     (not found - registered dynamically or by GT itself)
+plateSol                             (not found - registered dynamically or by GT itself)
+plateTofuSteel                       (not found - registered dynamically or by GT itself)
+ramenNoodles                         TofuFactoryR-1.3.0-MC1.7.10.jar
+ringLuna                             TofuFactoryR-1.3.0-MC1.7.10.jar
+ringSol                              TofuFactoryR-1.3.0-MC1.7.10.jar
+rollingPin                           TofuCraft-2.1.7-MC1.7.10.jar
+salt                                 (not found - registered dynamically or by GT itself)
+sapphire                             AdvancedRocketry-Continuation-1.7.10-1.4.3-continuation.jar, Atum-1.7.10-0.6.77.jar, BiomesOPlenty-1.7.10-2.1.0.2308-universal.jar, GalaxySpace-1.7.10-1.2.15.jar, gregtech_1.7.10-6.17.06.jar
+sesame                               TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+signWood                             etfuturum-2.6.2.jar
+somenTsuyuBowl                       TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+soulSoil                             etfuturum-2.6.2.jar
+soupStock                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+soyOil                               TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+soybeans                             TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+soybeansHell                         TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+soybeansParched                      TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+splinterNetherwood                   Alfheim-67.jar
+splinterThunderwood                  Alfheim-67.jar
+sprouts                              TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+starch                               TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+strawberryJam                        TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tfCapacitor                          TofuCraft-2.1.7-MC1.7.10.jar
+tfCircuitBoard                       TofuCraft-2.1.7-MC1.7.10.jar
+tfCoil                               TofuCraft-2.1.7-MC1.7.10.jar
+tfOscillator                         TofuCraft-2.1.7-MC1.7.10.jar
+tofuAnnin                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuChikuwa                          TofuCraft-2.1.7-MC1.7.10.jar
+tofuCookie                           TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuDiamond                          TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuDiamondNugget                    TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuDried                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuEgg                              TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuFried                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuFriedPouch                       TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuGem                              TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuGlow                             TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuGrilled                          TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuHamburg                          TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuHamburgRaw                       TofuCraft-2.1.7-MC1.7.10.jar
+tofuHell                             TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuIshi                             TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuMetal                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuMinced                           TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuMiso                             TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuMomen                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuScoop                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuSesame                           TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuSomen                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuSteak                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuStrawberry                       TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofuZunda                            TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+tofufishCooked                       TofuCraft-2.1.7-MC1.7.10.jar
+tofufishRaw                          TofuCraft-2.1.7-MC1.7.10.jar
+turfMoon                             AdvancedRocketry-Continuation-1.7.10-1.4.3-continuation.jar
+twigDreamwoodInfused                 Alfheim-67.jar
+twigNetherwood                       Alfheim-67.jar
+twigThunderwood                      Alfheim-67.jar
+udonNoodles                          TofuFactoryR-1.3.0-MC1.7.10.jar
+uranium                              ExtraPlanets-1.7.10-2.1.4.jar, GalaxySpace-1.7.10-1.2.15.jar, More-Planets-1.7.10-1.4.4-GC502.jar, chisel-2.17.33-GTNH.jar, gregtech_1.7.10-6.17.06.jar
+vegetableLeek                        TofuFactoryR-1.3.0-MC1.7.10.jar
+voidBlock                            ThaumicBasesReboot-1.7.10-2.4.2.jar
+whiteSandstone                       More-Planets-1.7.10-1.4.4-GC502.jar
+yuba                                 (not found - registered dynamically or by GT itself)
+zunda                                (not found - registered dynamically or by GT itself)
+zundaArrow                           TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+zundaBow                             TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+zundaMochi                           TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+zundama                              TofuCraft-2.1.7-MC1.7.10.jar, TofuFactoryR-1.3.0-MC1.7.10.jar
+﻿bottleSoySauce                      (not found - registered dynamically or by GT itself)

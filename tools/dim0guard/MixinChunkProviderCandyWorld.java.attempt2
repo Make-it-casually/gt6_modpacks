@@ -1,0 +1,54 @@
+package dshguard.mixin;
+
+import net.minecraft.block.Block;
+import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeGenBase;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import java.util.Random;
+
+/**
+ * CandyCraft chunk generation crashed with a null BiomeGenBase:
+ *   NPE at ChunkProviderCandyWorld.genBiomeTerrain(...:218)
+ *   <- replaceBlocksForBiome(...:211) <- func_73154_d(...:329)
+ *   <- ChunkProviderServer.redirect$...angelica$sodium$populateChunkWithBiomes
+ * The line table puts line 218 at bytecode offset 3, the first read of the biome
+ * parameter, so the biome really is null: Angelica's biome-population redirect leaves
+ * null entries in the biome array for this modded dimension.
+ *
+ * The earlier attempt used @ModifyVariable(index = 9); that injection failed and Mixin's
+ * failure took the class down with it (NoClassDefFoundError, world would not load).
+ * This version uses a plain descriptor-exact @Inject at HEAD and skips the surface
+ * decoration for that chunk instead of crashing.
+ *
+ * Descriptor copied verbatim from javap:
+ * (Lnet/minecraft/world/World;Ljava/util/Random;[Lnet/minecraft/block/Block;[BIIDLnet/minecraft/world/biome/BiomeGenBase;)V
+ */
+@Mixin(targets = "com.valentin4311.candycraftmod.ChunkProviderCandyWorld", remap = false)
+public abstract class MixinChunkProviderCandyWorld {
+
+    private static boolean dshguard$reported;
+
+    @Inject(
+        method = "genBiomeTerrain(Lnet/minecraft/world/World;Ljava/util/Random;[Lnet/minecraft/block/Block;[BIIDLnet/minecraft/world/biome/BiomeGenBase;)V",
+        at = @At("HEAD"),
+        cancellable = true,
+        remap = false
+    )
+    private void dshguard$skipNullBiome(World world, Random rand, Block[] blocks, byte[] metas,
+                                        int chunkX, int chunkZ, double noise, BiomeGenBase biome,
+                                        CallbackInfo ci) {
+        if (biome != null) {
+            return;
+        }
+        if (!dshguard$reported) {
+            dshguard$reported = true;
+            System.out.println("[dim0guard] CandyCraft got a null biome for chunk " + chunkX + "," + chunkZ
+                    + " (Angelica biome population) - skipping surface decoration instead of crashing");
+        }
+        ci.cancel();
+    }
+}

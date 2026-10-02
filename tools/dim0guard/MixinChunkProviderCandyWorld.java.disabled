@@ -1,0 +1,47 @@
+package dshguard.mixin;
+
+import net.minecraft.world.biome.BiomeGenBase;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.ModifyVariable;
+
+/**
+ * Crash: "Exception generating new chunk"
+ *
+ *     java.lang.NullPointerException
+ *         at candycraftmod.ChunkProviderCandyWorld.genBiomeTerrain(ChunkProviderCandyWorld.java:218)
+ *         at ...replaceBlocksForBiome(...211)
+ *         at ...func_73154_d(...329)
+ *         at ChunkProviderServer.redirect$zgo000$angelica$sodium$populateChunkWithBiomes(...)
+ *
+ * The line table puts line 218 at bytecode offset 3 -- the very first read of the
+ * BiomeGenBase parameter -- so the biome handed to genBiomeTerrain is null. The biome
+ * array comes from WorldChunkManager.loadBlockGeneratorData via the chunk provider, and
+ * Angelica's biome-population redirect leaves null entries for this modded dimension.
+ *
+ * genBiomeTerrain(World, Random, Block[], byte[], int, int, double, BiomeGenBase) has
+ * slot 9 for the biome (this=0, World=1, Random=2, Block[]=3, byte[]=4, int=5, int=6,
+ * double=7..8), so the parameter can be substituted precisely instead of guessing.
+ */
+@Mixin(targets = "com.valentin4311.candycraftmod.ChunkProviderCandyWorld", remap = false)
+public abstract class MixinChunkProviderCandyWorld {
+
+    private static boolean dshguard$reported;
+
+    @ModifyVariable(method = "genBiomeTerrain", at = @At("HEAD"), argsOnly = true, index = 9, remap = false)
+    private BiomeGenBase dshguard$fallbackBiome(BiomeGenBase biome) {
+        if (biome != null) {
+            return biome;
+        }
+        BiomeGenBase fallback = BiomeGenBase.getBiome(242);   // CandyCraft: CandyPlains
+        if (fallback == null) {
+            fallback = BiomeGenBase.getBiome(1);              // vanilla plains
+        }
+        if (!dshguard$reported) {
+            dshguard$reported = true;
+            System.out.println("[dim0guard] CandyCraft chunk generation received a null biome "
+                    + "(Angelica biome-population redirect) - substituted " + fallback);
+        }
+        return fallback;
+    }
+}

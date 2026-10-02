@@ -1,0 +1,26 @@
+﻿GT6 material creation candidates that are real metals (first seen as an "ingot..." ore dict name).
+Everything else in materials-from-oredict-log.csv is Tofu / decorative gems / plants / blocks
+(TofuCraft+TofuFactory 78+77 entries, More-Planets 41, Alfheim 37, ExtraPlanets 8, ...) and is not
+worth a GT6 material (it would only add NEI entries).
+
+Space metals (More-Planets / GalaxySpace content, worth creating if you play that progression):
+  Fronisium
+  Norium
+  Quontonium
+  KoentusMeteoricIron
+  MetalMeteoricIron
+  PolongniusMeteoricIron
+  Metallic
+Other metals (only if you use the mod's content):
+  Mithrillium        (Thaumic Additions?)
+  Thauminite         (Thaumic Additions?)
+  Shadow             (Alfheim)
+  Flonium            (More-Planets)
+  Xeonium            (GalaxySpace?)
+  Namerium           (GalaxySpace?)
+  TitaniumIron
+  GoldBrass
+  Inverted
+Not materials - do NOT create (they are items/food/mixtures):
+  TofuMetal Zunda Jelly Mutton Debris EMP BlackDiamond Mineral Meteor PurpleCrystal WhiteCrystal
+  QuartzElven SiriusGlowstone Ichorius Nifleur

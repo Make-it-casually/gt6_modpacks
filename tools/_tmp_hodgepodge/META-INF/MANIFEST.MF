@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+FMLCorePluginContainsFMLMod: true
+FMLAT: hodgepodge_at.cfg
+FMLCorePlugin: com.mitchej123.hodgepodge.core.HodgepodgeCore
+TweakClass: org.spongepowered.asm.launch.MixinTweaker
+MixinConfigs: mixins.hodgepodge.json
+ForceLoadAsMod: true
+

@@ -1,0 +1,5 @@
+﻿# gt6bridge autorules - generated from report.txt
+# prefixes with bindings whose target map has NO dynamic handler, so GT6 will not
+# generate these recipes by itself. enableAutoRules must be true in settings.csv.
+dust,Smelter,ingot,1,16,32,true,true   # 2980 binding(s)
+nugget,Smelter,ingot,9,16,16,true,true   # 612 binding(s)

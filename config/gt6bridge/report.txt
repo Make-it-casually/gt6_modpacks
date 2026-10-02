@@ -1,35 +1,1567 @@
-GT6 Recipe Bridge 0.4 report
-generated: 2026-10-02 23:38:42
-phase: config-changed
-links.failed: 24
-errors: 36
-timing.linkCheck.ms: 0
-materials.table.rows: 0
+GT6 Recipe Bridge 0.6 report
+generated: 2026-10-03 01:26:52
+phase: load-complete
+links.failed: 0
+timing.linkCheck.ms: 16
+gt6.recipeMaps: 88
+timing.diagnostics.ms: 16
+materials.table.rows: 12
 gt6.prefixes: 468
-oredict.names: 1
-oredict.stacks: 196
-timing.recipeReInit.ms: 242
+oredict.names: 300954
+oredict.stacks: 386627
+alreadyBound: 5405
+skipped.gt6OwnItems: 378466
+skipped.noGt6Item: 1628
+skipped.noGt6Item.Sapling: 69
+skipped.noGt6Item.Leaves: 51
+bindings: 360
+bound.byPrefix.ore: 43
+bound.byMod.GalaxySpace: 1
+bindings.verified: 360
+skipped.noGt6Item.Carrot: 2
+bound.byPrefix.dye: 58
+bound.byMod.minecraft: 38
+bound.byMod.BiomesOPlenty: 7
+bound.byMod.Botania: 35
+bound.byMod.ForbiddenMagic: 1
+bound.byMod.thebetweenlands: 5
+bound.byMod.ActuallyAdditions: 2
+bound.byMod.ExtraBees: 7
+bound.byMod.etfuturum: 37
+bound.byMod.ThaumicHorizons: 1
+bound.byMod.Mariculture: 20
+bound.byMod.MineFactoryReloaded: 18
+bound.byMod.GalacticraftAmunRa: 2
+skipped.noGt6Item.Feather: 1
+skipped.noGt6Item.Fur: 1
+bound.byPrefix.crafting: 3
+bound.byMod.harvestcraft: 7
+bound.byMod.witchery: 2
+skipped.noGt6Item.PistonGlue: 8
+skipped.noGt6Item.Firestarter: 2
+skipped.noGt6Item.WireCopper: 1
+skipped.noGt6Item.WireGold: 1
+skipped.noGt6Item.WireIron: 1
+skipped.noGt6Item.WireTin: 1
+skipped.noGt6Item.Allpropolis: 21
+skipped.noGt6Item.Allmushroom: 26
+skipped.noGt6Item.Waxcomb: 2
+skipped.noGt6Item.Honeycomb: 4
+bound.byPrefix.paper: 1
+bound.byPrefix.beam: 4
+skipped.noGt6Item.Wither: 1
+bound.byPrefix.drop: 3
+bound.byMod.Forestry: 4
+skipped.noGt6Item.RoyalJelly: 2
+skipped.noGt6Item.Comb: 89
+skipped.alreadyHandledThisRun: 752
+skipped.noGt6Item.GrassTall: 2
+bound.byPrefix.item: 18
+skipped.noGt6Item.MudBrick: 2
+skipped.noGt6Item.Moss: 6
+skipped.noGt6Item.Slag: 2
+bound.byMod.BinnieCore: 4
+skipped.noGt6Item.BarkDry: 1
+skipped.noGt6Item.LubricantEarly: 3
+skipped.noGt6Item.Pearl: 2
+skipped.noGt6Item.String: 4
+skipped.noGt6Item.Egg: 1
+skipped.noGt6Item.Skin: 1
+skipped.noGt6Item.Mulch: 1
+skipped.noGt6Item.Compost: 2
+skipped.noGt6Item.Fertilizer: 5
+skipped.noGt6Item.GhastTear: 1
+bound.byMod.GalacticraftCore: 3
+bound.byMod.EnderIO: 3
+bound.byPrefix.block: 42
+skipped.noGt6Item.MudBricks: 2
+skipped.noGt6Item.Candle: 1
+skipped.noGt6Item.Torch: 28
+skipped.noGt6Item.Allmeatcooked: 5
+skipped.noGt6Item.Allmeatraw: 25
+skipped.noGt6Item.Smooth: 4
+skipped.noGt6Item.Cobble: 8
+skipped.noGt6Item.Allveggie: 38
+skipped.noGt6Item.Cloth: 2
+bound.byPrefix.ingot: 16
+bound.byMod.thaumicadditions: 2
+skipped.noGt6Item.Primal: 1
+skipped.noGt6Item.Battery: 1
+skipped.noGt6Item.Motor: 4
+bound.byPrefix.boule: 1
+bound.byMod.libVulpes: 3
+bound.byMod.MorePlanet: 41
+bound.byPrefix.circuit: 2
+bound.byMod.IC2: 6
+skipped.noGt6Item.ForgeHammer: 2
+skipped.noGt6Item.WireCutter: 1
+skipped.noGt6Item.CharcoalSugar: 2
+skipped.noGt6Item.RedNet: 2
+skipped.noGt6Item.RedNetEnergy: 2
+skipped.noGt6Item.SlimePink: 1
+skipped.noGt6Item.Explosive: 1
+skipped.noGt6Item.Allmilk: 7
+bound.byPrefix.dyeCeramic: 16
+skipped.noGt6Item.Allwater: 6
+bound.byPrefix.bucket: 9
+bound.byMod.ThermalFoundation: 9
+bound.byPrefix.gear: 5
+bound.byMod.thaumicenergistics: 1
+bound.byPrefix.wafer: 3
+bound.byMod.advancedRocketry: 2
+skipped.noGt6Item.Lens: 1
+bound.byPrefix.dust: 7
+skipped.noGt6Item.AspectShard: 1
+skipped.noGt6Item.Mushroompowder: 1
+skipped.noGt6Item.Fruitsalad: 2
+skipped.noGt6Item.Veggiesalad: 1
+skipped.noGt6Item.Mushroomsalad: 1
+skipped.noGt6Item.Ambrosia: 2
+skipped.noGt6Item.Bowlofrice: 1
+skipped.noGt6Item.Wildcarrots: 1
+skipped.noGt6Item.Peach: 4
+skipped.noGt6Item.Allfruit: 85
+skipped.noGt6Item.Turnip: 2
+skipped.noGt6Item.Allseed: 119
+bound.byMod.HardcoreEnderExpansion: 19
+skipped.noGt6Item.Walnut: 3
+skipped.noGt6Item.Allnut: 10
+bound.byPrefix.chest: 6
+bound.byMod.ganyssurface: 12
+skipped.noGt6Item.Pollen: 1
+skipped.noGt6Item.PollenFertile: 1
+bound.byPrefix.fence: 9
+skipped.noGt6Item.FlowerWhite: 1
+skipped.noGt6Item.FlowerOrange: 1
+skipped.noGt6Item.FlowerMagenta: 1
+skipped.noGt6Item.FlowerLightBlue: 1
+skipped.noGt6Item.FlowerYellow: 1
+skipped.noGt6Item.FlowerLime: 1
+skipped.noGt6Item.FlowerPink: 1
+skipped.noGt6Item.FlowerGray: 1
+skipped.noGt6Item.FlowerLightGray: 1
+skipped.noGt6Item.FlowerCyan: 1
+skipped.noGt6Item.FlowerPurple: 1
+skipped.noGt6Item.FlowerBlue: 1
+skipped.noGt6Item.FlowerBrown: 1
+skipped.noGt6Item.FlowerGreen: 1
+skipped.noGt6Item.FlowerRed: 1
+skipped.noGt6Item.FlowerBlack: 1
+skipped.noGt6Item.FlowerWhiteDouble: 1
+skipped.noGt6Item.FlowerLightGrayDouble: 1
+skipped.noGt6Item.FlowerOrangeDouble: 1
+skipped.noGt6Item.FlowerCyanDouble: 1
+skipped.noGt6Item.FlowerMagentaDouble: 1
+skipped.noGt6Item.FlowerPurpleDouble: 1
+skipped.noGt6Item.FlowerLightBlueDouble: 1
+skipped.noGt6Item.FlowerBlueDouble: 1
+skipped.noGt6Item.FlowerYellowDouble: 1
+skipped.noGt6Item.FlowerBrownDouble: 1
+skipped.noGt6Item.FlowerLimeDouble: 1
+skipped.noGt6Item.FlowerGreenDouble: 1
+skipped.noGt6Item.FlowerPinkDouble: 1
+skipped.noGt6Item.FlowerRedDouble: 1
+skipped.noGt6Item.FlowerGrayDouble: 1
+skipped.noGt6Item.FlowerBlackDouble: 1
+bound.byMod.VillageNames: 2
+skipped.noGt6Item.Gravel: 2
+bound.byPrefix.petal: 16
+skipped.noGt6Item.WaterB: 1
+skipped.noGt6Item.FireB: 1
+skipped.noGt6Item.EarthB: 1
+skipped.noGt6Item.AirB: 1
+skipped.noGt6Item.SpringB: 1
+skipped.noGt6Item.SummerB: 1
+skipped.noGt6Item.AutumnB: 1
+skipped.noGt6Item.WinterB: 1
+skipped.noGt6Item.ManaB: 1
+skipped.noGt6Item.LustB: 1
+skipped.noGt6Item.GluttonyB: 1
+skipped.noGt6Item.GreedB: 1
+skipped.noGt6Item.SlothB: 1
+skipped.noGt6Item.WrathB: 1
+skipped.noGt6Item.EnvyB: 1
+skipped.noGt6Item.PrideB: 1
+skipped.noGt6Item.PixieDust: 1
+bound.byPrefix.shard: 4
+skipped.noGt6Item.Manaweave: 1
+skipped.noGt6Item.Mana: 1
+skipped.noGt6Item.Sugarcane: 1
+skipped.noGt6Item.Cactus: 1
+skipped.noGt6Item.Solar: 1
+bound.byMod.GalacticraftMars: 2
+skipped.noGt6Item.Carpet: 1
+bound.byMod.chisel: 1
+skipped.noGt6Item.Waterstone: 1
+skipped.noGt6Item.MossCarpet: 1
+skipped.noGt6Item.Garlic: 2
+bound.byPrefix.bars: 2
+skipped.noGt6Item.Hardened: 3
+skipped.noGt6Item.Skull: 2
+skipped.noGt6Item.ConduitBinder: 1
+skipped.noGt6Item.BinderComposite: 1
+skipped.noGt6Item.PulsatingCrystal: 1
+skipped.noGt6Item.VibrantCrystal: 1
+skipped.noGt6Item.DarkGrindingBall: 1
+skipped.noGt6Item.EnderCrystal: 1
+skipped.noGt6Item.AttractorCrystal: 1
+skipped.noGt6Item.WeatherCrystal: 1
+skipped.noGt6Item.DarkSteelRod: 1
+skipped.noGt6Item.PrecientCrystal: 1
+skipped.noGt6Item.PulsatingPowder: 1
+skipped.noGt6Item.VibrantPowder: 1
+skipped.noGt6Item.EnderCrystalPowder: 1
+skipped.noGt6Item.PrecientPowder: 1
+skipped.noGt6Item.MachineChassi: 1
+skipped.noGt6Item.BasicGear: 1
+skipped.noGt6Item.SoulMachineChassi: 1
+skipped.noGt6Item.EndSteelMachineChassi: 1
+bound.byMod.ExtraPlanets: 17
+bound.byPrefix.gem: 10
+skipped.noGt6Item.Modern: 1
+bound.byPrefix.coral: 11
+skipped.noGt6Item.Kelp: 2
+skipped.noGt6Item.Ginger: 1
+skipped.noGt6Item.Cotton: 1
+skipped.noGt6Item.Mustard: 2
+skipped.noGt6Item.Sesame: 2
+skipped.noGt6Item.Pot: 1
+skipped.noGt6Item.Mortarandpestle: 1
+skipped.noGt6Item.Mixingbowl: 1
+bound.byPrefix.food: 6
+skipped.noGt6Item.Dough: 2
+skipped.noGt6Item.Saucepan: 1
+skipped.noGt6Item.Allheavycream: 2
+skipped.noGt6Item.Skillet: 1
+skipped.noGt6Item.Toast: 1
+skipped.noGt6Item.Juicer: 1
+skipped.noGt6Item.Bakeware: 1
+skipped.noGt6Item.Caramel: 1
+skipped.noGt6Item.Stock: 1
+skipped.noGt6Item.Butteredpotato: 1
+skipped.noGt6Item.Cuttingboard: 1
+skipped.noGt6Item.Mayo: 1
+skipped.noGt6Item.Pasta: 1
+skipped.noGt6Item.Hamburger: 1
+skipped.noGt6Item.Cheeseburger: 1
+skipped.noGt6Item.Fishsticks: 1
+skipped.noGt6Item.Fries: 1
+skipped.noGt6Item.Boiledegg: 1
+skipped.noGt6Item.Allicecream: 11
+skipped.noGt6Item.Spagetti: 1
+skipped.noGt6Item.Chickensandwich: 1
+skipped.noGt6Item.Fishsandwich: 1
+skipped.noGt6Item.Deluxecheeseburger: 1
+skipped.noGt6Item.Allsmoothie: 27
+skipped.noGt6Item.Zucchinifries: 1
+skipped.noGt6Item.Grilledcheese: 1
+skipped.noGt6Item.Ketchup: 1
+skipped.noGt6Item.Friedegg: 1
+skipped.noGt6Item.Potatocakes: 1
+skipped.noGt6Item.Alljuice: 50
+skipped.noGt6Item.Chocolatemilk: 1
+skipped.noGt6Item.Cornmeal: 1
+skipped.noGt6Item.Tortilla: 1
+skipped.noGt6Item.Raisins: 1
+skipped.noGt6Item.Saltedsunflowerseeds: 1
+skipped.noGt6Item.Roastedpumpkinseeds: 1
+skipped.noGt6Item.Allnutbutter: 5
+skipped.noGt6Item.Grapejelly: 1
+skipped.noGt6Item.Vinegar: 1
+skipped.noGt6Item.Springsalad: 1
+bound.byPrefix.flower: 2
+skipped.noGt6Item.Pizza: 1
+skipped.noGt6Item.Pancakes: 1
+skipped.noGt6Item.Cheesecake: 1
+skipped.noGt6Item.Espresso: 1
+skipped.noGt6Item.Marshmellows: 1
+skipped.noGt6Item.Plainyogurt: 1
+skipped.noGt6Item.Softpretzel: 1
+skipped.noGt6Item.Oliveoil: 1
+skipped.noGt6Item.Mashedpotatoes: 1
+skipped.noGt6Item.Coconut: 2
+skipped.noGt6Item.Donut: 1
+skipped.noGt6Item.Olive: 2
+skipped.noGt6Item.Baconcheeseburger: 1
+skipped.noGt6Item.Saladdressing: 1
+skipped.noGt6Item.Applejelly: 1
+skipped.noGt6Item.Blackberryjelly: 1
+skipped.noGt6Item.Blueberryjelly: 1
+skipped.noGt6Item.Cherryjelly: 1
+skipped.noGt6Item.Cranberryjelly: 1
+skipped.noGt6Item.Kiwijelly: 1
+skipped.noGt6Item.Lemonjelly: 1
+skipped.noGt6Item.Limejelly: 1
+skipped.noGt6Item.Mangojelly: 1
+skipped.noGt6Item.Orangejelly: 1
+skipped.noGt6Item.Papayajelly: 1
+skipped.noGt6Item.Peachjelly: 1
+skipped.noGt6Item.Pomegranatejelly: 1
+skipped.noGt6Item.Raspberryjelly: 1
+skipped.noGt6Item.Starfruitjelly: 1
+skipped.noGt6Item.Strawberryjelly: 1
+skipped.noGt6Item.Watermelonjelly: 1
+skipped.noGt6Item.Bubblywater: 1
+skipped.noGt6Item.Edibleroot: 1
+skipped.noGt6Item.Apricotjelly: 1
+skipped.noGt6Item.Figjelly: 1
+skipped.noGt6Item.Grapefruitjelly: 1
+skipped.noGt6Item.Persimmonjelly: 1
+skipped.noGt6Item.Maplesyrup: 1
+skipped.noGt6Item.Waffles: 1
+skipped.noGt6Item.Maplesausage: 1
+skipped.noGt6Item.Bakedbeans: 1
+skipped.noGt6Item.Toastedcoconut: 1
+skipped.noGt6Item.Pickles: 1
+skipped.noGt6Item.Gherkin: 1
+skipped.noGt6Item.Vegemite: 1
+skipped.noGt6Item.Porksausage: 1
+skipped.noGt6Item.Batter: 1
+skipped.noGt6Item.Pepperoni: 1
+skipped.noGt6Item.Friedonions: 1
+skipped.noGt6Item.Coleslaw: 1
+skipped.noGt6Item.Roastchicken: 1
+skipped.noGt6Item.Roastpotatoes: 1
+skipped.noGt6Item.Gooseberryjelly: 1
+skipped.noGt6Item.Sweetpickle: 1
+skipped.noGt6Item.Soysauce: 1
+skipped.noGt6Item.Sausage: 1
+skipped.noGt6Item.Chickencurry: 1
+skipped.noGt6Item.Naan: 1
+skipped.noGt6Item.Mangochutney: 1
+skipped.noGt6Item.Paneer: 1
+skipped.noGt6Item.Garammasala: 1
+skipped.noGt6Item.Pearjelly: 1
+skipped.noGt6Item.Plumjelly: 1
+skipped.noGt6Item.Yorkshirepudding: 1
+skipped.noGt6Item.Jellyfishraw: 1
+skipped.noGt6Item.Grilledasparagus: 1
+skipped.noGt6Item.Ricecake: 1
+skipped.noGt6Item.Rutabaga: 1
+skipped.noGt6Item.Soybean: 1
+skipped.noGt6Item.Artichoke: 1
+skipped.noGt6Item.Brusselsprout: 1
+skipped.noGt6Item.Grilledeggplant: 1
+skipped.noGt6Item.Okra: 1
+skipped.noGt6Item.Vanillabean: 1
+skipped.noGt6Item.Durian: 1
+skipped.noGt6Item.Applesauce: 1
+skipped.noGt6Item.Applepie: 1
+skipped.noGt6Item.Caramelapple: 1
+skipped.noGt6Item.Pumpkinbread: 1
+skipped.noGt6Item.Pumpkinsoup: 1
+skipped.noGt6Item.Carrotcake: 1
+skipped.noGt6Item.Carrotsoup: 1
+skipped.noGt6Item.Glazedcarrots: 1
+skipped.noGt6Item.Loadedbakedpotato: 1
+skipped.noGt6Item.Potatosalad: 1
+skipped.noGt6Item.Potatosoup: 1
+skipped.noGt6Item.Stuffedmushroom: 1
+skipped.noGt6Item.Chickennoodlesoup: 1
+skipped.noGt6Item.Chickenpotpie: 1
+skipped.noGt6Item.Breadedporkchop: 1
+skipped.noGt6Item.Hotdog: 1
+skipped.noGt6Item.Bakedham: 1
+skipped.noGt6Item.Potroast: 1
+skipped.noGt6Item.Fishandchips: 1
+skipped.noGt6Item.Scrambledegg: 1
+skipped.noGt6Item.Eggsalad: 1
+skipped.noGt6Item.Taffy: 1
+skipped.noGt6Item.Spidereyesoup: 1
+skipped.noGt6Item.Zombiejerky: 1
+skipped.noGt6Item.Hotchocolate: 1
+skipped.noGt6Item.Vegetablesoup: 1
+skipped.noGt6Item.Spagettiandmeatballs: 1
+skipped.noGt6Item.Tomatosoup: 1
+skipped.noGt6Item.Chickenparmasan: 1
+skipped.noGt6Item.Porklettucewrap: 1
+skipped.noGt6Item.Fishlettucewrap: 1
+skipped.noGt6Item.Blt: 1
+skipped.noGt6Item.Leafychickensandwich: 1
+skipped.noGt6Item.Leafyfishsandwich: 1
+skipped.noGt6Item.Delightedmeal: 1
+skipped.noGt6Item.Onionsoup: 1
+skipped.noGt6Item.Hash: 1
+skipped.noGt6Item.Braisedonions: 1
+skipped.noGt6Item.HeartyBreakfast: 1
+skipped.noGt6Item.Cornonthecob: 1
+skipped.noGt6Item.Cornbread: 1
+skipped.noGt6Item.Nachoes: 1
+skipped.noGt6Item.Taco: 1
+skipped.noGt6Item.Fishtaco: 1
+skipped.noGt6Item.Creamedcorn: 1
+skipped.noGt6Item.Strawberrypie: 1
+skipped.noGt6Item.Strawberrysalad: 1
+skipped.noGt6Item.Chocolatestrawberry: 1
+skipped.noGt6Item.Trailmix: 1
+skipped.noGt6Item.Pbandj: 1
+skipped.noGt6Item.Peanutbuttercookies: 1
+skipped.noGt6Item.Cookie: 8
+skipped.noGt6Item.Allbeverage: 68
+skipped.noGt6Item.Grapesalad: 1
+skipped.noGt6Item.Cucumbersalad: 1
+skipped.noGt6Item.Cucumbersoup: 1
+skipped.noGt6Item.Vegetarianlettucewrap: 1
+skipped.noGt6Item.Marinatedcucumbers: 1
+skipped.noGt6Item.Ricesoup: 1
+skipped.noGt6Item.Friedrice: 1
+skipped.noGt6Item.Mushroomrisotto: 1
+skipped.noGt6Item.Rainbowcurry: 1
+skipped.noGt6Item.Refriedbeans: 1
+skipped.noGt6Item.Beansandrice: 1
+skipped.noGt6Item.Beanburrito: 1
+skipped.noGt6Item.Stuffedpepper: 1
+skipped.noGt6Item.Veggiestirfry: 1
+skipped.noGt6Item.Grilledskewers: 1
+skipped.noGt6Item.Supremepizza: 1
+skipped.noGt6Item.Omelet: 1
+skipped.noGt6Item.Hotwings: 1
+skipped.noGt6Item.Chilipoppers: 1
+skipped.noGt6Item.Extremechili: 1
+skipped.noGt6Item.Chilichocolate: 1
+skipped.noGt6Item.Lemonbar: 1
+skipped.noGt6Item.Fishdinner: 1
+skipped.noGt6Item.Lemonmeringue: 1
+skipped.noGt6Item.Candiedlemon: 1
+skipped.noGt6Item.Lemonchicken: 1
+skipped.noGt6Item.Blueberrypie: 1
+skipped.noGt6Item.Blueberrymuffin: 1
+skipped.noGt6Item.Blueberrypancakes: 1
+skipped.noGt6Item.Cherrypie: 1
+skipped.noGt6Item.Chocolatecherry: 1
+skipped.noGt6Item.Cherrycheesecake: 1
+skipped.noGt6Item.Stuffedeggplant: 1
+skipped.noGt6Item.Eggplantparm: 1
+skipped.noGt6Item.Raspberryicedtea: 1
+skipped.noGt6Item.Chaitea: 1
+skipped.noGt6Item.Coffeeconleche: 1
+skipped.noGt6Item.Pickledbeets: 1
+skipped.noGt6Item.Beetsalad: 1
+skipped.noGt6Item.Beetsoup: 1
+skipped.noGt6Item.Bakedbeets: 1
+skipped.noGt6Item.Broccolimac: 1
+skipped.noGt6Item.Broccolindip: 1
+skipped.noGt6Item.Creamedbroccolisoup: 1
+skipped.noGt6Item.Sweetpotatopie: 1
+skipped.noGt6Item.Candiedsweetpotatoes: 1
+skipped.noGt6Item.Mashedsweetpotatoes: 1
+skipped.noGt6Item.Steamedpeas: 1
+skipped.noGt6Item.Splitpeasoup: 1
+skipped.noGt6Item.Pineappleupsidedowncake: 1
+skipped.noGt6Item.Pineappleham: 1
+skipped.noGt6Item.Pineappleyogurt: 1
+skipped.noGt6Item.Allyogurt: 30
+skipped.noGt6Item.Turnipsoup: 1
+skipped.noGt6Item.Roastedrootveggiemedley: 1
+skipped.noGt6Item.Bakedturnips: 1
+skipped.noGt6Item.Gingerbread: 1
+skipped.noGt6Item.Gingersnaps: 1
+skipped.noGt6Item.Candiedginger: 1
+skipped.noGt6Item.Softpretzelandmustard: 1
+skipped.noGt6Item.Spicymustardpork: 1
+skipped.noGt6Item.Spicygreens: 1
+skipped.noGt6Item.Garlicbread: 1
+skipped.noGt6Item.Garlicmashedpotatoes: 1
+skipped.noGt6Item.Garlicchicken: 1
+skipped.noGt6Item.Summerradishsalad: 1
+skipped.noGt6Item.Summersquashwithradish: 1
+skipped.noGt6Item.Celeryandpeanutbutter: 1
+skipped.noGt6Item.Chickencelerycasserole: 1
+skipped.noGt6Item.Peasandcelery: 1
+skipped.noGt6Item.Celerysoup: 1
+skipped.noGt6Item.Zucchinibread: 1
+skipped.noGt6Item.Zestyzucchini: 1
+skipped.noGt6Item.Zucchinibake: 1
+skipped.noGt6Item.Asparagusquiche: 1
+skipped.noGt6Item.Asparagussoup: 1
+skipped.noGt6Item.Walnutraisinbread: 1
+skipped.noGt6Item.Candiedwalnuts: 1
+skipped.noGt6Item.Brownie: 1
+skipped.noGt6Item.Guacamole: 1
+skipped.noGt6Item.Creamofavocadosoup: 1
+skipped.noGt6Item.Avocadoburrito: 1
+skipped.noGt6Item.Poachedpear: 1
+skipped.noGt6Item.Fruitcrumble: 1
+skipped.noGt6Item.Bananasplit: 1
+skipped.noGt6Item.Banananutbread: 1
+skipped.noGt6Item.Coconutshrimp: 1
+skipped.noGt6Item.Orangechicken: 1
+skipped.noGt6Item.Peachcobbler: 1
+skipped.noGt6Item.Keylimepie: 1
+skipped.noGt6Item.Cinnamonroll: 1
+skipped.noGt6Item.Frenchtoast: 1
+skipped.noGt6Item.Chocolatedonut: 1
+skipped.noGt6Item.Powdereddonut: 1
+skipped.noGt6Item.Jellydonut: 1
+skipped.noGt6Item.Frosteddonut: 1
+skipped.noGt6Item.Cactussoup: 1
+skipped.noGt6Item.Seedsoup: 1
+skipped.noGt6Item.Jellybeans: 1
+skipped.noGt6Item.Biscuit: 1
+skipped.noGt6Item.Jaffa: 1
+skipped.noGt6Item.Friedchicken: 1
+skipped.noGt6Item.Chocolatesprinklecake: 1
+skipped.noGt6Item.Redvelvetcake: 1
+skipped.noGt6Item.Footlong: 1
+skipped.noGt6Item.Blackberrycobbler: 1
+skipped.noGt6Item.Raspberrypie: 1
+skipped.noGt6Item.Cinnamonsugardonut: 1
+skipped.noGt6Item.Sunflowerwheatrolls: 1
+skipped.noGt6Item.Sunflowerbroccolisalad: 1
+skipped.noGt6Item.Cranberrysauce: 1
+skipped.noGt6Item.Cranberrybar: 1
+skipped.noGt6Item.Peppermint: 1
+skipped.noGt6Item.Baklava: 1
+skipped.noGt6Item.Gummybears: 1
+skipped.noGt6Item.Baconmushroomburger: 1
+skipped.noGt6Item.Fruitpunch: 1
+skipped.noGt6Item.Meatystew: 1
+skipped.noGt6Item.Mixedsalad: 1
+skipped.noGt6Item.Pinacolada: 1
+skipped.noGt6Item.Shepherdspie: 1
+skipped.noGt6Item.Eggnog: 1
+skipped.noGt6Item.Custard: 2
+skipped.noGt6Item.Sushi: 1
+skipped.noGt6Item.Gardensoup: 1
+skipped.noGt6Item.Applejellysandwich: 1
+skipped.noGt6Item.Blackberryjellysandwich: 1
+skipped.noGt6Item.Blueberryjellysandwich: 1
+skipped.noGt6Item.Cherryjellysandwich: 1
+skipped.noGt6Item.Cranberryjellysandwich: 1
+skipped.noGt6Item.Kiwijellysandwich: 1
+skipped.noGt6Item.Lemonjellysandwich: 1
+skipped.noGt6Item.Limejellysandwich: 1
+skipped.noGt6Item.Mangojellysandwich: 1
+skipped.noGt6Item.Orangejellysandwich: 1
+skipped.noGt6Item.Papayajellysandwich: 1
+skipped.noGt6Item.Peachjellysandwich: 1
+skipped.noGt6Item.Pomegranatejellysandwich: 1
+skipped.noGt6Item.Raspberryjellysandwich: 1
+skipped.noGt6Item.Starfruitjellysandwich: 1
+skipped.noGt6Item.Strawberryjellysandwich: 1
+skipped.noGt6Item.Watermelonjellysandwich: 1
+skipped.noGt6Item.Cherrysoda: 1
+skipped.noGt6Item.Colasoda: 1
+skipped.noGt6Item.Gingersoda: 1
+skipped.noGt6Item.Grapesoda: 1
+skipped.noGt6Item.Lemonlimesoda: 1
+skipped.noGt6Item.Orangesoda: 1
+skipped.noGt6Item.Rootbeersoda: 1
+skipped.noGt6Item.Strawberrysoda: 1
+skipped.noGt6Item.Gingerchicken: 1
+skipped.noGt6Item.Oldworldveggiesoup: 1
+skipped.noGt6Item.Spicebun: 1
+skipped.noGt6Item.Gingeredrhubarbtart: 1
+skipped.noGt6Item.Lambbarleysoup: 1
+skipped.noGt6Item.Honeylemonlamb: 1
+skipped.noGt6Item.Pumpkinoatscones: 1
+skipped.noGt6Item.Beefjerky: 1
+skipped.noGt6Item.Ovenroastedcauliflower: 1
+skipped.noGt6Item.Leekbaconsoup: 1
+skipped.noGt6Item.Herbbutterparsnips: 1
+skipped.noGt6Item.Scallionbakedpotato: 1
+skipped.noGt6Item.Bamboosteamedrice: 1
+skipped.noGt6Item.Roastedchestnut: 1
+skipped.noGt6Item.Sweetpotatosouffle: 1
+skipped.noGt6Item.Cashewchicken: 1
+skipped.noGt6Item.Apricotglazedpork: 1
+skipped.noGt6Item.Apricotjellysandwich: 1
+skipped.noGt6Item.Figbar: 1
+skipped.noGt6Item.Figjellysandwich: 1
+skipped.noGt6Item.Grapefruitjellysandwich: 1
+skipped.noGt6Item.Grapefruitsoda: 1
+skipped.noGt6Item.Citrussalad: 1
+skipped.noGt6Item.Pecanpie: 1
+skipped.noGt6Item.Pralines: 1
+skipped.noGt6Item.Persimmonjellysanwich: 1
+skipped.noGt6Item.Pistachiobakedsalmon: 1
+skipped.noGt6Item.Baconwrappeddates: 1
+skipped.noGt6Item.Datenutbread: 1
+skipped.noGt6Item.Maplesyruppancakes: 1
+skipped.noGt6Item.Maplesyrupwaffles: 1
+skipped.noGt6Item.Mapleoatmeal: 1
+skipped.noGt6Item.Peachesandcreamoatmeal: 1
+skipped.noGt6Item.Cinnamonappleoatmeal: 1
+skipped.noGt6Item.Maplecandiedbacon: 1
+skipped.noGt6Item.Toastsandwich: 1
+skipped.noGt6Item.Potatoandcheesepirogi: 1
+skipped.noGt6Item.Zeppole: 1
+skipped.noGt6Item.Sausageinbread: 1
+skipped.noGt6Item.Chocolatecaramelfudge: 1
+skipped.noGt6Item.Lavendershortbread: 1
+skipped.noGt6Item.Beefwellington: 1
+skipped.noGt6Item.Epicbacon: 1
+skipped.noGt6Item.Manjuu: 1
+skipped.noGt6Item.Chickengumbo: 1
+skipped.noGt6Item.Generaltsochicken: 1
+skipped.noGt6Item.Californiaroll: 1
+skipped.noGt6Item.Futomaki: 1
+skipped.noGt6Item.Beansontoast: 1
+skipped.noGt6Item.Honeycombchocolatebar: 1
+skipped.noGt6Item.Cherrycoconutchocolatebar: 1
+skipped.noGt6Item.Fairybread: 1
+skipped.noGt6Item.Lamington: 1
+skipped.noGt6Item.Timtam: 1
+skipped.noGt6Item.Meatpie: 1
+skipped.noGt6Item.Chikoroll: 1
+skipped.noGt6Item.Damper: 1
+skipped.noGt6Item.Beetburger: 1
+skipped.noGt6Item.Pavlova: 1
+skipped.noGt6Item.Mcpam: 1
+skipped.noGt6Item.Ceasarsalad: 1
+skipped.noGt6Item.Chocolatecookie: 1
+skipped.noGt6Item.Lambkebab: 1
+skipped.noGt6Item.Nutella: 1
+skipped.noGt6Item.Snickersbar: 1
+skipped.noGt6Item.Spinachpie: 1
+skipped.noGt6Item.Steamedspinach: 1
+skipped.noGt6Item.Vegemiteontoast: 1
+skipped.noGt6Item.Clamraw: 1
+skipped.noGt6Item.Frograw: 1
+skipped.noGt6Item.Holidaycake: 1
+skipped.noGt6Item.Clamcooked: 1
+skipped.noGt6Item.Crayfishcooked: 1
+skipped.noGt6Item.Frogcooked: 1
+skipped.noGt6Item.Octopuscooked: 1
+skipped.noGt6Item.Scallopcooked: 1
+skipped.noGt6Item.Shrimpcooked: 1
+skipped.noGt6Item.Snailcooked: 1
+skipped.noGt6Item.Bangersandmash: 1
+skipped.noGt6Item.Batteredsausage: 1
+skipped.noGt6Item.Energydrink: 1
+skipped.noGt6Item.Meatfeastpizza: 1
+skipped.noGt6Item.Mincepie: 1
+skipped.noGt6Item.Onionhamburger: 1
+skipped.noGt6Item.Pickledonions: 1
+skipped.noGt6Item.Raspberrytrifle: 1
+skipped.noGt6Item.Strawberrymilkshake: 1
+skipped.noGt6Item.Chocolatemilkshake: 1
+skipped.noGt6Item.Bananamilkshake: 1
+skipped.noGt6Item.Cornflakes: 1
+skipped.noGt6Item.Coleslawburger: 1
+skipped.noGt6Item.Sundayroast: 1
+skipped.noGt6Item.Bbqpulledpork: 1
+skipped.noGt6Item.Lambwithmintsauce: 1
+skipped.noGt6Item.Steakandchips: 1
+skipped.noGt6Item.Cornishpasty: 1
+skipped.noGt6Item.Cottagepie: 1
+skipped.noGt6Item.Croissant: 1
+skipped.noGt6Item.Dimsum: 1
+skipped.noGt6Item.Friedpecanokra: 1
+skipped.noGt6Item.Gooseberryjellysandwich: 1
+skipped.noGt6Item.Gooseberrymilkeshake: 1
+skipped.noGt6Item.Gooseberrypie: 1
+skipped.noGt6Item.Hamsweetpicklesandwich: 1
+skipped.noGt6Item.Hushpuppies: 1
+skipped.noGt6Item.Kimchi: 1
+skipped.noGt6Item.Mochi: 1
+skipped.noGt6Item.Museli: 1
+skipped.noGt6Item.Okrachips: 1
+skipped.noGt6Item.Okracreole: 1
+skipped.noGt6Item.Ploughmanslunch: 1
+skipped.noGt6Item.Porklomein: 1
+skipped.noGt6Item.Salmonpatties: 1
+skipped.noGt6Item.Sausageroll: 1
+skipped.noGt6Item.Sesameball: 1
+skipped.noGt6Item.Sesamesnaps: 1
+skipped.noGt6Item.Shrimpokrahushpuppies: 1
+skipped.noGt6Item.Veggiestrips: 1
+skipped.noGt6Item.Vindaloo: 1
+skipped.noGt6Item.Cheeseontoast: 1
+skipped.noGt6Item.Chocolateroll: 1
+skipped.noGt6Item.Deluxechickencurry: 1
+skipped.noGt6Item.Gravy: 1
+skipped.noGt6Item.Honeysandwich: 1
+skipped.noGt6Item.Jamroll: 1
+skipped.noGt6Item.Marzipan: 1
+skipped.noGt6Item.Paneertikkamasala: 1
+skipped.noGt6Item.Peaandhamsoup: 1
+skipped.noGt6Item.Pearjellysandwich: 1
+skipped.noGt6Item.Plumjellysandwich: 1
+skipped.noGt6Item.Potatoandleeksoup: 1
+skipped.noGt6Item.Toadinthehole: 1
+skipped.noGt6Item.Tunapotato: 1
+skipped.noGt6Item.Candleberry: 1
+skipped.noGt6Item.Queen: 1
+skipped.noGt6Item.Bread: 2
+skipped.noGt6Item.Alllava: 3
+bound.byPrefix.bottle: 2
+bound.byMod.Railcraft: 1
+skipped.noGt6Item.Rotten: 1
+skipped.noGt6Item.RiceDough: 1
+bound.byPrefix.glass: 1
+bound.byPrefix.battery: 3
+skipped.noGt6Item.Algae: 1
+skipped.noGt6Item.Flax: 3
+skipped.noGt6Item.Ivy: 1
+skipped.noGt6Item.Pinecone: 1
+skipped.noGt6Item.Hops: 1
+skipped.noGt6Item.Shears: 1
+skipped.noGt6Item.PolongniusMeteor: 1
+skipped: 16
+bound.byPrefix.compressed: 9
+bound.byMod.TaintedMagic: 1
+bound.byMod.thaumicbases: 5
+skipped.noGt6Item.CrystalCluster: 1
+skipped.noGt6Item.SalisMundus: 1
+skipped.noGt6Item.TfMachineCase: 1
+bound.byMod.TofuFactory: 26
+skipped.noGt6Item.MagicCircuit: 1
+skipped.noGt6Item.DiamondBlade: 1
+skipped.noGt6Item.Icestone: 1
+skipped.noGt6Item.EnderObsidian: 1
+skipped.noGt6Item.Sandy: 1
+skipped.noGt6Item.MagicWood: 1
+bound.byMod.utilitiesinexcess: 1
+skipped.noGt6Item.EnderCore: 1
+skipped.noGt6Item.Cobblestone1x: 1
+skipped.noGt6Item.Dirt1x: 1
+skipped.noGt6Item.Sand1x: 1
+skipped.noGt6Item.Gravel1x: 1
+skipped.noGt6Item.Cobblestone2x: 1
+skipped.noGt6Item.Dirt2x: 1
+skipped.noGt6Item.Sand2x: 1
+skipped.noGt6Item.Gravel2x: 1
+skipped.noGt6Item.Cobblestone3x: 1
+skipped.noGt6Item.Dirt3x: 1
+skipped.noGt6Item.Sand3x: 1
+skipped.noGt6Item.Gravel3x: 1
+skipped.noGt6Item.Cobblestone4x: 1
+skipped.noGt6Item.Dirt4x: 1
+skipped.noGt6Item.Sand4x: 1
+skipped.noGt6Item.Gravel4x: 1
+skipped.noGt6Item.Cobblestone5x: 1
+skipped.noGt6Item.Dirt5x: 1
+skipped.noGt6Item.Sand5x: 1
+skipped.noGt6Item.Gravel5x: 1
+skipped.noGt6Item.Cobblestone6x: 1
+skipped.noGt6Item.Dirt6x: 1
+skipped.noGt6Item.Sand6x: 1
+skipped.noGt6Item.Gravel6x: 1
+skipped.noGt6Item.Cobblestone7x: 1
+skipped.noGt6Item.Dirt7x: 1
+skipped.noGt6Item.Sand7x: 1
+skipped.noGt6Item.Gravel7x: 1
+skipped.noGt6Item.Cobblestone8x: 1
+skipped.noGt6Item.Dirt8x: 1
+skipped.noGt6Item.Sand8x: 1
+skipped.noGt6Item.Gravel8x: 1
+skipped.noGt6Item.Cobblestone9x: 1
+skipped.noGt6Item.Dirt9x: 1
+skipped.noGt6Item.Sand9x: 1
+skipped.noGt6Item.Gravel9x: 1
+skipped.noGt6Item.Canola: 1
+bound.byPrefix.pearl: 1
+bound.byMod.appliedenergistics2: 1
+skipped.noGt6Item.IlluminatedPanel: 3
+skipped.noGt6Item.ClothRock: 1
+skipped.noGt6Item.Belladonna: 1
+skipped.noGt6Item.Mandrake: 1
+skipped.noGt6Item.WaterArtichoke: 1
+skipped.noGt6Item.Snowbell: 1
+skipped.noGt6Item.Wolfsbane: 1
+skipped.noGt6Item.Wormwood: 1
+bound.byPrefix.grass: 1
+bound.byMod.alfheim: 2
+skipped.noGt6Item.QuartzRainbow: 1
+skipped.noGt6Item.FlowerRainbow: 1
+skipped.noGt6Item.FlowerRainbowDouble: 1
+skipped.noGt6Item.Shimmer: 2
+skipped.noGt6Item.Muspelheim: 1
+skipped.noGt6Item.PrimalA: 1
+skipped.noGt6Item.MuspelheimA: 1
+skipped.noGt6Item.NiflheimA: 1
+skipped.noGt6Item.Rainbow: 4
+skipped.noGt6Item.FloralPowder: 1
+skipped.noGt6Item.Mystic: 1
+skipped.noGt6Item.GinkgoNut: 1
+skipped.noGt6Item.Clove: 1
+bound.byPrefix.blockWool: 16
+bound.byPrefix.trapdoor: 13
+skipped.noGt6Item.DyeBlack: 1
+skipped.noGt6Item.DyeRed: 1
+skipped.noGt6Item.DyeGreen: 1
+skipped.noGt6Item.DyeBrown: 1
+skipped.noGt6Item.DyePurple: 1
+skipped.noGt6Item.DyeCyan: 1
+skipped.noGt6Item.DyeLightGray: 1
+skipped.noGt6Item.DyeGray: 1
+skipped.noGt6Item.DyePink: 1
+skipped.noGt6Item.DyeLime: 1
+skipped.noGt6Item.DyeYellow: 1
+skipped.noGt6Item.DyeLightBlue: 1
+skipped.noGt6Item.DyeMagenta: 1
+skipped.noGt6Item.DyeOrange: 1
+skipped.noGt6Item.DyeWhite: 1
+skipped.noGt6Item.LifeCrystal: 1
+skipped.noGt6Item.Mushroom: 3
+skipped.noGt6Item.TofuMomen: 1
+skipped.noGt6Item.Natto: 1
+skipped.noGt6Item.TofuKinu: 1
+skipped.noGt6Item.TofuIshi: 2
+skipped.noGt6Item.TofuGrilled: 2
+skipped.noGt6Item.TofuDried: 1
+skipped.noGt6Item.TofuFriedPouch: 2
+skipped.noGt6Item.TofuFried: 2
+skipped.noGt6Item.TofuEgg: 2
+skipped.noGt6Item.TofuAnnin: 2
+skipped.noGt6Item.TofuSesame: 2
+skipped.noGt6Item.TofuZunda: 2
+skipped.noGt6Item.TofuStrawberry: 2
+skipped.noGt6Item.TofuMiso: 2
+skipped.noGt6Item.TofuHell: 2
+skipped.noGt6Item.TofuGlow: 2
+bound.byMod.TofuCraft: 8
+skipped.noGt6Item.TofuMinced: 2
+skipped.noGt6Item.Apricot: 3
+skipped.noGt6Item.ApricotF: 1
+bound.byPrefix.leaves: 1
+bound.byPrefix.sapling: 1
+skipped.noGt6Item.AdvTofuGem: 1
+skipped.noGt6Item.SoymilkHell: 1
+skipped.noGt6Item.Bowl: 1
+skipped.noGt6Item.EdamameBoiled: 1
+skipped.noGt6Item.Onigiri: 1
+skipped.noGt6Item.OnigiriSalt: 1
+skipped.noGt6Item.OnigiriMiso: 1
+skipped.noGt6Item.OnigiriSoySauce: 1
+skipped.noGt6Item.Sprouts: 1
+skipped.noGt6Item.Oage: 1
+skipped.noGt6Item.TofuChikuwa: 1
+skipped.noGt6Item.Yuba: 1
+skipped.noGt6Item.TofuHamburg: 1
+skipped.noGt6Item.TofufishRaw: 1
+skipped.noGt6Item.TofufishCooked: 1
+skipped.noGt6Item.Chikuwa: 1
+skipped.noGt6Item.ZundaMochi: 1
+skipped.noGt6Item.KinakoMochi: 1
+skipped.noGt6Item.TofuSteak: 1
+skipped.noGt6Item.Inari: 1
+skipped.noGt6Item.OkaraStick: 1
+skipped.noGt6Item.Goheimochi: 1
+skipped.noGt6Item.MisoSoup: 1
+skipped.noGt6Item.TTTBurger: 1
+skipped.noGt6Item.MelonSalt: 1
+skipped.noGt6Item.SoybeanHell: 1
+skipped.noGt6Item.Edamame: 1
+skipped.noGt6Item.Kamaboko: 1
+skipped.noGt6Item.MagicCircuitAdv: 1
+bound.byPrefix.plate: 4
+skipped.noGt6Item.Macerator: 1
+skipped.noGt6Item.Compressor: 1
+bound.byPrefix.ring: 2
+skipped.noGt6Item.CircuitTier04: 1
+skipped.noGt6Item.CircuitTier05: 1
+bound.byPrefix.crystal: 1
+bound.byPrefix.nugget: 1
+bound.byMod.AgriCraft: 1
+skipped.noGt6Item.Vishroom: 1
+skipped.noGt6Item.TaintedRoot: 1
+bound.byPrefix.door: 7
+skipped.noGt6Item.GateWood: 7
+skipped.noGt6Item.EndStone: 1
+skipped.noGt6Item.Tinted: 1
+timing.materialPass.ms: 300
+timing.recipeReInit.ms: 233
 autorules.available.nugget: 0
-autorules.available.purified: 0
 autorules.available.ore: 0
 autorules.available.dusttiny: 0
 autorules.available.plate: 0
 autorules.available.ingot: 0
 autorules.available.crushed: 0
 autorules.available.dust: 0
+autorules.available.crushedpurified: 0
 autorules.available.gear: 0
-timing.autoRules.ms: 1
-timing.recipePass.ms: 0
+timing.autoRules.ms: 6
+timing.recipePass.ms: 5
 removed.total: 0
-timing.removalPass.ms: 65
+errors: 3
+timing.removalPass.ms: 546
 
 -- unknown material tokens (add them to materials.csv) --
 
 -- ore dictionary names without a GT6 prefix --
+  Bearing : 1
+  Bolt : 1
+  EnchantedGreatwood : 1
+  EnchantedSilverwood : 1
+  FC.Bass : 1
+  FC.BassCooked : 1
+  FC.Bluegill : 1
+  FC.BluegillCooked : 1
+  FC.Carp : 1
+  FC.CarpCooked : 1
+  FC.Catfish : 1
+  FC.CatfishCooked : 1
+  FC.Goldfish : 1
+  FC.GoldfishCooked : 1
+  FC.Peacock_Bass : 1
+  FC.Peacock_BassCooked : 1
+  FC.Pike : 1
+  FC.PikeCooked : 1
+  FC.Salmon : 1
+  FC.SalmonCooked : 1
+  FC.Small_Piranha : 1
+  FC.Small_PiranhaCooked : 1
+  FC.Suckerfish : 1
+  FC.SuckerfishCooked : 1
+  FC.Tuna_StripCooked : 1
+  FC.Tuna_StripRaw : 1
+  Gear : 1
+  Gravel : 1
+  LightGray : 1
+  MonazitOre : 1
+  NetheriteIngot : 1
+  Pu238 : 1
+  Pu239 : 1
+  Pu240 : 1
+  Pu241 : 1
+  Pu243 : 1
+  Pu244 : 1
+  Salt : 1
+  Screw : 1
+  Spring : 1
+  TTTBurger : 1
+  Th232 : 1
+  Tofu : 1
+  U233 : 1
+  U235 : 1
+  U238 : 1
+  actAddCrystalRed : 1
+  activatedHellTofu : 1
+  activatedTofuGem : 1
+  advTofuGem : 1
+  andesite : 1
+  antiBlock : 1
+  anyCertusCrystal : 1
+  apricot : 1
+  apricotSeed : 1
+  aquaRegia : 1
+  bEnderAirBottle : 1
+  bFlask : 1
+  bPlaceholder : 1
+  bRedString : 1
+  bVial : 1
+  bacon : 1
+  baleBarley : 1
+  baleGrass : 1
+  baleGrassDry : 1
+  baleGrassMoldy : 1
+  baleGrassRotten : 1
+  baleOat : 1
+  baleOats : 1
+  baleRice : 1
+  baleRye : 1
+  baleWheat : 1
+  bamboo : 1
+  barrel : 1
+  barrelEmpty : 1
+  barrelGlowtofu : 1
+  barrelMiso : 1
+  barrelMisoTofu : 1
+  basalt : 1
+  bedWood : 1
+  blackDiamond : 1
+  blazePowder : 1
+  boatChestWood : 1
+  boatWood : 1
+  bone : 1
+  book : 1
+  bookshelfWood : 1
+  brick : 1
+  bricksGravel : 1
+  bucket : 1
+  burntQuartz : 1
+  button : 1
+  buttonStone : 1
+  buttonWood : 1
+  calclavia:BATTERY : 1
+  candy : 1
+  candyCane : 1
+  capacitorAdvanced : 1
+  capacitorBasic : 1
+  capacitorCrystalline : 1
+  capacitorEnder : 1
+  capacitorMelodic : 1
+  capacitorStellar : 1
+  capacitorTotemic : 1
+  carpet : 1
+  cauldron : 1
+  charcoal : 1
+  cheeseSandstone : 1
+  chest : 1
+  chikuwa : 1
+  chipDiamond : 1
+  chocobofeather : 1
+  clay : 1
+  clayHardened : 1
+  clock : 1
+  cloud : 1
+  coal : 1
+  coalCoke : 1
+  coalFlame : 1
+  cobblestone : 1
+  coilAluminum : 1
+  coilCopper : 1
+  coilGold : 1
+  coilIridium : 1
+  coilTitanium : 1
+  coke : 1
+  compass : 1
+  concrete : 1
+  container1000blood : 1
+  container1000creosote : 1
+  container1000glue : 1
+  container1000honey : 1
+  container1000juice : 1
+  container1000latex : 1
+  container1000lava : 1
+  container1000lubricant : 1
+  container1000maplesap : 1
+  container1000milk : 1
+  container1000poison : 1
+  container1000rainbowsap : 1
+  container1000rubbertreesap : 1
+  container1000seedoil : 1
+  container1000slime : 1
+  container1000slimeblue : 1
+  container1000slimegreen : 1
+  container1000slimepink : 1
+  container1000soymilk : 1
+  container1000spruceresin : 1
+  container1000tar : 1
+  container1000water : 1
+  container250blood : 1
+  container250creosote : 1
+  container250glue : 1
+  container250honey : 1
+  container250juice : 1
+  container250latex : 1
+  container250lava : 1
+  container250lubricant : 1
+  container250maplesap : 1
+  container250milk : 1
+  container250poison : 1
+  container250rainbowsap : 1
+  container250rubbertreesap : 1
+  container250seedoil : 1
+  container250slime : 1
+  container250slimeblue : 1
+  container250slimegreen : 1
+  container250slimepink : 1
+  container250soymilk : 1
+  container250spruceresin : 1
+  container250tar : 1
+  container250water : 1
+  container500poison : 1
+  cookedMochi : 1
+  cookedRice : 1
+  cookie : 1
+  crateGtEmpty : 1
+  crops : 1
+  cryingObsidian : 1
+  dashi : 1
+  daylightDetector : 1
+  defattingPotion : 1
+  diamond : 1
+  diorite : 1
+  dirt : 1
+  dispenser : 1
+  doubanjiang : 1
+  dreamwood : 1
+  dreamwoodTwig : 1
+  dropper : 1
+  dye : 1
+  edamame : 1
+  edamameBoiled : 1
+  emerald : 1
+  enderChest : 1
+  endstone : 1
+  eternalLifeEssence : 1
+  eyeOfEnder : 1
+  fanSteel : 1
+  feather : 1
+  fermentedSpiderEye : 1
+  fertiliser : 1
+  fertilizer : 1
+  fiberCarbon : 1
+  fieryIngot : 1
+  filterCloth : 1
+  fish : 1
+  fishtrapBait : 1
+  flour : 1
+  flourEqualswheat : 1
+  flower : 1
+  foodchorizo : 1
+  fronosSandstone : 1
+  fruitBait : 1
+  furFenrir : 1
+  fz.waterBucketLike : 1
+  gaiaIngot : 1
+  gelatin : 1
+  glass : 1
+  glotek : 1
+  glowstone : 1
+  glue : 1
+  goheimochi : 1
+  grainBait : 1
+  granite : 1
+  grass : 1
+  gravel : 1
+  greggy_greg_do_please_kindly_stuff_a_sock_in_it : 1
+  grubBee : 1
+  gt:autocrafterblueprintitem : 1
+  gt:autocrafterinfinite : 1
+  gt:bumbledead : 1
+  gt:bumbledrone : 1
+  gt:bumbleprincess : 1
+  gt:bumblequeen : 1
+  gt:canvas : 1
+  gt:circuit0 : 1
+  gt:circuit1 : 1
+  gt:circuit2 : 1
+  gt:circuit3 : 1
+  gt:circuit4 : 1
+  gt:circuit5 : 1
+  gt:circuit6 : 1
+  gt:circuit7 : 1
+  gt:circuit8 : 1
+  gt:circuit9 : 1
+  gt:complateAluminium : 1
+  gt:complateBronze : 1
+  gt:complateCopper : 1
+  gt:complateDesh : 1
+  gt:complateIron : 1
+  gt:complateMeteoricIron : 1
+  gt:complateSteel : 1
+  gt:complateTin : 1
+  gt:complateTitanium : 1
+  gt:re-battery0 : 1
+  gt:re-battery1 : 1
+  gt:re-battery2 : 1
+  gt:re-battery3 : 1
+  gt:re-battery4 : 1
+  gt:re-crystal0 : 1
+  gt:re-crystal1 : 1
+  gt:re-crystal2 : 1
+  gt:re-crystal3 : 1
+  gt:re-crystal4 : 1
+  gt:re-crystal5 : 1
+  gt:usbcable0 : 1
+  gt:usbcable1 : 1
+  gt:usbcable2 : 1
+  gt:usbcable3 : 1
+  gt:usbcable4 : 1
+  gt:usbdrive0 : 1
+  gt:usbdrive1 : 1
+  gt:usbdrive2 : 1
+  gt:usbdrive3 : 1
+  gt:usbdrive4 : 1
+  gt:usbstick0 : 1
+  gt:usbstick1 : 1
+  gt:usbstick2 : 1
+  gt:usbstick3 : 1
+  gt:usbstick4 : 1
+  gt:zpm : 1
+  hambone : 1
+  hamburg : 1
+  hardenedClay : 1
+  hempcretesand : 1
+  holyPendant : 1
+  holystone : 1
+  honeyEqualssugar : 1
+  hopper : 1
+  ice : 1
+  inari : 1
+  irisDirt : 1
+  irisDirtAurora : 1
+  irisDirtBlack : 1
+  irisDirtBlue : 1
+  irisDirtBrown : 1
+  irisDirtCyan : 1
+  irisDirtGray : 1
+  irisDirtGreen : 1
+  ... (387 more)
 
 -- bindings --
+  oreQuartz  ->  GalaxySpace:barnardacores:10  =  ore/Quartz
+  dyeBlack  ->  minecraft:dye  =  dye/Black
+  dyeBlack  ->  BiomesOPlenty:misc:9  =  dye/Black
+  dyeBlack  ->  Botania:dye:15  =  dye/Black
+  dyeBlack  ->  ForbiddenMagic:FMResource:1  =  dye/Black
+  dyeBlack  ->  thebetweenlands:unknownGeneric:29  =  dye/Black
+  dyeBlack  ->  thebetweenlands:solidTar  =  dye/Black
+  dyeBlack  ->  ActuallyAdditions:itemMisc:17  =  dye/Black
+  dyeBlack  ->  ExtraBees:misc:24  =  dye/Black
+  dyeBlack  ->  etfuturum:dye:3  =  dye/Black
+  dyeBlack  ->  ThaumicHorizons:inkEgg  =  dye/Black
+  dyeRed  ->  minecraft:dye:1  =  dye/Red
+  dyeRed  ->  Botania:dye:14  =  dye/Red
+  dyeRed  ->  Mariculture:materials:31  =  dye/Red
+  dyeRed  ->  ExtraBees:misc:19  =  dye/Red
+  dyeGreen  ->  minecraft:dye:2  =  dye/Green
+  dyeGreen  ->  BiomesOPlenty:misc:7  =  dye/Green
+  dyeGreen  ->  Botania:dye:13  =  dye/Green
+  dyeGreen  ->  Mariculture:materials:29  =  dye/Green
+  dyeGreen  ->  ExtraBees:misc:22  =  dye/Green
+  dyeBrown  ->  MineFactoryReloaded:fertilizer  =  dye/Brown
+  dyeBrown  ->  BiomesOPlenty:misc:6  =  dye/Brown
+  dyeBrown  ->  Botania:dye:12  =  dye/Brown
+  dyeBrown  ->  GalacticraftAmunRa:item.baseItem:29  =  dye/Brown
+  dyeBrown  ->  Mariculture:materials:32  =  dye/Brown
+  dyeBrown  ->  ExtraBees:misc:25  =  dye/Brown
+  dyeBrown  ->  etfuturum:dye:2  =  dye/Brown
+  dyeBlue  ->  BiomesOPlenty:misc:5  =  dye/Blue
+  dyeBlue  ->  Botania:dye:11  =  dye/Blue
+  dyeBlue  ->  Mariculture:materials:28  =  dye/Blue
+  dyeBlue  ->  ExtraBees:misc:21  =  dye/Blue
+  dyeBlue  ->  etfuturum:dye:1  =  dye/Blue
+  dyePurple  ->  minecraft:dye:5  =  dye/Purple
+  dyePurple  ->  Botania:dye:10  =  dye/Purple
+  dyeCyan  ->  minecraft:dye:6  =  dye/Cyan
+  dyeCyan  ->  Botania:dye:9  =  dye/Cyan
+  dyeLightGray  ->  minecraft:dye:7  =  dye/LightGray
+  dyeLightGray  ->  Botania:dye:8  =  dye/LightGray
+  dyeGray  ->  minecraft:dye:8  =  dye/Gray
+  dyeGray  ->  Botania:dye:7  =  dye/Gray
+  dyePink  ->  minecraft:dye:9  =  dye/Pink
+  dyePink  ->  Botania:dye:6  =  dye/Pink
+  dyeLime  ->  minecraft:dye:10  =  dye/Lime
+  dyeLime  ->  Botania:dye:5  =  dye/Lime
+  dyeYellow  ->  minecraft:dye:11  =  dye/Yellow
+  dyeYellow  ->  Botania:dye:4  =  dye/Yellow
+  dyeYellow  ->  Mariculture:materials:30  =  dye/Yellow
+  dyeYellow  ->  ExtraBees:misc:20  =  dye/Yellow
+  dyeLightBlue  ->  minecraft:dye:12  =  dye/LightBlue
+  dyeLightBlue  ->  Botania:dye:3  =  dye/LightBlue
+  dyeMagenta  ->  minecraft:dye:13  =  dye/Magenta
+  dyeMagenta  ->  Botania:dye:2  =  dye/Magenta
+  dyeOrange  ->  minecraft:dye:14  =  dye/Orange
+  dyeOrange  ->  Botania:dye:1  =  dye/Orange
+  dyeWhite  ->  BiomesOPlenty:misc:8  =  dye/White
+  dyeWhite  ->  Botania:dye  =  dye/White
+  dyeWhite  ->  Mariculture:materials:27  =  dye/White
+  dyeWhite  ->  ExtraBees:misc:23  =  dye/White
+  dyeWhite  ->  etfuturum:dye  =  dye/White
+  craftingLeather  ->  harvestcraft:hardenedleatherItem  =  crafting/Leather
+  craftingLeather  ->  witchery:ingredient:131  =  crafting/Leather
+  craftingLeather  ->  witchery:ingredient:72  =  crafting/Leather
+  paperEmpty  ->  minecraft:paper:32767  =  paper/Empty
+  beamWood  ->  etfuturum:log_stripped:32767  =  beam/Wood
+  beamWood  ->  etfuturum:log2_stripped:32767  =  beam/Wood
+  beamWood  ->  etfuturum:wood_stripped:32767  =  beam/Wood
+  beamWood  ->  etfuturum:wood2_stripped:32767  =  beam/Wood
+  dropHoney  ->  Forestry:honeyDrop  =  drop/Honey
+  dropHoney  ->  harvestcraft:honeyItem  =  drop/Honey
+  dropHoneydew  ->  Forestry:honeydew  =  drop/Honeydew
+  itemMud  ->  BiomesOPlenty:mudball  =  item/Mud
+  itemCoral  ->  thebetweenlands:plantDrop:5  =  item/Coral
+  itemCoral  ->  thebetweenlands:plantDrop:6  =  item/Coral
+  itemPoison  ->  BinnieCore:containerRefractory:65  =  item/Poison
+  itemPoison  ->  BinnieCore:containerCapsule:65  =  item/Poison
+  itemPoison  ->  BinnieCore:containerCan:65  =  item/Poison
+  itemPoison  ->  BinnieCore:containerBucket:65  =  item/Poison
+  itemPoison  ->  minecraft:potion:8196  =  item/Poison
+  itemPoison  ->  minecraft:potion:8228  =  item/Poison
+  itemPoison  ->  minecraft:potion:8260  =  item/Poison
+  itemPoison  ->  minecraft:potion:16388  =  item/Poison
+  itemPoison  ->  minecraft:potion:16420  =  item/Poison
+  itemPoison  ->  minecraft:potion:16452  =  item/Poison
+  itemPoison  ->  etfuturum:lingering_potion:8196  =  item/Poison
+  itemPoison  ->  etfuturum:lingering_potion:8228  =  item/Poison
+  itemPoison  ->  etfuturum:lingering_potion:8260  =  item/Poison
+  itemSilicon  ->  GalacticraftCore:item.basicItem:2  =  item/Silicon
+  itemSilicon  ->  EnderIO:itemMaterial  =  item/Silicon
+  blockMud  ->  thebetweenlands:mud  =  block/Mud
+  blockMud  ->  BiomesOPlenty:mud  =  block/Mud
+  ingotMithrillium  ->  thaumicadditions:mithrillium_ingot  =  ingot/Mithrillium
+  ingotAdaminite  ->  thaumicadditions:adaminite_ingot  =  ingot/Adamantite
+  bouleSilicon  ->  libVulpes:libVulpesproductboule:3  =  boule/Silicon
+  blockTitanium  ->  libVulpes:libVulpesmetal0:7  =  block/Titanium
+  blockTitanium  ->  Mariculture:metals:4  =  block/Titanium
+  oreTitanium  ->  GalacticraftAmunRa:tile.basaltMultiOre:9  =  ore/Titanium
+  blockIridium  ->  libVulpes:libVulpesmetal0:10  =  block/Iridium
+  blockIridium  ->  MorePlanet:fronos_ore_block  =  block/Iridium
+  circuitBasic  ->  IC2:itemPartCircuit  =  circuit/Basic
+  circuitAdvanced  ->  IC2:itemPartCircuitAdv  =  circuit/Advanced
+  blockPlastic  ->  MineFactoryReloaded:plastic  =  block/Plastic
+  blockSlime  ->  etfuturum:slime  =  block/Slime
+  dyeCeramicWhite  ->  MineFactoryReloaded:ceramicdye  =  dyeCeramic/White
+  dyeCeramicOrange  ->  MineFactoryReloaded:ceramicdye:1  =  dyeCeramic/Orange
+  dyeCeramicMagenta  ->  MineFactoryReloaded:ceramicdye:2  =  dyeCeramic/Magenta
+  dyeCeramicLightBlue  ->  MineFactoryReloaded:ceramicdye:3  =  dyeCeramic/LightBlue
+  dyeCeramicYellow  ->  MineFactoryReloaded:ceramicdye:4  =  dyeCeramic/Yellow
+  dyeCeramicLime  ->  MineFactoryReloaded:ceramicdye:5  =  dyeCeramic/Lime
+  dyeCeramicPink  ->  MineFactoryReloaded:ceramicdye:6  =  dyeCeramic/Pink
+  dyeCeramicGray  ->  MineFactoryReloaded:ceramicdye:7  =  dyeCeramic/Gray
+  dyeCeramicLightGray  ->  MineFactoryReloaded:ceramicdye:8  =  dyeCeramic/LightGray
+  dyeCeramicCyan  ->  MineFactoryReloaded:ceramicdye:9  =  dyeCeramic/Cyan
+  dyeCeramicPurple  ->  MineFactoryReloaded:ceramicdye:10  =  dyeCeramic/Purple
+  dyeCeramicBlue  ->  MineFactoryReloaded:ceramicdye:11  =  dyeCeramic/Blue
+  dyeCeramicBrown  ->  MineFactoryReloaded:ceramicdye:12  =  dyeCeramic/Brown
+  dyeCeramicGreen  ->  MineFactoryReloaded:ceramicdye:13  =  dyeCeramic/Green
+  dyeCeramicRed  ->  MineFactoryReloaded:ceramicdye:14  =  dyeCeramic/Red
+  dyeCeramicBlack  ->  MineFactoryReloaded:ceramicdye:15  =  dyeCeramic/Black
+  bucketRedstone  ->  ThermalFoundation:bucket  =  bucket/Redstone
+  bucketGlowstone  ->  ThermalFoundation:bucket:1  =  bucket/Glowstone
+  bucketEnder  ->  ThermalFoundation:bucket:2  =  bucket/Ender
+  bucketPyrotheum  ->  ThermalFoundation:bucket:3  =  bucket/Pyrotheum
+  bucketCryotheum  ->  ThermalFoundation:bucket:4  =  bucket/Cryotheum
+  bucketAerotheum  ->  ThermalFoundation:bucket:7  =  bucket/Aerotheum
+  bucketPetrotheum  ->  ThermalFoundation:bucket:8  =  bucket/Petrotheum
+  bucketCoal  ->  ThermalFoundation:bucket:6  =  bucket/Coal
+  gearIron  ->  thaumicenergistics:material:2  =  gear/Iron
+  blockInvar  ->  ThermalFoundation:Storage:8  =  block/Invar
+  waferSilicon  ->  advancedRocketry:wafer  =  wafer/Silicon
+  dustThermite  ->  advancedRocketry:item.thermite  =  dust/Thermite
+  oreHeeEndPowder  ->  HardcoreEnderExpansion:end_powder_ore  =  ore/HeeEndPowder
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:1  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:2  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:3  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:4  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:5  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:6  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:7  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:8  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:9  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:10  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:11  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:12  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:13  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:14  =  ore/HeeStardust
+  oreHeeStardust  ->  HardcoreEnderExpansion:stardust_ore:15  =  ore/HeeStardust
+  oreHeeIgneousRock  ->  HardcoreEnderExpansion:igneous_rock_ore  =  ore/HeeIgneousRock
+  oreHeeInstabilityOrb  ->  HardcoreEnderExpansion:instability_orb_ore  =  ore/HeeInstabilityOrb
+  chestWood  ->  ganyssurface:chest0  =  chest/Wood
+  chestWood  ->  ganyssurface:chest1  =  chest/Wood
+  chestWood  ->  ganyssurface:chest2  =  chest/Wood
+  chestWood  ->  ganyssurface:chest3  =  chest/Wood
+  chestWood  ->  ganyssurface:chest4  =  chest/Wood
+  chestWood  ->  ganyssurface:chest5  =  chest/Wood
+  fenceWood  ->  Forestry:fences:32767  =  fence/Wood
+  fenceWood  ->  Forestry:fencesFireproof:32767  =  fence/Wood
+  fenceWood  ->  etfuturum:fence_spruce  =  fence/Wood
+  fenceWood  ->  etfuturum:fence_birch  =  fence/Wood
+  fenceWood  ->  etfuturum:fence_jungle  =  fence/Wood
+  fenceWood  ->  etfuturum:fence_acacia  =  fence/Wood
+  fenceWood  ->  etfuturum:fence_dark_oak  =  fence/Wood
+  fenceWood  ->  etfuturum:wood_fence:3  =  fence/Wood
+  fenceWood  ->  etfuturum:wood_fence:4  =  fence/Wood
+  blockPrismarine  ->  Botania:prismarine:32767  =  block/Prismarine
+  blockPrismarine  ->  VillageNames:prismarine  =  block/Prismarine
+  blockPrismarine  ->  VillageNames:prismarine:32767  =  block/Prismarine
+  blockPrismarine  ->  etfuturum:prismarine_block:32767  =  block/Prismarine
+  blockBlaze  ->  Botania:blazeBlock  =  block/Blaze
+  petalWhite  ->  Botania:petal  =  petal/White
+  petalOrange  ->  Botania:petal:1  =  petal/Orange
+  petalMagenta  ->  Botania:petal:2  =  petal/Magenta
+  petalLightBlue  ->  Botania:petal:3  =  petal/LightBlue
+  petalYellow  ->  Botania:petal:4  =  petal/Yellow
+  petalLime  ->  Botania:petal:5  =  petal/Lime
+  petalPink  ->  Botania:petal:6  =  petal/Pink
+  petalGray  ->  Botania:petal:7  =  petal/Gray
+  petalLightGray  ->  Botania:petal:8  =  petal/LightGray
+  petalCyan  ->  Botania:petal:9  =  petal/Cyan
+  petalPurple  ->  Botania:petal:10  =  petal/Purple
+  petalBlue  ->  Botania:petal:11  =  petal/Blue
+  petalBrown  ->  Botania:petal:12  =  petal/Brown
+  petalGreen  ->  Botania:petal:13  =  petal/Green
+  petalRed  ->  Botania:petal:14  =  petal/Red
+  petalBlack  ->  Botania:petal:15  =  petal/Black
+  shardPrismarine  ->  Botania:manaResource:10  =  shard/Prismarine
+  shardPrismarine  ->  etfuturum:prismarine_shard  =  shard/Prismarine
+  waferBasic  ->  GalacticraftCore:item.basicItem:13  =  wafer/Basic
+  waferAdvanced  ->  GalacticraftCore:item.basicItem:14  =  wafer/Advanced
+  shardTitanium  ->  GalacticraftMars:item.itemBasicAsteroids:4  =  shard/Titanium
+  shardIron  ->  GalacticraftMars:item.itemBasicAsteroids:3  =  shard/Iron
+  blockEndstone  ->  chisel:end_Stone  =  block/Endstone
+  barsIron  ->  EnderIO:blockSoulariumBars  =  bars/Iron
+  barsIron  ->  EnderIO:blockEndSteelBars  =  bars/Iron
+  oreMercury  ->  ExtraPlanets:tile.mercury:6  =  ore/Mercury
+  blockCarbon  ->  ExtraPlanets:tile.venus:7  =  block/Carbon
+  oreRedGem  ->  ExtraPlanets:tile.jupiter:10  =  ore/RedGem
+  oreRedGem  ->  MorePlanet:nibiru_block:8  =  ore/RedGem
+  blockPalladium  ->  ExtraPlanets:tile.jupiter:8  =  block/Palladium
+  blockPalladium  ->  MorePlanet:polongnius_block:12  =  block/Palladium
+  blockRedGem  ->  ExtraPlanets:tile.jupiter:11  =  block/RedGem
+  blockRedGem  ->  MorePlanet:nibiru_block:11  =  block/RedGem
+  blockMagnesium  ->  ExtraPlanets:tile.saturn:7  =  block/Magnesium
+  blockMagnesium  ->  Mariculture:metals:3  =  block/Magnesium
+  oreSlime  ->  ExtraPlanets:tile.saturn:11  =  ore/Slime
+  oreCrystal  ->  ExtraPlanets:tile.uranus:3  =  ore/Crystal
+  oreWhiteGem  ->  ExtraPlanets:tile.uranus:6  =  ore/WhiteGem
+  blockCrystal  ->  ExtraPlanets:tile.uranus:4  =  block/Crystal
+  blockWhiteGem  ->  ExtraPlanets:tile.uranus:7  =  block/WhiteGem
+  oreBlueGem  ->  ExtraPlanets:tile.neptune:9  =  ore/BlueGem
+  blockBlueGem  ->  ExtraPlanets:tile.neptune:10  =  block/BlueGem
+  gemRedGem  ->  ExtraPlanets:tier5Items:8  =  gem/RedGem
+  ingotCrystal  ->  ExtraPlanets:tier7Items:5  =  ingot/Crystal
+  gemWhiteGem  ->  ExtraPlanets:tier7Items:7  =  gem/WhiteGem
+  gemBlueGem  ->  ExtraPlanets:tier8Items:6  =  gem/BlueGem
+  blockRutile  ->  Mariculture:metals:2  =  block/Rutile
+  coralLightBlue  ->  Mariculture:plant_static:4  =  coral/LightBlue
+  coralYellow  ->  Mariculture:plant_static:7  =  coral/Yellow
+  coralMagenta  ->  Mariculture:plant_static:5  =  coral/Magenta
+  coralBrown  ->  Mariculture:plant_static:6  =  coral/Brown
+  coralOrange  ->  Mariculture:plant_static:8  =  coral/Orange
+  coralPink  ->  Mariculture:plant_static:2  =  coral/Pink
+  coralPurple  ->  Mariculture:plant_static:9  =  coral/Purple
+  coralRed  ->  Mariculture:plant_static:3  =  coral/Red
+  coralWhite  ->  Mariculture:plant_static:12  =  coral/White
+  coralGray  ->  Mariculture:plant_static:10  =  coral/Gray
+  coralLightGray  ->  Mariculture:plant_static:11  =  coral/LightGray
+  foodFlour  ->  harvestcraft:flourItem  =  food/Flour
+  flowerRed  ->  minecraft:red_flower  =  flower/Red
+  flowerYellow  ->  minecraft:yellow_flower  =  flower/Yellow
+  foodChili  ->  harvestcraft:chiliItem  =  food/Chili
+  foodTea  ->  harvestcraft:teaItem  =  food/Tea
+  foodCoffee  ->  harvestcraft:coffeeItem  =  food/Coffee
+  foodCurry  ->  harvestcraft:curryItem  =  food/Curry
+  bottleCreosote  ->  Railcraft:fluid.creosote.bottle  =  bottle/Creosote
+  glassReinforced  ->  IC2:blockAlloyGlass  =  glass/Reinforced
+  batteryBasic  ->  IC2:itemBatREDischarged  =  battery/Basic
+  batteryBasic  ->  IC2:itemBatRE:32767  =  battery/Basic
+  batteryAdvanced  ->  IC2:itemAdvBat:32767  =  battery/Advanced
+  oreQuontonium  ->  MorePlanet:diona_block:4  =  ore/Quontonium
+  oreFronisium  ->  MorePlanet:diona_block:5  =  ore/Fronisium
+  blockQuontonium  ->  MorePlanet:diona_block:10  =  block/Quontonium
+  blockFronisium  ->  MorePlanet:fronisium_block  =  block/Fronisium
+  oreFlonium  ->  MorePlanet:polongnius_block:8  =  ore/Flonium
+  blockPurpleCrystal  ->  MorePlanet:polongnius_block:11  =  block/PurpleCrystal
+  oreIchorius  ->  MorePlanet:nibiru_block:4  =  ore/Ichorius
+  oreNorium  ->  MorePlanet:nibiru_block:5  =  ore/Norium
+  blockIchorius  ->  MorePlanet:nibiru_block:9  =  block/Ichorius
+  blockNorium  ->  MorePlanet:nibiru_block:10  =  block/Norium
+  oreWhiteCrystal  ->  MorePlanet:koentus_block:6  =  ore/WhiteCrystal
+  oreBecterialFossil  ->  MorePlanet:koentus_block:8  =  ore/BecterialFossil
+  blockWhiteCrystal  ->  MorePlanet:koentus_block:9  =  block/WhiteCrystal
+  oreNamerium  ->  MorePlanet:kapteyn-b_block:4  =  ore/Namerium
+  blockNamerium  ->  MorePlanet:kapteyn-b_block:11  =  block/Namerium
+  blockFrozenIron  ->  MorePlanet:kapteyn-b_block:12  =  block/FrozenIron
+  oreSiriusGlowstone  ->  MorePlanet:sirius_block:6  =  ore/SiriusGlowstone
+  oreMetalMeteor  ->  MorePlanet:mercury_block:8  =  ore/MetalMeteor
+  oreMetallic  ->  MorePlanet:metallic_rock  =  ore/Metallic
+  blockMetalMeteor  ->  MorePlanet:mercury_block:10  =  block/MetalMeteor
+  oreXeonium  ->  MorePlanet:pluto_block:7  =  ore/Xeonium
+  ingotQuontonium  ->  MorePlanet:diona_item  =  ingot/Quontonium
+  ingotFronisium  ->  MorePlanet:diona_item:1  =  ingot/Fronisium
+  compressedQuontonium  ->  MorePlanet:diona_item:2  =  compressed/Quontonium
+  compressedFronisium  ->  MorePlanet:diona_item:3  =  compressed/Fronisium
+  ingotPolongniusMeteoricIron  ->  MorePlanet:polongnius_item:4  =  ingot/PolongniusMeteoricIron
+  compressedPolongniusMeteoricIron  ->  MorePlanet:polongnius_item:6  =  compressed/PolongniusMeteoricIron
+  ingotNorium  ->  MorePlanet:nibiru_item:1  =  ingot/Norium
+  compressedNorium  ->  MorePlanet:nibiru_item:3  =  compressed/Norium
+  compressedRedGem  ->  MorePlanet:nibiru_item:2  =  compressed/RedGem
+  ingotKoentusMeteoricIron  ->  MorePlanet:koentus_item:4  =  ingot/KoentusMeteoricIron
+  compressedKoentusMeteoricIron  ->  MorePlanet:koentus_item:6  =  compressed/KoentusMeteoricIron
+  compressedWhiteCrystal  ->  MorePlanet:koentus_item:5  =  compressed/WhiteCrystal
+  ingotMetallic  ->  MorePlanet:mercury_item:2  =  ingot/Metallic
+  ingotMetalMeteoricIron  ->  MorePlanet:mercury_item:3  =  ingot/MetalMeteoricIron
+  compressedMetallic  ->  MorePlanet:mercury_item:4  =  compressed/Metallic
+  compressedMetalMeteoricIron  ->  MorePlanet:mercury_item:5  =  compressed/MetalMeteoricIron
+  ingotShadow  ->  TaintedMagic:ItemMaterial  =  ingot/Shadow
+  blockQuicksilver  ->  thaumicbases:quicksilverBlock  =  block/Quicksilver
+  blockQuicksilver  ->  thaumicbases:quicksilverBrick  =  block/Quicksilver
+  blockThauminite  ->  thaumicbases:thauminiteBlock  =  block/Thauminite
+  blockVoidMetal  ->  thaumicbases:voidBlock  =  block/VoidMetal
+  ingotThauminite  ->  thaumicbases:resource:1  =  ingot/Thauminite
+  gearMithrilTofu  ->  TofuFactory:tofuGear:1  =  gear/MithrilTofu
+  dustDiamondTofu  ->  TofuFactory:tofuDust:5  =  dust/DiamondTofu
+  dustMithrilTofu  ->  TofuFactory:tofuDust:1  =  dust/MithrilTofu
+  ingotSol  ->  TofuFactory:tofuIngot:2  =  ingot/Sol
+  ingotLuna  ->  TofuFactory:tofuIngot:3  =  ingot/Luna
+  dustTofuSteel  ->  TofuFactory:tofuDust  =  dust/TofuSteel
+  dustLuna  ->  TofuFactory:tofuDust:3  =  dust/Luna
+  gearTofuSteel  ->  TofuFactory:tofuGear  =  gear/TofuSteel
+  blockUnstable  ->  utilitiesinexcess:inverted_block  =  block/Unstable
+  dustQuartz  ->  ActuallyAdditions:itemDust:5  =  dust/Quartz
+  pearlFluix  ->  appliedenergistics2:item.ItemMultiMaterial:9  =  pearl/Fluix
+  grassSnow  ->  alfheim:SnowGrass  =  grass/Snow
+  oreNifleur  ->  alfheim:NiflheimBlock:2  =  ore/Nifleur
+  blockWoolWhite  ->  minecraft:wool  =  blockWool/White
+  blockWoolOrange  ->  minecraft:wool:1  =  blockWool/Orange
+  blockWoolMagenta  ->  minecraft:wool:2  =  blockWool/Magenta
+  blockWoolLightBlue  ->  minecraft:wool:3  =  blockWool/LightBlue
+  blockWoolYellow  ->  minecraft:wool:4  =  blockWool/Yellow
+  blockWoolLime  ->  minecraft:wool:5  =  blockWool/Lime
+  blockWoolPink  ->  minecraft:wool:6  =  blockWool/Pink
+  blockWoolGray  ->  minecraft:wool:7  =  blockWool/Gray
+  blockWoolLightGray  ->  minecraft:wool:8  =  blockWool/LightGray
+  blockWoolCyan  ->  minecraft:wool:9  =  blockWool/Cyan
+  blockWoolPurple  ->  minecraft:wool:10  =  blockWool/Purple
+  blockWoolBlue  ->  minecraft:wool:11  =  blockWool/Blue
+  blockWoolBrown  ->  minecraft:wool:12  =  blockWool/Brown
+  blockWoolGreen  ->  minecraft:wool:13  =  blockWool/Green
+  blockWoolRed  ->  minecraft:wool:14  =  blockWool/Red
+  blockWoolBlack  ->  minecraft:wool:15  =  blockWool/Black
+  trapdoorWood  ->  ganyssurface:trapdoor1  =  trapdoor/Wood
+  trapdoorWood  ->  ganyssurface:trapdoor2  =  trapdoor/Wood
+  trapdoorWood  ->  ganyssurface:trapdoor3  =  trapdoor/Wood
+  trapdoorWood  ->  ganyssurface:trapdoor4  =  trapdoor/Wood
+  trapdoorWood  ->  ganyssurface:trapdoor5  =  trapdoor/Wood
+  trapdoorWood  ->  etfuturum:trapdoor_spruce  =  trapdoor/Wood
+  trapdoorWood  ->  etfuturum:trapdoor_birch  =  trapdoor/Wood
+  trapdoorWood  ->  etfuturum:trapdoor_jungle  =  trapdoor/Wood
+  trapdoorWood  ->  etfuturum:trapdoor_acacia  =  trapdoor/Wood
+  trapdoorWood  ->  etfuturum:trapdoor_dark_oak  =  trapdoor/Wood
+  trapdoorWood  ->  etfuturum:cherry_trapdoor  =  trapdoor/Wood
+  trapdoorWood  ->  etfuturum:bamboo_trapdoor  =  trapdoor/Wood
+  blockFlint  ->  ganyssurface:storage  =  block/Flint
+  blockTofuDiamond  ->  TofuCraft:blockTofuDiamond  =  block/TofuDiamond
+  oreTofuDiamond  ->  TofuCraft:blockOreTofuDiamond  =  ore/TofuDiamond
+  leavesTofu  ->  TofuCraft:tcLeaves:2  =  leaves/Tofu
+  saplingTofu  ->  TofuCraft:tcSapling:1  =  sapling/Tofu
+  bucketSoySauce  ->  TofuCraft:bucketSoySauce  =  bucket/SoySauce
+  bottleSoySauce  ->  TofuCraft:bottleSoySause:32767  =  bottle/SoySauce
+  foodTofu  ->  TofuCraft:tofuMomen  =  food/Tofu
+  gemAdvTofu  ->  TofuCraft:materials:7  =  gem/AdvTofu
+  oreMithrilTofu  ->  TofuFactory:oreMithrilTofu  =  ore/MithrilTofu
+  dustSol  ->  TofuFactory:tofuDust:2  =  dust/Sol
+  ingotTofuSteel  ->  TofuFactory:tofuIngot  =  ingot/TofuSteel
+  ingotMithrilTofu  ->  TofuFactory:tofuIngot:1  =  ingot/MithrilTofu
+  plateTofuSteel  ->  TofuFactory:tofuPlate  =  plate/TofuSteel
+  plateMithrilTofu  ->  TofuFactory:tofuPlate:1  =  plate/MithrilTofu
+  plateSol  ->  TofuFactory:tofuPlate:2  =  plate/Sol
+  plateLuna  ->  TofuFactory:tofuPlate:3  =  plate/Luna
+  gearSol  ->  TofuFactory:tofuGear:2  =  gear/Sol
+  gearLuna  ->  TofuFactory:tofuGear:3  =  gear/Luna
+  gemEmeraldTofu  ->  TofuFactory:tofuGem  =  gem/EmeraldTofu
+  gemPeridotTofu  ->  TofuFactory:tofuGem:1  =  gem/PeridotTofu
+  gemRubyTofu  ->  TofuFactory:tofuGem:2  =  gem/RubyTofu
+  gemSapphireTofu  ->  TofuFactory:tofuGem:3  =  gem/SapphireTofu
+  gemSugiliteTofu  ->  TofuFactory:tofuGem:4  =  gem/SugiliteTofu
+  gemTopazTofu  ->  TofuFactory:tofuGem:5  =  gem/TopazTofu
+  ringSol  ->  TofuFactory:TofuMaterial:2  =  ring/Sol
+  ringLuna  ->  TofuFactory:TofuMaterial:3  =  ring/Luna
+  crystalPrismarine  ->  etfuturum:prismarine_crystals  =  crystal/Prismarine
+  nuggetQuartz  ->  AgriCraft:nuggetQuartz  =  nugget/Quartz
+  doorWood  ->  etfuturum:door_spruce  =  door/Wood
+  doorWood  ->  etfuturum:door_birch  =  door/Wood
+  doorWood  ->  etfuturum:door_jungle  =  door/Wood
+  doorWood  ->  etfuturum:door_acacia  =  door/Wood
+  doorWood  ->  etfuturum:door_dark_oak  =  door/Wood
+  doorWood  ->  etfuturum:cherry_door  =  door/Wood
+  doorWood  ->  etfuturum:bamboo_door  =  door/Wood
+  trapdoorIron  ->  etfuturum:iron_trapdoor  =  trapdoor/Iron
 
 -- skipped --
+  oreEMP  ->  MorePlanet:koentus_block:7  :  materials.csv skip (More-Planets decoration)
+  blockEMP  ->  MorePlanet:koentus_block:10  :  materials.csv skip (More-Planets decoration)
+  oreMineral  ->  MorePlanet:fronos_block:8  :  materials.csv skip (generic ore name without a material)
+  oreBlackDiamond  ->  MorePlanet:fronos_block:9  :  materials.csv skip (More-Planets decoration)
+  oreJelly  ->  MorePlanet:fronos_ore  :  materials.csv skip (More-Planets decoration)
+  blockBlackDiamond  ->  MorePlanet:fronos_ore_block:1  :  materials.csv skip (More-Planets decoration)
+  oreMeteor  ->  MorePlanet:pluto_block:4  :  materials.csv skip (generic name)
+  oreMeteor  ->  MorePlanet:dark_asteroid_block:6  :  materials.csv skip (generic name)
+  compressedBlackDiamond  ->  MorePlanet:fronos_item:4  :  materials.csv skip (More-Planets decoration)
+  blockTofuMetal  ->  TofuCraft:blockTofuMetal  :  materials.csv skip (TofuCraft food metal)
+  ingotZunda  ->  TofuFactory:zundaIngot  :  materials.csv skip (food)
+  ingotTofuMetal  ->  TofuCraft:tofuMetal  :  materials.csv skip (TofuCraft food metal)
+  rawMutton  ->  harvestcraft:muttonrawItem  :  materials.csv skip (food)
+  oreRawMutton  ->  harvestcraft:muttonrawItem  :  materials.csv skip (food)
+  scrapDebris  ->  etfuturum:netherite_scrap  :  materials.csv skip (etfuturum ancient debris block)
+  oreDebris  ->  etfuturum:ancient_debris  :  materials.csv skip (etfuturum ancient debris block)
 
 -- recipe changes --
 
@@ -40,64 +1572,533 @@ timing.removalPass.ms: 65
 -- notes --
   Recipe.reInit() called - GT6 recipe item index rebuilt after the bindings
   autorules.csv has 9 rule(s) but they are disabled by settings.csv (enableAutoRules=false)
-  removals.csv: [te_furnace] '*:ore*' matched nothing
-  removals.csv: [railcraft_rockcrusher] '*:ore*' matched nothing
-  galacticraft_compressor: dry run not available (no getRecipeList), 0 candidate stack(s) would be tried
-  removals.csv: [galacticraft_compressor] '*:ore*' matched nothing
-  removals.csv: [te_furnace] '*:dust*' matched nothing
+  removals: [te_pulverizer] '*:ore*' matched nothing
+  removals: [te_furnace] '*:ore*' matched nothing
+  removals: [te_sawmill] '*:ore*' matched nothing
+  removals: [actuallyadditions_crusher] '*:ore*' matched nothing
+  removals: [railcraft_rockcrusher] '*:ore*' matched nothing
+  removals: [enderio_sagmill] '*:ore*' matched nothing
+  galacticraft_compressor: dry run not available (no getRecipeList), 6 candidate stack(s) would be tried
+  removals: [galacticraft_compressor] '*:ore*' matched nothing
+  removals: [te_pulverizer] '*:raw*' matched nothing
+  removals: [te_pulverizer] '*:crushed*' matched nothing
+  removals: [te_furnace] '*:dust*' matched nothing
+  removals: [te_smelter] '*:dust*' matched nothing
 
 -- free form --
 
 == runtime link check (do the compile-time stubs match the real classes?) ==
-  vanilla itemstack : false
-  vanilla registry  : false
-  vanilla crafting  : false
-  vanilla furnace   : false
+  vanilla itemstack : true
+  vanilla registry  : true
+  vanilla crafting  : true
+  vanilla furnace   : true
   forge ore dict    : true
   FML loader        : true
   FML log           : true
-  missing links     : 24
+  missing links     : 0
 
 == GT6 API diagnostics ==
   OreDictManager.INSTANCE reachable : true
   GT6 prefixes                      : 468
   GT6 materials (MATERIAL_MAP)      : 2313
-  forge ore dictionary names        : 301028
+  forge ore dictionary names        : 300955
+  OM.get(ingot, Fe, 1)              : minecraft:iron_ingot
+  OM.get(dust,  Fe, 1)              : gregtech:gt.meta.dust:260
+  OM.get(plate, Cu, 1)              : Railcraft:part.plate:3
+  MATERIAL_MAP.get("Iron")          : Iron
+  OreDictMaterial.get("Iron")       : Iron
+  prefix lookup "ingot"/"dustSmall": ingot / dustSmall
+  data of GT iron ingot             : ingot/Iron validData=true
+  RM recipe maps                    : 88
+
+== GT6 recipe map names (for recipes.csv) ==
+  Anvil  AnvilBendBig  AnvilBendSmall  Assembler  Autoclave  Autocrafter  Bath  BedrockOreList  BlastFurnace  Boxinator  BumbleQueens  Bumblelyzer  BurnMixer  ByProductList  CNC  Calciner  Canner  CatalyticCracking  Centrifuge  Chisel  ClusterMill  Coagulator  CokeOven  Compressor  Cooking  CrucibleAlloying  CrucibleSmelting  Crusher  CryoDistillationTower  CryoMixer  CrystallisationCrucible  Cutter  Debarker  DidYouKnow  DistillationTower  Distillery  Drying  Electrolyzer  Extruder  Fermenter  Freezer  Furnace  Fusion  Generifier  Hammer  HeatMixer  ImplosionCompressor  Injector  Juicer  Laminator  LaserEngraver  Lathe  Lightning  Loom  MagneticSeparator  Massfab  Melter  Microwave  Mixer  Mortar  Nanofab  Other  Plantalyzer  Polarizer  Press  PressureWasher  Printer  Replicator  Roasting  RollBender  RollFormer  RollingMill  ScannerMolecular  ScannerVisuals  Sharpening  Shredder  Sifting  Slicer  Sluice  Smelter  Squeezer  SteamCracking  ToolHeads  Trees  Unboxinator  VacuumFreezer  Welder  Wiremill  
+  map Crusher     : recipes=462
+  map Mortar      : recipes=1146
+  map Shredder    : recipes=1001
+  map Smelter     : recipes=22816
+  map Mixer       : recipes=72433
+  map Centrifuge  : recipes=1492
+  map Electrolyzer: recipes=293
+  map Compressor  : recipes=624
+  map Hammer      : recipes=462
+  map Bath        : recipes=12397
+  map Generifier  : recipes=1600
+  map Wiremill    : recipes=15
+  maps with dynamic handlers        : 28 [Anvil, AnvilBendBig, AnvilBendSmall, Autoclave, Bath, Boxinator, ClusterMill, Compressor, Crusher, Cutter, Extruder, Freezer, Generifier, Lathe, Loom, Mortar, Polarizer, Press, RollBender, RollFormer, RollingMill, Sharpening, Shredder, Sifting, Sluice, Unboxinator, Welder, Wiremill]
+
+== GT6 ore dictionary prefixes (name / items / materials) ==
+  Compressed             items=0       materials=0
+  alloy                  items=0       materials=0
+  armor                  items=0       materials=0
+  armorBoots             items=0       materials=0
+  armorChestplate        items=0       materials=0
+  armorHelmet            items=0       materials=0
+  armorLeggings          items=0       materials=0
+  arrow                  items=0       materials=0
+  arrowGtPlastic         items=1       materials=675
+  arrowGtWood            items=1       materials=675
+  bamboo                 items=2       materials=0
+  bar                    items=4       materials=0
+  bars                   items=4       materials=1
+  battery                items=3       materials=2
+  batterySingleuse       items=0       materials=0
+  bauble                 items=0       materials=0
+  beach                  items=0       materials=0
+  beam                   items=241     materials=1
+  beans                  items=1       materials=1
+  bee                    items=113     materials=0
+  berrybush              items=0       materials=0
+  billet                 items=1       materials=623
+  bit                    items=0       materials=0
+  blade                  items=0       materials=0
+  block                  items=791     materials=434
+  blockBamboo            items=0       materials=0
+  blockDust              items=33      materials=1355
+  blockGem               items=62      materials=284
+  blockGlass             items=30      materials=16
+  blockIngot             items=84      materials=623
+  blockOre               items=0       materials=0
+  blockPlate             items=1       materials=822
+  blockPlateGem          items=1       materials=265
+  blockRaw               items=18      materials=788
+  blockSolid             items=33      materials=657
+  blockWool              items=1       materials=16
+  block_                 items=0       materials=0
+  bolt                   items=1       materials=1027
+  book                   items=33      materials=1
+  bottle                 items=34      materials=27
+  boule                  items=2       materials=1
+  bouleGt                items=1       materials=22
+  bowl                   items=1       materials=1
+  brick                  items=5       materials=1
+  bucket                 items=18      materials=13
+  bud                    items=0       materials=0
+  bulletGtLarge          items=1       materials=1038
+  bulletGtMedium         items=1       materials=1038
+  bulletGtSmall          items=1       materials=1038
+  cable                  items=4       materials=0
+  cableGt01              items=31      materials=45
+  cableGt02              items=28      materials=42
+  cableGt04              items=28      materials=42
+  cableGt08              items=28      materials=42
+  cableGt12              items=28      materials=42
+  cactus                 items=0       materials=0
+  capcellcon             items=40      materials=68
+  capsule                items=0       materials=0
+  casingMachine          items=1       materials=285
+  casingMachineDense     items=1       materials=285
+  casingMachineDouble    items=1       materials=285
+  casingMachineQuadruple items=1       materials=285
+  casingSmall            items=8       materials=723
+  cell                   items=7       materials=8
+  chain                  items=1       materials=723
+  chemtube               items=1       materials=2055
+  chest                  items=12      materials=1
+  chipset                items=0       materials=0
+  chunk                  items=0       materials=0
+  chunkGt                items=1       materials=623
+  circuit                items=11      materials=9
+  cleanGravel            items=0       materials=0
+  cloth                  items=1       materials=0
+  clump                  items=0       materials=0
+  cluster                items=8       materials=15
+  cobblestone            items=0       materials=0
+  coin                   items=0       materials=0
+  component              items=0       materials=0
+  compressed             items=37      materials=51
+  compressedCobblestone  items=9       materials=0
+  compressedDirt         items=9       materials=0
+  compressedGravel       items=9       materials=0
+  compressedSand         items=9       materials=0
+  compressedStone        items=0       materials=0
+  computer               items=0       materials=0
+  cones                  items=0       materials=0
+  consumable             items=0       materials=0
+  cooking                items=2       materials=1
+  coral                  items=11      materials=11
+  craft                  items=0       materials=0
+  crafting               items=283     materials=2
+  craftingTool           items=91      materials=0
+  crateGt64Dust          items=1       materials=1355
+  crateGt64Gem           items=1       materials=281
+  crateGt64Ingot         items=1       materials=623
+  crateGt64Ore           items=0       materials=0
+  crateGt64Plate         items=1       materials=822
+  crateGt64PlateGem      items=1       materials=265
+  crateGt64Raw           items=1       materials=788
+  crateGtDust            items=1       materials=1355
+  crateGtGem             items=1       materials=281
+  crateGtIngot           items=1       materials=623
+  crateGtOre             items=0       materials=0
+  crateGtPlate           items=1       materials=822
+  crateGtPlateGem        items=1       materials=265
+  crateGtRaw             items=1       materials=788
+  crop                   items=290     materials=22
+  crushed                items=9       materials=769
+  crushedCentrifuged     items=1       materials=768
+  crushedCentrifugedTiny items=1       materials=768
+  crushedPurified        items=8       materials=769
+  crushedPurifiedTiny    items=1       materials=768
+  crushedTiny            items=1       materials=768
+  crystal                items=7       materials=10
+  crystalPure            items=1       materials=3
+  crystalline            items=0       materials=0
+  denseore               items=0       materials=0
+  desert                 items=0       materials=0
+  dinosaur               items=0       materials=0
+  dirt                   items=2       materials=0
+  dirtyGravel            items=0       materials=0
+  door                   items=9       materials=2
+  drop                   items=6       materials=2
+  dust                   items=147     materials=1363
+  dustDirty              items=0       materials=0
+  dustDiv72              items=1       materials=1355
+  dustImpure             items=1       materials=0
+  dustPure               items=0       materials=0
+  dustRefined            items=0       materials=0
+  dustSmall              items=22      materials=1355
+  dustTiny               items=17      materials=1355
+  dye                    items=148     materials=16
+  dyeCeramic             items=16      materials=16
+  dyeMixable             items=99      materials=16
+  element                items=0       materials=0
+  elven                  items=3       materials=0
+  epiphyte               items=0       materials=0
+  essence                items=2       materials=0
+  fabric                 items=0       materials=0
+  fence                  items=18      materials=1
+  fern                   items=0       materials=0
+  fertilizer             items=6       materials=1
+  floating               items=0       materials=0
+  flower                 items=21      materials=2
+  foil                   items=1       materials=703
+  food                   items=1002    materials=12
+  forest                 items=0       materials=0
+  frame                  items=0       materials=0
+  frameGt                items=0       materials=0
+  fuel                   items=4       materials=1
+  fungus                 items=0       materials=0
+  ganys                  items=0       materials=0
+  gate                   items=0       materials=0
+  gear                   items=254     materials=32
+  gearGt                 items=5       materials=723
+  gearGtSmall            items=1       materials=723
+  gem                    items=87      materials=297
+  gemChipped             items=4       materials=155
+  gemExquisite           items=3       materials=144
+  gemFlawed              items=3       materials=152
+  gemFlawless            items=3       materials=144
+  gemLegendary           items=3       materials=144
+  gemOre                 items=0       materials=0
+  gemPolished            items=0       materials=0
+  gemRaw                 items=0       materials=0
+  gemUncut               items=0       materials=0
+  glass                  items=39      materials=1
+  glowstone              items=3       materials=0
+  grafter                items=0       materials=0
+  grass                  items=2       materials=1
+  gravel                 items=3       materials=0
+  ground                 items=0       materials=0
+  handle                 items=0       materials=0
+  hanging                items=0       materials=0
+  head                   items=0       materials=0
+  immersed               items=0       materials=0
+  ingot                  items=157     materials=654
+  ingotDouble            items=2       materials=552
+  ingotHot               items=1       materials=367
+  ingotQuad              items=0       materials=0
+  ingotQuadruple         items=1       materials=552
+  ingotQuintuple         items=1       materials=552
+  ingotTriple            items=1       materials=552
+  item                   items=1538    materials=23
+  itemDust               items=0       materials=0
+  item_                  items=0       materials=0
+  jungle                 items=0       materials=0
+  junk                   items=0       materials=0
+  ladder                 items=0       materials=0
+  lamp                   items=0       materials=0
+  leaf                   items=0       materials=0
+  leafy                  items=0       materials=0
+  leaves                 items=0       materials=0
+  lens                   items=1       materials=159
+  liquid                 items=0       materials=0
+  list                   items=1011    materials=0
+  log                    items=205     materials=2
+  lumar                  items=0       materials=0
+  lump                   items=0       materials=0
+  mana                   items=4       materials=1
+  material               items=39      materials=3
+  mffs                   items=0       materials=0
+  minecartWheels         items=1       materials=285
+  molecule               items=0       materials=0
+  motor                  items=0       materials=0
+  mountain               items=0       materials=0
+  mushroom               items=2       materials=0
+  mystic                 items=34      materials=0
+  nugget                 items=73      materials=630
+  obsidian               items=6       materials=0
+  ocean                  items=0       materials=0
+  orb                    items=0       materials=0
+  ore                    items=19835   materials=273
+  oreAndesite            items=6       materials=788
+  oreBasalt              items=9       materials=788
+  oreBedrock             items=1       materials=788
+  oreBetweenstone        items=6       materials=788
+  oreBlackgranite        items=2       materials=788
+  oreBlackstone          items=0       materials=0
+  oreBlueschist          items=2       materials=788
+  oreCallisto            items=2       materials=788
+  oreCeres               items=2       materials=788
+  oreDarkprismarine      items=2       materials=788
+  oreDeadrock            items=0       materials=0
+  oreDeepslate           items=43      materials=811
+  oreDeimos              items=2       materials=788
+  oreDense               items=22      materials=28
+  oreDiorite             items=6       materials=788
+  oreEnd                 items=140     materials=3
+  oreEndstone            items=6       materials=788
+  oreEris                items=2       materials=788
+  oreEuropa              items=2       materials=788
+  oreGanymede            items=2       materials=788
+  oreGem                 items=0       materials=0
+  oreGneiss              items=0       materials=0
+  oreGravel              items=1       materials=788
+  oreGrayschist          items=0       materials=0
+  oreGreenschist         items=2       materials=788
+  oreHolystone           items=0       materials=0
+  oreIapetus             items=2       materials=788
+  oreIo                  items=2       materials=788
+  oreJupiter             items=2       materials=788
+  oreKepler22b           items=2       materials=788
+  oreKimberlite          items=2       materials=788
+  oreKomatiite           items=2       materials=788
+  oreLightprismarine     items=2       materials=788
+  oreLimestone           items=15      materials=788
+  oreLivingrock          items=7       materials=788
+  oreMarble              items=6       materials=788
+  oreMars                items=4       materials=788
+  oreMercury             items=2       materials=788
+  oreMoon                items=139     materials=789
+  oreMud                 items=4       materials=788
+  oreNeptune             items=2       materials=788
+  oreNether              items=0       materials=0
+  oreNetherrack          items=6       materials=788
+  oreNormal              items=0       materials=0
+  oreOberon              items=2       materials=788
+  orePhobos              items=2       materials=788
+  orePinkschist          items=0       materials=0
+  orePitstone            items=4       materials=788
+  orePluto               items=2       materials=788
+  orePoor                items=5       materials=8
+  oreQuartzite           items=2       materials=788
+  oreRaw                 items=20      materials=790
+  oreRedSand             items=1       materials=788
+  oreRedgranite          items=2       materials=788
+  oreRhea                items=2       materials=788
+  oreRich                items=0       materials=0
+  oreSand                items=1       materials=788
+  oreSandstone           items=3       materials=788
+  oreSaturn              items=2       materials=788
+  oreShale               items=4       materials=788
+  oreSiltstone           items=2       materials=788
+  oreSlate               items=2       materials=788
+  oreSmall               items=164     materials=788
+  oreSpace               items=6       materials=788
+  oreStrangesand         items=1       materials=788
+  oreTitan               items=9       materials=790
+  oreTitania             items=2       materials=788
+  oreTriton              items=2       materials=788
+  oreUmberstone          items=0       materials=0
+  oreUranus              items=2       materials=788
+  oreVanillagranite      items=6       materials=788
+  oreVanillastone        items=262     materials=788
+  oreVenus               items=2       materials=788
+  oreberry               items=0       materials=0
+  orebush                items=0       materials=0
+  paneGlass              items=14      materials=16
+  panel                  items=0       materials=0
+  paper                  items=4       materials=1
+  part                   items=0       materials=0
+  pearl                  items=4       materials=3
+  pebbles                items=0       materials=0
+  pellet                 items=0       materials=0
+  petal                  items=18      materials=16
+  pipe                   items=0       materials=0
+  pipeHuge               items=61      materials=98
+  pipeLarge              items=61      materials=98
+  pipeMedium             items=61      materials=98
+  pipeNonuple            items=40      materials=72
+  pipeQuadruple          items=40      materials=72
+  pipeRestrictiveHuge    items=21      materials=26
+  pipeRestrictiveLarge   items=21      materials=26
+  pipeRestrictiveMedium  items=21      materials=26
+  pipeRestrictiveSmall   items=0       materials=0
+  pipeRestrictiveTiny    items=0       materials=0
+  pipeSmall              items=40      materials=72
+  pipeTiny               items=40      materials=72
+  plains                 items=0       materials=0
+  plank                  items=197     materials=12
+  plant                  items=1       materials=0
+  plantGtBerry           items=1       materials=1455
+  plantGtBlossom         items=1       materials=1455
+  plantGtFiber           items=1       materials=1455
+  plantGtTwig            items=1       materials=1455
+  plantGtWart            items=1       materials=1455
+  plasma                 items=0       materials=0
+  plate                  items=52      materials=716
+  plateCurved            items=1       materials=822
+  plateDense             items=10      materials=554
+  plateDouble            items=1       materials=551
+  plateGem               items=3       materials=265
+  plateGemTiny           items=1       materials=265
+  plateQuad              items=0       materials=0
+  plateQuadruple         items=1       materials=551
+  plateQuintuple         items=1       materials=551
+  plateSteamcraft        items=0       materials=0
+  plateTiny              items=1       materials=823
+  plateTriple            items=1       materials=551
+  plating                items=0       materials=0
+  pole                   items=0       materials=0
+  powder                 items=2       materials=1
+  projred                items=0       materials=0
+  pulp                   items=0       materials=0
+  quartz                 items=8       materials=3
+  railGt                 items=1       materials=49
+  raw                    items=0       materials=0
+  rawOreChunk            items=0       materials=0
+  reactor                items=0       materials=0
+  record                 items=38      materials=0
+  reduced                items=0       materials=0
+  reed                   items=0       materials=0
+  ring                   items=10      materials=725
+  river                  items=0       materials=0
+  rock                   items=0       materials=0
+  rockGt                 items=1       materials=871
+  rod                    items=1       materials=1
+  rotor                  items=1       materials=723
+  round                  items=1       materials=974
+  rubble                 items=0       materials=0
+  rune                   items=19      materials=0
+  sand                   items=7       materials=0
+  sapling                items=0       materials=0
+  savanna                items=0       materials=0
+  scoop                  items=0       materials=0
+  scrap                  items=1       materials=0
+  scrapGt                items=1       materials=1368
+  scraps                 items=0       materials=0
+  screw                  items=1       materials=1027
+  seed                   items=136     materials=12
+  shard                  items=5       materials=3
+  shears                 items=0       materials=0
+  sheet                  items=10      materials=9
+  sheetDouble            items=0       materials=0
+  sheetGt                items=7       materials=14
+  shrub                  items=0       materials=0
+  skull                  items=0       materials=0
+  slab                   items=264     materials=5
+  soulsand               items=1       materials=0
+  spring                 items=1       materials=576
+  springSmall            items=1       materials=576
+  stainedClay            items=16      materials=16
+  stainedGlass           items=32      materials=16
+  stair                  items=65      materials=1
+  stick                  items=30      materials=1025
+  stickLong              items=1       materials=1027
+  stone                  items=368     materials=60
+  stoneBrick             items=0       materials=0
+  stoneBricks            items=176     materials=18
+  stoneBricksMossy       items=0       materials=0
+  stoneChiseled          items=22      materials=17
+  stoneCobble            items=48      materials=17
+  stoneCracked           items=18      materials=17
+  stoneMossy             items=36      materials=17
+  stoneMossyBricks       items=18      materials=0
+  stonePolished          items=25      materials=17
+  stoneSmooth            items=22      materials=17
+  stonebrick             items=0       materials=0
+  storage                items=0       materials=0
+  tiny                   items=553     materials=630
+  tome                   items=0       materials=0
+  tool                   items=14      materials=0
+  toolAxe                items=0       materials=0
+  toolHeadArrow          items=1       materials=674
+  toolHeadAxe            items=1       materials=682
+  toolHeadAxeDouble      items=1       materials=421
+  toolHeadBuilderwand    items=1       materials=421
+  toolHeadBuzzSaw        items=1       materials=421
+  toolHeadChainsaw       items=1       materials=422
+  toolHeadChisel         items=1       materials=421
+  toolHeadConstructionPickaxe items=1       materials=421
+  toolHeadDrill          items=1       materials=422
+  toolHeadFile           items=1       materials=421
+  toolHeadHammer         items=1       materials=671
+  toolHeadHoe            items=1       materials=682
+  toolHeadPickaxe        items=1       materials=682
+  toolHeadPickaxeGem     items=1       materials=130
+  toolHeadPlow           items=1       materials=682
+  toolHeadRawArrow       items=1       materials=674
+  toolHeadRawAxe         items=1       materials=682
+  toolHeadRawAxeDouble   items=1       materials=421
+  toolHeadRawChisel      items=1       materials=421
+  toolHeadRawHoe         items=1       materials=682
+  toolHeadRawPickaxe     items=1       materials=682
+  toolHeadRawPlow        items=1       materials=682
+  toolHeadRawSaw         items=1       materials=421
+  toolHeadRawSense       items=1       materials=682
+  toolHeadRawShovel      items=1       materials=682
+  toolHeadRawSpade       items=1       materials=682
+  toolHeadRawSword       items=1       materials=682
+  toolHeadRawUniversalSpade items=1       materials=421
+  toolHeadSaw            items=1       materials=421
+  toolHeadScrewdriver    items=1       materials=421
+  toolHeadSense          items=1       materials=682
+  toolHeadShovel         items=1       materials=682
+  toolHeadSpade          items=1       materials=682
+  toolHeadSword          items=1       materials=682
+  toolHeadUniversalSpade items=1       materials=421
+  toolHeadWrench         items=1       materials=422
+  toolHoe                items=0       materials=0
+  toolPickaxe            items=0       materials=0
+  toolShears             items=0       materials=0
+  toolShovel             items=0       materials=0
+  toolSword              items=0       materials=0
+  torch                  items=1       materials=0
+  trapdoor               items=14      materials=2
+  travelgear             items=0       materials=0
+  tree                   items=0       materials=0
+  treeLeaves             items=75      materials=2
+  treeSapling            items=95      materials=1
+  tube                   items=0       materials=0
+  turbine                items=0       materials=0
+  vine                   items=0       materials=0
+  wafer                  items=5       materials=3
+  wall                   items=0       materials=0
+  water                  items=0       materials=0
+  wax                    items=4       materials=0
+  wetlands               items=0       materials=0
+  wire                   items=8       materials=6
+  wireFine               items=1       materials=307
+  wireGt01               items=33      materials=49
+  wireGt02               items=30      materials=46
+  wireGt03               items=30      materials=46
+  wireGt04               items=30      materials=46
+  wireGt05               items=30      materials=46
+  wireGt06               items=30      materials=46
+  wireGt07               items=30      materials=46
+  wireGt08               items=30      materials=46
+  wireGt09               items=30      materials=46
+  wireGt10               items=30      materials=46
+  wireGt11               items=30      materials=46
+  wireGt12               items=30      materials=46
+  wireGt13               items=30      materials=46
+  wireGt14               items=30      materials=46
+  wireGt15               items=30      materials=46
+  wireGt16               items=30      materials=46
+  wood                   items=723     materials=1
+  known material list written          : materials-known.txt (2313 names)
 
 -- errors --
-  link check: ItemStack.getItem() -> method not found
-  link check: ItemStack.getItemDamage() -> method not found
-  link check: ItemStack.copy() -> method not found
-  link check: Item.itemRegistry -> field not found
-  link check: RegistryNamespaced.getNameForObject(Object) -> method not found
-  link check: RegistryNamespaced.getObject(String) -> method not found
-  link check: RegistryNamespaced.getKeys() -> method not found
-  link check: CraftingManager.getInstance() -> method not found
-  link check: CraftingManager.getRecipeList() -> method not found
-  link check: IRecipe.getRecipeOutput() -> method not found
-  link check: FurnaceRecipes.smelting() -> method not found
-  link check: FurnaceRecipes.getSmeltingList() -> method not found
-  link check: ItemStack.getItem() -> method not found
-  link check: ItemStack.getItemDamage() -> method not found
-  link check: ItemStack.copy() -> method not found
-  link check: Item.itemRegistry -> field not found
-  link check: RegistryNamespaced.getNameForObject(Object) -> method not found
-  link check: RegistryNamespaced.getObject(String) -> method not found
-  link check: RegistryNamespaced.getKeys() -> method not found
-  link check: CraftingManager.getInstance() -> method not found
-  link check: CraftingManager.getRecipeList() -> method not found
-  link check: IRecipe.getRecipeOutput() -> method not found
-  link check: FurnaceRecipes.smelting() -> method not found
-  link check: FurnaceRecipes.getSmeltingList() -> method not found
-  diagnostics crashed: java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
-  material pass crashed: java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
-  removal backend te_pulverizer failed on '*:ore*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
-  removal backend te_sawmill failed on '*:ore*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
   unknown removal backend 'ic2_macerator' (known: [crafting, furnace, te_pulverizer, te_furnace, te_sawmill, te_crucible, te_charger, te_smelter, te_insolator, te_precipitator, te_extruder, galacticraft_compressor, galacticraft_circuitfabricator, ic2, actuallyadditions_crusher, ae2_inscriber, railcraft_rockcrusher, railcraft_cokeoven, railcraft_blastfurnace, railcraft_rolling, enderio_sagmill, enderio_alloy, enderio_slicensplice, enderio_vat, enderio_soulbinder])
-  removal backend actuallyadditions_crusher failed on '*:ore*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
-  removal backend enderio_sagmill failed on '*:ore*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
-  removal backend te_pulverizer failed on '*:raw*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
-  removal backend te_pulverizer failed on '*:crushed*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
   unknown removal backend 'ic2_macerator' (known: [crafting, furnace, te_pulverizer, te_furnace, te_sawmill, te_crucible, te_charger, te_smelter, te_insolator, te_precipitator, te_extruder, galacticraft_compressor, galacticraft_circuitfabricator, ic2, actuallyadditions_crusher, ae2_inscriber, railcraft_rockcrusher, railcraft_cokeoven, railcraft_blastfurnace, railcraft_rolling, enderio_sagmill, enderio_alloy, enderio_slicensplice, enderio_vat, enderio_soulbinder])
-  removal backend te_smelter failed on '*:dust*': java.lang.NoSuchMethodError: net.minecraft.item.ItemStack.getItem()Lnet/minecraft/item/Item;
   unknown removal backend 'ic2_compressor' (known: [crafting, furnace, te_pulverizer, te_furnace, te_sawmill, te_crucible, te_charger, te_smelter, te_insolator, te_precipitator, te_extruder, galacticraft_compressor, galacticraft_circuitfabricator, ic2, actuallyadditions_crusher, ae2_inscriber, railcraft_rockcrusher, railcraft_cokeoven, railcraft_blastfurnace, railcraft_rolling, enderio_sagmill, enderio_alloy, enderio_slicensplice, enderio_vat, enderio_soulbinder])

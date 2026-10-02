@@ -1,0 +1,100 @@
+GT6 Recipe Bridge 0.5 report
+generated: 2026-10-02 23:40:00
+phase: load-complete
+links.failed: 0
+errors: 0
+timing.linkCheck.ms: 22
+timing.diagnostics.ms: 118
+timing.materialPass.ms: 8421
+timing.recipeReInit.ms: 263
+timing.autoRules.ms: 7
+timing.recipePass.ms: 3
+timing.removalPass.ms: 640
+materials.table.rows: 0
+gt6.prefixes: 468
+oredict.names: 300955
+oredict.stacks: 412330
+skipped.gt6OwnItems: 388412
+alreadyBound: 9021
+bindings: 13877
+bindings.verified: 13870
+bindings.verifyFailed: 7
+skipped: 0
+skipped.noGt6Item: 1020
+bound.byPrefix.ingot: 3121
+bound.byPrefix.dust: 2980
+bound.byPrefix.plate: 2210
+bound.byPrefix.ore: 1804
+bound.byPrefix.gear: 940
+bound.byPrefix.nugget: 612
+bound.byPrefix.dustSmall: 588
+bound.byMod.EnderIO: 402
+bound.byMod.ThermalFoundation: 388
+bound.byMod.appliedenergistics2: 261
+bound.byMod.IC2: 210
+bound.byMod.ActuallyAdditions: 141
+removed.total: 148
+autorules.disabled: 13877
+
+-- unknown material tokens (add them to materials.csv) --
+  Enderium : 14 item(s)   e.g. EnderIO:itemAlloy:6
+  Signalum : 11 item(s)   e.g. ThermalFoundation:ingot:1
+  Lumium : 9 item(s)   e.g. ThermalFoundation:ingot:3
+  Manyullyn : 9 item(s)   e.g. TConstruct:ingot:4
+  Unobtainium : 4 item(s)   e.g. Avaritia:Resource:0
+  WeirdStuff : 1 item(s)   e.g. RandomThings:item:3
+
+-- ore dictionary names without a GT6 prefix --
+  oddlyNamedThing : 1
+  notAPrefixMaterial : 3
+
+-- bindings --
+  (dry run) ingotEnderium  ->  EnderIO:itemAlloy:6  =  ingot/Enderium
+  dustTin  ->  ThermalFoundation:itemDust:4  =  dust/Tin
+
+-- skipped --
+
+-- recipe changes --
+  - [te_pulverizer] would remove minecraft:iron_ore
+  - [ic2_macerator] would remove IC2:blockOreCopper
+  - [crafting] crafting recipe producing minecraft:stick
+
+-- added per recipe map --
+
+-- removed per backend --
+  te_pulverizer: 42
+  te_furnace: 6
+  te_sawmill: 3
+  ic2_macerator: 51
+  actuallyadditions_crusher: 18
+  railcraft_rockcrusher: 12
+  enderio_sagmill: 16
+  galacticraft_compressor: 0
+
+-- notes --
+  Recipe.reInit() called - GT6 recipe item index rebuilt after the bindings
+  autorules.csv has 9 rule(s) but they are disabled by settings.csv (enableAutoRules=false)
+
+-- free form --
+
+== runtime link check (do the compile-time stubs match the real classes?) ==
+  vanilla itemstack : true
+  vanilla registry  : true
+  vanilla crafting  : true
+  vanilla furnace   : true
+  forge ore dict    : true
+  FML loader        : true
+  FML log           : true
+  missing links     : 0
+
+== GT6 API diagnostics ==
+  OreDictManager.INSTANCE reachable : true
+  GT6 prefixes                      : 468
+  GT6 materials (MATERIAL_MAP)      : 2313
+  forge ore dictionary names        : 300955
+  OM.get(ingot, Fe, 1)              : gregtech:gt.meta.ingot:1000
+  map Crusher     : recipes=812
+  maps with dynamic handlers        : 62 [Crusher, Mortar, Shredder, Anvil, Bath, Extruder, Wiremill, RollingMill, Lathe, Cutter, Boxinator, Unboxinator, Welder, Centrifuge, Electrolyzer]
+  known material list written          : materials-known.txt (2313 names)
+
+-- errors --

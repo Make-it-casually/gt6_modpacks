@@ -1,0 +1,418 @@
+﻿bottleSoySauce
+compressedBlackDiamond
+compressedFronisium
+compressedKoentusMeteoricIron
+compressedMetalMeteoricIron
+compressedMetallic
+compressedNorium
+compressedPolongniusMeteoricIron
+compressedQuontonium
+compressedRedGem
+compressedWhiteCrystal
+dustDiamondTofu
+dustLuna
+dustMithrilTofu
+dustSol
+dustThermite
+dustTofuSteel
+gemAdvTofu
+gemBlueGem
+gemEmeraldTofu
+gemPeridotTofu
+gemRedGem
+gemRubyTofu
+gemSapphireTofu
+gemSugiliteTofu
+gemTopazTofu
+gemWhiteGem
+ingotAdaminite
+ingotAdamintite
+ingotFronisium
+ingotGoldBrass
+ingotInverted
+ingotKoentusMeteoricIron
+ingotLuna
+ingotMetalMeteoricIron
+ingotMetallic
+ingotMithrilTofu
+ingotMithrillium
+ingotNorium
+ingotPolongniusMeteoricIron
+ingotQuontonium
+ingotShadow
+ingotSol
+ingotThauminite
+ingotTofuMetal
+ingotTofuSteel
+ingotZunda
+nuggetInverted
+oreAmberAlfheim
+oreBecterialFossil
+oreBlackDiamond
+oreBlueGem
+oreCinnabarAlfheim
+oreCobaltum
+oreDebris
+oreDeepslateVanillastoneAmber
+oreDeepslateVanillastoneAnySapphire
+oreDeepslateVanillastoneAnySiliconDioxide
+oreDeepslateVanillastoneAnyThaumicCrystal
+oreDeepslateVanillastoneCertusQuartz
+oreDeepslateVanillastoneChargedCertusQuartz
+oreDeepslateVanillastoneCinnabar
+oreDeepslateVanillastoneDraconium
+oreDeepslateVanillastoneInfusedAir
+oreDeepslateVanillastoneInfusedEarth
+oreDeepslateVanillastoneInfusedEntropy
+oreDeepslateVanillastoneInfusedFire
+oreDeepslateVanillastoneInfusedOrder
+oreDeepslateVanillastoneInfusedWater
+oreDeepslateVanillastoneMalachite
+oreDeepslateVanillastoneOlivine
+oreDeepslateVanillastonePeridot
+oreDeepslateVanillastoneQuartz
+oreDeepslateVanillastoneRuby
+oreDeepslateVanillastoneSaphire
+oreDeepslateVanillastoneSapphire
+oreDeepslateVanillastoneTanzanite
+oreDeepslateVanillastoneTopaz
+oreDragonstone
+oreEMP
+oreFlonium
+oreFronisium
+oreGoldAlfheim
+oreIchorius
+oreInfusedAirAlfheim
+oreInfusedEarthAlfheim
+oreInfusedEntropyAlfheim
+oreInfusedFireAlfheim
+oreInfusedOrderAlfheim
+oreInfusedWaterAlfheim
+oreJelly
+oreLapisAlfheim
+oreMetalMeteor
+oreMetallic
+oreMeteor
+oreMineral
+oreMithrilTofu
+oreNamerium
+oreNifleur
+oreNorium
+orePurpleCrystal
+oreQuartzElven
+oreQuontonium
+oreRawCalamari
+oreRawMutton
+oreRedGem
+oreSiriusGlowstone
+oreSlime
+oreTitanium
+oreTitaniumIron
+oreTofuDiamond
+oreWhiteCrystal
+oreWhiteGem
+oreXeonium
+plateLuna
+plateMithrilTofu
+plateSol
+plateTofuSteel
+ringLuna
+ringSol
+Outputting Colors of unknown Materials
+Ium  -  RGB: 139, 124, 134  -  粗钛; 
+PeridotTofu  -  RGB: 26, 149, 86  -  橄榄石豆腐; 
+Fronisium  -  RGB: 176, 176, 176  -  方尼斯锭; 
+Fronisium  -  RGB: 220, 220, 220  -  致密方尼斯板; 
+Luna  -  RGB: 157, 132, 5  -  月之锭; 
+Luna  -  RGB: 174, 146, 6  -  月之粉; 
+Luna  -  RGB: 164, 142, 0  -  月之环; 
+Luna  -  RGB: 160, 134, 6  -  月之齿轮; 
+Luna  -  RGB: 168, 154, 7  -  月之板; 
+MithrilTofu  -  RGB: 194, 194, 194  -  秘银豆腐锭; 
+MithrilTofu  -  RGB: 212, 212, 212  -  秘银豆腐粉; 
+MithrilTofu  -  RGB: 196, 196, 196  -  秘银豆腐齿轮; 
+MithrilTofu  -  RGB: 209, 209, 209  -  秘银豆腐板; 
+DiamondTofu  -  RGB: 187, 225, 246  -  钻石豆腐粉; 
+Quontonium  -  RGB: 106, 106, 199  -  昆顿锭; 
+Quontonium  -  RGB: 131, 131, 227  -  致密昆顿板; 
+Metallic  -  RGB: 97, 97, 97  -  金属锭; 
+Metallic  -  RGB: 89, 89, 89  -  致密金属板; 
+Dark  -  RGB: 22, 20, 19  -  烟熏石英; 
+TopazTofu  -  RGB: 111, 97, 26  -  黄宝石豆腐; 
+BlackDiamond  -  RGB: 32, 32, 32  -  致密黑钻板; 
+MetalMeteoricIron  -  RGB: 66, 66, 66  -  金属陨铁锭; 
+MetalMeteoricIron  -  RGB: 59, 59, 59  -  致密金属陨铁板; 
+AdvTofu  -  RGB: 250, 177, 117  -  強化豆腐宝石; 
+RedGem  -  RGB: 190, 93, 70  -  红色宝石; 
+RedGem  -  RGB: 183, 0, 0  -  致密红宝石板; 
+SugiliteTofu  -  RGB: 111, 88, 164  -  杉石豆腐; 
+Sol  -  RGB: 217, 110, 57  -  日之粉; 
+Sol  -  RGB: 207, 95, 40  -  日之锭; 
+Sol  -  RGB: 226, 102, 40  -  日之环; 
+Sol  -  RGB: 241, 117, 64  -  日之板; 
+Sol  -  RGB: 210, 98, 43  -  日之齿轮; 
+Poison  -  RGB: 84, 47, 19  -  木桶; 
+Poison  -  RGB: 136, 105, 138  -  毒液瓶; 
+Poison  -  RGB: 61, 45, 35  -  木桶; 
+Poison  -  RGB: 49, 37, 22  -  木桶; 
+Poison  -  RGB: 84, 49, 22  -  木桶; 
+Poison  -  RGB: 44, 90, 34  -  剧毒药水; 
+Poison  -  RGB: 44, 90, 34  -  剧毒药水; 
+Poison  -  RGB: 44, 90, 34  -  剧毒药水; 
+Poison  -  RGB: 46, 84, 31  -  喷溅型 剧毒药水; 
+Poison  -  RGB: 46, 84, 31  -  喷溅型 剧毒药水; 
+Poison  -  RGB: 46, 84, 31  -  喷溅型 剧毒药水; 
+Poison  -  RGB: 79, 50, 40  -  木桶; 
+Poison  -  RGB: 53, 27, 24  -  木桶; 
+Poison  -  RGB: 78, 39, 18  -  木桶; 
+Poison  -  RGB: 86, 57, 32  -  木桶; 
+Poison  -  RGB: 75, 52, 42  -  木桶; 
+Poison  -  RGB: 38, 64, 20  -  滞留型 剧毒药水; 
+Poison  -  RGB: 38, 64, 20  -  滞留型 剧毒药水; 
+Poison  -  RGB: 38, 64, 20  -  滞留型 剧毒药水; 
+Blood  -  RGB: 168, 105, 102  -  鲜血瓶; 
+WhiteGem  -  RGB: 171, 171, 171  -  白色宝石; 
+Shadow  -  RGB: 13, 10, 26  -  暗影锭; 
+Norium  -  RGB: 101, 136, 176  -  稀土锭; 
+Norium  -  RGB: 144, 175, 213  -  致密稀土板; 
+KoentusMeteoricIron  -  RGB: 2, 64, 157  -  致密卡恩塔斯陨铁板; 
+KoentusMeteoricIron  -  RGB: 58, 100, 164  -  卡恩塔斯陨铁锭; 
+Tar  -  RGB: 57, 57, 57  -  焦油瓶; 
+Tar  -  RGB: 19, 19, 19  -  Tar Drip; 
+Tar  -  RGB: 47, 52, 23  -  Weedwood Tar Bucket; 
+Adaminite  -  RGB: 128, 26, 31  -  §cAdaminite Ingot; 
+Coral  -  RGB: 44, 111, 121  -  Deep Water Coral; 
+Coral  -  RGB: 204, 123, 49  -  Mire Coral; 
+Mutton  -  RGB: 172, 101, 89  -  Raw Mutton; 
+TofuMetal  -  RGB: 209, 218, 222  -  钢豆腐; 
+RubyTofu  -  RGB: 176, 29, 26  -  红宝石豆腐; 
+Thermite  -  RGB: 149, 134, 117  -  铝热剂; 
+PolongniusMeteoricIron  -  RGB: 224, 168, 0  -  致密奶酪星陨铁板; 
+PolongniusMeteoricIron  -  RGB: 219, 179, 58  -  奶酪星陨铁锭; 
+Zunda  -  RGB: 124, 158, 62  -  毛豆泥锭; 
+Thauminite  -  RGB: 97, 104, 191  -  Thauminite Ingot; 
+Soymilk  -  RGB: 141, 152, 157  -  豆奶; 
+SoySauce  -  RGB: 38, 24, 6  -  醤油瓶; 
+WhiteCrystal  -  RGB: 205, 235, 235  -  致密白水晶板; 
+BlueGem  -  RGB: 71, 166, 189  -  蓝色宝石; 
+Inverted  -  RGB: 163, 179, 182  -  Stable Inverted Nugget; 
+Calamari  -  RGB: 118, 117, 134  -  Raw Calamari; 
+Adamintite  -  RGB: 128, 26, 31  -  §cAdaminite Ingot; 
+Mithrillium  -  RGB: 25, 169, 219  -  §3Mithrillium Ingot; 
+SapphireTofu  -  RGB: 41, 74, 115  -  蓝宝石豆腐; 
+TofuSteel  -  RGB: 146, 178, 190  -  钢豆腐粉; 
+TofuSteel  -  RGB: 71, 120, 148  -  钢豆腐锭; 
+TofuSteel  -  RGB: 73, 125, 154  -  钢豆腐板; 
+TofuSteel  -  RGB: 53, 99, 125  -  钢豆腐齿轮; 
+GoldBrass  -  RGB: 230, 193, 66  -  金锭; 
+Osmonium  -  RGB: 79, 105, 140  -  锇蓝草种子; 
+EmeraldTofu  -  RGB: 31, 84, 51  -  绿宝石豆腐; 
+Outputting Unknown OreDict Names
+EnchantedGreatwood
+EnchantedSilverwood
+TTTBurger
+activatedHellTofu
+activatedTofuGem
+advTofuGem
+anyCertusCrystal
+apricot
+apricotSeed
+bedWood
+blackDiamond
+boatChestWood
+boatWood
+candy
+candyCane
+capacitorAdvanced
+capacitorBasic
+capacitorCrystalline
+capacitorEnder
+capacitorMelodic
+capacitorStellar
+capacitorTotemic
+cheeseSandstone
+chikuwa
+chipDiamond
+clayHardened
+coalFlame
+coilAluminum
+coilCopper
+coilGold
+coilIridium
+coilTitanium
+cookie
+dashi
+defattingPotion
+doubanjiang
+edamame
+edamameBoiled
+endstone
+fanSteel
+filterCloth
+fronosSandstone
+furFenrir
+gelatin
+glotek
+goheimochi
+hamburg
+hempcretesand
+holyPendant
+inari
+irisDirt
+irisDirtAurora
+irisDirtBlack
+irisDirtBlue
+irisDirtBrown
+irisDirtCyan
+irisDirtGray
+irisDirtGreen
+irisDirtLightBlue
+irisDirtLightGray
+irisDirtLime
+irisDirtMagenta
+irisDirtOrange
+irisDirtPink
+irisDirtPurple
+irisDirtRainbow
+irisDirtRed
+irisDirtWhite
+irisDirtYellow
+irisLeaves
+irisLeavesAurora
+irisLeavesBlack
+irisLeavesBlue
+irisLeavesBrown
+irisLeavesCyan
+irisLeavesGray
+irisLeavesGreen
+irisLeavesLightBlue
+irisLeavesLightGray
+irisLeavesLime
+irisLeavesMagenta
+irisLeavesOrange
+irisLeavesPink
+irisLeavesPurple
+irisLeavesRainbow
+irisLeavesRed
+irisLeavesWhite
+irisLeavesYellow
+irisWood
+irisWoodAurora
+irisWoodBlack
+irisWoodBlue
+irisWoodBrown
+irisWoodCyan
+irisWoodGray
+irisWoodGreen
+irisWoodLightBlue
+irisWoodLightGray
+irisWoodLime
+irisWoodMagenta
+irisWoodOrange
+irisWoodPink
+irisWoodPurple
+irisWoodRainbow
+irisWoodRed
+irisWoodWhite
+irisWoodYellow
+kinako
+kinakoMochi
+kouji
+kyoninso
+leek
+melonSalt
+mincedPotato
+miso
+misoSoup
+morijio
+mossyCobblestone
+natto
+neonite
+niflStone
+nigari
+oage
+okara
+okaraStick
+onigiri
+onigiriMiso
+onigiriSalt
+onigiriSoySauce
+overchargeIngredient_
+overchargeIngredient_aer_big
+overchargeIngredient_aer_small
+overchargeIngredient_all_small
+overchargeIngredient_aqua_big
+overchargeIngredient_aqua_small
+overchargeIngredient_ignis_big
+overchargeIngredient_ignis_small
+overchargeIngredient_ordo_big
+overchargeIngredient_ordo_small
+overchargeIngredient_perditio_big
+overchargeIngredient_perditio_small
+overchargeIngredient_terra_big
+overchargeIngredient_terra_small
+ramenNoodles
+rollingPin
+salt
+sapphire
+sesame
+signWood
+somenTsuyuBowl
+soulSoil
+soupStock
+soyOil
+soybeans
+soybeansHell
+soybeansParched
+splinterNetherwood
+splinterThunderwood
+sprouts
+starch
+strawberryJam
+tfCapacitor
+tfCircuitBoard
+tfCoil
+tfOscillator
+tofuAnnin
+tofuChikuwa
+tofuCookie
+tofuDiamond
+tofuDiamondNugget
+tofuDried
+tofuEgg
+tofuFried
+tofuFriedPouch
+tofuGem
+tofuGlow
+tofuGrilled
+tofuHamburg
+tofuHamburgRaw
+tofuHell
+tofuIshi
+tofuMetal
+tofuMinced
+tofuMiso
+tofuMomen
+tofuScoop
+tofuSesame
+tofuSomen
+tofuSteak
+tofuStrawberry
+tofuZunda
+tofufishCooked
+tofufishRaw
+turfMoon
+twigDreamwoodInfused
+twigNetherwood
+twigThunderwood
+udonNoodles
+uranium
+vegetableLeek
+voidBlock
+whiteSandstone
+yuba
+zunda
+zundaArrow
+zundaBow
+zundaMochi
+zundama

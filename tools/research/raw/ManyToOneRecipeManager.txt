@@ -1,0 +1,19 @@
+Compiled from "ManyToOneRecipeManager.java"
+public class crazypants.enderio.machine.recipe.ManyToOneRecipeManager {
+  private final java.util.List<crazypants.enderio.machine.recipe.IManyToOneRecipe> recipes;
+  private final java.lang.String coreFileName;
+  private final java.lang.String customFileName;
+  private final java.lang.String managerName;
+  public crazypants.enderio.machine.recipe.ManyToOneRecipeManager(java.lang.String, java.lang.String, java.lang.String);
+  public void loadRecipesFromConfig();
+  protected crazypants.enderio.machine.recipe.CustomTagHandler createCustomTagHandler();
+  public void addCustomRecipes(java.lang.String);
+  public java.util.List<crazypants.enderio.machine.recipe.IManyToOneRecipe> getRecipes();
+  private void processConfig(crazypants.enderio.machine.recipe.RecipeConfig);
+  public void addRecipe(crazypants.enderio.machine.recipe.IManyToOneRecipe);
+  private crazypants.enderio.machine.recipe.IRecipe getRecipeForInputs(java.util.List<net.minecraft.item.ItemStack>);
+  public crazypants.enderio.machine.recipe.IRecipe getRecipeForInputs(crazypants.enderio.machine.MachineRecipeInput[]);
+  public boolean isValidInput(crazypants.enderio.machine.MachineRecipeInput);
+  public boolean isValidRecipeComponents(net.minecraft.item.ItemStack[]);
+  public float getExperianceForOutput(net.minecraft.item.ItemStack);
+}

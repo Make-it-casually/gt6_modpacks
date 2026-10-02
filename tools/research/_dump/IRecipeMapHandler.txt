@@ -1,0 +1,20 @@
+﻿Compiled from "IRecipeMapHandler.java"
+public interface gregapi.recipes.IRecipeMapHandler {
+  public abstract boolean addRecipesUsing(gregapi.recipes.Recipe$RecipeMap, boolean, net.minecraft.item.ItemStack, gregapi.oredict.OreDictItemData);
+
+  public abstract boolean addRecipesUsing(gregapi.recipes.Recipe$RecipeMap, boolean, net.minecraftforge.fluids.Fluid);
+
+  public abstract boolean addRecipesProducing(gregapi.recipes.Recipe$RecipeMap, boolean, net.minecraft.item.ItemStack, gregapi.oredict.OreDictItemData);
+
+  public abstract boolean addRecipesProducing(gregapi.recipes.Recipe$RecipeMap, boolean, net.minecraftforge.fluids.Fluid);
+
+  public abstract boolean containsInput(gregapi.recipes.Recipe$RecipeMap, net.minecraft.item.ItemStack, gregapi.oredict.OreDictItemData);
+
+  public abstract boolean containsInput(gregapi.recipes.Recipe$RecipeMap, net.minecraftforge.fluids.Fluid);
+
+  public abstract boolean addAllRecipes(gregapi.recipes.Recipe$RecipeMap);
+
+  public abstract boolean isDone();
+
+  public abstract boolean onAddedToMap(gregapi.recipes.Recipe$RecipeMap);
+}

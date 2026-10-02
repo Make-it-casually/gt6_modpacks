@@ -1,0 +1,1 @@
+Do not replace these files with resoruce-pack specific files. They are duplicated from vanilla here for readability of the PRC's GUI.

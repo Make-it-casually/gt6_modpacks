@@ -1,0 +1,19 @@
+[
+{
+  "modid": "EnderIO",
+  "name": "Ender IO",
+  "description": "Compact conduits, painted things and access to your stuff through an eye of ender.",
+  "version": "2.10.48",
+  "mcversion": "1.7.10",
+  "url": "http://enderio.com",
+  "updateUrl": "",
+  "authorList": [ "CrazyPants", "tterrag" ],
+  "credits": "By CrazyPants, with the help of many",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

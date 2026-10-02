@@ -1,0 +1,29 @@
+﻿# gt6bridge switches (key,value)
+#   enableMaterialBinding : bind foreign ore dictionary items to GT6 materials (default true)
+#   bindOnlyWithGt6Item   : only bind when GT6 also has an item for that prefix+material (default true)
+#                           GT6 refuses to re-bind stacks that already carry data, and materials it
+#                           auto-created for unknown names are tagged invalid - this keeps us on real ones
+#   enableMaterialCreation: create GT6 materials for materials.csv "create:" rows during PreInit (default true)
+#   dryRun                : analyse and report, but change nothing at all (default false)
+#   removalDryRun         : removals.csv only counts and reports what it would delete (default true)
+#   bindLimit             : stop the material pass after N bindings, 0 = no limit (default 0)
+#   scanBudgetMs          : stop the ore dictionary scan after N ms, 0 = no limit (default 20000)
+#                           the pack registers ~300k ore dictionary names, so a budget is wise
+#   skipMods              : never bind items of these mod ids, comma separated (default empty)
+#   skipItems             : never bind these items - selectors like "*:itemAlloy:6" or "EnderIO:*"
+#   onlyPrefixes          : bind only these ore dictionary prefixes, e.g. "ingot,dust,plate,gear"
+#                           (empty = all of GT6's 450+ prefixes; use this to keep the first run small)
+#   logEveryBinding       : also print every binding to the game log (default false)
+#   enableAutoRules       : generate recipes from autorules.csv (default false)
+enableMaterialBinding,true
+bindOnlyWithGt6Item,true
+enableMaterialCreation,true
+dryRun,true
+removalDryRun,true
+bindLimit,0
+scanBudgetMs,20000
+skipMods,
+skipItems,
+onlyPrefixes,
+logEveryBinding,false
+enableAutoRules,false

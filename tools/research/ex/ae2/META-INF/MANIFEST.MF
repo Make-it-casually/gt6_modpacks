@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+FMLCorePluginContainsFMLMod: true
+FMLAT: appeng_at.cfg
+FMLCorePlugin: appeng.transformer.AppEngCore
+

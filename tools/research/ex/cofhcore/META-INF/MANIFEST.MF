@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+FMLCorePluginContainsFMLMod: true
+Created-By: 1.8.0_25-b17 (Oracle Corporation)
+FMLCorePlugin: cofh.asm.LoadingPlugin
+

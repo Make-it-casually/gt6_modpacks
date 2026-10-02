@@ -1,0 +1,883 @@
+# Configuration file
+
+general {
+    # Set this to false if you are skipping whole day while sleeping
+    B:alfheimSleepExtraCheck=true
+
+    # Time limit for client to send authentication credentials
+    I:authTimeout=200
+
+    # Set this to true to allow any player to bypass barrier trees
+    B:barrierTreeAllowAnyPlayer=false
+
+    # Rate of black loti dropping from Manaseal Creepers
+    D:blackLotusDropRate=0.05
+
+    # Average ticks between cataclysms
+    I:cataclysmCooldown=600
+
+    # Dimension ID for Helheim
+    I:dimensionIDHelheim=-103
+
+    # Set this to true to completely disable mob shedding from Botania
+    B:disableShedding=false
+
+    # Set this to false to disable screen overlay for effects like heat/cold
+    B:effectScreenOverlay=true
+
+    # Map of OreDict name to ore weight (more weight - more chace to spawn) for Orechid Endium
+    S:enderOreWeights <
+        oreEndCoal:9000
+        oreEndDiamond:500
+        oreEndEmerald:500
+        oreEndGold:3635
+        oreEndIron:5790
+        oreEndLapis:3250
+        oreEndRedstone:5600
+        oreDraconium:200
+     >
+
+    # Set this to false to disable event banner popup
+    B:eventBanner=true
+
+    # Set this to false to locally disable fancies rendering on you (for contributors only)
+    B:fancies=true
+
+    # Persistence for Fault Lines (lower value - smaller faults)
+    I:faultLinePersistence=3000
+
+    # Flag ID for sheep to be rainbow colored
+    I:flagIdSheepRainbow=31
+
+    # List of collidable blocks floating islands won't collide with
+    S:floatingIslandNoCollisionBlocks <
+        Natura:Cloud
+     >
+
+    # Set this to false to disable entity's pathfinding on floating islands. This will make them stand still on islands, but will also lower the server load
+    B:floatingIslandPathfinder=true
+
+    # Increase that limit ONLY if you have mods that extend DataWatcher IDs and want really large floating island
+    I:floatingIslandSyncedDataInitLimit=31
+
+    # Determines floodlight raycasting steps (lower values - more quality and CPU load). Must be an integer divisor of 360
+    I:floodLightQuality=10
+
+    # High overheat value would mess your controls if set to 2, only on Hard difficulty if set to 1, would not mess completely if set to 0
+    I:hotControls=2
+
+    # Set this to true to disable hardcoded world destruction during Ragnarok and affect ONLY Alfheim
+    B:imPatheticWeakAndScaredDontTouchMyWorlds=false
+
+    # Distance checks when firing interaction events, results may be unclear
+    B:interactEventChecks=false
+
+    # Set this to false to forbid subspacian sending eater to other dimension
+    B:interdimensionalSubspacian=true
+
+    # Set this to true to sort Alfheim lexicon entries to vanilla categories
+    B:lexiconSort=false
+
+    # How many ticks it takes between two lightings are spawned in Lightning Anomaly render
+    I:lightningsSpeed=20
+
+    # Set this to false to make seasons last 1 real day instead of 3
+    B:longSeasons=true
+
+    # Set this to true to disable .obj models and shaders
+    B:minimalGraphics=false
+
+    # Array of mob names to the list of their elements
+    S:mobElements <
+        Blaze:FIRE
+        EnderDragon:DARKNESS
+        Enderman:DARKNESS
+        Ghast:AIR,PSYCHIC
+        LavaSlime:FIRE,EARTH
+        MushroomCow:NATURE
+        SnowMan:ICE
+        Slime:NATURE,WATER
+        VillagerGolem:EARTH
+        WitherBoss:DARKNESS
+        Thaumcraft.EldritchCrab:DARKNESS
+        Thaumcraft.EldritchGolem:EARTH
+        Thaumcraft.EldritchGuardian:DARKNESS,PSYCHIC
+        Thaumcraft.EldritchWarden:DARKNESS,PSYCHIC
+        Thaumcraft.Firebat:FIRE
+        Thaumcraft.MindSpider:PSYCHIC
+        Thaumcraft.ThaumSlime:WATER,DARKNESS
+        ThermalFoundation.Blizz:ICE
+        ThermalFoundation.Blitz:ELECTRIC
+        ThermalFoundation.Basalz:EARTH
+     >
+
+    # Set this to false so that only players can be priests
+    B:mobPriests=true
+
+    # Set this to false to disable new storage blocks textures
+    B:newStorageTexture=true
+
+    # Set this to false to disable custom notifications and version check
+    B:notifications=true
+
+    # Set this to false to disable numerical mana representation
+    B:numericalMana=true
+
+    # Change this if you are getting crash 'Duplicate id value for ...' from DataWatcher
+    I:oiiaId=2
+
+    # Set this to true to make Rod of the Thundering Peaks summon real (weather) lightning
+    B:realLightning=false
+
+    # Blacklist for relics protection [modid:name]
+    S:relicsProtectionBlackList <
+     >
+
+    # Set this to false to disable ESM booba render
+    B:renderBooba=true
+
+    # Chance for Fire Of Eternity to replace regular fire when placed in Muspelheim (x5 for worlgen)
+    I:replaceHellFireChance=5
+
+    # Rocket ride [-1 - not players, 0 - none, 1 - players, 2 - anyone]
+    I:rocketRide=2
+
+    # Which schemas are allowed to be generated
+    I:schemaArray <
+        -1
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        11
+        12
+        13
+        14
+        15
+     >
+
+    # Max schema cuboid side length
+    I:schemaMaxSize=64
+
+    # Set this to false to disable searchbar in Alfheim Tab
+    B:searchTabAlfheim=true
+
+    # Set this to false to disable searchbar in Botania Tab
+    B:searchTabBotania=true
+
+    # Shedded items lifespan in ticks
+    I:shedLifespan=1200
+
+    # Number of lines for story token
+    I:storyLines=4
+
+    # If true, Timeless Ivy won't allow item to break if you have enough mana (instead of post-regen it)
+    B:timelessProtection=true
+
+    # Allow WireSegal far more power than any one person should have
+    B:wire.overpowered=true
+
+    # List of world destruction types during Ragnarok in form of string 'dimID:type' (types: 0 - none, 1 - only while ginnungagap, 2 - all)
+    S:worldDestroyConfig <
+     >
+
+    ##########################################################################################################
+    # balance
+    #--------------------------------------------------------------------------------------------------------#
+    # Balance settings
+    ##########################################################################################################
+
+    balance {
+        # Percent of floating islands blocks to be dropped on destruction (0 - none, 0.5 - 50%, 1 - 100%)
+        D:floatingIslandDrops=0.01
+
+        # Difficulty of Gourmaryllis functionality: 0 - default, 1 - as in 1.12.2, 2 - hardcore
+        I:gourmaryllisDifficulty=2
+
+        # Average delay between kudzu brood ticks, higher values reduces server load
+        I:kudzuDelay=20
+
+        # Blacklist of ore dictionary names kudzu won't drop (MineTweaker can add new oredict names to items)
+        S:kudzuDropBlacklist <
+            ingotInfernoDiamond
+         >
+
+        # Set this to true to make kudzu drop eaten blocks
+        B:kudzuDropBlocks=false
+
+        # Set this to false to make kudzu spread in air
+        B:kudzuEasy=true
+
+        # Chance of kudzu vine mutating on spread
+        I:kudzuMutatability=5
+
+        # Max spread radius for kudzu vine
+        I:kudzuRadius=127
+
+        # Set this to true to make loonium spawn overgrowth seeds (for servers with limited dungeons so all players can craft Gaia pylons)
+        B:looniumOverseed=false
+
+        # Mace additional damage from fall distance modifier
+        D:maceModifier=0.5
+
+        # Max base damage for Phoebus Catastrophe
+        I:moonbowMaxDmg=20
+
+        # Phoebus Catastrophe charge speed
+        D:moonbowVelocity=0.5
+
+        # Set this to false to make mounts summonable only in Alfheim
+        B:mountAlfheimOnly=false
+
+        # How much mana mount consumes on summoning (not teleporting)
+        I:mountCost=1000
+
+        # Are mounts available at all
+        B:mountEnabled=true
+
+        # How many ticks mount can stay unmounted
+        I:mountLife=600
+
+        # Blacklist for Ring of Elven King [modid:name]
+        S:multibaubleBlacklist <
+         >
+
+        # How many bauble box slots will be activated by Ring of Elven King
+        I:multibaubleCount=6
+
+        # Rattlerose game update speed (one time per N ticks). Set to 0 to switch to manual control
+        I:rattleroseSpeed=20
+
+        # Blacklist of repairable items (ex: for anyavil) [modid:name]
+        S:repairBlackList <
+         >
+
+        # Sword of Ragnarok max level
+        I:soulSwordMaxLvl=2147483647
+
+        # Mauftrium Spreader max mana cap
+        I:spreaderCapacityMauf=24000
+
+        # Mauftrium Spreader mana per shot
+        I:spreaderSpeedMauf=2400
+
+        # Portal updates every [N] ticks
+        I:tradePortalRate=1200
+
+        # Blacklist for blocks that triquetrum can't swap [modid:name]
+        S:triquetrumBlackList <
+         >
+
+        # Mana usage for triquetrum, 1st is for tiles, 2nd for regular blocks
+        I:triquetrumManaUsage <
+            100
+            60
+         >
+
+        # Change this to limit triquetrum volume of operation
+        I:triquetrumMaxVolume=400000
+
+        # Set this to false to forbid triquetrum to move tiles
+        B:triquetrumTiles=true
+
+        # Set this to false to nerf blasters
+        B:uberBlaster=true
+
+        # Minimal delay from yggdrasil fruit to appear (max delay will be x3 more)
+        I:yggdrasilFruitMinSpawnDelay=1728000
+    }
+
+    ##########################################################################################################
+    # alfheim
+    #--------------------------------------------------------------------------------------------------------#
+    # Alfheim dimension settings
+    ##########################################################################################################
+
+    alfheim {
+        # Dimension ID for Alfheim
+        I:dimensionIDAlfheim=-105
+
+        # Set this to false to disable respawning in Alfheim
+        B:enableAlfheimRespawn=true
+
+        # Max count of floating islands in world
+        I:floatingIslandCountMax=50
+
+        # Max count of floating islands per player in world
+        I:floatingIslandCountPerPlayer=5
+
+        # Set this to true to teleport near existing active loaded portal when leaving Alfheim instead of world spawn
+        B:grabMidgardPortal=false
+
+        # Set this to false to reduce nighttime spirits spawn range in Alfheim (may increase FPS)
+        B:increasedSpiritsRange=true
+
+        # Set this to true to remove dimensional teleportation restrictions for default mode
+        B:overrideDimensionalRestrictions=false
+
+        # How smooth will rainbow and rays in Alfheim sky be (higher number - more polygons)
+        I:rainbowPolys=360
+
+        # Affects nighttime spirits spawn count in Alfheim
+        D:spiritsCountMultiplier=0.5
+
+        ##########################################################################################################
+        # worldgen
+        #--------------------------------------------------------------------------------------------------------#
+        # Alfheim worldgen settings
+        ##########################################################################################################
+
+        worldgen {
+            # How rare anomalies are (one per N chunks)
+            I:anomaliesDispersion=50
+
+            # How many times anomaly will simulate tick while being generated
+            I:anomaliesUpdate=6000
+
+            # Distance between any elven city and worlds center
+            I:citiesDistance=1000
+
+            # Multiplier for Alfheim oregen
+            I:oregenMultiplier=3
+
+            # Set this to false to prevent ready generation snow grass instead of regular
+            B:winterGrassReadyGen=true
+
+            ##########################################################################################################
+            # entities
+            #--------------------------------------------------------------------------------------------------------#
+            # Alfheim entities settings
+            ##########################################################################################################
+
+            entities {
+                # Butterfly max count per player, min and max group count
+                I:butterflySpawn <
+                    10
+                    1
+                    2
+                 >
+
+                # Chicken max count per player, min and max group count
+                I:chickSpawn <
+                    10
+                    4
+                    4
+                 >
+
+                # Cows max count per player, min and max group count
+                I:cowSpawn <
+                    8
+                    4
+                    4
+                 >
+
+                # Additional chunks for if-no-player-nearby despawning
+                I:despawnChunks=2
+
+                # Elves max count per player, min and max group count
+                I:elvesSpawn <
+                    10
+                    2
+                    4
+                 >
+
+                # Jellyfish max count per player, min and max group count
+                I:jellySpawn <
+                    10
+                    4
+                    4
+                 >
+
+                # Max distance in chunks from player at which mobs can spawn
+                I:maxChunks=6
+
+                # Min distance in chunks from player at which mobs can spawn
+                I:minChunks=1
+
+                # Pig max count per player, min and max group count
+                I:pigSpawn <
+                    10
+                    4
+                    4
+                 >
+
+                # Pixie max count per player, min and max group count
+                I:pixieSpawn <
+                    10
+                    1
+                    2
+                 >
+
+                # Distance in chunks for players to be considered as player group (for mob spawning balance)
+                I:playerGroupDistance=6
+
+                # Sheep max count per player, min and max group count
+                I:sheepSpawn <
+                    12
+                    4
+                    4
+                 >
+
+                # Set this to false to remove Twilight Forest mobs from Alfheim spawn
+                B:tfMobs=true
+            }
+
+        }
+
+    }
+
+    ##########################################################################################################
+    # niflheim
+    #--------------------------------------------------------------------------------------------------------#
+    # Niflheim dimension settings
+    ##########################################################################################################
+
+    niflheim {
+        # Dimension ID for Niflheim
+        I:dimensionIDNiflheim=-106
+
+        # Set this to false to disable respawning in Niflheim
+        B:enableNiflheimRespawn=true
+
+        # List of Niflheim biome IDs
+        I:niflheimBiomeIDs <
+            41
+            42
+            43
+         >
+
+        worldgen {
+
+            entities {
+                # Frozen Vikings max count per player, min and max group count
+                I:vikingSpawn <
+                    100
+                    4
+                    4
+                 >
+            }
+
+        }
+
+    }
+
+    ##########################################################################################################
+    # temperature
+    #--------------------------------------------------------------------------------------------------------#
+    # Temperature settings
+    ##########################################################################################################
+
+    temperature {
+        # List of cold biomes where sheer cold will be accumulating
+        I:biomesCold <
+         >
+
+        # List of dimension IDs where 'biomesCold' won't trigger sheer cold accumulation
+        I:biomesColdDimBlacklist <
+         >
+
+        # List of hot biomes where blazing heat will be accumulating
+        I:biomesHot <
+            8
+         >
+
+        # List of dimension IDs where 'biomesHot' won't trigger blazing heat accumulation
+        I:biomesHotDimBlacklist <
+         >
+
+        # Sheer cold additional damage
+        D:damageAddCold=0.15
+
+        # Blazing heat additional damage
+        D:damageAddHot=0.15
+
+        # Sheer cold damage scale of max HP
+        D:damageModCold=0.01
+
+        # Blazing heat damage scale of max HP
+        D:damageModHot=0.03
+
+        # List of entity names immune to power of Niflheim
+        S:mobBlacklistCold <
+            SnowMan
+         >
+
+        # List of entity names immune to power of Muspelheim
+        S:mobBlacklistHot <
+            Blaze
+            Ghast
+            LavaSlime
+            PigZombie
+            WitherBoss
+         >
+
+        # Set this to false to completely disable mobs getting overcold and overheat effects (may break some mechanics)
+        B:mobTemperature=true
+    }
+
+    ##########################################################################################################
+    # potions
+    #--------------------------------------------------------------------------------------------------------#
+    # Potion IDs
+    ##########################################################################################################
+
+    potions {
+        # Potion id Beast Within
+        I:potionIDBeastWithin=30
+
+        # Potion id for Beer
+        I:potionIDBeer=31
+
+        # Potion id for Berserk
+        I:potionIDBerserk=32
+
+        # Potion id for Bleeding
+        I:potionIDBleeding=33
+
+        # Potion id for Champagne
+        I:potionIDChampagne=35
+
+        # Potion id for Eternity
+        I:potionIDEternity=39
+
+        # Potion id for Ice Lens
+        I:potionIDIceLens=42
+
+        # Potion id for Lightning Shield
+        I:potionIDLightningShield=44
+
+        # Potion id for Mana Void
+        I:potionIDManaVoid=45
+
+        # Potion id for Ninja
+        I:potionIDNinja=47
+
+        # Potion id for Overcold (only for visual information, set to -1 to disable)
+        I:potionIDOvercold=49
+
+        # Potion id for Overheat (only for visual information, set to -1 to disable)
+        I:potionIDOverheat=50
+
+        # Potion id for Overmage
+        I:potionIDOvermage=51
+
+        # Potion id for Possession
+        I:potionIDPossession=52
+
+        # Potion id for Soulburn
+        I:potionIDSoulburn=57
+
+        # Potion id for Tank
+        I:potionIDTank=59
+
+        # Potion id for White Wine
+        I:potionIDWhiteWine=66
+
+        # Potion id for Wisdom
+        I:potionIDWisdom=67
+
+        # Potion id for Barrier Berry
+        I:potionIDWtfBerry0=68
+
+        # Potion id for Redstone Berry
+        I:potionIDWtfBerry2=69
+
+        # Potion id for Lightning Berry
+        I:potionIDWtfBerry3=70
+
+        # Potion id for Nether Berry
+        I:potionIDWtfBerry4=71
+
+        # Potion id for Sealing Berry
+        I:potionIDWtfBerry5=72
+    }
+
+    ##########################################################################################################
+    # integration
+    #--------------------------------------------------------------------------------------------------------#
+    # Cross-mods and modpacks integration
+    ##########################################################################################################
+
+    integration {
+        # Chat limiters for formtatting special chat lines when using chat plugins
+        S:chatLimiters=%s
+
+        # Fabulous manapool capacity (for custom modpacks with A LOT of mana usage. Can be applied only to NEW pools)
+        I:poolRainbowCapacity=1000000
+
+        ##########################################################################################################
+        # thaumcraft
+        #--------------------------------------------------------------------------------------------------------#
+        # Thaumcraft integration
+        ##########################################################################################################
+
+        thaumcraft {
+            # Set this to false to disable adding aspects to Botania
+            B:TC.botaniaAspects=true
+
+            # [FM] Set this to false to keep Botania metals wand caps from Forbidden Magic recipe
+            B:TC.overrideFMCaps=true
+
+            # Set this to false to use Sensus instead of Tinctura aspect
+            B:TC.tinctura=true
+
+            # Set this to false to remove Thaumcraft plants Dendric Suffusion
+            B:TC.treeCrafting=true
+        }
+
+        ##########################################################################################################
+        # tconstruct
+        #--------------------------------------------------------------------------------------------------------#
+        # Tinkers' Construct integration
+        ##########################################################################################################
+
+        tconstruct {
+            # IDs for Elementium, Elvorium, Manasteel, Mauftrium, Terrasteel, Livingwood, Dreamwood, Livingrock, Redstring, Manastring materials respectively
+            I:TiC.materialIDs <
+                50
+                51
+                52
+                53
+                54
+                55
+                56
+                57
+                3
+                4
+             >
+
+            # IDs for ManaCore modifiers respectively
+            I:TiC.modifierIDs <
+                20
+             >
+        }
+
+    }
+
+    ##########################################################################################################
+    # elvenstory
+    #--------------------------------------------------------------------------------------------------------#
+    # Elvenstory Mode optional features
+    ##########################################################################################################
+
+    elvenstory {
+        # Set this to true to generate bonus chest in ESM
+        B:bonusChest=false
+
+        # Set this to true to generate both race room inside and portal on top of Yggdrasil on zero coords of Alfheim
+        B:bothSpawnStructures=false
+
+        # Set this to true to enable recipes for extended stay in Alfheim
+        B:extendedElvenStory=false
+
+        # Flight recover efficiency
+        D:flightRecover=1.0
+
+        # Elven flight fly points (faster you move - more you spend)
+        I:flightTime=12000
+
+        # Wings will be unavailable in this dimension(s)
+        I:wingsBlackList <
+         >
+
+        ##########################################################################################################
+        # mmo
+        #--------------------------------------------------------------------------------------------------------#
+        # MMO Mode optional features
+        ##########################################################################################################
+
+        mmo {
+            # Duration of death screen timer (in ticks)
+            I:deathScreenAdditionalTime=1200
+
+            # Set this to true to disable rendering block wireframe in noclip mode
+            B:disableWireframe=false
+
+            # List of spell name IDs that won't be registered
+            S:disabledSpells <
+             >
+
+            # Set this to true to enable damage to party members
+            B:friendlyFire=false
+
+            # Spells that are considered 'epic' thus costing same for all races
+            S:legendarySpells <
+                sacrifice
+                isaacstorm
+                resurrect
+                timestop
+                warhood
+             >
+
+            # How many people can be in single party at the same time
+            I:maxPartyMembers=5
+
+            # Mana cost multiplier for spells with not your affinity
+            I:raceManaMult=2
+
+            # Set this to false to remove affinity spells sorting
+            B:spellSortByAffinity=true
+
+            # Set this to true to make bosses vulnerable to legendary spells
+            B:superSpellBoss=false
+
+            ##########################################################################################################
+            # hud
+            #--------------------------------------------------------------------------------------------------------#
+            # HUD elements customizations
+            ##########################################################################################################
+
+            hud {
+                # Party HUD Scale (1 < bigger; 1 > smaller)
+                D:partyHUDScale=1.0
+
+                # Set this to false to hide player's healthbar
+                B:selfHealthUI=true
+
+                # Set this to true to make spell UI fade out when not active
+                B:spellsFadeOut=false
+
+                # Set this to false to hide target's healthbar
+                B:targethUI=true
+            }
+
+            ##########################################################################################################
+            # potions
+            #--------------------------------------------------------------------------------------------------------#
+            # Potion IDs
+            ##########################################################################################################
+
+            potions {
+                # Potion id for Butterfly Shield
+                I:potionIDButterShield=34
+
+                # Potion id for Death Mark
+                I:potionIDDeathMark=36
+
+                # Potion id for Decay
+                I:potionIDDecay=37
+
+                # Potion id for Edge Life
+                I:potionIDEdgeLife=38
+
+                # Potion id for Gold Rush
+                I:potionIDGoldRush=40
+
+                # Potion id for Hystrix
+                I:potionIDHystrix=41
+
+                # Potion id for Leftover Flame
+                I:potionIDLeftFlame=43
+
+                # Potion id for Nine Lives
+                I:potionIDNineLives=46
+
+                # Potion id for Noclip
+                I:potionIDNoclip=48
+
+                # Potion id for Priority Target
+                I:potionIDPriorityTarget=53
+
+                # Potion id for Quad Damage
+                I:potionIDQuadDamage=54
+
+                # Potion id for Sacrifice
+                I:potionIDSacrifice=55
+
+                # Potion id for Mana Showing Effect
+                I:potionIDShowMana=56
+
+                # Potion id for Stone Skin
+                I:potionIDStoneSkin=58
+
+                # Potion id for Throw
+                I:potionIDThrow=60
+
+                # Potion id for Time Anchor
+                I:potionIDTimeAnchor=61
+
+                # Potion id for Time Conquest
+                I:potionIDTimeConquest=62
+
+                # Potion id for Voodoo Doll
+                I:potionIDVoodooDoll=63
+
+                # Potion id for Voodoo Target
+                I:potionIDVoodooTarget=64
+
+                # Potion id for Well'o'Life
+                I:potionIDWellOLife=65
+            }
+
+        }
+
+    }
+
+    domains {
+        # Dimension ID for Domains world
+        I:dimensionIDDomains=-104
+
+        worldgen {
+            # Distance between domains
+            I:domainDistance=1000
+
+            # Set this to true to immediately generate max domains instead of generating new one in same type line if and only if all previously generated ones are occupied
+            B:domainImmediate=false
+
+            # Count of domains of the same type
+            I:domainMaxCount=5
+
+            # Min number of players required to enter any domain in MP
+            I:domainPlayersRequired=2
+
+            # X-position of first domain in different type line
+            I:domainStartX=-5000
+
+            # Z-position of first domain in same type line
+            I:domainStartZ=-5000
+        }
+
+    }
+
+    entities {
+        # Biome blacklist for Elemental Slimes
+        I:elementalSlimeBiomeBlackList <
+            8
+            9
+            14
+            15
+         >
+
+        # Elemental Slimes spawn weight (chance), min and max group count
+        I:elementalSlimeRates <
+            100
+            4
+            4
+         >
+
+        # Biome blacklist for Manaseal Creepers
+        I:voidCreeperBiomeBlackList <
+            8
+            9
+            14
+            15
+         >
+
+        # Manaseal Creeper spawn weight (chance), min and max group count
+        I:voidCreeperRates <
+            4
+            1
+            3
+         >
+    }
+
+}
+
+

@@ -1,0 +1,816 @@
+﻿Compiled from "OreDictItemData.java"
+public class gregapi.oredict.OreDictItemData {
+  public boolean mBlackListed;
+
+  public boolean mBlocked;
+
+  public boolean mUseVanillaDamage;
+
+  public boolean mFurnaceFuel;
+
+  public net.minecraft.item.ItemStack mUnificationTarget;
+
+  public final gregapi.oredict.OreDictPrefix mPrefix;
+
+  public final gregapi.oredict.OreDictMaterialStack mMaterial;
+
+  public final gregapi.oredict.OreDictMaterialStack[] mByProducts;
+
+  public final java.lang.String mOreDictName;
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictPrefix, gregapi.oredict.OreDictMaterial);
+    Code:
+       0: aload_0
+       1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #29                 // Field mBlackListed:Z
+       9: aload_0
+      10: iconst_0
+      11: putfield      #31                 // Field mBlocked:Z
+      14: aload_0
+      15: iconst_0
+      16: putfield      #33                 // Field mUseVanillaDamage:Z
+      19: aload_0
+      20: iconst_1
+      21: putfield      #35                 // Field mFurnaceFuel:Z
+      24: aload_0
+      25: aconst_null
+      26: putfield      #37                 // Field mUnificationTarget:Lnet/minecraft/item/ItemStack;
+      29: aload_0
+      30: aload_1
+      31: putfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+      34: aload_0
+      35: aload_2
+      36: ifnonnull     43
+      39: aconst_null
+      40: goto          51
+      43: aload_2
+      44: aload_1
+      45: getfield      #47                 // Field gregapi/oredict/OreDictPrefix.mAmount:J
+      48: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+      51: putfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      54: aload_0
+      55: aload_2
+      56: ifnonnull     64
+      59: ldc           #59                 // String
+      61: goto          88
+      64: new           #61                 // class java/lang/StringBuilder
+      67: dup
+      68: invokespecial #62                 // Method java/lang/StringBuilder."<init>":()V
+      71: aload_1
+      72: getfield      #65                 // Field gregapi/oredict/OreDictPrefix.mNameInternal:Ljava/lang/String;
+      75: invokevirtual #69                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      78: aload_2
+      79: getfield      #70                 // Field gregapi/oredict/OreDictMaterial.mNameInternal:Ljava/lang/String;
+      82: invokevirtual #69                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      85: invokevirtual #74                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      88: putfield      #78                 // Field mOreDictName:Ljava/lang/String;
+      91: aload_0
+      92: aload_1
+      93: getfield      #81                 // Field gregapi/oredict/OreDictPrefix.mByProducts:Ljava/util/List;
+      96: invokeinterface #87,  1           // InterfaceMethod java/util/List.isEmpty:()Z
+     101: ifeq          110
+     104: getstatic     #92                 // Field gregapi/data/CS.ZL_MS:[Lgregapi/oredict/OreDictMaterialStack;
+     107: goto          125
+     110: aload_1
+     111: getfield      #81                 // Field gregapi/oredict/OreDictPrefix.mByProducts:Ljava/util/List;
+     114: getstatic     #92                 // Field gregapi/data/CS.ZL_MS:[Lgregapi/oredict/OreDictMaterialStack;
+     117: invokeinterface #96,  2           // InterfaceMethod java/util/List.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+     122: checkcast     #97                 // class "[Lgregapi/oredict/OreDictMaterialStack;"
+     125: putfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+     128: return
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictMaterialStack, gregapi.oredict.OreDictMaterialStack...);
+    Code:
+       0: aload_0
+       1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #29                 // Field mBlackListed:Z
+       9: aload_0
+      10: iconst_0
+      11: putfield      #31                 // Field mBlocked:Z
+      14: aload_0
+      15: iconst_0
+      16: putfield      #33                 // Field mUseVanillaDamage:Z
+      19: aload_0
+      20: iconst_1
+      21: putfield      #35                 // Field mFurnaceFuel:Z
+      24: aload_0
+      25: aconst_null
+      26: putfield      #37                 // Field mUnificationTarget:Lnet/minecraft/item/ItemStack;
+      29: aload_0
+      30: aconst_null
+      31: putfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+      34: aload_0
+      35: aload_1
+      36: ifnonnull     43
+      39: aconst_null
+      40: goto          47
+      43: aload_1
+      44: invokevirtual #109                // Method gregapi/oredict/OreDictMaterialStack.clone:()Lgregapi/oredict/OreDictMaterialStack;
+      47: putfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      50: aload_0
+      51: ldc           #59                 // String
+      53: putfield      #78                 // Field mOreDictName:Ljava/lang/String;
+      56: aload_0
+      57: iconst_1
+      58: putfield      #29                 // Field mBlackListed:Z
+      61: aload_2
+      62: ifnonnull     75
+      65: aload_0
+      66: getstatic     #92                 // Field gregapi/data/CS.ZL_MS:[Lgregapi/oredict/OreDictMaterialStack;
+      69: putfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+      72: goto          183
+      75: aload_2
+      76: arraylength
+      77: iconst_1
+      78: if_icmpge     87
+      81: getstatic     #92                 // Field gregapi/data/CS.ZL_MS:[Lgregapi/oredict/OreDictMaterialStack;
+      84: goto          92
+      87: aload_2
+      88: arraylength
+      89: anewarray     #55                 // class gregapi/oredict/OreDictMaterialStack
+      92: astore_3
+      93: iconst_0
+      94: istore        4
+      96: iconst_0
+      97: istore        5
+      99: iload         5
+     101: aload_2
+     102: arraylength
+     103: if_icmpge     133
+     106: aload_2
+     107: iload         5
+     109: aaload
+     110: ifnull        127
+     113: aload_3
+     114: iload         4
+     116: iinc          4, 1
+     119: aload_2
+     120: iload         5
+     122: aaload
+     123: invokevirtual #109                // Method gregapi/oredict/OreDictMaterialStack.clone:()Lgregapi/oredict/OreDictMaterialStack;
+     126: aastore
+     127: iinc          5, 1
+     130: goto          99
+     133: aload_0
+     134: iload         4
+     136: ifle          147
+     139: iload         4
+     141: anewarray     #55                 // class gregapi/oredict/OreDictMaterialStack
+     144: goto          150
+     147: getstatic     #92                 // Field gregapi/data/CS.ZL_MS:[Lgregapi/oredict/OreDictMaterialStack;
+     150: putfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+     153: iconst_0
+     154: istore        5
+     156: iload         5
+     158: aload_0
+     159: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+     162: arraylength
+     163: if_icmpge     183
+     166: aload_0
+     167: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+     170: iload         5
+     172: aload_3
+     173: iload         5
+     175: aaload
+     176: aastore
+     177: iinc          5, 1
+     180: goto          156
+     183: return
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictMaterial, gregapi.oredict.OreDictPrefix, gregapi.oredict.OreDictMaterialStack...);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #118                // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;Lgregapi/oredict/OreDictPrefix;)Lgregapi/oredict/OreDictMaterialStack;
+       6: aload_3
+       7: invokespecial #120                // Method "<init>":(Lgregapi/oredict/OreDictMaterialStack;[Lgregapi/oredict/OreDictMaterialStack;)V
+      10: return
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictMaterial, long, gregapi.oredict.OreDictMaterialStack...);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: lload_2
+       3: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+       6: aload         4
+       8: invokespecial #120                // Method "<init>":(Lgregapi/oredict/OreDictMaterialStack;[Lgregapi/oredict/OreDictMaterialStack;)V
+      11: return
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictMaterial, gregapi.oredict.OreDictPrefix, gregapi.oredict.OreDictMaterial, gregapi.oredict.OreDictPrefix);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #118                // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;Lgregapi/oredict/OreDictPrefix;)Lgregapi/oredict/OreDictMaterialStack;
+       6: iconst_1
+       7: anewarray     #55                 // class gregapi/oredict/OreDictMaterialStack
+      10: dup
+      11: iconst_0
+      12: aload_3
+      13: aload         4
+      15: invokestatic  #118                // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;Lgregapi/oredict/OreDictPrefix;)Lgregapi/oredict/OreDictMaterialStack;
+      18: aastore
+      19: invokespecial #120                // Method "<init>":(Lgregapi/oredict/OreDictMaterialStack;[Lgregapi/oredict/OreDictMaterialStack;)V
+      22: return
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictMaterial, gregapi.oredict.OreDictPrefix, gregapi.oredict.OreDictMaterial, long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #118                // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;Lgregapi/oredict/OreDictPrefix;)Lgregapi/oredict/OreDictMaterialStack;
+       6: iconst_1
+       7: anewarray     #55                 // class gregapi/oredict/OreDictMaterialStack
+      10: dup
+      11: iconst_0
+      12: aload_3
+      13: lload         4
+      15: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+      18: aastore
+      19: invokespecial #120                // Method "<init>":(Lgregapi/oredict/OreDictMaterialStack;[Lgregapi/oredict/OreDictMaterialStack;)V
+      22: return
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictMaterial, long, gregapi.oredict.OreDictMaterial, gregapi.oredict.OreDictPrefix);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: lload_2
+       3: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+       6: iconst_1
+       7: anewarray     #55                 // class gregapi/oredict/OreDictMaterialStack
+      10: dup
+      11: iconst_0
+      12: aload         4
+      14: aload         5
+      16: invokestatic  #118                // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;Lgregapi/oredict/OreDictPrefix;)Lgregapi/oredict/OreDictMaterialStack;
+      19: aastore
+      20: invokespecial #120                // Method "<init>":(Lgregapi/oredict/OreDictMaterialStack;[Lgregapi/oredict/OreDictMaterialStack;)V
+      23: return
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictMaterial, long, gregapi.oredict.OreDictMaterial, long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: lload_2
+       3: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+       6: iconst_1
+       7: anewarray     #55                 // class gregapi/oredict/OreDictMaterialStack
+      10: dup
+      11: iconst_0
+      12: aload         4
+      14: lload         5
+      16: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+      19: aastore
+      20: invokespecial #120                // Method "<init>":(Lgregapi/oredict/OreDictMaterialStack;[Lgregapi/oredict/OreDictMaterialStack;)V
+      23: return
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictMaterial, long, gregapi.oredict.OreDictMaterial, long, gregapi.oredict.OreDictMaterial, long);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: lload_2
+       3: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+       6: iconst_2
+       7: anewarray     #55                 // class gregapi/oredict/OreDictMaterialStack
+      10: dup
+      11: iconst_0
+      12: aload         4
+      14: lload         5
+      16: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+      19: aastore
+      20: dup
+      21: iconst_1
+      22: aload         7
+      24: lload         8
+      26: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+      29: aastore
+      30: invokespecial #120                // Method "<init>":(Lgregapi/oredict/OreDictMaterialStack;[Lgregapi/oredict/OreDictMaterialStack;)V
+      33: return
+
+  public gregapi.oredict.OreDictItemData(java.util.Collection<gregapi.oredict.OreDictItemData>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getstatic     #136                // Field gregapi/data/CS.ZL_OREDICTITEMDATA:[Lgregapi/oredict/OreDictItemData;
+       5: invokeinterface #139,  2          // InterfaceMethod java/util/Collection.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+      10: checkcast     #140                // class "[Lgregapi/oredict/OreDictItemData;"
+      13: invokespecial #143                // Method "<init>":([Lgregapi/oredict/OreDictItemData;)V
+      16: return
+
+  public gregapi.oredict.OreDictItemData(gregapi.oredict.OreDictItemData...);
+    Code:
+       0: aload_0
+       1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #29                 // Field mBlackListed:Z
+       9: aload_0
+      10: iconst_0
+      11: putfield      #31                 // Field mBlocked:Z
+      14: aload_0
+      15: iconst_0
+      16: putfield      #33                 // Field mUseVanillaDamage:Z
+      19: aload_0
+      20: iconst_1
+      21: putfield      #35                 // Field mFurnaceFuel:Z
+      24: aload_0
+      25: aconst_null
+      26: putfield      #37                 // Field mUnificationTarget:Lnet/minecraft/item/ItemStack;
+      29: aload_0
+      30: aconst_null
+      31: putfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+      34: aload_0
+      35: ldc           #59                 // String
+      37: putfield      #78                 // Field mOreDictName:Ljava/lang/String;
+      40: aload_0
+      41: iconst_1
+      42: putfield      #29                 // Field mBlackListed:Z
+      45: new           #148                // class gregapi/code/ArrayListNoNulls
+      48: dup
+      49: invokespecial #149                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+      52: astore_2
+      53: new           #148                // class gregapi/code/ArrayListNoNulls
+      56: dup
+      57: invokespecial #149                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+      60: astore_3
+      61: aload_1
+      62: astore        4
+      64: aload         4
+      66: arraylength
+      67: istore        5
+      69: iconst_0
+      70: istore        6
+      72: iload         6
+      74: iload         5
+      76: if_icmpge     211
+      79: aload         4
+      81: iload         6
+      83: aaload
+      84: astore        7
+      86: aload         7
+      88: ifnull        205
+      91: aload         7
+      93: invokevirtual #154                // Method validMaterial:()Z
+      96: ifeq          139
+      99: aload         7
+     101: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+     104: getfield      #155                // Field gregapi/oredict/OreDictMaterialStack.mAmount:J
+     107: lconst_0
+     108: lcmp
+     109: ifle          139
+     112: aload_2
+     113: aload         7
+     115: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+     118: getfield      #157                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     121: getfield      #160                // Field gregapi/oredict/OreDictMaterial.mTargetReversing:Lgregapi/oredict/OreDictMaterial;
+     124: aload         7
+     126: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+     129: getfield      #155                // Field gregapi/oredict/OreDictMaterialStack.mAmount:J
+     132: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+     135: invokevirtual #164                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     138: pop
+     139: aload         7
+     141: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+     144: astore        8
+     146: aload         8
+     148: arraylength
+     149: istore        9
+     151: iconst_0
+     152: istore        10
+     154: iload         10
+     156: iload         9
+     158: if_icmpge     205
+     161: aload         8
+     163: iload         10
+     165: aaload
+     166: astore        11
+     168: aload         11
+     170: getfield      #155                // Field gregapi/oredict/OreDictMaterialStack.mAmount:J
+     173: lconst_0
+     174: lcmp
+     175: ifle          199
+     178: aload_2
+     179: aload         11
+     181: getfield      #157                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     184: getfield      #160                // Field gregapi/oredict/OreDictMaterial.mTargetReversing:Lgregapi/oredict/OreDictMaterial;
+     187: aload         11
+     189: getfield      #155                // Field gregapi/oredict/OreDictMaterialStack.mAmount:J
+     192: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+     195: invokevirtual #164                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     198: pop
+     199: iinc          10, 1
+     202: goto          154
+     205: iinc          6, 1
+     208: goto          72
+     211: aload_2
+     212: invokevirtual #168                // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+     215: astore        4
+     217: aload         4
+     219: invokeinterface #173,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     224: ifeq          325
+     227: aload         4
+     229: invokeinterface #177,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     234: checkcast     #55                 // class gregapi/oredict/OreDictMaterialStack
+     237: astore        5
+     239: iconst_1
+     240: istore        6
+     242: aload_3
+     243: invokevirtual #168                // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+     246: astore        7
+     248: aload         7
+     250: invokeinterface #173,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     255: ifeq          307
+     258: aload         7
+     260: invokeinterface #177,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     265: checkcast     #55                 // class gregapi/oredict/OreDictMaterialStack
+     268: astore        8
+     270: aload         5
+     272: getfield      #157                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     275: aload         8
+     277: getfield      #157                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     280: if_acmpne     304
+     283: aload         8
+     285: dup
+     286: getfield      #155                // Field gregapi/oredict/OreDictMaterialStack.mAmount:J
+     289: aload         5
+     291: getfield      #155                // Field gregapi/oredict/OreDictMaterialStack.mAmount:J
+     294: ladd
+     295: putfield      #155                // Field gregapi/oredict/OreDictMaterialStack.mAmount:J
+     298: iconst_0
+     299: istore        6
+     301: goto          307
+     304: goto          248
+     307: iload         6
+     309: ifeq          322
+     312: aload_3
+     313: aload         5
+     315: invokevirtual #109                // Method gregapi/oredict/OreDictMaterialStack.clone:()Lgregapi/oredict/OreDictMaterialStack;
+     318: invokevirtual #164                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     321: pop
+     322: goto          217
+     325: aload_3
+     326: new           #7                  // class gregapi/oredict/OreDictItemData$1
+     329: dup
+     330: aload_0
+     331: invokespecial #180                // Method gregapi/oredict/OreDictItemData$1."<init>":(Lgregapi/oredict/OreDictItemData;)V
+     334: invokestatic  #186                // Method java/util/Collections.sort:(Ljava/util/List;Ljava/util/Comparator;)V
+     337: aload_3
+     338: invokevirtual #187                // Method java/util/ArrayList.isEmpty:()Z
+     341: ifeq          352
+     344: aload_0
+     345: aconst_null
+     346: putfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+     349: goto          370
+     352: aload_0
+     353: aload_3
+     354: iconst_0
+     355: invokevirtual #191                // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     358: checkcast     #55                 // class gregapi/oredict/OreDictMaterialStack
+     361: putfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+     364: aload_3
+     365: iconst_0
+     366: invokevirtual #194                // Method java/util/ArrayList.remove:(I)Ljava/lang/Object;
+     369: pop
+     370: aload_0
+     371: aload_3
+     372: getstatic     #92                 // Field gregapi/data/CS.ZL_MS:[Lgregapi/oredict/OreDictMaterialStack;
+     375: invokevirtual #195                // Method java/util/ArrayList.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+     378: checkcast     #97                 // class "[Lgregapi/oredict/OreDictMaterialStack;"
+     381: putfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+     384: return
+
+  public boolean fullData();
+    Code:
+       0: aload_0
+       1: invokevirtual #206                // Method validPrefix:()Z
+       4: ifeq          18
+       7: aload_0
+       8: invokevirtual #209                // Method fullMaterial:()Z
+      11: ifeq          18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: ireturn
+
+  public boolean listedData();
+    Code:
+       0: aload_0
+       1: invokevirtual #206                // Method validPrefix:()Z
+       4: ifeq          18
+       7: aload_0
+       8: invokevirtual #213                // Method listedMaterial:()Z
+      11: ifeq          18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: ireturn
+
+  public boolean nonemptyData();
+    Code:
+       0: aload_0
+       1: invokevirtual #206                // Method validPrefix:()Z
+       4: ifeq          18
+       7: aload_0
+       8: invokevirtual #217                // Method nonemptyMaterial:()Z
+      11: ifeq          18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: ireturn
+
+  public boolean validData();
+    Code:
+       0: aload_0
+       1: invokevirtual #206                // Method validPrefix:()Z
+       4: ifeq          18
+       7: aload_0
+       8: invokevirtual #154                // Method validMaterial:()Z
+      11: ifeq          18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: ireturn
+
+  public boolean fullMaterial();
+    Code:
+       0: aload_0
+       1: invokevirtual #217                // Method nonemptyMaterial:()Z
+       4: ifeq          23
+       7: aload_0
+       8: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      11: getfield      #155                // Field gregapi/oredict/OreDictMaterialStack.mAmount:J
+      14: lconst_0
+      15: lcmp
+      16: ifle          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+
+  public boolean listedMaterial();
+    Code:
+       0: aload_0
+       1: invokevirtual #154                // Method validMaterial:()Z
+       4: ifeq          24
+       7: aload_0
+       8: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      11: getfield      #157                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+      14: getfield      #222                // Field gregapi/oredict/OreDictMaterial.mID:S
+      17: iflt          24
+      20: iconst_1
+      21: goto          25
+      24: iconst_0
+      25: ireturn
+
+  public boolean nonemptyMaterial();
+    Code:
+       0: aload_0
+       1: invokevirtual #154                // Method validMaterial:()Z
+       4: ifeq          24
+       7: aload_0
+       8: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      11: getfield      #157                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+      14: getfield      #222                // Field gregapi/oredict/OreDictMaterial.mID:S
+      17: ifle          24
+      20: iconst_1
+      21: goto          25
+      24: iconst_0
+      25: ireturn
+
+  public boolean validMaterial();
+    Code:
+       0: aload_0
+       1: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+       4: ifnull        11
+       7: iconst_1
+       8: goto          12
+      11: iconst_0
+      12: ireturn
+
+  public boolean validPrefix();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+       4: ifnull        11
+       7: iconst_1
+       8: goto          12
+      11: iconst_0
+      12: ireturn
+
+  public java.util.List<gregapi.oredict.OreDictMaterialStack> getAllMaterialStacks();
+    Code:
+       0: new           #148                // class gregapi/code/ArrayListNoNulls
+       3: dup
+       4: aload_0
+       5: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+       8: arraylength
+       9: iconst_1
+      10: iadd
+      11: invokespecial #227                // Method gregapi/code/ArrayListNoNulls."<init>":(I)V
+      14: astore_1
+      15: aload_0
+      16: invokevirtual #154                // Method validMaterial:()Z
+      19: ifeq          31
+      22: aload_1
+      23: aload_0
+      24: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      27: invokevirtual #228                // Method gregapi/code/ArrayListNoNulls.add:(Ljava/lang/Object;)Z
+      30: pop
+      31: aload_1
+      32: aload_0
+      33: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+      36: invokestatic  #234                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+      39: invokevirtual #238                // Method gregapi/code/ArrayListNoNulls.addAll:(Ljava/util/Collection;)Z
+      42: pop
+      43: aload_1
+      44: areturn
+
+  public java.util.List<gregapi.oredict.OreDictMaterialStack> getAllMaterialWeights();
+    Code:
+       0: new           #148                // class gregapi/code/ArrayListNoNulls
+       3: dup
+       4: aload_0
+       5: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+       8: arraylength
+       9: iconst_1
+      10: iadd
+      11: invokespecial #227                // Method gregapi/code/ArrayListNoNulls."<init>":(I)V
+      14: astore_1
+      15: aload_0
+      16: invokevirtual #154                // Method validMaterial:()Z
+      19: ifeq          63
+      22: aload_0
+      23: invokevirtual #206                // Method validPrefix:()Z
+      26: ifeq          54
+      29: aload_1
+      30: aload_0
+      31: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      34: getfield      #157                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+      37: aload_0
+      38: getfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+      41: getfield      #244                // Field gregapi/oredict/OreDictPrefix.mWeight:J
+      44: invokestatic  #53                 // Method gregapi/util/OM.stack:(Lgregapi/oredict/OreDictMaterial;J)Lgregapi/oredict/OreDictMaterialStack;
+      47: invokevirtual #228                // Method gregapi/code/ArrayListNoNulls.add:(Ljava/lang/Object;)Z
+      50: pop
+      51: goto          63
+      54: aload_1
+      55: aload_0
+      56: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      59: invokevirtual #228                // Method gregapi/code/ArrayListNoNulls.add:(Ljava/lang/Object;)Z
+      62: pop
+      63: aload_1
+      64: aload_0
+      65: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+      68: invokestatic  #234                // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+      71: invokevirtual #238                // Method gregapi/code/ArrayListNoNulls.addAll:(Ljava/util/Collection;)Z
+      74: pop
+      75: aload_1
+      76: areturn
+
+  public gregapi.oredict.OreDictMaterialStack getByProduct(int);
+    Code:
+       0: iload_1
+       1: iflt          22
+       4: iload_1
+       5: aload_0
+       6: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+       9: arraylength
+      10: if_icmpge     22
+      13: aload_0
+      14: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+      17: iload_1
+      18: aaload
+      19: goto          23
+      22: aconst_null
+      23: areturn
+
+  public net.minecraft.item.ItemStack getStack(long);
+    Code:
+       0: aload_0
+       1: getfield      #37                 // Field mUnificationTarget:Lnet/minecraft/item/ItemStack;
+       4: ifnonnull     25
+       7: aload_0
+       8: getfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+      11: aload_0
+      12: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      15: getfield      #157                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+      18: lload_1
+      19: invokevirtual #253                // Method gregapi/oredict/OreDictPrefix.mat:(Lgregapi/oredict/OreDictMaterial;J)Lnet/minecraft/item/ItemStack;
+      22: goto          33
+      25: lload_1
+      26: aload_0
+      27: getfield      #37                 // Field mUnificationTarget:Lnet/minecraft/item/ItemStack;
+      30: invokestatic  #259                // Method gregapi/util/ST.amount:(JLnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+      33: areturn
+
+  public gregapi.oredict.OreDictItemData copy();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+       4: ifnonnull     25
+       7: new           #2                  // class gregapi/oredict/OreDictItemData
+      10: dup
+      11: aload_0
+      12: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      15: aload_0
+      16: getfield      #99                 // Field mByProducts:[Lgregapi/oredict/OreDictMaterialStack;
+      19: invokespecial #120                // Method "<init>":(Lgregapi/oredict/OreDictMaterialStack;[Lgregapi/oredict/OreDictMaterialStack;)V
+      22: goto          43
+      25: new           #2                  // class gregapi/oredict/OreDictItemData
+      28: dup
+      29: aload_0
+      30: getfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+      33: aload_0
+      34: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      37: getfield      #157                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+      40: invokespecial #265                // Method "<init>":(Lgregapi/oredict/OreDictPrefix;Lgregapi/oredict/OreDictMaterial;)V
+      43: astore_1
+      44: aload_1
+      45: aload_0
+      46: getfield      #37                 // Field mUnificationTarget:Lnet/minecraft/item/ItemStack;
+      49: putfield      #37                 // Field mUnificationTarget:Lnet/minecraft/item/ItemStack;
+      52: aload_1
+      53: aload_0
+      54: getfield      #33                 // Field mUseVanillaDamage:Z
+      57: putfield      #33                 // Field mUseVanillaDamage:Z
+      60: aload_1
+      61: aload_0
+      62: getfield      #29                 // Field mBlackListed:Z
+      65: putfield      #29                 // Field mBlackListed:Z
+      68: aload_1
+      69: aload_0
+      70: getfield      #31                 // Field mBlocked:Z
+      73: putfield      #31                 // Field mBlocked:Z
+      76: aload_1
+      77: areturn
+
+  public static gregapi.oredict.OreDictItemData copy(gregapi.oredict.OreDictItemData);
+    Code:
+       0: aload_0
+       1: ifnonnull     8
+       4: aconst_null
+       5: goto          12
+       8: aload_0
+       9: invokevirtual #269                // Method copy:()Lgregapi/oredict/OreDictItemData;
+      12: areturn
+
+  public gregapi.oredict.OreDictItemData setUseVanillaDamage();
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: putfield      #33                 // Field mUseVanillaDamage:Z
+       5: aload_0
+       6: areturn
+
+  public gregapi.oredict.OreDictItemData setNotFurnaceFuel();
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: putfield      #35                 // Field mFurnaceFuel:Z
+       5: aload_0
+       6: areturn
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: getfield      #78                 // Field mOreDictName:Ljava/lang/String;
+       4: areturn
+
+  public boolean hasValidPrefixMaterialData();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+       4: ifnull        18
+       7: aload_0
+       8: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+      11: ifnull        18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: ireturn
+
+  public boolean hasValidPrefixData();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field mPrefix:Lgregapi/oredict/OreDictPrefix;
+       4: ifnull        11
+       7: iconst_1
+       8: goto          12
+      11: iconst_0
+      12: ireturn
+
+  public boolean hasValidMaterialData();
+    Code:
+       0: aload_0
+       1: getfield      #57                 // Field mMaterial:Lgregapi/oredict/OreDictMaterialStack;
+       4: ifnull        11
+       7: iconst_1
+       8: goto          12
+      11: iconst_0
+      12: ireturn
+}

@@ -1,0 +1,5 @@
+﻿gt6bridge next steps
+===================
+[removals] no "removed per backend" data - enable the preset rows and keep removalDryRun,true for one run
+[materials] review materials-suggested.csv, then merge the rows into config\gt6bridge\materials.csv
+[verify]    after the next run, report.txt should show bindings.verified close to bindings

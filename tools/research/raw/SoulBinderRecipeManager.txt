@@ -1,0 +1,16 @@
+Compiled from "SoulBinderRecipeManager.java"
+public class crazypants.enderio.machine.soul.SoulBinderRecipeManager {
+  private static final crazypants.enderio.machine.soul.SoulBinderRecipeManager instance;
+  public static final java.lang.String KEY_RECIPE_UID;
+  public static final java.lang.String KEY_INPUT_STACK;
+  public static final java.lang.String KEY_OUTPUT_STACK;
+  public static final java.lang.String KEY_REQUIRED_ENERGY;
+  public static final java.lang.String KEY_REQUIRED_XP;
+  public static final java.lang.String KEY_SOUL_TYPES;
+  public crazypants.enderio.machine.soul.SoulBinderRecipeManager();
+  public static crazypants.enderio.machine.soul.SoulBinderRecipeManager getInstance();
+  public void addDefaultRecipes();
+  public boolean addRecipeFromNBT(net.minecraft.nbt.NBTTagCompound);
+  private net.minecraft.item.ItemStack getStackFromRoot(net.minecraft.nbt.NBTTagCompound, java.lang.String);
+  static {};
+}

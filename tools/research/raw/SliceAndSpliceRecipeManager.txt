@@ -1,0 +1,8 @@
+Compiled from "SliceAndSpliceRecipeManager.java"
+public class crazypants.enderio.machine.slicensplice.SliceAndSpliceRecipeManager extends crazypants.enderio.machine.recipe.ManyToOneRecipeManager {
+  static final crazypants.enderio.machine.slicensplice.SliceAndSpliceRecipeManager instance;
+  public static crazypants.enderio.machine.slicensplice.SliceAndSpliceRecipeManager getInstance();
+  public crazypants.enderio.machine.slicensplice.SliceAndSpliceRecipeManager();
+  public void loadRecipesFromConfig();
+  static {};
+}

@@ -1,0 +1,16 @@
+Compiled from "AlloyRecipeManager.java"
+public class crazypants.enderio.machine.alloy.AlloyRecipeManager extends crazypants.enderio.machine.recipe.ManyToOneRecipeManager {
+  private static final java.lang.String CORE_FILE_NAME;
+  private static final java.lang.String CUSTOM_FILE_NAME;
+  static final crazypants.enderio.machine.alloy.AlloyRecipeManager instance;
+  crazypants.enderio.machine.alloy.VanillaSmeltingRecipe vanillaRecipe;
+  private static final java.lang.String ELEMENT_ROOT;
+  private static final java.lang.String ELEMENT_EXCLUDE;
+  public static crazypants.enderio.machine.alloy.AlloyRecipeManager getInstance();
+  public crazypants.enderio.machine.alloy.AlloyRecipeManager();
+  public crazypants.enderio.machine.alloy.VanillaSmeltingRecipe getVanillaRecipe();
+  public void setVanillaRecipe(crazypants.enderio.machine.alloy.VanillaSmeltingRecipe);
+  protected crazypants.enderio.machine.recipe.CustomTagHandler createCustomTagHandler();
+  public void loadRecipesFromConfig();
+  static {};
+}

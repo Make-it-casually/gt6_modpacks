@@ -1,0 +1,17 @@
+[
+    {
+        "modid": "hodgepodge",
+        "name": "Hodgepodge",
+        "description": "A Hodgepodge of patches",
+        "version": "2.7.211",
+        "mcversion": "1.7.10",
+        "url": "",
+        "updateUrl": "",
+        "authorList": ["mitchej123", "GTNewHorizons Team"],
+        "license": "LGPL v3",
+        "credits": "bartimaeusnek for ModMixins",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
+]

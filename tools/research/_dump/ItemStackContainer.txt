@@ -1,0 +1,296 @@
+﻿Compiled from "ItemStackContainer.java"
+public class gregapi.code.ItemStackContainer {
+  public final net.minecraft.item.Item mItem;
+
+  public final net.minecraft.block.Block mBlock;
+
+  public final byte mStackSize;
+
+  public final short mMetaData;
+
+  public gregapi.code.ItemStackContainer(net.minecraft.item.Item, long, long);
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+       9: aload_0
+      10: aload_0
+      11: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      14: invokestatic  #26                 // Method gregapi/util/ST.block:(Lnet/minecraft/item/Item;)Lnet/minecraft/block/Block;
+      17: putfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+      20: aload_0
+      21: lload_2
+      22: l2i
+      23: i2b
+      24: putfield      #30                 // Field mStackSize:B
+      27: aload_0
+      28: lload         4
+      30: l2i
+      31: i2s
+      32: putfield      #32                 // Field mMetaData:S
+      35: return
+
+  public gregapi.code.ItemStackContainer(net.minecraft.block.Block, long, long);
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+       9: aload_0
+      10: aload_0
+      11: getfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+      14: invokestatic  #43                 // Method gregapi/util/ST.item:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+      17: putfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      20: aload_0
+      21: lload_2
+      22: l2i
+      23: i2b
+      24: putfield      #30                 // Field mStackSize:B
+      27: aload_0
+      28: lload         4
+      30: l2i
+      31: i2s
+      32: putfield      #32                 // Field mMetaData:S
+      35: return
+
+  public gregapi.code.ItemStackContainer(long, long, long);
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: lload_1
+       6: invokestatic  #48                 // Method gregapi/util/ST.item:(J)Lnet/minecraft/item/Item;
+       9: putfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      12: aload_0
+      13: aload_0
+      14: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      17: invokestatic  #26                 // Method gregapi/util/ST.block:(Lnet/minecraft/item/Item;)Lnet/minecraft/block/Block;
+      20: putfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+      23: aload_0
+      24: lload_3
+      25: l2i
+      26: i2b
+      27: putfield      #30                 // Field mStackSize:B
+      30: aload_0
+      31: lload         5
+      33: l2i
+      34: i2s
+      35: putfield      #32                 // Field mMetaData:S
+      38: return
+
+  public gregapi.code.ItemStackContainer(net.minecraft.item.ItemStack);
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: aload_1
+       5: ifnonnull     33
+       8: aload_0
+       9: aconst_null
+      10: putfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      13: aload_0
+      14: getstatic     #55                 // Field gregapi/data/CS.NB:Lnet/minecraft/block/Block;
+      17: putfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+      20: aload_0
+      21: iconst_0
+      22: putfield      #30                 // Field mStackSize:B
+      25: aload_0
+      26: iconst_0
+      27: putfield      #32                 // Field mMetaData:S
+      30: goto          69
+      33: aload_0
+      34: aload_1
+      35: invokestatic  #61                 // Method gregapi/util/ST.item_:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/Item;
+      38: putfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      41: aload_0
+      42: aload_0
+      43: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      46: invokestatic  #64                 // Method gregapi/util/ST.block_:(Lnet/minecraft/item/Item;)Lnet/minecraft/block/Block;
+      49: putfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+      52: aload_0
+      53: aload_1
+      54: getfield      #68                 // Field net/minecraft/item/ItemStack.field_77994_a:I
+      57: i2b
+      58: putfield      #30                 // Field mStackSize:B
+      61: aload_0
+      62: aload_1
+      63: invokestatic  #72                 // Method gregapi/util/ST.meta_:(Lnet/minecraft/item/ItemStack;)S
+      66: putfield      #32                 // Field mMetaData:S
+      69: return
+
+  public gregapi.code.ItemStackContainer(net.minecraft.item.ItemStack, long);
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: aload_1
+       5: ifnonnull     33
+       8: aload_0
+       9: aconst_null
+      10: putfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      13: aload_0
+      14: getstatic     #55                 // Field gregapi/data/CS.NB:Lnet/minecraft/block/Block;
+      17: putfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+      20: aload_0
+      21: iconst_0
+      22: putfield      #30                 // Field mStackSize:B
+      25: aload_0
+      26: iconst_0
+      27: putfield      #32                 // Field mMetaData:S
+      30: goto          68
+      33: aload_0
+      34: aload_1
+      35: invokestatic  #61                 // Method gregapi/util/ST.item_:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/Item;
+      38: putfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      41: aload_0
+      42: aload_0
+      43: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      46: invokestatic  #64                 // Method gregapi/util/ST.block_:(Lnet/minecraft/item/Item;)Lnet/minecraft/block/Block;
+      49: putfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+      52: aload_0
+      53: aload_1
+      54: getfield      #68                 // Field net/minecraft/item/ItemStack.field_77994_a:I
+      57: i2b
+      58: putfield      #30                 // Field mStackSize:B
+      61: aload_0
+      62: lload_2
+      63: l2i
+      64: i2s
+      65: putfield      #32                 // Field mMetaData:S
+      68: return
+
+  public gregapi.code.ItemStackContainer(net.minecraft.item.ItemStack, long, long);
+    Code:
+       0: aload_0
+       1: invokespecial #18                 // Method java/lang/Object."<init>":()V
+       4: aload_1
+       5: ifnonnull     33
+       8: aload_0
+       9: aconst_null
+      10: putfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      13: aload_0
+      14: getstatic     #55                 // Field gregapi/data/CS.NB:Lnet/minecraft/block/Block;
+      17: putfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+      20: aload_0
+      21: iconst_0
+      22: putfield      #30                 // Field mStackSize:B
+      25: aload_0
+      26: iconst_0
+      27: putfield      #32                 // Field mMetaData:S
+      30: goto          67
+      33: aload_0
+      34: aload_1
+      35: invokestatic  #61                 // Method gregapi/util/ST.item_:(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/item/Item;
+      38: putfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      41: aload_0
+      42: aload_0
+      43: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      46: invokestatic  #64                 // Method gregapi/util/ST.block_:(Lnet/minecraft/item/Item;)Lnet/minecraft/block/Block;
+      49: putfield      #28                 // Field mBlock:Lnet/minecraft/block/Block;
+      52: aload_0
+      53: lload_2
+      54: l2i
+      55: i2b
+      56: putfield      #30                 // Field mStackSize:B
+      59: aload_0
+      60: lload         4
+      62: l2i
+      63: i2s
+      64: putfield      #32                 // Field mMetaData:S
+      67: return
+
+  public gregapi.code.ItemStackContainer(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokestatic  #81                 // Method gregapi/util/ST.toItem:(I)Lnet/minecraft/item/Item;
+       5: lconst_0
+       6: iload_1
+       7: invokestatic  #85                 // Method gregapi/util/ST.toMeta:(I)S
+      10: i2l
+      11: invokespecial #87                 // Method "<init>":(Lnet/minecraft/item/Item;JJ)V
+      14: return
+
+  public net.minecraft.item.ItemStack toStack();
+    Code:
+       0: aload_0
+       1: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+       4: ifnonnull     11
+       7: aconst_null
+       8: goto          24
+      11: aload_0
+      12: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      15: lconst_1
+      16: aload_0
+      17: getfield      #32                 // Field mMetaData:S
+      20: i2l
+      21: invokestatic  #94                 // Method gregapi/util/ST.make:(Lnet/minecraft/item/Item;JJ)Lnet/minecraft/item/ItemStack;
+      24: areturn
+
+  public boolean isStackEqual(net.minecraft.item.ItemStack);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+       5: aload_0
+       6: getfield      #32                 // Field mMetaData:S
+       9: i2l
+      10: invokestatic  #100                // Method gregapi/util/ST.equal:(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/Item;J)Z
+      13: ireturn
+
+  public boolean isStackEqual(gregapi.code.ItemStackContainer);
+    Code:
+       0: aload_1
+       1: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+       4: aload_0
+       5: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+       8: if_acmpne     31
+      11: aload_1
+      12: getfield      #32                 // Field mMetaData:S
+      15: i2l
+      16: aload_0
+      17: getfield      #32                 // Field mMetaData:S
+      20: i2l
+      21: invokestatic  #104                // Method gregapi/util/ST.equal:(JJ)Z
+      24: ifeq          31
+      27: iconst_1
+      28: goto          32
+      31: iconst_0
+      32: ireturn
+
+  public boolean equals(java.lang.Object);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: if_acmpeq     40
+       5: aload_1
+       6: instanceof    #2                  // class gregapi/code/ItemStackContainer
+       9: ifeq          44
+      12: aload_1
+      13: checkcast     #2                  // class gregapi/code/ItemStackContainer
+      16: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      19: aload_0
+      20: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+      23: if_acmpne     44
+      26: aload_1
+      27: checkcast     #2                  // class gregapi/code/ItemStackContainer
+      30: getfield      #32                 // Field mMetaData:S
+      33: aload_0
+      34: getfield      #32                 // Field mMetaData:S
+      37: if_icmpne     44
+      40: iconst_1
+      41: goto          45
+      44: iconst_0
+      45: ireturn
+
+  public int hashCode();
+    Code:
+       0: aload_0
+       1: getfield      #20                 // Field mItem:Lnet/minecraft/item/Item;
+       4: aload_0
+       5: getfield      #32                 // Field mMetaData:S
+       8: i2l
+       9: invokestatic  #113                // Method gregapi/util/ST.toInt:(Lnet/minecraft/item/Item;J)I
+      12: ireturn
+}

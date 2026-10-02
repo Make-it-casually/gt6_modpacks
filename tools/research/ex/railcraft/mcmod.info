@@ -1,0 +1,16 @@
+[
+    {
+      "modid": "Railcraft",
+      "name": "Railcraft",
+      "description": "Redefine your rails",
+      "version": "9.17.31",
+      "mcversion": "1.7.10",
+      "url": "http://railcraft.info/",
+      "updateUrl": "http://www.railcraft.info/releases/",
+      "authorList": [ "CovertJaguar" ],
+      "credits": "Created by CovertJaguar",
+      "logoFile": "assets/railcraft/logo.png",
+      "screenshots": [],
+      "dependencies": []
+    }
+]

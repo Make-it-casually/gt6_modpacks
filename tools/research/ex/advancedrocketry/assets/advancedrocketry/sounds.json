@@ -1,0 +1,17 @@
+{
+"buttonBlipA": {"category": "master","sounds": [{"name": "buttonBlipA","stream": false}]},
+"ElectricShockSmall": {"category": "master","sounds": [{"name": "ElectricShockSmall","stream": false}]},
+"MachineLarge": {"category": "master","sounds": [{"name": "MachineLarge","stream": false}]},
+"rollingMachine": {"category": "master","sounds": [{"name": "rollingMachine","stream": false}]},
+"airHissLoop": {"category": "master","sounds": [{"name": "airHissLoop","stream": false}]},
+"railgunBang": {"category": "master","sounds": [{"name": "railgunBang","stream": false}]},
+"laserDrill": {"category": "master","sounds": [{"name": "laserDrill","stream": false}]},
+"combustionRocket": {"category": "master","sounds": [{"name": "combustionRocket","stream": false}]},
+"crystallizer": {"category": "master","sounds": [{"name": "crystallizer","stream": false}]},
+"cuttingMachine": {"category": "master","sounds": [{"name": "cuttingMachine","stream": false}]},
+"electricArcFurnace": {"category": "master","sounds": [{"name": "electricArcFurnace","stream": false}]},
+"electrolyser": {"category": "master","sounds": [{"name": "electrolyser","stream": false}]},
+"precAss": {"category": "master","sounds": [{"name": "precAss","stream": false}]},
+"lathe": {"category": "master","sounds": [{"name": "lathe","stream": false}]},
+"basicLaserGun": {"category": "master", "sounds": [{"name": "basicLaserGun", "stream": false}]}
+}

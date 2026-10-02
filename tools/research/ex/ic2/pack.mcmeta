@@ -1,0 +1,13 @@
+{
+	"pack" : {
+		"pack_format" : 1,
+		"description" : "IC2 mod resource pack"
+	},
+	"language" : {
+		"en_IC" : {
+			"name" : "HAYO - I don't now",
+			"region" : "IC",
+			"bidirectional" : false
+		}
+	}
+}

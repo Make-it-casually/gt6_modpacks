@@ -1,0 +1,27 @@
+﻿gt6bridge report analysis - 2026-10-02 23:49:21
+report: E:\game\minecraft\gt6\.minecraft\versions\GT6\config\gt6bridge\report.txt
+timing.autoRules.ms: 1
+autorules.available.ingot: 0
+oredict.stacks: 196
+timing.linkCheck.ms: 0
+removed.total: 0
+autorules.available.purified: 0
+autorules.available.nugget: 0
+autorules.available.dust: 0
+timing.recipePass.ms: 0
+autorules.available.plate: 0
+timing.recipeReInit.ms: 242
+autorules.available.gear: 0
+autorules.available.ore: 0
+autorules.available.dusttiny: 0
+links.failed: 24
+errors: 36
+materials.table.rows: 0
+gt6.prefixes: 468
+oredict.names: 1
+autorules.available.crushed: 0
+timing.removalPass.ms: 65
+unparsedOreNames: 0
+errorsInReport: 36
+
+unknown material tokens (sorted by item count):

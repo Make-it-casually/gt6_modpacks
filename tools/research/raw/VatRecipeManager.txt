@@ -1,0 +1,19 @@
+Compiled from "VatRecipeManager.java"
+public class crazypants.enderio.machine.vat.VatRecipeManager {
+  private static final java.lang.String CORE_FILE_NAME;
+  private static final java.lang.String CUSTOM_FILE_NAME;
+  static final crazypants.enderio.machine.vat.VatRecipeManager instance;
+  private final java.util.List<crazypants.enderio.machine.recipe.IRecipe> recipes;
+  public static crazypants.enderio.machine.vat.VatRecipeManager getInstance();
+  public crazypants.enderio.machine.vat.VatRecipeManager();
+  public void loadRecipesFromConfig();
+  public void addCustomRecipes(java.lang.String);
+  public crazypants.enderio.machine.recipe.IRecipe getRecipeForInput(crazypants.enderio.machine.MachineRecipeInput[]);
+  private void processConfig(crazypants.enderio.machine.recipe.RecipeConfig);
+  public void addRecipe(crazypants.enderio.machine.recipe.IRecipe);
+  public java.util.List<crazypants.enderio.machine.recipe.IRecipe> getRecipes();
+  public boolean isValidInput(crazypants.enderio.machine.MachineRecipeInput);
+  public boolean isValidInput(crazypants.enderio.machine.MachineRecipeInput[]);
+  public float getMultiplierForInput(net.minecraftforge.fluids.Fluid, net.minecraft.item.ItemStack, net.minecraftforge.fluids.Fluid);
+  static {};
+}

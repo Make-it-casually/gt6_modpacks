@@ -1,0 +1,31 @@
+Compiled from "CrusherRecipeManager.java"
+public class crazypants.enderio.machine.crusher.CrusherRecipeManager {
+  public static final int ORE_ENERGY_COST;
+  public static final int INGOT_ENERGY_COST;
+  private static final java.lang.String CORE_FILE_NAME;
+  private static final java.lang.String CUSTOM_FILE_NAME;
+  static final crazypants.enderio.machine.crusher.CrusherRecipeManager instance;
+  private final java.util.List<crazypants.enderio.machine.recipe.Recipe> recipes;
+  private final java.util.List<crazypants.enderio.machine.recipe.RecipeInput> ballExcludes;
+  private final java.util.List<crazypants.enderio.machine.crusher.GrindingBall> balls;
+  private final java.util.Set<net.minecraft.item.ItemStack> excludedStacks;
+  public static crazypants.enderio.machine.crusher.CrusherRecipeManager getInstance();
+  public crazypants.enderio.machine.crusher.CrusherRecipeManager();
+  public boolean isValidSagBall(net.minecraft.item.ItemStack);
+  public boolean isExcludedFromBallBonus(crazypants.enderio.machine.MachineRecipeInput[]);
+  private void addExcludedStack(net.minecraft.item.ItemStack);
+  private boolean isExcludedStack(net.minecraft.item.ItemStack);
+  public crazypants.enderio.machine.crusher.IGrindingMultiplier getGrindballFromStack(net.minecraft.item.ItemStack);
+  public boolean isValidInput(crazypants.enderio.machine.MachineRecipeInput);
+  public void loadRecipesFromConfig();
+  public void addCustomRecipes(java.lang.String);
+  public crazypants.enderio.machine.recipe.IRecipe getRecipeForInput(net.minecraft.item.ItemStack);
+  private void processConfig(crazypants.enderio.machine.recipe.RecipeConfig);
+  public void addRecipe(net.minecraft.item.ItemStack, int, net.minecraft.item.ItemStack);
+  public void addRecipe(net.minecraft.item.ItemStack, int, crazypants.enderio.machine.recipe.RecipeOutput...);
+  public void addRecipe(crazypants.enderio.machine.recipe.Recipe);
+  public java.util.List<crazypants.enderio.machine.recipe.Recipe> getRecipes();
+  public static net.minecraft.item.ItemStack getInput(crazypants.enderio.machine.recipe.IRecipe);
+  public java.util.List<crazypants.enderio.machine.crusher.GrindingBall> getBalls();
+  static {};
+}

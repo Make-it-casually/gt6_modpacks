@@ -1,0 +1,27 @@
+# gt6bridge automatic recipes, one rule per ore dictionary prefix
+# syntax: <prefix>,<map>,<outputPrefix>,<count>[,eut,duration,optimize,enabled]
+#   <prefix>       : ore dictionary prefix as GT6 names it, e.g. ore, crushed, dust, ingot, plate, gear
+#   <map>          : GT6 recipe map (Crusher, Smelter, Mixer, ..., Generifier)
+#   <outputPrefix> : GT6 prefix of the result, produced for the SAME material as the input
+#                    (use 'same' to keep the input prefix)
+#   <count>        : output amount
+#   eut,duration   : energy per tick / ticks (default 16 / 32)
+#   optimize       : GT6 addRecipe1 flag (default true)
+#   enabled        : false = only listed in the report, true = actually added
+#
+# 'Generifier' uses RM.generify(input, output) - the machine that converts foreign
+# items into their GT6 counterpart.
+#
+# Also needs enableAutoRules,true in settings.csv. Keep the rules you do not need disabled:
+# GT6 already synthesizes recipes itself for Crusher/Mortar/Shredder/Anvil/..., these rules
+# are for the gaps (Smelter/Furnace) and for conversions.
+ore,Crusher,crushed,2,16,32,true,false
+crushed,Crusher,dust,1,16,32,true,false
+purified,Crusher,dust,1,16,32,true,false
+dust,Smelter,ingot,1,16,32,true,false
+dustTiny,Smelter,nugget,4,16,16,true,false
+nugget,Smelter,ingot,9,16,16,true,false
+ingot,Generifier,same,1,0,1,true,false
+dust,Generifier,same,1,0,1,true,false
+plate,Generifier,same,1,0,1,true,false
+gear,Generifier,same,1,0,1,true,false

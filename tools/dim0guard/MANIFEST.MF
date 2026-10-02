@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+MixinConfigs: mixins.dim0guard.late.json
+TweakClass: org.spongepowered.asm.launch.MixinTweaker

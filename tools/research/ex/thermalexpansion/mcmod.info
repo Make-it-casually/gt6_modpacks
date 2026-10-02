@@ -1,0 +1,21 @@
+[
+    {
+        "modid": "ThermalExpansion",
+        "name": "Thermal Expansion",
+        "description": "Expanding Minecraft Thermally - provides new options for automation and processing!",
+        "version": "4.1.5",
+        "credits": "Team CoFH",
+        "logoFile": "assets/thermalexpansion/textures/logo.png",
+        "mcversion": "1.7.10",
+        "url": "http://www.teamcofh.com",
+        "updateUrl": "",
+        "authorList": [
+            "Team CoFH"
+        ],
+        "parent": "",
+        "screenshots": [],
+        "dependencies": [
+            "MinecraftForge,CoFHCore,ThermalFoundation"
+        ]
+    }
+]

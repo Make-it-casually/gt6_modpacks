@@ -1,0 +1,2540 @@
+﻿Compiled from "OreDictPrefix.java"
+public final class gregapi.oredict.OreDictPrefix implements gregapi.oredict.event.IOreDictListenerEvent, gregapi.code.ITagDataContainer<gregapi.oredict.OreDictPrefix>, gregapi.code.ICondition<gregapi.code.ITagDataContainer<?>> {
+  public static final java.util.List<gregapi.oredict.OreDictPrefix> VALUES_SORTED;
+
+  private static final java.util.List<gregapi.oredict.OreDictPrefix> VALUES_SORTED_INTERNAL;
+
+  public static final java.util.List<gregapi.oredict.OreDictPrefix> VALUES;
+
+  public static final java.util.Map<java.lang.String, gregapi.oredict.OreDictPrefix> sPrefixes;
+
+  public static final java.util.Map<java.lang.String, gregapi.oredict.OreDictPrefix> sParsed;
+
+  private final java.util.Set<gregapi.code.TagData> mTags;
+
+  private final java.util.Set<gregapi.oredict.OreDictMaterial> mItemGeneratorBlackList;
+
+  private final java.util.Set<gregapi.oredict.OreDictMaterial> mIgnoredRegistrations;
+
+  private final java.util.Set<gregapi.oredict.OreDictMaterial> mItemGeneratorForced;
+
+  private final java.util.Set<gregapi.oredict.event.IOreDictListenerEvent> mListenersOre;
+
+  public final java.util.Set<gregapi.oredict.listeners.IOreDictListenerItem> mListenersItem;
+
+  public final java.lang.String mNameInternal;
+
+  public gregapi.oredict.OreDictPrefix mTargetRegistration;
+
+  public net.minecraft.creativetab.CreativeTabs mCreativeTab;
+
+  public net.minecraft.item.ItemStack mContainerItem;
+
+  private gregapi.code.ICondition mCondition;
+
+  public int mIconIndexBlock;
+
+  public int mIconIndexItem;
+
+  public byte mConfigStackSize;
+
+  public byte mDefaultStackSize;
+
+  public byte mMinimumStackSize;
+
+  public byte mState;
+
+  public long mAmount;
+
+  public long mWeight;
+
+  public java.util.List<gregapi.recipes.AdvancedCrafting1ToY> mShapelessManagersSingle;
+
+  public java.util.List<gregapi.recipes.AdvancedCraftingXToY> mShapelessManagers;
+
+  public float mHeatDamage;
+
+  public java.lang.String mNameLocal;
+
+  public java.lang.String mMaterialPre;
+
+  public java.lang.String mMaterialPost;
+
+  public java.lang.String mNameCategory;
+
+  public java.lang.String mNameTextureSet;
+
+  public final java.util.Set<gregapi.oredict.OreDictPrefix> mFamiliarPrefixes;
+
+  public final java.util.List<gregapi.oredict.OreDictMaterialStack> mByProducts;
+
+  public final java.util.List<gregapi.data.TC$TC_AspectStack> mAspects;
+
+  private final java.util.List<gregapi.oredict.event.IOreDictListenerEvent$OreDictRegistrationContainer> mRegistrations;
+
+  private final java.util.Set<gregapi.oredict.event.IOreDictListenerEvent> mBufferedListeners;
+
+  public final gregapi.code.ItemStackSet<gregapi.code.ItemStackContainer> mRegisteredItems;
+
+  public final java.util.List<gregapi.item.IPrefixItem> mRegisteredPrefixItems;
+
+  public final java.util.Set<gregapi.oredict.OreDictMaterial> mRegisteredMaterials;
+
+  public final gregapi.code.ICondition<gregapi.code.ITagDataContainer> NOT;
+
+  public static gregapi.oredict.OreDictPrefix createPrefix(java.lang.String);
+    Code:
+       0: getstatic     #121                // Field gregapi/data/CS.GAPI:Lgregapi/api/Abstract_Mod;
+       3: getfield      #127                // Field gregapi/api/Abstract_Mod.mStartedInit:Z
+       6: ifeq          19
+       9: new           #129                // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #131                // String Prefixes have to be initialised in PreInit or earlier!
+      15: invokespecial #135                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_0
+      20: ldc           #137                // String
+      22: ldc           #139                // String
+      24: invokevirtual #145                // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      27: ldc           #147                // String -
+      29: ldc           #139                // String
+      31: invokevirtual #145                // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      34: astore_1
+      35: getstatic     #149                // Field sPrefixes:Ljava/util/Map;
+      38: aload_1
+      39: invokeinterface #155,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      44: checkcast     #2                  // class gregapi/oredict/OreDictPrefix
+      47: astore_2
+      48: aload_2
+      49: ifnonnull     64
+      52: new           #2                  // class gregapi/oredict/OreDictPrefix
+      55: dup
+      56: aload_1
+      57: aload_0
+      58: invokespecial #158                // Method "<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      61: goto          65
+      64: aload_2
+      65: areturn
+
+  private gregapi.oredict.OreDictPrefix(java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: invokespecial #164                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #166                // class gregapi/code/HashSetNoNulls
+       8: dup
+       9: invokespecial #167                // Method gregapi/code/HashSetNoNulls."<init>":()V
+      12: putfield      #169                // Field mTags:Ljava/util/Set;
+      15: aload_0
+      16: new           #166                // class gregapi/code/HashSetNoNulls
+      19: dup
+      20: invokespecial #167                // Method gregapi/code/HashSetNoNulls."<init>":()V
+      23: putfield      #171                // Field mItemGeneratorBlackList:Ljava/util/Set;
+      26: aload_0
+      27: new           #166                // class gregapi/code/HashSetNoNulls
+      30: dup
+      31: invokespecial #167                // Method gregapi/code/HashSetNoNulls."<init>":()V
+      34: putfield      #173                // Field mIgnoredRegistrations:Ljava/util/Set;
+      37: aload_0
+      38: new           #166                // class gregapi/code/HashSetNoNulls
+      41: dup
+      42: invokespecial #167                // Method gregapi/code/HashSetNoNulls."<init>":()V
+      45: putfield      #175                // Field mItemGeneratorForced:Ljava/util/Set;
+      48: aload_0
+      49: new           #166                // class gregapi/code/HashSetNoNulls
+      52: dup
+      53: invokespecial #167                // Method gregapi/code/HashSetNoNulls."<init>":()V
+      56: putfield      #177                // Field mListenersOre:Ljava/util/Set;
+      59: aload_0
+      60: new           #166                // class gregapi/code/HashSetNoNulls
+      63: dup
+      64: invokespecial #167                // Method gregapi/code/HashSetNoNulls."<init>":()V
+      67: putfield      #179                // Field mListenersItem:Ljava/util/Set;
+      70: aload_0
+      71: aload_0
+      72: putfield      #181                // Field mTargetRegistration:Lgregapi/oredict/OreDictPrefix;
+      75: aload_0
+      76: aconst_null
+      77: putfield      #183                // Field mCreativeTab:Lnet/minecraft/creativetab/CreativeTabs;
+      80: aload_0
+      81: aconst_null
+      82: putfield      #185                // Field mContainerItem:Lnet/minecraft/item/ItemStack;
+      85: aload_0
+      86: getstatic     #188                // Field gregapi/code/ICondition.TRUE:Lgregapi/code/ICondition;
+      89: putfield      #190                // Field mCondition:Lgregapi/code/ICondition;
+      92: aload_0
+      93: iconst_m1
+      94: putfield      #192                // Field mIconIndexBlock:I
+      97: aload_0
+      98: iconst_m1
+      99: putfield      #194                // Field mIconIndexItem:I
+     102: aload_0
+     103: bipush        64
+     105: putfield      #196                // Field mConfigStackSize:B
+     108: aload_0
+     109: bipush        64
+     111: putfield      #198                // Field mDefaultStackSize:B
+     114: aload_0
+     115: iconst_1
+     116: putfield      #200                // Field mMinimumStackSize:B
+     119: aload_0
+     120: iconst_0
+     121: putfield      #202                // Field mState:B
+     124: aload_0
+     125: ldc2_w        #203                // long -1l
+     128: putfield      #206                // Field mAmount:J
+     131: aload_0
+     132: ldc2_w        #207                // long 648648000l
+     135: putfield      #210                // Field mWeight:J
+     138: aload_0
+     139: new           #212                // class gregapi/code/ArrayListNoNulls
+     142: dup
+     143: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+     146: putfield      #215                // Field mShapelessManagersSingle:Ljava/util/List;
+     149: aload_0
+     150: new           #212                // class gregapi/code/ArrayListNoNulls
+     153: dup
+     154: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+     157: putfield      #217                // Field mShapelessManagers:Ljava/util/List;
+     160: aload_0
+     161: fconst_0
+     162: putfield      #219                // Field mHeatDamage:F
+     165: aload_0
+     166: new           #166                // class gregapi/code/HashSetNoNulls
+     169: dup
+     170: invokespecial #167                // Method gregapi/code/HashSetNoNulls."<init>":()V
+     173: putfield      #221                // Field mFamiliarPrefixes:Ljava/util/Set;
+     176: aload_0
+     177: new           #212                // class gregapi/code/ArrayListNoNulls
+     180: dup
+     181: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+     184: putfield      #223                // Field mByProducts:Ljava/util/List;
+     187: aload_0
+     188: new           #212                // class gregapi/code/ArrayListNoNulls
+     191: dup
+     192: iconst_1
+     193: invokespecial #226                // Method gregapi/code/ArrayListNoNulls."<init>":(I)V
+     196: putfield      #228                // Field mAspects:Ljava/util/List;
+     199: aload_0
+     200: new           #212                // class gregapi/code/ArrayListNoNulls
+     203: dup
+     204: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+     207: putfield      #230                // Field mRegistrations:Ljava/util/List;
+     210: aload_0
+     211: new           #166                // class gregapi/code/HashSetNoNulls
+     214: dup
+     215: invokespecial #167                // Method gregapi/code/HashSetNoNulls."<init>":()V
+     218: putfield      #232                // Field mBufferedListeners:Ljava/util/Set;
+     221: aload_0
+     222: iconst_0
+     223: anewarray     #234                // class net/minecraft/item/ItemStack
+     226: invokestatic  #240                // Method gregapi/util/ST.hashset:([Lnet/minecraft/item/ItemStack;)Lgregapi/code/ItemStackSet;
+     229: putfield      #242                // Field mRegisteredItems:Lgregapi/code/ItemStackSet;
+     232: aload_0
+     233: new           #212                // class gregapi/code/ArrayListNoNulls
+     236: dup
+     237: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+     240: putfield      #244                // Field mRegisteredPrefixItems:Ljava/util/List;
+     243: aload_0
+     244: new           #166                // class gregapi/code/HashSetNoNulls
+     247: dup
+     248: invokespecial #167                // Method gregapi/code/HashSetNoNulls."<init>":()V
+     251: putfield      #246                // Field mRegisteredMaterials:Ljava/util/Set;
+     254: aload_0
+     255: new           #24                 // class gregapi/code/ICondition$Not
+     258: dup
+     259: aload_0
+     260: invokespecial #249                // Method gregapi/code/ICondition$Not."<init>":(Lgregapi/code/ICondition;)V
+     263: putfield      #251                // Field NOT:Lgregapi/code/ICondition;
+     266: aload_0
+     267: aload_1
+     268: putfield      #253                // Field mNameInternal:Ljava/lang/String;
+     271: aload_0
+     272: aload_0
+     273: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     276: putfield      #255                // Field mNameTextureSet:Ljava/lang/String;
+     279: aload_0
+     280: aload_0
+     281: aload_2
+     282: dup_x1
+     283: putfield      #257                // Field mNameLocal:Ljava/lang/String;
+     286: putfield      #259                // Field mNameCategory:Ljava/lang/String;
+     289: aload_0
+     290: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     293: ldc_w         #261                // String |
+     296: invokevirtual #265                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+     299: ifne          354
+     302: aload_0
+     303: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     306: ldc_w         #267                // String *
+     309: invokevirtual #265                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+     312: ifne          354
+     315: aload_0
+     316: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     319: ldc_w         #269                // String :
+     322: invokevirtual #265                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+     325: ifne          354
+     328: aload_0
+     329: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     332: ldc_w         #271                // String .
+     335: invokevirtual #265                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+     338: ifne          354
+     341: aload_0
+     342: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     345: ldc_w         #273                // String $
+     348: invokevirtual #265                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+     351: ifeq          365
+     354: new           #275                // class java/lang/IllegalArgumentException
+     357: dup
+     358: ldc_w         #277                // String The Prefix Name contains invalid Characters!
+     361: invokespecial #278                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     364: athrow
+     365: aload_0
+     366: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     369: invokevirtual #282                // Method java/lang/String.length:()I
+     372: iconst_3
+     373: if_icmpge     387
+     376: new           #275                // class java/lang/IllegalArgumentException
+     379: dup
+     380: ldc_w         #284                // String A Prefix must have at least 3 Characters, otherwise it would break other Prefixes way to easily.
+     383: invokespecial #278                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     386: athrow
+     387: getstatic     #286                // Field VALUES:Ljava/util/List;
+     390: aload_0
+     391: invokeinterface #292,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     396: pop
+     397: getstatic     #294                // Field VALUES_SORTED_INTERNAL:Ljava/util/List;
+     400: invokeinterface #298,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     405: ifeq          431
+     408: getstatic     #294                // Field VALUES_SORTED_INTERNAL:Ljava/util/List;
+     411: aload_0
+     412: invokeinterface #292,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     417: pop
+     418: getstatic     #300                // Field VALUES_SORTED:Ljava/util/List;
+     421: aload_0
+     422: invokeinterface #292,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     427: pop
+     428: goto          506
+     431: iconst_0
+     432: istore_3
+     433: getstatic     #294                // Field VALUES_SORTED_INTERNAL:Ljava/util/List;
+     436: invokeinterface #303,  1          // InterfaceMethod java/util/List.size:()I
+     441: istore        4
+     443: iload_3
+     444: iload         4
+     446: if_icmpge     506
+     449: aload_0
+     450: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     453: invokevirtual #282                // Method java/lang/String.length:()I
+     456: getstatic     #294                // Field VALUES_SORTED_INTERNAL:Ljava/util/List;
+     459: iload_3
+     460: invokeinterface #306,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     465: checkcast     #2                  // class gregapi/oredict/OreDictPrefix
+     468: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     471: invokevirtual #282                // Method java/lang/String.length:()I
+     474: if_icmplt     500
+     477: getstatic     #294                // Field VALUES_SORTED_INTERNAL:Ljava/util/List;
+     480: iload_3
+     481: aload_0
+     482: invokeinterface #309,  3          // InterfaceMethod java/util/List.add:(ILjava/lang/Object;)V
+     487: getstatic     #300                // Field VALUES_SORTED:Ljava/util/List;
+     490: iload_3
+     491: aload_0
+     492: invokeinterface #309,  3          // InterfaceMethod java/util/List.add:(ILjava/lang/Object;)V
+     497: goto          506
+     500: iinc          3, 1
+     503: goto          443
+     506: getstatic     #149                // Field sPrefixes:Ljava/util/Map;
+     509: aload_0
+     510: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     513: aload_0
+     514: invokeinterface #313,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     519: pop
+     520: aload_0
+     521: getfield      #221                // Field mFamiliarPrefixes:Ljava/util/Set;
+     524: aload_0
+     525: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+     530: pop
+     531: return
+
+  public static gregapi.oredict.OreDictPrefix get(java.lang.String);
+    Code:
+       0: getstatic     #323                // Field sParsed:Ljava/util/Map;
+       3: aload_0
+       4: invokeinterface #155,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       9: checkcast     #2                  // class gregapi/oredict/OreDictPrefix
+      12: astore_1
+      13: aload_1
+      14: ifnull        19
+      17: aload_1
+      18: areturn
+      19: getstatic     #323                // Field sParsed:Ljava/util/Map;
+      22: aload_0
+      23: invokeinterface #326,  2          // InterfaceMethod java/util/Map.containsKey:(Ljava/lang/Object;)Z
+      28: ifeq          33
+      31: aconst_null
+      32: areturn
+      33: iconst_0
+      34: istore_2
+      35: getstatic     #294                // Field VALUES_SORTED_INTERNAL:Ljava/util/List;
+      38: invokeinterface #303,  1          // InterfaceMethod java/util/List.size:()I
+      43: istore_3
+      44: iload_2
+      45: iload_3
+      46: if_icmpge     92
+      49: getstatic     #294                // Field VALUES_SORTED_INTERNAL:Ljava/util/List;
+      52: iload_2
+      53: invokeinterface #306,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      58: checkcast     #2                  // class gregapi/oredict/OreDictPrefix
+      61: astore_1
+      62: aload_0
+      63: aload_1
+      64: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+      67: invokevirtual #330                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      70: ifeq          86
+      73: getstatic     #323                // Field sParsed:Ljava/util/Map;
+      76: aload_0
+      77: aload_1
+      78: invokeinterface #313,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      83: pop
+      84: aload_1
+      85: areturn
+      86: iinc          2, 1
+      89: goto          44
+      92: getstatic     #323                // Field sParsed:Ljava/util/Map;
+      95: aload_0
+      96: aconst_null
+      97: invokeinterface #313,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     102: pop
+     103: aconst_null
+     104: areturn
+
+  public gregapi.oredict.OreDictPrefix addIdenticalNames(java.lang.String...);
+    Code:
+       0: aload_1
+       1: astore_2
+       2: aload_2
+       3: arraylength
+       4: istore_3
+       5: iconst_0
+       6: istore        4
+       8: iload         4
+      10: iload_3
+      11: if_icmpge     36
+      14: aload_2
+      15: iload         4
+      17: aaload
+      18: astore        5
+      20: aload         5
+      22: invokestatic  #337                // Method createPrefix:(Ljava/lang/String;)Lgregapi/oredict/OreDictPrefix;
+      25: aload_0
+      26: invokevirtual #341                // Method setRegistration:(Lgregapi/oredict/OreDictPrefix;)Lgregapi/oredict/OreDictPrefix;
+      29: pop
+      30: iinc          4, 1
+      33: goto          8
+      36: aload_0
+      37: areturn
+
+  public gregapi.oredict.OreDictPrefix addFamiliarPrefix(gregapi.oredict.OreDictPrefix);
+    Code:
+       0: aload_0
+       1: getfield      #221                // Field mFamiliarPrefixes:Ljava/util/Set;
+       4: aload_1
+       5: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      10: pop
+      11: aload_0
+      12: areturn
+
+  public gregapi.oredict.OreDictPrefix addFamiliarPrefixWithReversal(gregapi.oredict.OreDictPrefix);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_0
+       3: invokevirtual #347                // Method addFamiliarPrefix:(Lgregapi/oredict/OreDictPrefix;)Lgregapi/oredict/OreDictPrefix;
+       6: invokevirtual #347                // Method addFamiliarPrefix:(Lgregapi/oredict/OreDictPrefix;)Lgregapi/oredict/OreDictPrefix;
+       9: areturn
+
+  public gregapi.oredict.OreDictPrefix setRegistration(gregapi.oredict.OreDictPrefix);
+    Code:
+       0: aload_1
+       1: ifnull        24
+       4: aload_0
+       5: aload_1
+       6: putfield      #181                // Field mTargetRegistration:Lgregapi/oredict/OreDictPrefix;
+       9: aload_0
+      10: iconst_1
+      11: anewarray     #349                // class gregapi/code/TagData
+      14: dup
+      15: iconst_0
+      16: getstatic     #353                // Field gregapi/data/TD$Prefix.PREFIX_UNUSED:Lgregapi/code/TagData;
+      19: aastore
+      20: invokevirtual #356                // Method add:([Lgregapi/code/TagData;)Lgregapi/oredict/OreDictPrefix;
+      23: pop
+      24: aload_0
+      25: areturn
+
+  public gregapi.oredict.OreDictPrefix setMaterialStats(long);
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: anewarray     #349                // class gregapi/code/TagData
+       5: dup
+       6: iconst_0
+       7: getstatic     #361                // Field gregapi/data/TD$Prefix.MATERIAL_BASED:Lgregapi/code/TagData;
+      10: aastore
+      11: invokevirtual #356                // Method add:([Lgregapi/code/TagData;)Lgregapi/oredict/OreDictPrefix;
+      14: pop
+      15: aload_0
+      16: lload_1
+      17: putfield      #206                // Field mAmount:J
+      20: aload_0
+      21: lload_1
+      22: putfield      #210                // Field mWeight:J
+      25: aload_0
+      26: aload_0
+      27: getfield      #206                // Field mAmount:J
+      30: ldc2_w        #362                // long 1297296000l
+      33: lcmp
+      34: ifge          43
+      37: ldc2_w        #364                // long 64l
+      40: goto          55
+      43: ldc2_w        #364                // long 64l
+      46: aload_0
+      47: getfield      #206                // Field mAmount:J
+      50: ldc2_w        #207                // long 648648000l
+      53: ldiv
+      54: ldiv
+      55: invokevirtual #368                // Method setStacksize:(J)Lgregapi/oredict/OreDictPrefix;
+      58: pop
+      59: aload_0
+      60: areturn
+
+  public gregapi.oredict.OreDictPrefix setMaterialStats(long, long);
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: anewarray     #349                // class gregapi/code/TagData
+       5: dup
+       6: iconst_0
+       7: getstatic     #361                // Field gregapi/data/TD$Prefix.MATERIAL_BASED:Lgregapi/code/TagData;
+      10: aastore
+      11: invokevirtual #356                // Method add:([Lgregapi/code/TagData;)Lgregapi/oredict/OreDictPrefix;
+      14: pop
+      15: aload_0
+      16: lload_1
+      17: putfield      #206                // Field mAmount:J
+      20: aload_0
+      21: lload_3
+      22: putfield      #210                // Field mWeight:J
+      25: aload_0
+      26: aload_0
+      27: getfield      #206                // Field mAmount:J
+      30: ldc2_w        #362                // long 1297296000l
+      33: lcmp
+      34: ifge          43
+      37: ldc2_w        #364                // long 64l
+      40: goto          55
+      43: ldc2_w        #364                // long 64l
+      46: aload_0
+      47: getfield      #206                // Field mAmount:J
+      50: ldc2_w        #207                // long 648648000l
+      53: ldiv
+      54: ldiv
+      55: invokevirtual #368                // Method setStacksize:(J)Lgregapi/oredict/OreDictPrefix;
+      58: pop
+      59: aload_0
+      60: areturn
+
+  public gregapi.oredict.OreDictPrefix setOreStats(long);
+    Code:
+       0: aload_0
+       1: iconst_4
+       2: anewarray     #349                // class gregapi/code/TagData
+       5: dup
+       6: iconst_0
+       7: getstatic     #361                // Field gregapi/data/TD$Prefix.MATERIAL_BASED:Lgregapi/code/TagData;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #375                // Field gregapi/data/TD$Prefix.UNIFICATABLE:Lgregapi/code/TagData;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #378                // Field gregapi/data/TD$Prefix.ORE:Lgregapi/code/TagData;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #381                // Field gregapi/data/TD$Prefix.TOOLTIP_ENCHANTS:Lgregapi/code/TagData;
+      28: aastore
+      29: invokevirtual #356                // Method add:([Lgregapi/code/TagData;)Lgregapi/oredict/OreDictPrefix;
+      32: pop
+      33: aload_0
+      34: ldc2_w        #203                // long -1l
+      37: putfield      #206                // Field mAmount:J
+      40: aload_0
+      41: lload_1
+      42: putfield      #210                // Field mWeight:J
+      45: aload_0
+      46: getstatic     #384                // Field gregapi/data/TD$ItemGenerator.ORES:Lgregapi/code/TagData;
+      49: invokevirtual #388                // Method setCondition:(Lgregapi/code/ICondition;)Lgregapi/oredict/OreDictPrefix;
+      52: pop
+      53: aload_0
+      54: areturn
+
+  public gregapi.oredict.OreDictPrefix setConfigStacksize(long);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #200                // Field mMinimumStackSize:B
+       5: i2l
+       6: ldc2_w        #364                // long 64l
+       9: lload_1
+      10: invokestatic  #393                // Method gregapi/util/UT$Code.bind_:(JJJ)J
+      13: l2i
+      14: i2b
+      15: putfield      #196                // Field mConfigStackSize:B
+      18: aload_0
+      19: aload_0
+      20: getfield      #200                // Field mMinimumStackSize:B
+      23: i2l
+      24: ldc2_w        #364                // long 64l
+      27: lload_1
+      28: invokestatic  #393                // Method gregapi/util/UT$Code.bind_:(JJJ)J
+      31: l2i
+      32: i2b
+      33: putfield      #198                // Field mDefaultStackSize:B
+      36: aload_0
+      37: areturn
+
+  public gregapi.oredict.OreDictPrefix setStacksize(long);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #200                // Field mMinimumStackSize:B
+       5: i2l
+       6: ldc2_w        #364                // long 64l
+       9: lload_1
+      10: invokestatic  #393                // Method gregapi/util/UT$Code.bind_:(JJJ)J
+      13: l2i
+      14: i2b
+      15: putfield      #198                // Field mDefaultStackSize:B
+      18: aload_0
+      19: areturn
+
+  public gregapi.oredict.OreDictPrefix setStacksize(long, long);
+    Code:
+       0: aload_0
+       1: lconst_1
+       2: ldc2_w        #364                // long 64l
+       5: lload_3
+       6: invokestatic  #393                // Method gregapi/util/UT$Code.bind_:(JJJ)J
+       9: l2i
+      10: i2b
+      11: putfield      #200                // Field mMinimumStackSize:B
+      14: aload_0
+      15: aload_0
+      16: getfield      #200                // Field mMinimumStackSize:B
+      19: i2l
+      20: ldc2_w        #364                // long 64l
+      23: lload_1
+      24: invokestatic  #393                // Method gregapi/util/UT$Code.bind_:(JJJ)J
+      27: l2i
+      28: i2b
+      29: putfield      #198                // Field mDefaultStackSize:B
+      32: aload_0
+      33: areturn
+
+  public gregapi.oredict.OreDictPrefix setMinStacksize(long);
+    Code:
+       0: aload_0
+       1: lconst_1
+       2: ldc2_w        #364                // long 64l
+       5: lload_1
+       6: invokestatic  #393                // Method gregapi/util/UT$Code.bind_:(JJJ)J
+       9: l2i
+      10: i2b
+      11: putfield      #200                // Field mMinimumStackSize:B
+      14: aload_0
+      15: aload_0
+      16: getfield      #200                // Field mMinimumStackSize:B
+      19: i2l
+      20: ldc2_w        #364                // long 64l
+      23: aload_0
+      24: getfield      #198                // Field mDefaultStackSize:B
+      27: i2l
+      28: invokestatic  #393                // Method gregapi/util/UT$Code.bind_:(JJJ)J
+      31: l2i
+      32: i2b
+      33: putfield      #198                // Field mDefaultStackSize:B
+      36: aload_0
+      37: areturn
+
+  public static void applyAllStackSizes();
+    Code:
+       0: getstatic     #286                // Field VALUES:Ljava/util/List;
+       3: invokeinterface #401,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       8: astore_0
+       9: aload_0
+      10: invokeinterface #406,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      15: ifeq          36
+      18: aload_0
+      19: invokeinterface #410,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      24: checkcast     #2                  // class gregapi/oredict/OreDictPrefix
+      27: astore_1
+      28: aload_1
+      29: invokevirtual #414                // Method applyStackSizes:()Lgregapi/oredict/OreDictPrefix;
+      32: pop
+      33: goto          9
+      36: return
+
+  public gregapi.oredict.OreDictPrefix applyStackSizes();
+    Code:
+       0: aload_0
+       1: getstatic     #353                // Field gregapi/data/TD$Prefix.PREFIX_UNUSED:Lgregapi/code/TagData;
+       4: invokevirtual #418                // Method contains:(Lgregapi/code/TagData;)Z
+       7: ifeq          12
+      10: aload_0
+      11: areturn
+      12: aload_0
+      13: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+      16: if_acmpeq     46
+      19: aload_0
+      20: getstatic     #426                // Field gregapi/data/OP.stone:Lgregapi/oredict/OreDictPrefix;
+      23: if_acmpeq     46
+      26: aload_0
+      27: getstatic     #429                // Field gregapi/data/OP.scrapGt:Lgregapi/oredict/OreDictPrefix;
+      30: if_acmpeq     46
+      33: aload_0
+      34: new           #14                 // class gregapi/oredict/OreDictPrefix$1
+      37: dup
+      38: aload_0
+      39: invokespecial #432                // Method gregapi/oredict/OreDictPrefix$1."<init>":(Lgregapi/oredict/OreDictPrefix;)V
+      42: invokevirtual #436                // Method addListener:(Lgregapi/oredict/event/IOreDictListenerEvent;)Lgregapi/oredict/OreDictPrefix;
+      45: pop
+      46: getstatic     #442                // Field net/minecraft/init/Items.field_151079_bi:Lnet/minecraft/item/Item;
+      49: getstatic     #445                // Field gregapi/data/OP.gem:Lgregapi/oredict/OreDictPrefix;
+      52: getfield      #198                // Field mDefaultStackSize:B
+      55: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+      58: pop
+      59: getstatic     #454                // Field net/minecraft/init/Items.field_151086_cn:Lnet/minecraft/item/Item;
+      62: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+      65: getfield      #198                // Field mDefaultStackSize:B
+      68: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+      71: pop
+      72: getstatic     #460                // Field net/minecraft/init/Items.field_151096_cd:Lnet/minecraft/item/Item;
+      75: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+      78: getfield      #198                // Field mDefaultStackSize:B
+      81: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+      84: pop
+      85: getstatic     #463                // Field net/minecraft/init/Items.field_151094_cf:Lnet/minecraft/item/Item;
+      88: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+      91: getfield      #198                // Field mDefaultStackSize:B
+      94: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+      97: pop
+      98: getstatic     #466                // Field net/minecraft/init/Items.field_151093_ce:Lnet/minecraft/item/Item;
+     101: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+     104: getfield      #198                // Field mDefaultStackSize:B
+     107: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     110: pop
+     111: getstatic     #469                // Field net/minecraft/init/Items.field_151091_cg:Lnet/minecraft/item/Item;
+     114: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+     117: getfield      #198                // Field mDefaultStackSize:B
+     120: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     123: pop
+     124: getstatic     #472                // Field net/minecraft/init/Items.field_151092_ch:Lnet/minecraft/item/Item;
+     127: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+     130: getfield      #198                // Field mDefaultStackSize:B
+     133: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     136: pop
+     137: getstatic     #475                // Field net/minecraft/init/Items.field_151089_ci:Lnet/minecraft/item/Item;
+     140: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+     143: getfield      #198                // Field mDefaultStackSize:B
+     146: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     149: pop
+     150: getstatic     #478                // Field net/minecraft/init/Items.field_151090_cj:Lnet/minecraft/item/Item;
+     153: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+     156: getfield      #198                // Field mDefaultStackSize:B
+     159: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     162: pop
+     163: getstatic     #481                // Field net/minecraft/init/Items.field_151087_ck:Lnet/minecraft/item/Item;
+     166: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+     169: getfield      #198                // Field mDefaultStackSize:B
+     172: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     175: pop
+     176: getstatic     #484                // Field net/minecraft/init/Items.field_151088_cl:Lnet/minecraft/item/Item;
+     179: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+     182: getfield      #198                // Field mDefaultStackSize:B
+     185: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     188: pop
+     189: getstatic     #487                // Field net/minecraft/init/Items.field_151084_co:Lnet/minecraft/item/Item;
+     192: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+     195: getfield      #198                // Field mDefaultStackSize:B
+     198: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     201: pop
+     202: getstatic     #490                // Field net/minecraft/init/Items.field_151085_cm:Lnet/minecraft/item/Item;
+     205: getstatic     #457                // Field gregapi/data/OP.record:Lgregapi/oredict/OreDictPrefix;
+     208: getfield      #198                // Field mDefaultStackSize:B
+     211: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     214: pop
+     215: getstatic     #496                // Field net/minecraft/init/Blocks.field_150403_cj:Lnet/minecraft/block/Block;
+     218: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     221: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     224: getfield      #198                // Field mDefaultStackSize:B
+     227: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     230: pop
+     231: getstatic     #503                // Field net/minecraft/init/Blocks.field_150432_aD:Lnet/minecraft/block/Block;
+     234: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     237: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     240: getfield      #198                // Field mDefaultStackSize:B
+     243: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     246: pop
+     247: getstatic     #506                // Field net/minecraft/init/Blocks.field_150425_aM:Lnet/minecraft/block/Block;
+     250: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     253: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     256: getfield      #198                // Field mDefaultStackSize:B
+     259: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     262: pop
+     263: getstatic     #509                // Field net/minecraft/init/Blocks.field_150426_aN:Lnet/minecraft/block/Block;
+     266: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     269: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     272: getfield      #198                // Field mDefaultStackSize:B
+     275: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     278: pop
+     279: getstatic     #512                // Field net/minecraft/init/Blocks.field_150431_aC:Lnet/minecraft/block/Block;
+     282: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     285: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     288: getfield      #198                // Field mDefaultStackSize:B
+     291: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     294: pop
+     295: getstatic     #515                // Field net/minecraft/init/Blocks.field_150433_aE:Lnet/minecraft/block/Block;
+     298: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     301: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     304: getfield      #198                // Field mDefaultStackSize:B
+     307: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     310: pop
+     311: getstatic     #518                // Field net/minecraft/init/Blocks.field_150435_aG:Lnet/minecraft/block/Block;
+     314: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     317: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     320: getfield      #198                // Field mDefaultStackSize:B
+     323: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     326: pop
+     327: getstatic     #521                // Field net/minecraft/init/Blocks.field_150379_bu:Lnet/minecraft/block/Block;
+     330: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     333: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     336: getfield      #198                // Field mDefaultStackSize:B
+     339: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     342: pop
+     343: getstatic     #524                // Field net/minecraft/init/Blocks.field_150346_d:Lnet/minecraft/block/Block;
+     346: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     349: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     352: getfield      #198                // Field mDefaultStackSize:B
+     355: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     358: pop
+     359: getstatic     #528                // Field net/minecraft/init/Blocks.field_150349_c:Lnet/minecraft/block/BlockGrass;
+     362: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     365: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     368: getfield      #198                // Field mDefaultStackSize:B
+     371: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     374: pop
+     375: getstatic     #532                // Field net/minecraft/init/Blocks.field_150391_bh:Lnet/minecraft/block/BlockMycelium;
+     378: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     381: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     384: getfield      #198                // Field mDefaultStackSize:B
+     387: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     390: pop
+     391: getstatic     #535                // Field net/minecraft/init/Blocks.field_150351_n:Lnet/minecraft/block/Block;
+     394: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     397: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     400: getfield      #198                // Field mDefaultStackSize:B
+     403: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     406: pop
+     407: getstatic     #539                // Field net/minecraft/init/Blocks.field_150354_m:Lnet/minecraft/block/BlockSand;
+     410: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     413: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     416: getfield      #198                // Field mDefaultStackSize:B
+     419: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     422: pop
+     423: getstatic     #542                // Field net/minecraft/init/Blocks.field_150325_L:Lnet/minecraft/block/Block;
+     426: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     429: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     432: getfield      #198                // Field mDefaultStackSize:B
+     435: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     438: pop
+     439: getstatic     #545                // Field net/minecraft/init/Blocks.field_150440_ba:Lnet/minecraft/block/Block;
+     442: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     445: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     448: getfield      #198                // Field mDefaultStackSize:B
+     451: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     454: pop
+     455: getstatic     #548                // Field net/minecraft/init/Blocks.field_150423_aK:Lnet/minecraft/block/Block;
+     458: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     461: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     464: getfield      #198                // Field mDefaultStackSize:B
+     467: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     470: pop
+     471: getstatic     #551                // Field net/minecraft/init/Blocks.field_150428_aP:Lnet/minecraft/block/Block;
+     474: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     477: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     480: getfield      #198                // Field mDefaultStackSize:B
+     483: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     486: pop
+     487: getstatic     #554                // Field net/minecraft/init/Blocks.field_150367_z:Lnet/minecraft/block/Block;
+     490: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     493: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     496: getfield      #198                // Field mDefaultStackSize:B
+     499: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     502: pop
+     503: getstatic     #558                // Field net/minecraft/init/Blocks.field_150331_J:Lnet/minecraft/block/BlockPistonBase;
+     506: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     509: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     512: getfield      #198                // Field mDefaultStackSize:B
+     515: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     518: pop
+     519: getstatic     #561                // Field net/minecraft/init/Blocks.field_150320_F:Lnet/minecraft/block/BlockPistonBase;
+     522: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     525: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     528: getfield      #198                // Field mDefaultStackSize:B
+     531: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     534: pop
+     535: getstatic     #564                // Field net/minecraft/init/Blocks.field_150462_ai:Lnet/minecraft/block/Block;
+     538: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     541: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     544: getfield      #198                // Field mDefaultStackSize:B
+     547: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     550: pop
+     551: getstatic     #567                // Field net/minecraft/init/Blocks.field_150421_aI:Lnet/minecraft/block/Block;
+     554: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     557: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     560: getfield      #198                // Field mDefaultStackSize:B
+     563: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     566: pop
+     567: getstatic     #570                // Field net/minecraft/init/Blocks.field_150467_bQ:Lnet/minecraft/block/Block;
+     570: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     573: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     576: getfield      #198                // Field mDefaultStackSize:B
+     579: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     582: pop
+     583: getstatic     #574                // Field net/minecraft/init/Blocks.field_150486_ae:Lnet/minecraft/block/BlockChest;
+     586: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     589: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     592: getfield      #198                // Field mDefaultStackSize:B
+     595: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     598: pop
+     599: getstatic     #577                // Field net/minecraft/init/Blocks.field_150447_bR:Lnet/minecraft/block/Block;
+     602: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     605: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     608: getfield      #198                // Field mDefaultStackSize:B
+     611: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     614: pop
+     615: getstatic     #580                // Field net/minecraft/init/Blocks.field_150323_B:Lnet/minecraft/block/Block;
+     618: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     621: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     624: getfield      #198                // Field mDefaultStackSize:B
+     627: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     630: pop
+     631: getstatic     #583                // Field net/minecraft/init/Blocks.field_150474_ac:Lnet/minecraft/block/Block;
+     634: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     637: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     640: getfield      #198                // Field mDefaultStackSize:B
+     643: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     646: pop
+     647: getstatic     #586                // Field net/minecraft/init/Blocks.field_150342_X:Lnet/minecraft/block/Block;
+     650: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     653: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     656: getfield      #198                // Field mDefaultStackSize:B
+     659: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     662: pop
+     663: getstatic     #589                // Field net/minecraft/init/Blocks.field_150460_al:Lnet/minecraft/block/Block;
+     666: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     669: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     672: getfield      #198                // Field mDefaultStackSize:B
+     675: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     678: pop
+     679: getstatic     #592                // Field net/minecraft/init/Blocks.field_150470_am:Lnet/minecraft/block/Block;
+     682: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     685: getstatic     #423                // Field gregapi/data/OP.block:Lgregapi/oredict/OreDictPrefix;
+     688: getfield      #198                // Field mDefaultStackSize:B
+     691: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     694: pop
+     695: getstatic     #595                // Field net/minecraft/init/Blocks.field_150322_A:Lnet/minecraft/block/Block;
+     698: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     701: getstatic     #426                // Field gregapi/data/OP.stone:Lgregapi/oredict/OreDictPrefix;
+     704: getfield      #198                // Field mDefaultStackSize:B
+     707: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     710: pop
+     711: getstatic     #598                // Field net/minecraft/init/Blocks.field_150343_Z:Lnet/minecraft/block/Block;
+     714: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     717: getstatic     #426                // Field gregapi/data/OP.stone:Lgregapi/oredict/OreDictPrefix;
+     720: getfield      #198                // Field mDefaultStackSize:B
+     723: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     726: pop
+     727: getstatic     #601                // Field net/minecraft/init/Blocks.field_150348_b:Lnet/minecraft/block/Block;
+     730: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     733: getstatic     #426                // Field gregapi/data/OP.stone:Lgregapi/oredict/OreDictPrefix;
+     736: getfield      #198                // Field mDefaultStackSize:B
+     739: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     742: pop
+     743: getstatic     #605                // Field net/minecraft/init/Blocks.field_150333_U:Lnet/minecraft/block/BlockSlab;
+     746: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     749: getstatic     #608                // Field gregapi/data/OP.slab:Lgregapi/oredict/OreDictPrefix;
+     752: getfield      #198                // Field mDefaultStackSize:B
+     755: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     758: pop
+     759: getstatic     #611                // Field net/minecraft/init/Blocks.field_150334_T:Lnet/minecraft/block/BlockSlab;
+     762: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     765: getstatic     #608                // Field gregapi/data/OP.slab:Lgregapi/oredict/OreDictPrefix;
+     768: getfield      #198                // Field mDefaultStackSize:B
+     771: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     774: pop
+     775: getstatic     #614                // Field net/minecraft/init/Blocks.field_150376_bx:Lnet/minecraft/block/BlockSlab;
+     778: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     781: getstatic     #608                // Field gregapi/data/OP.slab:Lgregapi/oredict/OreDictPrefix;
+     784: getfield      #198                // Field mDefaultStackSize:B
+     787: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     790: pop
+     791: getstatic     #617                // Field net/minecraft/init/Blocks.field_150373_bw:Lnet/minecraft/block/BlockSlab;
+     794: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     797: getstatic     #608                // Field gregapi/data/OP.slab:Lgregapi/oredict/OreDictPrefix;
+     800: getfield      #198                // Field mDefaultStackSize:B
+     803: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     806: pop
+     807: getstatic     #620                // Field net/minecraft/init/Blocks.field_150390_bg:Lnet/minecraft/block/Block;
+     810: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     813: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     816: getfield      #198                // Field mDefaultStackSize:B
+     819: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     822: pop
+     823: getstatic     #626                // Field net/minecraft/init/Blocks.field_150389_bf:Lnet/minecraft/block/Block;
+     826: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     829: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     832: getfield      #198                // Field mDefaultStackSize:B
+     835: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     838: pop
+     839: getstatic     #629                // Field net/minecraft/init/Blocks.field_150387_bl:Lnet/minecraft/block/Block;
+     842: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     845: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     848: getfield      #198                // Field mDefaultStackSize:B
+     851: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     854: pop
+     855: getstatic     #632                // Field net/minecraft/init/Blocks.field_150372_bz:Lnet/minecraft/block/Block;
+     858: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     861: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     864: getfield      #198                // Field mDefaultStackSize:B
+     867: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     870: pop
+     871: getstatic     #635                // Field net/minecraft/init/Blocks.field_150446_ar:Lnet/minecraft/block/Block;
+     874: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     877: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     880: getfield      #198                // Field mDefaultStackSize:B
+     883: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     886: pop
+     887: getstatic     #638                // Field net/minecraft/init/Blocks.field_150476_ad:Lnet/minecraft/block/Block;
+     890: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     893: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     896: getfield      #198                // Field mDefaultStackSize:B
+     899: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     902: pop
+     903: getstatic     #641                // Field net/minecraft/init/Blocks.field_150481_bH:Lnet/minecraft/block/Block;
+     906: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     909: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     912: getfield      #198                // Field mDefaultStackSize:B
+     915: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     918: pop
+     919: getstatic     #644                // Field net/minecraft/init/Blocks.field_150487_bG:Lnet/minecraft/block/Block;
+     922: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     925: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     928: getfield      #198                // Field mDefaultStackSize:B
+     931: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     934: pop
+     935: getstatic     #647                // Field net/minecraft/init/Blocks.field_150485_bF:Lnet/minecraft/block/Block;
+     938: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     941: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     944: getfield      #198                // Field mDefaultStackSize:B
+     947: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     950: pop
+     951: getstatic     #650                // Field net/minecraft/init/Blocks.field_150400_ck:Lnet/minecraft/block/Block;
+     954: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     957: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     960: getfield      #198                // Field mDefaultStackSize:B
+     963: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     966: pop
+     967: getstatic     #653                // Field net/minecraft/init/Blocks.field_150401_cl:Lnet/minecraft/block/Block;
+     970: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     973: getstatic     #623                // Field gregapi/data/OP.stair:Lgregapi/oredict/OreDictPrefix;
+     976: getfield      #198                // Field mDefaultStackSize:B
+     979: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     982: pop
+     983: getstatic     #656                // Field net/minecraft/init/Blocks.field_150359_w:Lnet/minecraft/block/Block;
+     986: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+     989: getstatic     #659                // Field gregapi/data/OP.glass:Lgregapi/oredict/OreDictPrefix;
+     992: getfield      #198                // Field mDefaultStackSize:B
+     995: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+     998: pop
+     999: getstatic     #663                // Field net/minecraft/init/Blocks.field_150399_cn:Lnet/minecraft/block/BlockStainedGlass;
+    1002: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1005: getstatic     #659                // Field gregapi/data/OP.glass:Lgregapi/oredict/OreDictPrefix;
+    1008: getfield      #198                // Field mDefaultStackSize:B
+    1011: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1014: pop
+    1015: getstatic     #666                // Field net/minecraft/init/Blocks.field_150410_aZ:Lnet/minecraft/block/Block;
+    1018: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1021: getstatic     #669                // Field gregapi/data/OP.paneGlass:Lgregapi/oredict/OreDictPrefix;
+    1024: getfield      #198                // Field mDefaultStackSize:B
+    1027: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1030: pop
+    1031: getstatic     #673                // Field net/minecraft/init/Blocks.field_150397_co:Lnet/minecraft/block/BlockStainedGlassPane;
+    1034: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1037: getstatic     #669                // Field gregapi/data/OP.paneGlass:Lgregapi/oredict/OreDictPrefix;
+    1040: getfield      #198                // Field mDefaultStackSize:B
+    1043: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1046: pop
+    1047: getstatic     #676                // Field net/minecraft/init/Blocks.field_150405_ch:Lnet/minecraft/block/Block;
+    1050: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1053: getstatic     #679                // Field gregapi/data/OP.stainedClay:Lgregapi/oredict/OreDictPrefix;
+    1056: getfield      #198                // Field mDefaultStackSize:B
+    1059: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1062: pop
+    1063: getstatic     #682                // Field net/minecraft/init/Blocks.field_150406_ce:Lnet/minecraft/block/Block;
+    1066: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1069: getstatic     #679                // Field gregapi/data/OP.stainedClay:Lgregapi/oredict/OreDictPrefix;
+    1072: getfield      #198                // Field mDefaultStackSize:B
+    1075: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1078: pop
+    1079: getstatic     #685                // Field net/minecraft/init/Blocks.field_150347_e:Lnet/minecraft/block/Block;
+    1082: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1085: getstatic     #688                // Field gregapi/data/OP.stoneCobble:Lgregapi/oredict/OreDictPrefix;
+    1088: getfield      #198                // Field mDefaultStackSize:B
+    1091: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1094: pop
+    1095: getstatic     #691                // Field net/minecraft/init/Blocks.field_150422_aJ:Lnet/minecraft/block/Block;
+    1098: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1101: getstatic     #694                // Field gregapi/data/OP.fence:Lgregapi/oredict/OreDictPrefix;
+    1104: getfield      #198                // Field mDefaultStackSize:B
+    1107: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1110: pop
+    1111: getstatic     #697                // Field net/minecraft/init/Blocks.field_150396_be:Lnet/minecraft/block/Block;
+    1114: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1117: getstatic     #694                // Field gregapi/data/OP.fence:Lgregapi/oredict/OreDictPrefix;
+    1120: getfield      #198                // Field mDefaultStackSize:B
+    1123: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1126: pop
+    1127: getstatic     #700                // Field net/minecraft/init/Blocks.field_150463_bK:Lnet/minecraft/block/Block;
+    1130: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1133: getstatic     #694                // Field gregapi/data/OP.fence:Lgregapi/oredict/OreDictPrefix;
+    1136: getfield      #198                // Field mDefaultStackSize:B
+    1139: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1142: pop
+    1143: getstatic     #703                // Field net/minecraft/init/Blocks.field_150386_bk:Lnet/minecraft/block/Block;
+    1146: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1149: getstatic     #694                // Field gregapi/data/OP.fence:Lgregapi/oredict/OreDictPrefix;
+    1152: getfield      #198                // Field mDefaultStackSize:B
+    1155: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1158: pop
+    1159: getstatic     #706                // Field net/minecraft/init/Blocks.field_150341_Y:Lnet/minecraft/block/Block;
+    1162: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1165: getstatic     #709                // Field gregapi/data/OP.stoneMossy:Lgregapi/oredict/OreDictPrefix;
+    1168: getfield      #198                // Field mDefaultStackSize:B
+    1171: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1174: pop
+    1175: getstatic     #712                // Field net/minecraft/init/Blocks.field_150417_aV:Lnet/minecraft/block/Block;
+    1178: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1181: getstatic     #715                // Field gregapi/data/OP.stoneBricks:Lgregapi/oredict/OreDictPrefix;
+    1184: getfield      #198                // Field mDefaultStackSize:B
+    1187: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1190: pop
+    1191: getstatic     #718                // Field net/minecraft/init/Blocks.field_150336_V:Lnet/minecraft/block/Block;
+    1194: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1197: getstatic     #715                // Field gregapi/data/OP.stoneBricks:Lgregapi/oredict/OreDictPrefix;
+    1200: getfield      #198                // Field mDefaultStackSize:B
+    1203: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1206: pop
+    1207: getstatic     #721                // Field net/minecraft/init/Blocks.field_150385_bj:Lnet/minecraft/block/Block;
+    1210: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1213: getstatic     #715                // Field gregapi/data/OP.stoneBricks:Lgregapi/oredict/OreDictPrefix;
+    1216: getfield      #198                // Field mDefaultStackSize:B
+    1219: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1222: pop
+    1223: getstatic     #724                // Field net/minecraft/init/Blocks.field_150345_g:Lnet/minecraft/block/Block;
+    1226: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1229: getstatic     #727                // Field gregapi/data/OP.treeSapling:Lgregapi/oredict/OreDictPrefix;
+    1232: getfield      #198                // Field mDefaultStackSize:B
+    1235: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1238: pop
+    1239: getstatic     #731                // Field net/minecraft/init/Blocks.field_150362_t:Lnet/minecraft/block/BlockLeaves;
+    1242: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1245: getstatic     #734                // Field gregapi/data/OP.treeLeaves:Lgregapi/oredict/OreDictPrefix;
+    1248: getfield      #198                // Field mDefaultStackSize:B
+    1251: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1254: pop
+    1255: getstatic     #737                // Field net/minecraft/init/Blocks.field_150361_u:Lnet/minecraft/block/BlockLeaves;
+    1258: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1261: getstatic     #734                // Field gregapi/data/OP.treeLeaves:Lgregapi/oredict/OreDictPrefix;
+    1264: getfield      #198                // Field mDefaultStackSize:B
+    1267: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1270: pop
+    1271: getstatic     #740                // Field net/minecraft/init/Blocks.field_150364_r:Lnet/minecraft/block/Block;
+    1274: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1277: getstatic     #743                // Field gregapi/data/OP.log:Lgregapi/oredict/OreDictPrefix;
+    1280: getfield      #198                // Field mDefaultStackSize:B
+    1283: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1286: pop
+    1287: getstatic     #746                // Field net/minecraft/init/Blocks.field_150363_s:Lnet/minecraft/block/Block;
+    1290: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1293: getstatic     #743                // Field gregapi/data/OP.log:Lgregapi/oredict/OreDictPrefix;
+    1296: getfield      #198                // Field mDefaultStackSize:B
+    1299: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1302: pop
+    1303: getstatic     #749                // Field net/minecraft/init/Blocks.field_150344_f:Lnet/minecraft/block/Block;
+    1306: invokestatic  #500                // Method net/minecraft/item/Item.func_150898_a:(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+    1309: getstatic     #752                // Field gregapi/data/OP.plank:Lgregapi/oredict/OreDictPrefix;
+    1312: getfield      #198                // Field mDefaultStackSize:B
+    1315: invokevirtual #451                // Method net/minecraft/item/Item.func_77625_d:(I)Lnet/minecraft/item/Item;
+    1318: pop
+    1319: invokestatic  #755                // Method gregapi/util/ST.forceProperMaxStacksizes:()Z
+    1322: pop
+    1323: aload_0
+    1324: areturn
+
+  public gregapi.oredict.OreDictPrefix setCategoryName(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #259                // Field mNameCategory:Ljava/lang/String;
+       5: aload_0
+       6: areturn
+
+  public gregapi.oredict.OreDictPrefix setTextureSetName(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #255                // Field mNameTextureSet:Ljava/lang/String;
+       5: aload_0
+       6: areturn
+
+  public gregapi.oredict.OreDictPrefix setState(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokestatic  #764                // Method gregapi/util/UT$Code.bind2:(J)B
+       5: putfield      #202                // Field mState:B
+       8: aload_0
+       9: areturn
+
+  public gregapi.oredict.OreDictPrefix setCondition(gregapi.code.ICondition<?>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: ifnonnull     11
+       5: getstatic     #768                // Field gregapi/code/ICondition.FALSE:Lgregapi/code/ICondition;
+       8: goto          12
+      11: aload_1
+      12: putfield      #190                // Field mCondition:Lgregapi/code/ICondition;
+      15: aload_0
+      16: areturn
+
+  public gregapi.oredict.OreDictPrefix setLocalItemName(java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #774                // Field mMaterialPre:Ljava/lang/String;
+       5: aload_0
+       6: aload_2
+       7: putfield      #776                // Field mMaterialPost:Ljava/lang/String;
+      10: aload_0
+      11: areturn
+
+  public gregapi.oredict.OreDictPrefix setLocalPrefixName(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #257                // Field mNameLocal:Ljava/lang/String;
+       5: aload_0
+       6: areturn
+
+  public gregapi.oredict.OreDictPrefix ignoreMaterials(gregapi.oredict.OreDictMaterial...);
+    Code:
+       0: aload_1
+       1: ifnull        61
+       4: aload_1
+       5: astore_2
+       6: aload_2
+       7: arraylength
+       8: istore_3
+       9: iconst_0
+      10: istore        4
+      12: iload         4
+      14: iload_3
+      15: if_icmpge     61
+      18: aload_2
+      19: iload         4
+      21: aaload
+      22: astore        5
+      24: aload         5
+      26: ifnull        55
+      29: aload_0
+      30: getfield      #173                // Field mIgnoredRegistrations:Ljava/util/Set;
+      33: aload         5
+      35: invokeinterface #786,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      40: ifne          55
+      43: aload_0
+      44: getfield      #173                // Field mIgnoredRegistrations:Ljava/util/Set;
+      47: aload         5
+      49: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      54: pop
+      55: iinc          4, 1
+      58: goto          12
+      61: aload_0
+      62: areturn
+
+  public gregapi.oredict.OreDictPrefix disableItemGeneration(gregapi.oredict.OreDictMaterial...);
+    Code:
+       0: aload_1
+       1: ifnull        61
+       4: aload_1
+       5: astore_2
+       6: aload_2
+       7: arraylength
+       8: istore_3
+       9: iconst_0
+      10: istore        4
+      12: iload         4
+      14: iload_3
+      15: if_icmpge     61
+      18: aload_2
+      19: iload         4
+      21: aaload
+      22: astore        5
+      24: aload         5
+      26: ifnull        55
+      29: aload_0
+      30: getfield      #171                // Field mItemGeneratorBlackList:Ljava/util/Set;
+      33: aload         5
+      35: invokeinterface #786,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      40: ifne          55
+      43: aload_0
+      44: getfield      #171                // Field mItemGeneratorBlackList:Ljava/util/Set;
+      47: aload         5
+      49: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      54: pop
+      55: iinc          4, 1
+      58: goto          12
+      61: aload_0
+      62: areturn
+
+  public gregapi.oredict.OreDictPrefix forceItemGeneration(gregapi.oredict.OreDictMaterial...);
+    Code:
+       0: aload_1
+       1: ifnull        61
+       4: aload_1
+       5: astore_2
+       6: aload_2
+       7: arraylength
+       8: istore_3
+       9: iconst_0
+      10: istore        4
+      12: iload         4
+      14: iload_3
+      15: if_icmpge     61
+      18: aload_2
+      19: iload         4
+      21: aaload
+      22: astore        5
+      24: aload         5
+      26: ifnull        55
+      29: aload_0
+      30: getfield      #175                // Field mItemGeneratorForced:Ljava/util/Set;
+      33: aload         5
+      35: invokeinterface #786,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      40: ifne          55
+      43: aload_0
+      44: getfield      #175                // Field mItemGeneratorForced:Ljava/util/Set;
+      47: aload         5
+      49: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      54: pop
+      55: iinc          4, 1
+      58: goto          12
+      61: aload_0
+      62: areturn
+
+  public boolean isGeneratingItem(gregapi.oredict.OreDictMaterial);
+    Code:
+       0: aload_1
+       1: ifnull        47
+       4: aload_0
+       5: getfield      #175                // Field mItemGeneratorForced:Ljava/util/Set;
+       8: aload_1
+       9: invokeinterface #786,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      14: ifne          43
+      17: aload_0
+      18: getfield      #171                // Field mItemGeneratorBlackList:Ljava/util/Set;
+      21: aload_1
+      22: invokeinterface #786,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      27: ifne          47
+      30: aload_0
+      31: getfield      #190                // Field mCondition:Lgregapi/code/ICondition;
+      34: aload_1
+      35: invokeinterface #796,  2          // InterfaceMethod gregapi/code/ICondition.isTrue:(Ljava/lang/Object;)Z
+      40: ifeq          47
+      43: iconst_1
+      44: goto          48
+      47: iconst_0
+      48: ireturn
+
+  public boolean canGenerateItem(gregapi.oredict.OreDictMaterial);
+    Code:
+       0: aload_1
+       1: ifnull        34
+       4: aload_0
+       5: getfield      #175                // Field mItemGeneratorForced:Ljava/util/Set;
+       8: aload_1
+       9: invokeinterface #786,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      14: ifne          30
+      17: aload_0
+      18: getfield      #190                // Field mCondition:Lgregapi/code/ICondition;
+      21: aload_1
+      22: invokeinterface #796,  2          // InterfaceMethod gregapi/code/ICondition.isTrue:(Ljava/lang/Object;)Z
+      27: ifeq          34
+      30: iconst_1
+      31: goto          35
+      34: iconst_0
+      35: ireturn
+
+  public gregapi.oredict.OreDictPrefix addListener(gregapi.oredict.event.IOreDictListenerEvent);
+    Code:
+       0: getstatic     #121                // Field gregapi/data/CS.GAPI:Lgregapi/api/Abstract_Mod;
+       3: getfield      #800                // Field gregapi/api/Abstract_Mod.mStartedPostInit:Z
+       6: ifeq          17
+       9: aload_0
+      10: aload_1
+      11: invokespecial #804                // Method addListenerInternal:(Lgregapi/oredict/event/IOreDictListenerEvent;)V
+      14: goto          28
+      17: aload_0
+      18: getfield      #232                // Field mBufferedListeners:Ljava/util/Set;
+      21: aload_1
+      22: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      27: pop
+      28: aload_0
+      29: areturn
+
+  private void addListenerInternal(gregapi.oredict.event.IOreDictListenerEvent);
+    Code:
+       0: aload_0
+       1: getfield      #177                // Field mListenersOre:Ljava/util/Set;
+       4: aload_1
+       5: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      10: ifeq          52
+      13: aload_0
+      14: getfield      #230                // Field mRegistrations:Ljava/util/List;
+      17: invokeinterface #401,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      22: astore_2
+      23: aload_2
+      24: invokeinterface #406,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      29: ifeq          52
+      32: aload_2
+      33: invokeinterface #410,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      38: checkcast     #21                 // class gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer
+      41: astore_3
+      42: aload_1
+      43: aload_3
+      44: invokeinterface #810,  2          // InterfaceMethod gregapi/oredict/event/IOreDictListenerEvent.onOreRegistration:(Lgregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer;)V
+      49: goto          23
+      52: return
+
+  public void onPostLoad();
+    Code:
+       0: getstatic     #121                // Field gregapi/data/CS.GAPI:Lgregapi/api/Abstract_Mod;
+       3: getfield      #800                // Field gregapi/api/Abstract_Mod.mStartedPostInit:Z
+       6: ifeq          46
+       9: aload_0
+      10: getfield      #232                // Field mBufferedListeners:Ljava/util/Set;
+      13: invokeinterface #814,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      18: astore_1
+      19: aload_1
+      20: invokeinterface #406,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      25: ifeq          46
+      28: aload_1
+      29: invokeinterface #410,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      34: checkcast     #7                  // class gregapi/oredict/event/IOreDictListenerEvent
+      37: astore_2
+      38: aload_0
+      39: aload_2
+      40: invokespecial #804                // Method addListenerInternal:(Lgregapi/oredict/event/IOreDictListenerEvent;)V
+      43: goto          19
+      46: return
+
+  public gregapi.oredict.OreDictPrefix addListener(gregapi.oredict.listeners.IOreDictListenerItem);
+    Code:
+       0: aload_0
+       1: getfield      #179                // Field mListenersItem:Ljava/util/Set;
+       4: aload_1
+       5: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      10: pop
+      11: aload_0
+      12: areturn
+
+  public gregapi.oredict.OreDictPrefix addTextureSet(java.lang.String, boolean);
+    Code:
+       0: iload_2
+       1: ifeq          20
+       4: aload_0
+       5: aload_1
+       6: iload_2
+       7: aload_0
+       8: getfield      #255                // Field mNameTextureSet:Ljava/lang/String;
+      11: invokestatic  #824                // Method gregapi/render/TextureSet.addToAll:(Ljava/lang/String;ZLjava/lang/String;)I
+      14: putfield      #194                // Field mIconIndexItem:I
+      17: goto          33
+      20: aload_0
+      21: aload_1
+      22: iload_2
+      23: aload_0
+      24: getfield      #255                // Field mNameTextureSet:Ljava/lang/String;
+      27: invokestatic  #824                // Method gregapi/render/TextureSet.addToAll:(Ljava/lang/String;ZLjava/lang/String;)I
+      30: putfield      #192                // Field mIconIndexBlock:I
+      33: aload_0
+      34: areturn
+
+  public gregapi.oredict.OreDictPrefix addTextureSet(gregapi.code.ModData, boolean);
+    Code:
+       0: iload_2
+       1: ifeq          23
+       4: aload_0
+       5: aload_1
+       6: getfield      #832                // Field gregapi/code/ModData.mID:Ljava/lang/String;
+       9: iload_2
+      10: aload_0
+      11: getfield      #255                // Field mNameTextureSet:Ljava/lang/String;
+      14: invokestatic  #824                // Method gregapi/render/TextureSet.addToAll:(Ljava/lang/String;ZLjava/lang/String;)I
+      17: putfield      #194                // Field mIconIndexItem:I
+      20: goto          39
+      23: aload_0
+      24: aload_1
+      25: getfield      #832                // Field gregapi/code/ModData.mID:Ljava/lang/String;
+      28: iload_2
+      29: aload_0
+      30: getfield      #255                // Field mNameTextureSet:Ljava/lang/String;
+      33: invokestatic  #824                // Method gregapi/render/TextureSet.addToAll:(Ljava/lang/String;ZLjava/lang/String;)I
+      36: putfield      #192                // Field mIconIndexBlock:I
+      39: aload_0
+      40: areturn
+
+  public gregapi.oredict.OreDictPrefix addAspects(gregapi.data.TC$TC_AspectStack...);
+    Code:
+       0: aload_1
+       1: astore_2
+       2: aload_2
+       3: arraylength
+       4: istore_3
+       5: iconst_0
+       6: istore        4
+       8: iload         4
+      10: iload_3
+      11: if_icmpge     36
+      14: aload_2
+      15: iload         4
+      17: aaload
+      18: astore        5
+      20: aload         5
+      22: aload_0
+      23: getfield      #228                // Field mAspects:Ljava/util/List;
+      26: invokevirtual #841                // Method gregapi/data/TC$TC_AspectStack.addToAspectList:(Ljava/util/List;)Ljava/util/List;
+      29: pop
+      30: iinc          4, 1
+      33: goto          8
+      36: aload_0
+      37: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       5: dup
+       6: iconst_0
+       7: aload_1
+       8: lload_2
+       9: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      12: aastore
+      13: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+      16: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long, gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: iconst_2
+       2: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       5: dup
+       6: iconst_0
+       7: aload_1
+       8: lload_2
+       9: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      12: aastore
+      13: dup
+      14: iconst_1
+      15: aload         4
+      17: lload         5
+      19: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      22: aastore
+      23: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+      26: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: iconst_3
+       2: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       5: dup
+       6: iconst_0
+       7: aload_1
+       8: lload_2
+       9: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      12: aastore
+      13: dup
+      14: iconst_1
+      15: aload         4
+      17: lload         5
+      19: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      22: aastore
+      23: dup
+      24: iconst_2
+      25: aload         7
+      27: lload         8
+      29: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      32: aastore
+      33: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+      36: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: iconst_4
+       2: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       5: dup
+       6: iconst_0
+       7: aload_1
+       8: lload_2
+       9: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      12: aastore
+      13: dup
+      14: iconst_1
+      15: aload         4
+      17: lload         5
+      19: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      22: aastore
+      23: dup
+      24: iconst_2
+      25: aload         7
+      27: lload         8
+      29: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      32: aastore
+      33: dup
+      34: iconst_3
+      35: aload         10
+      37: lload         11
+      39: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      42: aastore
+      43: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+      46: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: iconst_5
+       2: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       5: dup
+       6: iconst_0
+       7: aload_1
+       8: lload_2
+       9: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      12: aastore
+      13: dup
+      14: iconst_1
+      15: aload         4
+      17: lload         5
+      19: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      22: aastore
+      23: dup
+      24: iconst_2
+      25: aload         7
+      27: lload         8
+      29: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      32: aastore
+      33: dup
+      34: iconst_3
+      35: aload         10
+      37: lload         11
+      39: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      42: aastore
+      43: dup
+      44: iconst_4
+      45: aload         13
+      47: lload         14
+      49: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      52: aastore
+      53: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+      56: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: bipush        6
+       3: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       6: dup
+       7: iconst_0
+       8: aload_1
+       9: lload_2
+      10: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      13: aastore
+      14: dup
+      15: iconst_1
+      16: aload         4
+      18: lload         5
+      20: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      23: aastore
+      24: dup
+      25: iconst_2
+      26: aload         7
+      28: lload         8
+      30: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      33: aastore
+      34: dup
+      35: iconst_3
+      36: aload         10
+      38: lload         11
+      40: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      43: aastore
+      44: dup
+      45: iconst_4
+      46: aload         13
+      48: lload         14
+      50: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      53: aastore
+      54: dup
+      55: iconst_5
+      56: aload         16
+      58: lload         17
+      60: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      63: aastore
+      64: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+      67: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: bipush        7
+       3: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       6: dup
+       7: iconst_0
+       8: aload_1
+       9: lload_2
+      10: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      13: aastore
+      14: dup
+      15: iconst_1
+      16: aload         4
+      18: lload         5
+      20: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      23: aastore
+      24: dup
+      25: iconst_2
+      26: aload         7
+      28: lload         8
+      30: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      33: aastore
+      34: dup
+      35: iconst_3
+      36: aload         10
+      38: lload         11
+      40: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      43: aastore
+      44: dup
+      45: iconst_4
+      46: aload         13
+      48: lload         14
+      50: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      53: aastore
+      54: dup
+      55: iconst_5
+      56: aload         16
+      58: lload         17
+      60: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      63: aastore
+      64: dup
+      65: bipush        6
+      67: aload         19
+      69: lload         20
+      71: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      74: aastore
+      75: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+      78: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: bipush        8
+       3: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       6: dup
+       7: iconst_0
+       8: aload_1
+       9: lload_2
+      10: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      13: aastore
+      14: dup
+      15: iconst_1
+      16: aload         4
+      18: lload         5
+      20: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      23: aastore
+      24: dup
+      25: iconst_2
+      26: aload         7
+      28: lload         8
+      30: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      33: aastore
+      34: dup
+      35: iconst_3
+      36: aload         10
+      38: lload         11
+      40: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      43: aastore
+      44: dup
+      45: iconst_4
+      46: aload         13
+      48: lload         14
+      50: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      53: aastore
+      54: dup
+      55: iconst_5
+      56: aload         16
+      58: lload         17
+      60: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      63: aastore
+      64: dup
+      65: bipush        6
+      67: aload         19
+      69: lload         20
+      71: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      74: aastore
+      75: dup
+      76: bipush        7
+      78: aload         22
+      80: lload         23
+      82: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      85: aastore
+      86: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+      89: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: bipush        9
+       3: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       6: dup
+       7: iconst_0
+       8: aload_1
+       9: lload_2
+      10: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      13: aastore
+      14: dup
+      15: iconst_1
+      16: aload         4
+      18: lload         5
+      20: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      23: aastore
+      24: dup
+      25: iconst_2
+      26: aload         7
+      28: lload         8
+      30: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      33: aastore
+      34: dup
+      35: iconst_3
+      36: aload         10
+      38: lload         11
+      40: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      43: aastore
+      44: dup
+      45: iconst_4
+      46: aload         13
+      48: lload         14
+      50: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      53: aastore
+      54: dup
+      55: iconst_5
+      56: aload         16
+      58: lload         17
+      60: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      63: aastore
+      64: dup
+      65: bipush        6
+      67: aload         19
+      69: lload         20
+      71: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      74: aastore
+      75: dup
+      76: bipush        7
+      78: aload         22
+      80: lload         23
+      82: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      85: aastore
+      86: dup
+      87: bipush        8
+      89: aload         25
+      91: lload         26
+      93: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      96: aastore
+      97: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+     100: areturn
+
+  public gregapi.oredict.OreDictPrefix aspects(gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long, gregapi.data.TC, long);
+    Code:
+       0: aload_0
+       1: bipush        10
+       3: anewarray     #16                 // class gregapi/data/TC$TC_AspectStack
+       6: dup
+       7: iconst_0
+       8: aload_1
+       9: lload_2
+      10: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      13: aastore
+      14: dup
+      15: iconst_1
+      16: aload         4
+      18: lload         5
+      20: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      23: aastore
+      24: dup
+      25: iconst_2
+      26: aload         7
+      28: lload         8
+      30: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      33: aastore
+      34: dup
+      35: iconst_3
+      36: aload         10
+      38: lload         11
+      40: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      43: aastore
+      44: dup
+      45: iconst_4
+      46: aload         13
+      48: lload         14
+      50: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      53: aastore
+      54: dup
+      55: iconst_5
+      56: aload         16
+      58: lload         17
+      60: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      63: aastore
+      64: dup
+      65: bipush        6
+      67: aload         19
+      69: lload         20
+      71: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      74: aastore
+      75: dup
+      76: bipush        7
+      78: aload         22
+      80: lload         23
+      82: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      85: aastore
+      86: dup
+      87: bipush        8
+      89: aload         25
+      91: lload         26
+      93: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+      96: aastore
+      97: dup
+      98: bipush        9
+     100: aload         28
+     102: lload         29
+     104: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+     107: aastore
+     108: invokevirtual #852                // Method addAspects:([Lgregapi/data/TC$TC_AspectStack;)Lgregapi/oredict/OreDictPrefix;
+     111: areturn
+
+  public net.minecraft.item.ItemStack mat(gregapi.oredict.OreDictMaterialStack);
+    Code:
+       0: getstatic     #890                // Field gregapi/oredict/OreDictManager.INSTANCE:Lgregapi/oredict/OreDictManager;
+       3: aload_0
+       4: aload_1
+       5: getfield      #895                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+       8: getstatic     #898                // Field gregapi/data/CS.NI:Lnet/minecraft/item/ItemStack;
+      11: aload_1
+      12: getfield      #899                // Field gregapi/oredict/OreDictMaterialStack.mAmount:J
+      15: aload_0
+      16: getfield      #206                // Field mAmount:J
+      19: ldiv
+      20: invokevirtual #903                // Method gregapi/oredict/OreDictManager.getStack:(Lgregapi/oredict/OreDictPrefix;Lgregapi/oredict/OreDictMaterial;Lnet/minecraft/item/ItemStack;J)Lnet/minecraft/item/ItemStack;
+      23: areturn
+
+  public net.minecraft.item.ItemStack mat(gregapi.oredict.OreDictMaterialStack, long);
+    Code:
+       0: getstatic     #890                // Field gregapi/oredict/OreDictManager.INSTANCE:Lgregapi/oredict/OreDictManager;
+       3: aload_0
+       4: aload_1
+       5: getfield      #895                // Field gregapi/oredict/OreDictMaterialStack.mMaterial:Lgregapi/oredict/OreDictMaterial;
+       8: getstatic     #898                // Field gregapi/data/CS.NI:Lnet/minecraft/item/ItemStack;
+      11: lload_2
+      12: invokevirtual #903                // Method gregapi/oredict/OreDictManager.getStack:(Lgregapi/oredict/OreDictPrefix;Lgregapi/oredict/OreDictMaterial;Lnet/minecraft/item/ItemStack;J)Lnet/minecraft/item/ItemStack;
+      15: areturn
+
+  public net.minecraft.item.ItemStack mat(gregapi.oredict.OreDictMaterial, long);
+    Code:
+       0: getstatic     #890                // Field gregapi/oredict/OreDictManager.INSTANCE:Lgregapi/oredict/OreDictManager;
+       3: aload_0
+       4: aload_1
+       5: getstatic     #898                // Field gregapi/data/CS.NI:Lnet/minecraft/item/ItemStack;
+       8: lload_2
+       9: invokevirtual #903                // Method gregapi/oredict/OreDictManager.getStack:(Lgregapi/oredict/OreDictPrefix;Lgregapi/oredict/OreDictMaterial;Lnet/minecraft/item/ItemStack;J)Lnet/minecraft/item/ItemStack;
+      12: areturn
+
+  public net.minecraft.item.ItemStack mat(gregapi.oredict.OreDictMaterial, long, net.minecraft.item.ItemStack);
+    Code:
+       0: getstatic     #890                // Field gregapi/oredict/OreDictManager.INSTANCE:Lgregapi/oredict/OreDictManager;
+       3: aload_0
+       4: aload_1
+       5: aload         4
+       7: lload_2
+       8: invokevirtual #903                // Method gregapi/oredict/OreDictManager.getStack:(Lgregapi/oredict/OreDictPrefix;Lgregapi/oredict/OreDictMaterial;Lnet/minecraft/item/ItemStack;J)Lnet/minecraft/item/ItemStack;
+      11: areturn
+
+  public net.minecraft.item.ItemStack mat(gregapi.oredict.OreDictMaterial, net.minecraft.item.ItemStack, long);
+    Code:
+       0: getstatic     #890                // Field gregapi/oredict/OreDictManager.INSTANCE:Lgregapi/oredict/OreDictManager;
+       3: aload_0
+       4: aload_1
+       5: aload_2
+       6: lload_3
+       7: invokevirtual #903                // Method gregapi/oredict/OreDictManager.getStack:(Lgregapi/oredict/OreDictPrefix;Lgregapi/oredict/OreDictMaterial;Lnet/minecraft/item/ItemStack;J)Lnet/minecraft/item/ItemStack;
+      10: areturn
+
+  public gregapi.oredict.OreDictMaterialStack byproduct(int);
+    Code:
+       0: iload_1
+       1: aload_0
+       2: getfield      #223                // Field mByProducts:Ljava/util/List;
+       5: invokeinterface #303,  1          // InterfaceMethod java/util/List.size:()I
+      10: if_icmpge     29
+      13: aload_0
+      14: getfield      #223                // Field mByProducts:Ljava/util/List;
+      17: iload_1
+      18: invokeinterface #306,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      23: checkcast     #892                // class gregapi/oredict/OreDictMaterialStack
+      26: goto          30
+      29: aconst_null
+      30: areturn
+
+  public void onOreRegistration(gregapi.oredict.event.IOreDictListenerEvent$OreDictRegistrationContainer);
+    Code:
+       0: aload_1
+       1: getfield      #914                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mMaterial:Lgregapi/oredict/OreDictMaterial;
+       4: getstatic     #919                // Field gregapi/data/MT.NULL:Lgregapi/oredict/OreDictMaterial;
+       7: if_acmpne     295
+      10: aload_0
+      11: getstatic     #361                // Field gregapi/data/TD$Prefix.MATERIAL_BASED:Lgregapi/code/TagData;
+      14: invokevirtual #418                // Method contains:(Lgregapi/code/TagData;)Z
+      17: ifne          751
+      20: getstatic     #923                // Field gregapi/data/CS.COMPAT_TC:Lgregapi/compat/thaumcraft/ICompatTC;
+      23: ifnull        145
+      26: aload_1
+      27: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+      30: invokevirtual #930                // Method net/minecraft/item/ItemStack.func_77973_b:()Lnet/minecraft/item/Item;
+      33: instanceof    #932                // class thaumcraft/api/aspects/IEssentiaContainerItem
+      36: ifne          145
+      39: aload_1
+      40: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+      43: invokevirtual #930                // Method net/minecraft/item/ItemStack.func_77973_b:()Lnet/minecraft/item/Item;
+      46: instanceof    #934                // class gregapi/item/multiitem/MultiItemRandom
+      49: ifne          145
+      52: getstatic     #939                // Field gregapi/data/MD.MC:Lgregapi/code/ModData;
+      55: aload_1
+      56: getfield      #942                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mRegName:Ljava/lang/String;
+      59: invokevirtual #945                // Method gregapi/code/ModData.owns:(Ljava/lang/String;)Z
+      62: ifne          145
+      65: getstatic     #948                // Field gregapi/data/MD.TC:Lgregapi/code/ModData;
+      68: aload_1
+      69: getfield      #942                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mRegName:Ljava/lang/String;
+      72: invokevirtual #945                // Method gregapi/code/ModData.owns:(Ljava/lang/String;)Z
+      75: ifne          145
+      78: new           #212                // class gregapi/code/ArrayListNoNulls
+      81: dup
+      82: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+      85: astore_2
+      86: aload_0
+      87: getfield      #228                // Field mAspects:Ljava/util/List;
+      90: invokeinterface #401,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      95: astore_3
+      96: aload_3
+      97: invokeinterface #406,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     102: ifeq          126
+     105: aload_3
+     106: invokeinterface #410,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     111: checkcast     #16                 // class gregapi/data/TC$TC_AspectStack
+     114: astore        4
+     116: aload         4
+     118: aload_2
+     119: invokevirtual #841                // Method gregapi/data/TC$TC_AspectStack.addToAspectList:(Ljava/util/List;)Ljava/util/List;
+     122: pop
+     123: goto          96
+     126: getstatic     #923                // Field gregapi/data/CS.COMPAT_TC:Lgregapi/compat/thaumcraft/ICompatTC;
+     129: lconst_1
+     130: aload_1
+     131: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+     134: invokestatic  #952                // Method gregapi/util/ST.amount:(JLnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+     137: aload_2
+     138: iconst_0
+     139: invokeinterface #958,  4          // InterfaceMethod gregapi/compat/thaumcraft/ICompatTC.registerThaumcraftAspectsToItem:(Lnet/minecraft/item/ItemStack;Ljava/util/List;Z)Z
+     144: pop
+     145: aload_0
+     146: getfield      #177                // Field mListenersOre:Ljava/util/Set;
+     149: invokeinterface #814,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     154: astore_2
+     155: aload_2
+     156: invokeinterface #406,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     161: ifeq          245
+     164: aload_2
+     165: invokeinterface #410,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     170: checkcast     #7                  // class gregapi/oredict/event/IOreDictListenerEvent
+     173: astore_3
+     174: getstatic     #961                // Field gregapi/data/CS.D2:Z
+     177: ifeq          235
+     180: getstatic     #965                // Field gregapi/data/CS.ORD:Ljava/io/PrintStream;
+     183: new           #967                // class java/lang/StringBuilder
+     186: dup
+     187: invokespecial #968                // Method java/lang/StringBuilder."<init>":()V
+     190: ldc_w         #970                // String Processing '
+     193: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     196: aload_1
+     197: getfield      #977                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mOreDictName:Ljava/lang/String;
+     200: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     203: ldc_w         #979                // String ' with the Prefix '
+     206: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     209: aload_0
+     210: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     213: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     216: ldc_w         #981                // String ' and without Material at
+     219: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     222: aload_3
+     223: invokestatic  #985                // Method gregapi/util/UT$Reflection.getClassName:(Ljava/lang/Object;)Ljava/lang/String;
+     226: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     229: invokevirtual #989                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     232: invokevirtual #994                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     235: aload_3
+     236: aload_1
+     237: invokeinterface #810,  2          // InterfaceMethod gregapi/oredict/event/IOreDictListenerEvent.onOreRegistration:(Lgregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer;)V
+     242: goto          155
+     245: aload_0
+     246: getfield      #230                // Field mRegistrations:Ljava/util/List;
+     249: aload_1
+     250: invokeinterface #292,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     255: pop
+     256: aload_0
+     257: getfield      #242                // Field mRegisteredItems:Lgregapi/code/ItemStackSet;
+     260: new           #996                // class gregapi/code/ItemStackContainer
+     263: dup
+     264: aload_1
+     265: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+     268: ldc2_w        #997                // long 32767l
+     271: invokespecial #1001               // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;J)V
+     274: invokevirtual #1004               // Method gregapi/code/ItemStackSet.contains:(Ljava/lang/Object;)Z
+     277: ifne          751
+     280: aload_0
+     281: getfield      #242                // Field mRegisteredItems:Lgregapi/code/ItemStackSet;
+     284: aload_1
+     285: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+     288: invokevirtual #1007               // Method gregapi/code/ItemStackSet.add:(Lnet/minecraft/item/ItemStack;)Z
+     291: pop
+     292: goto          751
+     295: aload_0
+     296: getfield      #173                // Field mIgnoredRegistrations:Ljava/util/Set;
+     299: aload_1
+     300: getfield      #914                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     303: invokeinterface #786,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+     308: ifne          751
+     311: aload_1
+     312: getfield      #914                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     315: getstatic     #1010               // Field gregapi/data/TD$Properties.INVALID_MATERIAL:Lgregapi/code/TagData;
+     318: invokevirtual #1013               // Method gregapi/oredict/OreDictMaterial.contains:(Lgregapi/code/TagData;)Z
+     321: ifne          679
+     324: getstatic     #923                // Field gregapi/data/CS.COMPAT_TC:Lgregapi/compat/thaumcraft/ICompatTC;
+     327: ifnull        552
+     330: aload_1
+     331: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+     334: invokevirtual #930                // Method net/minecraft/item/ItemStack.func_77973_b:()Lnet/minecraft/item/Item;
+     337: instanceof    #932                // class thaumcraft/api/aspects/IEssentiaContainerItem
+     340: ifne          552
+     343: aload_1
+     344: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+     347: invokevirtual #930                // Method net/minecraft/item/ItemStack.func_77973_b:()Lnet/minecraft/item/Item;
+     350: instanceof    #934                // class gregapi/item/multiitem/MultiItemRandom
+     353: ifne          552
+     356: getstatic     #939                // Field gregapi/data/MD.MC:Lgregapi/code/ModData;
+     359: aload_1
+     360: getfield      #942                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mRegName:Ljava/lang/String;
+     363: invokevirtual #945                // Method gregapi/code/ModData.owns:(Ljava/lang/String;)Z
+     366: ifne          552
+     369: getstatic     #948                // Field gregapi/data/MD.TC:Lgregapi/code/ModData;
+     372: aload_1
+     373: getfield      #942                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mRegName:Ljava/lang/String;
+     376: invokevirtual #945                // Method gregapi/code/ModData.owns:(Ljava/lang/String;)Z
+     379: ifne          552
+     382: new           #212                // class gregapi/code/ArrayListNoNulls
+     385: dup
+     386: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+     389: astore_2
+     390: aload_0
+     391: getfield      #228                // Field mAspects:Ljava/util/List;
+     394: invokeinterface #401,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     399: astore_3
+     400: aload_3
+     401: invokeinterface #406,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     406: ifeq          470
+     409: aload_3
+     410: invokeinterface #410,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     415: checkcast     #16                 // class gregapi/data/TC$TC_AspectStack
+     418: astore        4
+     420: aload         4
+     422: getfield      #1016               // Field gregapi/data/TC$TC_AspectStack.mAspect:Lgregapi/data/TC;
+     425: getstatic     #1019               // Field gregapi/data/TC.METALLUM:Lgregapi/data/TC;
+     428: if_acmpne     460
+     431: aload_1
+     432: getfield      #914                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     435: getfield      #1022               // Field gregapi/oredict/OreDictMaterial.mHasMetallum:Z
+     438: ifne          460
+     441: getstatic     #1025               // Field gregapi/data/TC.ORDO:Lgregapi/data/TC;
+     444: aload         4
+     446: getfield      #1026               // Field gregapi/data/TC$TC_AspectStack.mAmount:J
+     449: invokestatic  #850                // Method gregapi/data/TC.stack:(Lgregapi/data/TC;J)Lgregapi/data/TC$TC_AspectStack;
+     452: aload_2
+     453: invokevirtual #841                // Method gregapi/data/TC$TC_AspectStack.addToAspectList:(Ljava/util/List;)Ljava/util/List;
+     456: pop
+     457: goto          467
+     460: aload         4
+     462: aload_2
+     463: invokevirtual #841                // Method gregapi/data/TC$TC_AspectStack.addToAspectList:(Ljava/util/List;)Ljava/util/List;
+     466: pop
+     467: goto          400
+     470: aload_0
+     471: getfield      #206                // Field mAmount:J
+     474: ldc2_w        #207                // long 648648000l
+     477: lcmp
+     478: ifge          490
+     481: aload_0
+     482: getfield      #206                // Field mAmount:J
+     485: lconst_0
+     486: lcmp
+     487: ifge          533
+     490: aload_1
+     491: getfield      #914                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     494: getfield      #1027               // Field gregapi/oredict/OreDictMaterial.mAspects:Ljava/util/List;
+     497: invokeinterface #401,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     502: astore_3
+     503: aload_3
+     504: invokeinterface #406,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     509: ifeq          533
+     512: aload_3
+     513: invokeinterface #410,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     518: checkcast     #16                 // class gregapi/data/TC$TC_AspectStack
+     521: astore        4
+     523: aload         4
+     525: aload_2
+     526: invokevirtual #841                // Method gregapi/data/TC$TC_AspectStack.addToAspectList:(Ljava/util/List;)Ljava/util/List;
+     529: pop
+     530: goto          503
+     533: getstatic     #923                // Field gregapi/data/CS.COMPAT_TC:Lgregapi/compat/thaumcraft/ICompatTC;
+     536: lconst_1
+     537: aload_1
+     538: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+     541: invokestatic  #952                // Method gregapi/util/ST.amount:(JLnet/minecraft/item/ItemStack;)Lnet/minecraft/item/ItemStack;
+     544: aload_2
+     545: iconst_0
+     546: invokeinterface #958,  4          // InterfaceMethod gregapi/compat/thaumcraft/ICompatTC.registerThaumcraftAspectsToItem:(Lnet/minecraft/item/ItemStack;Ljava/util/List;Z)Z
+     551: pop
+     552: aload_0
+     553: getfield      #177                // Field mListenersOre:Ljava/util/Set;
+     556: invokeinterface #814,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     561: astore_2
+     562: aload_2
+     563: invokeinterface #406,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     568: ifeq          668
+     571: aload_2
+     572: invokeinterface #410,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     577: checkcast     #7                  // class gregapi/oredict/event/IOreDictListenerEvent
+     580: astore_3
+     581: getstatic     #961                // Field gregapi/data/CS.D2:Z
+     584: ifeq          658
+     587: getstatic     #965                // Field gregapi/data/CS.ORD:Ljava/io/PrintStream;
+     590: new           #967                // class java/lang/StringBuilder
+     593: dup
+     594: invokespecial #968                // Method java/lang/StringBuilder."<init>":()V
+     597: ldc_w         #970                // String Processing '
+     600: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     603: aload_1
+     604: getfield      #977                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mOreDictName:Ljava/lang/String;
+     607: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     610: ldc_w         #979                // String ' with the Prefix '
+     613: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     616: aload_0
+     617: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+     620: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     623: ldc_w         #1029               // String ' and the Material '
+     626: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     629: aload_1
+     630: getfield      #914                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     633: getfield      #1030               // Field gregapi/oredict/OreDictMaterial.mNameInternal:Ljava/lang/String;
+     636: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     639: ldc_w         #1032               // String ' at
+     642: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     645: aload_3
+     646: invokestatic  #985                // Method gregapi/util/UT$Reflection.getClassName:(Ljava/lang/Object;)Ljava/lang/String;
+     649: invokevirtual #974                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     652: invokevirtual #989                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     655: invokevirtual #994                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     658: aload_3
+     659: aload_1
+     660: invokeinterface #810,  2          // InterfaceMethod gregapi/oredict/event/IOreDictListenerEvent.onOreRegistration:(Lgregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer;)V
+     665: goto          562
+     668: aload_0
+     669: getfield      #230                // Field mRegistrations:Ljava/util/List;
+     672: aload_1
+     673: invokeinterface #292,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     678: pop
+     679: aload_1
+     680: getfield      #914                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     683: getfield      #1033               // Field gregapi/oredict/OreDictMaterial.mRegisteredItems:Lgregapi/code/ItemStackSet;
+     686: new           #996                // class gregapi/code/ItemStackContainer
+     689: dup
+     690: aload_1
+     691: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+     694: invokespecial #1036               // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;)V
+     697: invokevirtual #1039               // Method gregapi/code/ItemStackSet.add:(Lgregapi/code/ItemStackContainer;)Z
+     700: pop
+     701: aload_0
+     702: getfield      #246                // Field mRegisteredMaterials:Ljava/util/Set;
+     705: aload_1
+     706: getfield      #914                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mMaterial:Lgregapi/oredict/OreDictMaterial;
+     709: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+     714: pop
+     715: aload_0
+     716: getfield      #242                // Field mRegisteredItems:Lgregapi/code/ItemStackSet;
+     719: new           #996                // class gregapi/code/ItemStackContainer
+     722: dup
+     723: aload_1
+     724: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+     727: ldc2_w        #997                // long 32767l
+     730: invokespecial #1001               // Method gregapi/code/ItemStackContainer."<init>":(Lnet/minecraft/item/ItemStack;J)V
+     733: invokevirtual #1004               // Method gregapi/code/ItemStackSet.contains:(Ljava/lang/Object;)Z
+     736: ifne          751
+     739: aload_0
+     740: getfield      #242                // Field mRegisteredItems:Lgregapi/code/ItemStackSet;
+     743: aload_1
+     744: getfield      #926                // Field gregapi/oredict/event/IOreDictListenerEvent$OreDictRegistrationContainer.mStack:Lnet/minecraft/item/ItemStack;
+     747: invokevirtual #1007               // Method gregapi/code/ItemStackSet.add:(Lnet/minecraft/item/ItemStack;)Z
+     750: pop
+     751: return
+
+  public boolean contains(net.minecraft.item.ItemStack...);
+    Code:
+       0: aload_1
+       1: ifnonnull     6
+       4: iconst_0
+       5: ireturn
+       6: aload_1
+       7: astore_2
+       8: aload_2
+       9: arraylength
+      10: istore_3
+      11: iconst_0
+      12: istore        4
+      14: iload         4
+      16: iload_3
+      17: if_icmpge     55
+      20: aload_2
+      21: iload         4
+      23: aaload
+      24: astore        5
+      26: aload         5
+      28: invokestatic  #1048               // Method gregapi/util/ST.valid:(Lnet/minecraft/item/ItemStack;)Z
+      31: ifeq          49
+      34: aload_0
+      35: getfield      #242                // Field mRegisteredItems:Lgregapi/code/ItemStackSet;
+      38: aload         5
+      40: iconst_1
+      41: invokevirtual #1051               // Method gregapi/code/ItemStackSet.contains:(Lnet/minecraft/item/ItemStack;Z)Z
+      44: ifeq          49
+      47: iconst_1
+      48: ireturn
+      49: iinc          4, 1
+      52: goto          14
+      55: iconst_0
+      56: ireturn
+
+  public boolean contains(gregapi.code.TagData);
+    Code:
+       0: aload_0
+       1: getfield      #169                // Field mTags:Ljava/util/Set;
+       4: aload_1
+       5: invokeinterface #786,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      10: ireturn
+
+  public boolean containsAny(gregapi.code.TagData...);
+    Code:
+       0: aload_1
+       1: astore_2
+       2: aload_2
+       3: arraylength
+       4: istore_3
+       5: iconst_0
+       6: istore        4
+       8: iload         4
+      10: iload_3
+      11: if_icmpge     42
+      14: aload_2
+      15: iload         4
+      17: aaload
+      18: astore        5
+      20: aload_0
+      21: getfield      #169                // Field mTags:Ljava/util/Set;
+      24: aload         5
+      26: invokeinterface #786,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      31: ifeq          36
+      34: iconst_1
+      35: ireturn
+      36: iinc          4, 1
+      39: goto          8
+      42: iconst_0
+      43: ireturn
+
+  public boolean containsAll(gregapi.code.TagData...);
+    Code:
+       0: aload_0
+       1: getfield      #169                // Field mTags:Ljava/util/Set;
+       4: aload_1
+       5: invokestatic  #1066               // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       8: invokeinterface #1069,  2         // InterfaceMethod java/util/Set.containsAll:(Ljava/util/Collection;)Z
+      13: ireturn
+
+  public boolean containsAll(java.util.Collection<gregapi.code.TagData>);
+    Code:
+       0: aload_0
+       1: getfield      #169                // Field mTags:Ljava/util/Set;
+       4: aload_1
+       5: invokeinterface #1069,  2         // InterfaceMethod java/util/Set.containsAll:(Ljava/util/Collection;)Z
+      10: ireturn
+
+  public gregapi.oredict.OreDictPrefix add(gregapi.code.TagData...);
+    Code:
+       0: aload_1
+       1: ifnull        42
+       4: aload_1
+       5: astore_2
+       6: aload_2
+       7: arraylength
+       8: istore_3
+       9: iconst_0
+      10: istore        4
+      12: iload         4
+      14: iload_3
+      15: if_icmpge     42
+      18: aload_2
+      19: iload         4
+      21: aaload
+      22: astore        5
+      24: aload_0
+      25: getfield      #169                // Field mTags:Ljava/util/Set;
+      28: aload         5
+      30: invokeinterface #316,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      35: pop
+      36: iinc          4, 1
+      39: goto          12
+      42: aload_0
+      43: areturn
+
+  public boolean remove(gregapi.code.TagData);
+    Code:
+       0: aload_0
+       1: getfield      #169                // Field mTags:Ljava/util/Set;
+       4: aload_1
+       5: invokeinterface #1074,  2         // InterfaceMethod java/util/Set.remove:(Ljava/lang/Object;)Z
+      10: ireturn
+
+  public gregapi.oredict.OreDictItemData dat(gregapi.oredict.OreDictMaterial);
+    Code:
+       0: new           #1078               // class gregapi/oredict/OreDictItemData
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: invokespecial #1081               // Method gregapi/oredict/OreDictItemData."<init>":(Lgregapi/oredict/OreDictPrefix;Lgregapi/oredict/OreDictMaterial;)V
+       9: areturn
+
+  public gregapi.oredict.OreDictItemData get(gregapi.oredict.OreDictMaterial);
+    Code:
+       0: new           #1078               // class gregapi/oredict/OreDictItemData
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: invokespecial #1081               // Method gregapi/oredict/OreDictItemData."<init>":(Lgregapi/oredict/OreDictPrefix;Lgregapi/oredict/OreDictMaterial;)V
+       9: areturn
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: getfield      #253                // Field mNameInternal:Ljava/lang/String;
+       4: areturn
+
+  public boolean isTrue(gregapi.code.ITagDataContainer<?>);
+    Code:
+       0: aload_1
+       1: instanceof    #1012               // class gregapi/oredict/OreDictMaterial
+       4: ifeq          22
+       7: aload_0
+       8: aload_1
+       9: checkcast     #1012               // class gregapi/oredict/OreDictMaterial
+      12: invokevirtual #1085               // Method canGenerateItem:(Lgregapi/oredict/OreDictMaterial;)Z
+      15: ifeq          22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: ireturn
+
+  public java.lang.Object add(gregapi.code.TagData[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #356                // Method add:([Lgregapi/code/TagData;)Lgregapi/oredict/OreDictPrefix;
+       5: areturn
+
+  public boolean isTrue(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #9                  // class gregapi/code/ITagDataContainer
+       5: invokevirtual #1090               // Method isTrue:(Lgregapi/code/ITagDataContainer;)Z
+       8: ireturn
+
+  static {};
+    Code:
+       0: new           #212                // class gregapi/code/ArrayListNoNulls
+       3: dup
+       4: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+       7: putstatic     #300                // Field VALUES_SORTED:Ljava/util/List;
+      10: new           #212                // class gregapi/code/ArrayListNoNulls
+      13: dup
+      14: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+      17: putstatic     #294                // Field VALUES_SORTED_INTERNAL:Ljava/util/List;
+      20: new           #212                // class gregapi/code/ArrayListNoNulls
+      23: dup
+      24: invokespecial #213                // Method gregapi/code/ArrayListNoNulls."<init>":()V
+      27: putstatic     #286                // Field VALUES:Ljava/util/List;
+      30: new           #1093               // class java/util/HashMap
+      33: dup
+      34: invokespecial #1094               // Method java/util/HashMap."<init>":()V
+      37: putstatic     #149                // Field sPrefixes:Ljava/util/Map;
+      40: new           #1093               // class java/util/HashMap
+      43: dup
+      44: invokespecial #1094               // Method java/util/HashMap."<init>":()V
+      47: putstatic     #323                // Field sParsed:Ljava/util/Map;
+      50: return
+}

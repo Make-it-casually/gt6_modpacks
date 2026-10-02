@@ -1,0 +1,19 @@
+[
+  {
+    "modid": "MTUtilsUnofficial",
+    "name": "GT6 Tweaker in MTUtils",
+    "version": "1.8",
+    "mcversion": "1.7.10",
+    "url": "",
+    "updateUrl": "https://minecraft.curseforge.com/projects/mtutils",
+    "authorList": [
+      "LionZXY",
+      "zetti68",
+	  "monatann",
+	  "YueSha"
+    ],
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
