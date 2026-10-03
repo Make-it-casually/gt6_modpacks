@@ -1,0 +1,15 @@
+*
+!*/
+
+!/.gitignore
+!mods/
+!mods/**
+!config/
+!config/**
+!defaultconfigs/
+!defaultconfigs/**
+!nekojs/
+!nekojs/**
+nekojs/node_modules/
+!gregtech.cfg
+!gregtech.lang

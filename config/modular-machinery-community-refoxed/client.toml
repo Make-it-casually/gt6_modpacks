@@ -1,0 +1,27 @@
+[preview]
+	#Maximum distance at which multiblock preview blocks are rendered
+	# Default: 64.0
+	# Range: 1.0 ~ 512.0
+	render_radius = 64.0
+	#Off-screen preview resolution scale while rotating or zooming
+	# Default: 0.5
+	# Range: 0.1 ~ 1.0
+	interactive_render_scale = 0.5
+	#Delay before restoring full preview quality after zooming
+	# Default: 150
+	# Range: 0 ~ 2000
+	interactive_restore_delay_ms = 150
+	#Skip translucent preview blocks while rotating or zooming
+	interactive_skip_translucent = true
+	#Skip preview block entities while rotating or zooming
+	interactive_skip_block_entities = true
+	#Preview block count that enables parallel scene mesh compilation
+	# Default: 80000
+	# Range: > 1
+	scene_parallel_compile_threshold = 80000
+
+[factory_controller]
+	#Show the first recipe output icon in active factory thread elements
+	show_thread_output_icon = true
+	#Show recipe progress below the output icon area in active factory thread elements
+	show_thread_recipe_progress = true

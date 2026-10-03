@@ -1,0 +1,20 @@
+{
+  "_about": [
+    "MIXING BLOCKS: PATTERNS, PATCH SIZE AND SOFT EDGES.",
+    "A list mixes its blocks in equal shares. Repeat a block for more shares: [a, a, b] is two thirds a.",
+    "pattern: blobs = patches (the default), bands = stripes that run along the stream, speckle = a random pick per block.",
+    "scale: the patch size or stripe width, in percent of the stream's width (default 30). Never finer than 2 blocks.",
+    "edge_noise: how softly a ring's outer edge blends into the next ring. 0 = a sharp line, 1 = very soft (default 0.3).",
+    "minecraft:air in a list leaves that share as the ground was, so a ring can thin out into the land."
+  ],
+  "biomes": ["minecraft:badlands", "minecraft:wooded_badlands", "minecraft:eroded_badlands"],
+  "bed": { "block": ["minecraft:red_sand", "minecraft:red_sand", "minecraft:gravel"], "pattern": "blobs", "scale": 50 },
+  "waterline": { "block": ["minecraft:terracotta", "minecraft:red_terracotta"], "pattern": "speckle", "edge_noise": 0.1 },
+  "bank": {
+    "block": ["minecraft:orange_terracotta", "minecraft:terracotta", "minecraft:red_terracotta", "minecraft:terracotta"],
+    "pattern": "bands",
+    "scale": 15,
+    "edge_noise": 0.6
+  },
+  "top_bank": { "block": ["streamsreflowing:chameleon", "minecraft:air", "minecraft:air"], "scale": 20, "edge_noise": 0.8 }
+}

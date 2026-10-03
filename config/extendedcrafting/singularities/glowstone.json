@@ -1,0 +1,6 @@
+{
+  "name": "singularity.extendedcrafting.glowstone",
+  "overlay_color": "#FFD38F",
+  "underlay_color": "#A06135",
+  "ingredient": "minecraft:glowstone_dust"
+}

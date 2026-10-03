@@ -1,0 +1,73 @@
+{
+  "_about": [
+    "EVERYTHING AT ONCE: every field the format has, in one style that works.",
+    "TARGETING: an exact biome AND a tag, minus two excludes. 'star' makes it beat an unstarred style that names",
+    "the same biome. 'enabled' false would turn the whole style off. cohesion 0.8 keeps the skin tight to the water.",
+    "RINGS, water outward: bed (under the water) -> waterline (the wet/dry band) -> bank -> top_bank -> 'rings'.",
+    "Every size is a percent of the stream's width, and the reaches ADD UP: 45 + 25 + 20 + 10 fills the whole cut.",
+    "OVERRIDES use all eight stream properties: slope, width, speed, bend with side, to_mouth, to_junction, flat_run.",
+    "Each is 0..1. fade softens the switch (0 = a hard line, 0.2 = a wide dither). First one that holds paints.",
+    "PATTERNS: blobs = patches, bands = stripes along the stream, speckle = the old block-by-block mix.",
+    "SCENERY: bed plants under the water, waterline at the surface, bank and top_bank on dry land. Copy the four",
+    "definitions it names out of bank_features/examples/ into bank_features/, or those rings plant nothing."
+  ],
+  "biomes": ["minecraft:windswept_hills"],
+  "tags": ["minecraft:is_mountain"],
+  "exclude_biomes": ["minecraft:stony_peaks"],
+  "exclude_tags": ["minecraft:is_ocean"],
+  "star": true,
+  "enabled": true,
+  "cohesion": 0.8,
+
+  "bed": {
+    "block": ["minecraft:gravel", "minecraft:gravel", "minecraft:stone"],
+    "pattern": "blobs",
+    "scale": 40,
+    "edge_noise": 0.25,
+    "overrides": [
+      { "when": { "bend": "> 0.2", "side": "inner" }, "block": ["minecraft:sand", "minecraft:gravel"] },
+      { "when": { "to_junction": "< 0.15" }, "block": ["minecraft:gravel", "minecraft:cobblestone"], "pattern": "speckle" },
+      { "when": { "flat_run": ">= 0.6", "speed": "< 0.3" }, "fade": 0.2, "block": ["minecraft:clay", "minecraft:mud"], "scale": 60 }
+    ],
+    "features": [ { "id": "riverside_seagrass", "chance": 6 } ]
+  },
+
+  "waterline": {
+    "above": 10,
+    "below": 25,
+    "block": ["minecraft:mossy_cobblestone", "minecraft:cobblestone"],
+    "pattern": "speckle",
+    "edge_noise": 0.35,
+    "overrides": [
+      { "when": { "speed": "> 0.6" }, "fade": 0, "block": "minecraft:stone" }
+    ],
+    "features": [ { "id": "riverside_lilies", "chance": 3 } ]
+  },
+
+  "bank": {
+    "reach": 45,
+    "block": ["minecraft:coarse_dirt", "streamsreflowing:chameleon"],
+    "pattern": "bands",
+    "scale": 35,
+    "edge_noise": 0.3,
+    "overrides": [
+      { "when": { "slope": "> 0.45" }, "fade": 0.15, "block": ["minecraft:stone", "minecraft:andesite", "minecraft:tuff"] },
+      { "when": { "bend": "> 0.25", "side": "outer" }, "block": "minecraft:rooted_dirt" },
+      { "when": { "width": "<= 0.1" }, "block": "minecraft:moss_block" },
+      { "when": { "to_mouth": "< 0.2", "width": "> 0.4" }, "block": ["minecraft:sand", "minecraft:gravel"], "pattern": "blobs", "scale": 60 }
+    ],
+    "features": [ { "id": "riverside_logs", "chance": 3 } ]
+  },
+
+  "top_bank": {
+    "reach": 25,
+    "block": ["streamsreflowing:chameleon", "minecraft:air"],
+    "edge_noise": 0.5,
+    "features": [ { "id": "riverside_stumps", "chance": 2 } ]
+  },
+
+  "rings": [
+    { "reach": 20, "block": ["minecraft:podzol", "minecraft:coarse_dirt", "minecraft:air"], "pattern": "blobs", "scale": 50, "edge_noise": 0.4 },
+    { "reach": 10, "block": ["minecraft:mossy_cobblestone", "minecraft:air", "minecraft:air"], "pattern": "speckle", "edge_noise": 0.45 }
+  ]
+}

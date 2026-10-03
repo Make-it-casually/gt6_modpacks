@@ -1,0 +1,8 @@
+#Maximum seed growth rate
+# Default: 31
+# Range: > 0
+seed_speed_max = 31
+#Maximum output count
+# Default: 31
+# Range: > 0
+output_max = 31

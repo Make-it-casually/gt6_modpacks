@@ -1,0 +1,14 @@
+/*
+WWOO Config
+The config to mainly enable add-ons for William Wythers' Overhauled Overworld!
+*/
+{
+	// This add-on modifies rivers to make them a viable method of travel.
+	"navigableRivers": false,
+	// This add-on adds tepuis to mountainous regions bordering the Jungle biome.
+	"toweringTepuis": false,
+	/* This removes underground ores like andesite, diorite, granite, gravel and dirt.
+	   Normally these can only be found in dedicated (sub)biomes!
+	*/
+	"removeOres": true
+}

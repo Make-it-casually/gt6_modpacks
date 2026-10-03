@@ -1,0 +1,21 @@
+{
+  "_about": [
+    "THE 2.13 FORMAT STILL WORKS.",
+    "A file written for 2.13 or earlier loads unchanged. Its sizes are in BLOCKS, not percent.",
+    "waterline_below / waterline_above: blocks under and over the water surface.",
+    "underwater_noise / above_water_noise: how soft the bed's and the waterline's edges are, 0 to 1.",
+    "bed_enabled / waterline_enabled / bank_enabled: false leaves that ring as the ground was.",
+    "point_bar: blocks for the inside of bends. Old-style rings keep the old per-block speckle mix;",
+    "new-style rings get patches unless they say otherwise."
+  ],
+  "biomes": ["minecraft:river"],
+  "bed": ["minecraft:gravel", "minecraft:sand"],
+  "waterline": "minecraft:coarse_dirt",
+  "bank": "streamsreflowing:chameleon",
+  "waterline_below": 1,
+  "waterline_above": 2,
+  "underwater_noise": 0.18,
+  "above_water_noise": 0.25,
+  "bank_enabled": true,
+  "point_bar": ["minecraft:sand", "minecraft:gravel"]
+}

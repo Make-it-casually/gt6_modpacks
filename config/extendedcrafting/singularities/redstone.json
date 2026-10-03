@@ -1,0 +1,6 @@
+{
+  "name": "singularity.extendedcrafting.redstone",
+  "overlay_color": "#FF0000",
+  "underlay_color": "#8A0901",
+  "ingredient": "minecraft:redstone"
+}

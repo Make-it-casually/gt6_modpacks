@@ -1,0 +1,6 @@
+{
+  "__comment": "这是Jade目标的忽略列表。您可以将注册ID添加到\"values\"列表中。",
+  "values": [
+    "barrier"
+  ]
+}

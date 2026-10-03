@@ -1,0 +1,43 @@
+{
+	"aether_surface_ruins": {
+		"frequency": 0.75,
+		"salt": 2038911,
+		"separation": 8,
+		"spacing": 14
+	},
+	"aether_surface_structures": {
+		"salt": 1147092,
+		"separation": 8,
+		"spacing": 18
+	},
+	"aether_underground_complexes": {
+		"salt": 32146754,
+		"separation": 6,
+		"spacing": 12
+	},
+	"aether_underground_ruins": {
+		"salt": 7881032,
+		"separation": 2,
+		"spacing": 4
+	},
+	"animal_dens": {
+		"salt": 4027017,
+		"separation": 5,
+		"spacing": 8
+	},
+	"aqueducts": {
+		"salt": 2038911,
+		"separation": 5,
+		"spacing": 10
+	},
+	"irradiated_remnants": {
+		"salt": 833294,
+		"separation": 3,
+		"spacing": 8
+	},
+	"outposts": {
+		"salt": 2738116,
+		"separation": 18,
+		"spacing": 28
+	}
+}

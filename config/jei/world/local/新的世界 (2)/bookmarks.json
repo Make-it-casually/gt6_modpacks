@@ -1,0 +1,4 @@
+[
+  {"version":3},
+  {"ingredient":{"id":"gregtech:gt.multiitem.bumblebee","components":"{\"gregapi:subtype\":101,\"minecraft:custom_data\":{gt.bumble:{aggro:4679s,day:1b,life:126068,maxhum:0.61f,maxtemp:302s,minhum:0.0f,mintemp:253s,offspring:1b,outside:1b,work:1384s}}}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

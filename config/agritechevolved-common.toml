@@ -1,0 +1,218 @@
+#Module Effectiveness Settings
+[modules]
+
+	#Speed Module Configuration
+	[modules.speed_modules]
+		#Speed multiplier for Speed Module-MK1
+		# Default: 1.5
+		# Range: 0.1 ~ 10.0
+		mk1_speed_multiplier = 1.5
+		#Power consumption multiplier for Speed Module-MK1
+		# Default: 1.5
+		# Range: 0.1 ~ 10.0
+		mk1_power_multiplier = 1.5
+		#Speed multiplier for Speed Module-MK2
+		# Default: 1.75
+		# Range: 0.1 ~ 10.0
+		mk2_speed_multiplier = 1.75
+		#Power consumption multiplier for Speed Module-MK2
+		# Default: 1.75
+		# Range: 0.1 ~ 10.0
+		mk2_power_multiplier = 1.75
+		#Speed multiplier for Speed Module-MK3
+		# Default: 2.0
+		# Range: 0.1 ~ 10.0
+		mk3_speed_multiplier = 2.0
+		#Power consumption multiplier for Speed Module-MK3
+		# Default: 2.0
+		# Range: 0.1 ~ 10.0
+		mk3_power_multiplier = 2.0
+
+	#Yield Module Configuration
+	[modules.yield_modules]
+		#Yield multiplier for Yield Module-MK1
+		# Default: 1.5
+		# Range: 0.1 ~ 10.0
+		mk1_yield_multiplier = 1.5
+		#Speed penalty for Yield Module-MK1 (multiplier)
+		# Default: 0.95
+		# Range: 0.1 ~ 1.0
+		mk1_speed_penalty = 0.95
+		#Yield multiplier for Yield Module-MK2
+		# Default: 1.75
+		# Range: 0.1 ~ 10.0
+		mk2_yield_multiplier = 1.75
+		#Speed penalty for Yield Module-MK2 (multiplier)
+		# Default: 0.9
+		# Range: 0.1 ~ 1.0
+		mk2_speed_penalty = 0.9
+		#Yield multiplier for Yield Module-MK3
+		# Default: 2.0
+		# Range: 0.1 ~ 10.0
+		mk3_yield_multiplier = 2.0
+		#Speed penalty for Yield Module-MK3 (multiplier)
+		# Default: 0.75
+		# Range: 0.1 ~ 1.0
+		mk3_speed_penalty = 0.75
+
+#Machine Settings
+[machines]
+
+	#Advanced Planter Configuration
+	[machines.advanced_planter]
+		#Base power consumption for Advanced Planter (RF/t)
+		# Default: 128
+		# Range: 1 ~ 100000
+		base_power_consumption = 128
+		#Base processing time for basic planters (ticks)
+		# Default: 1200
+		# Range: 1 ~ 72000
+		base_processing_time = 1200
+		#Base processing time for the Advanced Planter (ticks)
+		# Default: 600
+		# Range: 1 ~ 72000
+		advanced_base_processing_time = 600
+		#Energy buffer capacity for Advanced Planter (RF)
+		# Default: 100000
+		# Range: 1000 ~ 10000000
+		energy_buffer = 100000
+		#Speed multiplier applied when a cloche is attached to a planter
+		# Default: 1.15
+		# Range: 0.1 ~ 10.0
+		cloche_speed_multiplier = 1.15
+		#Yield multiplier applied when a cloche is attached to a planter
+		# Default: 1.1
+		# Range: 0.1 ~ 10.0
+		cloche_yield_multiplier = 1.1
+
+	#Composter Configuration
+	[machines.composter]
+		#Base power consumption for Composter (RF/t)
+		# Default: 128
+		# Range: 1 ~ 100000
+		base_power_consumption = 128
+		#Base processing time for Composter (ticks)
+		# Default: 600
+		# Range: 1 ~ 72000
+		base_processing_time = 600
+		#Energy buffer capacity for Composter (RF)
+		# Default: 100000
+		# Range: 1000 ~ 10000000
+		energy_buffer = 100000
+
+	#Burner Configuration
+	[machines.burner]
+		#Energy buffer capacity for Burner (RF)
+		# Default: 100000
+		# Range: 1000 ~ 10000000
+		energy_buffer = 100000
+		#RF generated per biomass item
+		# Default: 2500
+		# Range: 100 ~ 100000
+		biomass_rf_value = 2500
+		#Burn duration for biomass in ticks (20 ticks = 1 second)
+		# Default: 100
+		# Range: 20 ~ 72000
+		biomass_burn_duration = 100
+		#RF generated per compacted biomass item
+		# Default: 22500
+		# Range: 1000 ~ 1000000
+		compacted_biomass_rf_value = 22500
+		#Burn duration for compacted biomass in ticks (20 ticks = 1 second)
+		# Default: 180
+		# Range: 20 ~ 72000
+		compacted_biomass_burn_duration = 180
+		#RF generated per compacted biomass block
+		# Default: 225000
+		# Range: 1000 ~ 1000000
+		compacted_biomass_block_rf_value = 225000
+		#Burn duration for compacted biomass block in ticks (20 ticks = 1 second)
+		# Default: 1800
+		# Range: 20 ~ 72000
+		compacted_biomass_block_burn_duration = 1800
+		#RF generated per crude biomass item
+		# Default: 250
+		# Range: 50 ~ 50000
+		crude_biomass_rf_value = 250
+		#Burn duration for crude biomass in ticks (20 ticks = 1 second)
+		# Default: 50
+		# Range: 20 ~ 72000
+		crude_biomass_burn_duration = 50
+
+	#Capacitor Configuration
+	[machines.capacitors]
+
+		#Tier 1 Capacitor
+		[machines.capacitors.tier_1]
+			#Energy buffer capacity for T1 Capacitor (RF)
+			# Default: 500000
+			# Range: 10000 ~ 100000000
+			buffer_capacity = 500000
+			#Energy transfer rate for T1 Capacitor (RF/t)
+			# Default: 512
+			# Range: 1 ~ 100000
+			transfer_rate = 512
+
+		#Tier 2 Capacitor
+		[machines.capacitors.tier_2]
+			#Energy buffer capacity for T2 Capacitor (RF)
+			# Default: 1000000
+			# Range: 10000 ~ 100000000
+			buffer_capacity = 1000000
+			#Energy transfer rate for T2 Capacitor (RF/t)
+			# Default: 2048
+			# Range: 1 ~ 100000
+			transfer_rate = 2048
+
+		#Tier 3 Capacitor
+		[machines.capacitors.tier_3]
+			#Energy buffer capacity for T3 Capacitor (RF)
+			# Default: 4000000
+			# Range: 10000 ~ 100000000
+			buffer_capacity = 4000000
+			#Energy transfer rate for T3 Capacitor (RF/t)
+			# Default: 8192
+			# Range: 1 ~ 100000
+			transfer_rate = 8192
+
+	#Silo Configuration
+	[machines.silo]
+		#Base range for Silo (blocks)
+		# Default: 16
+		# Range: 4 ~ 64
+		base_range = 16
+		#Energy buffer capacity for Silo (RF)
+		# Default: 100000
+		# Range: 1000 ~ 1000000
+		energy_buffer = 100000
+		#Base power consumption for Silo (RF/t)
+		# Default: 128
+		# Range: 1 ~ 100000
+		base_power_consumption = 128
+		#How often the Silo pulls from planters in range (ticks)
+		# Default: 60
+		# Range: 2 ~ 6000
+		pull_interval = 60
+
+	#Fertilizer Spreader Configuration
+	[machines.fertilizer_spreader]
+		#Base range for Fertilizer Spreader (blocks)
+		# Default: 16
+		# Range: 4 ~ 64
+		base_range = 16
+		#Energy buffer capacity for Fertilizer Spreader (RF)
+		# Default: 100000
+		# Range: 1000 ~ 1000000
+		energy_buffer = 100000
+		#Base power consumption for Fertilizer Spreader (RF/t)
+		# Default: 128
+		# Range: 1 ~ 100000
+		base_power_consumption = 128
+		#How often the Fertilizer Spreader pushes to planters in range (ticks)
+		# Default: 60
+		# Range: 2 ~ 6000
+		push_interval = 60
+		#How many fertilizer items the Fertilizer Spreader pushes per planter per push
+		# Default: 8
+		# Range: 1 ~ 64
+		push_amount = 8

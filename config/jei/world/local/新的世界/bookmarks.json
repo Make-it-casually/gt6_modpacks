@@ -1,0 +1,6 @@
+[
+  {"version":3},
+  {"ingredient":{"id":"minecraft:iron_ore"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:raw_iron"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:campfire"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

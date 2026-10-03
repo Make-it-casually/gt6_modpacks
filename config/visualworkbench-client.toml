@@ -1,0 +1,11 @@
+#Rotate crafting table contents so they always face the closest player.
+#Default Value: CLOSEST_PLAYER
+#Allowed Values: CLOSEST_PLAYER, CRAFTING_PLAYER, NEVER
+rotate_ingredients = "CLOSEST_PLAYER"
+#Render the result of the crafting operation in addition to crafting table contents.
+#Default Value: true
+result_rendering = true
+#Makes crafting table contents lay flat on the table instead of floating above.
+#Default Value: FLOATING
+#Allowed Values: NONE, FLAT, FLOATING
+ingredient_rendering = "FLOATING"

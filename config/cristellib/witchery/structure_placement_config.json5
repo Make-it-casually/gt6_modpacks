@@ -1,0 +1,17 @@
+{
+	"hobgoblin_hut": {
+		"salt": 1521652344,
+		"separation": 8,
+		"spacing": 48
+	},
+	"small_well": {
+		"salt": 1294654121,
+		"separation": 8,
+		"spacing": 48
+	},
+	"well": {
+		"salt": 1694756141,
+		"separation": 8,
+		"spacing": 48
+	}
+}

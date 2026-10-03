@@ -1,0 +1,26 @@
+# Master switch for probe (.d.ts / .pyi) generation. Use /nekojs probe enable|disable to toggle.
+enabled = true
+# Base directory for probe output (relative to the game directory). Each language backend owns its own subdirectory under this.
+baseDir = ".neko_probe"
+
+[scan]
+	# Package whitelist applied to Java class scanning. Entries are literal package prefixes (fqn startsWith 'prefix.') or regexes written as 're:<pattern>' (full-match against the fqn, e.g. re:com\.example\..*\.api\..*). If non-empty, FULLY OVERRIDES the platform defaults. Empty = use defaults (java, com.tkisor.nekojs, plus the platform's MC/loader packages).
+	includePackages = []
+	# Extra package rules APPENDED to the effective whitelist (literal prefixes or 're:' regexes). Use this to add e.g. com.mojang or a mod's packages without retyping the defaults.
+	extraIncludePackages = []
+	# Package rules to EXCLUDE even when matched by the whitelist (deny-list, evaluated last; literal prefixes or 're:' regexes). Defaults mirror the ClassFilter package blacklist (nekojs core, java.desktop UI, JNDI/RMI, JDBC, Graal/Truffle) - scripts can never Java.type classes under those prefixes. Set to an explicit empty list [] to disable exclusions.
+	excludePackages = ["com.tkisor.nekojs.core", "java.awt", "javax.swing", "javax.imageio", "javax.naming", "java.rmi", "java.sql", "javax.sql", "org.graalvm", "com.oracle.truffle"]
+	# Mod IDs or package rules force-included into scanning ON TOP of the whitelist (excludePackages still wins). Built-in modId table: minecraft=net.minecraft, neoforge=net.neoforged, forge=net.minecraftforge, java=java. Entries containing '.' are literal package prefixes; 're:' entries are regexes; unknown mod IDs are ignored (debug log).
+	forceScanMods = ["minecraft"]
+	# Max BFS depth when walking the type-reachability closure from event/binding/adapter seeds.
+	maxDepth = 5
+	# Scan mode: SMART = classes reachable from event/binding/adapter seeds, filtered by the whitelist + forceScanMods | FULL = whole reachable closure, whitelist bypassed but excludePackages still honored (bounded by maxDepth) | NONE = no scanning at all (probe returns a failure result).
+	mode = "SMART"
+
+	[languages.typescript]
+		# Per-language probe config ([languages.<languageId>]): outputDir = subdirectory under baseDir for this language's output (defaults to the language id, e.g. 'typescript'). backend = name of the preferred backend for /nekojs probe <languageId> (unset = the language's registered default backend).
+		outputDir = "typescript"
+
+	[languages.python]
+		# outputDir for the python backend (defaults to 'python'; a null/missing value falls back to the language id).
+		outputDir = "python"

@@ -1,0 +1,117 @@
+#Whether to register the new energy conduits.
+enableNewConduits = true
+
+#Grinding Ball Settings
+[grinding_balls]
+
+	[grinding_balls.alloy_ball_construction_alloy]
+		# Default: 1.0
+		# Range: 0.1 ~ 100.0
+		outputMultiplier = 1.0
+		# Default: 0.33
+		# Range: 0.1 ~ 100.0
+		bonusMultiplier = 0.33
+		# Default: 0.25
+		# Range: 0.01 ~ 100.0
+		powerUse = 0.25
+		# Default: 12000
+		# Range: > 1
+		duration = 12000
+
+	[grinding_balls.crude_steel_ball]
+		# Default: 1.2
+		# Range: 0.1 ~ 100.0
+		outputMultiplier = 1.2
+		# Default: 1.2
+		# Range: 0.1 ~ 100.0
+		bonusMultiplier = 1.2
+		# Default: 0.85
+		# Range: 0.01 ~ 100.0
+		powerUse = 0.85
+		# Default: 24000
+		# Range: > 1
+		duration = 24000
+
+	[grinding_balls.alloy_ball_energetic_silver]
+		# Default: 1.6
+		# Range: 0.1 ~ 100.0
+		outputMultiplier = 1.6
+		# Default: 1.6
+		# Range: 0.1 ~ 100.0
+		bonusMultiplier = 1.6
+		# Default: 1.1
+		# Range: 0.01 ~ 100.0
+		powerUse = 1.1
+		# Default: 80000
+		# Range: > 1
+		duration = 80000
+
+	[grinding_balls.alloy_ball_vivid_alloy]
+		# Default: 1.75
+		# Range: 0.1 ~ 100.0
+		outputMultiplier = 1.75
+		# Default: 1.35
+		# Range: 0.1 ~ 100.0
+		bonusMultiplier = 1.35
+		# Default: 1.35
+		# Range: 0.01 ~ 100.0
+		powerUse = 1.35
+		# Default: 80000
+		# Range: > 1
+		duration = 80000
+
+	[grinding_balls.alloy_ball_crystalline_alloy]
+		# Default: 1.8
+		# Range: 0.1 ~ 100.0
+		outputMultiplier = 1.8
+		# Default: 1.4
+		# Range: 0.1 ~ 100.0
+		bonusMultiplier = 1.4
+		# Default: 1.45
+		# Range: 0.01 ~ 100.0
+		powerUse = 1.45
+		# Default: 80000
+		# Range: > 1
+		duration = 80000
+
+	[grinding_balls.alloy_ball_crystalline_pink_slime]
+		# Default: 1.75
+		# Range: 0.1 ~ 100.0
+		outputMultiplier = 1.75
+		# Default: 1.55
+		# Range: 0.1 ~ 100.0
+		bonusMultiplier = 1.55
+		# Default: 1.55
+		# Range: 0.01 ~ 100.0
+		powerUse = 1.55
+		# Default: 88000
+		# Range: > 1
+		duration = 88000
+
+	[grinding_balls.alloy_ball_melodic_alloy]
+		# Default: 2.0
+		# Range: 0.1 ~ 100.0
+		outputMultiplier = 2.0
+		# Default: 1.45
+		# Range: 0.1 ~ 100.0
+		bonusMultiplier = 1.45
+		# Default: 1.55
+		# Range: 0.01 ~ 100.0
+		powerUse = 1.55
+		# Default: 88000
+		# Range: > 1
+		duration = 88000
+
+	[grinding_balls.alloy_ball_stellar_alloy]
+		# Default: 2.3
+		# Range: 0.1 ~ 100.0
+		outputMultiplier = 2.3
+		# Default: 2.25
+		# Range: 0.1 ~ 100.0
+		bonusMultiplier = 2.25
+		# Default: 2.2
+		# Range: 0.01 ~ 100.0
+		powerUse = 2.2
+		# Default: 176000
+		# Range: > 1
+		duration = 176000

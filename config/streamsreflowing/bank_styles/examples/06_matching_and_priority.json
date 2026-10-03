@@ -1,0 +1,23 @@
+{
+  "_about": [
+    "WHICH STYLE WINS, AND HOW TO TAKE A BIOME OVER.",
+    "Exactly one style paints each biome. Naming the biome in 'biomes' beats any 'tags' match; both beat a style",
+    "with neither. At the same level a starred style (star: true) beats the unstarred ones, then a config file beats",
+    "a datapack or the mod's own, and among tag styles more tags beat fewer. A tag style needs the biome to carry ALL its tags.",
+    "Write tags without #. exclude_biomes and exclude_tags take the style out of the running in those biomes.",
+    "This file: 'biomes' takes jungle and sparse jungle over from the mod's own jungle style (a config file beats",
+    "the mod at the same level). 'tags' with the star then claims every other jungle, modded ones too, over any other",
+    "tag style. Bamboo jungle is excluded, so it keeps the mod's style.",
+    "cohesion: how firmly the banks hold. 0 = loose sand that spreads and forms bars, 1 = clay and roots that keep a",
+    "narrow, deep channel. Leave it out and the mod guesses from the biome's tags."
+  ],
+  "biomes": ["minecraft:jungle", "minecraft:sparse_jungle"],
+  "tags": ["minecraft:is_jungle"],
+  "exclude_biomes": ["minecraft:bamboo_jungle"],
+  "exclude_tags": ["minecraft:is_mountain"],
+  "star": true,
+  "cohesion": 0.9,
+  "bed": ["minecraft:mud", "minecraft:mud", "minecraft:clay"],
+  "waterline": { "above": 15, "block": "minecraft:moss_block" },
+  "bank": ["minecraft:rooted_dirt", "minecraft:moss_block", "streamsreflowing:chameleon"]
+}

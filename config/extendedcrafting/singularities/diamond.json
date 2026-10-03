@@ -1,0 +1,6 @@
+{
+  "name": "singularity.extendedcrafting.diamond",
+  "overlay_color": "#A6FCE9",
+  "underlay_color": "#1AACA8",
+  "ingredient": "minecraft:diamond"
+}

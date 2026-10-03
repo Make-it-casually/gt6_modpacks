@@ -1,0 +1,24 @@
+#Enable curses. When disabled, rituals that apply curses will not function.
+enableCurses = true
+#Require Ghost of the Light infusion to use mirror teleportation. When enabled, only players with this infusion can teleport through mirrors.
+requireGhostOfLightInfusion = false
+#Enable player werewolves to spread lycanthropy at level 10.
+enableLycanthropy = true
+#Maximum number of blocks in a vein to mine with Hag's ring.
+maxVinSize = 81
+#Whether Hunters can ambush vampires, werewolves, and liches
+hunterAmbushEnabled = true
+#Enable aero-like category banners in the Witchery creative tab. When disabled, items are shown as a flat grid without banner headers or spacer slots.
+enableCreativeTabBanners = true
+#Whether empowered Sunstone Pendants provide permanent sunlight protection to vampires while worn.
+enableEmpoweredSunstonePendantProtection = false
+#Whether empowered Mooncharm Pendants provide the Blood Scent ability while worn.
+enableEmpoweredMooncharmPendantAbility = false
+#Whether walled villages generate a defensive wall around them. The special witchery buildings still generate in these villages even when this is disabled.
+enableVillageWalls = true
+#Whether village wall pieces use the terrain-conforming placement, where each piece's height is clamped to within 4 blocks of its neighbor to avoid drops into caves/holes. When disabled, each wall piece independently samples the ground height at its own position with no clamping against neighbors.
+enableVillageWallTerrainConforming = false
+#Registry names of blocks that Mutandis and Mutandis Extremis will never mutate.
+#Blacklisted blocks will also not consume the item when used on them.
+#Example: "minecraft:oak_sapling"
+mutandisBlacklist = []

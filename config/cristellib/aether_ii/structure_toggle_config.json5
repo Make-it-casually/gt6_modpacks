@@ -1,0 +1,35 @@
+{
+	"aether_surface_ruins": {
+		"ancient_henge": true,
+		"veradexian_library_arctic": true,
+		"veradexian_library_temperate": true,
+		"veradexian_ruins_arctic": true,
+		"veradexian_ruins_temperate": true
+	},
+	"aether_surface_structures": {
+		"camp_arctic": true,
+		"camp_highfields": true,
+		"camp_magnetic": true,
+		"watchtower": true
+	},
+	"aether_underground_complexes": {
+		"sentry_ruins": true,
+		"undercloud_mineshaft": true
+	},
+	"aether_underground_ruins": {
+		"brexallen_ruins": true
+	},
+	"animal_dens": {
+		"animal_den": true
+	},
+	"aqueducts": {
+		"veradexian_aqueduct": true
+	},
+	"irradiated_remnants": {
+		"irradiated_bunker_remnants": true,
+		"irradiated_settlement_remnants": true
+	},
+	"outposts": {
+		"outpost": true
+	}
+}

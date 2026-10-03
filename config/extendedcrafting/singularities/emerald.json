@@ -1,0 +1,6 @@
+{
+  "name": "singularity.extendedcrafting.emerald",
+  "overlay_color": "#7DF8AC",
+  "underlay_color": "#008E1A",
+  "ingredient": "minecraft:emerald"
+}

@@ -1,0 +1,27 @@
+{
+    // The version of the config file. Do not change this unless you know what you are doing.
+    "rconfig:version": 0,
+    "Particles": {
+        // In addition to a visual difference, containers that are not marked as 'opened' by the current player generate particles. [default: true]
+        "unopened_particles": true,
+        // Containers that are actively refreshing will display particles to indicate this. [default: true]
+        "refresh_particles": true,
+        // Containers that are actively decaying will display particles to indicate this. [default: true]
+        "decay_particles": true
+    },
+    "Textures": {
+        // When true, replaces the Lootr-specific textures with Vanilla ones where possible. [default: false]
+        "vanilla_textures": false
+    },
+    "Notifications": {
+        // If true, toasts will be used to notify players of refresh and decay messages, otherwise they will be sent as status bar messages. [default: true]
+        "display_toast": true,
+        // If true, notifications related to ticking (such as decay or refresh) will not be sent to players. [default: false]
+        "disable_notifications": false,
+        /*
+         * If the remaining duration of a ticking container (such as one refreshing or decaying) in ticks is more than this value, notifications will not be sent to the player. [default: 30 * 20 (30 seconds), -1 disables the limit and will always send notifications.]
+         * Range: -1 - 2147483647
+         */
+        "maximum_notification_delay": 600
+    }
+}

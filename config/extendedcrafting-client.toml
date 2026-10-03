@@ -1,0 +1,4 @@
+#Client settings.
+[General]
+	#Should the Quantum Compressor render the result stack above it?
+	enableCompressorRenderer = true

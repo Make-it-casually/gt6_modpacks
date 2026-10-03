@@ -1,0 +1,6 @@
+{
+  "name": "singularity.extendedcrafting.copper",
+  "overlay_color": "#FA977C",
+  "underlay_color": "#BC5430",
+  "ingredient": "minecraft:copper_ingot"
+}

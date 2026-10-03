@@ -1,0 +1,37 @@
+#不死图腾电容设置
+[UndyingTotemCapacitor]
+	#是否启用不死图腾电容的自定义等级计算逻辑。
+	#如果为 false，将使用默认的硬编码逻辑（效率最高6.0，耐久最高III级）。
+	enableCustomMath = false
+
+	#效率附魔相关设置
+	[UndyingTotemCapacitor.EfficiencySettings]
+		#没有任何效率附魔时的初始基础电容等级。
+		# Default: 3.5
+		# Range: 0.0 ~ 100.0
+		baseLevel = 3.5
+		#每一级效率附魔具体能为电容增加多少级算力。
+		#最终公式：基础等级 + (有效的附魔等级 * 该增量)。
+		# Default: 0.5
+		# Range: 0.0 ~ 100.0
+		levelIncrementPerEnchant = 0.5
+		#限制参与公式计算的【最高效率附魔等级】，而不是限制电容的最终输出等级。
+		#例如：如果设置为 5，那么即便是附魔出的效率 X (10级)，也按 5 级来参与计算。
+		#设置为 -1 则不做任何附魔等级限制（无限成长）。
+		# Default: 5
+		# Range: -1 ~ 255
+		maxEnchantLimit = 5
+
+	#耐久附魔相关设置
+	[UndyingTotemCapacitor.UnbreakingSettings]
+		#每一级耐久附魔具体能为电容增加多少期望寿命百分比。
+		#默认值为 13.3（即 13.3% 的寿命延长期望）。填写 100.0 即代表每级延长 100% 预期寿命。
+		# Default: 13.3
+		# Range: 0.0 ~ 1000.0
+		unbreakingIncrementPercent = 13.3
+		#限制参与耐久消耗概率计算的【最高耐久附魔等级】。
+		#例如：设为 3 则无论多少级耐久，只会计算前 3 级的加成。
+		#设置为 -1 则不做限制（无限成长）。
+		# Default: 3
+		# Range: -1 ~ 255
+		maxUnbreakingLimit = 3

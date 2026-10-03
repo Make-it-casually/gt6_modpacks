@@ -1,0 +1,140 @@
+[machine]
+	#Machine execution mode
+	#Allowed Values: ASYNC, SEMI_SYNC, SYNC
+	work_mode = "ASYNC"
+
+[terminal]
+	#Maximum blocks removed by one terminal demolish operation
+	# Default: 163840
+	# Range: 1 ~ 1000000
+	max_demolish_blocks = 163840
+	#Maximum distance from a bound controller at which a terminal may operate
+	# Default: 96
+	# Range: 1 ~ 512
+	controller_access_radius = 96
+
+[async]
+	#Worker threads used for asynchronous machine execution; requires restarting the server process
+	# Default: 8
+	# Range: 1 ~ 256
+	worker_count = 8
+	#Milliseconds to wait for asynchronous worker progress before another fence pass
+	# Default: 10
+	# Range: 1 ~ 1000
+	worker_progress_wait_ms = 10
+	#Maximum queued asynchronous worker segments; requires restarting the server process
+	# Default: 512
+	# Range: 1 ~ 1000000
+	worker_queue_capacity = 512
+	#Maximum asynchronous main-thread logic units processed per level tick
+	# Default: 1024
+	# Range: 1 ~ 1000000
+	main_thread_steps_per_level_tick = 1024
+	#Maximum shared IO requests processed per level tick
+	# Default: 4096
+	# Range: 1 ~ 1000000
+	shared_io_requests_per_level_tick = 4096
+	#Maximum entries submitted in one shared IO workset
+	# Default: 256
+	# Range: 1 ~ 1000000
+	shared_io_workset_entries = 256
+
+[factory]
+	#Ticks an idle non-core factory thread is kept before it is released
+	# Default: 200
+	# Range: 1 ~ 1000000
+	idle_timeout_ticks = 200
+
+[build]
+	#Maximum structure blocks placed by one controller per tick
+	# Default: 256
+	# Range: 1 ~ 1000000
+	blocks_per_tick = 256
+	#Maximum age of a pending structure build task
+	# Default: 1200
+	# Range: 1 ~ 1000000
+	task_timeout_ticks = 1200
+
+[structure]
+	#Ticks between controller structure-check passes
+	# Default: 40
+	# Range: 1 ~ 600
+	check_interval_ticks = 40
+	#Number of batches used to scan a structure across server ticks
+	# Default: 10
+	# Range: 1 ~ 32
+	scan_batches = 10
+	#Number of deterministic structure entries checked before each scan batch
+	# Default: 16
+	# Range: 0 ~ 128
+	sentinel_count = 16
+	#Whether deterministic structure sentinel checks are enabled
+	sentinel_enabled = true
+	#Ticks between formed-structure safety checks
+	# Default: 120
+	# Range: 1 ~ 6000
+	safety_check_interval_ticks = 120
+	#Batches used by one formed-structure safety check
+	# Default: 40
+	# Range: 1 ~ 1024
+	safety_scan_batches = 40
+
+[module]
+	#Ticks between fallback scans for module coupler connections
+	# Default: 60
+	# Range: 1 ~ 6000
+	fallback_scan_interval_ticks = 60
+
+[link]
+	#Ticks between linked appearance controller checks
+	# Default: 40
+	# Range: 1 ~ 6000
+	appearance_check_interval_ticks = 40
+	#Ticks between data storage controller binding checks
+	# Default: 40
+	# Range: 1 ~ 6000
+	data_storage_check_interval_ticks = 40
+	#Ticks between network interface owner heartbeats
+	# Default: 40
+	# Range: 1 ~ 6000
+	network_interface_heartbeat_interval_ticks = 40
+	#Ticks between smart interface controller binding checks
+	# Default: 20
+	# Range: 1 ~ 6000
+	smart_interface_check_interval_ticks = 20
+
+[auto_io]
+	#Minimum ticks between automatic IO transfer attempts
+	# Default: 5
+	# Range: 1 ~ 6000
+	min_delay_ticks = 5
+	#Maximum ticks between automatic IO transfer attempts
+	# Default: 60
+	# Range: 1 ~ 6000
+	max_delay_ticks = 60
+	#Delay reduction per successful automatic IO transfer
+	# Default: 5
+	# Range: 1 ~ 6000
+	success_delay_step_ticks = 5
+
+[assembly]
+	#Maximum blocks handled by one build or demolish operation
+	# Default: 163840
+	# Range: 1 ~ 1000000
+	max_blocks_per_operation = 163840
+
+[energy]
+	#Global multiplier on energy consumption
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	consumption_multiplier = 1.0
+
+[network]
+	#Maximum machine network requests processed per server tick
+	# Default: 1024
+	# Range: 1 ~ 1000000
+	max_requests_per_tick = 1024
+	#Maximum block pattern entries synchronized for one machine structure
+	# Default: 524288
+	# Range: > 1
+	sync_max_blocks = 524288

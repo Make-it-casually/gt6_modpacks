@@ -1,0 +1,4 @@
+{
+  "_about": "A definition for a BED ring: grass on the submerged floor. Copy it into bank_features/.",
+  "features": ["minecraft:seagrass_river", "minecraft:seagrass_simple"]
+}

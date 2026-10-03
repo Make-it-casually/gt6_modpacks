@@ -1,0 +1,7 @@
+[Modpack]
+	#Prevents the Aether Portal from being created normally in the mod
+	"Disables Aether Portal creation" = false
+	#Sets the ID of the dimension that the Aether Portal will send the player to
+	"Sets portal destination dimension" = "aether_ii:aether_holy_isles"
+	#Sets the ID of the dimension that the Aether Portal will return the player to
+	"Sets portal return dimension" = "minecraft:overworld"

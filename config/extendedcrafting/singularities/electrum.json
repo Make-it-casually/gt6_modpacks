@@ -1,0 +1,6 @@
+{
+  "name": "singularity.extendedcrafting.electrum",
+  "overlay_color": "#F5F18E",
+  "underlay_color": "#9E8D3E",
+  "ingredient": "#c:ingots/electrum"
+}

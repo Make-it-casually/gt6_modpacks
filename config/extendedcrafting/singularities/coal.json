@@ -1,0 +1,6 @@
+{
+  "name": "singularity.extendedcrafting.coal",
+  "overlay_color": "#363739",
+  "underlay_color": "#261E24",
+  "ingredient": "minecraft:coal"
+}

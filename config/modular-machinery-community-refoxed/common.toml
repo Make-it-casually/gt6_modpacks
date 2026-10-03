@@ -1,0 +1,125 @@
+	[network.preview]
+		#Maximum multiblock preview entries; client and server values must match
+		# Default: 131072
+		# Range: > 1
+		max_entries = 131072
+		#Default multiblock preview duration in ticks
+		# Default: 200
+		# Range: > 1
+		duration_ticks = 200
+
+	[network.port_storage]
+		#Maximum port storage entries per payload; client and server values must match
+		# Default: 1024
+		# Range: > 1
+		max_entries = 1024
+		#Maximum encoded port storage payload size; client and server values must match
+		# Default: 1048576
+		# Range: > 1
+		max_payload_bytes = 1048576
+
+	[network.data_value]
+		#Maximum entries in one serialized data value collection
+		# Default: 1024
+		# Range: > 1
+		max_entries = 1024
+		#Maximum nesting depth in one serialized data value
+		# Default: 16
+		# Range: > 1
+		max_depth = 16
+		#Maximum UTF-8 string length in data and machine state payloads
+		# Default: 256
+		# Range: > 1
+		max_string_length = 256
+
+	[network.screen_text]
+		#Maximum controller screen text lines per payload
+		# Default: 1024
+		# Range: > 1
+		max_lines = 1024
+		#Maximum encoded controller screen text size
+		# Default: 65536
+		# Range: > 1
+		max_encoded_bytes = 65536
+
+	[network.runtime_content]
+		#Maximum synchronized machine structures
+		# Default: 4096
+		# Range: > 1
+		max_structures = 4096
+		#Maximum synchronized machine recipes
+		# Default: 16384
+		# Range: > 1
+		max_recipes = 16384
+		#Maximum synchronized controller or appearance specs
+		# Default: 4096
+		# Range: > 1
+		max_specs = 4096
+		#Maximum synchronized tooltip lines
+		# Default: 1024
+		# Range: > 1
+		max_tooltip_lines = 1024
+
+	[network.machine_state]
+		#Maximum machine level snapshots per payload
+		# Default: 1024
+		# Range: > 1
+		max_level_snapshots = 1024
+		#Maximum installed modules in one machine state payload
+		# Default: 1024
+		# Range: > 1
+		max_installed_modules = 1024
+
+	[network.factory_state]
+		#Maximum factory thread snapshots per payload
+		# Default: 1024
+		# Range: > 1
+		max_thread_snapshots = 1024
+		#Maximum factory lane snapshots per payload
+		# Default: 1024
+		# Range: > 1
+		max_lane_snapshots = 1024
+		#Maximum factory level snapshots per payload
+		# Default: 1024
+		# Range: > 1
+		max_level_snapshots = 1024
+
+	[network.failure]
+		#Maximum failure details in machine state payloads
+		# Default: 64
+		# Range: > 1
+		max_details = 64
+
+	[network.terminal_state]
+		#Maximum preview layers in terminal state payloads
+		# Default: 128
+		# Range: > 1
+		max_preview_layers = 128
+
+	[network.structure_sync]
+		#Maximum entries in synchronized structure collections
+		# Default: 1024
+		# Range: > 1
+		max_collection_entries = 1024
+		#Maximum symbol requirements in synchronized structures
+		# Default: 256
+		# Range: > 1
+		max_symbol_requirements = 256
+
+	[network.recipe_sync]
+		#Maximum requirements in one synchronized recipe
+		# Default: 4096
+		# Range: > 1
+		max_requirements = 4096
+		#Maximum outputs in one synchronized recipe
+		# Default: 4096
+		# Range: > 1
+		max_outputs = 4096
+		#Maximum modifiers in one synchronized recipe
+		# Default: 1024
+		# Range: > 1
+		max_modifiers = 1024
+		#Maximum required hosts in one synchronized recipe
+		# Default: 1024
+		# Range: > 1
+		max_required_hosts = 1024

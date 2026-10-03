@@ -1,0 +1,11 @@
+[Gameplay]
+	#On world creation, the player is given an Aether Portal Frame item to automatically go to the Aether with
+	"Gives player Aether Portal Frame item" = false
+	#Spawns the player in the Aether dimension; this is best enabled alongside other modpack configuration to avoid issues
+	"Spawns the player in the Aether" = false
+	#Displays info about the Aether II's alpha on world join (goes away after the first time a world is join in a modded instance)
+	"Alpha Message" = true
+	#Makes the alpha info button in the Guidebook have a yellow icon to make it stand out (turns to white after the first time its clicked)
+	"Yellow Alpha Button" = true
+	#Enables currently disabled Infected Guardian Tree content. At the moment this only includes enabling the dungeon's blocks in the creative inventory
+	"Enables experimental dungeon content" = false
