@@ -1,5 +1,6 @@
 
 import { RF, applyReforge } from '../src/lib/gt6_reforge.js'
+import { gtBlock } from '../src/lib/gt6_materials.js'
 
 const REMOVE = [
   'stellaris:titanium_ingot_from_smelting_ore',
@@ -139,22 +140,22 @@ const EDITS = [
 
 const GATES = [
   { id: 'stellaris:coal_generator', path: 'pattern', value: ['#L#', '#X#', '#Z#'] },
-  { id: 'stellaris:coal_generator', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:coal_generator', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:solar_panel', path: 'pattern', value: ['GGG', 'TTT', 'IZI'] },
-  { id: 'stellaris:solar_panel', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:solar_panel', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:star_light_panel', path: 'pattern', value: ['OPO', 'DDD', 'IZI'] },
-  { id: 'stellaris:star_light_panel', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:star_light_panel', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:power_bank_t1', path: 'pattern', value: ['ITI', 'TRT', 'IZI'] },
-  { id: 'stellaris:power_bank_t1', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:power_bank_t1', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:electrolyzer', path: 'pattern', value: ['CIC', 'BTB', 'TZT'] },
-  { id: 'stellaris:electrolyzer', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:electrolyzer', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:blender', path: 'pattern', value: ['TTT', 'IGI', 'TZT'] },
   { id: 'stellaris:blender',
     path: 'key',
     value: { "T": RF.titanium_plate,
       "G": "#c:glass_blocks/colorless",
       "I": RF.steel_plate,
-      "Z": RF.casingT1
+      "Z": gtBlock('machineCasing', 'stainlesssteel')
     }
   },
   { id: 'stellaris:vacuumator', path: 'pattern', value: ['TGT', 'TRT', 'IZI'] },
@@ -164,46 +165,46 @@ const GATES = [
       "G": "#c:glass_blocks/colorless",
       "R": "#c:dusts/redstone",
       "I": RF.steel_plate,
-      "Z": RF.casingT1
+      "Z": gtBlock('machineCasing', 'stainlesssteel')
     }
   },
   { id: 'stellaris:oil_finder', path: 'pattern', value: [' X ', 'YSY', ' Z '] },
-  { id: 'stellaris:oil_finder', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:oil_finder', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:laboratory', path: 'pattern', value: ['BTB', 'TCT', 'GZG'] },
-  { id: 'stellaris:laboratory', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:laboratory', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:space_farm', path: 'pattern', value: ['T T', 'TPT', 'TZT'] },
   { id: 'stellaris:space_farm',
     path: 'key',
     value: { "T": RF.titanium_plate,
       "P": "minecraft:flower_pot",
-      "Z": RF.casingT1
+      "Z": gtBlock('machineCasing', 'stainlesssteel')
     }
   },
   { id: 'stellaris:pumpjack', path: 'pattern', value: ['TIT', 'IPI', 'SZS'] },
-  { id: 'stellaris:pumpjack', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:pumpjack', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:cargo_unloader', path: 'pattern', value: ['TTT', 'IHI', 'TZT'] },
-  { id: 'stellaris:cargo_unloader', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:cargo_unloader', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:oxygen_distributor', path: 'pattern', value: ['TTT', 'TFT', 'SZS'] },
-  { id: 'stellaris:oxygen_distributor', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:oxygen_distributor', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:oxygen_propagator', path: 'pattern', value: ['TTT', 'TFT', 'TZT'] },
-  { id: 'stellaris:oxygen_propagator', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:oxygen_propagator', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:gravity_manipulator', path: 'pattern', value: ['DTD', 'TRT', 'DZD'] },
-  { id: 'stellaris:gravity_manipulator', path: 'key.Z', value: RF.casingT1 },
+  { id: 'stellaris:gravity_manipulator', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'stellaris:diesel_generator', path: 'pattern', value: ['sss', 'ibi', 'iZi'] },
   { id: 'stellaris:diesel_generator',
     path: 'key',
     value: { "b": "#c:buckets/empty",
       "s": RF.titanium_plate,
       "i": RF.steel_plate,
-      "Z": RF.casingT2
+      "Z": gtBlock('machineCasing', 'tungstensteel')
     }
   },
   { id: 'stellaris:fuel_refinery', path: 'pattern', value: ['BBT', 'IFI', 'TZT'] },
-  { id: 'stellaris:fuel_refinery', path: 'key.Z', value: RF.casingT2 },
+  { id: 'stellaris:fuel_refinery', path: 'key.Z', value: gtBlock('machineCasing', 'tungstensteel') },
   { id: 'stellaris:rocket_launch_pad', path: 'pattern', value: ['TTT', 'T T', 'TZT'] },
-  { id: 'stellaris:rocket_launch_pad', path: 'key.Z', value: RF.casingT2 },
+  { id: 'stellaris:rocket_launch_pad', path: 'key.Z', value: gtBlock('machineCasing', 'tungstensteel') },
   { id: 'stellaris:engineering_station', path: 'pattern', value: ['DTD', 'TCT', 'SZS'] },
-  { id: 'stellaris:engineering_station', path: 'key.Z', value: RF.casingT2 },
+  { id: 'stellaris:engineering_station', path: 'key.Z', value: gtBlock('machineCasing', 'tungstensteel') },
   { id: 'stellaris:rover', path: 'pattern', value: ['ICI', 'TWT', 'TZT'] },
   { id: 'stellaris:rover',
     path: 'key',
@@ -211,13 +212,13 @@ const GATES = [
       "C": "stellaris:cable_t1",
       "W": "#c:buckets/empty",
       "T": RF.titanium_plate,
-      "Z": RF.casingT2
+      "Z": gtBlock('machineCasing', 'tungstensteel')
     }
   },
   { id: 'stellaris:hydrogen_motor', path: 'pattern', value: ['SSS', 'EDE', 'SZS'] },
-  { id: 'stellaris:hydrogen_motor', path: 'key.Z', value: RF.casingT2 },
+  { id: 'stellaris:hydrogen_motor', path: 'key.Z', value: gtBlock('machineCasing', 'tungstensteel') },
   { id: 'stellaris:engine_fan', path: 'pattern', value: [' # ', '#X#', ' Z '] },
-  { id: 'stellaris:engine_fan', path: 'key.Z', value: RF.casingT2 },
+  { id: 'stellaris:engine_fan', path: 'key.Z', value: gtBlock('machineCasing', 'tungstensteel') },
   { id: 'stellaris:cable_t1', path: 'pattern', value: ['TTT', 'CCC', 'TZT'] },
   { id: 'stellaris:cable_t1', path: 'key.Z', value: RF.steel_plate },
   { id: 'stellaris:pipe_t1', path: 'pattern', value: ['TTT', 'GGG', 'TZT'] },

@@ -167,13 +167,6 @@ export const GT6_INGOT_MATERIALS = Object.freeze([
     confidence: 'verified',
     note: 'GT6 自带同名材料 Titanium，标签名同名'
   },
-  {
-    item: 'stellaris:novite_ingot',
-    material: 'Steel',
-    tagMaterial: 'Novite',
-    confidence: 'approx',
-    note: 'GT6 无 Novite。Stellaris 的 Novite 是基础结构金属（由 raw novite 熔炼），按钢处理'
-  },
 
   {
     item: 'extendedcrafting:black_iron_ingot',

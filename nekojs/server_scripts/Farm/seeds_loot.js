@@ -72,7 +72,7 @@ ServerEvents.lootTables(event => {
       tableRemoved = 1
     }
     json.pools = keptPools
-    event.setJson(tableId, json)
+    event.setJson(tableId, JSON.stringify(json))
     touched++
     removedEntries = removedEntries + tableRemoved
   }

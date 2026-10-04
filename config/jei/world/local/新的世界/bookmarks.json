@@ -7,9 +7,6 @@
   {"ingredient":{"id":"ae2:printed_silicon"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:music_disc_creator_music_box"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"ae2:fluix_dust"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"recipe":"ae2:network/cables/glass_fluix","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
-  {"recipe":"ae2:materials/formationcore","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
-  {"recipe":"ae2:materials/annihilationcore","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
   {"ingredient":{"id":"gregtech:gt.meta.gem","components":"{\"gregapi:subtype\":8347}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:string"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"aether_ii:cloudtwine"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -91,13 +88,5 @@
   {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10001}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10003}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10004}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10005}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"ae2:memory_card"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"ae2:equal_distribution_card"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"recipe":["nekojs:ae2/storagecell1k_alt2",{"category":"misc","result":{"id":"ae2:item_storage_cell_1k"},"ingredients":["ae2:item_cell_housing","ae2:cell_component_1k",{"items":"gregtech:gt.multiitem.technological","components":{"gregapi:subtype":12001},"neoforge:ingredient_type":"neoforge:components"},{"items":"gregtech:gt.multiitem.technological","components":{"gregapi:subtype":12081},"neoforge:ingredient_type":"neoforge:components"}],"type":"minecraft:crafting_shapeless"}],"recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
-  {"ingredient":{"id":"ae2:basic_card"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"gregtech:gt.meta.plategem","components":"{\"gregapi:subtype\":8300}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"ae2:formation_core"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"ae2:annihilation_core"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"recipe":"sophisticatedstorage:upgrade_base","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"}
+  {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10005}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

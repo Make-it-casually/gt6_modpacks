@@ -1,5 +1,5 @@
 
-import { GT_FORM, GT_MATERIAL, gtBlock, gtIngredient } from './gt6_materials.js'
+import { GT_FORM, GT_MATERIAL, gtIngredient } from './gt6_materials.js'
 import { modernizeRecipe } from './gt6_ingredient_forms.js'
 
 function gt(formKey, materialKey, count) {
@@ -45,10 +45,6 @@ export const RF = Object.freeze({
   rubber_plate: gt('plate', 'rubber'),
 
   fluix_dust: 'ae2:fluix_dust',
-
-  casingT0: gtBlock('machineCasing', 'galvanizedsteel'),
-  casingT1: gtBlock('machineCasing', 'stainlesssteel'),
-  casingT2: gtBlock('machineCasing', 'tungstensteel')
 })
 
 export function splitPath(path) {

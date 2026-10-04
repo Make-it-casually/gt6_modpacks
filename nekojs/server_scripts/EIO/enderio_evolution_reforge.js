@@ -1,5 +1,6 @@
 
 import { RF, applyReforge } from '../src/lib/gt6_reforge.js'
+import { gtBlock } from '../src/lib/gt6_materials.js'
 
 const REMOVE = [
   'enderio_evolution:ingot/crude_steel_ingot',
@@ -17,7 +18,7 @@ const EDITS = [
   { id: 'enderio_evolution:machine/simple_machine_frame', path: 'key.C', value: RF.copper_plate },
   { id: 'enderio_evolution:machine/simple_machine_frame', path: 'key.I', value: RF.steel_plate },
   { id: 'enderio_evolution:machine/simple_stirling_generator', path: 'key.G', value: RF.iron_gear },
-  { id: 'enderio_evolution:machine/simple_stirling_generator', path: 'key.M', value: RF.casingT0 },
+  { id: 'enderio_evolution:machine/simple_stirling_generator', path: 'key.M', value: gtBlock('machineCasing', 'galvanizedsteel') },
   { id: 'enderio_evolution:nugget/crude_steel_nugget', path: 'ingredients[0]', value: RF.steel_ingot },
   { id: 'enderio_evolution:storage_block/crude_steel_block', path: 'key.X', value: RF.steel_ingot },
 ]
@@ -33,7 +34,7 @@ const GATES = [
       "H": "enderio_evolution:simple_machine_frame",
       "M": "enderio_evolution:construction_alloy_ingot",
       "P": "minecraft:ender_pearl",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/basic_sag_mill', path: 'pattern', value: ['CCC', 'MHM', 'EZE'] },
@@ -46,7 +47,7 @@ const GATES = [
       "E": "minecraft:ender_pearl",
       "H": "enderio_evolution:simple_machine_frame",
       "M": "enderio_evolution:construction_alloy_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/basic_vat', path: 'pattern', value: ['DED', 'MCM', 'DZD'] },
@@ -59,7 +60,7 @@ const GATES = [
       "D": "enderio:dark_steel_ingot",
       "E": "minecraft:ender_chest",
       "M": "enderio_evolution:construction_alloy_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/crystalline_alloy_sag_mill', path: 'pattern', value: ['CCC', 'MHM', 'EZE'] },
@@ -69,7 +70,7 @@ const GATES = [
       "E": "minecraft:ender_pearl",
       "H": "enderio_evolution:vivid_alloy_sag_mill",
       "M": "enderio_evolution:crystalline_alloy_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/crystalline_alloy_smelter', path: 'pattern', value: ['PCP', 'CHC', 'MZM'] },
@@ -79,7 +80,7 @@ const GATES = [
       "H": "enderio_evolution:vivid_alloy_smelter",
       "M": "enderio_evolution:crystalline_alloy_ingot",
       "P": "minecraft:ender_pearl",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/crystalline_alloy_vat', path: 'pattern', value: ['DED', 'MCM', 'DZD'] },
@@ -89,7 +90,7 @@ const GATES = [
       "D": "enderio:dark_steel_ingot",
       "E": "minecraft:ender_chest",
       "M": "enderio_evolution:crystalline_alloy_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/melodic_alloy_sag_mill', path: 'pattern', value: ['CCC', 'MHM', 'EZE'] },
@@ -99,7 +100,7 @@ const GATES = [
       "E": "minecraft:ender_pearl",
       "H": "enderio_evolution:crystalline_alloy_sag_mill",
       "M": "enderio_evolution:melodic_alloy_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/melodic_alloy_smelter', path: 'pattern', value: ['PCP', 'CHC', 'MZM'] },
@@ -109,7 +110,7 @@ const GATES = [
       "H": "enderio_evolution:crystalline_alloy_smelter",
       "M": "enderio_evolution:melodic_alloy_ingot",
       "P": "minecraft:ender_pearl",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/melodic_alloy_vat', path: 'pattern', value: ['DED', 'MCM', 'DZD'] },
@@ -119,11 +120,11 @@ const GATES = [
       "D": "enderio:dark_steel_ingot",
       "E": "minecraft:ender_chest",
       "M": "enderio_evolution:melodic_alloy_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/simple_machine_frame', path: 'pattern', value: ['IBI', 'BCB', 'IZI'] },
-  { id: 'enderio_evolution:machine/simple_machine_frame', path: 'key.Z', value: RF.casingT0 },
+  { id: 'enderio_evolution:machine/simple_machine_frame', path: 'key.Z', value: gtBlock('machineCasing', 'galvanizedsteel') },
   { id: 'enderio_evolution:machine/stellar_alloy_sag_mill', path: 'pattern', value: ['CCC', 'MHM', 'EZE'] },
   { id: 'enderio_evolution:machine/stellar_alloy_sag_mill',
     path: 'key',
@@ -131,7 +132,7 @@ const GATES = [
       "E": "minecraft:ender_pearl",
       "H": "enderio_evolution:melodic_alloy_sag_mill",
       "M": "enderio_evolution:stellar_alloy_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/stellar_alloy_smelter', path: 'pattern', value: ['PCP', 'CHC', 'MZM'] },
@@ -141,7 +142,7 @@ const GATES = [
       "H": "enderio_evolution:melodic_alloy_smelter",
       "M": "enderio_evolution:stellar_alloy_ingot",
       "P": "minecraft:ender_pearl",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/stellar_alloy_vat', path: 'pattern', value: ['DED', 'MCM', 'DZD'] },
@@ -151,7 +152,7 @@ const GATES = [
       "D": "enderio:dark_steel_ingot",
       "E": "minecraft:ender_chest",
       "M": "enderio_evolution:stellar_alloy_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/vivid_alloy_sag_mill', path: 'pattern', value: ['CCC', 'MHM', 'EZE'] },
@@ -163,7 +164,7 @@ const GATES = [
       "E": "minecraft:ender_pearl",
       "H": "enderio_evolution:basic_sag_mill",
       "M": "enderio_evolution:vivid_alloy_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/vivid_alloy_smelter', path: 'pattern', value: ['PCP', 'CHC', 'MZM'] },
@@ -175,7 +176,7 @@ const GATES = [
       "H": "enderio_evolution:basic_alloy_smelter",
       "M": "enderio_evolution:vivid_alloy_ingot",
       "P": "minecraft:ender_pearl",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
   { id: 'enderio_evolution:machine/vivid_alloy_vat', path: 'pattern', value: ['DED', 'MCM', 'DZD'] },
@@ -187,7 +188,7 @@ const GATES = [
       "D": "enderio:dark_steel_ingot",
       "E": "minecraft:ender_chest",
       "M": "enderio_evolution:energetic_silver_ingot",
-      "Z": RF.casingT0
+      "Z": gtBlock('machineCasing', 'galvanizedsteel')
     }
   },
 ]

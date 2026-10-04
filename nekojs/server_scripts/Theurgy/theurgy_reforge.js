@@ -1,5 +1,6 @@
 
 import { RF, applyReforge } from '../src/lib/gt6_reforge.js'
+import { gtBlock } from '../src/lib/gt6_materials.js'
 
 const REMOVE = [
 ]
@@ -72,16 +73,16 @@ const EDITS = [
 
 const GATES = [
   { id: 'theurgy:crafting/shaped/amethyst_divination_rod', path: 'pattern', value: [' GP', '  G', 'RZ '] },
-  { id: 'theurgy:crafting/shaped/amethyst_divination_rod', path: 'key.Z', value: RF.casingT1 },
+  { id: 'theurgy:crafting/shaped/amethyst_divination_rod', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'theurgy:crafting/shaped/divination_rod_t1', path: 'pattern', value: [' G ', ' RG', 'RZ '] },
-  { id: 'theurgy:crafting/shaped/divination_rod_t1', path: 'key.Z', value: RF.casingT1 },
+  { id: 'theurgy:crafting/shaped/divination_rod_t1', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'theurgy:crafting/shaped/divination_rod_t2', path: 'pattern', value: [' G ', ' AG', 'RZ '] },
   { id: 'theurgy:crafting/shaped/divination_rod_t2',
     path: 'key',
     value: { "A": "#c:gems/amethyst",
       "G": "#c:glass_blocks",
       "R": "#c:rods/wooden",
-      "Z": RF.casingT1
+      "Z": gtBlock('machineCasing', 'stainlesssteel')
     }
   },
   { id: 'theurgy:crafting/shaped/divination_rod_t3', path: 'pattern', value: [' G ', ' QG', 'AZ '] },
@@ -90,7 +91,7 @@ const GATES = [
     value: { "A": "#c:gems/amethyst",
       "G": "#c:glass_blocks",
       "Q": "#c:gems/quartz",
-      "Z": RF.casingT1
+      "Z": gtBlock('machineCasing', 'stainlesssteel')
     }
   },
   { id: 'theurgy:crafting/shaped/divination_rod_t4', path: 'pattern', value: [' G ', ' RG', 'AZ '] },
@@ -99,26 +100,26 @@ const GATES = [
     value: { "A": "#c:gems/amethyst",
       "G": "#c:glass_blocks",
       "R": "#c:rods/blaze",
-      "Z": RF.casingT1
+      "Z": gtBlock('machineCasing', 'stainlesssteel')
     }
   },
   { id: 'theurgy:crafting/shaped/incubator_mercury_vessel', path: 'pattern', value: ['cMc', 'c c', 'SZS'] },
-  { id: 'theurgy:crafting/shaped/incubator_mercury_vessel', path: 'key.Z', value: RF.casingT1 },
+  { id: 'theurgy:crafting/shaped/incubator_mercury_vessel', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'theurgy:crafting/shaped/incubator_salt_vessel', path: 'pattern', value: ['csc', 'c c', 'SZS'] },
-  { id: 'theurgy:crafting/shaped/incubator_salt_vessel', path: 'key.Z', value: RF.casingT1 },
+  { id: 'theurgy:crafting/shaped/incubator_salt_vessel', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'theurgy:crafting/shaped/incubator_sulfur_vessel', path: 'pattern', value: ['csc', 'c c', 'SZS'] },
-  { id: 'theurgy:crafting/shaped/incubator_sulfur_vessel', path: 'key.Z', value: RF.casingT1 },
+  { id: 'theurgy:crafting/shaped/incubator_sulfur_vessel', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'theurgy:crafting/shaped/mercury_flux_emitter', path: 'pattern', value: [' m ', 'gmg', 'sZs'] },
-  { id: 'theurgy:crafting/shaped/mercury_flux_emitter', path: 'key.Z', value: RF.casingT1 },
+  { id: 'theurgy:crafting/shaped/mercury_flux_emitter', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'theurgy:crafting/shaped/reformation_result_pedestal', path: 'pattern', value: ['ggg', 'gSg', 'sZs'] },
-  { id: 'theurgy:crafting/shaped/reformation_result_pedestal', path: 'key.Z', value: RF.casingT1 },
+  { id: 'theurgy:crafting/shaped/reformation_result_pedestal', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'theurgy:crafting/shaped/sal_ammoniac_accumulator', path: 'pattern', value: [' SS', 'III', 'RZR'] },
-  { id: 'theurgy:crafting/shaped/sal_ammoniac_accumulator', path: 'key.Z', value: RF.casingT1 },
+  { id: 'theurgy:crafting/shaped/sal_ammoniac_accumulator', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'theurgy:crafting/shaped/sal_ammoniac_tank', path: 'pattern', value: ['ICI', 'ICI', 'RZR'] },
-  { id: 'theurgy:crafting/shaped/sal_ammoniac_tank', path: 'key.Z', value: RF.casingT1 },
+  { id: 'theurgy:crafting/shaped/sal_ammoniac_tank', path: 'key.Z', value: gtBlock('machineCasing', 'stainlesssteel') },
   { id: 'theurgy:crafting/shapeless/sal_ammoniac_crystal_from_sal_ammoniac_bucket',
     path: 'ingredients[1]',
-    value: RF.casingT1
+    value: gtBlock('machineCasing', 'stainlesssteel')
   },
 ]
 
