@@ -1,0 +1,42 @@
+{
+	"earth_operation_base": {
+		"salt": 890562391,
+		"separation": 50,
+		"spacing": 80
+	},
+	"earth_satellite": {
+		"salt": 1690701129,
+		"separation": 50,
+		"spacing": 80
+	},
+	"lunar_outpost": {
+		"salt": 1645839,
+		"separation": 8,
+		"spacing": 32
+	},
+	"meteor": {
+		"salt": 1231192934,
+		"separation": 30,
+		"spacing": 60
+	},
+	"moon_boss_dungeon": {
+		"salt": 1846207533,
+		"separation": 40,
+		"spacing": 64
+	},
+	"moon_surface": {
+		"salt": 1204773851,
+		"separation": 14,
+		"spacing": 24
+	},
+	"moon_underground": {
+		"salt": 1927046318,
+		"separation": 26,
+		"spacing": 44
+	},
+	"novite": {
+		"salt": 745219038,
+		"separation": 22,
+		"spacing": 44
+	}
+}

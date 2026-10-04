@@ -1,0 +1,39 @@
+{
+  "showCommandExecutionErrors": {
+    // Whether to display errors during command execution: 
+    // Default:true
+    "showCommandExecutionErrors": true
+  },
+
+  "debugChunkloadAttempts": {
+    // Enables debug logging of chunks being forceloaded on serverthread by directly accessing an unloaded chunk,
+    // which stalls the server until the chunk finishes loading, incompatible with lithium and its forks: 
+    // Default:false
+    "debugChunkloadAttempts": false
+  },
+
+  "skipErrorOnEntityLoad": {
+    // Prevent crashes on entity loading: 
+    // Default:false
+    "skipErrorOnEntityLoad": false
+  },
+
+  "logOffthreadEntityAdd": {
+    // Entities should only be added on the server thread itself, cupboard fixes the crashes caused by mods violating that,
+    // this option enables the logging of those: 
+    // Default:true
+    "logOffthreadEntityAdd": true
+  },
+
+  "forceHeapDumpOnOOM": {
+    // Enables creating a heap dump automatically once the game crashes with an out of memory issue, use with care heapdumps take a lot of space.
+    // Default:false
+    "forceHeapDumpOnOOM": false
+  },
+
+  "displayConfigReload": {
+    // Displays a chat message on the client on reloading a config file after changes were detected to the clients config file.
+    // Default:true
+    "displayConfigReload": true
+  }
+}

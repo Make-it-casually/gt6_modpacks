@@ -1,0 +1,42 @@
+{
+	"ancient_shrine": {
+		"salt": 632522806,
+		"separation": 5,
+		"spacing": 20
+	},
+	"ancient_singer_statue": {
+		"salt": 233395704,
+		"separation": 16,
+		"spacing": 50
+	},
+	"bone_structure": {
+		"salt": 1970928406,
+		"separation": 4,
+		"spacing": 12
+	},
+	"sift_pillar": {
+		"salt": 999463557,
+		"separation": 1,
+		"spacing": 3
+	},
+	"sift_portal": {
+		"salt": 1445709188,
+		"separation": 7,
+		"spacing": 25
+	},
+	"siftedtree": {
+		"salt": 1087067053,
+		"separation": 0,
+		"spacing": 1
+	},
+	"singers_ruins": {
+		"salt": 518295425,
+		"separation": 10,
+		"spacing": 30
+	},
+	"twisted_dungeon": {
+		"salt": 209576946,
+		"separation": 60,
+		"spacing": 112
+	}
+}

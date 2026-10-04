@@ -1,162 +1,201 @@
-import { $CR } from 'java:gregapi/util/CR'
-import { $RecipeMapAutocrafting } from 'java:gregapi/recipes/maps/RecipeMapAutocrafting'
+import { clearGt6CraftingFor } from '../src/lib/gt6_cleanup.js'
 
-const MACHINE_RECIPE_TYPES = new Set([
-    'enderio:alloy_smelting',
-    'enderio:sag_milling',
-    'enderio:vat_fermenting'
-])
+const EXPLICIT_REMOVALS = [
+    'enderio:erase_alloy_smelter',
+    'enderio:erase_sag_mill',
+    'enderio:sag_mill',
+    'enderio:vat'
+]
 
-const MACHINE_OUTPUTS = new Set([
+const MACHINE_RECIPE_IDS = [
+    'enderio:alloy_smelting/black_dye',
+    'enderio:alloy_smelting/black_dye_double',
+    'enderio:alloy_smelting/brown_dye_twigs',
+    'enderio:alloy_smelting/brown_dye_twigs_double',
+    'enderio:alloy_smelting/clear_glass',
+    'enderio:alloy_smelting/clear_glass_d_from_base',
+    'enderio:alloy_smelting/clear_glass_d_from_base_alt',
+    'enderio:alloy_smelting/clear_glass_d_from_main',
+    'enderio:alloy_smelting/clear_glass_d_from_main_alt',
+    'enderio:alloy_smelting/clear_glass_e_from_base',
+    'enderio:alloy_smelting/clear_glass_e_from_base_alt',
+    'enderio:alloy_smelting/clear_glass_e_from_main',
+    'enderio:alloy_smelting/clear_glass_e_from_main_alt',
+    'enderio:alloy_smelting/conductive_alloy_ingot',
+    'enderio:alloy_smelting/dark_steel_ingot',
+    'enderio:alloy_smelting/dead_bush',
+    'enderio:alloy_smelting/end_steel_ingot',
+    'enderio:alloy_smelting/ender_pearl',
+    'enderio:alloy_smelting/energetic_alloy_ingot',
+    'enderio:alloy_smelting/fused_quartz',
+    'enderio:alloy_smelting/fused_quartz_alt',
+    'enderio:alloy_smelting/fused_quartz_d_from_base',
+    'enderio:alloy_smelting/fused_quartz_d_from_base_alt',
+    'enderio:alloy_smelting/fused_quartz_d_from_main',
+    'enderio:alloy_smelting/fused_quartz_d_from_main_alt',
+    'enderio:alloy_smelting/fused_quartz_d_from_storage',
+    'enderio:alloy_smelting/fused_quartz_d_from_storage_alt',
+    'enderio:alloy_smelting/fused_quartz_e_from_base',
+    'enderio:alloy_smelting/fused_quartz_e_from_base_alt',
+    'enderio:alloy_smelting/fused_quartz_e_from_main',
+    'enderio:alloy_smelting/fused_quartz_e_from_main_alt',
+    'enderio:alloy_smelting/fused_quartz_e_from_storage',
+    'enderio:alloy_smelting/fused_quartz_e_from_storage_alt',
+    'enderio:alloy_smelting/green_dye_clippings',
+    'enderio:alloy_smelting/green_dye_double_clippings',
+    'enderio:alloy_smelting/industrial_insulation',
+    'enderio:alloy_smelting/photovoltaic_plate',
+    'enderio:alloy_smelting/pulsating_alloy_ingot',
+    'enderio:alloy_smelting/red_dye',
+    'enderio:alloy_smelting/redstone_alloy_ingot',
+    'enderio:alloy_smelting/soularium_ingot',
+    'enderio:alloy_smelting/vibrant_alloy_ingot',
+    'enderio:dark_steel_ingot_with_coal',
+    'enderio:fermenting/fluid_cloud_seed_concentrated_still',
+    'enderio:fermenting/fluid_cloud_seed_still',
+    'enderio:fermenting/fluid_fire_water_still',
+    'enderio:fermenting/fluid_hootch_still',
+    'enderio:fermenting/fluid_liquid_darkness_still',
+    'enderio:fermenting/fluid_liquid_sunshine_still',
+    'enderio:fermenting/fluid_nutrient_distillation_still',
+    'enderio:fermenting/fluid_rocket_fuel_still',
+    'enderio:sag_milling/allium',
+    'enderio:sag_milling/aluminum',
+    'enderio:sag_milling/aluminum_ore',
+    'enderio:sag_milling/azure_bluet',
+    'enderio:sag_milling/blaze_powder',
+    'enderio:sag_milling/blue_orchid',
+    'enderio:sag_milling/bone',
+    'enderio:sag_milling/bone_block',
+    'enderio:sag_milling/cactus',
+    'enderio:sag_milling/clay',
+    'enderio:sag_milling/coal',
+    'enderio:sag_milling/coal_ore',
+    'enderio:sag_milling/cobbled_deepslate',
+    'enderio:sag_milling/cobblestone',
+    'enderio:sag_milling/cobweb',
+    'enderio:sag_milling/copper',
+    'enderio:sag_milling/copper_ore',
+    'enderio:sag_milling/dandelion',
+    'enderio:sag_milling/deepslate',
+    'enderio:sag_milling/diamond_ore',
+    'enderio:sag_milling/emerald_ore',
+    'enderio:sag_milling/ender_crystal',
+    'enderio:sag_milling/ender_pearl',
+    'enderio:sag_milling/fern',
+    'enderio:sag_milling/flower_pot',
+    'enderio:sag_milling/glass',
+    'enderio:sag_milling/glowstone',
+    'enderio:sag_milling/gold',
+    'enderio:sag_milling/gold_ore',
+    'enderio:sag_milling/grass',
+    'enderio:sag_milling/gravel',
+    'enderio:sag_milling/iron',
+    'enderio:sag_milling/iron_ore',
+    'enderio:sag_milling/lapis',
+    'enderio:sag_milling/lapis_ore',
+    'enderio:sag_milling/large_fern',
+    'enderio:sag_milling/lead',
+    'enderio:sag_milling/lead_ore',
+    'enderio:sag_milling/leaves',
+    'enderio:sag_milling/lily_pad',
+    'enderio:sag_milling/mossy_cobblestone',
+    'enderio:sag_milling/obsidian',
+    'enderio:sag_milling/orange_tulip',
+    'enderio:sag_milling/osmium',
+    'enderio:sag_milling/osmium_ore',
+    'enderio:sag_milling/oxeye_daisy',
+    'enderio:sag_milling/pink_tulip',
+    'enderio:sag_milling/poeny',
+    'enderio:sag_milling/poppy',
+    'enderio:sag_milling/precient_crystal',
+    'enderio:sag_milling/prismarine_shard',
+    'enderio:sag_milling/pulsating_crystal',
+    'enderio:sag_milling/quartz',
+    'enderio:sag_milling/quartz_block',
+    'enderio:sag_milling/quartz_ore',
+    'enderio:sag_milling/quartz_slabs',
+    'enderio:sag_milling/quartz_stairs',
+    'enderio:sag_milling/raw_aluminum',
+    'enderio:sag_milling/raw_copper',
+    'enderio:sag_milling/raw_gold',
+    'enderio:sag_milling/raw_iron',
+    'enderio:sag_milling/raw_lead',
+    'enderio:sag_milling/raw_osmium',
+    'enderio:sag_milling/raw_tin',
+    'enderio:sag_milling/raw_uranium',
+    'enderio:sag_milling/red_tulip',
+    'enderio:sag_milling/redstone_ore',
+    'enderio:sag_milling/rose_bush',
+    'enderio:sag_milling/sand',
+    'enderio:sag_milling/sandstone',
+    'enderio:sag_milling/shrub',
+    'enderio:sag_milling/soularium',
+    'enderio:sag_milling/stone',
+    'enderio:sag_milling/sugar_canes',
+    'enderio:sag_milling/sun_flower',
+    'enderio:sag_milling/tall_grass',
+    'enderio:sag_milling/tin',
+    'enderio:sag_milling/tin_ore',
+    'enderio:sag_milling/uranium',
+    'enderio:sag_milling/uranium_ore',
+    'enderio:sag_milling/vibrant_crystal',
+    'enderio:sag_milling/vines',
+    'enderio:sag_milling/white_tulip',
+    'enderio:sag_milling/wither_rose',
+    'enderio:sag_milling/wither_skull',
+    'enderio:sag_milling/wool',
+    'enderio_endergy:alloy_smelting/crude_steel_ingot',
+    'enderio_endergy:alloy_smelting/crystalline_alloy_ingot',
+    'enderio_endergy:alloy_smelting/melodic_alloy_ingot',
+    'enderio_endergy:alloy_smelting/stellar_alloy_ingot',
+    'enderio_endergy:alloy_smelting/vivid_alloy_ingot',
+    'enderio_evolution:alloy_smelting/construction_alloy_ingot',
+    'enderio_evolution:alloy_smelting/crude_steel_ingot',
+    'enderio_evolution:alloy_smelting/crystalline_alloy_ingot',
+    'enderio_evolution:alloy_smelting/crystalline_pink_slime_ingot',
+    'enderio_evolution:alloy_smelting/crystalline_pink_slime_ingot_synthetic',
+    'enderio_evolution:alloy_smelting/energetic_silver_ingot_from_iron',
+    'enderio_evolution:alloy_smelting/energetic_silver_ingot_from_silver',
+    'enderio_evolution:alloy_smelting/melodic_alloy_ingot',
+    'enderio_evolution:alloy_smelting/stellar_alloy_ingot',
+    'enderio_evolution:alloy_smelting/vivid_alloy_ingot',
+    'enderio_evolution:sag_milling/compressed_infinity_dust_block',
+    'enderio_evolution:sag_milling/double_compressed_infinity_dust_block',
+    'enderio_evolution:sag_milling/infinity_dust_block',
+]
+
+const MACHINE_OUTPUTS = [
     'enderio:alloy_smelter',
     'enderio:sag_mill',
-    'enderio:vat',
-    'enderio_evolution:basic_alloy_smelter',
-    'enderio_evolution:basic_sag_mill',
-    'enderio_evolution:basic_vat',
-    'enderio_evolution:crystalline_alloy_smelter',
-    'enderio_evolution:crystalline_alloy_sag_mill',
-    'enderio_evolution:crystalline_alloy_vat',
-    'enderio_evolution:melodic_alloy_smelter',
-    'enderio_evolution:melodic_alloy_sag_mill',
-    'enderio_evolution:melodic_alloy_vat',
-    'enderio_evolution:stellar_alloy_smelter',
-    'enderio_evolution:stellar_alloy_sag_mill',
-    'enderio_evolution:stellar_alloy_vat',
-    'enderio_evolution:vivid_alloy_smelter',
-    'enderio_evolution:vivid_alloy_sag_mill',
-    'enderio_evolution:vivid_alloy_vat'
-])
+    'enderio:vat'
+]
 
-const UPGRADE_OUTPUTS = new Set([
+const UPGRADE_OUTPUTS = [
     'enderio_evolution:basic_batch_upgrade',
     'enderio_evolution:basic_stack_upgrade',
     'enderio_evolution:crystalline_batch_upgrade',
     'enderio_evolution:crystalline_stack_upgrade',
     'enderio_evolution:stellar_batch_upgrade',
     'enderio_evolution:stellar_stack_upgrade'
-])
-
-function recipeHasOutput(json, targets) {
-    const outputs = [
-        json.result,
-        json.results,
-        json.output,
-        json.outputs
-    ]
-
-    for (const output of outputs) {
-        const entries = Array.isArray(output) ? output : [output]
-        for (const entry of entries) {
-            const itemId = outputItemId(entry)
-            if (targets.has(itemId)) {
-                return true
-            }
-        }
-    }
-    return false
-}
-
-function outputItemId(value) {
-    if (typeof value === 'string') {
-        return value
-    }
-    if (value == null || typeof value !== 'object') {
-        return null
-    }
-    if (typeof value.id === 'string') {
-        return value.id
-    }
-    if (typeof value.item === 'string') {
-        return value.item
-    }
-    return null
-}
-
-function recipeOutputId(recipe) {
-    const output = recipe.getRecipeOutput()
-    if (output == null || output.isEmpty()) {
-        return null
-    }
-    return output.getItem()
-        .builtInRegistryHolder()
-        .key()
-        .identifier()
-        .toString()
-}
-
-function removeCachedAutocraftingRecipes(recipes, outputId) {
-    let removed = 0
-    for (let index = recipes.size() - 1; index >= 0; index--) {
-        const recipe = recipes.get(index)
-        if (recipe != null && recipeOutputId(recipe) === outputId) {
-            recipes.remove(index)
-            removed++
-        }
-    }
-    return removed
-}
+]
 
 ServerEvents.recipes(event => {
-    let removedMachineRecipes = 0
-    let removedMachineCraftingRecipes = 0
-    let removedUpgradeRecipes = 0
+    const blockedOutputs = MACHINE_OUTPUTS.concat(UPGRADE_OUTPUTS)
 
-    for (const rawId of event.ids().toArray()) {
-        const id = String(rawId)
-        const json = JSON.parse(event.getJson(id))
-        const hasMachineOutput = recipeHasOutput(json, MACHINE_OUTPUTS)
-        const hasUpgradeOutput = recipeHasOutput(json, UPGRADE_OUTPUTS)
-
-        if (MACHINE_RECIPE_TYPES.has(json.type) || hasMachineOutput || hasUpgradeOutput) {
-            event.removeById(id)
-            if (MACHINE_RECIPE_TYPES.has(json.type)) {
-                removedMachineRecipes++
-            }
-            if (hasMachineOutput) {
-                removedMachineCraftingRecipes++
-            }
-            if (hasUpgradeOutput) {
-                removedUpgradeRecipes++
-            }
-        }
-    }
-
-    let removedGT6CraftingRecipes = 0
-    let removedGT6CachedRecipes = 0
-    let unavailableGT6Outputs = 0
-    const blockedOutputs = [...MACHINE_OUTPUTS, ...UPGRADE_OUTPUTS]
-    for (const outputId of blockedOutputs) {
-        let outputStack
-        try {
-            outputStack = Item.of(outputId)
-        } catch (error) {
-            unavailableGT6Outputs++
-            console.warn(
-                `[NekoJS/EIO] Skipping GT6 cleanup for unregistered item ${outputId}: ${String(error)}`
-            )
+    let removedById = 0
+    for (const id of EXPLICIT_REMOVALS.concat(MACHINE_RECIPE_IDS)) {
+        if (!event.exists(id)) {
             continue
         }
-
-        const recipesBeforeRemoval = $CR.list().size()
-        $CR.remout(outputStack, true, false, false, false)
-        removedGT6CraftingRecipes += recipesBeforeRemoval - $CR.list().size()
-        removedGT6CachedRecipes += removeCachedAutocraftingRecipes(
-            $RecipeMapAutocrafting.ALLOWED_RECIPES,
-            outputId
-        )
-        removedGT6CachedRecipes += removeCachedAutocraftingRecipes(
-            $RecipeMapAutocrafting.RECENT_RECIPES,
-            outputId
-        )
+        event.get(id).remove()
+        removedById = removedById + 1
     }
 
+    const gt6 = clearGt6CraftingFor(blockedOutputs)
+
     console.info(
-        `[NekoJS/EIO] Removed ${removedMachineRecipes} Ender IO processing recipes, ` +
-        `${removedMachineCraftingRecipes} machine crafting recipes, ` +
-        `${removedUpgradeRecipes} upgrade crafting recipes, ` +
-        `${removedGT6CraftingRecipes} GT6 crafting recipes, and ` +
-        `${removedGT6CachedRecipes} cached GT6 autocrafting recipes; ` +
-        `${unavailableGT6Outputs} targets were not registered.`
+        `[NekoJS/EIO] 按 id 删除合成/加工配方 ${removedById}/${EXPLICIT_REMOVALS.length + MACHINE_RECIPE_IDS.length} 条；` +
+        `另清 GT6 合成配方 ${gt6.crafting} 条、自动合成缓存 ${gt6.cached} 条。`
     )
 })

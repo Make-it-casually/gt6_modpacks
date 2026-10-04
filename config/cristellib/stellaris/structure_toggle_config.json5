@@ -1,0 +1,32 @@
+{
+	"earth_operation_base": {
+		"earth_operation_base": true
+	},
+	"earth_satellite": {
+		"earth_satellite": true
+	},
+	"lunar_outpost": {
+		"lunar_outpost": true
+	},
+	"meteor": {
+		"meteor": true
+	},
+	"moon_boss_dungeon": {
+		"moon_dungeon": true
+	},
+	"moon_surface": {
+		"moon_destroyed_spaceship": true,
+		"moon_destroyed_village": true,
+		"moon_first_landing": true,
+		"moon_launchpad": true,
+		"moon_space_base": true,
+		"moon_sphere": true,
+		"moon_village": true
+	},
+	"moon_underground": {
+		"small_moon_dungeon": true
+	},
+	"novite": {
+		"novite": true
+	}
+}

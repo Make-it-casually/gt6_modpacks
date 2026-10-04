@@ -1,0 +1,9 @@
+{
+	"houses": {
+		"castle": true,
+		"dome": true,
+		"house": true,
+		"ship": true,
+		"shrine": true
+	}
+}

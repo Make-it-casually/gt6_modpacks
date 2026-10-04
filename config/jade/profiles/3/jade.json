@@ -172,6 +172,10 @@
       "hydroponics_bed": true,
       "pipe_terminal": true
     },
+    "stellaris": {
+      "proxy_as_main": true,
+      "flag_owner": true
+    },
     "mmcr": {
       "ae2_input_interface_grid": true,
       "machine_controller": true,
