@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "GT6 自定义坩埚配方（Witchery） · GregTech 6 Modern Community Pack (gt6mc)",
+    "min_format": 84,
+    "max_format": [
+      84,
+      0
+    ]
+  }
+}

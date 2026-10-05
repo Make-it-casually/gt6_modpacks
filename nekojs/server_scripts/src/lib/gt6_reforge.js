@@ -1,4 +1,3 @@
-
 import { GT_FORM, GT_MATERIAL, gtIngredient } from './gt6_materials.js'
 import { modernizeRecipe } from './gt6_ingredient_forms.js'
 

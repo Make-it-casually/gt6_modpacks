@@ -1,4 +1,3 @@
-
 import { $BuiltInRegistries } from 'java:net/minecraft/core/registries/BuiltInRegistries'
 import { $OreDictManager } from 'java:gregapi/oredict/OreDictManager'
 import { $Component } from 'java:net/minecraft/network/chat/Component'

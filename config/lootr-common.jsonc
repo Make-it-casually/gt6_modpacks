@@ -71,7 +71,7 @@
          */
         "break_mode": "DEFAULT",
         // Fake players (such as turtles, miners, etc) will be able to break containers if this is true, regardless of the chosen break mode. [default: false]
-        "enable_fake_player_break": false,
+        "enable_fake_player_break": true,
         /*
          * Determines how Lootr containers react to explosions. 'NONE' uses the default blast resistance. 'RESISTANT' makes containers blast resistant, while 'IMMUNE' makes them blast immune. [default: DEFAULT]
          * Valid Values: NONE, RESISTANT, IMMUNE

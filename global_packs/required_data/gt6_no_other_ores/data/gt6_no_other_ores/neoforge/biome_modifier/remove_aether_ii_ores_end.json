@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#minecraft:is_end",
+  "features": [
+    "aether_ii:ore_agiosite",
+    "aether_ii:ore_agiosite_small",
+    "aether_ii:ore_ambrosium",
+    "aether_ii:ore_arkenium",
+    "aether_ii:ore_corrobonite",
+    "aether_ii:ore_glint",
+    "aether_ii:ore_gravitite",
+    "aether_ii:ore_gravitite_buried",
+    "aether_ii:ore_hestveil_buried",
+    "aether_ii:ore_hestveil_open",
+    "aether_ii:ore_holystone_quartz",
+    "aether_ii:ore_icestone",
+    "aether_ii:ore_icestone_small",
+    "aether_ii:ore_scatterglass",
+    "aether_ii:ore_zanite",
+    "aether_ii:ore_zanite_mountain"
+  ],
+  "steps": "underground_ores"
+}

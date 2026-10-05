@@ -1,4 +1,3 @@
-
 import { $RM } from 'java:gregapi/data'
 
 const DEFAULT_CAP = 600

@@ -1,4 +1,3 @@
-
 import { $CR } from 'java:gregapi/util/CR'
 import { $RecipeMapAutocrafting } from 'java:gregapi/recipes/maps/RecipeMapAutocrafting'
 

@@ -105,6 +105,12 @@
       "device_details": true,
       "machine_details": true
     },
+    "railcraft": {
+      "signals": true,
+      "track_component": true,
+      "locomotive": true,
+      "switch_track": true
+    },
     "jade_access": {
       "npc_description": true,
       "held_item": true,
@@ -184,6 +190,9 @@
     "stellaris": {
       "proxy_as_main": true,
       "flag_owner": true
+    },
+    "thirstwastaken2": {
+      "water_purity": true
     },
     "mmcr": {
       "ae2_input_interface_grid": true,

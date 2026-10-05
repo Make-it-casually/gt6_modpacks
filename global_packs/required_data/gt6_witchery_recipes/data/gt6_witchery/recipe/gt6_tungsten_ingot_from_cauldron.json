@@ -1,0 +1,16 @@
+﻿{
+  "type": "witchery:cauldron_crafting",
+  "altar_power": 500,
+  "inputs": [
+    { "color": -1, "itemStack": { "id": "aether_ii:arkenium_plate" }, "order": 0 },
+    { "color": -1, "itemStack": { "id": "rootsclassic:old_root" }, "order": 1 },
+    { "color": -1, "itemStack": { "id": "theurgy:mercury_shard" }, "order": 2 }
+  ],
+  "outputs": [
+    {
+      "id": "gregtech:gt.meta.ingot",
+      "count": 1,
+      "components": { "gregapi:subtype": 760 }
+    }
+  ]
+}

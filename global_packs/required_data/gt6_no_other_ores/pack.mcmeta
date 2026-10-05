@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "移除其他模组的矿石生成，只保留格雷矿（GregTech 6 Modern Community Pack (gt6mc)）",
+    "min_format": 84,
+    "max_format": [
+      84,
+      0
+    ]
+  }
+}

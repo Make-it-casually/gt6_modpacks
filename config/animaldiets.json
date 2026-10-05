@@ -15,11 +15,20 @@
   "minecraft:bee": {
     "diet": "OMNIVORE"
   },
+  "minecraft:cat": {
+    "diet": "CARNIVORE"
+  },
   "minecraft:chicken": {
     "diet": "OMNIVORE"
   },
   "minecraft:cow": {
     "diet": "HERBIVORE"
+  },
+  "minecraft:fox": {
+    "diet": "OMNIVORE"
+  },
+  "minecraft:frog": {
+    "diet": "CARNIVORE"
   },
   "minecraft:goat": {
     "diet": "HERBIVORE"

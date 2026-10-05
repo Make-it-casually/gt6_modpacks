@@ -1,0 +1,10 @@
+#Enable season-based item & train effects?
+seasonsEnabled = true
+#Controls whether Christmas mode is (0) enabled, (1) forced, or (2) disabled
+# Default: 0
+# Range: 0 ~ 2
+christmas = 0
+#Controls whether Halloween mode is (0) enabled, (1) forced, or (2) disabled
+# Default: 0
+# Range: 0 ~ 2
+halloween = 0

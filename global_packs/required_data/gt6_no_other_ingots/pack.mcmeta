@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "移除其他模组的锭与板，避免替代格雷材料（GregTech 6 Modern Community Pack (gt6mc)）",
+    "min_format": 84,
+    "max_format": [
+      84,
+      0
+    ]
+  }
+}

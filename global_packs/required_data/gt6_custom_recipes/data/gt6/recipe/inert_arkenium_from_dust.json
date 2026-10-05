@@ -1,0 +1,16 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": "gt6m:inert_arkenium_dust"
+  },
+  "pattern": [
+    "DDD",
+    "DDD",
+    "DDD"
+  ],
+  "result": {
+    "id": "aether_ii:inert_arkenium",
+    "count": 1
+  }
+}

@@ -1,4 +1,3 @@
-
 export function modernizeIngredient(value) {
   if (Array.isArray(value)) {
     return value.map(modernizeIngredient)

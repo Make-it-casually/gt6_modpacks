@@ -11,9 +11,9 @@ hunterAmbushEnabled = true
 #Enable aero-like category banners in the Witchery creative tab. When disabled, items are shown as a flat grid without banner headers or spacer slots.
 enableCreativeTabBanners = true
 #Whether empowered Sunstone Pendants provide permanent sunlight protection to vampires while worn.
-enableEmpoweredSunstonePendantProtection = false
+enableEmpoweredSunstonePendantProtection = true
 #Whether empowered Mooncharm Pendants provide the Blood Scent ability while worn.
-enableEmpoweredMooncharmPendantAbility = false
+enableEmpoweredMooncharmPendantAbility = true
 #Whether walled villages generate a defensive wall around them. The special witchery buildings still generate in these villages even when this is disabled.
 enableVillageWalls = true
 #Whether village wall pieces use the terrain-conforming placement, where each piece's height is clamped to within 4 blocks of its neighbor to avoid drops into caves/holes. When disabled, each wall piece independently samples the ground height at its own position with no clamping against neighbors.

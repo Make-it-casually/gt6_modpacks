@@ -1,4 +1,3 @@
-
 function stripSeedEntry(entry) {
   if (entry == null || typeof entry !== 'object') {
     return entry

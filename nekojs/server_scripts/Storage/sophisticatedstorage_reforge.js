@@ -1,4 +1,3 @@
-
 import { RF, applyReforge } from '../src/lib/gt6_reforge.js'
 
 const REMOVE = [
@@ -335,37 +334,6 @@ const GATES = [
 
 const ADD = []
 
-const VANILLA_CRAFTING_TYPES = ['minecraft:crafting_shaped', 'minecraft:crafting_shapeless']
-
-function onlyVanillaCrafting(event, list) {
-  return list.filter(item => {
-    try {
-      const text = event.getJson(item.id)
-      if (text == null) {
-        return false
-      }
-      const parsed = JSON.parse(text)
-      return parsed != null && VANILLA_CRAFTING_TYPES.indexOf(String(parsed.type)) >= 0
-    } catch (readError) {
-      return false
-    }
-  })
-}
-
-const DEBUG_IDS = ['sophisticatedstorage:basic_to_copper_tier_upgrade', 'sophisticatedstorage:copper_barrel', 'sophisticatedstorage:stack_upgrade_tier_1']
-
-function dumpRecipes(event) {
-  for (const debugId of DEBUG_IDS) {
-    try {
-      const text = event.getJson(debugId)
-      console.info('[NekoJS/Storage] 配方现状 ' + debugId + '：' + (text == null ? '读不到' : String(text).slice(0, 420)))
-    } catch (debugError) {
-      console.info('[NekoJS/Storage] 配方现状 ' + debugId + ' 读取失败：' + String(debugError))
-    }
-  }
-}
-
 ServerEvents.recipes(event => {
-  applyReforge(event, { tag: 'Storage', remove: REMOVE, edits: onlyVanillaCrafting(event, EDITS), gates: onlyVanillaCrafting(event, GATES), add: ADD })
-  dumpRecipes(event)
+  applyReforge(event, { tag: 'Storage', remove: REMOVE, edits: EDITS, gates: GATES, add: ADD })
 })

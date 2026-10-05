@@ -1,4 +1,3 @@
-
 export const GT_MATERIAL = Object.freeze({
   iron: 260,
   copper: 290,
@@ -95,6 +94,10 @@ export function gt(formKey, materialKey, count) {
   const form = GT_FORM[formKey]
   if (form === undefined) {
     throw new Error(`Unknown GT6 form: ${String(formKey)}`)
+  }
+  const fromStack = USE_STACK_INGREDIENTS ? ingredientFromStack(formKey, materialKey, count) : null
+  if (fromStack !== null) {
+    return fromStack
   }
   return gtIngredient(form, resolveMaterial(materialKey), count)
 }
@@ -194,6 +197,94 @@ function reportRuntimeIds() {
   }
   const changed = keys.filter(key => RUNTIME_IDS[key] !== GT_MATERIAL[key])
   console.info(`[NekoJS/GT6] 材料号运行时解析 ${keys.length}/${Object.keys(GT_MATERIAL).length} 个` + (changed.length > 0 ? `；与静态表不同 ${changed.length} 个：` + changed.map(key => `${key} ${GT_MATERIAL[key]}→${RUNTIME_IDS[key]}`).join('，') : '；与静态表完全一致'))
+}
+
+const USE_STACK_INGREDIENTS = false
+
+function javaClass(name) {
+  try {
+    if (typeof Java === 'undefined' || Java.type === undefined) {
+      return null
+    }
+    return Java.type(name)
+  } catch (loadError) {
+    return null
+  }
+}
+
+const RUNTIME = (() => {
+  const prefixes = javaClass('gregapi.data.OP')
+  const materialClass = javaClass('gregapi.oredict.OreDictMaterial')
+  const managerClass = javaClass('gregapi.oredict.OreDictManager')
+  const stackClass = javaClass('net.minecraft.world.item.ItemStack')
+  const opsClass = javaClass('com.mojang.serialization.JsonOps')
+  if (prefixes == null || materialClass == null || managerClass == null || stackClass == null || opsClass == null) {
+    return null
+  }
+  return { prefixes, materialClass, managerClass, stackClass, opsClass }
+})()
+
+let stackReported = false
+const stackFormMisses = []
+
+function stackToJson(formKey, materialName, count) {
+  if (RUNTIME === null) {
+    return null
+  }
+  try {
+    const prefix = RUNTIME.prefixes[formKey]
+    if (prefix == null) {
+      if (stackFormMisses.indexOf(formKey) < 0) {
+        stackFormMisses.push(formKey)
+      }
+      return null
+    }
+    const material = RUNTIME.materialClass.MATERIAL_MAP.get(materialName)
+    if (material == null) {
+      return null
+    }
+    const stack = RUNTIME.managerClass.INSTANCE.getStack(prefix, material, count)
+    if (stack == null || stack.isEmpty()) {
+      return null
+    }
+    const encoded = RUNTIME.stackClass.CODEC.encodeStart(RUNTIME.opsClass.INSTANCE, stack)
+    const json = encoded.result().orElse(null)
+    if (json == null) {
+      return null
+    }
+    return JSON.parse(String(json))
+  } catch (stackError) {
+    console.warn(`[NekoJS/GT6] OreDictManager 取 ${String(formKey)}/${String(materialName)} 失败：${String(stackError)}`)
+    return null
+  }
+}
+
+function reportStackUse(formKey, materialName, json) {
+  if (stackReported) {
+    return
+  }
+  stackReported = true
+  const components = json.components === undefined ? '无组件' : JSON.stringify(json.components)
+  console.info(`[NekoJS/GT6] 原料由 OreDictManager 生成：${formKey}/${materialName} → ${String(json.id)}  组件=${components}` + (stackFormMisses.length > 0 ? `；这些形态 $OP 里没有（走静态表）：${stackFormMisses.join(', ')}` : ''))
+}
+
+function ingredientFromStack(formKey, materialKey, count) {
+  const json = stackToJson(formKey, GT6_MATERIAL_NAME[materialKey], 1)
+  if (json == null) {
+    return null
+  }
+  const entry = {
+    'neoforge:ingredient_type': 'neoforge:components',
+    items: String(json.id)
+  }
+  if (json.components !== undefined) {
+    entry.components = json.components
+  }
+  if (count !== undefined && count !== 1) {
+    entry.count = count
+  }
+  reportStackUse(formKey, GT6_MATERIAL_NAME[materialKey], json)
+  return entry
 }
 
 export function resolveMaterial(material) {

@@ -107,7 +107,12 @@
   "mmcr:machine_controller": null,
   "mmcr:parallel_controller": null,
   "mmcr:recipe_output": null,
+  "railcraft:locomotive": null,
+  "railcraft:signals": null,
+  "railcraft:switch_track": null,
+  "railcraft:track_component": null,
   "stellaris:flag_owner": null,
   "stellaris:proxy_as_main": null,
-  "theurgy:mercury_flux": null
+  "theurgy:mercury_flux": null,
+  "thirstwastaken2:water_purity": null
 }

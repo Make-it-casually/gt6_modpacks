@@ -1,0 +1,18 @@
+{
+  "type": "neoforge:remove_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "railcraft:lead_ore",
+    "railcraft:nickel_ore_middle",
+    "railcraft:nickel_ore_small",
+    "railcraft:nickel_ore_upper",
+    "railcraft:silver_ore",
+    "railcraft:silver_ore_lower",
+    "railcraft:sulfur_ore_lower",
+    "railcraft:sulfur_ore_upper",
+    "railcraft:tin_ore_large",
+    "railcraft:tin_ore_small",
+    "railcraft:zinc_ore"
+  ],
+  "steps": "underground_ores"
+}

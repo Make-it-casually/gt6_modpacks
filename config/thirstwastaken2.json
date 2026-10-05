@@ -1,0 +1,1928 @@
+{
+  "thirstDepletionModifier": 1.2,
+  "thirstDepletionInPeaceful": false,
+  "preventSprintingWhenThirsty": true,
+  "canDrinkByHand": true,
+  "dehydrationHaltsHealthRegen": true,
+  "quenchedHealthRegen": 0.5,
+  "quenchedHealMinFood": 10,
+  "coldSweatClimate": true,
+  "sereneSeasonsClimate": true,
+  "seasonDrainSpring": 1.0,
+  "seasonDrainSummer": 1.15,
+  "seasonDrainAutumn": 1.0,
+  "seasonDrainWinter": 0.9,
+  "appleskinQuenchedOverlay": "DIAMOND",
+  "appleskinTooltipDroplets": true,
+  "defaultPurity": 2,
+  "quenchedPercent": [
+    20,
+    50,
+    100,
+    100
+  ],
+  "enableSeaWater": true,
+  "seaWaterNauseaSeconds": 8,
+  "seaWaterParchedSeconds": 30,
+  "enableRainCollection": true,
+  "rainwaterPurity": 2,
+  "dripstonePurity": 3,
+  "enableBoilingInHand": true,
+  "copperCanteenCapacity": 4,
+  "ironFlaskCapacity": 6,
+  "copperCanteenBoilSeconds": 3,
+  "ironFlaskBoilSeconds": 4,
+  "copperHangingPotBoilSeconds": 4,
+  "ironHangingPotBoilSeconds": 6,
+  "sicknessEffects": {
+    "peaceful": {
+      "dirty": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 100,
+          "seconds": 7,
+          "level": 1
+        }
+      ],
+      "murky": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 100,
+          "seconds": 7,
+          "level": 1
+        }
+      ],
+      "clean": [],
+      "pure": []
+    },
+    "easy": {
+      "dirty": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 100,
+          "seconds": 7,
+          "level": 1
+        },
+        {
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 65,
+          "seconds": 45,
+          "level": 1
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 25,
+          "seconds": 10,
+          "level": 1
+        }
+      ],
+      "murky": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 100,
+          "seconds": 7,
+          "level": 1
+        },
+        {
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 35,
+          "seconds": 45,
+          "level": 1
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 10,
+          "seconds": 10,
+          "level": 1
+        }
+      ],
+      "clean": [
+        {
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 5,
+          "seconds": 20,
+          "level": 1
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 3,
+          "seconds": 5,
+          "level": 1
+        }
+      ],
+      "pure": []
+    },
+    "normal": {
+      "dirty": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 100,
+          "seconds": 7,
+          "level": 1
+        },
+        {
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 75,
+          "seconds": 60,
+          "level": 2
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 35,
+          "seconds": 20,
+          "level": 1
+        }
+      ],
+      "murky": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 100,
+          "seconds": 7,
+          "level": 1
+        },
+        {
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 50,
+          "seconds": 60,
+          "level": 1
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 18,
+          "seconds": 20,
+          "level": 1
+        }
+      ],
+      "clean": [
+        {
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 12,
+          "seconds": 30,
+          "level": 1
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 5,
+          "seconds": 8,
+          "level": 1
+        }
+      ],
+      "pure": []
+    },
+    "hard": {
+      "dirty": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 100,
+          "seconds": 7,
+          "level": 1
+        },
+        {
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 78,
+          "seconds": 90,
+          "level": 2
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 45,
+          "seconds": 30,
+          "level": 1
+        }
+      ],
+      "murky": [
+        {
+          "effect": "minecraft:nausea",
+          "chance": 100,
+          "seconds": 7,
+          "level": 1
+        },
+        {
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 66,
+          "seconds": 90,
+          "level": 2
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 30,
+          "seconds": 30,
+          "level": 1
+        }
+      ],
+      "clean": [
+        {
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 20,
+          "seconds": 45,
+          "level": 1
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 10,
+          "seconds": 12,
+          "level": 1
+        }
+      ],
+      "pure": []
+    }
+  },
+  "extendSicknessEffects": true,
+  "enableDrinkTagMatching": true,
+  "drinkTagValue": [
+    6,
+    8
+  ],
+  "enableKeywordMatching": true,
+  "keywordBlacklist": "dried|candied|leaf|leaves|gummy|crate|jam|sauce|bucket|seed|cookie|pie|bush|sapling|bean|curry|cake|candy",
+  "drinkKeywords": "drink|juice|tea|soda|coffee|wine|beer|cider|yogurt|milkshake|smoothie",
+  "soupKeywords": "soup|stew|porridge",
+  "fruitKeywords": "fruit|berry|berries|grape|orange|peach|pear|coconut|lemon|melon|cherry|apple",
+  "keywordDrinkValue": [
+    10,
+    14
+  ],
+  "keywordSoupValue": [
+    4,
+    5
+  ],
+  "keywordFruitValue": [
+    2,
+    3
+  ],
+  "itemBlacklist": [],
+  "drinks": {
+    "minecraft:potion": [
+      6,
+      8
+    ],
+    "minecraft:milk_bucket": [
+      6,
+      8
+    ],
+    "minecraft:honey_bottle": [
+      4,
+      6
+    ],
+    "thirstwastaken2:terracotta_water_bowl": [
+      4,
+      5
+    ],
+    "thirstwastaken2:waterskin": [
+      4,
+      5
+    ],
+    "thirstwastaken2:copper_canteen": [
+      4,
+      5
+    ],
+    "thirstwastaken2:iron_flask": [
+      4,
+      5
+    ],
+    "farmersdelight:apple_cider": [
+      8,
+      13
+    ],
+    "farmersdelight:melon_juice": [
+      8,
+      13
+    ],
+    "farmersdelight:hot_cocoa": [
+      8,
+      13
+    ],
+    "farmersdelight:milk_bottle": [
+      6,
+      8
+    ],
+    "kaleidoscope_cookery:barley_tea": [
+      6,
+      9
+    ],
+    "kaleidoscope_cookery:tieguanyin": [
+      6,
+      9
+    ],
+    "kaleidoscope_cookery:biluochun": [
+      6,
+      9
+    ],
+    "kaleidoscope_cookery:oolong": [
+      6,
+      9
+    ],
+    "kaleidoscope_cookery:sakura_fubuki": [
+      6,
+      9
+    ],
+    "kaleidoscope_cookery:flower_tea": [
+      6,
+      9
+    ],
+    "kaleidoscope_cookery:butter_tea": [
+      6,
+      10
+    ],
+    "kaleidoscope_cookery:mystery_tea": [
+      3,
+      3
+    ],
+    "kaleidoscope_cookery:clay_pot_milk_tea": [
+      8,
+      12
+    ],
+    "brewinandchewin:kombucha": [
+      6,
+      8
+    ],
+    "brewinandchewin:beer": [
+      5,
+      6
+    ],
+    "brewinandchewin:mead": [
+      5,
+      6
+    ],
+    "brewinandchewin:egg_grog": [
+      5,
+      6
+    ],
+    "brewinandchewin:glittering_grenadine": [
+      5,
+      6
+    ],
+    "brewinandchewin:bloody_mary": [
+      4,
+      5
+    ],
+    "brewinandchewin:red_wine": [
+      3,
+      4
+    ],
+    "brewinandchewin:white_wine": [
+      3,
+      4
+    ],
+    "brewinandchewin:currant_wine": [
+      3,
+      4
+    ],
+    "brewinandchewin:verruca_wine": [
+      3,
+      4
+    ],
+    "brewinandchewin:twisted_wine": [
+      3,
+      4
+    ],
+    "brewinandchewin:rice_wine": [
+      3,
+      4
+    ],
+    "brewinandchewin:old_wine": [
+      3,
+      4
+    ],
+    "brewinandchewin:pale_jane": [
+      3,
+      3
+    ],
+    "brewinandchewin:strongroot_ale": [
+      3,
+      3
+    ],
+    "brewinandchewin:dread_nog": [
+      3,
+      3
+    ],
+    "brewinandchewin:saccharine_rum": [
+      2,
+      2
+    ],
+    "brewinandchewin:steel_toe_stout": [
+      2,
+      2
+    ],
+    "brewinandchewin:red_rum": [
+      2,
+      2
+    ],
+    "cold_sweat:filled_waterskin": [
+      6,
+      8
+    ],
+    "culturaldelights:cola": [
+      6,
+      8
+    ],
+    "culturaldelights:ginger_beer": [
+      5,
+      6
+    ],
+    "culturaldelights:butterbeer": [
+      5,
+      6
+    ],
+    "culturaldelights:beer": [
+      5,
+      6
+    ],
+    "culturaldelights:mead": [
+      5,
+      6
+    ],
+    "culturaldelights:apple_cider": [
+      5,
+      6
+    ],
+    "culturaldelights:bloody_mary": [
+      4,
+      5
+    ],
+    "culturaldelights:mojito": [
+      4,
+      5
+    ],
+    "culturaldelights:margarita": [
+      4,
+      5
+    ],
+    "culturaldelights:wine": [
+      3,
+      4
+    ],
+    "culturaldelights:glow_wine": [
+      3,
+      4
+    ],
+    "culturaldelights:lemon_liqueur": [
+      2,
+      2
+    ],
+    "culturaldelights:tequila": [
+      0,
+      0
+    ],
+    "culturaldelights:gin": [
+      0,
+      0
+    ],
+    "culturaldelights:brandy": [
+      0,
+      0
+    ],
+    "culturaldelights:vodka": [
+      0,
+      0
+    ],
+    "culturaldelights:whiskey": [
+      0,
+      0
+    ],
+    "culturaldelights:rum": [
+      0,
+      0
+    ],
+    "culturaldelights:acid": [
+      0,
+      0
+    ],
+    "culturaldelights:vinegar": [
+      0,
+      0
+    ],
+    "fruitsdelight:hamimelon_juice": [
+      8,
+      13
+    ],
+    "fruitsdelight:kiwi_juice": [
+      8,
+      13
+    ],
+    "fruitsdelight:orange_juice": [
+      8,
+      13
+    ],
+    "fruitsdelight:lemon_juice": [
+      8,
+      13
+    ],
+    "fruitsdelight:pear_juice": [
+      8,
+      13
+    ],
+    "fruitsdelight:hawberry_tea": [
+      8,
+      13
+    ],
+    "fruitsdelight:mango_tea": [
+      8,
+      13
+    ],
+    "fruitsdelight:peach_tea": [
+      8,
+      13
+    ],
+    "fruitsdelight:lychee_cherry_tea": [
+      8,
+      13
+    ],
+    "fruitsdelight:mangosteen_tea": [
+      8,
+      13
+    ],
+    "fruitsdelight:bayberry_soup": [
+      8,
+      13
+    ],
+    "fruitsdelight:mango_milkshake": [
+      8,
+      12
+    ],
+    "fruitsdelight:bellini_cocktail": [
+      5,
+      6
+    ],
+    "expandeddelight:apple_juice": [
+      8,
+      13
+    ],
+    "expandeddelight:sweet_berry_juice": [
+      8,
+      13
+    ],
+    "expandeddelight:glow_berry_juice": [
+      8,
+      13
+    ],
+    "expandeddelight:cranberry_juice": [
+      8,
+      13
+    ],
+    "expandeddelight:goat_milk_bottle": [
+      6,
+      8
+    ],
+    "expandeddelight:goat_milk_bucket": [
+      6,
+      8
+    ],
+    "rusticdelight:coffee": [
+      5,
+      8
+    ],
+    "rusticdelight:dark_coffee": [
+      4,
+      6
+    ],
+    "rusticdelight:milk_coffee": [
+      6,
+      10
+    ],
+    "rusticdelight:syrup_coffee": [
+      8,
+      11
+    ],
+    "rusticdelight:chocolate_coffee": [
+      8,
+      11
+    ],
+    "rusticdelight:honey_coffee": [
+      8,
+      11
+    ],
+    "rusticdelight:pumpkin_coffee": [
+      8,
+      11
+    ],
+    "rusticdelight:cherry_blossom_coffee": [
+      8,
+      11
+    ],
+    "rusticdelight:syrup": [
+      2,
+      3
+    ],
+    "farm_and_charm:strawberry_tea_cup": [
+      6,
+      9
+    ],
+    "farm_and_charm:nettle_tea_cup": [
+      6,
+      9
+    ],
+    "farm_and_charm:ribwort_tea_cup": [
+      6,
+      9
+    ],
+    "farm_and_charm:strawberry_tea": [
+      6,
+      9
+    ],
+    "farm_and_charm:nettle_tea": [
+      6,
+      9
+    ],
+    "farm_and_charm:ribwort_tea": [
+      6,
+      9
+    ],
+    "herbalbrews:green_tea": [
+      6,
+      9
+    ],
+    "herbalbrews:black_tea": [
+      6,
+      9
+    ],
+    "herbalbrews:lavender_tea": [
+      6,
+      9
+    ],
+    "herbalbrews:yerba_mate_tea": [
+      6,
+      9
+    ],
+    "herbalbrews:oolong_tea": [
+      6,
+      9
+    ],
+    "herbalbrews:rooibos_tea": [
+      6,
+      9
+    ],
+    "herbalbrews:hibiscus_tea": [
+      6,
+      9
+    ],
+    "herbalbrews:coffee": [
+      5,
+      8
+    ],
+    "herbalbrews:milk_coffee": [
+      6,
+      10
+    ],
+    "beachparty:coconut_cocktail": [
+      7,
+      10
+    ],
+    "beachparty:sweetberries_cocktail": [
+      7,
+      10
+    ],
+    "beachparty:cocoa_cocktail": [
+      7,
+      10
+    ],
+    "beachparty:pumpkin_cocktail": [
+      7,
+      10
+    ],
+    "beachparty:honey_cocktail": [
+      7,
+      10
+    ],
+    "beachparty:melon_cocktail": [
+      7,
+      10
+    ],
+    "hearthandharvest:blueberry_juice": [
+      8,
+      13
+    ],
+    "hearthandharvest:cherry_juice": [
+      8,
+      13
+    ],
+    "hearthandharvest:raspberry_juice": [
+      8,
+      13
+    ],
+    "hearthandharvest:red_grape_juice": [
+      8,
+      13
+    ],
+    "hearthandharvest:green_grape_juice": [
+      8,
+      13
+    ],
+    "hearthandharvest:sweet_berry_juice": [
+      8,
+      13
+    ],
+    "hearthandharvest:glow_berry_juice": [
+      8,
+      13
+    ],
+    "hearthandharvest:goat_milk_bottle": [
+      6,
+      8
+    ],
+    "hearthandharvest:chocolate_milk_bottle": [
+      6,
+      8
+    ],
+    "hearthandharvest:mead": [
+      5,
+      6
+    ],
+    "hearthandharvest:hard_cider": [
+      5,
+      6
+    ],
+    "hearthandharvest:root_beer": [
+      5,
+      6
+    ],
+    "hearthandharvest:blueberry_wine": [
+      3,
+      4
+    ],
+    "hearthandharvest:cherry_wine": [
+      3,
+      4
+    ],
+    "hearthandharvest:raspberry_wine": [
+      3,
+      4
+    ],
+    "hearthandharvest:red_grape_wine": [
+      3,
+      4
+    ],
+    "hearthandharvest:green_grape_wine": [
+      3,
+      4
+    ],
+    "hearthandharvest:sweet_berry_wine": [
+      3,
+      4
+    ],
+    "hearthandharvest:glow_berry_wine": [
+      3,
+      4
+    ],
+    "hearthandharvest:melon_wine": [
+      3,
+      4
+    ],
+    "hearthandharvest:moonshine": [
+      2,
+      2
+    ],
+    "hearthandharvest:syrup_bottle": [
+      2,
+      3
+    ],
+    "nomansland:pear_juice": [
+      8,
+      13
+    ],
+    "nomansland:maple_syrup_bottle": [
+      4,
+      6
+    ],
+    "nomansland:pesto_bottle": [
+      1,
+      2
+    ],
+    "vinery:apple_juice": [
+      8,
+      13
+    ],
+    "vinery:red_grapejuice": [
+      8,
+      13
+    ],
+    "vinery:white_grapejuice": [
+      8,
+      13
+    ],
+    "vinery:red_savanna_grapejuice": [
+      8,
+      13
+    ],
+    "vinery:white_savanna_grapejuice": [
+      8,
+      13
+    ],
+    "vinery:red_taiga_grapejuice": [
+      8,
+      13
+    ],
+    "vinery:white_taiga_grapejuice": [
+      8,
+      13
+    ],
+    "vinery:red_jungle_grapejuice": [
+      8,
+      13
+    ],
+    "vinery:white_jungle_grapejuice": [
+      8,
+      13
+    ],
+    "vinery:apple_cider": [
+      5,
+      6
+    ],
+    "vinery:kelp_cider": [
+      5,
+      6
+    ],
+    "vinery:mead": [
+      5,
+      6
+    ],
+    "vinery:apple_wine": [
+      3,
+      4
+    ],
+    "vinery:glowing_wine": [
+      3,
+      4
+    ],
+    "vinery:solaris_wine": [
+      3,
+      4
+    ],
+    "vinery:eiswein": [
+      3,
+      4
+    ],
+    "vinery:aegis_wine": [
+      3,
+      4
+    ],
+    "vinery:villagers_fright": [
+      3,
+      4
+    ],
+    "vinery:clark_wine": [
+      3,
+      4
+    ],
+    "vinery:jellie_wine": [
+      3,
+      4
+    ],
+    "vinery:noir_wine": [
+      3,
+      4
+    ],
+    "vinery:red_wine": [
+      3,
+      4
+    ],
+    "vinery:strad_wine": [
+      3,
+      4
+    ],
+    "vinery:cherry_wine": [
+      3,
+      4
+    ],
+    "vinery:cristel_wine": [
+      3,
+      4
+    ],
+    "vinery:lilitu_wine": [
+      3,
+      4
+    ],
+    "vinery:jo_special_mixture": [
+      3,
+      4
+    ],
+    "vinery:bolvar_wine": [
+      3,
+      4
+    ],
+    "vinery:magnetic_wine": [
+      3,
+      4
+    ],
+    "vinery:stal_wine": [
+      3,
+      4
+    ],
+    "vinery:chenet_wine": [
+      3,
+      4
+    ],
+    "vinery:bottle_mojang_noir": [
+      3,
+      4
+    ],
+    "vinery:chorus_wine": [
+      3,
+      4
+    ],
+    "vinery:creepers_crush": [
+      3,
+      4
+    ],
+    "vinery:mellohi_wine": [
+      3,
+      4
+    ],
+    "croptopia:apple_juice": [
+      8,
+      13
+    ],
+    "croptopia:cranberry_juice": [
+      8,
+      13
+    ],
+    "croptopia:grape_juice": [
+      8,
+      13
+    ],
+    "croptopia:melon_juice": [
+      8,
+      13
+    ],
+    "croptopia:orange_juice": [
+      8,
+      13
+    ],
+    "croptopia:pineapple_juice": [
+      8,
+      13
+    ],
+    "croptopia:saguaro_juice": [
+      8,
+      13
+    ],
+    "croptopia:tomato_juice": [
+      8,
+      13
+    ],
+    "croptopia:lemonade": [
+      8,
+      13
+    ],
+    "croptopia:limeade": [
+      8,
+      13
+    ],
+    "croptopia:banana_smoothie": [
+      7,
+      10
+    ],
+    "croptopia:strawberry_smoothie": [
+      7,
+      10
+    ],
+    "croptopia:fruit_smoothie": [
+      7,
+      10
+    ],
+    "croptopia:kale_smoothie": [
+      7,
+      10
+    ],
+    "croptopia:chocolate_milkshake": [
+      8,
+      12
+    ],
+    "croptopia:tea": [
+      6,
+      9
+    ],
+    "croptopia:coffee": [
+      5,
+      8
+    ],
+    "croptopia:pumpkin_spice_latte": [
+      6,
+      10
+    ],
+    "croptopia:soy_milk": [
+      6,
+      8
+    ],
+    "croptopia:horchata": [
+      6,
+      8
+    ],
+    "croptopia:beer": [
+      5,
+      6
+    ],
+    "croptopia:mead": [
+      5,
+      6
+    ],
+    "croptopia:wine": [
+      3,
+      4
+    ],
+    "croptopia:rum": [
+      2,
+      2
+    ]
+  },
+  "foods": {
+    "minecraft:apple": [
+      2,
+      3
+    ],
+    "minecraft:golden_apple": [
+      2,
+      3
+    ],
+    "minecraft:enchanted_golden_apple": [
+      2,
+      3
+    ],
+    "minecraft:mushroom_stew": [
+      4,
+      5
+    ],
+    "minecraft:rabbit_stew": [
+      4,
+      5
+    ],
+    "minecraft:melon_slice": [
+      4,
+      5
+    ],
+    "minecraft:carrot": [
+      1,
+      2
+    ],
+    "minecraft:beetroot": [
+      1,
+      2
+    ],
+    "minecraft:sweet_berries": [
+      1,
+      2
+    ],
+    "minecraft:glow_berries": [
+      1,
+      2
+    ],
+    "minecraft:golden_carrot": [
+      1,
+      2
+    ],
+    "minecraft:beetroot_soup": [
+      5,
+      7
+    ],
+    "farmersdelight:pumpkin_slice": [
+      2,
+      1
+    ],
+    "farmersdelight:tomato": [
+      2,
+      3
+    ],
+    "farmersdelight:glow_berry_custard": [
+      2,
+      3
+    ],
+    "farmersdelight:bone_broth": [
+      5,
+      7
+    ],
+    "farmersdelight:cabbage_leaf": [
+      1,
+      2
+    ],
+    "farmersdelight:melon_popsicle": [
+      7,
+      9
+    ],
+    "farmersdelight:fruit_salad": [
+      6,
+      8
+    ],
+    "farmersdelight:tomato_sauce": [
+      4,
+      5
+    ],
+    "farmersdelight:mixed_salad": [
+      4,
+      5
+    ],
+    "farmersdelight:beef_stew": [
+      4,
+      5
+    ],
+    "farmersdelight:chicken_soup": [
+      4,
+      5
+    ],
+    "farmersdelight:vegetable_soup": [
+      4,
+      5
+    ],
+    "farmersdelight:fish_stew": [
+      4,
+      5
+    ],
+    "farmersdelight:pumpkin_soup": [
+      4,
+      5
+    ],
+    "farmersdelight:baked_cod_stew": [
+      4,
+      5
+    ],
+    "farmersdelight:noodle_soup": [
+      4,
+      5
+    ],
+    "farmersdelight:onion_soup": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:pork_bone_soup": [
+      5,
+      7
+    ],
+    "kaleidoscope_cookery:seafood_miso_soup": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:fearsome_thick_soup": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:lamb_and_radish_soup": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:wild_mushroom_rabbit_soup": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:pufferfish_soup": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:borscht": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:beef_meatball_soup": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:chicken_and_mushroom_stew": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:laba_congee": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:donkey_soup": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:tomato_beef_brisket_soup": [
+      4,
+      5
+    ],
+    "kaleidoscope_cookery:beef_noodle": [
+      3,
+      4
+    ],
+    "kaleidoscope_cookery:hui_noodle": [
+      3,
+      4
+    ],
+    "kaleidoscope_cookery:udon_noodle": [
+      3,
+      4
+    ],
+    "kaleidoscope_cookery:tomato": [
+      2,
+      3
+    ],
+    "brewinandchewin:creamy_onion_soup": [
+      4,
+      5
+    ],
+    "brewinandchewin:fiery_fondue": [
+      2,
+      3
+    ],
+    "brewinandchewin:grits": [
+      2,
+      3
+    ],
+    "brewinandchewin:chopped_liver": [
+      2,
+      3
+    ],
+    "culturaldelights:cucumber": [
+      3,
+      4
+    ],
+    "culturaldelights:cut_cucumber": [
+      1,
+      2
+    ],
+    "culturaldelights:hearty_salad": [
+      4,
+      5
+    ],
+    "culturaldelights:creamed_corn": [
+      2,
+      3
+    ],
+    "culturaldelights:poached_eggplants": [
+      2,
+      3
+    ],
+    "fruitsdelight:hamimelon_shaved_ice": [
+      8,
+      10
+    ],
+    "fruitsdelight:hamimelon_popsicle": [
+      7,
+      9
+    ],
+    "fruitsdelight:kiwi_popsicle": [
+      7,
+      9
+    ],
+    "fruitsdelight:apple_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:bayberry_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:blueberry_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:chorus_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:cranberry_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:durian_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:fig_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:glowberry_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:hamimelon_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:hawberry_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:kiwi_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:lemon_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:lychee_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:mango_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:mangosteen_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:melon_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:orange_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:peach_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:pear_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:persimmon_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:pineapple_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:sweetberry_jello": [
+      3,
+      4
+    ],
+    "fruitsdelight:hamimelon_slice": [
+      4,
+      5
+    ],
+    "fruitsdelight:orange": [
+      2,
+      3
+    ],
+    "fruitsdelight:lychee": [
+      2,
+      3
+    ],
+    "fruitsdelight:pineapple_slice": [
+      2,
+      3
+    ],
+    "fruitsdelight:kiwi": [
+      2,
+      3
+    ],
+    "fruitsdelight:peach": [
+      2,
+      3
+    ],
+    "fruitsdelight:mango": [
+      2,
+      3
+    ],
+    "fruitsdelight:pear": [
+      2,
+      3
+    ],
+    "fruitsdelight:orange_slice": [
+      1,
+      2
+    ],
+    "fruitsdelight:lemon_slice": [
+      1,
+      2
+    ],
+    "fruitsdelight:baked_pear": [
+      1,
+      2
+    ],
+    "fruitsdelight:pear_with_rock_sugar": [
+      6,
+      8
+    ],
+    "fruitsdelight:fig_chicken_stew": [
+      4,
+      5
+    ],
+    "fruitsdelight:mango_salad": [
+      4,
+      5
+    ],
+    "fruitsdelight:blueberry_custard": [
+      2,
+      3
+    ],
+    "oceansdelight:bowl_of_guardian_soup": [
+      5,
+      7
+    ],
+    "oceansdelight:braised_sea_pickle": [
+      4,
+      5
+    ],
+    "oceansdelight:seagrass_salad": [
+      2,
+      3
+    ],
+    "expandeddelight:asparagus_soup": [
+      4,
+      5
+    ],
+    "expandeddelight:asparagus_soup_creamy": [
+      4,
+      5
+    ],
+    "expandeddelight:peanut_honey_soup": [
+      4,
+      5
+    ],
+    "expandeddelight:cinnamon_apples": [
+      4,
+      5
+    ],
+    "expandeddelight:peanut_salad": [
+      4,
+      5
+    ],
+    "expandeddelight:sweet_potato_salad": [
+      4,
+      5
+    ],
+    "expandeddelight:goat_cheese_beetroot_salad": [
+      4,
+      5
+    ],
+    "expandeddelight:cranberries": [
+      1,
+      2
+    ],
+    "rusticdelight:bell_pepper_soup": [
+      4,
+      5
+    ],
+    "rusticdelight:calamari_soup": [
+      4,
+      5
+    ],
+    "rusticdelight:sweet_salad": [
+      4,
+      5
+    ],
+    "rusticdelight:bell_pepper_green": [
+      2,
+      3
+    ],
+    "rusticdelight:bell_pepper_yellow": [
+      2,
+      3
+    ],
+    "rusticdelight:bell_pepper_red": [
+      2,
+      3
+    ],
+    "rusticdelight:bell_pepper_orange": [
+      2,
+      3
+    ],
+    "rusticdelight:bell_pepper_white": [
+      2,
+      3
+    ],
+    "rusticdelight:bell_pepper_pink": [
+      2,
+      3
+    ],
+    "rusticdelight:bell_pepper_blue": [
+      2,
+      3
+    ],
+    "rusticdelight:bell_pepper_purple": [
+      2,
+      3
+    ],
+    "rusticdelight:bell_pepper_black": [
+      2,
+      3
+    ],
+    "rusticdelight:bell_pepper_slice_green": [
+      1,
+      2
+    ],
+    "rusticdelight:bell_pepper_slice_yellow": [
+      1,
+      2
+    ],
+    "rusticdelight:bell_pepper_slice_red": [
+      1,
+      2
+    ],
+    "rusticdelight:bell_pepper_slice_orange": [
+      1,
+      2
+    ],
+    "rusticdelight:bell_pepper_slice_white": [
+      1,
+      2
+    ],
+    "rusticdelight:bell_pepper_slice_pink": [
+      1,
+      2
+    ],
+    "rusticdelight:bell_pepper_slice_blue": [
+      1,
+      2
+    ],
+    "rusticdelight:bell_pepper_slice_purple": [
+      1,
+      2
+    ],
+    "rusticdelight:bell_pepper_slice_black": [
+      1,
+      2
+    ],
+    "farm_and_charm:barley_soup": [
+      4,
+      5
+    ],
+    "farm_and_charm:onion_soup": [
+      4,
+      5
+    ],
+    "farm_and_charm:potato_soup": [
+      4,
+      5
+    ],
+    "farm_and_charm:simple_tomato_soup": [
+      4,
+      5
+    ],
+    "farm_and_charm:goulash": [
+      4,
+      5
+    ],
+    "farm_and_charm:farmer_salad": [
+      4,
+      5
+    ],
+    "farm_and_charm:corn_grits": [
+      3,
+      4
+    ],
+    "farm_and_charm:tomato": [
+      2,
+      3
+    ],
+    "farm_and_charm:lettuce": [
+      1,
+      2
+    ],
+    "farm_and_charm:strawberry": [
+      1,
+      2
+    ],
+    "candlelight:tomato_soup": [
+      4,
+      5
+    ],
+    "candlelight:mushroom_soup": [
+      4,
+      5
+    ],
+    "candlelight:salad": [
+      4,
+      5
+    ],
+    "candlelight:beetroot_salad": [
+      4,
+      5
+    ],
+    "candlelight:fresh_garden_salad": [
+      4,
+      5
+    ],
+    "candlelight:tomato_mozzarella_salad": [
+      3,
+      4
+    ],
+    "candlelight:chocolate_mousse": [
+      2,
+      3
+    ],
+    "beachparty:coconut_open": [
+      4,
+      5
+    ],
+    "hearthandharvest:corn_stew": [
+      4,
+      5
+    ],
+    "hearthandharvest:onion_soup": [
+      4,
+      5
+    ],
+    "hearthandharvest:blueberries": [
+      1,
+      2
+    ],
+    "hearthandharvest:raspberry": [
+      1,
+      2
+    ],
+    "hearthandharvest:cherry": [
+      1,
+      2
+    ],
+    "hearthandharvest:red_grapes": [
+      1,
+      2
+    ],
+    "hearthandharvest:green_grapes": [
+      1,
+      2
+    ],
+    "hearthandharvest:baked_apple": [
+      2,
+      3
+    ],
+    "hearthandharvest:caramel_apple": [
+      2,
+      3
+    ],
+    "nomansland:witch_stew": [
+      4,
+      5
+    ],
+    "nomansland:pear": [
+      2,
+      3
+    ],
+    "nomansland:syruped_pear": [
+      2,
+      3
+    ],
+    "nomansland:honeyed_apple": [
+      2,
+      3
+    ],
+    "vinery:apple_mash": [
+      2,
+      3
+    ],
+    "vinery:red_grape": [
+      1,
+      2
+    ],
+    "vinery:white_grape": [
+      1,
+      2
+    ],
+    "vinery:savanna_grapes_red": [
+      1,
+      2
+    ],
+    "vinery:savanna_grapes_white": [
+      1,
+      2
+    ],
+    "vinery:taiga_grapes_red": [
+      1,
+      2
+    ],
+    "vinery:taiga_grapes_white": [
+      1,
+      2
+    ],
+    "vinery:jungle_grapes_red": [
+      1,
+      2
+    ],
+    "vinery:jungle_grapes_white": [
+      1,
+      2
+    ],
+    "vinery:cherry": [
+      1,
+      2
+    ],
+    "croptopia:leek_soup": [
+      4,
+      5
+    ],
+    "croptopia:pumpkin_soup": [
+      4,
+      5
+    ],
+    "croptopia:potato_soup": [
+      4,
+      5
+    ],
+    "croptopia:beef_stew": [
+      4,
+      5
+    ],
+    "croptopia:nether_wart_stew": [
+      4,
+      5
+    ],
+    "croptopia:borscht": [
+      4,
+      5
+    ],
+    "croptopia:goulash": [
+      4,
+      5
+    ],
+    "croptopia:chicken_and_dumplings": [
+      4,
+      5
+    ],
+    "croptopia:tofu_and_dumplings": [
+      4,
+      5
+    ],
+    "croptopia:chicken_and_noodles": [
+      4,
+      5
+    ],
+    "croptopia:bibim_naengmyeon": [
+      4,
+      5
+    ],
+    "croptopia:cucumber_salad": [
+      4,
+      5
+    ],
+    "croptopia:caesar_salad": [
+      4,
+      5
+    ],
+    "croptopia:leafy_salad": [
+      4,
+      5
+    ],
+    "croptopia:veggie_salad": [
+      4,
+      5
+    ],
+    "croptopia:beetroot_salad": [
+      4,
+      5
+    ],
+    "croptopia:fruit_salad": [
+      6,
+      8
+    ],
+    "croptopia:kiwi_sorbet": [
+      7,
+      9
+    ],
+    "croptopia:vanilla_ice_cream": [
+      2,
+      3
+    ],
+    "croptopia:strawberry_ice_cream": [
+      2,
+      3
+    ],
+    "croptopia:mango_ice_cream": [
+      2,
+      3
+    ],
+    "croptopia:pecan_ice_cream": [
+      2,
+      3
+    ],
+    "croptopia:chocolate_ice_cream": [
+      2,
+      3
+    ],
+    "croptopia:rum_raisin_ice_cream": [
+      2,
+      3
+    ],
+    "croptopia:yoghurt": [
+      2,
+      3
+    ],
+    "croptopia:cantaloupe": [
+      4,
+      5
+    ],
+    "croptopia:honeydew": [
+      4,
+      5
+    ],
+    "croptopia:cucumber": [
+      3,
+      4
+    ],
+    "croptopia:tomato": [
+      2,
+      3
+    ],
+    "croptopia:orange": [
+      2,
+      3
+    ],
+    "croptopia:grapefruit": [
+      2,
+      3
+    ],
+    "croptopia:peach": [
+      2,
+      3
+    ],
+    "croptopia:pear": [
+      2,
+      3
+    ],
+    "croptopia:plum": [
+      2,
+      3
+    ],
+    "croptopia:nectarine": [
+      2,
+      3
+    ],
+    "croptopia:apricot": [
+      2,
+      3
+    ],
+    "croptopia:mango": [
+      2,
+      3
+    ],
+    "croptopia:pineapple": [
+      2,
+      3
+    ],
+    "croptopia:kiwi": [
+      2,
+      3
+    ],
+    "croptopia:starfruit": [
+      2,
+      3
+    ],
+    "croptopia:dragonfruit": [
+      2,
+      3
+    ],
+    "croptopia:persimmon": [
+      2,
+      3
+    ],
+    "croptopia:grape": [
+      1,
+      2
+    ],
+    "croptopia:strawberry": [
+      1,
+      2
+    ],
+    "croptopia:blueberry": [
+      1,
+      2
+    ],
+    "croptopia:blackberry": [
+      1,
+      2
+    ],
+    "croptopia:raspberry": [
+      1,
+      2
+    ],
+    "croptopia:cranberry": [
+      1,
+      2
+    ],
+    "croptopia:currant": [
+      1,
+      2
+    ],
+    "croptopia:elderberry": [
+      1,
+      2
+    ],
+    "croptopia:cherry": [
+      1,
+      2
+    ],
+    "croptopia:kumquat": [
+      1,
+      2
+    ],
+    "croptopia:lemon": [
+      1,
+      2
+    ],
+    "croptopia:lime": [
+      1,
+      2
+    ],
+    "croptopia:lettuce": [
+      1,
+      2
+    ],
+    "croptopia:celery": [
+      1,
+      2
+    ]
+  },
+  "enableBowls": true,
+  "enableWaterskin": true,
+  "enableCopperCanteen": true,
+  "enableIronFlask": true,
+  "enableCopperHangingPot": true,
+  "enableIronHangingPot": true
+}

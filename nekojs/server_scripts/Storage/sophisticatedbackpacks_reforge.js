@@ -1,4 +1,3 @@
-
 import { RF, applyReforge } from '../src/lib/gt6_reforge.js'
 
 const REMOVE = [
@@ -295,23 +294,6 @@ const GATES = [
 
 const ADD = []
 
-const VANILLA_CRAFTING_TYPES = ['minecraft:crafting_shaped', 'minecraft:crafting_shapeless']
-
-function onlyVanillaCrafting(event, list) {
-  return list.filter(item => {
-    try {
-      const text = event.getJson(item.id)
-      if (text == null) {
-        return false
-      }
-      const parsed = JSON.parse(text)
-      return parsed != null && VANILLA_CRAFTING_TYPES.indexOf(String(parsed.type)) >= 0
-    } catch (readError) {
-      return false
-    }
-  })
-}
-
 ServerEvents.recipes(event => {
-  applyReforge(event, { tag: 'Backpacks', remove: REMOVE, edits: onlyVanillaCrafting(event, EDITS), gates: onlyVanillaCrafting(event, GATES), add: ADD })
+  applyReforge(event, { tag: 'Backpacks', remove: REMOVE, edits: EDITS, gates: GATES, add: ADD })
 })
