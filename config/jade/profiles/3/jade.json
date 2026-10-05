@@ -99,6 +99,11 @@
       "potion_effects": true,
       "painting": true
     },
+    "gtqualityneo": {
+      "harvest": true,
+      "device_details": true,
+      "machine_details": true
+    },
     "jade_access": {
       "npc_description": true,
       "held_item": true,
