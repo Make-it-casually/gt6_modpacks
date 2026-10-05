@@ -1,0 +1,10 @@
+{
+  "type": "harvestheritage:hyprid",
+  "input_seeds": [
+    "minecraft:lapis_lazuli",
+    "minecraft:redstone"
+  ],
+  "output_seeds": [
+    "minecraft:quartz"
+  ]
+}

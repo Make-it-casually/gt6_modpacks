@@ -154,21 +154,6 @@ export const GT6_INGOT_MATERIALS = Object.freeze([
   },
 
   {
-    item: 'stellaris:desh_ingot',
-    material: 'Desh',
-    tagMaterial: 'Desh',
-    confidence: 'verified',
-    note: 'GT6 自带同名材料 Desh（行星金属），标签名同名'
-  },
-  {
-    item: 'stellaris:titanium_ingot',
-    material: 'Titanium',
-    tagMaterial: 'Titanium',
-    confidence: 'verified',
-    note: 'GT6 自带同名材料 Titanium，标签名同名'
-  },
-
-  {
     item: 'extendedcrafting:black_iron_ingot',
     material: 'DarkIron',
     tagMaterial: 'BlackIron',

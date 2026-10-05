@@ -1,0 +1,9 @@
+{
+  "seed": "minecraft:emerald",
+  "category": "material",
+  "results": [
+    "minecraft:emerald"
+  ],
+  "stage": 7,
+  "need_block": "minecraft:deepslate"
+}

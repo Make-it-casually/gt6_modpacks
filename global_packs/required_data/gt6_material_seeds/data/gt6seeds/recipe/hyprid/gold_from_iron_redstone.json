@@ -1,0 +1,10 @@
+{
+  "type": "harvestheritage:hyprid",
+  "input_seeds": [
+    "minecraft:iron_ingot",
+    "minecraft:redstone"
+  ],
+  "output_seeds": [
+    "minecraft:gold_ingot"
+  ]
+}

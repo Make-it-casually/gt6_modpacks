@@ -1,0 +1,13 @@
+{
+  "type": "harvestheritage:seed_packet",
+  "known_seed": "harvestheritage:known_seed",
+  "accept_paper": "minecraft:paper",
+  "category": "material",
+  "result": {
+    "components": {
+      "harvestheritage:seed_component": "minecraft:lapis_lazuli"
+    },
+    "id": "harvestheritage:seed_packet"
+  },
+  "show_notification": false
+}

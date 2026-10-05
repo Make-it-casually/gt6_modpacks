@@ -134,6 +134,9 @@
     "balm": {
       "jade": true
     },
+    "animalweights": {
+      "animal_condition": true
+    },
     "ae2": {
       "part_icon": true,
       "charger": true,

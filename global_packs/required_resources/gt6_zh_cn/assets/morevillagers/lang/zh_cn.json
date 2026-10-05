@@ -1,0 +1,16 @@
+{
+  "filled_map.ancient_city": "远古城市探险家地图",
+  "text.autoconfig.morevillagers.title": "更多村民配置",
+  "text.autoconfig.morevillagers.option.houses": "房屋生成设置",
+  "text.autoconfig.morevillagers.option.houses.generatePlainsHouses": "生成平原房屋",
+  "text.autoconfig.morevillagers.option.houses.generateTaigaHouses": "生成针叶林房屋",
+  "text.autoconfig.morevillagers.option.houses.generateSavannaHouses": "生成热带草原房屋",
+  "text.autoconfig.morevillagers.option.houses.generateSnowyHouses": "生成积雪房屋",
+  "text.autoconfig.morevillagers.option.houses.generateDesertHouses": "生成沙漠房屋",
+  "text.autoconfig.morevillagers.option.weights": "房屋权重（生成频率）",
+  "text.autoconfig.morevillagers.option.weights.woodworkerHouseWeight": "木工房屋权重",
+  "text.autoconfig.morevillagers.option.weights.oceanographerHouseWeight": "海洋学家房屋权重",
+  "text.autoconfig.morevillagers.option.weights.floristHouseWeight": "花匠房屋权重",
+  "text.autoconfig.morevillagers.option.weights.hunterHouseWeight": "猎人房屋权重",
+  "text.autoconfig.morevillagers.option.weights.engineerHouseWeight": "工程师房屋权重"
+}

@@ -1,0 +1,16 @@
+{
+  "conduit.enderio.energetic_energy": "充能能量导管",
+  "conduit.enderio.energetic_fluid": "充能流体导管",
+  "conduit.enderio.energetic_item": "充能物品导管",
+  "conduit.enderio.vibrant_energy": "振动能量导管",
+  "conduit.enderio.vibrant_fluid": "振动流体导管",
+  "conduit.enderio.vibrant_item": "振动物品导管",
+  "key.category.enderio.enderio_keys": "EnderIO",
+  "message.enderio.tool.soul_vial.error.denied": "该实体已被列入拒绝名单。",
+  "tag.entity_type.enderio.soul_vial_allow_list": "灵魂瓶允许列表",
+  "tag.entity_type.enderio.soul_vial_deny_list": "灵魂瓶拒绝列表",
+  "tag.entity_type.enderio.spawner_allow_list": "刷怪笼允许列表",
+  "tag.entity_type.enderio.spawner_deny_list": "刷怪笼拒绝列表",
+  "tag.item.enderio.deny_lists.broken_spawner": "破损刷怪笼拒绝列表",
+  "tag.item.enderio.deny_lists.electromagnet": "电磁铁拒绝列表"
+}

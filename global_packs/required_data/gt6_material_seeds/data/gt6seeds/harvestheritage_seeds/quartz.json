@@ -1,0 +1,9 @@
+{
+  "seed": "minecraft:quartz",
+  "category": "material",
+  "results": [
+    "minecraft:quartz"
+  ],
+  "stage": 6,
+  "need_block": "minecraft:netherrack"
+}

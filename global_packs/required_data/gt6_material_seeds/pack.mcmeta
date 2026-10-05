@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "GT6 材料种子（HarvestHeritage 数据包）",
+    "min_format": 84,
+    "max_format": [84, 0]
+  }
+}

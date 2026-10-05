@@ -1,0 +1,12 @@
+{
+  "type": "harvestheritage:find",
+  "ingredient": "harvestheritage:unknown_seed",
+  "result": [
+    {
+      "components": {
+        "harvestheritage:seed_component": "minecraft:iron_ingot"
+      },
+      "id": "harvestheritage:known_seed"
+    }
+  ]
+}

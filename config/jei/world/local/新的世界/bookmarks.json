@@ -88,5 +88,9 @@
   {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10001}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10003}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10004}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10005}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":10005}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:oak_pressure_plate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"sophisticatedstorage:gold_barrel","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"sophisticatedbackpacks:backpack","components":"{\"sophisticatedcore:number_of_inventory_slots\":27,\"sophisticatedcore:number_of_upgrade_slots\":1}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.meta.plate"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

@@ -1,0 +1,5 @@
+{
+  "gui.ae2wtlib.current_terminal": "当前终端：%s",
+  "gui.ae2wtlib.terminal_empty": "此终端不包含任何其他终端",
+  "ae2wtlib.configuration.always_show_terminal_selector": "始终显示通用终端选择器"
+}

@@ -111,13 +111,104 @@ export function tag(name) {
   return '#' + name
 }
 
+export const GT6_MATERIAL_NAME = Object.freeze({
+  iron: 'Iron',
+  copper: 'Copper',
+  tin: 'Tin',
+  lead: 'Lead',
+  gold: 'Gold',
+  silver: 'Silver',
+  nickel: 'Nickel',
+  zinc: 'Zinc',
+  aluminium: 'Aluminium',
+  bronze: 'Bronze',
+  brass: 'Brass',
+  steel: 'Steel',
+  stainlesssteel: 'StainlessSteel',
+  galvanizedsteel: 'GalvanizedSteel',
+  tungstensteel: 'TungstenSteel',
+  titanium: 'Titanium',
+  tungsten: 'Tungsten',
+  platinum: 'Platinum',
+  uranium: 'Uranium',
+  niobiumtitanium: 'NiobiumTitanium',
+  redalloy: 'RedAlloy',
+  silicon: 'Silicon',
+  diamond: 'Diamond',
+  emerald: 'Emerald',
+  coal: 'Coal',
+  lapis: 'Lapis',
+  obsidian: 'Obsidian',
+  redstone: 'Redstone',
+  glowstone: 'Glowstone',
+  enderpearl: 'EnderPearl',
+  rubber: 'Rubber',
+  plastic: 'Plastic',
+  netherquartz: 'NetherQuartz',
+  certusquartz: 'CertusQuartz',
+  chargedcertusquartz: 'ChargedCertusQuartz',
+  fluix: 'Fluix'
+})
+
+function loadOreDictMaterial() {
+  try {
+    if (typeof Java === 'undefined' || Java.type === undefined) {
+      return null
+    }
+    return Java.type('gregapi.oredict.OreDictMaterial')
+  } catch (loadError) {
+    return null
+  }
+}
+
+const RUNTIME_IDS = (() => {
+  const out = {}
+  const material = loadOreDictMaterial()
+  if (material === null) {
+    return out
+  }
+  for (const key of Object.keys(GT_MATERIAL)) {
+    try {
+      const found = material.get(GT6_MATERIAL_NAME[key], null)
+      if (found != null && found.mID !== undefined) {
+        out[key] = found.mID
+      }
+    } catch (lookupError) {
+      continue
+    }
+  }
+  return out
+})()
+
+let reported = false
+
+function reportRuntimeIds() {
+  if (reported) {
+    return
+  }
+  reported = true
+  const keys = Object.keys(RUNTIME_IDS)
+  if (keys.length === 0) {
+    console.warn('[NekoJS/GT6] 材料号运行时解析不可用，使用静态表。')
+    return
+  }
+  const changed = keys.filter(key => RUNTIME_IDS[key] !== GT_MATERIAL[key])
+  console.info(`[NekoJS/GT6] 材料号运行时解析 ${keys.length}/${Object.keys(GT_MATERIAL).length} 个` + (changed.length > 0 ? `；与静态表不同 ${changed.length} 个：` + changed.map(key => `${key} ${GT_MATERIAL[key]}→${RUNTIME_IDS[key]}`).join('，') : '；与静态表完全一致'))
+}
+
 export function resolveMaterial(material) {
   if (typeof material === 'number') {
     return material
   }
-  const id = GT_MATERIAL[String(material).toLowerCase()]
+  const key = String(material).toLowerCase()
+  const id = GT_MATERIAL[key]
   if (id === undefined) {
     throw new Error(`Unknown GT6 material: ${String(material)}`)
+  }
+  reportRuntimeIds()
+  const runtime = RUNTIME_IDS[key]
+  if (runtime !== undefined) {
+    return runtime
   }
   return id
 }

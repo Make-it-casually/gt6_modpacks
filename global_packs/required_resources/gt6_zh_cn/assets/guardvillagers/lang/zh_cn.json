@@ -1,0 +1,19 @@
+{
+  "guardvillagers.configuration.Structure pieces that spawn guards": "会生成警卫的结构部件",
+  "guardvillagers.configuration.How many guards should spawn in a village?": "一个村庄应生成多少名警卫？",
+  "guardvillagers.configuration.Allow guards to convert to zombie villagers upon being killed by zombies?": "允许警卫被僵尸杀死后转化为僵尸村民？",
+  "guardvillagers.configuration.Guard crossbow attack radius": "警卫弩的攻击半径",
+  "guardvillagers.configuration.How many times a villager can heal a guard's equipment in one day": "一名村民一天内可为警卫修复装备的次数",
+  "guardvillagers.configuration.How many times a cleric can heal a guard in one day": "一名牧师一天内可为警卫治疗的次数",
+  "guardvillagers.configuration.Profession Whitelist for guard weaponry repair ai": "警卫武器修理 AI 的职业白名单",
+  "guardvillagers.configuration.How many times a smith villager can heal a golem in one day": "一名铁匠村民一天内可为铁傀儡治疗的次数",
+  "guardvillagers.configuration.Profession Whitelist for healing ai for clerics": "牧师治疗 AI 的职业白名单",
+  "guardvillagers.configuration.Profession Whitelist for golem repair ai": "铁傀儡修理 AI 的职业白名单",
+  "guardvillagers.configuration.Display guard health in icons": "以图标显示警卫的生命值",
+  "guardvillagers.configuration.Mobs that guards actively protect when they get hurt": "警卫在受到伤害时会主动保护的生物",
+  "guardvillagers.configuration.Angle of how ranged guards determine if a friendly mob is infront of them before firing": "远程警卫开火前判定友方生物是否位于其正前方的角度",
+  "guardvillagers.configuration.Depth value for guards fighting underwater mobs": "警卫与水下生物战斗的深度值",
+  "guardvillagers.configuration.Allow guards to sink temporarily to fight mobs that are under water?": "允许警卫暂时下沉以攻击水下的生物？",
+  "guardvillagers.configuration.Mobs that guards actively protect when they get targeted": "警卫在被锁定为目标时会主动保护的生物",
+  "guardvillagers.configuration.Allow guards to patrol around villager workstations like golems?": "允许警卫像铁傀儡一样在村民工作站点周围巡逻？"
+}

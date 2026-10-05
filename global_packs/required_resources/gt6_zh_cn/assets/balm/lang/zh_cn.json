@@ -1,0 +1,7 @@
+{
+  "gui.balm.configuration.title": "%s...",
+  "gui.balm.configuration.edit": "编辑",
+  "gui.balm.configuration.validation.range": "范围：%s 至 %s",
+  "gui.balm.configuration.validation.negative_infinity": "-inf",
+  "gui.balm.configuration.validation.positive_infinity": "+inf"
+}

@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "GT6 整合包中文补全（未汉化词条）",
+    "min_format": 84,
+    "max_format": [
+      84,
+      0
+    ]
+  }
+}

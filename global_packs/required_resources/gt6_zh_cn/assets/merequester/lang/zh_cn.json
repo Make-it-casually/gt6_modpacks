@@ -1,0 +1,6 @@
+{
+  "item.merequester.wireless_requester_terminal": "无线请求终端",
+  "key.ae2.wireless_requester_terminal": "打开无线请求终端",
+  "tooltip.merequester.cpu": "无 CPU",
+  "tooltip.merequester.cpu_desc": "系统无法为本次合成找到合适的 CPU。找到 CPU 后将继续该进程。"
+}

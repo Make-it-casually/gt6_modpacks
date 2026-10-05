@@ -10,6 +10,8 @@
 !defaultconfigs/**
 !nekojs/
 !nekojs/**
+!global_packs/
+!global_packs/**
 nekojs/node_modules/
 !gregtech.cfg
 !gregtech.lang

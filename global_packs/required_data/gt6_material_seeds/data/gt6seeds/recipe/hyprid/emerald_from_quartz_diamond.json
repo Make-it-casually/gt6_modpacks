@@ -1,0 +1,10 @@
+{
+  "type": "harvestheritage:hyprid",
+  "input_seeds": [
+    "minecraft:quartz",
+    "minecraft:diamond"
+  ],
+  "output_seeds": [
+    "minecraft:emerald"
+  ]
+}

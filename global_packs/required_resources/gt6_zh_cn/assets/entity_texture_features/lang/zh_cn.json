@@ -1,0 +1,10 @@
+{
+  "config.entity_features.search": "搜索...",
+  "config.entity_texture_features.random_settings.title": "随机 / 自定义生物设置",
+  "config.entity_texture_features.property_explanation.resourcepack": "资源包\n测试每个已加载资源包的名称\n§aresourcepack.<n>=<resourcepack_list|regex|pattern>",
+  "config.entity_texture_features.property_explanation.usingShaders": "使用光影\n是否正在使用 Iris 光影\n§ausingShaders.<n>=<true/false>",
+  "config.entity_texture_features.property_explanation.hardcore": "极限模式\n世界是否为极限模式\n§ahardcore.<n>=<true/false>",
+  "config.entity_texture_features.property_explanation.client_game_mode": "客户端玩家的游戏模式列表\n原版中为：0=生存，1=创造，2=冒险，3=旁观\n§aclientGameMode.<n>=<list>",
+  "config.entity_texture_features.property_explanation.difficulty": "难度列表\n原版难度为：0=和平，1=简单，2=普通，3=困难\n§adifficulty.<n>=<list>",
+  "config.entity_texture_features.property_explanation.regional_difficulty": "区域难度列表\n 每个区块的数值在 0.0 到 6.75 之间变化\n 详见 https://minecraft.wiki/w/Difficulty#Regional_difficulty\n§aregionalDifficulty.<n>=<list>"
+}

@@ -1,0 +1,9 @@
+{
+  "seed": "minecraft:redstone",
+  "category": "material",
+  "results": [
+    "minecraft:redstone"
+  ],
+  "stage": 5,
+  "need_block": "minecraft:stone"
+}
