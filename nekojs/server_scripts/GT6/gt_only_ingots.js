@@ -67,7 +67,6 @@ agritechevolved:composter
 agritechevolved:fertilizer_spreader
 agritechevolved:silo
 agritechevolved:sm_mk1
-alcocraftplus:spruce_keg
 applied_extended_crafting:table_advanced_pattern_provider
 applied_extended_crafting:table_basic_pattern_provider
 bakeries:blender

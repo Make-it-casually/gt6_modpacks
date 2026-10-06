@@ -38,8 +38,6 @@ const HIDDEN = [
   'railcraft:steel_ingot',
   'railcraft:tin_ingot',
   'railcraft:zinc_ingot',
-  'bloodmagic:ingot_hellforged',
-  'powah:uraninite',
   'witchery:koboldite_ingot',
   'railcraft:brass_plate',
   'railcraft:bronze_plate',

@@ -1,4 +1,11 @@
 [
   {"version":3},
-  {"ingredient":{"id":"gregtech:gt.multiitem.bumblebee","components":"{\"gregapi:subtype\":101,\"minecraft:custom_data\":{gt.bumble:{aggro:4679s,day:1b,life:126068,maxhum:0.61f,maxtemp:302s,minhum:0.0f,mintemp:253s,offspring:1b,outside:1b,work:1384s}}}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"gregtech:gt.multiitem.bumblebee","components":"{\"gregapi:subtype\":101,\"minecraft:custom_data\":{gt.bumble:{aggro:4679s,day:1b,life:126068,maxhum:0.61f,maxtemp:302s,minhum:0.0f,mintemp:253s,offspring:1b,outside:1b,work:1384s}}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"alcocraftplus:keg"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"alcocraftplus:nether_porter"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"alcocraftplus:hop"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aether_ii:aether_portal_frame"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":["cyclic:solidifier/spark",{"ingredients":["#minecraft:candles","#c:dusts/glowstone","#c:torches"],"mix":{"ingredient":"#c:wax","amount":10},"result":{"id":"cyclic:spark","count":4},"energy":{"rfpertick":100,"ticks":120},"type":"cyclic:solidifier"}],"recipeType":"cyclic:solidifier","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"cyclic:solidifier"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aether_ii:swet_sugar"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

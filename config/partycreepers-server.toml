@@ -1,0 +1,16 @@
+#Chance a creeper will burst into fireworks, otherwise vanilla explosion particles show.
+#Other changes to explosion behavior still apply such as no damage to terrain.
+#Default Value: 1.0
+# Default: 1.0
+# Range: 0.0 ~ 1.0
+confetti_chance = 1.0
+#Disable damage to surrounding blocks when a creeper explodes.
+#Default Value: true
+prevent_terrain_damage = true
+#Always spawn dust and smoke particles from normal explosions, also together with confetti.
+#Default Value: true
+dust_particles = true
+#Kind of entities to damage when a creeper explodes. Living does exclude e.g. items laying on the ground.
+#Default Value: LIVING_ONLY
+#Allowed Values: NONE, LIVING_ONLY, PLAYERS_ONLY, ALL
+damage_entities = "LIVING_ONLY"

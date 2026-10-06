@@ -9,6 +9,24 @@
   "_comment_weightGainChance": "Chance from 0.0 to 1.0 for this animal to gain weight when its habitat is good.",
   "_comment_weightMinorLossChance": "Chance from 0.0 to 1.0 for this animal to lose weight when its habitat is poor.",
   "_comment_weightSevereLossChance": "Chance from 0.0 to 1.0 for this animal to lose weight when its habitat is very poor.",
+  "aether_ii:highfields_burrukai": {
+    "diet": "HERBIVORE"
+  },
+  "aether_ii:highfields_kirrid": {
+    "diet": "HERBIVORE"
+  },
+  "aether_ii:highfields_taegore": {
+    "diet": "HERBIVORE"
+  },
+  "aether_ii:moa": {
+    "diet": "OMNIVORE"
+  },
+  "aether_ii:phyg": {
+    "diet": "HERBIVORE"
+  },
+  "aether_ii:prismallard": {
+    "diet": "OMNIVORE"
+  },
   "minecraft:armadillo": {
     "diet": "OMNIVORE"
   },
@@ -24,6 +42,9 @@
   "minecraft:cow": {
     "diet": "HERBIVORE"
   },
+  "minecraft:donkey": {
+    "diet": "HERBIVORE"
+  },
   "minecraft:fox": {
     "diet": "OMNIVORE"
   },
@@ -34,6 +55,9 @@
     "diet": "HERBIVORE"
   },
   "minecraft:horse": {
+    "diet": "HERBIVORE"
+  },
+  "minecraft:llama": {
     "diet": "HERBIVORE"
   },
   "minecraft:panda": {
@@ -47,5 +71,8 @@
   },
   "minecraft:sheep": {
     "diet": "HERBIVORE"
+  },
+  "minecraft:strider": {
+    "diet": "NETHER"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "为所有食物补充营养值（Nutritional Balance） · GregTech 6 Modern Community Pack (gt6mc)",
+    "min_format": 84,
+    "max_format": [
+      84,
+      0
+    ]
+  }
+}

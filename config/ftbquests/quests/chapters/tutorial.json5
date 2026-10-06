@@ -1,0 +1,223 @@
+{
+  id: "05A670B1356C2209",
+  group: "",
+  order_index: 0,
+  icon: {
+    id: "minecraft:knowledge_book",
+    count: 1,
+  },
+  filename: "tutorial",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      icon: {
+        id: "minecraft:book",
+        count: 1,
+      },
+      x: 0.0,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "32176258A5CC8EFB",
+      tasks: [
+        {
+          id: "508540AC76547EBF",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:stone",
+        count: 1,
+      },
+      x: 1.5,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "54D40CCA48C1372C",
+      tasks: [
+        {
+          id: "67FE9874A1BC301F",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:iron_ingot",
+        count: 1,
+      },
+      x: 3.0,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "54D40CCA48C1372C",
+      ],
+      size: 1.0,
+      id: "503F31E363F22526",
+      tasks: [
+        {
+          id: "5CE8F1EA3638817F",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:crafting_table",
+        count: 1,
+      },
+      x: 4.5,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "330E2AE121BFDABF",
+      tasks: [
+        {
+          id: "0AA5A7D37C37E6C3",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:iron_pickaxe",
+        count: 1,
+      },
+      x: 6.0,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "330E2AE121BFDABF",
+      ],
+      size: 1.0,
+      id: "3F87C68D0A2B4019",
+      tasks: [
+        {
+          id: "6B4994AEC2929D65",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:furnace",
+        count: 1,
+      },
+      x: 7.5,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "3F87C68D0A2B4019",
+      ],
+      size: 1.0,
+      id: "081493F1FB14E300",
+      tasks: [
+        {
+          id: "2E778A5F23ECA1C3",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:redstone",
+        count: 1,
+      },
+      x: 9.0,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "081493F1FB14E300",
+      ],
+      size: 1.0,
+      id: "311FEE434BF08790",
+      tasks: [
+        {
+          id: "20C6B65A2ADC6524",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:apple",
+        count: 1,
+      },
+      x: 10.5,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "6B951D88FA7B25FA",
+      tasks: [
+        {
+          id: "2B7C995CC6BDE753",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:rail",
+        count: 1,
+      },
+      x: 12.0,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "6B951D88FA7B25FA",
+      ],
+      size: 1.0,
+      id: "549242E0FCF9A0BC",
+      tasks: [
+        {
+          id: "04AAD51B861EF51A",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:glowstone_dust",
+        count: 1,
+      },
+      x: 13.5,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "62C7685E7E03A0AD",
+      tasks: [
+        {
+          id: "459BE927D410C409",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:cauldron",
+        count: 1,
+      },
+      x: 15.0,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "62C7685E7E03A0AD",
+      ],
+      size: 1.0,
+      id: "796BC3765E814052",
+      tasks: [
+        {
+          id: "244A6B6B0F4A1EFB",
+          type: "checkmark",
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

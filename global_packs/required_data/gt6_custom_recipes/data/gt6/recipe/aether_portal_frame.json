@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:glowstone",
+    "B": "cyclic:spark",
+    "C": "minecraft:painting"
+  },
+  "pattern": [
+    "ABA",
+    "ACA",
+    "ABA"
+  ],
+  "result": {
+    "id": "aether_ii:aether_portal_frame",
+    "count": 1
+  }
+}

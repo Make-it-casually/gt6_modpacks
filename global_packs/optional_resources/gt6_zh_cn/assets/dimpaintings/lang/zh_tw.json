@@ -1,0 +1,13 @@
+{
+  "dimpaintings.configuration.General": "通用",
+  "dimpaintings.configuration.General.tooltip": "通用设置",
+  "dimpaintings.configuration.disableNetherPortal": "禁用下界传送门",
+  "dimpaintings.configuration.disableNetherPortal.tooltip": "禁用下界传送门的生成（默认：false）",
+  "dimpaintings.configuration.netherMaxY": "下界最大 Y",
+  "dimpaintings.configuration.netherMaxY.tooltip": "决定下界画把你送到下界时的最大 Y 坐标\n[原版下界建议保持在 10 到 120 之间\n[51 = 若无落点则在 Y 50 的气泡中生成]（默认：120）",
+  "dimpaintings.configuration.overworldToBed": "主世界返回床",
+  "dimpaintings.configuration.overworldToBed.tooltip": "决定主世界的画是否将你传送回出生点/床（类似从末地传送回主世界）",
+  "dimpaintings.configuration.teleportCooldown": "传送冷却",
+  "dimpaintings.configuration.teleportCooldown.tooltip": "两次传送之间的秒数（默认：4）",
+  "item.dimpaintings.custom_painting": "自定义画"
+}

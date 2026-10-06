@@ -1,0 +1,163 @@
+{
+  id: "25A706B1539E5941",
+  group: "",
+  order_index: 1,
+  icon: {
+    id: "minecraft:iron_ore",
+    count: 1,
+  },
+  filename: "ore_veins",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      icon: {
+        id: "minecraft:stone",
+        count: 1,
+      },
+      x: 0.0,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "071B2429D78B24AA",
+      tasks: [
+        {
+          id: "43C55EDCD950DB99",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:coal",
+        count: 1,
+      },
+      x: 1.5,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "2CF2D757262B7BFD",
+      tasks: [
+        {
+          id: "4906F1ABA98D43D6",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:sand",
+        count: 1,
+      },
+      x: 3.0,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "274D4E4D351D8781",
+      tasks: [
+        {
+          id: "74EB59068464A71A",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:iron_pickaxe",
+        count: 1,
+      },
+      x: 4.5,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "3B7D2985431B510F",
+      tasks: [
+        {
+          id: "0A2F22913118E0DF",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:bedrock",
+        count: 1,
+      },
+      x: 6.0,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "548443EF6612F852",
+      tasks: [
+        {
+          id: "451B8DFA79D94847",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:deepslate",
+        count: 1,
+      },
+      x: 7.5,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "548443EF6612F852",
+      ],
+      size: 1.0,
+      id: "2B40A3967BAE973C",
+      tasks: [
+        {
+          id: "73A82DB97122BE92",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:netherrack",
+        count: 1,
+      },
+      x: 9.0,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "2B40A3967BAE973C",
+      ],
+      size: 1.0,
+      id: "4707E9C08149A2C8",
+      tasks: [
+        {
+          id: "7624902012D9EACB",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:compass",
+        count: 1,
+      },
+      x: 10.5,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "4707E9C08149A2C8",
+      ],
+      size: 1.0,
+      id: "3A744E8B6CCAFA87",
+      tasks: [
+        {
+          id: "0DA46127E050059B",
+          type: "checkmark",
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

@@ -1,0 +1,12 @@
+{
+  "container.imbue.enchantedBookMissing": "缺少 %s！",
+  "container.imbue.enchantmentsNotMatching": "魔咒不匹配！",
+  "container.imbue.hallowedGemMissing": "缺少 %s！",
+  "container.imbue.levelsNotEqual": "魔咒等级不相同！",
+  "entity.illagerinvasion.flying_magma": "飞行岩浆",
+  "entity.illagerinvasion.hatchet": "短柄斧",
+  "entity.illagerinvasion.invoker_fangs": "唤魔者尖牙",
+  "entity.illagerinvasion.skull_bolt": "骷髅弩箭",
+  "subtitles.entity.invoker.complete_cast": "唤魔者：施法",
+  "subtitles.item.lost_candle.find_ore": "矿石：鸣响"
+}

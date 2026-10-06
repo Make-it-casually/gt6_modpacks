@@ -1,0 +1,641 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aether_ii:cockatrice_feather",
+      "required": false
+    },
+    {
+      "id": "aether_ii:roasted_skyroot_lizard_on_a_stick",
+      "required": false
+    },
+    {
+      "id": "alcocraftplus:dry_seeds",
+      "required": false
+    },
+    {
+      "id": "alcocraftplus:hop_seeds",
+      "required": false
+    },
+    {
+      "id": "bakeries:bread_knife",
+      "required": false
+    },
+    {
+      "id": "bakeries:country_bread_dough",
+      "required": false
+    },
+    {
+      "id": "bakeries:country_bread_slice",
+      "required": false
+    },
+    {
+      "id": "bakeries:flour",
+      "required": false
+    },
+    {
+      "id": "bakeries:flour_sieve",
+      "required": false
+    },
+    {
+      "id": "bakeries:rice_bread_dough",
+      "required": false
+    },
+    {
+      "id": "bakeries:round_bread_dough",
+      "required": false
+    },
+    {
+      "id": "bakeries:whole_wheat_bagel_dough",
+      "required": false
+    },
+    {
+      "id": "bakeries:whole_wheat_dough",
+      "required": false
+    },
+    {
+      "id": "bakeries:whole_wheat_flour",
+      "required": false
+    },
+    {
+      "id": "croptopia:barley",
+      "required": false
+    },
+    {
+      "id": "croptopia:barley_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:basil",
+      "required": false
+    },
+    {
+      "id": "croptopia:basil_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:bibim_naengmyeon",
+      "required": false
+    },
+    {
+      "id": "croptopia:burrito",
+      "required": false
+    },
+    {
+      "id": "croptopia:caesar_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:calamari",
+      "required": false
+    },
+    {
+      "id": "croptopia:candied_kumquats",
+      "required": false
+    },
+    {
+      "id": "croptopia:candied_nuts",
+      "required": false
+    },
+    {
+      "id": "croptopia:cantaloupe",
+      "required": false
+    },
+    {
+      "id": "croptopia:cantaloupe_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:carnitas",
+      "required": false
+    },
+    {
+      "id": "croptopia:chimichanga",
+      "required": false
+    },
+    {
+      "id": "croptopia:cinnamon",
+      "required": false
+    },
+    {
+      "id": "croptopia:cinnamon_log",
+      "required": false
+    },
+    {
+      "id": "croptopia:cinnamon_roll",
+      "required": false
+    },
+    {
+      "id": "croptopia:cinnamon_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:cinnamon_wood",
+      "required": false
+    },
+    {
+      "id": "croptopia:cooked_calamari",
+      "required": false
+    },
+    {
+      "id": "croptopia:cooking_oil",
+      "required": false
+    },
+    {
+      "id": "croptopia:cooking_pot",
+      "required": false
+    },
+    {
+      "id": "croptopia:corn",
+      "required": false
+    },
+    {
+      "id": "croptopia:corn_bread",
+      "required": false
+    },
+    {
+      "id": "croptopia:corn_husk",
+      "required": false
+    },
+    {
+      "id": "croptopia:corn_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:cornish_pasty",
+      "required": false
+    },
+    {
+      "id": "croptopia:crema",
+      "required": false
+    },
+    {
+      "id": "croptopia:croque_madame",
+      "required": false
+    },
+    {
+      "id": "croptopia:croque_monsieur",
+      "required": false
+    },
+    {
+      "id": "croptopia:dauphine_potatoes",
+      "required": false
+    },
+    {
+      "id": "croptopia:dough",
+      "required": false
+    },
+    {
+      "id": "croptopia:dumpling",
+      "required": false
+    },
+    {
+      "id": "croptopia:enchilada",
+      "required": false
+    },
+    {
+      "id": "croptopia:eton_mess",
+      "required": false
+    },
+    {
+      "id": "croptopia:fajitas",
+      "required": false
+    },
+    {
+      "id": "croptopia:flour",
+      "required": false
+    },
+    {
+      "id": "croptopia:food_press",
+      "required": false
+    },
+    {
+      "id": "croptopia:french_fries",
+      "required": false
+    },
+    {
+      "id": "croptopia:fried_calamari",
+      "required": false
+    },
+    {
+      "id": "croptopia:fried_frog_legs",
+      "required": false
+    },
+    {
+      "id": "croptopia:fried_rice",
+      "required": false
+    },
+    {
+      "id": "croptopia:frog_legs",
+      "required": false
+    },
+    {
+      "id": "croptopia:frying_pan",
+      "required": false
+    },
+    {
+      "id": "croptopia:goulash",
+      "required": false
+    },
+    {
+      "id": "croptopia:guide",
+      "required": false
+    },
+    {
+      "id": "croptopia:hashed_brown",
+      "required": false
+    },
+    {
+      "id": "croptopia:hops",
+      "required": false
+    },
+    {
+      "id": "croptopia:hops_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:horchata",
+      "required": false
+    },
+    {
+      "id": "croptopia:knife",
+      "required": false
+    },
+    {
+      "id": "croptopia:kumquat",
+      "required": false
+    },
+    {
+      "id": "croptopia:kumquat_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:leafy_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:mashed_potatoes",
+      "required": false
+    },
+    {
+      "id": "croptopia:meringue",
+      "required": false
+    },
+    {
+      "id": "croptopia:mortar_and_pestle",
+      "required": false
+    },
+    {
+      "id": "croptopia:mountain_salt",
+      "required": false
+    },
+    {
+      "id": "croptopia:mustard",
+      "required": false
+    },
+    {
+      "id": "croptopia:mustard_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:nether_wart_stew",
+      "required": false
+    },
+    {
+      "id": "croptopia:noodle",
+      "required": false
+    },
+    {
+      "id": "croptopia:nutmeg",
+      "required": false
+    },
+    {
+      "id": "croptopia:nutmeg_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:oat",
+      "required": false
+    },
+    {
+      "id": "croptopia:oat_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:oatmeal",
+      "required": false
+    },
+    {
+      "id": "croptopia:paprika",
+      "required": false
+    },
+    {
+      "id": "croptopia:pizza",
+      "required": false
+    },
+    {
+      "id": "croptopia:popcorn",
+      "required": false
+    },
+    {
+      "id": "croptopia:potato_chips",
+      "required": false
+    },
+    {
+      "id": "croptopia:potato_soup",
+      "required": false
+    },
+    {
+      "id": "croptopia:quesadilla",
+      "required": false
+    },
+    {
+      "id": "croptopia:quiche",
+      "required": false
+    },
+    {
+      "id": "croptopia:raisins",
+      "required": false
+    },
+    {
+      "id": "croptopia:ravioli",
+      "required": false
+    },
+    {
+      "id": "croptopia:rhubarb",
+      "required": false
+    },
+    {
+      "id": "croptopia:rhubarb_crisp",
+      "required": false
+    },
+    {
+      "id": "croptopia:rhubarb_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:rice",
+      "required": false
+    },
+    {
+      "id": "croptopia:rice_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_nuts",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_sunflower_seeds",
+      "required": false
+    },
+    {
+      "id": "croptopia:saguaro",
+      "required": false
+    },
+    {
+      "id": "croptopia:saguaro_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:salt",
+      "required": false
+    },
+    {
+      "id": "croptopia:saucy_chips",
+      "required": false
+    },
+    {
+      "id": "croptopia:snicker_doodle",
+      "required": false
+    },
+    {
+      "id": "croptopia:soy_sauce",
+      "required": false
+    },
+    {
+      "id": "croptopia:stripped_cinnamon_log",
+      "required": false
+    },
+    {
+      "id": "croptopia:stripped_cinnamon_wood",
+      "required": false
+    },
+    {
+      "id": "croptopia:stuffed_poblanos",
+      "required": false
+    },
+    {
+      "id": "croptopia:supreme_pizza",
+      "required": false
+    },
+    {
+      "id": "croptopia:sushi",
+      "required": false
+    },
+    {
+      "id": "croptopia:taco",
+      "required": false
+    },
+    {
+      "id": "croptopia:the_big_breakfast",
+      "required": false
+    },
+    {
+      "id": "croptopia:toast",
+      "required": false
+    },
+    {
+      "id": "croptopia:toast_sandwich",
+      "required": false
+    },
+    {
+      "id": "croptopia:tomatillo",
+      "required": false
+    },
+    {
+      "id": "croptopia:tomatillo_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:tortilla",
+      "required": false
+    },
+    {
+      "id": "croptopia:tostada",
+      "required": false
+    },
+    {
+      "id": "croptopia:trail_mix",
+      "required": false
+    },
+    {
+      "id": "croptopia:transcendental_breakfast",
+      "required": false
+    },
+    {
+      "id": "croptopia:trifle",
+      "required": false
+    },
+    {
+      "id": "croptopia:tteokbokki",
+      "required": false
+    },
+    {
+      "id": "croptopia:turmeric",
+      "required": false
+    },
+    {
+      "id": "croptopia:turmeric_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:vanilla",
+      "required": false
+    },
+    {
+      "id": "croptopia:vanilla_seeds",
+      "required": false
+    },
+    {
+      "id": "croptopia:water_bottle",
+      "required": false
+    },
+    {
+      "id": "enderio:suspicious_seed",
+      "required": false
+    },
+    {
+      "id": "extendedae:entro_seed",
+      "required": false
+    },
+    {
+      "id": "harvestheritage:fried_seedsack",
+      "required": false
+    },
+    {
+      "id": "harvestheritage:known_seed",
+      "required": false
+    },
+    {
+      "id": "harvestheritage:seed_packet",
+      "required": false
+    },
+    {
+      "id": "harvestheritage:unknown_seed",
+      "required": false
+    },
+    {
+      "id": "railcraft:raw_firestone",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:bread_slice",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:cooked_vegetable_pizza",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:raw_vegetable_pizza",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:vegetable_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "refurbished_furniture:wheat_flour",
+      "required": false
+    },
+    {
+      "id": "rootsclassic:rooty_stew",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_niter_crops_abundant",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_rice",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_wheat",
+      "required": false
+    },
+    {
+      "id": "usefulfood:baked_sushi",
+      "required": false
+    },
+    {
+      "id": "usefulfood:biscuit",
+      "required": false
+    },
+    {
+      "id": "usefulfood:breadslice",
+      "required": false
+    },
+    {
+      "id": "usefulfood:cereal",
+      "required": false
+    },
+    {
+      "id": "usefulfood:frenchfries",
+      "required": false
+    },
+    {
+      "id": "usefulfood:oatmeal",
+      "required": false
+    },
+    {
+      "id": "usefulfood:roastedseeds",
+      "required": false
+    },
+    {
+      "id": "usefulfood:salad",
+      "required": false
+    },
+    {
+      "id": "usefulfood:spaghetti",
+      "required": false
+    },
+    {
+      "id": "usefulfood:sushi",
+      "required": false
+    },
+    {
+      "id": "usefulfood:trailmix",
+      "required": false
+    },
+    {
+      "id": "wilder_wilds:flowering_dandelion_seed_flower",
+      "required": false
+    },
+    {
+      "id": "witchery:belladonna_seeds",
+      "required": false
+    },
+    {
+      "id": "witchery:mandrake_seeds",
+      "required": false
+    },
+    {
+      "id": "witchery:redstone_soup",
+      "required": false
+    },
+    {
+      "id": "witchery:snowbell_seeds",
+      "required": false
+    },
+    {
+      "id": "witchery:wolfsbane_seeds",
+      "required": false
+    },
+    {
+      "id": "witchery:wormwood_seeds",
+      "required": false
+    }
+  ]
+}

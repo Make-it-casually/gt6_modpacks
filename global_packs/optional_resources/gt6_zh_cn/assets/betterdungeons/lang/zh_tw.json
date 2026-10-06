@@ -1,0 +1,22 @@
+{
+  "command.betterdungeons.locate.small_nether_dungeons": "小型下界地牢默认处于禁用状态。你可以在 YUNG's Better Dungeons 的配置中启用它们。",
+  "Banner of Decay": "衰败之旗",
+  "Banner of Pork": "猪肉之旗",
+  "Banner of Rage": "暴怒之旗",
+  "betterdungeons.nether_dungeon.banner.decay": "衰败之旗",
+  "betterdungeons.nether_dungeon.banner.pork": "猪肉之旗",
+  "betterdungeons.nether_dungeon.banner.rage": "暴怒之旗",
+  "betterdungeons.advancements.small_nether_dungeon.title": "特别的补充",
+  "betterdungeons.advancements.small_nether_dungeon.description": "找到一座小型下界地牢",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon": "小型下界地牢",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.@Tooltip": "小型下界地牢",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.bannerMaxCount": "小型下界地牢最大旗帜数量",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.bannerMaxCount.@Tooltip[0]": "单个小型下界地牢中最多可生成的旗帜数量。",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.bannerMaxCount.@Tooltip[1]": "默认：2",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.enabled": "启用小型下界地牢",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.enabled.@Tooltip": "是否生成小型下界地牢。",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.witherSkeletonsDropWitherSkulls": "刷怪笼生成的凋灵骷髅掉落头颅",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.witherSkeletonsDropWitherSkulls.@Tooltip": "小型下界地牢中生成的凋灵骷髅能否掉落凋灵骷髅头颅。",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.blazesDropBlazeRods": "刷怪笼生成的烈焰人掉落烈焰棒",
+  "text.autoconfig.betterdungeons-fabric-26_1.option.betterDungeons.smallNetherDungeon.blazesDropBlazeRods.@Tooltip": "小型下界地牢中生成的烈焰人是否有可能掉落烈焰棒。"
+}

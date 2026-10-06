@@ -1,0 +1,183 @@
+{
+  id: "5293354F66136A27",
+  group: "",
+  order_index: 2,
+  icon: {
+    id: "minecraft:cake",
+    count: 1,
+  },
+  filename: "nutrition_guide",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      icon: {
+        id: "minecraft:apple",
+        count: 1,
+      },
+      x: 0.0,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "7284373E638895E9",
+      tasks: [
+        {
+          id: "548B7B9D9F2CEA3D",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:golden_apple",
+        count: 1,
+      },
+      x: 1.5,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "7284373E638895E9",
+      ],
+      size: 1.0,
+      id: "61656247CEBBCD65",
+      tasks: [
+        {
+          id: "62014DB7A233F067",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:potion",
+        count: 1,
+      },
+      x: 3.0,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "7124FB6370945DB9",
+      tasks: [
+        {
+          id: "2BF99E684E3F357A",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:egg",
+        count: 1,
+      },
+      x: 4.5,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "7124FB6370945DB9",
+      ],
+      size: 1.0,
+      id: "0F50DF30C246C230",
+      tasks: [
+        {
+          id: "287B3FE5952F8061",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:bread",
+        count: 1,
+      },
+      x: 6.0,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "3E5BBB47B80D26A4",
+      tasks: [
+        {
+          id: "6C6047B11A05B5E9",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:carrot",
+        count: 1,
+      },
+      x: 7.5,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "2A4EBF738C40DB6D",
+      tasks: [
+        {
+          id: "3C0BC90BE18369A5",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:sugar",
+        count: 1,
+      },
+      x: 9.0,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "2A4EBF738C40DB6D",
+      ],
+      size: 1.0,
+      id: "621D6083671B22E0",
+      tasks: [
+        {
+          id: "25F9F8EF7D26822B",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:bowl",
+        count: 1,
+      },
+      x: 10.5,
+      y: 0.0,
+      shape: "circle",
+      dependencies: [
+        "621D6083671B22E0",
+      ],
+      size: 1.0,
+      id: "6950B2C1A2267CBB",
+      tasks: [
+        {
+          id: "30678783DB60FE37",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:knowledge_book",
+        count: 1,
+      },
+      x: 12.0,
+      y: 0.0,
+      shape: "circle",
+      size: 1.0,
+      id: "416F5F91EBD0F35E",
+      tasks: [
+        {
+          id: "5D3838BC6F18E42C",
+          type: "checkmark",
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

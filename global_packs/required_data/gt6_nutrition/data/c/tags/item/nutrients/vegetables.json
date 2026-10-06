@@ -1,0 +1,461 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "bakeries:cooked_taro",
+      "required": false
+    },
+    {
+      "id": "croptopia:ajvar",
+      "required": false
+    },
+    {
+      "id": "croptopia:ajvar_toast",
+      "required": false
+    },
+    {
+      "id": "croptopia:artichoke",
+      "required": false
+    },
+    {
+      "id": "croptopia:artichoke_dip",
+      "required": false
+    },
+    {
+      "id": "croptopia:artichoke_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:asparagus",
+      "required": false
+    },
+    {
+      "id": "croptopia:asparagus_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:baked_beans",
+      "required": false
+    },
+    {
+      "id": "croptopia:baked_yam",
+      "required": false
+    },
+    {
+      "id": "croptopia:beef_and_broccoli",
+      "required": false
+    },
+    {
+      "id": "croptopia:beef_stir_fry",
+      "required": false
+    },
+    {
+      "id": "croptopia:beetroot_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:bellpepper",
+      "required": false
+    },
+    {
+      "id": "croptopia:bellpepper_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:bibimbap",
+      "required": false
+    },
+    {
+      "id": "croptopia:blackbean",
+      "required": false
+    },
+    {
+      "id": "croptopia:blackbean_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:blt",
+      "required": false
+    },
+    {
+      "id": "croptopia:borscht",
+      "required": false
+    },
+    {
+      "id": "croptopia:broccoli",
+      "required": false
+    },
+    {
+      "id": "croptopia:broccoli_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:buttered_green_beans",
+      "required": false
+    },
+    {
+      "id": "croptopia:cabbage",
+      "required": false
+    },
+    {
+      "id": "croptopia:cabbage_roll",
+      "required": false
+    },
+    {
+      "id": "croptopia:cabbage_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:cauliflower",
+      "required": false
+    },
+    {
+      "id": "croptopia:cauliflower_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:celery",
+      "required": false
+    },
+    {
+      "id": "croptopia:celery_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:cheesy_asparagus",
+      "required": false
+    },
+    {
+      "id": "croptopia:chile_pepper",
+      "required": false
+    },
+    {
+      "id": "croptopia:chile_pepper_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:chili_relleno",
+      "required": false
+    },
+    {
+      "id": "croptopia:cucumber",
+      "required": false
+    },
+    {
+      "id": "croptopia:cucumber_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:cucumber_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:eggplant",
+      "required": false
+    },
+    {
+      "id": "croptopia:eggplant_parmesan",
+      "required": false
+    },
+    {
+      "id": "croptopia:eggplant_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:garlic",
+      "required": false
+    },
+    {
+      "id": "croptopia:garlic_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:ginger",
+      "required": false
+    },
+    {
+      "id": "croptopia:ginger_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:greenbean",
+      "required": false
+    },
+    {
+      "id": "croptopia:greenbean_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:greenonion",
+      "required": false
+    },
+    {
+      "id": "croptopia:greenonion_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:grilled_eggplant",
+      "required": false
+    },
+    {
+      "id": "croptopia:kimchi",
+      "required": false
+    },
+    {
+      "id": "croptopia:leek",
+      "required": false
+    },
+    {
+      "id": "croptopia:leek_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:leek_soup",
+      "required": false
+    },
+    {
+      "id": "croptopia:lettuce",
+      "required": false
+    },
+    {
+      "id": "croptopia:lettuce_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:onion",
+      "required": false
+    },
+    {
+      "id": "croptopia:onion_rings",
+      "required": false
+    },
+    {
+      "id": "croptopia:onion_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:peanut",
+      "required": false
+    },
+    {
+      "id": "croptopia:peanut_butter",
+      "required": false
+    },
+    {
+      "id": "croptopia:peanut_butter_with_celery",
+      "required": false
+    },
+    {
+      "id": "croptopia:peanut_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:pepper",
+      "required": false
+    },
+    {
+      "id": "croptopia:pepper_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:pepperoni",
+      "required": false
+    },
+    {
+      "id": "croptopia:pickled_anchovy",
+      "required": false
+    },
+    {
+      "id": "croptopia:pickled_beets",
+      "required": false
+    },
+    {
+      "id": "croptopia:pickled_cucumber",
+      "required": false
+    },
+    {
+      "id": "croptopia:pickled_eggs",
+      "required": false
+    },
+    {
+      "id": "croptopia:pickled_garlic",
+      "required": false
+    },
+    {
+      "id": "croptopia:pickled_ginger",
+      "required": false
+    },
+    {
+      "id": "croptopia:pickled_onion",
+      "required": false
+    },
+    {
+      "id": "croptopia:pickled_radish",
+      "required": false
+    },
+    {
+      "id": "croptopia:pork_and_beans",
+      "required": false
+    },
+    {
+      "id": "croptopia:pumpkin_bars",
+      "required": false
+    },
+    {
+      "id": "croptopia:pumpkin_soup",
+      "required": false
+    },
+    {
+      "id": "croptopia:pumpkin_spice_latte",
+      "required": false
+    },
+    {
+      "id": "croptopia:radish",
+      "required": false
+    },
+    {
+      "id": "croptopia:radish_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:ratatouille",
+      "required": false
+    },
+    {
+      "id": "croptopia:refried_beans",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_asparagus",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_pumpkin_seeds",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_radishes",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_squash",
+      "required": false
+    },
+    {
+      "id": "croptopia:roasted_turnips",
+      "required": false
+    },
+    {
+      "id": "croptopia:rutabaga",
+      "required": false
+    },
+    {
+      "id": "croptopia:rutabaga_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:salsa",
+      "required": false
+    },
+    {
+      "id": "croptopia:sauerkraut",
+      "required": false
+    },
+    {
+      "id": "croptopia:sea_lettuce",
+      "required": false
+    },
+    {
+      "id": "croptopia:soybean",
+      "required": false
+    },
+    {
+      "id": "croptopia:soybean_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:spaghetti_squash",
+      "required": false
+    },
+    {
+      "id": "croptopia:spinach",
+      "required": false
+    },
+    {
+      "id": "croptopia:spinach_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:squash",
+      "required": false
+    },
+    {
+      "id": "croptopia:squash_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:stir_fry",
+      "required": false
+    },
+    {
+      "id": "croptopia:stuffed_artichoke",
+      "required": false
+    },
+    {
+      "id": "croptopia:tomato",
+      "required": false
+    },
+    {
+      "id": "croptopia:tomato_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:turnip",
+      "required": false
+    },
+    {
+      "id": "croptopia:turnip_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:yam",
+      "required": false
+    },
+    {
+      "id": "croptopia:yam_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:zucchini",
+      "required": false
+    },
+    {
+      "id": "croptopia:zucchini_seed",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_eggplant",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_radish",
+      "required": false
+    },
+    {
+      "id": "usefulfood:carrotsoup",
+      "required": false
+    },
+    {
+      "id": "usefulfood:pumpkinbread",
+      "required": false
+    },
+    {
+      "id": "usefulfood:pumpkinsoup",
+      "required": false
+    },
+    {
+      "id": "witchery:water_artichoke_seeds",
+      "required": false
+    }
+  ]
+}

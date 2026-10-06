@@ -1,0 +1,7 @@
+{
+  "gui.jade.configuration.desc2": "§f显示信息§r，介绍§f你正在看的东西§r。",
+  "config.jade.plugin_jade.loot_table": "战利品表",
+  "config.jade.plugin_jade.loot_table_desc": "需要 OP 权限。",
+  "jade.lootTable": "战利品表：%s",
+  "jade.lootTableSeed": "种子：%s"
+}

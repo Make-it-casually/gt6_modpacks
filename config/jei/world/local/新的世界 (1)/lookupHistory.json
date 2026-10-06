@@ -1,4 +1,15 @@
 [
   {"version":1},
+  {"ingredient":{"id":"railcraft:white_steel_tank_valve"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:turbine_disk"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:turbine_rotor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:turbine_blade"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:manual_rolling_machine"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:charge_terminal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:charge_motor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:powered_rolling_machine"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:high_pressure_steam_boiler_tank"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:low_pressure_steam_boiler_tank"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:force_track_emitter"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"gregtech:gt.meta.oreraw","components":"{\"gregapi:subtype\":8337}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

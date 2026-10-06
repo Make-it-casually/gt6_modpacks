@@ -4,7 +4,7 @@
 	# Range: 1.0 ~ 512.0
 	render_radius = 64.0
 	#Off-screen preview resolution scale while rotating or zooming
-	# Default: 0.5
+	# Default: 0.8
 	# Range: 0.1 ~ 1.0
 	interactive_render_scale = 0.5
 	#Delay before restoring full preview quality after zooming

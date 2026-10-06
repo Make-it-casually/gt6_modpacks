@@ -1,0 +1,8 @@
+{
+  "framework.gui.sync_config_failed": "（Framework）处理来自服务器的同步配置失败。详情请查看日志。",
+  "framework.gui.sync_entity_data_failed": "（Framework）接收到未知的同步实体数据键。详情请查看日志。",
+  "framework.validator.resource_location.hint": "任意有效的资源位置。\n格式：\"<namespace>:<path>\"",
+  "framework.validator.resource_location.hint_with_namespace": "有效的资源位置，但必须使用命名空间：%1$s。\n格式：\"%1$s:<path>\"",
+  "framework.validator.identifier.hint": "任意有效的标识符。\n格式：\"<namespace>:<path>\"",
+  "framework.validator.identifier.hint_with_namespace": "有效的标识符，但必须使用命名空间：%1$s。\n格式：\"%1$s:<path>\""
+}

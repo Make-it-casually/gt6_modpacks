@@ -1,0 +1,409 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aether_ii:blueberry",
+      "required": false
+    },
+    {
+      "id": "aether_ii:blueberry_moa_feed",
+      "required": false
+    },
+    {
+      "id": "aether_ii:enchanted_blueberry",
+      "required": false
+    },
+    {
+      "id": "aether_ii:enchanted_wyndberry",
+      "required": false
+    },
+    {
+      "id": "aether_ii:golden_wyndberry",
+      "required": false
+    },
+    {
+      "id": "aether_ii:wyndberry",
+      "required": false
+    },
+    {
+      "id": "croptopia:apple_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:apricot",
+      "required": false
+    },
+    {
+      "id": "croptopia:apricot_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:avocado",
+      "required": false
+    },
+    {
+      "id": "croptopia:avocado_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:avocado_toast",
+      "required": false
+    },
+    {
+      "id": "croptopia:banana",
+      "required": false
+    },
+    {
+      "id": "croptopia:banana_nut_bread",
+      "required": false
+    },
+    {
+      "id": "croptopia:banana_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:blackberry",
+      "required": false
+    },
+    {
+      "id": "croptopia:blackberry_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:blueberry",
+      "required": false
+    },
+    {
+      "id": "croptopia:blueberry_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:cherry",
+      "required": false
+    },
+    {
+      "id": "croptopia:cherry_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:coconut",
+      "required": false
+    },
+    {
+      "id": "croptopia:coconut_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:cranberry",
+      "required": false
+    },
+    {
+      "id": "croptopia:cranberry_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:currant",
+      "required": false
+    },
+    {
+      "id": "croptopia:currant_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:date",
+      "required": false
+    },
+    {
+      "id": "croptopia:date_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:dragonfruit",
+      "required": false
+    },
+    {
+      "id": "croptopia:dragonfruit_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:elderberry",
+      "required": false
+    },
+    {
+      "id": "croptopia:elderberry_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:fig",
+      "required": false
+    },
+    {
+      "id": "croptopia:fig_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:fruit_salad",
+      "required": false
+    },
+    {
+      "id": "croptopia:grape",
+      "required": false
+    },
+    {
+      "id": "croptopia:grape_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:grapefruit",
+      "required": false
+    },
+    {
+      "id": "croptopia:grapefruit_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:kiwi",
+      "required": false
+    },
+    {
+      "id": "croptopia:kiwi_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:lemon",
+      "required": false
+    },
+    {
+      "id": "croptopia:lemon_chicken",
+      "required": false
+    },
+    {
+      "id": "croptopia:lemon_coconut_bar",
+      "required": false
+    },
+    {
+      "id": "croptopia:lemon_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:lemonade",
+      "required": false
+    },
+    {
+      "id": "croptopia:lime",
+      "required": false
+    },
+    {
+      "id": "croptopia:lime_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:mango",
+      "required": false
+    },
+    {
+      "id": "croptopia:mango_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:nectarine",
+      "required": false
+    },
+    {
+      "id": "croptopia:nectarine_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:olive",
+      "required": false
+    },
+    {
+      "id": "croptopia:olive_oil",
+      "required": false
+    },
+    {
+      "id": "croptopia:olive_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:orange",
+      "required": false
+    },
+    {
+      "id": "croptopia:orange_chicken",
+      "required": false
+    },
+    {
+      "id": "croptopia:orange_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:peach",
+      "required": false
+    },
+    {
+      "id": "croptopia:peach_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:pear",
+      "required": false
+    },
+    {
+      "id": "croptopia:pear_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:persimmon",
+      "required": false
+    },
+    {
+      "id": "croptopia:persimmon_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:pineapple",
+      "required": false
+    },
+    {
+      "id": "croptopia:pineapple_chicken",
+      "required": false
+    },
+    {
+      "id": "croptopia:pineapple_pepperoni_pizza",
+      "required": false
+    },
+    {
+      "id": "croptopia:pineapple_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:plum",
+      "required": false
+    },
+    {
+      "id": "croptopia:plum_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:raspberry",
+      "required": false
+    },
+    {
+      "id": "croptopia:raspberry_seed",
+      "required": false
+    },
+    {
+      "id": "croptopia:starfruit",
+      "required": false
+    },
+    {
+      "id": "croptopia:starfruit_sapling",
+      "required": false
+    },
+    {
+      "id": "croptopia:strawberry",
+      "required": false
+    },
+    {
+      "id": "croptopia:strawberry_seed",
+      "required": false
+    },
+    {
+      "id": "rootsclassic:elderberry",
+      "required": false
+    },
+    {
+      "id": "rootsclassic:fruit_salad",
+      "required": false
+    },
+    {
+      "id": "the_wilds_get_wilder_forge:moon_berry",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_blackberry",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_blueberry",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_cranberry",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_crops_fig",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_dragonfruit",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_elderberry",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_grapefruit",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_raspberry",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_strawberry",
+      "required": false
+    },
+    {
+      "id": "theurgy:alchemical_sulfur_wolfberry",
+      "required": false
+    },
+    {
+      "id": "usefulfood:appleicecream",
+      "required": false
+    },
+    {
+      "id": "usefulfood:fruitsalad",
+      "required": false
+    },
+    {
+      "id": "usefulfood:magicfruitsalad",
+      "required": false
+    },
+    {
+      "id": "usefulfood:melonicecream",
+      "required": false
+    },
+    {
+      "id": "wilder_wilds:empty_berry_bush",
+      "required": false
+    },
+    {
+      "id": "wilder_wilds:empty_snowing_berry_bush",
+      "required": false
+    },
+    {
+      "id": "wilder_wilds:empty_tall_berry_bush",
+      "required": false
+    },
+    {
+      "id": "wilder_wilds:empty_tall_snowing_berry_bush",
+      "required": false
+    },
+    {
+      "id": "wilder_wilds:moon_berry",
+      "required": false
+    },
+    {
+      "id": "wilder_wilds:moonberry_ceiling_vine",
+      "required": false
+    },
+    {
+      "id": "wilds_wilder:moon_berry",
+      "required": false
+    }
+  ]
+}

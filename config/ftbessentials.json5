@@ -277,6 +277,13 @@
       // Default: true
       enabled: true,
       /*
+       * Global cooldown in seconds for all players trying to use the /rtp command
+       * This cooldown is enforced in addition to per-player command cooldowns
+       * defined in the "cooldown" setting. Set to 0 to disable cooldown.
+       * Default: 0 | Range: 0 ~ 2147483647
+       */
+      global_cooldown: 0,
+      /*
        * /rtp max distance from spawn point
        * Default: 25000 | Range: 0 ~ 30000000
        */

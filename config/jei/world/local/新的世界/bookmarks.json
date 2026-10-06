@@ -94,5 +94,6 @@
   {"ingredient":{"id":"witchery:cauldron"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"recipe":"rootsclassic:rooty_stew","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
   {"ingredient":{"id":"aether_ii:inert_arkenium"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"gregtech:gt.metatool.01","components":"{\"gregapi:subtype\":12,\"minecraft:custom_data\":{GT.ToolStats:{a:9180s,c:8219s,j:3200s},ench:[]}}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"gregtech:gt.metatool.01","components":"{\"gregapi:subtype\":12,\"minecraft:custom_data\":{GT.ToolStats:{a:9180s,c:8219s,j:3200s},ench:[]}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.multiitem.technological","components":"{\"gregapi:subtype\":30000}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

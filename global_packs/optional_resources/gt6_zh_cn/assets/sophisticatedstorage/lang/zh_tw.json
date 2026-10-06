@@ -1,0 +1,7 @@
+{
+  "gui.sophisticatedstorage.linked_storage.primary": "主链接存储",
+  "gui.sophisticatedstorage.linked_storage.secondary": "链接存储",
+  "gui.sophisticatedstorage.status.tier_upgrade_main_linked_storage_only": "只有主链接存储才能升级等级",
+  "gui.sophisticatedstorage.status.ender_linker.packed_storage": "已打包的存储无法链接",
+  "gui.sophisticatedstorage.status.packing_tape_linked_storage": "链接存储无法打包"
+}

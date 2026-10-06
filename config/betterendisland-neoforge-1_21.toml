@@ -1,10 +1,10 @@
 ["YUNG's Better End Island"]
+	# Whether the vanilla obsidian platform should spawn in the End instead of the revamped platform.
+	# Default: false
+	"Spawn Vanilla Obsidian Platform" = true
 	# Whether the Ender Dragon drops an egg every time it's defeated.
 	# Default: false
 	"Resummoned Dragon Drops Egg" = false
-	# Whether the vanilla obsidian platform should spawn in the End instead of the revamped platform.
-	# Default: false
-	"Spawn Vanilla Obsidian Platform" = false
 	# Whether vanilla End Gateways should spawn in the End instead of the revamped End Gateways.
 	# Default: false
 	"Spawn Vanilla End Gateways" = false
