@@ -23,7 +23,6 @@ function addSafely(map, spec) {
 ServerEvents.recipes(() => {
   const registrationKey = 'gt6PackRecipesRegisteredV1'
   if (global[registrationKey] === true) {
-    console.info('[NekoJS/GT6] 包内 GT6 配方已注册过，跳过重复注册。')
     return
   }
 

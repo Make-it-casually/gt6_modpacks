@@ -1,0 +1,237 @@
+[infernal_furnace]
+	#Setting this to true will make the lava of the infernal furnace turn into a blaze when it is broken.
+	lavaTurnIntoBlaze = true
+
+[spells]
+	#How many entities one cast may affect per tick, counting everything it spawned.
+	# Default: 48
+	# Range: 1 ~ 1024
+	maxEntitiesPerTick = 48
+	#How many blocks one cast may affect per tick, counting everything it spawned.
+	# Default: 96
+	# Range: 1 ~ 4096
+	maxBlocksPerTick = 96
+	#How many spell nodes one cast step may run before the rest is dropped.
+	# Default: 256
+	# Range: 16 ~ 4096
+	maxNodesPerRun = 256
+	#How many delayed spell continuations a level holds at once.
+	# Default: 256
+	# Range: 16 ~ 4096
+	maxDelayedPerLevel = 256
+
+	[labyrinth.generation]
+		#Multiplier on the maze size rolled from the labyrinth definition. The result is clamped to 9..41 cells and kept odd.
+		# Default: 1.0
+		# Range: 0.5 ~ 1.5
+		sizeScale = 1.0
+		#Multiplier on the number of extra corridor loops, which give alternative routes.
+		# Default: 1.0
+		# Range: 0.0 ~ 3.0
+		loopScale = 1.0
+		#Multiplier on wall decoration such as glowing crust, glyphs, traps and crab vents.
+		# Default: 1.0
+		# Range: 0.0 ~ 4.0
+		decorationDensity = 1.0
+		#Multiplier on the chance of each loot container marker in room templates.
+		# Default: 1.0
+		# Range: 0.0 ~ 4.0
+		lootScale = 1.0
+		#Room ids or #tags that are never placed, for example "thaumaturge:passage/webbed_straight" or "#thaumaturge:labyrinth/rare".
+		disabledRooms = []
+		#Marker type ids that are skipped when rooms are placed, for example "thaumaturge:aura".
+		disabledMarkers = []
+		#Labyrinth definition used when an obelisk site does not name one.
+		defaultDefinition = "thaumaturge:eldritch"
+
+	[labyrinth.lifecycle]
+		#Maximum number of mazes kept at once. Rituals are refused, and their eyes returned, while the limit is reached.
+		# Default: 128
+		# Range: 1 ~ 4096
+		maxActiveMazes = 128
+		#In-game days after which a conquered maze with nobody inside is dropped. -1 keeps them.
+		# Default: 3
+		# Range: -1 ~ 3650
+		retireConqueredAfterDays = 3
+		#In-game days without a visit after which an unconquered maze with nobody inside is dropped. -1 keeps them.
+		# Default: -1
+		# Range: -1 ~ 3650
+		retireAbandonedAfterDays = -1
+		#Maze chunks that were generated before their maze existed are rebuilt at this rate.
+		# Default: 1
+		# Range: 1 ~ 16
+		repairChunksPerTick = 1
+		#How often proximity markers such as guardian posts are checked.
+		# Default: 20
+		# Range: 5 ~ 200
+		triggerIntervalTicks = 20
+		#How often an occupied maze checks that its portals, lock and reliquaries are still in place, and puts back any that are missing.
+		# Default: 100
+		# Range: 20 ~ 1200
+		integrityIntervalTicks = 100
+		#Damage dealt each time a creature touches the exposed void of the Outer Lands.
+		# Default: 8.0
+		# Range: 0.0 ~ 100.0
+		voidContactDamage = 8.0
+
+	[labyrinth.entry]
+		#Vis drained from the aura over the course of the portal ritual.
+		# Default: 100.0
+		# Range: 0.0 ~ 1000.0
+		ritualVisCost = 100.0
+		#Length of the portal ritual channel.
+		# Default: 60
+		# Range: 1 ~ 1200
+		ritualChannelTicks = 60
+		#The ritual fizzles if the caster moves further than this from the altar.
+		# Default: 8.0
+		# Range: 1.0 ~ 32.0
+		ritualMaxDistance = 8.0
+		#Lets players take seated eyes back with an empty hand while sneaking.
+		allowEyeRemoval = true
+		#Seated eyes at which the site awakens and spawns guardians until the portal opens. 0 disables awakening.
+		# Default: 3
+		# Range: 0 ~ 4
+		awakenEyeThreshold = 3
+		#Makes the obelisk unbreakable while its portal leads to an unconquered maze.
+		sealSiteWhileLinked = true
+
+	[labyrinth.transit]
+		#Ticks a player stands in a portal before travelling, once the destination has loaded.
+		# Default: 40
+		# Range: 0 ~ 200
+		warmupTicks = 40
+		#Ticks before the same player can use an eldritch portal again.
+		# Default: 100
+		# Range: 0 ~ 1200
+		cooldownTicks = 100
+		#If the destination has not loaded after this many ticks, it is loaded on the server thread instead.
+		# Default: 200
+		# Range: 20 ~ 500
+		maxPreloadWaitTicks = 200
+		#Chunk radius loaded around a portal destination before travel.
+		# Default: 1
+		# Range: 0 ~ 3
+		preloadRadiusChunks = 1
+		#Radius searched for a safe surface around the altar when returning.
+		# Default: 16
+		# Range: 0 ~ 64
+		returnSearchRadius = 16
+		#Places a floor and clears headroom at the arrival point when no safe spot is found.
+		allowArrivalRepair = true
+		#Sends players who log in inside the Outer Lands but outside any known maze back to safety.
+		evacuateStrandedOnLogin = true
+
+	[labyrinth.encounter]
+		#Ticks the lock charges before the boss door opens.
+		# Default: 100
+		# Range: 20 ~ 1200
+		lockChargeTicks = 100
+		#Arena blocks placed per tick while the lock charges.
+		# Default: 512
+		# Range: 16 ~ 8192
+		manifestBlocksPerTick = 512
+		#Stops block breaking and placing in the boss hall while the encounter runs.
+		protectHall = true
+		#Blocks cannot be placed or broken within this distance of a living boss.
+		# Default: 24.0
+		# Range: 0.0 ~ 64.0
+		noBuildRadius = 24.0
+		#Bosses heal to full when no participant is alive in the hall for this long. -1 disables it.
+		# Default: 600
+		# Range: -1 ~ 72000
+		wipeResetTicks = 600
+		#A boss that vanished without dying is spawned again after this long.
+		# Default: 200
+		# Range: 20 ~ 72000
+		missingBossRespawnTicks = 200
+		#Who sees encounter titles: everyone in the maze, only players in the hall, or players within announceNearbyRange of it.
+		#Allowed Values: MAZE, HALL, NEARBY
+		announceScope = "MAZE"
+		#Range used when announceScope is NEARBY.
+		# Default: 32.0
+		# Range: 8.0 ~ 256.0
+		announceNearbyRange = 32.0
+		#Scales boss health and damage with the number of players in the hall.
+		scaleWithParticipants = true
+		#Disrupts hover and flight gear inside the Outer Lands.
+		disruptFlight = true
+		#How far encounter bosses may wander from the centre of their hall.
+		# Default: 24
+		# Range: 8 ~ 64
+		bossLeashRadius = 24
+		#Opens a rift back to the altar in the boss hall once the encounter is beaten.
+		openExitRift = true
+
+	[labyrinth.rewards]
+		#Ticks spent in the boss hall during the fight that make a player eligible for the boss reliquary.
+		# Default: 200
+		# Range: 0 ~ 72000
+		participationMinPresenceTicks = 200
+		#Fraction of total boss health dealt that makes a player eligible regardless of time spent in the hall.
+		# Default: 0.02
+		# Range: 0.0 ~ 1.0
+		participationMinDamageFraction = 0.02
+		#Who receives a primordial pearl from the boss reliquary.
+		#Allowed Values: EACH_ELIGIBLE, TOP_CONTRIBUTOR, NONE
+		pearlPolicy = "EACH_ELIGIBLE"
+		#The key reliquary stays sealed until the guardians watching it are defeated.
+		keyRoomRequiresWard = true
+		#The key reliquary gives a new bound tablet to a player who has lost theirs while the maze is still sealed.
+		reissueTablets = true
+		#Bound tablets crumble once their maze's lock has opened or the maze is gone.
+		crumbleSpentTablets = true
+
+	[labyrinth.wayfinding]
+		#Corridor glyphs drift particles toward the current objective.
+		glyphHints = true
+		#Minimum ticks between glyph hints for one player.
+		# Default: 60
+		# Range: 10 ~ 1200
+		glyphPulseCooldownTicks = 60
+		#A held runed tablet chimes faster as its lock gets closer.
+		tabletResonance = true
+		#Chime interval when standing at the lock.
+		# Default: 10
+		# Range: 5 ~ 200
+		tabletResonanceIntervalMin = 10
+		#Chime interval when far from the lock.
+		# Default: 60
+		# Range: 10 ~ 400
+		tabletResonanceIntervalMax = 60
+		#Distance at which a corridor glyph gives its hint.
+		# Default: 5.0
+		# Range: 2.0 ~ 16.0
+		glyphRange = 5.0
+		#Path length in maze cells at which the tablet reaches its slowest chime.
+		# Default: 24
+		# Range: 4 ~ 64
+		tabletResonanceRangeCells = 24
+
+	[labyrinth.guardians]
+		#Distance at which guardian posts spawn their guardians.
+		# Default: 20
+		# Range: 4 ~ 64
+		postActivationRadius = 20
+		#Overrides the labyrinth definition's champion chance for guardians. -1 uses the definition.
+		# Default: -1.0
+		# Range: -1.0 ~ 1.0
+		championChanceOverride = -1.0
+		#How far guardians spawned by a post may wander from it.
+		# Default: 12
+		# Range: 4 ~ 32
+		postGuardLeashRadius = 12
+
+	[labyrinth.hazards]
+		#Damage dealt by an eldritch rune trap when it fires.
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		trapDamage = 2.0
+		#Eldritch crabs a vent keeps alive around it before it stops spawning.
+		# Default: 5
+		# Range: 0 ~ 32
+		crabVentMaxCrabs = 5
+		#A crab vent only spawns while a player is within this distance.
+		# Default: 16
+		# Range: 4 ~ 64
+		crabVentActivationRange = 16

@@ -57,5 +57,4 @@ CommandEvents.register(event => {
   dispatcher.register(
     $LiteralArgumentBuilder.literal('nekojs').then(createHandCommand())
   )
-  console.info('[NekoJS] Registered /nekojs hand')
 })

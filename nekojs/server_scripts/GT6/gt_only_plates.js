@@ -171,7 +171,6 @@ ServerEvents.recipes(event => {
   }
   const summary = '[NekoJS/GTOnlyPlates] 板原料统一为格雷板：改动 ' + changed + '/' + TARGETS.length
     + ' 条；问题 ' + problems.length + ' 处。'
-  console.info(summary)
   if (problems.length > 0) {
     console.warn('[NekoJS/GTOnlyPlates] 未完成：' + problems.join(' | '))
   }

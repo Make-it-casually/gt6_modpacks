@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EIE",
+    "IPI",
+    "R L"
+  ],
+  "key": {
+    "E": "#c:ender_pearls",
+    "I": "#c:ingots/iron",
+    "L": "#c:gems/lapis",
+    "P": "sophisticatedbackpacks:advanced_pickup_upgrade",
+    "R": "#c:dusts/redstone"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:advanced_magnet_upgrade"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "GFG",
+    "RRR"
+  ],
+  "key": {
+    "D": "#c:gems/diamond",
+    "F": "sophisticatedbackpacks:refill_upgrade",
+    "G": "#c:ingots/gold",
+    "R": "#c:dusts/redstone"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:advanced_refill_upgrade"
+  }
+}

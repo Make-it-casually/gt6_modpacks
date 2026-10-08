@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "GMG",
+    "RRR"
+  ],
+  "key": {
+    "D": "#c:gems/diamond",
+    "G": "#c:ingots/gold",
+    "M": "sophisticatedbackpacks:magnet_upgrade",
+    "R": "#c:dusts/redstone"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:advanced_magnet_upgrade"
+  }
+}

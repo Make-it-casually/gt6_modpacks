@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SLS",
+    "SCS",
+    "LLL"
+  ],
+  "key": {
+    "C": "#c:chests/wooden",
+    "L": "#c:leathers",
+    "S": "#c:strings"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:backpack"
+  }
+}

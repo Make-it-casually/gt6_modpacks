@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CBC",
+    "CCC"
+  ],
+  "key": {
+    "B": "sophisticatedbackpacks:backpack",
+    "C": "#c:ingots/copper"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:copper_backpack"
+  }
+}

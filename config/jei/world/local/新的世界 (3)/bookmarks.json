@@ -1,0 +1,15 @@
+[
+  {"version":3},
+  {"ingredient":{"id":"thaumaturge:arcane_workbench"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"thaumaturge:plate_brass"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":20331}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":20251}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"thaumaturge:fabric"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"thaumaturge:node_stabilizer","recipeType":"thaumaturge:arcane_workbench","bookmarkType":"RECIPE"},
+  {"recipe":"railcraft:brass_ingot_crafted_with_ingots","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"thaumaturge:arcane_workbench/thaumometer","recipeType":"thaumaturge:arcane_workbench","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"minecraft:glowstone_dust"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"thaumaturge:crucible/nitor_yellow","recipeType":"thaumaturge:crucible","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"thaumaturge:primal_charm"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railcraft:brass_nugget"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

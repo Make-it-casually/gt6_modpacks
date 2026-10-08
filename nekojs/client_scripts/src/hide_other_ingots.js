@@ -21,13 +21,6 @@ const HIDDEN = [
   'enderio_evolution:stellar_alloy_ingot',
   'enderio_evolution:vivid_alloy_ingot',
   'extendedae:entro_ingot',
-  'extendedcrafting:black_iron_ingot',
-  'extendedcrafting:redstone_ingot',
-  'extendedcrafting:enhanced_redstone_ingot',
-  'extendedcrafting:ender_ingot',
-  'extendedcrafting:enhanced_ender_ingot',
-  'extendedcrafting:crystaltine_ingot',
-  'extendedcrafting:the_ultimate_ingot',
   'mmcr:modularium',
   'railcraft:brass_ingot',
   'railcraft:bronze_ingot',
@@ -69,5 +62,4 @@ RecipeViewerEvents.removeEntries('item', event => {
       }
     }
   }
-  console.info('[NekoJS/GT6] JEI 隐藏其他模组锭 ' + hidden + '/' + HIDDEN.length + ' 个' + (failed.length > 0 ? '；失败：' + failed.join(', ') : '') + '。')
 })

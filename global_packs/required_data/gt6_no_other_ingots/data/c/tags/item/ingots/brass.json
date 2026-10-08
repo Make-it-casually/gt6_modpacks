@@ -1,6 +1,7 @@
 {
   "values": [],
   "remove": [
-    "railcraft:brass_ingot"
+    "railcraft:brass_ingot",
+    "thaumaturge:ingot_brass"
   ]
 }

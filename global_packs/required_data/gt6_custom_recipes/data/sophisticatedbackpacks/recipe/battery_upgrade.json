@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GRG",
+    "RBR",
+    "GRG"
+  ],
+  "key": {
+    "B": "sophisticatedbackpacks:upgrade_base",
+    "G": "#c:ingots/gold",
+    "R": "#c:storage_blocks/redstone"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:battery_upgrade"
+  }
+}

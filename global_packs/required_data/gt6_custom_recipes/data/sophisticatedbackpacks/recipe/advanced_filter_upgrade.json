@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GPG",
+    "RRR"
+  ],
+  "key": {
+    "G": "#c:ingots/gold",
+    "P": "sophisticatedbackpacks:filter_upgrade",
+    "R": "#c:dusts/redstone"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:advanced_filter_upgrade"
+  }
+}

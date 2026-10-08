@@ -1,0 +1,18 @@
+# Default: 9
+# Range: 1 ~ 1024
+knowledgeCoreMaxRecipes = 9
+# Default: 150
+# Range: 0 ~ 1000000
+arcaneAssemblerMaxBufferVis = 150
+# Default: 1
+# Range: 0 ~ 16
+arcaneChargingCardRadiusChunks = 1
+# Default: 1.0
+# Range: 0.0 ~ 1000000.0
+arcaneAssemblerIdlePowerAE = 1.0
+# Default: 0.0
+# Range: 0.0 ~ 1000000.0
+visRelayInterfaceIdlePowerAE = 0.0
+# Default: 4.0
+# Range: 0.0 ~ 1000000.0
+visRelayInterfacePowerPerRequestAE = 4.0

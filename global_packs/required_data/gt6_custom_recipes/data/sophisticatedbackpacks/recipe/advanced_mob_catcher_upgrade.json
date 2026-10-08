@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "HDE",
+    "GBG",
+    "SSS"
+  ],
+  "key": {
+    "B": "sophisticatedbackpacks:mob_catcher_upgrade",
+    "D": "#c:gems/diamond",
+    "E": "minecraft:ender_eye",
+    "G": "#c:ingots/gold",
+    "H": "minecraft:wither_skeleton_skull",
+    "S": "minecraft:soul_sand"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:advanced_mob_catcher_upgrade"
+  }
+}

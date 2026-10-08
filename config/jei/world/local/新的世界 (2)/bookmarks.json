@@ -7,5 +7,17 @@
   {"ingredient":{"id":"aether_ii:aether_portal_frame"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"recipe":["cyclic:solidifier/spark",{"ingredients":["#minecraft:candles","#c:dusts/glowstone","#c:torches"],"mix":{"ingredient":"#c:wax","amount":10},"result":{"id":"cyclic:spark","count":4},"energy":{"rfpertick":100,"ticks":120},"type":"cyclic:solidifier"}],"recipeType":"cyclic:solidifier","bookmarkType":"RECIPE"},
   {"ingredient":{"id":"cyclic:solidifier"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"aether_ii:swet_sugar"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"aether_ii:swet_sugar"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.metatool.01","components":"{\"gregapi:subtype\":12,\"minecraft:custom_data\":{GT.ToolStats:{a:8630s,c:8630s,j:51200},ench:[]},\"minecraft:enchantments\":{\"minecraft:sharpness\":2}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.stone.granite.black"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.metatool.01","components":"{\"gregapi:subtype\":12,\"minecraft:custom_data\":{GT.ToolStats:{a:5520s,c:5520s,j:51200},ench:[]}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:blast_furnace"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extendedcrafting:black_iron_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extendedcrafting:redstone_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extendedcrafting:enhanced_redstone_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extendedcrafting:ender_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extendedcrafting:enhanced_ender_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extendedcrafting:crystaltine_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extendedcrafting:the_ultimate_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"nekojs:ae2/craftingcoprocessingunit16core","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"}
 ]

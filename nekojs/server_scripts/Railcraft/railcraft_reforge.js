@@ -917,7 +917,6 @@ ServerEvents.recipes(event => {
   }
   const summary = '[NekoJS/RailcraftReforge] RailCraft 配方材料改为格雷：改动 ' + recipesChanged
     + '/' + TARGETS.length + ' 条；问题 ' + problems.length + ' 处。'
-  console.info(summary)
   if (problems.length > 0) {
     console.warn('[NekoJS/RailcraftReforge] 未完成：' + problems.join(' | '))
   }

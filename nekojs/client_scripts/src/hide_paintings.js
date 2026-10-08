@@ -18,5 +18,4 @@ RecipeViewerEvents.removeEntries('item', event => {
       }
     }
   }
-  console.info('[NekoJS/GT6] JEI 隐藏末地绘画 ' + hidden + '/' + HIDDEN.length + ' 个' + (failed.length > 0 ? '；失败：' + failed.join(', ') : '') + '。')
 })

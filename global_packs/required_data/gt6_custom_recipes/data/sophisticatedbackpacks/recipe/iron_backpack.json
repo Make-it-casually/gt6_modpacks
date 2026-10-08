@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "IBI",
+    "III"
+  ],
+  "key": {
+    "B": "sophisticatedbackpacks:backpack",
+    "I": "#c:ingots/iron"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:iron_backpack"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DHD",
+    "RSH",
+    "GHG"
+  ],
+  "key": {
+    "D": "#c:gems/diamond",
+    "G": "#c:ingots/gold",
+    "H": "minecraft:hopper",
+    "R": "#c:dusts/redstone",
+    "S": "sophisticatedbackpacks:smoking_upgrade"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:auto_smoking_upgrade"
+  }
+}

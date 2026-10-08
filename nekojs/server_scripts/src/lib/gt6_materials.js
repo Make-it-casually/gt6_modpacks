@@ -57,6 +57,33 @@ export const GT_FORM = Object.freeze({
   ingot: 'gregtech:gt.meta.ingot',
   gem: 'gregtech:gt.meta.gem',
   casingSmall: 'gregtech:gt.meta.casingsmall',
+  oreRaw: 'gregtech:gt.meta.oreraw',
+  nugget: 'gregtech:gt.meta.nugget',
+  dustTiny: 'gregtech:gt.meta.dusttiny',
+  dustImpure: 'gregtech:gt.meta.dustimpure',
+  dustPure: 'gregtech:gt.meta.dustpure',
+  gemFlawless: 'gregtech:gt.meta.gemflawless',
+  gemChipped: 'gregtech:gt.meta.gemchipped',
+  gemPolished: 'gregtech:gt.meta.gempolished',
+  gemRaw: 'gregtech:gt.meta.gemraw',
+  gemUncut: 'gregtech:gt.meta.gemuncut',
+  crushed: 'gregtech:gt.meta.crushed',
+  crushedPurified: 'gregtech:gt.meta.crushedpurified',
+  crushedCentrifuged: 'gregtech:gt.meta.crushedcentrifuged',
+  crushedTiny: 'gregtech:gt.meta.crushedtiny',
+  rockGt: 'gregtech:gt.meta.rockgt',
+  plateTriple: 'gregtech:gt.meta.platetriple',
+  plateTiny: 'gregtech:gt.meta.platetiny',
+  billet: 'gregtech:gt.meta.billet',
+  spring: 'gregtech:gt.meta.spring',
+  springSmall: 'gregtech:gt.meta.springsmall',
+  chain: 'gregtech:gt.meta.chain',
+  rotor: 'gregtech:gt.meta.rotor',
+  ingotHot: 'gregtech:gt.meta.ingothot',
+  storageSolid: 'gregtech:gt.meta.storage.solid',
+  storageGem: 'gregtech:gt.meta.storage.gem',
+  storageDust: 'gregtech:gt.meta.storage.dust',
+  toolHeadBuzzSaw: 'gregtech:gt.meta.toolheadbuzzsaw',
   wire: 'gregtech:gt.meta.wirefine'
 })
 
@@ -196,7 +223,6 @@ function reportRuntimeIds() {
     return
   }
   const changed = keys.filter(key => RUNTIME_IDS[key] !== GT_MATERIAL[key])
-  console.info(`[NekoJS/GT6] 材料号运行时解析 ${keys.length}/${Object.keys(GT_MATERIAL).length} 个` + (changed.length > 0 ? `；与静态表不同 ${changed.length} 个：` + changed.map(key => `${key} ${GT_MATERIAL[key]}→${RUNTIME_IDS[key]}`).join('，') : '；与静态表完全一致'))
 }
 
 const USE_STACK_INGREDIENTS = false
@@ -265,7 +291,6 @@ function reportStackUse(formKey, materialName, json) {
   }
   stackReported = true
   const components = json.components === undefined ? '无组件' : JSON.stringify(json.components)
-  console.info(`[NekoJS/GT6] 原料由 OreDictManager 生成：${formKey}/${materialName} → ${String(json.id)}  组件=${components}` + (stackFormMisses.length > 0 ? `；这些形态 $OP 里没有（走静态表）：${stackFormMisses.join(', ')}` : ''))
 }
 
 function ingredientFromStack(formKey, materialKey, count) {

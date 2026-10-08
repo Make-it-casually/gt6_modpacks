@@ -1,5 +1,14 @@
 {
-  "values": [],
+  "replace": false,
+  "values": [
+    {
+      "id": "gregtech:gt.meta.plate",
+      "components": {
+        "gregapi:subtype": 500
+      },
+      "required": false
+    }
+  ],
   "remove": [
     "railcraft:tin_plate"
   ]

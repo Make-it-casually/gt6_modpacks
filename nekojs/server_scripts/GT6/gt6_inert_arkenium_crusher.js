@@ -17,7 +17,6 @@ ServerEvents.recipes(() => {
       duration: 200,
       eut: 16
     })
-    console.info('[NekoJS/GT6] 粉碎机配方已注册：aether_ii:holystone → gt6m:inert_arkenium_dust ×1（概率 100/10000 = 1% / 200 tick / 16 EU）')
   } catch (error) {
     console.warn('[NekoJS/GT6] 粉碎机配方注册失败：' + String(error))
   }

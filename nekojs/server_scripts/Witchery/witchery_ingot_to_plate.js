@@ -480,7 +480,6 @@ ServerEvents.recipes(event => {
   }
   const summary = '[NekoJS/WitcheryIngotToPlate] Witchery 配方：金属锭 → 板，改动 ' + changed + '/' + TARGETS.length
     + ' 条；问题 ' + problems.length + ' 处。'
-  console.info(summary)
   if (problems.length > 0) {
     console.warn('[NekoJS/WitcheryIngotToPlate] 未完成：' + problems.join(' | '))
   }

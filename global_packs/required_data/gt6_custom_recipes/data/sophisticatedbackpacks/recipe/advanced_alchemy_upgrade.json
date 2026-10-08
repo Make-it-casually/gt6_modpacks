@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "GAG",
+    "RRR"
+  ],
+  "key": {
+    "A": "sophisticatedbackpacks:alchemy_upgrade",
+    "D": "#c:gems/diamond",
+    "G": "#c:ingots/gold",
+    "R": "#c:dusts/redstone"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:advanced_alchemy_upgrade"
+  }
+}

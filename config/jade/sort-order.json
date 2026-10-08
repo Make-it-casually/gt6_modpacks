@@ -113,6 +113,9 @@
   "railcraft:track_component": null,
   "stellaris:flag_owner": null,
   "stellaris:proxy_as_main": null,
+  "thaumaturge:block_details": null,
+  "thaumaturge:golem": null,
+  "thaumaturge:node": null,
   "theurgy:mercury_flux": null,
   "thirstwastaken2:water_purity": null
 }

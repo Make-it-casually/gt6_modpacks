@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DID",
+    "GPG",
+    "RRR"
+  ],
+  "key": {
+    "D": "#c:gems/diamond",
+    "G": "#c:ingots/gold",
+    "I": "minecraft:dispenser",
+    "P": "sophisticatedbackpacks:pump_upgrade",
+    "R": "#c:dusts/redstone"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:advanced_pump_upgrade"
+  }
+}

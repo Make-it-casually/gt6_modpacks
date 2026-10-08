@@ -69,6 +69,9 @@
   "minecraft:pig": {
     "diet": "HERBIVORE"
   },
+  "minecraft:polar_bear": {
+    "diet": "CARNIVORE"
+  },
   "minecraft:sheep": {
     "diet": "HERBIVORE"
   },

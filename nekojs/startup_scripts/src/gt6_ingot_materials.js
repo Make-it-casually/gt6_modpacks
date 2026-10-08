@@ -181,7 +181,6 @@ ServerEvents.started(() => {
   if (lastReport == null || lastReport.failed.length === 0) {
     return
   }
-  console.info(`${TAG} 服务端启动后补注册：重试 ${lastReport.failed.length} 条启动时没拿到的锭`)
   try {
     registerAll()
   } catch (retryError) {
@@ -215,5 +214,4 @@ CommandEvents.register(event => {
   event.getDispatcher().register(
     $LiteralArgumentBuilder.literal('nekojs').then(command)
   )
-  console.info(`${TAG} 已注册 /nekojs gt6ingots`)
 })

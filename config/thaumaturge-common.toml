@@ -1,0 +1,148 @@
+[world]
+	#Setting this to true disables Warp, Taint spread and similar mechanics. You wuss.
+	wussMode = false
+	#The % chance of taint fibres spreading on a block tick. Setting this to 0 will effectively stop taint fibre spread.
+	# Default: 100.0
+	# Range: 0.0 ~ 100.0
+	taintSpreadRate = 100.0
+	#The range at which taint can spread from a taint seed. This value is only a base and will be modified by flux levels.
+	# Default: 32
+	# Range: 1 ~ 128
+	taintSpreadArea = 32
+	#How quickly the Tainted Lands biome spreads outward, Thaumcraft 4 style. Fibrous taint tries to take over a neighbouring column with a chance of 1 in (taintFrontierRate * 5) per random tick, and only with at least two adjacent taint blocks. Higher is slower. 0 stops the biome from spreading while existing taint stays active.
+	# Default: 200
+	# Range: 0 ~ 100000
+	taintFrontierRate = 200
+	#Whether deep, exposed Flux Goo can fester into Fibrous Taint and Tainted Lands, as in Thaumcraft 4.
+	taintFromFlux = true
+	#Whether physical Flux Goo and Flux Gas keep a capped minimum of Aura Flux in their chunk. Turning this off leaves the goo and gas and their direct effects in place.
+	physicalFluxAuraFloor = true
+	#Whether a large build-up of physical Flux Goo and Flux Gas in one area can start a Tainted Lands outbreak on its own, apart from single deep goo blocks festering. Has no effect while taintFromFlux is off.
+	physicalFluxTaintOutbreaks = true
+	#Whether high Aura Flux can trigger the Thaumcraft 5 style flux pressure events alongside Flux Rifts. Turning this off does not disable Flux Rifts.
+	fluxPressureEvents = true
+	#Raw vis an energized node drains from the chunk aura to restore one aspect point. Normal nodes refine at 3.0 per point; higher values make energized nodes more wasteful. 0 makes their refill free.
+	# Default: 6.0
+	# Range: 0.0 ~ 100.0
+	energizedNodeVisPerPoint = 6.0
+	#Average number of chunks per wild lesser crimson portal. Higher is rarer. 0 disables wild portals entirely.
+	# Default: 500
+	# Range: 0 ~ 1000000
+	crimsonPortalRarity = 500
+	#Maximum length in blocks of a hungry node's random block-eating ray.
+	#Default: 16. Range: 1 to 64. A larger area gives each attempt more possible targets; it does not guarantee a distant block will be selected.
+	#Dropped items are pulled from this range plus half a block. The entity pulling range is not affected.
+	# Default: 16
+	# Range: 1 ~ 64
+	hungryNodeBlockEatRange = 16
+	#Whether a hungry node's block-eating range scales with its current modifier (quality).
+	#False: hungryNodeBlockEatRange is always used. True: the minimum/maximum settings below override hungryNodeBlockEatRange.
+	#Fading uses the minimum, pale and normal are evenly spaced between them, and bright uses the maximum.
+	scaleHungryNodeBlockEatRangeByModifier = false
+	#Block-eating range of a fading hungry node when modifier scaling is enabled.
+	#Default: 16. Range: 1 to 64. This setting does nothing while scaleHungryNodeBlockEatRangeByModifier is false.
+	# Default: 16
+	# Range: 1 ~ 64
+	hungryNodeMinimumBlockEatRange = 16
+	#Block-eating range of a bright hungry node when modifier scaling is enabled.
+	#Default: 32. Range: 1 to 64. This overrides hungryNodeBlockEatRange while scaling is enabled.
+	#If set below the minimum range, the minimum is used for every modifier.
+	# Default: 32
+	# Range: 1 ~ 64
+	hungryNodeMaximumBlockEatRange = 32
+	#Maximum block hardness a hungry node can eat. The comparison is strictly below this value, not equal to it.
+	#Examples: dirt 0.5, stone 1.5, most logs 2, ores/deepslate 3, iron and diamond blocks 5, obsidian 50.
+	#Default: 5.0, so it can eat ordinary terrain and ores, but not hardness-5 metal/gem blocks or obsidian.
+	#Range: 0 to 100. 0 disables block destruction. Unbreakable blocks such as bedrock have negative hardness and are never eaten.
+	# Default: 5.0
+	# Range: 0.0 ~ 100.0
+	hungryNodeBlockEatHardness = 5.0
+	#Ticks between hungry-node block-eating attempts. Minecraft normally runs at 20 ticks per second; lower values are faster.
+	#Examples: 1 = 20 attempts/second, 20 = once/second, 50 = once/2.5 seconds, 1200 = once/minute.
+	#Default: 50. Range: 1 to 12000. An attempt may miss or hit an ineligible block, so this is not a guaranteed destruction interval.
+	# Default: 50
+	# Range: 1 ~ 12000
+	hungryNodeBlockEatInterval = 50
+	#Ticks between each point of runic shielding recharge.
+	# Default: 40
+	# Range: 1 ~ 12000
+	shieldRecharge = 40
+	#Ticks runic shielding waits before recharging after being fully depleted.
+	# Default: 80
+	# Range: 0 ~ 12000
+	shieldWait = 80
+	#Vis drained from the local aura per point of runic shielding recharged. 0 makes recharging free.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	shieldCost = 1.0
+	#Setting this to false will disable spawning champion mobs.
+	allowChampionMobs = true
+	#Setting this to true will make you get the recipe book for salis mundus without having to sleep first.
+	noSleep = false
+
+	[world.nodes]
+		#Chance from 0 to 100 for a wild node placement attempt in each Overworld chunk. The default is about one attempt per 36 chunks. 0 disables this source.
+		# Default: 2.7777777777777777
+		# Range: 0.0 ~ 100.0
+		wildSpawnChance = 2.7777777777777777
+		#Optional additional chance from 0 to 100 in each Magical Forest chunk. This stacks with wildSpawnChance. Disabled by default to match TC4.
+		# Default: 0.0
+		# Range: 0.0 ~ 100.0
+		magicalBonusSpawnChance = 0.0
+		#Additional chance from 0 to 100 in each Eerie biome chunk. This stacks with wildSpawnChance and its node is always dark. 12.5 means one attempt per 8 chunks.
+		# Default: 12.5
+		# Range: 0.0 ~ 100.0
+		eerieBonusSpawnChance = 12.5
+		#Chance from 0 to 100 for a node placement attempt in each Nether chunk. The default is about one attempt per 36 chunks. 0 disables Nether nodes.
+		# Default: 2.7777777777777777
+		# Range: 0.0 ~ 100.0
+		netherSpawnChance = 2.7777777777777777
+
+		#The following values are percentages among ordinary random nodes. At the default special_rarity of 18, their total is 6.6667%, leaving 93.3333% normal nodes. Datapack special_rarity scales these percentages by 18 / special_rarity. If the scaled total exceeds 100, it is normalized and no normal nodes spawn. Silverwood and eerie nodes keep their forced types.
+		[world.nodes.types]
+			#Dark-node percentage, from 0 to 100. Default: 1.6667%.
+			# Default: 1.6666666666666667
+			# Range: 0.0 ~ 100.0
+			darkChance = 1.6666666666666667
+			#Unstable-node percentage, from 0 to 100. Default: 1.6667%.
+			# Default: 1.6666666666666667
+			# Range: 0.0 ~ 100.0
+			unstableChance = 1.6666666666666667
+			#Pure-node percentage, from 0 to 100. Default: 1.6667%.
+			# Default: 1.6666666666666667
+			# Range: 0.0 ~ 100.0
+			pureChance = 1.6666666666666667
+			#Tainted-node percentage, from 0 to 100. Default: 1.1111%, Thaumcraft 5's effective natural tainted-node chance. Wuss mode turns this type off.
+			# Default: 1.1111111111111112
+			# Range: 0.0 ~ 100.0
+			taintedChance = 1.1111111111111112
+			#Hungry-node percentage, from 0 to 100. Default: 0.5556%, approximately one hungry node per 180 ordinary nodes.
+			# Default: 0.5555555555555556
+			# Range: 0.0 ~ 100.0
+			hungryChance = 0.5555555555555556
+
+[sounds]
+	#Set to true to disable anxiety triggers like the heartbeat sound and warp-event jump scares.
+	nostress = false
+
+[golems]
+	#Will golems display emote particles if they receive orders or encounter problems.
+	showGolemEmotes = true
+
+[fluxScrubber]
+	#Physical Flux quanta (Goo or Gas) the Flux Scrubber must clean before it rolls for Praecantatio. Lower values recover Praecantatio faster.
+	# Default: 4
+	# Range: 1 ~ 64
+	chargesPerRoll = 4
+	#Chance (0 to 1) that a roll succeeds and yields Praecantatio. 1.0 always succeeds.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	essentiaChance = 0.25
+	#Praecantatio produced per successful roll. Raise essentiaCapacity so large rolls can build up before a tube drains them.
+	# Default: 1
+	# Range: 0 ~ 64
+	essentiaPerRoll = 1
+	#Most Praecantatio the Flux Scrubber holds before an attached tube or jar has to drain it.
+	# Default: 4
+	# Range: 1 ~ 1024
+	essentiaCapacity = 4

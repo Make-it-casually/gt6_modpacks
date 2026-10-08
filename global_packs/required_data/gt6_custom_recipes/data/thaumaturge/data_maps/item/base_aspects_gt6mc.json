@@ -1,0 +1,836 @@
+{
+  "values": {
+    "#c:plates/copper": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:permutatio",
+        "amount": 2
+      }
+    ],
+    "#c:plates/iron": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 7
+      }
+    ],
+    "#c:plates/gold": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:desiderium",
+        "amount": 5
+      }
+    ],
+    "#c:plates/brass": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:permutatio",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:fabrico",
+        "amount": 1
+      }
+    ],
+    "#c:plates/bronze": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:permutatio",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:instrumentum",
+        "amount": 1
+      }
+    ],
+    "#c:plates/steel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 7
+      },
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 2
+      }
+    ],
+    "#c:plates/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:mortuus",
+        "amount": 2
+      }
+    ],
+    "#c:plates/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:lux",
+        "amount": 3
+      }
+    ],
+    "#c:plates/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      }
+    ],
+    "#c:plates/zinc": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      }
+    ],
+    "#c:plates/nickel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      }
+    ],
+    "#c:plates/invar": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:praemunio",
+        "amount": 2
+      }
+    ],
+    "#c:plates/thaumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:praecantatio",
+        "amount": 5
+      }
+    ],
+    "#c:plates/void_metal": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:alienis",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:tenebrae",
+        "amount": 3
+      }
+    ],
+    "#c:plates/electrum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:potentia",
+        "amount": 3
+      }
+    ],
+    "#c:plates/constantan": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:potentia",
+        "amount": 2
+      }
+    ],
+    "#c:plates/signalum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:ignis",
+        "amount": 3
+      }
+    ],
+    "#c:plates/lumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:lux",
+        "amount": 5
+      }
+    ],
+    "#c:plates/enderium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:alienis",
+        "amount": 3
+      }
+    ],
+    "#c:plates/osmium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      }
+    ],
+    "#c:plates/aluminium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:volatus",
+        "amount": 1
+      }
+    ],
+    "#c:plates/titanium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 7
+      },
+      {
+        "aspect": "thaumaturge:praemunio",
+        "amount": 3
+      }
+    ],
+    "#c:plates/tungsten": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 7
+      },
+      {
+        "aspect": "thaumaturge:ignis",
+        "amount": 3
+      }
+    ],
+    "#c:plates/tungstensteel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 8
+      },
+      {
+        "aspect": "thaumaturge:praemunio",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 2
+      }
+    ],
+    "#c:plates/stainlesssteel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 7
+      },
+      {
+        "aspect": "thaumaturge:praemunio",
+        "amount": 3
+      }
+    ],
+    "#c:gears/iron": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 7
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:motus",
+        "amount": 3
+      }
+    ],
+    "#c:gears/gold": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:desiderium",
+        "amount": 3
+      }
+    ],
+    "#c:gears/copper": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:motus",
+        "amount": 2
+      }
+    ],
+    "#c:gears/brass": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:fabrico",
+        "amount": 3
+      }
+    ],
+    "#c:gears/bronze": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:instrumentum",
+        "amount": 3
+      }
+    ],
+    "#c:gears/steel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 7
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 3
+      }
+    ],
+    "#c:gears/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      }
+    ],
+    "#c:gears/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:mortuus",
+        "amount": 3
+      }
+    ],
+    "#c:gears/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:lux",
+        "amount": 3
+      }
+    ],
+    "#c:gears/thaumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:machina",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:praecantatio",
+        "amount": 5
+      }
+    ],
+    "#c:logs/overworld": [
+      {
+        "aspect": "thaumaturge:herba",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 5
+      }
+    ],
+    "#c:logs/nether": [
+      {
+        "aspect": "thaumaturge:herba",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:ignis",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:tenebrae",
+        "amount": 2
+      }
+    ],
+    "#c:logs": [
+      {
+        "aspect": "thaumaturge:herba",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 5
+      }
+    ],
+    "#c:planks": [
+      {
+        "aspect": "thaumaturge:herba",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:fabrico",
+        "amount": 1
+      }
+    ],
+    "#c:planks/wooden": [
+      {
+        "aspect": "thaumaturge:herba",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/brass": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:permutatio",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:fabrico",
+        "amount": 2
+      }
+    ],
+    "#c:ingots/bronze": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:permutatio",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:instrumentum",
+        "amount": 2
+      }
+    ],
+    "#c:ingots/steel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 15
+      },
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:mortuus",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:lux",
+        "amount": 5
+      }
+    ],
+    "#c:ingots/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      }
+    ],
+    "#c:ingots/zinc": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      }
+    ],
+    "#c:ingots/nickel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      }
+    ],
+    "#c:ingots/invar": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:praemunio",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/thaumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:praecantatio",
+        "amount": 10
+      }
+    ],
+    "#c:ingots/void_metal": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:alienis",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:tenebrae",
+        "amount": 5
+      }
+    ],
+    "#c:ingots/electrum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:potentia",
+        "amount": 5
+      }
+    ],
+    "#c:ingots/constantan": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:potentia",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/signalum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:ignis",
+        "amount": 5
+      }
+    ],
+    "#c:ingots/lumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:lux",
+        "amount": 10
+      }
+    ],
+    "#c:ingots/enderium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:alienis",
+        "amount": 5
+      }
+    ],
+    "#c:ingots/osmium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      }
+    ],
+    "#c:ingots/aluminium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 10
+      },
+      {
+        "aspect": "thaumaturge:volatus",
+        "amount": 2
+      }
+    ],
+    "#c:ingots/titanium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 15
+      },
+      {
+        "aspect": "thaumaturge:praemunio",
+        "amount": 5
+      }
+    ],
+    "#c:ingots/tungsten": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 15
+      },
+      {
+        "aspect": "thaumaturge:ignis",
+        "amount": 5
+      }
+    ],
+    "#c:ingots/tungstensteel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 20
+      },
+      {
+        "aspect": "thaumaturge:praemunio",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/stainlesssteel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 15
+      },
+      {
+        "aspect": "thaumaturge:praemunio",
+        "amount": 5
+      }
+    ],
+    "#c:nuggets/brass": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:permutatio",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/thaumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:praecantatio",
+        "amount": 2
+      }
+    ],
+    "#c:nuggets/void_metal": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:alienis",
+        "amount": 2
+      }
+    ],
+    "#c:nuggets/quartz": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/copper": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:permutatio",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/iron": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 7
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/gold": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:desiderium",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/brass": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:fabrico",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/steel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 7
+      },
+      {
+        "aspect": "thaumaturge:ordo",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:mortuus",
+        "amount": 2
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:lux",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/thaumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:praecantatio",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/void_metal": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:alienis",
+        "amount": 5
+      },
+      {
+        "aspect": "thaumaturge:perditio",
+        "amount": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "gregtech:gt.meta.plate",
+      "components": {
+        "gregapi:subtype": 8681
+      },
+      "required": false
+    }
+  ],
+  "remove": [
+    "thaumaturge:plate_void"
+  ]
+}

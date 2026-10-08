@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "GVG",
+    "RRR"
+  ],
+  "key": {
+    "D": "#c:gems/diamond",
+    "G": "#c:ingots/gold",
+    "R": "#c:dusts/redstone",
+    "V": "sophisticatedbackpacks:tool_swapper_upgrade"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:advanced_tool_swapper_upgrade"
+  }
+}

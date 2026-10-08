@@ -1,10 +1,7 @@
-{
+﻿{
   "pack": {
-    "description": "GT6 自定义物品贴图与汉化 · GregTech 6 Modern Community Pack (gt6mc)",
+    "description": "GT6 自定义物品贴图 · GregTech 6 Modern Community Pack (gt6mc)",
     "min_format": 84,
-    "max_format": [
-      84,
-      0
-    ]
+    "max_format": [84, 0]
   }
 }

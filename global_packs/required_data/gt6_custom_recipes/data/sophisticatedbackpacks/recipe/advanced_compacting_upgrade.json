@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D ",
+    "GCG",
+    "RRR"
+  ],
+  "key": {
+    "C": "sophisticatedbackpacks:compacting_upgrade",
+    "D": "#c:gems/diamond",
+    "G": "#c:ingots/gold",
+    "R": "#c:dusts/redstone"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:advanced_compacting_upgrade"
+  }
+}

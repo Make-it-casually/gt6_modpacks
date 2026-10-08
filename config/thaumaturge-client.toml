@@ -1,0 +1,14 @@
+#Donators only: shows your Thaumaturge cape. While it is on, every player on the server sees it.
+donator_cape = true
+
+[tooltip]
+	#When true, item aspects render on tooltips by default and Shift hides them. When false, Shift reveals them.
+	show_aspects_by_default = false
+
+[graphics]
+	#When true, aspect tag amount and bonus counters render at full font size. When false, they render half-scale to fit narrow GUIs (TC default).
+	large_tag_text = false
+
+[hud]
+	#When true, the caster vis dial renders at the bottom left of the screen instead of the top left.
+	dial_bottom = false

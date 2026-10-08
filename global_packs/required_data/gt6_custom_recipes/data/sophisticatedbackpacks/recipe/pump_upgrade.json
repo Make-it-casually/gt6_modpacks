@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GUG",
+    "PBS",
+    "GUG"
+  ],
+  "key": {
+    "B": "sophisticatedbackpacks:upgrade_base",
+    "G": "#c:glass_blocks",
+    "P": "minecraft:piston",
+    "S": "minecraft:sticky_piston",
+    "U": "minecraft:bucket"
+  },
+  "result": {
+    "id": "sophisticatedbackpacks:pump_upgrade"
+  }
+}
