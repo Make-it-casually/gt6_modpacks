@@ -222,7 +222,8 @@
       "flag_owner": true
     },
     "thirstwastaken2": {
-      "water_purity": true
+      "water_purity": true,
+      "copper_distiller": true
     },
     "mmcr": {
       "ae2_input_interface_grid": true,

@@ -4,8 +4,8 @@
   "preventSprintingWhenThirsty": true,
   "canDrinkByHand": true,
   "dehydrationHaltsHealthRegen": true,
-  "quenchedHealthRegen": 0.5,
-  "quenchedHealMinFood": 10,
+  "foodHealMinThirstPercent": 50,
+  "quenchedHealMinFoodPercent": 50,
   "coldSweatClimate": true,
   "sereneSeasonsClimate": true,
   "seasonDrainSpring": 1.0,
@@ -14,7 +14,12 @@
   "seasonDrainWinter": 0.9,
   "appleskinQuenchedOverlay": "DIAMOND",
   "appleskinTooltipDroplets": true,
-  "defaultPurity": 2,
+  "defaultQuality": 2,
+  "plainWaterValue": [
+    6,
+    4
+  ],
+  "plainWaterDrinkTicks": 32,
   "quenchedPercent": [
     20,
     50,
@@ -25,15 +30,22 @@
   "seaWaterNauseaSeconds": 8,
   "seaWaterParchedSeconds": 30,
   "enableRainCollection": true,
-  "rainwaterPurity": 2,
-  "dripstonePurity": 3,
+  "rainwaterQuality": 2,
+  "dripstoneQuality": 3,
   "enableBoilingInHand": true,
+  "enableFurnaceBoiling": true,
+  "waterskinCapacity": 4,
   "copperCanteenCapacity": 4,
   "ironFlaskCapacity": 6,
+  "terracottaWaterBowlStackSize": 3,
   "copperCanteenBoilSeconds": 3,
   "ironFlaskBoilSeconds": 4,
   "copperHangingPotBoilSeconds": 4,
   "ironHangingPotBoilSeconds": 6,
+  "copperHangingPotCapacity": 3,
+  "ironHangingPotCapacity": 6,
+  "distillerServingSeconds": 8,
+  "distillerTankServings": 9,
   "sicknessEffects": {
     "peaceful": {
       "dirty": [
@@ -263,22 +275,6 @@
     "minecraft:honey_bottle": [
       4,
       6
-    ],
-    "thirstwastaken2:terracotta_water_bowl": [
-      4,
-      5
-    ],
-    "thirstwastaken2:waterskin": [
-      4,
-      5
-    ],
-    "thirstwastaken2:copper_canteen": [
-      4,
-      5
-    ],
-    "thirstwastaken2:iron_flask": [
-      4,
-      5
     ],
     "farmersdelight:apple_cider": [
       8,
@@ -1023,6 +1019,254 @@
     "croptopia:rum": [
       2,
       2
+    ],
+    "minersdelight:milk_cup": [
+      4,
+      0
+    ],
+    "miners_delight:milk_cup": [
+      4,
+      0
+    ],
+    "kaleidoscope_flora:when_the_wind_rises": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:lullaby": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:first_bloom": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:fire_waltz": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:the_unnoticed": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:crimson_heartbeat": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:autumn_serenade": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:absolution": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:rosy_stride": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:loves_me_not": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:prussian_leap": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:may_kiss": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:fleurs_du_mal": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:breath_of_ancients": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:the_sunward": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:spring_waltz": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:tender_thorns": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:coronation": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:voracious_urn": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:echo_of_the_end": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:vernal_awakening": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:the_gaze": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:as_you_wish": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:springtime_stroll": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:fleeting_bloom": [
+      6,
+      4
+    ],
+    "kaleidoscope_flora:hanami_tale": [
+      6,
+      4
+    ],
+    "extradelight:lemonade": [
+      6,
+      4
+    ],
+    "extradelight:limeade": [
+      6,
+      4
+    ],
+    "extradelight:orangeade": [
+      6,
+      4
+    ],
+    "extradelight:punch": [
+      6,
+      4
+    ],
+    "extradelight:glow_berry_juice": [
+      6,
+      4
+    ],
+    "extradelight:sweet_berry_juice": [
+      6,
+      4
+    ],
+    "extradelight:tomato_juice": [
+      6,
+      4
+    ],
+    "extradelight:cactus_juice": [
+      6,
+      4
+    ],
+    "extradelight:orange_juice": [
+      6,
+      4
+    ],
+    "extradelight:grapefruit_juice": [
+      6,
+      4
+    ],
+    "extradelight:lemon_juice": [
+      4,
+      2
+    ],
+    "extradelight:lime_juice": [
+      4,
+      2
+    ],
+    "extradelight:milkshake": [
+      6,
+      4
+    ],
+    "extradelight:chocolate_milkshake": [
+      6,
+      4
+    ],
+    "extradelight:glow_berry_milkshake": [
+      6,
+      4
+    ],
+    "extradelight:sweet_berry_milkshake": [
+      6,
+      4
+    ],
+    "extradelight:pumpkin_milkshake": [
+      6,
+      4
+    ],
+    "extradelight:honey_milkshake": [
+      6,
+      4
+    ],
+    "extradelight:apple_milkshake": [
+      6,
+      4
+    ],
+    "extradelight:cookie_dough_milkshake": [
+      6,
+      4
+    ],
+    "extradelight:mint_chip_milkshake": [
+      6,
+      4
+    ],
+    "extradelight:nut_butter_milkshake": [
+      6,
+      4
+    ],
+    "extradelight:gourmet_hot_chocolate": [
+      6,
+      4
+    ],
+    "extradelight:chocolate_milk": [
+      6,
+      4
+    ],
+    "extradelight:eggnog": [
+      6,
+      4
+    ],
+    "extradelight:horchata": [
+      6,
+      4
+    ],
+    "extradelight:xocolati": [
+      6,
+      4
+    ],
+    "extradelight:ginger_beer": [
+      6,
+      4
+    ],
+    "extradelight:soy_milk": [
+      4,
+      0
+    ],
+    "extradelight:tea": [
+      6,
+      4
+    ],
+    "extradelight:coffee": [
+      6,
+      4
+    ],
+    "extradelight:dalgona_coffee": [
+      6,
+      4
+    ],
+    "kaleidoscope_chinesefood:dianhong_tea": [
+      6,
+      4
+    ],
+    "kaleidoscope_chinesefood:hk_milk_tea": [
+      6,
+      4
     ]
   },
   "foods": {
@@ -1917,6 +2161,386 @@
     "croptopia:celery": [
       1,
       2
+    ],
+    "minersdelight:cave_soup": [
+      6,
+      4
+    ],
+    "minersdelight:bat_soup": [
+      6,
+      4
+    ],
+    "minersdelight:insect_stew": [
+      6,
+      4
+    ],
+    "minersdelight:beef_stew_cup": [
+      3,
+      2
+    ],
+    "minersdelight:chicken_soup_cup": [
+      3,
+      2
+    ],
+    "minersdelight:fish_stew_cup": [
+      3,
+      2
+    ],
+    "minersdelight:baked_cod_stew_cup": [
+      3,
+      2
+    ],
+    "minersdelight:noodle_soup_cup": [
+      3,
+      2
+    ],
+    "minersdelight:pumpkin_soup_cup": [
+      3,
+      2
+    ],
+    "minersdelight:vegetable_soup_cup": [
+      3,
+      2
+    ],
+    "minersdelight:onion_soup_cup": [
+      3,
+      2
+    ],
+    "minersdelight:mushroom_stew_cup": [
+      3,
+      2
+    ],
+    "minersdelight:rabbit_stew_cup": [
+      3,
+      2
+    ],
+    "minersdelight:cave_soup_cup": [
+      3,
+      2
+    ],
+    "minersdelight:bat_soup_cup": [
+      3,
+      2
+    ],
+    "minersdelight:insect_stew_cup": [
+      3,
+      2
+    ],
+    "minersdelight:bone_broth_cup": [
+      3,
+      2
+    ],
+    "minersdelight:beetroot_soup_cup": [
+      3,
+      2
+    ],
+    "miners_delight:cave_soup": [
+      6,
+      4
+    ],
+    "miners_delight:bat_soup": [
+      6,
+      4
+    ],
+    "miners_delight:insect_stew": [
+      6,
+      4
+    ],
+    "miners_delight:beef_stew_cup": [
+      3,
+      2
+    ],
+    "miners_delight:chicken_soup_cup": [
+      3,
+      2
+    ],
+    "miners_delight:fish_stew_cup": [
+      3,
+      2
+    ],
+    "miners_delight:baked_cod_stew_cup": [
+      3,
+      2
+    ],
+    "miners_delight:noodle_soup_cup": [
+      3,
+      2
+    ],
+    "miners_delight:pumpkin_soup_cup": [
+      3,
+      2
+    ],
+    "miners_delight:vegetable_soup_cup": [
+      3,
+      2
+    ],
+    "miners_delight:onion_soup_cup": [
+      3,
+      2
+    ],
+    "miners_delight:mushroom_stew_cup": [
+      3,
+      2
+    ],
+    "miners_delight:rabbit_stew_cup": [
+      3,
+      2
+    ],
+    "miners_delight:cave_soup_cup": [
+      3,
+      2
+    ],
+    "miners_delight:bat_soup_cup": [
+      3,
+      2
+    ],
+    "miners_delight:insect_stew_cup": [
+      3,
+      2
+    ],
+    "miners_delight:bone_broth_cup": [
+      3,
+      2
+    ],
+    "miners_delight:beetroot_soup_cup": [
+      3,
+      2
+    ],
+    "extradelight:borscht": [
+      6,
+      4
+    ],
+    "extradelight:cactus_soup": [
+      6,
+      4
+    ],
+    "extradelight:carrot_soup": [
+      6,
+      4
+    ],
+    "extradelight:corn_chowder": [
+      6,
+      4
+    ],
+    "extradelight:fish_soup": [
+      6,
+      4
+    ],
+    "extradelight:hazelnut_soup": [
+      6,
+      4
+    ],
+    "extradelight:miso_soup": [
+      6,
+      4
+    ],
+    "extradelight:mulligatawny_soup": [
+      6,
+      4
+    ],
+    "extradelight:onion_soup": [
+      6,
+      4
+    ],
+    "extradelight:oxtail_soup": [
+      6,
+      4
+    ],
+    "extradelight:potato_soup": [
+      6,
+      4
+    ],
+    "extradelight:sauerkraut_soup": [
+      6,
+      4
+    ],
+    "extradelight:tomato_soup": [
+      6,
+      4
+    ],
+    "extradelight:gazpacho": [
+      6,
+      4
+    ],
+    "extradelight:congee": [
+      6,
+      4
+    ],
+    "extradelight:chicken_stew": [
+      6,
+      4
+    ],
+    "extradelight:lamb_stew": [
+      6,
+      4
+    ],
+    "extradelight:pork_stew": [
+      6,
+      4
+    ],
+    "extradelight:melon_gazpacho": [
+      6,
+      4
+    ],
+    "extradelight:curry": [
+      2,
+      0
+    ],
+    "extradelight:chili_con_carne": [
+      2,
+      0
+    ],
+    "extradelight:white_chili": [
+      2,
+      0
+    ],
+    "extradelight:apple_popsicle": [
+      2,
+      0
+    ],
+    "extradelight:glow_berry_popsicle": [
+      2,
+      0
+    ],
+    "extradelight:sweet_berry_popsicle": [
+      2,
+      0
+    ],
+    "extradelight:honey_popsicle": [
+      2,
+      0
+    ],
+    "extradelight:caramel_popsicle": [
+      2,
+      0
+    ],
+    "extradelight:cinnamon_popsicle": [
+      2,
+      0
+    ],
+    "extradelight:fudge_popsicle": [
+      2,
+      0
+    ],
+    "extradelight:ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:apple_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:chocolate_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:cookie_dough_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:glow_berry_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:honey_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:mint_chip_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:nut_butter_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:pumpkin_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:sweet_berry_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:stuffed_apple_ice_cream": [
+      1,
+      0
+    ],
+    "extradelight:ice_cream_sundae": [
+      1,
+      0
+    ],
+    "extradelight:affogato": [
+      1,
+      0
+    ],
+    "extradelight:apple_custard": [
+      1,
+      0
+    ],
+    "extradelight:caramel_custard": [
+      1,
+      0
+    ],
+    "extradelight:chocolate_custard": [
+      1,
+      0
+    ],
+    "extradelight:honey_custard": [
+      1,
+      0
+    ],
+    "extradelight:nut_butter_custard": [
+      1,
+      0
+    ],
+    "extradelight:pumpkin_custard": [
+      1,
+      0
+    ],
+    "extradelight:sweet_berry_custard": [
+      1,
+      0
+    ],
+    "kaleidoscope_chinesefood:douzhi": [
+      6,
+      4
+    ],
+    "kaleidoscope_chinesefood:seaweed_egg_drop_soup": [
+      6,
+      4
+    ],
+    "kaleidoscope_chinesefood:tomato_egg_drop_soup": [
+      6,
+      4
+    ],
+    "kaleidoscope_chinesefood:century_egg_congee": [
+      6,
+      4
+    ],
+    "kaleidoscope_chinesefood:pumpkin_porridge": [
+      6,
+      4
+    ],
+    "kaleidoscope_chinesefood:yangrou_paomo": [
+      6,
+      4
+    ],
+    "kaleidoscope_chinesefood:maocai": [
+      6,
+      4
+    ],
+    "kaleidoscope_chinesefood:wonton_noodles": [
+      3,
+      2
+    ],
+    "kaleidoscope_chinesefood:sauerkraut_beef_noodles": [
+      3,
+      2
+    ],
+    "kaleidoscope_chinesefood:sichuan_wonton": [
+      3,
+      2
     ]
   },
   "enableBowls": true,
@@ -1924,5 +2548,7 @@
   "enableCopperCanteen": true,
   "enableIronFlask": true,
   "enableCopperHangingPot": true,
-  "enableIronHangingPot": true
+  "enableIronHangingPot": true,
+  "enableCopperDistiller": true,
+  "distillerSaltItem": ""
 }

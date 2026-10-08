@@ -1,0 +1,16 @@
+#Maximum size of power graph in blocks
+# Default: 10000
+# Range: > 1
+max_power_graph_size = 10000
+#Maximum size (in nodes) of signal graphs (used by redstone wires, bundled cables, etc),
+#where a node is defined by level, pos, face, channel color (e.g. overworld + [0,0,0] + north + orange).
+#Single-channel blocks will consume one node per face.
+#Multi-channel blocks such as bundled cables may use one node for each channel needed.
+# Default: 1024
+# Range: > 1
+max_signal_graph_size = 1024
+#Maximum size (in nodes) of mechanical graphs (the spinny ones)
+#Where a node is defined by level, pos, face (e.g. overworld + [0,0,0] + north
+# Default: 1024
+# Range: > 1
+max_mechanical_graph_size = 1024

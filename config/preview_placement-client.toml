@@ -1,0 +1,6 @@
+#Render preview of items specified in preview_placement/placement_preview asset folder before placing them
+showPlacementPreview = true
+#Opacity of the render preview for models using the preview_placement:placement_preview model loader. Higher value = less transparent, lower = more transparent
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+previewPlacementOpacity = 0.5

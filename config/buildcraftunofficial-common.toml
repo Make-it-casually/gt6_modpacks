@@ -1,0 +1,183 @@
+[general]
+	#How BuildCraft machines handle and display power. Minecraft Joules is BuildCraft's own energy format.
+	#MJ_ONLY (default): machines show and accept only MJ. FE/RF requires the special conversion engine to use, and the dynamo to generate.
+	#MJ_AUTOCONVERT_RF: machines will accept FE/RF automatically, with MJ as the default power unit still.
+	#DISPLAY_RF: same auto-conversion as MJ_AUTOCONVERT_RF, but machines show RF/FE as the default power unit.
+	#Allowed Values: MJ_ONLY, MJ_AUTOCONVERT_RF, DISPLAY_RF
+	powerMode = "MJ_ONLY"
+	#Conversion ratio for MJ <-> RF, in MJ per RF (default 0.1 -> 10 RF = 1 MJ).
+	#Used whenever auto-conversion is enabled (MJ_AUTOCONVERT_RF / DISPLAY_RF), and
+	#also drives the FE/RF figures shown under DISPLAY_RF.
+	# Default: 0.1
+	# Range: 1.0E-4 ~ 0.2
+	mjRfConversionAmount = 0.1
+	#If true, engines violently explode when overheated. If false (default),
+	#they sit in the OVERHEAT stage producing no power until cooled (passively
+	#or via coolant on combustion engines) or cleared by hitting them with a wrench.
+	canEnginesExplode = false
+	#If true (default), any item tagged 'c:tools/wrench' can rotate and configure BuildCraft blocks.
+	#When false, only a BuildCraft wrench can be used.
+	allowForeignWrenches = true
+	#If true, mining machines (Quarry, Mining Well, Builder/Filler clear-mode) ignore third-party protection mods and break player-protected blocks. Default false respects BreakBlockEvent cancellation from mods like FTB Chunks or GriefPrevention. Does not affect Pumps.
+	minePlayerProtected = false
+	#If true, pumps will consume fluid source blocks from infinite pools instead of just simulating the pumping action. Has a negative impact on performance when true, enable for mods that disable infinite-water regeneration.
+	pumpsConsumeWater = false
+	#Maximum distance in blocks a marker volume can connect
+	# Default: 64
+	# Range: 1 ~ 256
+	markerMaxDistance = 64
+	#Maximum distance in blocks a pump can suck liquids
+	# Default: 64
+	# Range: 1 ~ 512
+	pumpMaxDistance = 64
+	#How often, in ticks, should the network be updated?
+	# Default: 10
+	# Range: 1 ~ 100
+	networkUpdateRate = 10
+	#Multiplier for the speed of mining machines
+	# Default: 1.0
+	# Range: 1.0 ~ 200.0
+	miningMultiplier = 1.0
+	#How deep can mining machines dig?
+	# Default: 512
+	# Range: 1 ~ 2048
+	miningMaxDepth = 512
+	#If true, oil source blocks slow down entities standing or moving through them
+	oilIsSticky = false
+	#Whether or not Searing fluids emit visual steam
+	#particles when placed in the world. Cosmetic only.
+	searingFluidSteam = true
+	#How a Laser searches for nearby tables (e.g. the Assembly Table) to send power to.
+	#LOS Cone requires laser receivers to be within a 6 block cone shaped volume in front of the laser with nothing blocking them. (Default 8.0.x Behavior)
+	#Box allows lasers to reach anywhere within 5 blocks from the front or sides of the laser. (Legacy 7.1.x Behavior)
+	#Allowed Values: LOS_CONE, BOX
+	laserTargetingBehavior = "LOS_CONE"
+
+	[general.pipes]
+		#Set true to disable BuildCraft's RF (Forge Energy) pipes: placed RF pipes go inert and they can no longer be crafted. Intended for packs that use another mod (AE2, Thermal, Mekanism, ...) for energy transport. The MJ Dynamo and RF Engine, which convert between MJ and FE, stay craftable so BuildCraft still interoperates with that energy system.
+		disableRfPipe = false
+		#MJ cost per item extracted by a wooden pipe. Default: 1 MJ (= 1,000,000 µMJ).
+		# Default: 1000000
+		# Range: 0 ~ 9223372036854775807
+		mjPerItem = 1000000
+		#MJ cost per millibucket extracted by a wooden fluid pipe. Default: 1000 µMJ per mB.
+		# Default: 1000
+		# Range: 0 ~ 9223372036854775807
+		mjPerMillibucket = 1000
+		#Base multiplier for kinesis pipe transfer rates (MJ). Default: 4.
+		# Default: 4
+		# Range: > 1
+		basePowerRate = 4
+		#Base multiplier for RF pipe transfer rates (RF/t). Default: 40.
+		# Default: 40
+		# Range: 10 ~ 4000
+		baseRfRate = 40
+		#Base multiplier for fluid pipe transfer rates (mB/t). Default: 10.
+		# Default: 10
+		# Range: 1 ~ 40
+		baseFlowRate = 10
+
+		[general.builders.quarry]
+			#The minimum height that all quarry frames must be.
+			#A value of 1 will look strange when it drills the uppermost layer.
+			# Default: 4
+			# Range: 1 ~ 256
+			quarryFrameMinHeight = 4
+			#The maximum number of tasks that the quarry will do per tick.
+			#(Where a task is either breaking a block, or moving the frame)
+			# Default: 4
+			# Range: 1 ~ 20
+			quarryMaxTasksPerTick = 4
+			#1 divided by this value is added to the power cost for each additional task done per tick.
+			#A value of 0 disables this behaviour.
+			# Default: 2
+			# Range: 0 ~ 100
+			quarryTaskPowerDivisor = 2
+			#The maximum number of blocks that a quarry is allowed to move, per second.
+			#A value of 0 means no limit.
+			# Default: 0.0
+			# Range: 0.0 ~ 5120.0
+			quarryMaxFrameMoveSpeed = 0.0
+			#The maximum number of blocks that the quarry is allowed to mine each second.
+			#A value of 0 means no limit, and a value of 0.5 will mine up to half a block per second.
+			# Default: 0.0
+			# Range: 0.0 ~ 1000.0
+			quarryMaxBlockMineRate = 0.0
+
+[worldgen]
+	#Set true to allow world generation for BuildCraft
+	worldGen = true
+
+	[worldgen.oil]
+		#Set true to enable oil generation
+		enableOilGeneration = true
+		#Multiplier for oil well generation rate
+		# Default: 1.0
+		# Range: 0.0 ~ 100.0
+		oilWellGenerationRate = 1.0
+		#Biome IDs that should always receive a 30x oil bonus (small/medium/large rolls all multiplied).
+		#Originally targeted BuildCraft's own oil_desert/oil_ocean biomes (which no longer exist);
+		#can now be used to force vanilla or modded biomes to gush oil. Empty by default.
+		forceExcessiveOilBiomes = []
+		richSurfaceDepositBiomes = ["minecraft:deep_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:deep_cold_ocean", "minecraft:deep_frozen_ocean", "minecraft:desert", "minecraft:badlands", "minecraft:wooded_badlands", "minecraft:eroded_badlands"]
+		surfaceDepositBiomes = ["minecraft:ocean", "minecraft:warm_ocean", "minecraft:lukewarm_ocean", "minecraft:cold_ocean", "minecraft:frozen_ocean"]
+		standardSurfaceDepositBiomes = ["minecraft:jungle", "minecraft:sparse_jungle", "minecraft:bamboo_jungle", "minecraft:ice_spikes", "minecraft:snowy_beach", "minecraft:frozen_river"]
+		mountainousSurfaceDepositBiomes = ["minecraft:windswept_hills", "minecraft:windswept_gravelly_hills", "minecraft:windswept_forest", "minecraft:jagged_peaks", "minecraft:frozen_peaks", "minecraft:stony_peaks", "minecraft:snowy_slopes", "minecraft:meadow", "minecraft:grove", "minecraft:cherry_grove"]
+		#Biome IDs that participate in the include/exclude check below. See biomeListMode.
+		#Vanilla rivers are excluded by default — they're thin transit biomes where an oil
+		#deposit would just look like a polluted creek, and the spout's column of source
+		#blocks tends to surface awkwardly across the narrow river bed. (Frozen rivers are
+		#left in, classified as standard tier — they're functionally the same shape but
+		#their iced-over surface gives them a more isolated, frontier-like feel.)
+		excludedBiomes = ["minecraft:the_void", "minecraft:river"]
+		#BLACKLIST: oil never generates in biomes from the excludedBiomes list.
+		#WHITELIST: oil only generates in biomes from the excludedBiomes list.
+		#Allowed Values: BLACKLIST, WHITELIST
+		biomeListMode = "BLACKLIST"
+		#Dimension IDs that participate in the include/exclude check below. See dimensionListMode.
+		excludedDimensions = ["minecraft:the_nether", "minecraft:the_end"]
+		#BLACKLIST: oil never generates in dimensions from the excludedDimensions list.
+		#WHITELIST: oil only generates in dimensions from the excludedDimensions list.
+		#Allowed Values: BLACKLIST, WHITELIST
+		dimensionListMode = "BLACKLIST"
+
+		[worldgen.oil.spouts]
+			#Set true to enable oil spouts generating
+			enableOilSpouts = true
+			#Minimum height (in blocks above ground) for finite-deposit oil spouts.
+			#Finite spouts are the surface signature of non-rich-tier formations — a small
+			#1x1 bump that lets oil overflow naturally. Kept shorter than the rich-tier 3x3
+			#tower so the two formations are easy to tell apart at a glance.
+			# Default: 7
+			# Range: -64 ~ 320
+			finiteSpoutMinHeight = 7
+			#Maximum height (in blocks above ground) for finite-deposit oil spouts.
+			# Default: 10
+			# Range: -64 ~ 320
+			finiteSpoutMaxHeight = 10
+			#Minimum height (in blocks above ground) for rich-tier infinite-spring spouts.
+			#These are the tall 3x3 towers that mark a rich-tier LARGE formation (deep ocean,
+			#desert, mesa by default) with its bedrock-level oil spring. Heights here apply
+			#ONLY to that case; finite deposits use the finiteSpout range above.
+			# Default: 13
+			# Range: -64 ~ 320
+			largeSpoutMinHeight = 13
+			#Maximum height (in blocks above ground) for rich-tier infinite-spring spouts.
+			# Default: 20
+			# Range: -64 ~ 320
+			largeSpoutMaxHeight = 20
+
+		[worldgen.oil.spawnProbability]
+			#Per-chunk probability (0..1) of rolling a medium oil deposit in non-rich-land biomes.
+			#Default 0.001 = 0.1%. Scaled by the tier bonus (1.25x for light ocean, 1.0x for
+			#standard, 0.5x for the unlisted-biome default, 0.1x for mountainous). Rich-land
+			#biomes (desert/mesa) use a dedicated rate structure in OilGenerator and ignore
+			#this value.
+			# Default: 0.001
+			# Range: 0.0 ~ 1.0
+			mediumOilGenProb = 0.001
+			#Per-chunk probability (0..1) of rolling a large oil deposit in non-rich-land biomes.
+			#Default 0.0004 = 0.04%. Same scaling and rich-land carve-out as mediumOilGenProb.
+			# Default: 4.0E-4
+			# Range: 0.0 ~ 1.0
+			largeOilGenProb = 4.0E-4

@@ -22,3 +22,11 @@ enableVillageWallTerrainConforming = false
 #Blacklisted blocks will also not consume the item when used on them.
 #Example: "minecraft:oak_sapling"
 mutandisBlacklist = []
+#Dimension ids where vampires never burn in sunlight.
+#Example: "twilightforest:twilight_forest"
+vampireSunSafeDimensions = ["twilightforest:twilight_forest"]
+#Whether vampires are kept at half a heart instead of dying from most damage sources.
+#Drowning and freezing always deal no damage to vampires.
+#Fire, sunlight, the void and wooden weapons can always kill them.
+#When disabled, all other damage sources can kill vampires.
+enableVampireImmortality = true
