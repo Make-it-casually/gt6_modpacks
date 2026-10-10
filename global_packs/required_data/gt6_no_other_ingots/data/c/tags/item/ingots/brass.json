@@ -1,5 +1,14 @@
 {
-  "values": [],
+  "replace": false,
+  "values": [
+    {
+      "id": "gregtech:gt.meta.ingot",
+      "components": {
+        "gregapi:subtype": 8620
+      },
+      "required": false
+    }
+  ],
   "remove": [
     "railcraft:brass_ingot",
     "thaumaturge:ingot_brass"

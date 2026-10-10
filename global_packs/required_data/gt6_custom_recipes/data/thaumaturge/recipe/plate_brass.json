@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": "thaumaturge:ingot_brass"
+  },
+  "pattern": [
+    "NNN"
+  ],
+  "result": {
+    "count": 3,
+    "id": "thaumaturge:plate_brass"
+  }
+}

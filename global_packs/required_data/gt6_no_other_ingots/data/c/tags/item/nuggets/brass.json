@@ -1,7 +1,16 @@
 {
   "replace": false,
-  "values": [],
+  "values": [
+    {
+      "id": "gregtech:gt.meta.nugget",
+      "components": {
+        "gregapi:subtype": 8620
+      },
+      "required": false
+    }
+  ],
   "remove": [
-    "thaumaturge:nugget_brass"
+    "thaumaturge:nugget_brass",
+    "railcraft:brass_nugget"
   ]
 }

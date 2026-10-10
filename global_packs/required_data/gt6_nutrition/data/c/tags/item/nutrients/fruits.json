@@ -362,46 +362,6 @@
       "required": false
     },
     {
-      "id": "usefulfood:appleicecream",
-      "required": false
-    },
-    {
-      "id": "usefulfood:fruitsalad",
-      "required": false
-    },
-    {
-      "id": "usefulfood:magicfruitsalad",
-      "required": false
-    },
-    {
-      "id": "usefulfood:melonicecream",
-      "required": false
-    },
-    {
-      "id": "wilder_wilds:empty_berry_bush",
-      "required": false
-    },
-    {
-      "id": "wilder_wilds:empty_snowing_berry_bush",
-      "required": false
-    },
-    {
-      "id": "wilder_wilds:empty_tall_berry_bush",
-      "required": false
-    },
-    {
-      "id": "wilder_wilds:empty_tall_snowing_berry_bush",
-      "required": false
-    },
-    {
-      "id": "wilder_wilds:moon_berry",
-      "required": false
-    },
-    {
-      "id": "wilder_wilds:moonberry_ceiling_vine",
-      "required": false
-    },
-    {
       "id": "wilds_wilder:moon_berry",
       "required": false
     }

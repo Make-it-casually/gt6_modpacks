@@ -1,9 +1,0 @@
-{
-  "seed": "minecraft:diamond",
-  "category": "material",
-  "results": [
-    "minecraft:diamond"
-  ],
-  "stage": 7,
-  "need_block": "minecraft:deepslate"
-}

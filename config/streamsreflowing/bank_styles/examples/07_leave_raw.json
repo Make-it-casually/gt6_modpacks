@@ -1,9 +1,0 @@
-{
-  "_about": [
-    "LEAVE A BIOME'S STREAMS RAW.",
-    "enabled: false still wins the biome, then paints nothing: the carved ground stays as the terrain made it.",
-    "To keep only one ring natural instead, give that ring minecraft:air, for example \"bank\": \"minecraft:air\"."
-  ],
-  "biomes": ["minecraft:mushroom_fields"],
-  "enabled": false
-}

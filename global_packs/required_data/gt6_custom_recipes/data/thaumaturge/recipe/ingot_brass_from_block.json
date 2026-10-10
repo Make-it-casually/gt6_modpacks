@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "gt6mc_recipe_disabled"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#c:storage_blocks/brass"
+  ],
+  "result": {
+    "count": 9,
+    "id": "thaumaturge:ingot_brass"
+  }
+}

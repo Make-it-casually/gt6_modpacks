@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": "#c:glass_blocks",
+    "b": {
+      "neoforge:ingredient_type": "neoforge:components",
+      "items": "gregtech:gt.meta.ingot",
+      "components": {
+        "gregapi:subtype": 8620
+      }
+    },
+    "c": "railcraft:saltpeter_dust",
+    "d": "minecraft:water_bucket"
+  },
+  "pattern": [
+    "aba",
+    "aca",
+    "ada"
+  ],
+  "result": {
+    "count": 6,
+    "id": "railcraft:white_strengthened_glass"
+  }
+}

@@ -111,5 +111,6 @@
   "ftbquests.event.move_chapter_across": "移动 %s“%s” -> %s“%s”",
   "ftbquests.event.move_object": "移动 %s“%s” %s",
   "ftbquests.event.move_movable": "移动 %s“%s”",
-  "ftbquests.event.update_translation": "更新翻译 %s %s“%s”"
+  "ftbquests.event.update_translation": "更新翻译 %s %s“%s”",
+  "ftbquests.file.defaults.reward_team_by_type": "按类型分配团队奖励"
 }

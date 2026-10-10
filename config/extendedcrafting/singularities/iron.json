@@ -1,6 +1,0 @@
-{
-  "name": "singularity.extendedcrafting.iron",
-  "overlay_color": "#E1E1E1",
-  "underlay_color": "#6C6C6C",
-  "ingredient": "minecraft:iron_ingot"
-}

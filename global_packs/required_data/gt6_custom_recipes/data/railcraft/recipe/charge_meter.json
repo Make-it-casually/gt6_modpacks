@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": "#c:ingots/copper",
+    "b": "minecraft:stone_button",
+    "c": "minecraft:glass_pane",
+    "d": {
+      "neoforge:ingredient_type": "neoforge:components",
+      "items": "gregtech:gt.meta.ingot",
+      "components": {
+        "gregapi:subtype": 8620
+      }
+    }
+  },
+  "pattern": [
+    "a a",
+    "bcb",
+    " d "
+  ],
+  "result": {
+    "id": "railcraft:charge_meter"
+  }
+}

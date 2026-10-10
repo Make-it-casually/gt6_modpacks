@@ -126,7 +126,6 @@ const GATES = [
   },
   { id: 'enderio:photovoltaic_composite', path: 'ingredients[3]', value: gtBlock('machineCasing', 'galvanizedsteel') },
   { id: 'enderio:pressurized_fluid_tank', path: 'pattern', value: ['IBI', 'BGB', 'IZI'] },
-  { id: 'enderio:pressurized_fluid_tank', path: 'key.Z', value: gtBlock('machineCasing', 'galvanizedsteel') },
   { id: 'enderio:pulsating_photovoltaic_module', path: 'pattern', value: ['IFI', 'PDP', 'CZC'] },
   { id: 'enderio:pulsating_photovoltaic_module',
     path: 'key',

@@ -2109,5 +2109,17 @@
   "witchery:ritual/teleport_owner_to_waystone": "传送",
   "witchery:ritual/teleport_owner_to_waystone.tooltip": "将使用者传送至绑定的路标石位置",
   "witchery:ritual/teleport_taglock_to_waystone": "传送",
-  "witchery:ritual/teleport_taglock_to_waystone.tooltip": "将绑定的引物实体传送至绑定的路标石位置"
+  "witchery:ritual/teleport_taglock_to_waystone.tooltip": "将绑定的引物实体传送至绑定的路标石位置",
+  "advancements.witchery.golden_chalk.title": "金粉笔",
+  "advancements.witchery.golden_chalk.description": "仪式的核心",
+  "advancements.witchery.infernal_chalk.title": "地狱粉笔",
+  "advancements.witchery.infernal_chalk.description": "地狱火般的红",
+  "advancements.witchery.otherwhere_chalk.title": "异地粉笔",
+  "advancements.witchery.otherwhere_chalk.description": "通往他处的线条",
+  "advancements.witchery.symbology.title": "符号学",
+  "advancements.witchery.symbology.description": "用神秘药膏涂抹树人枝条",
+  "advancements.witchery.werewolf_altar.title": "月之祭坛",
+  "advancements.witchery.werewolf_altar.description": "为狼造一座祭坛",
+  "advancements.witchery.wolfsbane.title": "乌头草",
+  "advancements.witchery.wolfsbane.description": "野兽畏惧的花朵"
 }

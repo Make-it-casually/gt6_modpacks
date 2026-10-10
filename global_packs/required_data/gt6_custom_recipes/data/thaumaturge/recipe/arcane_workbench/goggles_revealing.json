@@ -1,0 +1,21 @@
+{
+  "type": "thaumaturge:arcane_workbench_shaped",
+  "crystals": [],
+  "key": {
+    "B": "thaumaturge:ingot_brass",
+    "L": "#c:leathers",
+    "M": "thaumaturge:thaumometer"
+  },
+  "pattern": [
+    "LBL",
+    "L L",
+    "MBM"
+  ],
+  "research": {
+    "entry": "thaumaturge:unlock_artifice"
+  },
+  "result": {
+    "id": "thaumaturge:goggles_revealing"
+  },
+  "vis": 50
+}

@@ -1,0 +1,31 @@
+{
+  "type": "thaumaturge:infusion",
+  "aspects": [
+    {
+      "amount": 25,
+      "aspect": "thaumaturge:volatus"
+    },
+    {
+      "amount": 25,
+      "aspect": "thaumaturge:terra"
+    },
+    {
+      "amount": 25,
+      "aspect": "thaumaturge:praecantatio"
+    }
+  ],
+  "catalyst": "aether_ii:inert_gravitite",
+  "components": [
+    "thaumaturge:salis_mundus",
+    "thaumaturge:salis_mundus",
+    "aether_ii:ambrosium_shard",
+    "aether_ii:ambrosium_shard"
+  ],
+  "instability": 2,
+  "research": {
+    "entry": "thaumaturge:metallurgy"
+  },
+  "result": {
+    "id": "aether_ii:gravitite_plate"
+  }
+}

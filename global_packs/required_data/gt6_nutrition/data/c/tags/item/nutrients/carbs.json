@@ -10,54 +10,6 @@
       "required": false
     },
     {
-      "id": "alcocraftplus:dry_seeds",
-      "required": false
-    },
-    {
-      "id": "alcocraftplus:hop_seeds",
-      "required": false
-    },
-    {
-      "id": "bakeries:bread_knife",
-      "required": false
-    },
-    {
-      "id": "bakeries:country_bread_dough",
-      "required": false
-    },
-    {
-      "id": "bakeries:country_bread_slice",
-      "required": false
-    },
-    {
-      "id": "bakeries:flour",
-      "required": false
-    },
-    {
-      "id": "bakeries:flour_sieve",
-      "required": false
-    },
-    {
-      "id": "bakeries:rice_bread_dough",
-      "required": false
-    },
-    {
-      "id": "bakeries:round_bread_dough",
-      "required": false
-    },
-    {
-      "id": "bakeries:whole_wheat_bagel_dough",
-      "required": false
-    },
-    {
-      "id": "bakeries:whole_wheat_dough",
-      "required": false
-    },
-    {
-      "id": "bakeries:whole_wheat_flour",
-      "required": false
-    },
-    {
       "id": "croptopia:barley",
       "required": false
     },
@@ -510,43 +462,7 @@
       "required": false
     },
     {
-      "id": "harvestheritage:fried_seedsack",
-      "required": false
-    },
-    {
-      "id": "harvestheritage:known_seed",
-      "required": false
-    },
-    {
-      "id": "harvestheritage:seed_packet",
-      "required": false
-    },
-    {
-      "id": "harvestheritage:unknown_seed",
-      "required": false
-    },
-    {
       "id": "railcraft:raw_firestone",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:bread_slice",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:cooked_vegetable_pizza",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:raw_vegetable_pizza",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:vegetable_pizza_slice",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:wheat_flour",
       "required": false
     },
     {
@@ -563,54 +479,6 @@
     },
     {
       "id": "theurgy:alchemical_sulfur_wheat",
-      "required": false
-    },
-    {
-      "id": "usefulfood:baked_sushi",
-      "required": false
-    },
-    {
-      "id": "usefulfood:biscuit",
-      "required": false
-    },
-    {
-      "id": "usefulfood:breadslice",
-      "required": false
-    },
-    {
-      "id": "usefulfood:cereal",
-      "required": false
-    },
-    {
-      "id": "usefulfood:frenchfries",
-      "required": false
-    },
-    {
-      "id": "usefulfood:oatmeal",
-      "required": false
-    },
-    {
-      "id": "usefulfood:roastedseeds",
-      "required": false
-    },
-    {
-      "id": "usefulfood:salad",
-      "required": false
-    },
-    {
-      "id": "usefulfood:spaghetti",
-      "required": false
-    },
-    {
-      "id": "usefulfood:sushi",
-      "required": false
-    },
-    {
-      "id": "usefulfood:trailmix",
-      "required": false
-    },
-    {
-      "id": "wilder_wilds:flowering_dandelion_seed_flower",
       "required": false
     },
     {

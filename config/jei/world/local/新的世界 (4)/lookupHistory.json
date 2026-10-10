@@ -1,0 +1,15 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"ufo:pulsar_fragment_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ufo:chrono_catalyst_t2"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ufo:white_dwarf_item_cell_housing"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ufo:infinity_genesis_cell"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ufo:stellar_nexus_controller"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ufo:stellar_field_generator_t3"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:redstone_torch"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"morered:diode"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extrautilitiesreborn:unstable_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extrautilitiesreborn:devision_sigil"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extrautilitiesreborn:rainbow_generator_bottom"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extrautilitiesreborn:rainbow_generator"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

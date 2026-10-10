@@ -1,9 +1,0 @@
-{
-	"houses": {
-		"castle": true,
-		"house": true,
-		"pyramid": true,
-		"ship": true,
-		"shrine": true
-	}
-}

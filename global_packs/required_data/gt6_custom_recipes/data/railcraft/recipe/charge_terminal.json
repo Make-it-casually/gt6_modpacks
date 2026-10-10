@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "neoforge:ingredient_type": "neoforge:components",
+      "items": "gregtech:gt.meta.ingot",
+      "components": {
+        "gregapi:subtype": 8620
+      }
+    },
+    "b": "#c:plates/brass"
+  },
+  "pattern": [
+    " b ",
+    "aaa"
+  ],
+  "result": {
+    "id": "railcraft:charge_terminal"
+  }
+}

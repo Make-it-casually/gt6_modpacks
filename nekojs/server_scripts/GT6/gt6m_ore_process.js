@@ -8,37 +8,6 @@ const REGISTRATION_KEY = 'gt6mOreProcessRegisteredV1'
 
 const RECIPES = [
   {
-    label: 'gt6m_inert_arkenium_wash',
-    machine: 'PressureWasher',
-    input: { id: 'gt6m:inert_arkenium_dust', count: 1 },
-    outputs: [{ form: 'dust', subtype: 760, count: 1 }],
-    chances: [10000],
-    duration: 200,
-    eut: 16,
-    checkForCollisions: false,
-    fluidSpec: [{ id: 'water', amount: 100 }]
-  },
-  {
-    label: 'gt6m_inert_arkenium_centrifuge',
-    machine: 'Centrifuge',
-    input: { id: 'gt6m:inert_arkenium_dust', count: 1 },
-    outputs: [{ form: 'dustSmall', subtype: 760, count: 1 }, { form: 'dustTiny', subtype: 260, count: 1 }],
-    chances: [8000, 3000],
-    duration: 240,
-    eut: 32,
-    checkForCollisions: false,
-  },
-  {
-    label: 'gt6m_inert_arkenium_smelt',
-    machine: 'Smelter',
-    input: { id: 'gt6m:inert_arkenium_dust', count: 1 },
-    outputs: [{ form: 'ingot', subtype: 760, count: 1 }],
-    chances: [10000],
-    duration: 300,
-    eut: 0,
-    checkForCollisions: false,
-  },
-  {
     label: 'gt6m_hammer_gravel',
     machine: 'Hammer',
     input: { id: 'minecraft:gravel', count: 1 },

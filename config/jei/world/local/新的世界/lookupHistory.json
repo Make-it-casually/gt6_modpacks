@@ -1,5 +1,10 @@
 [
   {"version":1},
+  {"ingredient":{"id":"extrautilitiesreborn:kikoku"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extrautilitiesreborn:ender_lilly_end_stone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extrautilitiesreborn:creative_spikes"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extrautilitiesreborn:enchanted_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"extrautilitiesreborn:bedrockium_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"minecraft:glowstone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"gregtech:gt.multiitem.bottles","components":"{\"gregapi:subtype\":2300}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"gregtech:gt.multiitem.food","components":"{\"gregapi:subtype\":12601}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -39,8 +44,6 @@
   {"ingredient":{"id":"witchery:koboldite_dust"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"gregtech:gt.multitileentity","components":"{\"gregapi:subtype\":20021}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"witchery:golden_ritual_chalk"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"enderio_evolution:crystalline_pink_slime_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"enderio_evolution:basic_infinity_generator"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"aether_ii:altar"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"aether_ii:amber_hourglass"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"aether_ii:arkenium_ore"},"type":"item_stack","bookmarkType":"INGREDIENT"},
@@ -96,8 +99,5 @@
   {"ingredient":{"id":"railcraft:silver_gear"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"railcraft:steel_electrode"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"ingredient":{"id":"railcraft:lead_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"railcraft:invar_plate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"railcraft:invar_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"railcraft:invar_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"railcraft:silver_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"railcraft:invar_plate"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

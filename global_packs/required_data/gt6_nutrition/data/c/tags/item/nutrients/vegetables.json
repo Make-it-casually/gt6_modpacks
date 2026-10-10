@@ -2,10 +2,6 @@
   "replace": false,
   "values": [
     {
-      "id": "bakeries:cooked_taro",
-      "required": false
-    },
-    {
       "id": "croptopia:ajvar",
       "required": false
     },
@@ -439,18 +435,6 @@
     },
     {
       "id": "theurgy:alchemical_sulfur_radish",
-      "required": false
-    },
-    {
-      "id": "usefulfood:carrotsoup",
-      "required": false
-    },
-    {
-      "id": "usefulfood:pumpkinbread",
-      "required": false
-    },
-    {
-      "id": "usefulfood:pumpkinsoup",
       "required": false
     },
     {

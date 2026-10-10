@@ -14,42 +14,6 @@
       "required": false
     },
     {
-      "id": "bakeries:bottle_milk",
-      "required": false
-    },
-    {
-      "id": "bakeries:butter_flour_sand",
-      "required": false
-    },
-    {
-      "id": "bakeries:cheese_cream",
-      "required": false
-    },
-    {
-      "id": "bakeries:cheese_cube",
-      "required": false
-    },
-    {
-      "id": "bakeries:fresh_cheese_cube",
-      "required": false
-    },
-    {
-      "id": "bakeries:meat_floss",
-      "required": false
-    },
-    {
-      "id": "bakeries:raw_egg_yolk",
-      "required": false
-    },
-    {
-      "id": "bakeries:raw_protein",
-      "required": false
-    },
-    {
-      "id": "bakeries:whole_egg",
-      "required": false
-    },
-    {
       "id": "croptopia:almond",
       "required": false
     },
@@ -322,30 +286,6 @@
       "required": false
     },
     {
-      "id": "refurbished_furniture:cheese",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:cheese_sandwich",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:cheese_toastie",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:cooked_meatlovers_pizza",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:meatlovers_pizza_slice",
-      "required": false
-    },
-    {
-      "id": "refurbished_furniture:raw_meatlovers_pizza",
-      "required": false
-    },
-    {
       "id": "theurgy:alchemical_sulfur_dragon_egg",
       "required": false
     },
@@ -359,86 +299,6 @@
     },
     {
       "id": "theurgy:alchemical_sulfur_tropical_fish",
-      "required": false
-    },
-    {
-      "id": "usefulfood:cheese",
-      "required": false
-    },
-    {
-      "id": "usefulfood:cheesesandwich",
-      "required": false
-    },
-    {
-      "id": "usefulfood:chickensandwich",
-      "required": false
-    },
-    {
-      "id": "usefulfood:cod_roe_sushi",
-      "required": false
-    },
-    {
-      "id": "usefulfood:cookedsquidtentacle",
-      "required": false
-    },
-    {
-      "id": "usefulfood:eggsandwich",
-      "required": false
-    },
-    {
-      "id": "usefulfood:fishnchips",
-      "required": false
-    },
-    {
-      "id": "usefulfood:fishsandwich",
-      "required": false
-    },
-    {
-      "id": "usefulfood:fishsoup",
-      "required": false
-    },
-    {
-      "id": "usefulfood:friedegg",
-      "required": false
-    },
-    {
-      "id": "usefulfood:hotmilkbottle",
-      "required": false
-    },
-    {
-      "id": "usefulfood:magicicecream",
-      "required": false
-    },
-    {
-      "id": "usefulfood:milkbottle",
-      "required": false
-    },
-    {
-      "id": "usefulfood:muttonsandwich",
-      "required": false
-    },
-    {
-      "id": "usefulfood:porkchopsandwich",
-      "required": false
-    },
-    {
-      "id": "usefulfood:salmon_sushi",
-      "required": false
-    },
-    {
-      "id": "usefulfood:squidrtentacle",
-      "required": false
-    },
-    {
-      "id": "usefulfood:squidsandwich",
-      "required": false
-    },
-    {
-      "id": "usefulfood:squidsushi",
-      "required": false
-    },
-    {
-      "id": "usefulfood:vanillaicecream",
       "required": false
     },
     {

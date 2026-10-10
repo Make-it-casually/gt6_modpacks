@@ -145,24 +145,6 @@ const MACHINE_RECIPE_IDS = [
     'enderio:sag_milling/wither_rose',
     'enderio:sag_milling/wither_skull',
     'enderio:sag_milling/wool',
-    'enderio_endergy:alloy_smelting/crude_steel_ingot',
-    'enderio_endergy:alloy_smelting/crystalline_alloy_ingot',
-    'enderio_endergy:alloy_smelting/melodic_alloy_ingot',
-    'enderio_endergy:alloy_smelting/stellar_alloy_ingot',
-    'enderio_endergy:alloy_smelting/vivid_alloy_ingot',
-    'enderio_evolution:alloy_smelting/construction_alloy_ingot',
-    'enderio_evolution:alloy_smelting/crude_steel_ingot',
-    'enderio_evolution:alloy_smelting/crystalline_alloy_ingot',
-    'enderio_evolution:alloy_smelting/crystalline_pink_slime_ingot',
-    'enderio_evolution:alloy_smelting/crystalline_pink_slime_ingot_synthetic',
-    'enderio_evolution:alloy_smelting/energetic_silver_ingot_from_iron',
-    'enderio_evolution:alloy_smelting/energetic_silver_ingot_from_silver',
-    'enderio_evolution:alloy_smelting/melodic_alloy_ingot',
-    'enderio_evolution:alloy_smelting/stellar_alloy_ingot',
-    'enderio_evolution:alloy_smelting/vivid_alloy_ingot',
-    'enderio_evolution:sag_milling/compressed_infinity_dust_block',
-    'enderio_evolution:sag_milling/double_compressed_infinity_dust_block',
-    'enderio_evolution:sag_milling/infinity_dust_block',
 ]
 
 const MACHINE_OUTPUTS = [
@@ -172,12 +154,6 @@ const MACHINE_OUTPUTS = [
 ]
 
 const UPGRADE_OUTPUTS = [
-    'enderio_evolution:basic_batch_upgrade',
-    'enderio_evolution:basic_stack_upgrade',
-    'enderio_evolution:crystalline_batch_upgrade',
-    'enderio_evolution:crystalline_stack_upgrade',
-    'enderio_evolution:stellar_batch_upgrade',
-    'enderio_evolution:stellar_stack_upgrade'
 ]
 
 ServerEvents.recipes(event => {

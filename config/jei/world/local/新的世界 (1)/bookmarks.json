@@ -1,0 +1,11 @@
+[
+  {"version":3},
+  {"ingredient":{"id":"thaumaturge:plate_brass"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"extendedae:crystal_assembler","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"extendedae:machine_frame_normal","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"gregtech:gt.meta.ingot","components":"{\"gregapi:subtype\":760}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gt6m:inert_arkenium_dust"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aether_ii:gravitite_plate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aether_ii:inert_gravitite"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aether_ii:ambrosium_shard"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

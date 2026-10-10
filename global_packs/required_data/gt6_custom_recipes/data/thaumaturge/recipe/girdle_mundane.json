@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "thaumaturge:ingot_brass",
+    "L": "#c:leathers"
+  },
+  "pattern": [
+    " L ",
+    "L L",
+    " I "
+  ],
+  "result": {
+    "id": "thaumaturge:girdle_mundane"
+  }
+}

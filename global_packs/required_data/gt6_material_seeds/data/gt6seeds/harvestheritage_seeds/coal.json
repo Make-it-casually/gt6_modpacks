@@ -1,9 +1,0 @@
-{
-  "seed": "minecraft:coal",
-  "category": "material",
-  "results": [
-    "minecraft:coal"
-  ],
-  "stage": 4,
-  "need_block": "minecraft:stone"
-}

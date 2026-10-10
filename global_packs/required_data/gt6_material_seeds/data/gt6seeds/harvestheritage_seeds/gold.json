@@ -1,9 +1,0 @@
-{
-  "seed": "minecraft:gold_ingot",
-  "category": "material",
-  "results": [
-    "minecraft:gold_ingot"
-  ],
-  "stage": 6,
-  "need_block": "minecraft:netherrack"
-}

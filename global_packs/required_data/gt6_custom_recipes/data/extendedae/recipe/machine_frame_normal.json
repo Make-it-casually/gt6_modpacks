@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "aether_ii:gravitite_plate",
+    "B": {
+      "neoforge:ingredient_type": "neoforge:components",
+      "items": "gregtech:gt.meta.plate",
+      "components": {
+        "gregapi:subtype": 130
+      }
+    },
+    "C": "enderio:fluid_tank"
+  },
+  "pattern": [
+    " A ",
+    "BCB",
+    " A "
+  ],
+  "result": {
+    "id": "extendedae:machine_frame"
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "seed": "minecraft:iron_ingot",
-  "category": "material",
-  "results": [
-    "minecraft:iron_ingot"
-  ],
-  "stage": 4,
-  "need_block": "minecraft:stone"
-}

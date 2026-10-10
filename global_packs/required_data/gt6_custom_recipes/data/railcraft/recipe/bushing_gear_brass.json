@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "neoforge:ingredient_type": "neoforge:components",
+      "items": "gregtech:gt.meta.ingot",
+      "components": {
+        "gregapi:subtype": 8620
+      }
+    }
+  },
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "result": {
+    "id": "railcraft:bushing_gear"
+  }
+}

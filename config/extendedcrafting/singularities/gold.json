@@ -1,6 +1,0 @@
-{
-  "name": "singularity.extendedcrafting.gold",
-  "overlay_color": "#FDF55F",
-  "underlay_color": "#D98E04",
-  "ingredient": "minecraft:gold_ingot"
-}
