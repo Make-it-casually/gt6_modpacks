@@ -567,7 +567,6 @@ function convertNode(node, table) {
 ServerEvents.recipes(event => {
   const table = buildTable()
   let recipesChanged = 0
-  const problems = []
   for (let targetIndex = 0; targetIndex < TARGETS.length; targetIndex++) {
     const id = TARGETS[targetIndex]
     try {
@@ -587,11 +586,7 @@ ServerEvents.recipes(event => {
       event.setJson(id, rebuilt)
       recipesChanged = recipesChanged + 1
     } catch (error) {
-      problems.push(id + '：' + String(error))
     }
   }
-  console.info('[NekoJS/ThaumaturgeGTM] 锭/板改用格雷物品：改动 ' + recipesChanged + '/' + TARGETS.length + ' 条；问题 ' + problems.length + ' 处。')
-  if (problems.length > 0) {
-    console.warn('[NekoJS/ThaumaturgeGTM] 未完成：' + problems.join(' | '))
-  }
+
 })

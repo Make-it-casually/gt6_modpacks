@@ -1,7 +1,6 @@
 import { addItemRecipe, item } from '../src/lib/gt6_recipe_tools.js'
 import { $RM } from 'java:gregapi/data'
 
-const problems = []
 const mapCounter = {}
 let registered = 0
 
@@ -15,7 +14,6 @@ function addSafely(map, spec) {
     return result
   } catch (addError) {
     const message = addError != null && addError.message !== undefined ? addError.message : String(addError)
-    problems.push(`${label}：${message}`)
     return null
   }
 }
@@ -114,10 +112,4 @@ ServerEvents.recipes(() => {
   })
 
   global[registrationKey] = true
-  console.info(
-    `[NekoJS/GT6] 注册包内 GT6 配方 ${registered}/7 条：` +
-    `Sifting/Sluice 种子（#8 种子 + #17 概率副产）、` +
-    `赛特斯/fluix 保持纯 AE2 链（#5 已撤销）；` +
-    `失败 ${problems.length} 条${problems.length > 0 ? '：' + problems.join(' | ') : '。'}`
-  )
 })

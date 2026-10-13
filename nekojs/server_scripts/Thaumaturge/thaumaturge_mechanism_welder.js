@@ -11,7 +11,7 @@ const ENTRIES = [
   {
     id: 'mechanism_simple',
     out: 1,
-    note: '格雷黄铜板 ×2 + 格雷铁板 ×2 + 木棍 ×1',
+    note: 'gt brass plate x2 + gt iron plate x2 + stick x1',
     items: [
       { vanilla: 'minecraft:stick', count: 1 }
     ],
@@ -23,7 +23,7 @@ const ENTRIES = [
   {
     id: 'mechanism_complex',
     out: 1,
-    note: '简单机关 ×2 + 活塞 ×1 + 格雷神秘板 ×2',
+    note: 'gt mechanism x2 + piston x1 + gt thaumium plate x2',
     items: [
       { vanilla: 'thaumaturge:mechanism_simple', count: 2 },
       { vanilla: 'minecraft:piston', count: 1 }
@@ -35,7 +35,7 @@ const ENTRIES = [
   {
     id: 'alchemical_construct',
     out: 2,
-    note: '格雷铁板 ×4 + 阀门 ×2 + 木板 ×1 + 管子 ×2',
+    note: 'gt iron plate x4 + valve x2 + plank x1 + pipe x2',
     items: [
       { vanilla: 'thaumaturge:tube_valve', count: 2 },
       { vanilla: 'thaumaturge:plank_greatwood', count: 1 },
@@ -48,7 +48,7 @@ const ENTRIES = [
   {
     id: 'advanced_alchemical_construct',
     out: 4,
-    note: '炼金构装 ×4 + 原初珍珠 ×1 + 格雷虚空锭 ×4',
+    note: 'gt alchemical mechanism x4 + primordial pearl x1 + gt void ingot x4',
     items: [
       { vanilla: 'thaumaturge:alchemical_construct', count: 4 },
       { vanilla: 'thaumaturge:primordial_pearl', count: 1 }
@@ -61,40 +61,32 @@ const ENTRIES = [
 
 ServerEvents.recipes(event => {
   let removed = 0
-  const problems = []
   for (let removeIndex = 0; removeIndex < ENTRIES.length; removeIndex++) {
     const removeId = 'thaumaturge:arcane_workbench/' + ENTRIES[removeIndex].id
     try {
       event.get(removeId).remove()
       removed = removed + 1
     } catch (error) {
-      problems.push(removeId + '：删除失败 ' + String(error))
     }
   }
-  if (problems.length > 0) {
-    console.warn('[NekoJS/ThaumaturgeMech] 删除未完成：' + problems.join(' | '))
-  }
+
 })
 
 ServerEvents.started(() => {
-  const problems = []
   const map = $RM.Welder
   if (map == null) {
-    console.warn('[NekoJS/ThaumaturgeMech] 取不到焊接机映射 Welder，未做任何改动。')
     return
   }
 
   const manager = $OreDictManager.INSTANCE
 
-  function stackFor(prefix, materialId, count, label, problemList) {
+  function stackFor(prefix, materialId, count, label) {
     const material = $OreDictMaterial.get(materialId)
     if (material == null) {
-      problemList.push(label + '：材料 ' + materialId + ' 不存在')
       return null
     }
     const stack = manager.getStack(prefix, material, count)
     if (stack == null || stack.isEmpty()) {
-      problemList.push(label + '：取不到物品')
       return null
     }
     return stack
@@ -116,7 +108,7 @@ ServerEvents.started(() => {
       if (entry.plates !== undefined) {
         for (let plateIndex = 0; plateIndex < entry.plates.length; plateIndex++) {
           const spec = entry.plates[plateIndex]
-          const stack = stackFor($OP.plate, spec.material, spec.count, entry.id + '/格雷板' + spec.material, problems)
+          const stack = stackFor($OP.plate, spec.material, spec.count, entry.id + '/gt_plate' + spec.material)
           if (stack == null) {
             failed = true
           } else {
@@ -127,7 +119,7 @@ ServerEvents.started(() => {
       if (entry.ingots !== undefined) {
         for (let ingotIndex = 0; ingotIndex < entry.ingots.length; ingotIndex++) {
           const spec = entry.ingots[ingotIndex]
-          const stack = stackFor($OP.ingot, spec.material, spec.count, entry.id + '/格雷锭' + spec.material, problems)
+          const stack = stackFor($OP.ingot, spec.material, spec.count, entry.id + '/gt_ingot' + spec.material)
           if (stack == null) {
             failed = true
           } else {
@@ -149,12 +141,7 @@ ServerEvents.started(() => {
       })
       added = added + 1
     } catch (error) {
-      problems.push(entry.id + '：' + String(error))
     }
   }
 
-  console.info('[NekoJS/ThaumaturgeMech] 机构/构装改用格雷焊接机：新增配方 ' + added + '/' + ENTRIES.length + ' 条；问题 ' + problems.length + ' 处。')
-  if (problems.length > 0) {
-    console.warn('[NekoJS/ThaumaturgeMech] 未完成：' + problems.join(' | '))
-  }
 })

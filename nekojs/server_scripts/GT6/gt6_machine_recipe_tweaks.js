@@ -120,11 +120,5 @@ ServerEvents.started(() => {
       pendingHandlers.push(mapName + '(' + map.mRecipeMapHandlers.size() + ')')
     }
   }
-  console.info(
-    '[NekoJS/GT6] 配方耗时上限：检查 ' + MAP_NAMES.length + ' 张表 / ' + totalChecked + ' 条配方，' +
-    '压上限 ' + totalCapped + ' 条（涉及 ' + mapsTouched + ' 张表；小机器 100 tick、默认 ' + DEFAULT_CAP + '、大型 ' + LARGE_CAP + '）。'
-  )
-  if (pendingHandlers.length > 0) {
-    console.warn('[NekoJS/GT6] 这些表的动态 handler 之后还会生成配方，本轮没压到：' + pendingHandlers.join('、'))
-  }
+
 })

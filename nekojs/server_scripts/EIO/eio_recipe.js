@@ -170,8 +170,4 @@ ServerEvents.recipes(event => {
 
     const gt6 = clearGt6CraftingFor(blockedOutputs)
 
-    console.info(
-        `[NekoJS/EIO] 按 id 删除合成/加工配方 ${removedById}/${EXPLICIT_REMOVALS.length + MACHINE_RECIPE_IDS.length} 条；` +
-        `另清 GT6 合成配方 ${gt6.crafting} 条、自动合成缓存 ${gt6.cached} 条。`
-    )
 })

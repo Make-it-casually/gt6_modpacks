@@ -27,41 +27,31 @@ const REGISTRATIONS = [
 ServerEvents.started(() => {
   const manager = $OreDictManager.INSTANCE
   if (manager == null) {
-    console.warn('[NekoJS/ThaumaturgeGT] 取不到 OreDictManager，跳过格雷矿辞注册。')
     return
   }
   let done = 0
-  const problems = []
   for (let registerIndex = 0; registerIndex < REGISTRATIONS.length; registerIndex++) {
     const entry = REGISTRATIONS[registerIndex]
     try {
       const stack = Item.of(entry.item)
       if (stack == null || stack.isEmpty()) {
-        problems.push(entry.item + '：物品不存在')
         continue
       }
       const prefix = PREFIX_BY_NAME[entry.prefix]
       if (prefix == null) {
-        problems.push(entry.item + '：前缀 ' + entry.prefix + ' 不可用')
         continue
       }
       const material = $OreDictMaterial.get(entry.material)
       if (material == null) {
-        problems.push(entry.item + '：材料 ' + entry.material + ' 不存在')
         continue
       }
       const accepted = manager.setItemData(stack, new $OreDictItemData(prefix, material))
       if (accepted) {
         done = done + 1
       } else {
-        problems.push(entry.item + '：setItemData 被拒绝（可能已有其他材料数据）')
       }
     } catch (error) {
-      problems.push(entry.item + '：' + String(error))
     }
   }
-  console.info('[NekoJS/ThaumaturgeGT] 格雷矿辞注册：成功 ' + done + '/' + REGISTRATIONS.length + ' 条；问题 ' + problems.length + ' 处。')
-  if (problems.length > 0) {
-    console.warn('[NekoJS/ThaumaturgeGT] 未完成：' + problems.join(' | '))
-  }
+
 })

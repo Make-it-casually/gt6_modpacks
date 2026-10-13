@@ -22,15 +22,12 @@ ServerEvents.recipes(event => {
   try {
     event.get(RECIPE_ID).remove()
   } catch (error) {
-    console.warn('[NekoJS/ThaumaturgeSalis] 删除原配方失败：' + String(error))
   }
 })
 
 ServerEvents.started(event => {
-  const problems = []
   const map = $RM[MACHINE]
   if (map == null) {
-    console.warn('[NekoJS/ThaumaturgeSalis] 取不到机器映射 ' + MACHINE + '，未做任何改动。')
     return
   }
 
@@ -44,11 +41,9 @@ ServerEvents.started(event => {
     try {
       server = Java.type('net.neoforged.neoforge.server.ServerLifecycleHooks').getCurrentServer()
     } catch (error) {
-      problems.push('取服务端实例失败：' + String(error))
     }
   }
   if (server == null) {
-    console.warn('[NekoJS/ThaumaturgeSalis] 取不到服务端实例，未新增配方。')
     return
   }
 
@@ -56,7 +51,6 @@ ServerEvents.started(event => {
   try {
     provider = server.registryAccess()
   } catch (error) {
-    console.warn('[NekoJS/ThaumaturgeSalis] 取注册表失败：' + String(error))
     return
   }
 
@@ -66,12 +60,10 @@ ServerEvents.started(event => {
     try {
       const stack = $EssentiaCrystalFactory.of(provider, aspect.key)
       if (stack == null || stack.isEmpty()) {
-        problems.push(aspect.name + '：结晶构造返回空')
         continue
       }
       crystals.push({ name: aspect.name, stack: stack })
     } catch (error) {
-      problems.push(aspect.name + '：' + String(error))
     }
   }
 
@@ -96,16 +88,9 @@ ServerEvents.started(event => {
           added = added + 1
         } catch (error) {
           skipped = skipped + 1
-          if (problems.length < 6) {
-            problems.push(crystals[firstIndex].name + '+' + crystals[secondIndex].name + '+' + crystals[thirdIndex].name + '：' + String(error))
-          }
         }
       }
     }
   }
 
-  console.info('[NekoJS/ThaumaturgeSalis] 世界盐改由红石 + 任意 ' + SHARDS + ' 个魔力碎片制作：结晶 ' + crystals.length + '/' + ASPECT_KEYS.length + ' 种，新增配方 ' + added + ' 条，被拒 ' + skipped + ' 条；问题 ' + problems.length + ' 处。')
-  if (problems.length > 0) {
-    console.warn('[NekoJS/ThaumaturgeSalis] 未完成：' + problems.join(' | '))
-  }
 })

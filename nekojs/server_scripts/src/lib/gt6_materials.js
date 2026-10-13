@@ -219,7 +219,6 @@ function reportRuntimeIds() {
   reported = true
   const keys = Object.keys(RUNTIME_IDS)
   if (keys.length === 0) {
-    console.warn('[NekoJS/GT6] 材料号运行时解析不可用，使用静态表。')
     return
   }
   const changed = keys.filter(key => RUNTIME_IDS[key] !== GT_MATERIAL[key])
@@ -280,7 +279,6 @@ function stackToJson(formKey, materialName, count) {
     }
     return JSON.parse(String(json))
   } catch (stackError) {
-    console.warn(`[NekoJS/GT6] OreDictManager 取 ${String(formKey)}/${String(materialName)} 失败：${String(stackError)}`)
     return null
   }
 }
@@ -290,7 +288,7 @@ function reportStackUse(formKey, materialName, json) {
     return
   }
   stackReported = true
-  const components = json.components === undefined ? '无组件' : JSON.stringify(json.components)
+  const components = json.components === undefined ? 'no components' : JSON.stringify(json.components)
 }
 
 function ingredientFromStack(formKey, materialKey, count) {

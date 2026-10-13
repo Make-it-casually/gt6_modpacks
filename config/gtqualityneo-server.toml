@@ -8,3 +8,4 @@ scaffoldClimbUpSpeed = 0.14
 # Default: 0.15
 # Range: 0.0 ~ 2.0
 scaffoldClimbDownSpeed = 0.15
+circuitSelectorGui = true

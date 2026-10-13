@@ -6,7 +6,7 @@ export const GT6_INGOT_MATERIALS = Object.freeze([
     tagMaterial: null,
     autoMaterial: 'Koboldite',
     confidence: 'unknown',
-    note: 'GT6 没有 Koboldite（Witchery 魔法金属，靠狗头人交易获得），按 GT 的未知材料登记'
+    note: 'GT6 has no Koboldite (witchery magic metal, obtained via kobold trades); registered as a GT unknown material'
   }
 ])
 

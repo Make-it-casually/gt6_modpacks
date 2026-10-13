@@ -28,7 +28,6 @@ ServerEvents.lootTables(event => {
     'minecraft:blocks/fern',
     'minecraft:blocks/large_fern'
   ]
-  const problems = []
   let touched = 0
   let removedEntries = 0
 
@@ -37,11 +36,9 @@ ServerEvents.lootTables(event => {
     try {
       json = JSON.parse(event.getJson(tableId))
     } catch (readError) {
-      problems.push(`${tableId}：读不到掉落表 JSON`)
       continue
     }
     if (json == null || typeof json !== 'object') {
-      problems.push(`${tableId}：掉落表 JSON 是空的`)
       continue
     }
     const keptPools = []
@@ -76,11 +73,4 @@ ServerEvents.lootTables(event => {
     removedEntries = removedEntries + tableRemoved
   }
 
-  console.info(
-    `[NekoJS/Seeds] 掉落表：${touched}/${TABLES.length} 张表里摘掉小麦种子条目 ${removedEntries} 条` +
-    `（种子改由 GT6 Sifting/Sluice 提供）；问题 ${problems.length} 处。`
-  )
-  if (problems.length > 0) {
-    console.warn('[NekoJS/Seeds] 未完成：' + problems.join(' | '))
-  }
 })

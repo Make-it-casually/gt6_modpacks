@@ -1,1 +1,3 @@
 gtmToolBars = true
+#Display configured GT6 resource generation rules in JEI. Restart required.
+jeiWorldgenDisplay = true

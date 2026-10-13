@@ -2,6 +2,8 @@
 enabled = true
 # Base directory for probe output (relative to the game directory). Each language backend owns its own subdirectory under this.
 baseDir = ".neko_probe"
+# Run the default probe automatically once after each server start (opt-in; equivalent to `/nekojs probe` at ServerStarted). Keeps type declarations fresh without remembering the command.
+runAtStartup = false
 
 [scan]
 	# Package whitelist applied to Java class scanning. Entries are literal package prefixes (fqn startsWith 'prefix.') or regexes written as 're:<pattern>' (full-match against the fqn, e.g. re:com\.example\..*\.api\..*). If non-empty, FULLY OVERRIDES the platform defaults. Empty = use defaults (java, com.tkisor.nekojs, plus the platform's MC/loader packages).

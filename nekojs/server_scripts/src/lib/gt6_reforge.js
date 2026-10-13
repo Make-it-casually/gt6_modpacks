@@ -131,7 +131,7 @@ export function addDesigned(event, recipe) {
     event.custom(recipe.json).id(recipe.id)
     return
   }
-  throw new Error(`未知的配方类型：${String(recipe.kind)}`)
+  throw new Error(`unknown recipe type: ${String(recipe.kind)}`)
 }
 
 export function applyReforge(event, plan) {
@@ -140,7 +140,6 @@ export function applyReforge(event, plan) {
   const editList = plan.edits === undefined ? [] : plan.edits
   const gateList = plan.gates === undefined ? [] : plan.gates
   const addList = plan.add === undefined ? [] : plan.add
-  const problems = []
 
   const removed = new Set()
   let removedCount = 0
@@ -153,7 +152,6 @@ export function applyReforge(event, plan) {
       removed.add(removeId)
       removedCount++
     } catch (removeError) {
-      problems.push(`${removeId} 删除失败：${String(removeError)}`)
     }
   }
 
@@ -172,10 +170,8 @@ export function applyReforge(event, plan) {
       if (applyOne(event, edit.id, edit.path, edit.value)) {
         editedCount++
       } else {
-        problems.push(`${edit.id} ${edit.path}：材料替换失败`)
       }
     } catch (editError) {
-      problems.push(`${edit.id} ${edit.path}：${String(editError)}`)
     }
   }
 
@@ -192,10 +188,8 @@ export function applyReforge(event, plan) {
       if (applyOne(event, gate.id, gate.path, gate.value)) {
         gatedCount++
       } else {
-        problems.push(`${gate.id} ${gate.path}：机壳写入失败`)
       }
     } catch (gateError) {
-      problems.push(`${gate.id} ${gate.path}：${String(gateError)}`)
     }
   }
 
@@ -212,7 +206,6 @@ export function applyReforge(event, plan) {
         modernizedCount++
       }
     } catch (modernizeError) {
-      problems.push(`${touchedId} 成分写法转换失败：${String(modernizeError)}`)
     }
   }
 
@@ -222,16 +215,7 @@ export function applyReforge(event, plan) {
       addDesigned(event, recipe)
       addedCount++
     } catch (addError) {
-      problems.push(`${recipe.id} 注册失败：${String(addError)}`)
     }
   }
 
-  console.info(
-    `[NekoJS/${tag}] 配方改动：删 ${removedCount}/${removeList.length} 条；` +
-    `材料替换 ${editedCount}/${editList.length} 处；机壳门禁 ${gatedCount}/${gateList.length} 处；` +
-    `新增 ${addedCount}/${addList.length} 条；跳过 ${skippedCount} 处（已被别的脚本删除）；问题 ${problems.length} 处。`
-  )
-  if (problems.length > 0) {
-    console.warn(`[NekoJS/${tag}] 未完成：` + problems.join(' | '))
-  }
 }

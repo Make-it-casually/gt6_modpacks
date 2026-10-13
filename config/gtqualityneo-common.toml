@@ -1,2 +1,4 @@
 #Register GTQualityNeo's Jade integrations. Restart required.
 jadeIntegration = true
+#Enhance the universal hazard suit. Restart required; use the same value on both sides.
+universalHazmatEnhancement = true

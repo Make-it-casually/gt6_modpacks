@@ -17,8 +17,5 @@ ServerEvents.recipes(event => {
       failed.push(recipeId)
     }
   }
-  console.info('[NekoJS/AetherPlate] 删除重力石板配方：' + removed + '/' + REMOVE_IDS.length + ' 条。')
-  if (failed.length > 0) {
-    console.warn('[NekoJS/AetherPlate] 未完成（可能已不存在）：' + failed.join(' | '))
-  }
+
 })

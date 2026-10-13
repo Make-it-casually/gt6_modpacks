@@ -36,7 +36,6 @@ export function clearGt6CraftingFor(outputIds) {
             stack = Item.of(outputId)
         } catch (error) {
             unavailable++
-            console.warn(`[NekoJS/GT6清理] 未注册的产物，跳过：${outputId} (${String(error)})`)
             continue
         }
 

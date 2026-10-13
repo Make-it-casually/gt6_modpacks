@@ -147,7 +147,6 @@ function gtPlateConvert(entry) {
 
 ServerEvents.recipes(event => {
   let changed = 0
-  const problems = []
   for (let index = 0; index < TARGETS.length; index++) {
     const id = TARGETS[index]
     try {
@@ -166,12 +165,7 @@ ServerEvents.recipes(event => {
       event.setJson(id, JSON.stringify(replaced))
       changed = changed + 1
     } catch (error) {
-      problems.push(id + '：' + String(error))
     }
   }
-  const summary = '[NekoJS/GTOnlyPlates] 板原料统一为格雷板：改动 ' + changed + '/' + TARGETS.length
-    + ' 条；问题 ' + problems.length + ' 处。'
-  if (problems.length > 0) {
-    console.warn('[NekoJS/GTOnlyPlates] 未完成：' + problems.join(' | '))
-  }
+
 })

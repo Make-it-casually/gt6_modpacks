@@ -1,5 +1,5 @@
 {
-  "thirstDepletionModifier": 1.2,
+  "thirstDepletionModifier": 0.4,
   "thirstDepletionInPeaceful": false,
   "preventSprintingWhenThirsty": true,
   "canDrinkByHand": true,
@@ -50,18 +50,34 @@
     "peaceful": {
       "dirty": [
         {
-          "effect": "minecraft:nausea",
-          "chance": 100,
-          "seconds": 7,
-          "level": 1
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 35,
+          "seconds": 20,
+          "level": 1,
+          "group": "illness"
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 5,
+          "seconds": 8,
+          "level": 1,
+          "group": "illness"
         }
       ],
       "murky": [
         {
-          "effect": "minecraft:nausea",
-          "chance": 100,
-          "seconds": 7,
-          "level": 1
+          "effect": "thirstwastaken2:upset_stomach",
+          "chance": 15,
+          "seconds": 15,
+          "level": 1,
+          "group": "illness"
+        },
+        {
+          "effect": "minecraft:poison",
+          "chance": 2,
+          "seconds": 5,
+          "level": 1,
+          "group": "illness"
         }
       ],
       "clean": [],
@@ -69,12 +85,6 @@
     },
     "easy": {
       "dirty": [
-        {
-          "effect": "minecraft:nausea",
-          "chance": 100,
-          "seconds": 7,
-          "level": 1
-        },
         {
           "effect": "thirstwastaken2:upset_stomach",
           "chance": 65,
@@ -89,12 +99,6 @@
         }
       ],
       "murky": [
-        {
-          "effect": "minecraft:nausea",
-          "chance": 100,
-          "seconds": 7,
-          "level": 1
-        },
         {
           "effect": "thirstwastaken2:upset_stomach",
           "chance": 35,
@@ -127,12 +131,6 @@
     "normal": {
       "dirty": [
         {
-          "effect": "minecraft:nausea",
-          "chance": 100,
-          "seconds": 7,
-          "level": 1
-        },
-        {
           "effect": "thirstwastaken2:upset_stomach",
           "chance": 75,
           "seconds": 60,
@@ -147,12 +145,6 @@
       ],
       "murky": [
         {
-          "effect": "minecraft:nausea",
-          "chance": 100,
-          "seconds": 7,
-          "level": 1
-        },
-        {
           "effect": "thirstwastaken2:upset_stomach",
           "chance": 50,
           "seconds": 60,
@@ -165,30 +157,11 @@
           "level": 1
         }
       ],
-      "clean": [
-        {
-          "effect": "thirstwastaken2:upset_stomach",
-          "chance": 12,
-          "seconds": 30,
-          "level": 1
-        },
-        {
-          "effect": "minecraft:poison",
-          "chance": 5,
-          "seconds": 8,
-          "level": 1
-        }
-      ],
+      "clean": [],
       "pure": []
     },
     "hard": {
       "dirty": [
-        {
-          "effect": "minecraft:nausea",
-          "chance": 100,
-          "seconds": 7,
-          "level": 1
-        },
         {
           "effect": "thirstwastaken2:upset_stomach",
           "chance": 78,
@@ -204,12 +177,6 @@
       ],
       "murky": [
         {
-          "effect": "minecraft:nausea",
-          "chance": 100,
-          "seconds": 7,
-          "level": 1
-        },
-        {
           "effect": "thirstwastaken2:upset_stomach",
           "chance": 66,
           "seconds": 90,
@@ -222,20 +189,7 @@
           "level": 1
         }
       ],
-      "clean": [
-        {
-          "effect": "thirstwastaken2:upset_stomach",
-          "chance": 20,
-          "seconds": 45,
-          "level": 1
-        },
-        {
-          "effect": "minecraft:poison",
-          "chance": 10,
-          "seconds": 12,
-          "level": 1
-        }
-      ],
+      "clean": [],
       "pure": []
     }
   },
@@ -1265,6 +1219,186 @@
       4
     ],
     "kaleidoscope_chinesefood:hk_milk_tea": [
+      6,
+      4
+    ],
+    "kaleidoscope_tavern:wine": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:champagne": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:carignan": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:sakura_wine": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:plum_wine": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:ice_wine": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:polaris_sweet_white": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:red_queen": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:riesling_dry_white": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:sunset_glow": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:madame_shexiang": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:sweet_berry_wine": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:sherry": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:mother_snow": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:luminous_bride": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:glowflower_brew": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:sauvignon_blanc_dry_white": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:miners_star": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:honey_wine": [
+      5,
+      2
+    ],
+    "kaleidoscope_tavern:vodka": [
+      0,
+      0
+    ],
+    "kaleidoscope_tavern:whiskey": [
+      0,
+      0
+    ],
+    "kaleidoscope_tavern:rum": [
+      0,
+      0
+    ],
+    "kaleidoscope_tavern:brandy": [
+      0,
+      0
+    ],
+    "kaleidoscope_tavern:white_lady": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:emerald": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:brass_heart": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:godfather": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:grasshopper": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:screwdriver": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:mojito": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:allium_garden": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:depth_charge": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:nether_special": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:bloody_mary": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:sculk_special": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:signature_cocktail": [
+      3,
+      1
+    ],
+    "kaleidoscope_tavern:mystery_cocktail": [
+      2,
+      0
+    ],
+    "kaleidoscope_tavern:watermelon_juice": [
+      6,
+      4
+    ],
+    "kaleidoscope_tavern:vinegar": [
+      0,
+      0
+    ],
+    "kaleidoscope_tavern:grape_bucket": [
+      6,
+      4
+    ],
+    "kaleidoscope_tavern:ice_grape_bucket": [
+      6,
+      4
+    ],
+    "kaleidoscope_tavern:gold_grape_bucket": [
+      6,
+      4
+    ],
+    "kaleidoscope_tavern:green_grape_bucket": [
+      6,
+      4
+    ],
+    "kaleidoscope_tavern:sweet_berries_bucket": [
+      6,
+      4
+    ],
+    "kaleidoscope_tavern:glow_berries_bucket": [
       6,
       4
     ]
@@ -2541,6 +2675,22 @@
     "kaleidoscope_chinesefood:sichuan_wonton": [
       3,
       2
+    ],
+    "kaleidoscope_tavern:grape": [
+      2,
+      0
+    ],
+    "kaleidoscope_tavern:ice_grape": [
+      2,
+      0
+    ],
+    "kaleidoscope_tavern:gold_grape": [
+      2,
+      0
+    ],
+    "kaleidoscope_tavern:green_grape": [
+      2,
+      0
     ]
   },
   "enableBowls": true,

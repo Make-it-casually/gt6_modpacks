@@ -1,0 +1,7 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"gregtech:gt.meta.dust","components":"{\"gregapi:subtype\":8100}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.block.flower.a"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.meta.rockgt","components":"{\"gregapi:subtype\":9222}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.meta.rockgt","components":"{\"gregapi:subtype\":8500}"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

@@ -34,7 +34,5 @@ ServerEvents.recipes(event => {
       failed.push(recipeId)
     }
   }
-  if (failed.length > 0) {
-    console.warn('[NekoJS/RailcraftIngots] 未完成（可能已不存在）：' + failed.join(' | '))
-  }
+
 })

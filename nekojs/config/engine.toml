@@ -20,3 +20,13 @@ scriptEvaluationTimeoutSeconds = 30
 scriptStatementLimit = 0
 # Runaway watchdog for synchronous script execution, in seconds (0 = disabled, the default). Implemented as a sliding window over statement checkpoints: as long as guest code keeps executing without yielding back to Java (checkpoint gaps <= 250ms), the window accumulates; exceeding this many seconds closes the Context and aborts the evaluation - the only reliable way to stop a while(true){} freezing the server thread. The window resets on every yield, so long-lived environments are never killed regardless of total statements executed. Blockage inside host calls that executes no statements is invisible to this watchdog.
 scriptRunawayTimeoutSeconds = 0
+
+[packSync]
+	# Multiplayer script pack distribution (server -> client). off (default) = disabled; hashOnly = server sends pack hashes only, clients never execute remote packs; all = server pushes packs (manifest + files) during the configuration phase, verified and executed on the client BEFORE vanilla registry validation. Only packs with clientSync != false in their manifest are synced.
+	mode = "off"
+	# Accept server script packs without an Ed25519 signature. false (default) rejects unsigned packs and disconnects with a prompt.
+	allowUnsigned = false
+
+[dynamicRegistry]
+	# Allow scripts to register NEW game content (items, etc.) AFTER the server has started, via the DynamicRegistry binding (WORLD/RELOADABLE modes with snapshot-stale tracking). Experimental; keep disabled unless you need it.
+	enabled = false

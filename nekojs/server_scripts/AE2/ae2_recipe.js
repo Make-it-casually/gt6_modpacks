@@ -1453,7 +1453,7 @@ function buildRecipeJson(recipe) {
       result: toResult(recipe)
     })
   }
-  throw new Error('未知的配方类型：' + String(recipe.kind))
+  throw new Error('unknown recipe type: ' + String(recipe.kind))
 }
 
 function addDesigned(event, recipe) {
@@ -1462,12 +1462,11 @@ function addDesigned(event, recipe) {
   event.setJson(recipe.id, jsonText)
   const readBack = JSON.parse(event.getJson(recipe.id))
   if (JSON.stringify(readBack) !== JSON.stringify(JSON.parse(jsonText))) {
-    throw new Error('配方 JSON 写入后读回不一致：' + recipe.id)
+    throw new Error('recipe JSON mismatch after write-back: ' + recipe.id)
   }
 }
 
 ServerEvents.recipes(event => {
-  const problems = []
   let removedCount = 0
   for (const removeId of REMOVE) {
     if (!event.exists(removeId)) {
@@ -1477,7 +1476,6 @@ ServerEvents.recipes(event => {
       event.get(removeId).remove()
       removedCount = removedCount + 1
     } catch (removeError) {
-      problems.push(removeId + ' 删除失败：' + String(removeError))
     }
   }
   let addedCount = 0
@@ -1488,7 +1486,6 @@ ServerEvents.recipes(event => {
       addedCount = addedCount + 1
       touchedIds.add(recipe.id)
     } catch (addError) {
-      problems.push(recipe.id + ' 注册失败：' + String(addError))
     }
   }
   let modernizedCount = 0
@@ -1498,13 +1495,7 @@ ServerEvents.recipes(event => {
         modernizedCount = modernizedCount + 1
       }
     } catch (modernizeError) {
-      problems.push(touchedId + ' 成分写法转换失败：' + String(modernizeError))
     }
   }
-  console.info(
-    '[NekoJS/AE2] 参考重构：删 ' + removedCount + '/' + REMOVE.length + ' 条原配方；新增 ' + addedCount + '/' + RECIPES.length + ' 条；成分写法现代化 ' + modernizedCount + ' 条；问题 ' + problems.length + ' 处。'
-  )
-  if (problems.length > 0) {
-    console.warn('[NekoJS/AE2] 未完成：' + problems.join(' | '))
-  }
+
 })

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "sophisticatedbackpacks:upgrade_base",
+    "E": "minecraft:string",
+    "G": "minecraft:glass_bottle",
+    "W": "thirstwastaken2:waterskin"
+  },
+  "pattern": [
+    " W ",
+    "GBG",
+    "EEE"
+  ],
+  "result": {
+    "id": "thirstwastaken2:drinking_upgrade",
+    "count": 1
+  }
+}

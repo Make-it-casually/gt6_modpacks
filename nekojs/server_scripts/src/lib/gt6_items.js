@@ -5,16 +5,16 @@ import { $OP } from 'java:gregapi/data/OP'
 export function gtStack(formKey, materialName, count) {
   const prefix = $OP[formKey]
   if (prefix == null) {
-    throw new Error(`GT6 没有这个形态：${String(formKey)}`)
+    throw new Error(`GT6 no such form: ${String(formKey)}`)
   }
   const material = $OreDictMaterial.MATERIAL_MAP.get(materialName)
   if (material == null) {
-    throw new Error(`GT6 没有这个材料：${String(materialName)}`)
+    throw new Error(`GT6 no such material: ${String(materialName)}`)
   }
   const amount = count === undefined ? 1 : count
   const stack = $OreDictManager.INSTANCE.getStack(prefix, material, amount)
   if (stack == null || stack.isEmpty()) {
-    throw new Error(`GT6 取不到物品：${String(formKey)} / ${String(materialName)}`)
+    throw new Error(`GT6 item not obtainable: ${String(formKey)} / ${String(materialName)}`)
   }
   return stack
 }

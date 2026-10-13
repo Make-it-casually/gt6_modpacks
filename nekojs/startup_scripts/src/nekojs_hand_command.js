@@ -48,7 +48,6 @@ CommandEvents.register(event => {
       return 1
     } catch (error) {
       const message = `[NekoJS] hand command failed while ${stage}: ${String(error)}`
-      console.error(message)
       source.sendSystemMessage($Component.literal(message))
       return 0
     }

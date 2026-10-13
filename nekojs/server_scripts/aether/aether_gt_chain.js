@@ -80,15 +80,15 @@ function metaStack(formKey, subtype, count) {
   }
   const prefix = $OP[formKey]
   if (prefix == null) {
-    throw new Error('未知形态：' + formKey)
+    throw new Error('unknown form: ' + formKey)
   }
   const material = $OreDictMaterial.get(subtype)
   if (material == null) {
-    throw new Error('未知材料号：' + subtype)
+    throw new Error('unknown material id: ' + subtype)
   }
   const stack = $OreDictManager.INSTANCE.getStack(prefix, material, count)
   if (stack == null || stack.isEmpty()) {
-    throw new Error('形态=' + String(prefix) + ' 材料=' + String(material) + ' 数量=' + count + ' 取不到物品')
+    throw new Error('form=' + String(prefix) + ' material=' + String(material) + ' count=' + count + ' item not obtainable')
   }
   return stack
 }
@@ -108,7 +108,6 @@ function buildStacks(list) {
 
 ServerEvents.started(() => {
   let ok = 0
-  const problems = []
   for (let index = 0; index < RECIPES.length; index++) {
     const entry = RECIPES[index]
     try {
@@ -131,11 +130,7 @@ ServerEvents.started(() => {
       })
       ok = ok + 1
     } catch (error) {
-      problems.push(entry.label + '：' + String(error))
     }
   }
-  console.info('[NekoJS/AetherGT] 天境矿处理链：注册 ' + ok + '/' + RECIPES.length + ' 条；问题 ' + problems.length + ' 处。')
-  if (problems.length > 0) {
-    console.warn('[NekoJS/AetherGT] 未完成：' + problems.join(' | '))
-  }
+
 })

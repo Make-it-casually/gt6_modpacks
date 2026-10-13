@@ -16,7 +16,6 @@ const EUT = 32
 
 ServerEvents.recipes(event => {
   let added = 0
-  const problems = []
   let removed = 0
 
   for (let removeIndex = 0; removeIndex < RODS.length; removeIndex++) {
@@ -25,7 +24,6 @@ ServerEvents.recipes(event => {
       event.get(removeId).remove()
       removed = removed + 1
     } catch (error) {
-      problems.push(removeId + '：删除失败 ' + String(error))
     }
   }
   for (let addIndex = 0; addIndex < RODS.length; addIndex++) {
@@ -43,12 +41,7 @@ ServerEvents.recipes(event => {
       })
       added = added + 1
     } catch (error) {
-      problems.push(rod + '：' + String(error))
     }
   }
 
-  console.info('[NekoJS/ThaumaturgeStaff] 杖芯改装：删除奥术工作台配方 ' + removed + ' 条，新增组装机配方 ' + added + '/' + RODS.length + ' 条；问题 ' + problems.length + ' 处。')
-  if (problems.length > 0) {
-    console.warn('[NekoJS/ThaumaturgeStaff] 未完成：' + problems.join(' | '))
-  }
 })

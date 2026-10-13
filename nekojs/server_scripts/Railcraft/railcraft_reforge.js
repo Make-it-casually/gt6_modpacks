@@ -893,7 +893,6 @@ function convert(entry) {
 
 ServerEvents.recipes(event => {
   let recipesChanged = 0
-  const problems = []
   for (let index = 0; index < TARGETS.length; index++) {
     const id = TARGETS[index]
     try {
@@ -912,12 +911,7 @@ ServerEvents.recipes(event => {
       event.setJson(id, JSON.stringify(replaced))
       recipesChanged = recipesChanged + 1
     } catch (error) {
-      problems.push(id + '：' + String(error))
     }
   }
-  const summary = '[NekoJS/RailcraftReforge] RailCraft 配方材料改为格雷：改动 ' + recipesChanged
-    + '/' + TARGETS.length + ' 条；问题 ' + problems.length + ' 处。'
-  if (problems.length > 0) {
-    console.warn('[NekoJS/RailcraftReforge] 未完成：' + problems.join(' | '))
-  }
+
 })

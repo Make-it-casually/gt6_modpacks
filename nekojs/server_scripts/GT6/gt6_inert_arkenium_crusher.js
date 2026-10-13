@@ -18,6 +18,5 @@ ServerEvents.recipes(() => {
       eut: 16
     })
   } catch (error) {
-    console.warn('[NekoJS/GT6] 粉碎机配方注册失败：' + String(error))
   }
 })

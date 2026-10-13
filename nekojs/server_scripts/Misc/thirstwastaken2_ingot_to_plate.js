@@ -95,7 +95,6 @@ function convertNode(node) {
 
 ServerEvents.recipes(event => {
   let changed = 0
-  const problems = []
   for (let targetIndex = 0; targetIndex < TARGETS.length; targetIndex++) {
     const id = TARGETS[targetIndex]
     try {
@@ -108,11 +107,7 @@ ServerEvents.recipes(event => {
       event.setJson(id, rebuilt)
       changed = changed + 1
     } catch (error) {
-      problems.push(id + '：' + String(error))
     }
   }
-  console.info('[NekoJS/ThirstPlate] 饮水模组配方锭改板：改动 ' + changed + '/' + TARGETS.length + ' 条；问题 ' + problems.length + ' 处。')
-  if (problems.length > 0) {
-    console.warn('[NekoJS/ThirstPlate] 未完成：' + problems.join(' | '))
-  }
+
 })
