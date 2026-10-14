@@ -15,3 +15,7 @@
 nekojs/node_modules/
 !gregtech.cfg
 !gregtech.lang
+
+# 从 config 白名单中排除
+config/mmcr-machine-appearance.properties
+config/jei/
