@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "gt_coal_ingot",
+  "key": {
+    "#": {
+      "neoforge:ingredient_type": "neoforge:components",
+      "items": "gregtech:gt.meta.dustsmall",
+      "components": {
+        "gregapi:subtype": 8334
+      }
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "gregtech:gt.meta.ingot",
+    "count": 1,
+    "components": {
+      "gregapi:subtype": 8334
+    }
+  }
+}

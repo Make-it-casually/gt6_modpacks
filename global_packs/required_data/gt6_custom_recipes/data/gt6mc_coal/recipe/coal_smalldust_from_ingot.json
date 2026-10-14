@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gt_coal_smalldust",
+  "ingredients": [
+    {
+      "neoforge:ingredient_type": "neoforge:components",
+      "items": "gregtech:gt.meta.ingot",
+      "components": {
+        "gregapi:subtype": 8334
+      }
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "gregtech:gt.meta.dustsmall",
+    "components": {
+      "gregapi:subtype": 8334
+    }
+  }
+}

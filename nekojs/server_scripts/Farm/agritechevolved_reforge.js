@@ -4,20 +4,32 @@ const REMOVE = [
 ]
 
 const EDITS = [
+  // key.F:  "minecraft:iron_ingot"  ->  GT steel_plate
   { id: 'agritechevolved:advanced_planter', path: 'key.F', value: RF.steel_plate },
+  // key.I:  "minecraft:iron_ingot"  ->  GT steel_plate
   { id: 'agritechevolved:biomass_burner', path: 'key.I', value: RF.steel_plate },
+  // key.I:  "minecraft:iron_ingot"  ->  GT steel_plate
   { id: 'agritechevolved:capacitor_tier1', path: 'key.I', value: RF.steel_plate },
+  // key.G:  "minecraft:gold_ingot"  ->  GT gold_plate
   { id: 'agritechevolved:capacitor_tier2', path: 'key.G', value: RF.gold_plate },
+  // key.I:  "minecraft:iron_ingot"  ->  GT steel_plate
   { id: 'agritechevolved:cloche_dome', path: 'key.I', value: RF.steel_plate },
+  // key.I:  "minecraft:iron_ingot"  ->  GT steel_plate
   { id: 'agritechevolved:composter', path: 'key.I', value: RF.steel_plate },
+  // key.I:  "minecraft:iron_ingot"  ->  GT steel_plate
   { id: 'agritechevolved:fertilizer_spreader', path: 'key.I', value: RF.steel_plate },
+  // key.I:  "minecraft:iron_ingot"  ->  GT steel_plate
   { id: 'agritechevolved:silo', path: 'key.I', value: RF.steel_plate },
+  // key.G:  "minecraft:gold_ingot"  ->  GT gold_plate
   { id: 'agritechevolved:sm_mk1', path: 'key.G', value: RF.gold_plate },
+  // key.I:  "minecraft:iron_ingot"  ->  GT steel_plate
   { id: 'agritechevolved:sm_mk1', path: 'key.I', value: RF.steel_plate },
 ]
 
 const GATES = [
+  // pattern:  ["F F","IAI","RIR"]  ->  [F F, IAI, RZR]
   { id: 'agritechevolved:advanced_planter', path: 'pattern', value: ['F F', 'IAI', 'RZR'] },
+  // key.Z:  (not found)  ->  GT bronze_plate
   { id: 'agritechevolved:advanced_planter', path: 'key.Z', value: RF.bronze_plate },
 ]
 

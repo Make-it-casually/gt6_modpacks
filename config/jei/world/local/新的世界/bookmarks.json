@@ -115,5 +115,8 @@
   {"ingredient":{"id":"minecraft:flint"},"type":"item_stack","bookmarkType":"INGREDIENT"},
   {"recipe":"classicpipes:provider_pipe_c","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
   {"ingredient":{"id":"minecraft:copper_nugget"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"classicpipes:request_pipe"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"classicpipes:request_pipe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.meta.oreraw","components":"{\"gregapi:subtype\":8334}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"gregtech:gt.meta.ingot","components":"{\"gregapi:subtype\":8334}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"enderio:redstone_alloy_grinding_ball"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

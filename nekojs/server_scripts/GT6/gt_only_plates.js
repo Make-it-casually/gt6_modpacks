@@ -1,171 +1,172 @@
 import { gt } from '../src/lib/gt6_materials.js'
+import { applyReforge } from '../src/lib/gt6_reforge.js'
 
-const TARGETS = `railcraft:charge_coil
-railcraft:charge_motor
-railcraft:charge_terminal
-railcraft:dumping_track_kit
-railcraft:electric_locomotive
-railcraft:feed_station
-railcraft:fluid_fueled_firebox
-railcraft:force_track_emitter
-railcraft:frame_brass_plate
-railcraft:frame_bronze_plate
-railcraft:frame_iron_plate
-railcraft:frame_steel_plate
-railcraft:high_pressure_steam_boiler_tank
-railcraft:iron_tank_gauge
-railcraft:iron_tank_valve
-railcraft:iron_tank_wall
-railcraft:low_pressure_steam_boiler_tank
-railcraft:rolling/brass_electrode
-railcraft:rolling/brass_plate
-railcraft:rolling/bronze_electrode
-railcraft:rolling/bronze_plate
-railcraft:rolling/bushing_gear_brass
-railcraft:rolling/bushing_gear_bronze
-railcraft:rolling/copper_electrode
-railcraft:rolling/copper_plate
-railcraft:rolling/gold_electrode
-railcraft:rolling/gold_plate
-railcraft:rolling/invar_electrode
-railcraft:rolling/invar_plate
-railcraft:rolling/iron_electrode
-railcraft:rolling/iron_plate
-railcraft:rolling/lead_electrode
-railcraft:rolling/lead_plate
-railcraft:rolling/nickel_electrode
-railcraft:rolling/nickel_plate
-railcraft:rolling/nickel_turbine_blade
-railcraft:rolling/silver_electrode
-railcraft:rolling/silver_plate
-railcraft:rolling/steel_electrode
-railcraft:rolling/steel_plate
-railcraft:rolling/steel_turbine_blade
-railcraft:rolling/tin_electrode
-railcraft:rolling/tin_plate
-railcraft:rolling/zinc_electrode
-railcraft:rolling/zinc_plate
-railcraft:steam_oven
-railcraft:steam_turbine
-railcraft:steel_tank_gauge
-railcraft:steel_tank_valve
-railcraft:steel_tank_wall`.split('\n')
+// RailCraft plates and c:/forge: plate tags are replaced by GT plates.
+// Each edit is written out explicitly; the comment above it shows the original tag/item.
 
-const MATERIAL_ALIAS = {
-  iron: 'iron',
-  gold: 'gold',
-  copper: 'copper',
-  tin: 'tin',
-  lead: 'lead',
-  silver: 'silver',
-  nickel: 'nickel',
-  zinc: 'zinc',
-  aluminium: 'aluminium',
-  aluminum: 'aluminium',
-  bronze: 'bronze',
-  brass: 'brass',
-  steel: 'steel',
-  platinum: 'platinum',
-  uranium: 'uranium',
-  titanium: 'titanium',
-  tungsten: 'tungsten'
-}
+const EDITS = [
+  // railcraft:charge_coil
+  //   key.b:  "#c:plates/iron"  ->  GT plate
+  { id: 'railcraft:charge_coil', path: 'key.b', value: gt('plate', 'iron') },
 
-const SKIP_KEYS = ['result', 'output', 'results', 'type', 'category', 'group', 'pattern']
+  // railcraft:charge_motor
+  //   key.b:  "#c:plates/tin"  ->  GT plate
+  { id: 'railcraft:charge_motor', path: 'key.b', value: gt('plate', 'tin') },
 
-function materialOfPlate(text) {
-  if (text.indexOf('#c:plates/') === 0 || text.indexOf('#forge:plates/') === 0 || text.indexOf('#neoforge:plates/') === 0) {
-    const name = text.split('/').pop()
-    const material = MATERIAL_ALIAS[name]
-    if (material === undefined) {
-      return null
-    }
-    return material
-  }
-  if (text.indexOf('railcraft:') === 0 && text.slice(-6) === '_plate') {
-    const name = text.slice('railcraft:'.length, -6)
-    const material = MATERIAL_ALIAS[name]
-    if (material === undefined) {
-      return null
-    }
-    return material
-  }
-  return null
-}
+  // railcraft:charge_terminal
+  //   key.b:  "#c:plates/brass"  ->  GT plate
+  { id: 'railcraft:charge_terminal', path: 'key.b', value: gt('plate', 'brass') },
 
-function gtPlateConvert(entry) {
-  if (typeof entry === 'string') {
-    const material = materialOfPlate(entry)
-    if (material === null) {
-      return null
-    }
-    return gt('plate', material)
-  }
-  if (Array.isArray(entry)) {
-    let changed = false
-    const out = []
-    for (let index = 0; index < entry.length; index++) {
-      const replaced = gtPlateConvert(entry[index])
-      if (replaced === null) {
-        out.push(entry[index])
-      } else {
-        out.push(replaced)
-        changed = true
-      }
-    }
-    if (!changed) {
-      return null
-    }
-    return out
-  }
-  if (entry !== null && typeof entry === 'object') {
-    let changed = false
-    const out = {}
-    const keys = Object.keys(entry)
-    for (let index = 0; index < keys.length; index++) {
-      const key = keys[index]
-      const current = entry[key]
-      if (SKIP_KEYS.indexOf(key) >= 0) {
-        out[key] = current
-        continue
-      }
-      const replaced = gtPlateConvert(current)
-      if (replaced === null) {
-        out[key] = current
-      } else {
-        out[key] = replaced
-        changed = true
-      }
-    }
-    if (!changed) {
-      return null
-    }
-    return out
-  }
-  return null
-}
+  // railcraft:dumping_track_kit
+  //   ingredients[2]:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:dumping_track_kit', path: 'ingredients[2]', value: gt('plate', 'steel') },
+
+  // railcraft:electric_locomotive
+  //   key.b:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:electric_locomotive', path: 'key.b', value: gt('plate', 'steel') },
+
+  // railcraft:feed_station
+  //   key.c:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:feed_station', path: 'key.c', value: gt('plate', 'steel') },
+
+  // railcraft:force_track_emitter
+  //   key.a:  "#c:plates/tin"  ->  GT plate
+  { id: 'railcraft:force_track_emitter', path: 'key.a', value: gt('plate', 'tin') },
+
+  // railcraft:frame_brass_plate
+  //   key.a:  "#c:plates/brass"  ->  GT plate
+  { id: 'railcraft:frame_brass_plate', path: 'key.a', value: gt('plate', 'brass') },
+
+  // railcraft:frame_bronze_plate
+  //   key.a:  "#c:plates/bronze"  ->  GT plate
+  { id: 'railcraft:frame_bronze_plate', path: 'key.a', value: gt('plate', 'bronze') },
+
+  // railcraft:frame_iron_plate
+  //   key.a:  "#c:plates/iron"  ->  GT plate
+  { id: 'railcraft:frame_iron_plate', path: 'key.a', value: gt('plate', 'iron') },
+
+  // railcraft:frame_steel_plate
+  //   key.a:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:frame_steel_plate', path: 'key.a', value: gt('plate', 'steel') },
+
+  // railcraft:high_pressure_steam_boiler_tank
+  //   key.a:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:high_pressure_steam_boiler_tank', path: 'key.a', value: gt('plate', 'steel') },
+
+  // railcraft:iron_tank_gauge
+  //   key.b:  "#c:plates/iron"  ->  GT plate
+  { id: 'railcraft:iron_tank_gauge', path: 'key.b', value: gt('plate', 'iron') },
+
+  // railcraft:iron_tank_valve
+  //   key.b:  "#c:plates/iron"  ->  GT plate
+  { id: 'railcraft:iron_tank_valve', path: 'key.b', value: gt('plate', 'iron') },
+
+  // railcraft:iron_tank_wall
+  //   key.a:  "#c:plates/iron"  ->  GT plate
+  { id: 'railcraft:iron_tank_wall', path: 'key.a', value: gt('plate', 'iron') },
+
+  // railcraft:low_pressure_steam_boiler_tank
+  //   key.a:  "#c:plates/iron"  ->  GT plate
+  { id: 'railcraft:low_pressure_steam_boiler_tank', path: 'key.a', value: gt('plate', 'iron') },
+
+  // railcraft:rolling/brass_electrode
+  //   key.a:  "#c:plates/brass"  ->  GT plate
+  { id: 'railcraft:rolling/brass_electrode', path: 'key.a', value: gt('plate', 'brass') },
+
+  // railcraft:rolling/bronze_electrode
+  //   key.a:  "#c:plates/bronze"  ->  GT plate
+  { id: 'railcraft:rolling/bronze_electrode', path: 'key.a', value: gt('plate', 'bronze') },
+
+  // railcraft:rolling/bushing_gear_brass
+  //   key.a:  "#c:plates/brass"  ->  GT plate
+  { id: 'railcraft:rolling/bushing_gear_brass', path: 'key.a', value: gt('plate', 'brass') },
+
+  // railcraft:rolling/bushing_gear_bronze
+  //   key.a:  "#c:plates/bronze"  ->  GT plate
+  { id: 'railcraft:rolling/bushing_gear_bronze', path: 'key.a', value: gt('plate', 'bronze') },
+
+  // railcraft:rolling/copper_electrode
+  //   key.a:  "#c:plates/copper"  ->  GT plate
+  { id: 'railcraft:rolling/copper_electrode', path: 'key.a', value: gt('plate', 'copper') },
+
+  // railcraft:rolling/gold_electrode
+  //   key.a:  "#c:plates/gold"  ->  GT plate
+  { id: 'railcraft:rolling/gold_electrode', path: 'key.a', value: gt('plate', 'gold') },
+
+  // railcraft:rolling/iron_electrode
+  //   key.a:  "#c:plates/iron"  ->  GT plate
+  { id: 'railcraft:rolling/iron_electrode', path: 'key.a', value: gt('plate', 'iron') },
+
+  // railcraft:rolling/lead_electrode
+  //   key.a:  "#c:plates/lead"  ->  GT plate
+  { id: 'railcraft:rolling/lead_electrode', path: 'key.a', value: gt('plate', 'lead') },
+
+  // railcraft:rolling/nickel_electrode
+  //   key.a:  "#c:plates/nickel"  ->  GT plate
+  { id: 'railcraft:rolling/nickel_electrode', path: 'key.a', value: gt('plate', 'nickel') },
+
+  // railcraft:rolling/nickel_turbine_blade
+  //   key.a:  "#c:plates/nickel"  ->  GT plate
+  { id: 'railcraft:rolling/nickel_turbine_blade', path: 'key.a', value: gt('plate', 'nickel') },
+
+  // railcraft:rolling/silver_electrode
+  //   key.a:  "#c:plates/silver"  ->  GT plate
+  { id: 'railcraft:rolling/silver_electrode', path: 'key.a', value: gt('plate', 'silver') },
+
+  // railcraft:rolling/steel_electrode
+  //   key.a:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:rolling/steel_electrode', path: 'key.a', value: gt('plate', 'steel') },
+
+  // railcraft:rolling/steel_turbine_blade
+  //   key.a:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:rolling/steel_turbine_blade', path: 'key.a', value: gt('plate', 'steel') },
+
+  // railcraft:rolling/tin_electrode
+  //   key.a:  "#c:plates/tin"  ->  GT plate
+  { id: 'railcraft:rolling/tin_electrode', path: 'key.a', value: gt('plate', 'tin') },
+
+  // railcraft:rolling/zinc_electrode
+  //   key.a:  "#c:plates/zinc"  ->  GT plate
+  { id: 'railcraft:rolling/zinc_electrode', path: 'key.a', value: gt('plate', 'zinc') },
+
+  // railcraft:steam_oven
+  //   key.a:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:steam_oven', path: 'key.a', value: gt('plate', 'steel') },
+
+  // railcraft:steam_turbine
+  //   key.b:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:steam_turbine', path: 'key.b', value: gt('plate', 'steel') },
+
+  // railcraft:steel_tank_gauge
+  //   key.b:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:steel_tank_gauge', path: 'key.b', value: gt('plate', 'steel') },
+
+  // railcraft:steel_tank_valve
+  //   key.b:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:steel_tank_valve', path: 'key.b', value: gt('plate', 'steel') },
+
+  // railcraft:steel_tank_wall
+  //   key.a:  "#c:plates/steel"  ->  GT plate
+  { id: 'railcraft:steel_tank_wall', path: 'key.a', value: gt('plate', 'steel') },
+  // ---- invar (added in round 1b) ----
+  // railcraft:fluid_fueled_firebox  [invar fix]
+  //   key.a:  "#c:plates/invar"  ->  GT invar plate
+  { id: 'railcraft:fluid_fueled_firebox', path: 'key.a', value: gt('plate', 'invar') },
+
+  // railcraft:high_pressure_steam_boiler_tank  [invar fix]
+  //   key.b:  "#c:plates/invar"  ->  GT invar plate
+  { id: 'railcraft:high_pressure_steam_boiler_tank', path: 'key.b', value: gt('plate', 'invar') },
+
+  // railcraft:low_pressure_steam_boiler_tank  [invar fix]
+  //   key.b:  "#c:plates/invar"  ->  GT invar plate
+  { id: 'railcraft:low_pressure_steam_boiler_tank', path: 'key.b', value: gt('plate', 'invar') },
+
+  // railcraft:rolling/invar_electrode  [invar fix]
+  //   key.a:  "#c:plates/invar"  ->  GT invar plate
+  { id: 'railcraft:rolling/invar_electrode', path: 'key.a', value: gt('plate', 'invar') },
+
+]
 
 ServerEvents.recipes(event => {
-  let changed = 0
-  for (let index = 0; index < TARGETS.length; index++) {
-    const id = TARGETS[index]
-    try {
-      if (!event.exists(id)) {
-        continue
-      }
-      const text = event.getJson(id)
-      if (text == null) {
-        continue
-      }
-      const parsed = JSON.parse(text)
-      const replaced = gtPlateConvert(parsed)
-      if (replaced === null) {
-        continue
-      }
-      event.setJson(id, JSON.stringify(replaced))
-      changed = changed + 1
-    } catch (error) {
-    }
-  }
-
+  applyReforge(event, { tag: 'GTOnlyPlates', edits: EDITS })
 })

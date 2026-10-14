@@ -1,592 +1,297 @@
 import { gtIngredient } from '../src/lib/gt6_materials.js'
+import { applyReforge } from '../src/lib/gt6_reforge.js'
 
-const TARGETS = [
-  'thaumaturge:amber_blasting_from_ore',
-  'thaumaturge:amber_block',
-  'thaumaturge:amber_block_from_brick',
-  'thaumaturge:amber_brick',
-  'thaumaturge:amber_from_block',
-  'thaumaturge:amber_from_ore',
-  'thaumaturge:amber_from_resin',
-  'thaumaturge:amulet_fancy',
-  'thaumaturge:amulet_mundane',
-  'thaumaturge:arcane/banner_black',
-  'thaumaturge:arcane/banner_blue',
-  'thaumaturge:arcane/banner_brown',
-  'thaumaturge:arcane/banner_cyan',
-  'thaumaturge:arcane/banner_gray',
-  'thaumaturge:arcane/banner_green',
-  'thaumaturge:arcane/banner_light_blue',
-  'thaumaturge:arcane/banner_light_gray',
-  'thaumaturge:arcane/banner_lime',
-  'thaumaturge:arcane/banner_magenta',
-  'thaumaturge:arcane/banner_orange',
-  'thaumaturge:arcane/banner_pink',
-  'thaumaturge:arcane/banner_purple',
-  'thaumaturge:arcane/banner_red',
-  'thaumaturge:arcane/banner_white',
-  'thaumaturge:arcane/banner_yellow',
-  'thaumaturge:arcane_ear_toggle',
-  'thaumaturge:arcane_workbench/activator_rail',
-  'thaumaturge:arcane_workbench/advanced_alchemical_construct',
-  'thaumaturge:arcane_workbench/alchemical_construct',
-  'thaumaturge:arcane_workbench/alembic',
-  'thaumaturge:arcane_workbench/arcane_door',
-  'thaumaturge:arcane_workbench/arcane_ear',
-  'thaumaturge:arcane_workbench/arcane_grindstone',
-  'thaumaturge:arcane_workbench/arcane_key_gold',
-  'thaumaturge:arcane_workbench/arcane_key_iron',
-  'thaumaturge:arcane_workbench/arcane_pressure_plate',
-  'thaumaturge:arcane_workbench/arcane_workbench_charger',
-  'thaumaturge:arcane_workbench/bellows',
-  'thaumaturge:arcane_workbench/brain_box',
-  'thaumaturge:arcane_workbench/candle_holder_brass',
-  'thaumaturge:arcane_workbench/candle_holder_thaumium',
-  'thaumaturge:arcane_workbench/candle_holder_void',
-  'thaumaturge:arcane_workbench/centrifuge',
-  'thaumaturge:arcane_workbench/cloth_boots',
-  'thaumaturge:arcane_workbench/cloth_chest',
-  'thaumaturge:arcane_workbench/cloth_legs',
-  'thaumaturge:arcane_workbench/condenser',
-  'thaumaturge:arcane_workbench/condenser_lattice',
-  'thaumaturge:arcane_workbench/deconstruction_table',
-  'thaumaturge:arcane_workbench/dioptra',
-  'thaumaturge:arcane_workbench/essentia_crystalizer',
-  'thaumaturge:arcane_workbench/essentia_input',
-  'thaumaturge:arcane_workbench/essentia_output',
-  'thaumaturge:arcane_workbench/fabric',
-  'thaumaturge:arcane_workbench/filter',
-  'thaumaturge:arcane_workbench/flux_scrubber',
-  'thaumaturge:arcane_workbench/focal_manipulator',
-  'thaumaturge:arcane_workbench/focus_pouch',
-  'thaumaturge:arcane_workbench/goggles_revealing',
-  'thaumaturge:arcane_workbench/golem_bowtie',
-  'thaumaturge:arcane_workbench/golem_fetter',
-  'thaumaturge:arcane_workbench/golem_fez',
-  'thaumaturge:arcane_workbench/golem_glasses',
-  'thaumaturge:arcane_workbench/golem_top_hat',
-  'thaumaturge:arcane_workbench/golem_visor',
-  'thaumaturge:arcane_workbench/grapple_gun',
-  'thaumaturge:arcane_workbench/grapple_gun_spool',
-  'thaumaturge:arcane_workbench/grapple_gun_tip',
-  'thaumaturge:arcane_workbench/hungry_chest',
-  'thaumaturge:arcane_workbench/infusion_matrix',
-  'thaumaturge:arcane_workbench/inlay',
-  'thaumaturge:arcane_workbench/jar_normal',
-  'thaumaturge:arcane_workbench/jar_void',
-  'thaumaturge:arcane_workbench/lamp_arcane',
-  'thaumaturge:arcane_workbench/levitator',
-  'thaumaturge:arcane_workbench/matrix_cost',
-  'thaumaturge:arcane_workbench/matrix_speed',
-  'thaumaturge:arcane_workbench/mechanism_complex',
-  'thaumaturge:arcane_workbench/mechanism_simple',
-  'thaumaturge:arcane_workbench/mind_clockwork',
-  'thaumaturge:arcane_workbench/mirrored_glass',
-  'thaumaturge:arcane_workbench/module_aggression',
-  'thaumaturge:arcane_workbench/module_vision',
-  'thaumaturge:arcane_workbench/morphic_resonator',
-  'thaumaturge:arcane_workbench/pattern_crafter',
-  'thaumaturge:arcane_workbench/paving_stone_barrier',
-  'thaumaturge:arcane_workbench/paving_stone_travel',
-  'thaumaturge:arcane_workbench/pedestal_ancient',
-  'thaumaturge:arcane_workbench/pedestal_arcane',
-  'thaumaturge:arcane_workbench/pedestal_eldritch',
-  'thaumaturge:arcane_workbench/potion_sprayer',
-  'thaumaturge:arcane_workbench/recharge_pedestal',
-  'thaumaturge:arcane_workbench/redstone_relay',
-  'thaumaturge:arcane_workbench/resonator',
-  'thaumaturge:arcane_workbench/sanity_checker',
-  'thaumaturge:arcane_workbench/seal_blank',
-  'thaumaturge:arcane_workbench/smelter_aux',
-  'thaumaturge:arcane_workbench/smelter_basic',
-  'thaumaturge:arcane_workbench/smelter_thaumium',
-  'thaumaturge:arcane_workbench/smelter_vent',
-  'thaumaturge:arcane_workbench/smelter_void',
-  'thaumaturge:arcane_workbench/spa',
-  'thaumaturge:arcane_workbench/stabilizer',
-  'thaumaturge:arcane_workbench/thaumometer',
-  'thaumaturge:arcane_workbench/thaumonomicon_sharing',
-  'thaumaturge:arcane_workbench/tube',
-  'thaumaturge:arcane_workbench/tube_buffer',
-  'thaumaturge:arcane_workbench/tube_filter',
-  'thaumaturge:arcane_workbench/tube_oneway',
-  'thaumaturge:arcane_workbench/tube_restrict',
-  'thaumaturge:arcane_workbench/tube_valve',
-  'thaumaturge:arcane_workbench/turret_advanced',
-  'thaumaturge:arcane_workbench/turret_basic',
-  'thaumaturge:arcane_workbench/vis_battery',
-  'thaumaturge:arcane_workbench/vis_generator',
-  'thaumaturge:arcane_workbench/vis_resonator',
-  'thaumaturge:arcane_workbench/warded_glass',
-  'thaumaturge:blaze_powder_from_cinderpearl',
-  'thaumaturge:button_greatwood',
-  'thaumaturge:button_silverwood',
-  'thaumaturge:candle_black_from_dye',
-  'thaumaturge:candle_blue_from_dye',
-  'thaumaturge:candle_brown_from_dye',
-  'thaumaturge:candle_cyan_from_dye',
-  'thaumaturge:candle_gray_from_dye',
-  'thaumaturge:candle_green_from_dye',
-  'thaumaturge:candle_light_blue_from_dye',
-  'thaumaturge:candle_light_gray_from_dye',
-  'thaumaturge:candle_lime_from_dye',
-  'thaumaturge:candle_magenta_from_dye',
-  'thaumaturge:candle_orange_from_dye',
-  'thaumaturge:candle_pink_from_dye',
-  'thaumaturge:candle_purple_from_dye',
-  'thaumaturge:candle_red_from_dye',
-  'thaumaturge:candle_white',
-  'thaumaturge:candle_white_from_dye',
-  'thaumaturge:candle_yellow_from_dye',
-  'thaumaturge:cloth_boots_dyed',
-  'thaumaturge:cloth_chest_dyed',
-  'thaumaturge:cloth_legs_dyed',
-  'thaumaturge:copper_ingot_blasting_from_cluster',
-  'thaumaturge:copper_ingot_from_cluster',
-  'thaumaturge:crucible/alumentum',
-  'thaumaturge:crucible/bath_salts',
-  'thaumaturge:crucible/bone_meal',
-  'thaumaturge:crucible/bottle_taint',
-  'thaumaturge:crucible/clay_ball',
-  'thaumaturge:crucible/cluster_cinnabar',
-  'thaumaturge:crucible/cluster_copper',
-  'thaumaturge:crucible/cluster_gold',
-  'thaumaturge:crucible/cluster_iron',
-  'thaumaturge:crucible/cluster_lead',
-  'thaumaturge:crucible/cluster_quartz',
-  'thaumaturge:crucible/cluster_silver',
-  'thaumaturge:crucible/cluster_tin',
-  'thaumaturge:crucible/cobweb',
-  'thaumaturge:crucible/dye',
-  'thaumaturge:crucible/ethereal_bloom',
-  'thaumaturge:crucible/everfull_urn',
-  'thaumaturge:crucible/focus_1',
-  'thaumaturge:crucible/glowstone_dust',
-  'thaumaturge:crucible/gold_nugget_transmutation',
-  'thaumaturge:crucible/gunpowder',
-  'thaumaturge:crucible/ice',
-  'thaumaturge:crucible/ingot_brass',
-  'thaumaturge:crucible/ingot_thaumium',
-  'thaumaturge:crucible/iron_nugget_transmutation',
-  'thaumaturge:crucible/lava_bucket',
-  'thaumaturge:crucible/leather',
-  'thaumaturge:crucible/liquid_death',
-  'thaumaturge:crucible/mossy_cobblestone',
-  'thaumaturge:crucible/mossy_stone_bricks',
-  'thaumaturge:crucible/nitor_yellow',
-  'thaumaturge:crucible/sanity_soap',
-  'thaumaturge:crucible/seal_breaker_advanced',
-  'thaumaturge:crucible/seal_empty',
-  'thaumaturge:crucible/seal_empty_advanced',
-  'thaumaturge:crucible/seal_fill',
-  'thaumaturge:crucible/seal_fill_advanced',
-  'thaumaturge:crucible/seal_guard',
-  'thaumaturge:crucible/seal_guard_advanced',
-  'thaumaturge:crucible/seal_lumber',
-  'thaumaturge:crucible/seal_pickup',
-  'thaumaturge:crucible/seal_pickup_advanced',
-  'thaumaturge:crucible/seal_provider',
-  'thaumaturge:crucible/seal_stock',
-  'thaumaturge:crucible/seal_use',
-  'thaumaturge:crucible/slime_ball',
-  'thaumaturge:crucible/string',
-  'thaumaturge:crucible/tallow',
-  'thaumaturge:crucible/vis_crystal/aer',
-  'thaumaturge:crucible/vis_crystal/alienis',
-  'thaumaturge:crucible/vis_crystal/alkimia',
-  'thaumaturge:crucible/vis_crystal/aqua',
-  'thaumaturge:crucible/vis_crystal/auram',
-  'thaumaturge:crucible/vis_crystal/aversio',
-  'thaumaturge:crucible/vis_crystal/bestia',
-  'thaumaturge:crucible/vis_crystal/cognitio',
-  'thaumaturge:crucible/vis_crystal/desiderium',
-  'thaumaturge:crucible/vis_crystal/exanimis',
-  'thaumaturge:crucible/vis_crystal/fabrico',
-  'thaumaturge:crucible/vis_crystal/gelum',
-  'thaumaturge:crucible/vis_crystal/herba',
-  'thaumaturge:crucible/vis_crystal/humanus',
-  'thaumaturge:crucible/vis_crystal/ignis',
-  'thaumaturge:crucible/vis_crystal/instrumentum',
-  'thaumaturge:crucible/vis_crystal/lux',
-  'thaumaturge:crucible/vis_crystal/machina',
-  'thaumaturge:crucible/vis_crystal/metallum',
-  'thaumaturge:crucible/vis_crystal/mortuus',
-  'thaumaturge:crucible/vis_crystal/motus',
-  'thaumaturge:crucible/vis_crystal/ordo',
-  'thaumaturge:crucible/vis_crystal/perditio',
-  'thaumaturge:crucible/vis_crystal/permutatio',
-  'thaumaturge:crucible/vis_crystal/potentia',
-  'thaumaturge:crucible/vis_crystal/praecantatio',
-  'thaumaturge:crucible/vis_crystal/praemunio',
-  'thaumaturge:crucible/vis_crystal/sensus',
-  'thaumaturge:crucible/vis_crystal/spiritus',
-  'thaumaturge:crucible/vis_crystal/tenebrae',
-  'thaumaturge:crucible/vis_crystal/terra',
-  'thaumaturge:crucible/vis_crystal/vacuos',
-  'thaumaturge:crucible/vis_crystal/victus',
-  'thaumaturge:crucible/vis_crystal/vinculum',
-  'thaumaturge:crucible/vis_crystal/vitium',
-  'thaumaturge:crucible/vis_crystal/vitreus',
-  'thaumaturge:crucible/vis_crystal/volatus',
-  'thaumaturge:crucible/void_ingot',
-  'thaumaturge:door_greatwood',
-  'thaumaturge:door_silverwood',
-  'thaumaturge:dust_trigger/advanced_alchemical_furnace',
-  'thaumaturge:dust_trigger/bookshelf_to_thaumonomicon',
-  'thaumaturge:dust_trigger/cauldron_to_crucible',
-  'thaumaturge:dust_trigger/crafting_tables_to_arcane_workbench',
-  'thaumaturge:dust_trigger/golem_press',
-  'thaumaturge:dust_trigger/infernal_furnace',
-  'thaumaturge:dust_trigger/infusion_altar',
-  'thaumaturge:dust_trigger/infusion_altar_ancient',
-  'thaumaturge:dust_trigger/infusion_altar_eldritch',
-  'thaumaturge:dust_trigger/thaumatorium',
-  'thaumaturge:fence_gate_greatwood',
-  'thaumaturge:fence_gate_silverwood',
-  'thaumaturge:fence_greatwood',
-  'thaumaturge:fence_silverwood',
-  'thaumaturge:flesh_block',
-  'thaumaturge:girdle_fancy',
-  'thaumaturge:girdle_mundane',
-  'thaumaturge:gold_ingot_blasting_from_cluster',
-  'thaumaturge:gold_ingot_from_cluster',
-  'thaumaturge:golem_bell',
-  'thaumaturge:greatwood',
-  'thaumaturge:infusion/amulet_vis_crafted',
-  'thaumaturge:infusion/arcane_bore',
-  'thaumaturge:infusion/causality_collapser',
-  'thaumaturge:infusion/charm_undying',
-  'thaumaturge:infusion/cloud_ring',
-  'thaumaturge:infusion/crystal_aer',
-  'thaumaturge:infusion/crystal_aqua',
-  'thaumaturge:infusion/crystal_ignis',
-  'thaumaturge:infusion/crystal_ordo',
-  'thaumaturge:infusion/crystal_perditio',
-  'thaumaturge:infusion/crystal_terra',
-  'thaumaturge:infusion/crystal_vitium',
-  'thaumaturge:infusion/curiosity_band',
-  'thaumaturge:infusion/eldritch_eye',
-  'thaumaturge:infusion/elemental_axe',
-  'thaumaturge:infusion/elemental_hoe',
-  'thaumaturge:infusion/elemental_pickaxe',
-  'thaumaturge:infusion/elemental_shovel',
-  'thaumaturge:infusion/elemental_spear',
-  'thaumaturge:infusion/elemental_sword',
-  'thaumaturge:infusion/essentia_reservoir',
-  'thaumaturge:infusion/focus_2',
-  'thaumaturge:infusion/focus_3',
-  'thaumaturge:infusion/fortress_chest',
-  'thaumaturge:infusion/fortress_helm',
-  'thaumaturge:infusion/fortress_helm_goggles',
-  'thaumaturge:infusion/fortress_helm_mask_0',
-  'thaumaturge:infusion/fortress_helm_mask_1',
-  'thaumaturge:infusion/fortress_helm_mask_2',
-  'thaumaturge:infusion/fortress_legs',
-  'thaumaturge:infusion/hand_mirror',
-  'thaumaturge:infusion/jar_brain',
-  'thaumaturge:infusion/lamp_fertility',
-  'thaumaturge:infusion/lamp_growth',
-  'thaumaturge:infusion/mind_biothaumic',
-  'thaumaturge:infusion/mirror',
-  'thaumaturge:infusion/mirror_essentia',
-  'thaumaturge:infusion/node_stabilizer_advanced',
-  'thaumaturge:infusion/primal_crusher',
-  'thaumaturge:infusion/seal_breaker',
-  'thaumaturge:infusion/seal_butcher',
-  'thaumaturge:infusion/seal_harvest',
-  'thaumaturge:infusion/staff_rod_primal',
-  'thaumaturge:infusion/thaumonomicon_linking',
-  'thaumaturge:infusion/thaumostatic_harness',
-  'thaumaturge:infusion/traveller_boots',
-  'thaumaturge:infusion/verdant_charm',
-  'thaumaturge:infusion/verdant_charm_life',
-  'thaumaturge:infusion/verdant_charm_sustain',
-  'thaumaturge:infusion/void_robe_chest',
-  'thaumaturge:infusion/void_robe_helm',
-  'thaumaturge:infusion/void_robe_legs',
-  'thaumaturge:infusion/void_siphon',
-  'thaumaturge:infusion/voidseer_charm',
-  'thaumaturge:infusion/wand_cap_silver',
-  'thaumaturge:infusion/wand_cap_thaumium',
-  'thaumaturge:infusion/wand_cap_void',
-  'thaumaturge:infusion/wand_rod_blaze',
-  'thaumaturge:infusion/wand_rod_bone',
-  'thaumaturge:infusion/wand_rod_ice',
-  'thaumaturge:infusion/wand_rod_obsidian',
-  'thaumaturge:infusion/wand_rod_quartz',
-  'thaumaturge:infusion/wand_rod_reed',
-  'thaumaturge:infusion/wand_rod_silverwood',
-  'thaumaturge:infusion_enchantment/arcing',
-  'thaumaturge:infusion_enchantment/burrowing',
-  'thaumaturge:infusion_enchantment/collector',
-  'thaumaturge:infusion_enchantment/destructive',
-  'thaumaturge:infusion_enchantment/essence',
-  'thaumaturge:infusion_enchantment/lamplight',
-  'thaumaturge:infusion_enchantment/refining',
-  'thaumaturge:infusion_enchantment/sounding',
-  'thaumaturge:ingot_brass_from_block',
-  'thaumaturge:ingot_thaumium_from_block',
-  'thaumaturge:ingot_void_from_block',
-  'thaumaturge:iron_ingot_blasting_from_cluster',
-  'thaumaturge:iron_ingot_from_cluster',
-  'thaumaturge:item_grate',
-  'thaumaturge:jar_brace',
-  'thaumaturge:label',
-  'thaumaturge:label_clear',
-  'thaumaturge:label_filter',
-  'thaumaturge:metal_brass',
-  'thaumaturge:metal_thaumium',
-  'thaumaturge:metal_void',
-  'thaumaturge:nitors/black',
-  'thaumaturge:nitors/blue',
-  'thaumaturge:nitors/brown',
-  'thaumaturge:nitors/cyan',
-  'thaumaturge:nitors/gray',
-  'thaumaturge:nitors/green',
-  'thaumaturge:nitors/light_blue',
-  'thaumaturge:nitors/light_gray',
-  'thaumaturge:nitors/lime',
-  'thaumaturge:nitors/magenta',
-  'thaumaturge:nitors/orange',
-  'thaumaturge:nitors/pink',
-  'thaumaturge:nitors/purple',
-  'thaumaturge:nitors/red',
-  'thaumaturge:nitors/white',
-  'thaumaturge:nitors/yellow',
-  'thaumaturge:node_stabilizer',
-  'thaumaturge:node_transducer',
-  'thaumaturge:nugget_brass',
-  'thaumaturge:nugget_brass_from_nuggets',
-  'thaumaturge:nugget_quartz',
-  'thaumaturge:nugget_quartz_from_nuggets',
-  'thaumaturge:nugget_quicksilver',
-  'thaumaturge:nugget_quicksilver_from_nuggets',
-  'thaumaturge:nugget_thaumium',
-  'thaumaturge:nugget_thaumium_from_nuggets',
-  'thaumaturge:nugget_void',
-  'thaumaturge:nugget_void_from_nuggets',
-  'thaumaturge:obsidian_tile_from_obsidian_stonecutting',
-  'thaumaturge:obsidian_totem_from_obsidian_stonecutting',
-  'thaumaturge:obsidian_totem_from_obsidian_tile_stonecutting',
-  'thaumaturge:phial',
-  'thaumaturge:plank_greatwood',
-  'thaumaturge:plank_silverwood',
-  'thaumaturge:plate_brass',
-  'thaumaturge:plate_iron',
-  'thaumaturge:plate_thaumium',
-  'thaumaturge:plate_void',
-  'thaumaturge:pressure_plate_greatwood',
-  'thaumaturge:pressure_plate_silverwood',
-  'thaumaturge:quartz_blasting_from_cluster',
-  'thaumaturge:quartz_blasting_from_ore',
-  'thaumaturge:quartz_from_cluster',
-  'thaumaturge:quartz_from_ore',
-  'thaumaturge:quicksilver_blasting_from_cluster',
-  'thaumaturge:quicksilver_blasting_from_ore',
-  'thaumaturge:quicksilver_blasting_from_raw_cinnabar',
-  'thaumaturge:quicksilver_from_cluster',
-  'thaumaturge:quicksilver_from_ore',
-  'thaumaturge:quicksilver_from_raw_cinnabar',
-  'thaumaturge:quicksilver_from_shimmerleaf',
-  'thaumaturge:ring_fancy',
-  'thaumaturge:ring_mundane',
-  'thaumaturge:rotten_flesh_from_flesh_block',
-  'thaumaturge:runic_augment/runic_shielding',
-  'thaumaturge:salis_mundus',
-  'thaumaturge:scribing_tools',
-  'thaumaturge:scribing_tools_alt',
-  'thaumaturge:scribing_tools_refill',
-  'thaumaturge:silverwood',
-  'thaumaturge:slab_ancient',
-  'thaumaturge:slab_ancient_from_stone_ancient_stonecutting',
-  'thaumaturge:slab_ancient_rock',
-  'thaumaturge:slab_ancient_rock_from_stone_ancient_rock_stonecutting',
-  'thaumaturge:slab_ancient_tile',
-  'thaumaturge:slab_ancient_tile_from_stone_ancient_tile_stonecutting',
-  'thaumaturge:slab_arcane_brick',
-  'thaumaturge:slab_arcane_brick_from_stone_arcane_brick_stonecutting',
-  'thaumaturge:slab_arcane_stone',
-  'thaumaturge:slab_arcane_stone_from_stone_arcane_stonecutting',
-  'thaumaturge:slab_eldritch',
-  'thaumaturge:slab_eldritch_from_stone_eldritch_tile_stonecutting',
-  'thaumaturge:slab_eldritch_rock',
-  'thaumaturge:slab_eldritch_rock_from_eldritch_rock_stonecutting',
-  'thaumaturge:slab_eldritch_stone',
-  'thaumaturge:slab_eldritch_stone_from_eldritch_stone_stonecutting',
-  'thaumaturge:slab_greatwood',
-  'thaumaturge:slab_silverwood',
-  'thaumaturge:stairs_ancient',
-  'thaumaturge:stairs_ancient_from_stone_ancient_stonecutting',
-  'thaumaturge:stairs_ancient_rock',
-  'thaumaturge:stairs_ancient_rock_from_stone_ancient_rock_stonecutting',
-  'thaumaturge:stairs_ancient_tile',
-  'thaumaturge:stairs_ancient_tile_from_stone_ancient_tile_stonecutting',
-  'thaumaturge:stairs_arcane',
-  'thaumaturge:stairs_arcane_brick',
-  'thaumaturge:stairs_arcane_brick_from_stone_arcane_brick_stonecutting',
-  'thaumaturge:stairs_arcane_from_stone_arcane_stonecutting',
-  'thaumaturge:stairs_eldritch',
-  'thaumaturge:stairs_eldritch_from_eldritch_stone_stonecutting',
-  'thaumaturge:stairs_eldritch_rock',
-  'thaumaturge:stairs_eldritch_rock_from_eldritch_rock_stonecutting',
-  'thaumaturge:stairs_eldritch_tile',
-  'thaumaturge:stairs_eldritch_tile_from_stone_eldritch_tile_stonecutting',
-  'thaumaturge:stairs_greatwood',
-  'thaumaturge:stairs_silverwood',
-  'thaumaturge:stone_ancient_pillar',
-  'thaumaturge:stone_ancient_pillar_from_stone_ancient_stonecutting',
-  'thaumaturge:stone_arcane',
-  'thaumaturge:stone_arcane_brick',
-  'thaumaturge:stone_arcane_brick_from_stone_arcane_stonecutting',
-  'thaumaturge:stone_arcane_pillar',
-  'thaumaturge:stone_arcane_pillar_from_stone_arcane_stonecutting',
-  'thaumaturge:stone_eldritch_pillar',
-  'thaumaturge:stone_eldritch_pillar_from_eldritch_stone_stonecutting',
-  'thaumaturge:stripped_greatwood',
-  'thaumaturge:stripped_silverwood',
-  'thaumaturge:table_stone',
-  'thaumaturge:table_wood',
-  'thaumaturge:tallow_block',
-  'thaumaturge:tallow_from_tallow_block',
-  'thaumaturge:thaumium_axe',
-  'thaumaturge:thaumium_boots',
-  'thaumaturge:thaumium_chest',
-  'thaumaturge:thaumium_helm',
-  'thaumaturge:thaumium_hoe',
-  'thaumaturge:thaumium_legs',
-  'thaumaturge:thaumium_pickaxe',
-  'thaumaturge:thaumium_shovel',
-  'thaumaturge:thaumium_spear',
-  'thaumaturge:thaumium_sword',
-  'thaumaturge:trapdoor_greatwood',
-  'thaumaturge:trapdoor_silverwood',
-  'thaumaturge:triple_meat_treat',
-  'thaumaturge:vis_relay',
-  'thaumaturge:void_axe',
-  'thaumaturge:void_boots',
-  'thaumaturge:void_chest',
-  'thaumaturge:void_helm',
-  'thaumaturge:void_hoe',
-  'thaumaturge:void_legs',
-  'thaumaturge:void_pickaxe',
-  'thaumaturge:void_robe_chest_dyed',
-  'thaumaturge:void_robe_helm_dyed',
-  'thaumaturge:void_robe_legs_dyed',
-  'thaumaturge:void_shovel',
-  'thaumaturge:void_spear',
-  'thaumaturge:void_sword',
-  'thaumaturge:wall_ancient',
-  'thaumaturge:wall_ancient_from_stone_ancient_stonecutting',
-  'thaumaturge:wall_ancient_rock',
-  'thaumaturge:wall_ancient_rock_from_stone_ancient_rock_stonecutting',
-  'thaumaturge:wall_ancient_tile',
-  'thaumaturge:wall_ancient_tile_from_stone_ancient_tile_stonecutting',
-  'thaumaturge:wall_arcane_brick',
-  'thaumaturge:wall_arcane_brick_from_stone_arcane_brick_stonecutting',
-  'thaumaturge:wall_arcane_stone',
-  'thaumaturge:wall_arcane_stone_from_stone_arcane_stonecutting',
-  'thaumaturge:wall_eldritch_rock',
-  'thaumaturge:wall_eldritch_rock_from_eldritch_rock_stonecutting',
-  'thaumaturge:wall_eldritch_stone',
-  'thaumaturge:wall_eldritch_stone_from_eldritch_stone_stonecutting',
-  'thaumaturge:wall_eldritch_tile',
-  'thaumaturge:wall_eldritch_tile_from_stone_eldritch_tile_stonecutting',
-  'thaumaturge:wand/assembly/iron_wood',
-  'thaumaturge:wand/part/primal_charm',
-  'thaumaturge:wand/part/staff_rod_blaze',
-  'thaumaturge:wand/part/staff_rod_bone',
-  'thaumaturge:wand/part/staff_rod_greatwood',
-  'thaumaturge:wand/part/staff_rod_ice',
-  'thaumaturge:wand/part/staff_rod_obsidian',
-  'thaumaturge:wand/part/staff_rod_quartz',
-  'thaumaturge:wand/part/staff_rod_reed',
-  'thaumaturge:wand/part/staff_rod_silverwood',
-  'thaumaturge:wand/part/wand_cap_copper',
-  'thaumaturge:wand/part/wand_cap_gold',
-  'thaumaturge:wand/part/wand_cap_iron',
-  'thaumaturge:wand/part/wand_cap_silver_inert',
-  'thaumaturge:wand/part/wand_cap_thaumium_inert',
-  'thaumaturge:wand/part/wand_cap_void_inert',
-  'thaumaturge:wand/part/wand_rod_greatwood',
+// Thaumaturge ingots/plates/nuggets are replaced by the matching GT6 material components.
+// Each edit is written out explicitly; the comment above it shows the original item/tag.
+
+const EDITS = [
+  // thaumaturge:arcane_workbench/advanced_alchemical_construct
+  //   key.V:  "thaumaturge:ingot_void"  ->  GT ingot (8681)
+  { id: 'thaumaturge:arcane_workbench/advanced_alchemical_construct', path: 'key.V', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:arcane_workbench/alchemical_construct
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/alchemical_construct', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/arcane_door
+  //   key.T:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:arcane_workbench/arcane_door', path: 'key.T', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:arcane_workbench/arcane_grindstone
+  //   key.T:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:arcane_workbench/arcane_grindstone', path: 'key.T', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:arcane_workbench/arcane_pressure_plate
+  //   key.T:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:arcane_workbench/arcane_pressure_plate', path: 'key.T', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:arcane_workbench/brain_box
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/brain_box', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/candle_holder_thaumium
+  //   key.P:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:arcane_workbench/candle_holder_thaumium', path: 'key.P', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+
+  // thaumaturge:arcane_workbench/candle_holder_void
+  //   key.P:  "#c:plates/void_metal"  ->  GT plate (8681)
+  { id: 'thaumaturge:arcane_workbench/candle_holder_void', path: 'key.P', value: gtIngredient('gregtech:gt.meta.plate', 8681) },
+
+  // thaumaturge:arcane_workbench/condenser_lattice
+  //   key.T:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:arcane_workbench/condenser_lattice', path: 'key.T', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+
+  // thaumaturge:arcane_workbench/dioptra
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/dioptra', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/essentia_input
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/essentia_input', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/essentia_output
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/essentia_output', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/focal_manipulator
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/focal_manipulator', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/grapple_gun
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/grapple_gun', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/lamp_arcane
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/lamp_arcane', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/levitator
+  //   key.B:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/levitator', path: 'key.B', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+  //   key.I:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:arcane_workbench/levitator', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+
+  // thaumaturge:arcane_workbench/mechanism_complex
+  //   key.T:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:arcane_workbench/mechanism_complex', path: 'key.T', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+
+  // thaumaturge:arcane_workbench/mechanism_simple
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/mechanism_simple', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/potion_sprayer
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/potion_sprayer', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/resonator
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/resonator', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/smelter_aux
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/smelter_aux', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/smelter_thaumium
+  //   key.C:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:arcane_workbench/smelter_thaumium', path: 'key.C', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+
+  // thaumaturge:arcane_workbench/smelter_vent
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/smelter_vent', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/smelter_void
+  //   key.C:  "#c:plates/void_metal"  ->  GT plate (8681)
+  { id: 'thaumaturge:arcane_workbench/smelter_void', path: 'key.C', value: gtIngredient('gregtech:gt.meta.plate', 8681) },
+
+  // thaumaturge:arcane_workbench/stabilizer
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/stabilizer', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/tube
+  //   key.P:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/tube', path: 'key.P', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/tube_buffer
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/tube_buffer', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/turret_advanced
+  //   key.P:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/turret_advanced', path: 'key.P', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/turret_basic
+  //   key.I:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/turret_basic', path: 'key.I', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:arcane_workbench/vis_resonator
+  //   ingredients[0]:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:arcane_workbench/vis_resonator', path: 'ingredients[0]', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:infusion/essentia_reservoir
+  //   components[0]:  "thaumaturge:ingot_void"  ->  GT ingot (8681)
+  { id: 'thaumaturge:infusion/essentia_reservoir', path: 'components[0]', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+  //   components[3]:  "thaumaturge:ingot_void"  ->  GT ingot (8681)
+  { id: 'thaumaturge:infusion/essentia_reservoir', path: 'components[3]', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:infusion/fortress_chest
+  //   components[0]:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:infusion/fortress_chest', path: 'components[0]', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+  //   components[1]:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:infusion/fortress_chest', path: 'components[1]', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+  //   components[2]:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:infusion/fortress_chest', path: 'components[2]', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+  //   components[3]:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:infusion/fortress_chest', path: 'components[3]', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+
+  // thaumaturge:infusion/fortress_helm
+  //   components[0]:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:infusion/fortress_helm', path: 'components[0]', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+  //   components[1]:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:infusion/fortress_helm', path: 'components[1]', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+
+  // thaumaturge:infusion/fortress_helm_mask_0
+  //   components[1]:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:infusion/fortress_helm_mask_0', path: 'components[1]', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+  //   components[5]:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:infusion/fortress_helm_mask_0', path: 'components[5]', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:infusion/fortress_helm_mask_1
+  //   components[1]:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:infusion/fortress_helm_mask_1', path: 'components[1]', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+  //   components[5]:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:infusion/fortress_helm_mask_1', path: 'components[5]', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:infusion/fortress_helm_mask_2
+  //   components[1]:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:infusion/fortress_helm_mask_2', path: 'components[1]', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+  //   components[5]:  "#c:plates/iron"  ->  GT plate (260)
+  { id: 'thaumaturge:infusion/fortress_helm_mask_2', path: 'components[5]', value: gtIngredient('gregtech:gt.meta.plate', 260) },
+
+  // thaumaturge:infusion/fortress_legs
+  //   components[0]:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:infusion/fortress_legs', path: 'components[0]', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+  //   components[1]:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:infusion/fortress_legs', path: 'components[1]', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+  //   components[2]:  "#c:plates/thaumium"  ->  GT plate (8679)
+  { id: 'thaumaturge:infusion/fortress_legs', path: 'components[2]', value: gtIngredient('gregtech:gt.meta.plate', 8679) },
+
+  // thaumaturge:infusion/void_robe_chest
+  //   components[1]:  "#c:plates/void_metal"  ->  GT plate (8681)
+  { id: 'thaumaturge:infusion/void_robe_chest', path: 'components[1]', value: gtIngredient('gregtech:gt.meta.plate', 8681) },
+  //   components[2]:  "#c:plates/void_metal"  ->  GT plate (8681)
+  { id: 'thaumaturge:infusion/void_robe_chest', path: 'components[2]', value: gtIngredient('gregtech:gt.meta.plate', 8681) },
+
+  // thaumaturge:infusion/void_robe_legs
+  //   components[1]:  "#c:plates/void_metal"  ->  GT plate (8681)
+  { id: 'thaumaturge:infusion/void_robe_legs', path: 'components[1]', value: gtIngredient('gregtech:gt.meta.plate', 8681) },
+  //   components[2]:  "#c:plates/void_metal"  ->  GT plate (8681)
+  { id: 'thaumaturge:infusion/void_robe_legs', path: 'components[2]', value: gtIngredient('gregtech:gt.meta.plate', 8681) },
+
+  // thaumaturge:metal_thaumium
+  //   key.#:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:metal_thaumium', path: 'key.#', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:metal_void
+  //   key.#:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:metal_void', path: 'key.#', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:nugget_thaumium
+  //   ingredients[0]:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:nugget_thaumium', path: 'ingredients[0]', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:nugget_void
+  //   ingredients[0]:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:nugget_void', path: 'ingredients[0]', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:plate_thaumium
+  //   key.N:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:plate_thaumium', path: 'key.N', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:plate_void
+  //   key.N:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:plate_void', path: 'key.N', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:thaumium_axe
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_axe', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:thaumium_boots
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_boots', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:thaumium_chest
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_chest', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:thaumium_helm
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_helm', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:thaumium_hoe
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_hoe', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:thaumium_legs
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_legs', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:thaumium_pickaxe
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_pickaxe', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:thaumium_shovel
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_shovel', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:thaumium_spear
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_spear', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:thaumium_sword
+  //   key.I:  "#c:ingots/thaumium"  ->  GT ingot (8679)
+  { id: 'thaumaturge:thaumium_sword', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8679) },
+
+  // thaumaturge:void_axe
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_axe', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:void_boots
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_boots', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:void_chest
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_chest', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:void_helm
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_helm', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:void_hoe
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_hoe', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:void_legs
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_legs', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:void_pickaxe
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_pickaxe', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:void_shovel
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_shovel', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:void_spear
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_spear', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
+
+  // thaumaturge:void_sword
+  //   key.I:  "#c:ingots/void_metal"  ->  GT ingot (8681)
+  { id: 'thaumaturge:void_sword', path: 'key.I', value: gtIngredient('gregtech:gt.meta.ingot', 8681) },
 ]
-
-const SOURCES = [
-  { from: 'thaumaturge:ingot_thaumium', form: 'gregtech:gt.meta.ingot', material: 8679 },
-  { from: '#c:ingots/thaumium', form: 'gregtech:gt.meta.ingot', material: 8679 },
-  { from: 'thaumaturge:plate_thaumium', form: 'gregtech:gt.meta.plate', material: 8679 },
-  { from: '#c:plates/thaumium', form: 'gregtech:gt.meta.plate', material: 8679 },
-  { from: 'thaumaturge:nugget_thaumium', form: 'gregtech:gt.meta.nugget', material: 8679 },
-  { from: 'thaumaturge:ingot_void', form: 'gregtech:gt.meta.ingot', material: 8681 },
-  { from: '#c:ingots/void_metal', form: 'gregtech:gt.meta.ingot', material: 8681 },
-  { from: 'thaumaturge:plate_void', form: 'gregtech:gt.meta.plate', material: 8681 },
-  { from: '#c:plates/void_metal', form: 'gregtech:gt.meta.plate', material: 8681 },
-  { from: 'thaumaturge:nugget_void', form: 'gregtech:gt.meta.nugget', material: 8681 },
-  { from: 'thaumaturge:plate_iron', form: 'gregtech:gt.meta.plate', material: 260 },
-  { from: '#c:plates/iron', form: 'gregtech:gt.meta.plate', material: 260 },
-]
-
-const SKIP_KEYS = ['type', 'result', 'output', 'outputs']
-
-function buildTable() {
-  const table = {}
-  for (let sourceIndex = 0; sourceIndex < SOURCES.length; sourceIndex++) {
-    const source = SOURCES[sourceIndex]
-    table[source.from] = gtIngredient(source.form, source.material)
-  }
-  return table
-}
-
-function convertNode(node, table) {
-  if (typeof node === 'string') {
-    const hit = table[node]
-    return hit === undefined ? node : hit
-  }
-  if (Array.isArray(node)) {
-    const out = []
-    for (let nodeIndex = 0; nodeIndex < node.length; nodeIndex++) {
-      out.push(convertNode(node[nodeIndex], table))
-    }
-    return out
-  }
-  if (node !== null && typeof node === 'object') {
-    const out = {}
-    const keys = Object.keys(node)
-    for (let keyIndex = 0; keyIndex < keys.length; keyIndex++) {
-      const key = keys[keyIndex]
-      if (SKIP_KEYS.indexOf(key) >= 0) {
-        out[key] = node[key]
-        continue
-      }
-      out[key] = convertNode(node[key], table)
-    }
-    return out
-  }
-  return node
-}
 
 ServerEvents.recipes(event => {
-  const table = buildTable()
-  let recipesChanged = 0
-  for (let targetIndex = 0; targetIndex < TARGETS.length; targetIndex++) {
-    const id = TARGETS[targetIndex]
-    try {
-      if (!event.exists(id)) {
-        continue
-      }
-      const text = event.getJson(id)
-      if (text == null) {
-        continue
-      }
-      const parsed = JSON.parse(text)
-      const converted = convertNode(parsed, table)
-      const rebuilt = JSON.stringify(converted)
-      if (rebuilt === JSON.stringify(parsed)) {
-        continue
-      }
-      event.setJson(id, rebuilt)
-      recipesChanged = recipesChanged + 1
-    } catch (error) {
-    }
-  }
-
+  applyReforge(event, { tag: 'ThaumaturgeGTM', edits: EDITS })
 })

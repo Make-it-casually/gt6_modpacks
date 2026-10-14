@@ -49,6 +49,14 @@ const REMOVE = [
   'minecraft:zinc_ingot_from_smelting_deepslate_zinc_ore',
   'minecraft:zinc_ingot_from_smelting_zinc_ore',
   'minecraft:zinc_ingot_from_smelting_zinc_raw',
+    'enderio:conductive_alloy_grinding_ball',
+    'enderio:dark_steel_grinding_ball',
+    'enderio:end_steel_grinding_ball',
+    'enderio:energetic_alloy_grinding_ball',
+    'enderio:pulsating_alloy_grinding_ball',
+    'enderio:redstone_alloy_grinding_ball',
+    'enderio:soularium_grinding_ball',
+    'enderio:vibrant_alloy_grinding_ball',
 ]
 
 ServerEvents.recipes(event => {

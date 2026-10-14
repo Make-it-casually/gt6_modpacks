@@ -19,6 +19,7 @@ export const GT_MATERIAL = Object.freeze({
   platinum: 780,
   uranium: 920,
   niobiumtitanium: 8689,
+    invar: 8661,
   redalloy: 8660,
   silicon: 140,
   diamond: 8300,

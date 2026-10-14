@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gt_coal_nugget",
+  "ingredients": [
+    {
+      "neoforge:ingredient_type": "neoforge:components",
+      "items": "gregtech:gt.meta.ingot",
+      "components": {
+        "gregapi:subtype": 8334
+      }
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "gregtech:gt.meta.nugget",
+    "components": {
+      "gregapi:subtype": 8334
+    }
+  }
+}

@@ -1,136 +1,121 @@
 import { gt } from '../src/lib/gt6_materials.js'
 import { applyReforge } from '../src/lib/gt6_reforge.js'
 
-const TARGETS = `classicpipes:acacia_fluid_pipe_a
-classicpipes:acacia_fluid_pipe_b
-classicpipes:acacia_pipe
-classicpipes:advanced_copper_fluid_pipe_a
-classicpipes:advanced_copper_fluid_pipe_b
-classicpipes:advanced_copper_pipe_a
-classicpipes:advanced_copper_pipe_b
-classicpipes:bamboo_fluid_pipe_a
-classicpipes:bamboo_fluid_pipe_b
-classicpipes:bamboo_pipe
-classicpipes:birch_fluid_pipe_a
-classicpipes:birch_fluid_pipe_b
-classicpipes:birch_pipe
-classicpipes:bone_pipe
-classicpipes:brick_fluid_pipe_a
-classicpipes:brick_fluid_pipe_b
-classicpipes:brick_pipe
-classicpipes:cherry_fluid_pipe_a
-classicpipes:cherry_fluid_pipe_b
-classicpipes:cherry_pipe
-classicpipes:copper_fluid_pipe_a
-classicpipes:copper_fluid_pipe_b
-classicpipes:copper_pipe
-classicpipes:crimson_fluid_pipe_a
-classicpipes:crimson_fluid_pipe_b
-classicpipes:crimson_pipe
-classicpipes:dark_oak_fluid_pipe_a
-classicpipes:dark_oak_fluid_pipe_b
-classicpipes:dark_oak_pipe
-classicpipes:diamond_fluid_pipe_a
-classicpipes:diamond_fluid_pipe_b
-classicpipes:diamond_pipe
-classicpipes:flint_pipe
-classicpipes:golden_pipe
-classicpipes:inverted_advanced_copper_fluid_pipe_a
-classicpipes:inverted_advanced_copper_fluid_pipe_b
-classicpipes:inverted_advanced_copper_fluid_pipe_c
-classicpipes:inverted_advanced_copper_pipe_a
-classicpipes:inverted_advanced_copper_pipe_b
-classicpipes:inverted_copper_fluid_pipe_a
-classicpipes:inverted_copper_fluid_pipe_b
-classicpipes:inverted_copper_pipe_a
-classicpipes:inverted_copper_pipe_b
-classicpipes:iron_fluid_pipe_a
-classicpipes:iron_fluid_pipe_b
-classicpipes:iron_pipe
-classicpipes:jungle_fluid_pipe_a
-classicpipes:jungle_fluid_pipe_b
-classicpipes:jungle_pipe
-classicpipes:lapis_fluid_pipe_a
-classicpipes:lapis_fluid_pipe_b
-classicpipes:lapis_pipe
-classicpipes:mangrove_fluid_pipe_a
-classicpipes:mangrove_fluid_pipe_b
-classicpipes:mangrove_pipe
-classicpipes:matching_pipe_a
-classicpipes:matching_pipe_b
-classicpipes:matching_pipe_c
-classicpipes:mod_label
-classicpipes:nether_brick_fluid_pipe_a
-classicpipes:nether_brick_fluid_pipe_b
-classicpipes:nether_brick_pipe
-classicpipes:oak_fluid_pipe_a
-classicpipes:oak_fluid_pipe_b
-classicpipes:oak_pipe
-classicpipes:obsidian_fluid_pipe_a
-classicpipes:obsidian_fluid_pipe_b
-classicpipes:obsidian_pipe
-classicpipes:pale_oak_fluid_pipe_a
-classicpipes:pale_oak_fluid_pipe_b
-classicpipes:pale_oak_pipe
-classicpipes:pipe_slicer
-classicpipes:provider_pipe_a
-classicpipes:provider_pipe_b
-classicpipes:provider_pipe_c
-classicpipes:recipe_pipe_a
-classicpipes:recipe_pipe_b
-classicpipes:request_pipe_a
-classicpipes:request_pipe_b
-classicpipes:request_pipe_c
-classicpipes:routing_pipe
-classicpipes:spruce_fluid_pipe_a
-classicpipes:spruce_fluid_pipe_b
-classicpipes:spruce_pipe
-classicpipes:stocking_pipe_a
-classicpipes:stocking_pipe_b
-classicpipes:storage_pipe_a
-classicpipes:storage_pipe_b
-classicpipes:tag_label_a
-classicpipes:tag_label_b
-classicpipes:warped_fluid_pipe_a
-classicpipes:warped_fluid_pipe_b
-classicpipes:warped_pipe`.split('\n')
+// ClassicPipes ingots, nuggets and gems are replaced by the matching GT6 items (plates/nuggets/gems).
+// Each edit is written out explicitly; the comment above it shows the original item.
 
-const MATERIAL_MAP = Object.freeze({
-  'minecraft:copper_ingot': gt('plate', 'copper'),
-  'minecraft:iron_ingot': gt('plate', 'iron'),
-  'minecraft:gold_ingot': gt('plate', 'gold'),
-  'minecraft:copper_nugget': gt('nugget', 'copper'),
-  'minecraft:iron_nugget': gt('nugget', 'iron'),
-  'minecraft:gold_nugget': gt('nugget', 'gold'),
-  'minecraft:diamond': gt('gem', 'diamond'),
-  'minecraft:lapis_lazuli': gt('gem', 'lapis'),
-  'minecraft:quartz': gt('gem', 'netherquartz')
-})
+const EDITS = [
+  // classicpipes:advanced_copper_fluid_pipe_b
+  //   key.W:  "minecraft:diamond"  ->  GT diamond gem
+  { id: 'classicpipes:advanced_copper_fluid_pipe_b', path: 'key.W', value: gt('gem', 'diamond') },
+
+  // classicpipes:advanced_copper_pipe_a
+  //   key.O:  "minecraft:copper_ingot"  ->  GT copper plate
+  { id: 'classicpipes:advanced_copper_pipe_a', path: 'key.O', value: gt('plate', 'copper') },
+  //   key.X:  "minecraft:diamond"  ->  GT diamond gem
+  { id: 'classicpipes:advanced_copper_pipe_a', path: 'key.X', value: gt('gem', 'diamond') },
+
+  // classicpipes:advanced_copper_pipe_b
+  //   key.W:  "minecraft:diamond"  ->  GT diamond gem
+  { id: 'classicpipes:advanced_copper_pipe_b', path: 'key.W', value: gt('gem', 'diamond') },
+
+  // classicpipes:copper_fluid_pipe_a
+  //   key.O:  "minecraft:copper_ingot"  ->  GT copper plate
+  { id: 'classicpipes:copper_fluid_pipe_a', path: 'key.O', value: gt('plate', 'copper') },
+
+  // classicpipes:copper_pipe
+  //   key.O:  "minecraft:copper_ingot"  ->  GT copper plate
+  { id: 'classicpipes:copper_pipe', path: 'key.O', value: gt('plate', 'copper') },
+
+  // classicpipes:diamond_fluid_pipe_a
+  //   key.O:  "minecraft:diamond"  ->  GT diamond gem
+  { id: 'classicpipes:diamond_fluid_pipe_a', path: 'key.O', value: gt('gem', 'diamond') },
+
+  // classicpipes:diamond_pipe
+  //   key.O:  "minecraft:diamond"  ->  GT diamond gem
+  { id: 'classicpipes:diamond_pipe', path: 'key.O', value: gt('gem', 'diamond') },
+
+  // classicpipes:golden_pipe
+  //   key.O:  "minecraft:gold_ingot"  ->  GT gold plate
+  { id: 'classicpipes:golden_pipe', path: 'key.O', value: gt('plate', 'gold') },
+
+  // classicpipes:inverted_advanced_copper_fluid_pipe_b
+  //   key.W:  "minecraft:diamond"  ->  GT diamond gem
+  { id: 'classicpipes:inverted_advanced_copper_fluid_pipe_b', path: 'key.W', value: gt('gem', 'diamond') },
+
+  // classicpipes:inverted_advanced_copper_pipe_b
+  //   key.W:  "minecraft:diamond"  ->  GT diamond gem
+  { id: 'classicpipes:inverted_advanced_copper_pipe_b', path: 'key.W', value: gt('gem', 'diamond') },
+
+  // classicpipes:inverted_copper_pipe_a
+  //   key.O:  "minecraft:copper_ingot"  ->  GT copper plate
+  { id: 'classicpipes:inverted_copper_pipe_a', path: 'key.O', value: gt('plate', 'copper') },
+
+  // classicpipes:iron_fluid_pipe_a
+  //   key.O:  "minecraft:iron_ingot"  ->  GT iron plate
+  { id: 'classicpipes:iron_fluid_pipe_a', path: 'key.O', value: gt('plate', 'iron') },
+
+  // classicpipes:iron_pipe
+  //   key.O:  "minecraft:iron_ingot"  ->  GT iron plate
+  { id: 'classicpipes:iron_pipe', path: 'key.O', value: gt('plate', 'iron') },
+
+  // classicpipes:lapis_fluid_pipe_a
+  //   key.O:  "minecraft:lapis_lazuli"  ->  GT lapis gem
+  { id: 'classicpipes:lapis_fluid_pipe_a', path: 'key.O', value: gt('gem', 'lapis') },
+
+  // classicpipes:lapis_pipe
+  //   key.O:  "minecraft:lapis_lazuli"  ->  GT lapis gem
+  { id: 'classicpipes:lapis_pipe', path: 'key.O', value: gt('gem', 'lapis') },
+
+  // classicpipes:matching_pipe_a
+  //   key.X:  "minecraft:iron_ingot"  ->  GT iron plate
+  { id: 'classicpipes:matching_pipe_a', path: 'key.X', value: gt('plate', 'iron') },
+
+  // classicpipes:matching_pipe_b
+  //   key.W:  "minecraft:iron_ingot"  ->  GT iron plate
+  { id: 'classicpipes:matching_pipe_b', path: 'key.W', value: gt('plate', 'iron') },
+
+  // classicpipes:matching_pipe_c
+  //   key.O:  "minecraft:iron_nugget"  ->  GT iron nugget
+  { id: 'classicpipes:matching_pipe_c', path: 'key.O', value: gt('nugget', 'iron') },
+
+  // classicpipes:pipe_slicer
+  //   key.Q:  "minecraft:quartz"  ->  GT nether quartz gem
+  { id: 'classicpipes:pipe_slicer', path: 'key.Q', value: gt('gem', 'netherquartz') },
+
+  // classicpipes:provider_pipe_a
+  //   key.X:  "minecraft:copper_ingot"  ->  GT copper plate
+  { id: 'classicpipes:provider_pipe_a', path: 'key.X', value: gt('plate', 'copper') },
+
+  // classicpipes:provider_pipe_b
+  //   key.W:  "minecraft:copper_ingot"  ->  GT copper plate
+  { id: 'classicpipes:provider_pipe_b', path: 'key.W', value: gt('plate', 'copper') },
+
+  // classicpipes:provider_pipe_c
+  //   key.O:  "minecraft:copper_nugget"  ->  GT copper nugget
+  { id: 'classicpipes:provider_pipe_c', path: 'key.O', value: gt('nugget', 'copper') },
+
+  // classicpipes:request_pipe_a
+  //   key.X:  "minecraft:gold_ingot"  ->  GT gold plate
+  { id: 'classicpipes:request_pipe_a', path: 'key.X', value: gt('plate', 'gold') },
+
+  // classicpipes:request_pipe_b
+  //   key.W:  "minecraft:gold_ingot"  ->  GT gold plate
+  { id: 'classicpipes:request_pipe_b', path: 'key.W', value: gt('plate', 'gold') },
+
+  // classicpipes:request_pipe_c
+  //   key.O:  "minecraft:gold_nugget"  ->  GT gold nugget
+  { id: 'classicpipes:request_pipe_c', path: 'key.O', value: gt('nugget', 'gold') },
+
+  // classicpipes:stocking_pipe_a
+  //   key.X:  "minecraft:lapis_lazuli"  ->  GT lapis gem
+  { id: 'classicpipes:stocking_pipe_a', path: 'key.X', value: gt('gem', 'lapis') },
+
+  // classicpipes:stocking_pipe_b
+  //   key.W:  "minecraft:lapis_lazuli"  ->  GT lapis gem
+  { id: 'classicpipes:stocking_pipe_b', path: 'key.W', value: gt('gem', 'lapis') },
+]
 
 ServerEvents.recipes(event => {
-  const edits = []
-  for (let targetIndex = 0; targetIndex < TARGETS.length; targetIndex++) {
-    const recipeId = TARGETS[targetIndex]
-    if (!event.exists(recipeId)) continue
-    let parsed = null
-    try {
-      parsed = JSON.parse(event.getJson(recipeId))
-    } catch (readError) {
-      continue
-    }
-    const key = parsed === null ? undefined : parsed.key
-    if (key === undefined || key === null) continue
-    const letters = Object.keys(key)
-    for (let letterIndex = 0; letterIndex < letters.length; letterIndex++) {
-      const letter = letters[letterIndex]
-      const replacement = MATERIAL_MAP[String(key[letter])]
-      if (replacement === undefined) continue
-      edits.push({ id: recipeId, path: 'key.' + letter, value: replacement })
-    }
-  }
-
-  applyReforge(event, {
-    tag: 'ClassicPipesGT',
-    edits: edits
-  })
+  applyReforge(event, { tag: 'ClassicPipesGT', edits: EDITS })
 })
