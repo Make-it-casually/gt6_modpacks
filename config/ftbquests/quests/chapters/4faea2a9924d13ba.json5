@@ -1,0 +1,21 @@
+{
+  id: "4FAEA2A9924D13BA",
+  group: "171D75F171A899F0",
+  order_index: 1,
+  icon: {
+    id: "gregtech:gt.multitileentity",
+    count: 1,
+    components: {
+      "gregapi:subtype": 1202,
+    },
+  },
+  filename: "4faea2a9924d13ba",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

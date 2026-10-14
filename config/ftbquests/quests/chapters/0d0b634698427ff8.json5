@@ -1,0 +1,21 @@
+{
+  id: "0D0B634698427FF8",
+  group: "171D75F171A899F0",
+  order_index: 0,
+  icon: {
+    id: "gregtech:gt.meta.rockgt",
+    count: 1,
+    components: {
+      "gregapi:subtype": 8500,
+    },
+  },
+  filename: "0d0b634698427ff8",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

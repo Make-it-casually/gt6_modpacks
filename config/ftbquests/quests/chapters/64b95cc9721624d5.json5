@@ -1,0 +1,34 @@
+{
+  id: "64B95CC9721624D5",
+  group: "",
+  order_index: 0,
+  icon: {
+    id: "minecraft:knowledge_book",
+    count: 1,
+  },
+  filename: "64b95cc9721624d5",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      icon: {
+        id: "minecraft:knowledge_book",
+        count: 1,
+      },
+      x: 0.0,
+      y: 0.0,
+      size: 3.0,
+      id: "40A17AF1D72D4BD0",
+      tasks: [
+        {
+          id: "59907D11D41EA9C0",
+          type: "checkmark",
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}
