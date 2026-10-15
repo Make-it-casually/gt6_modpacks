@@ -11,6 +11,18 @@
   default_hide_dependency_lines: false,
   quests: [
     {
+      x: 0.0,
+      y: -2.5,
+      size: 1.0,
+      id: "512E5D03F95CD613",
+      tasks: [
+        {
+          id: "62B5C7BA2EC8D110",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
       icon: {
         id: "minecraft:knowledge_book",
         count: 1,
