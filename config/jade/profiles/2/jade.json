@@ -100,6 +100,10 @@
       "potion_effects": true,
       "painting": true
     },
+    "dimstorage": {
+      "dim_block_base": true,
+      "dim_tank": true
+    },
     "gtqualityneo": {
       "harvest": true,
       "device_details": true,
