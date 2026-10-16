@@ -21,6 +21,13 @@
           type: "checkmark",
         },
       ],
+      rewards: [
+        {
+          id: "2AFFFC19CC6A3C32",
+          type: "xp",
+          xp: 10,
+        },
+      ],
     },
     {
       icon: {

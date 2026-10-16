@@ -85,26 +85,11 @@
           type: "checkmark",
         },
       ],
-    },
-    {
-      icon: {
-        id: "gregtech:gt.meta.rockgt",
-        count: 1,
-        components: {
-          "gregapi:subtype": 9111,
-        },
-      },
-      x: 1.5,
-      y: -3.0,
-      dependencies: [
-        "1E8B2A8FC92B7ED2",
-      ],
-      size: 1.0,
-      id: "240ACC47879C32BD",
-      tasks: [
+      rewards: [
         {
-          id: "4089F9DDDD912F3C",
-          type: "checkmark",
+          id: "58287DB560B06304",
+          type: "xp",
+          xp: 10,
         },
       ],
     },
@@ -129,6 +114,13 @@
           type: "checkmark",
         },
       ],
+      rewards: [
+        {
+          id: "27D759CDA5C76539",
+          type: "xp",
+          xp: 10,
+        },
+      ],
     },
     {
       icon: {
@@ -146,6 +138,13 @@
         {
           id: "5DC7CCD2F0490C8E",
           type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "79D2BCEC1B37178B",
+          type: "xp",
+          xp: 10,
         },
       ],
     },
@@ -206,6 +205,298 @@
           item: {
             id: "minecraft:furnace",
             count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 1.5,
+      y: -3.0,
+      dependencies: [
+        "1E8B2A8FC92B7ED2",
+      ],
+      size: 1.0,
+      id: "3C0D4962070EB7CC",
+      tasks: [
+        {
+          id: "14737ADBB3CDA50B",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "657C0988747ABFE1",
+          type: "xp",
+          xp: 10,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1199,
+        },
+      },
+      x: 11.0,
+      y: -1.5,
+      dependencies: [
+        "3F38718E4213C36F",
+      ],
+      size: 1.0,
+      id: "2223FC02136C43ED",
+      tasks: [
+        {
+          id: "1098F89882CAD2FE",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 12.5,
+      y: -3.5,
+      dependencies: [
+        "2223FC02136C43ED",
+      ],
+      size: 1.0,
+      id: "1F5E756BA7897CA9",
+      tasks: [
+        {
+          id: "303DA8469DB8B07C",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32706,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 14.5,
+      y: -3.5,
+      dependencies: [
+        "1F5E756BA7897CA9",
+      ],
+      size: 1.0,
+      id: "7DC186A95EE05916",
+      tasks: [
+        {
+          id: "0E267818B4363D01",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.randomtools",
+            count: 1,
+          },
+          count: 64,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.meta.oreraw",
+        count: 1,
+        components: {
+          "gregapi:subtype": 290,
+        },
+      },
+      x: 9.0,
+      y: -3.0,
+      dependencies: [
+        "3F38718E4213C36F",
+      ],
+      size: 1.0,
+      id: "30CF96F9624A4C63",
+      tasks: [
+        {
+          id: "42C4E60F524149FD",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "059C20CCDC744BB1",
+          type: "xp",
+          xp: 10,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 32027,
+          "minecraft:custom_data": {
+            "gt.durability": 100000,
+          },
+        },
+      },
+      x: 13.0,
+      y: -1.5,
+      dependencies: [
+        "2223FC02136C43ED",
+      ],
+      size: 1.0,
+      id: "71E739D41A905410",
+      tasks: [
+        {
+          id: "300876CCE419CE5B",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 12.5,
+      y: 0.5,
+      dependencies: [
+        "2223FC02136C43ED",
+      ],
+      size: 1.0,
+      id: "1241866523ED736C",
+      tasks: [
+        {
+          id: "7F6097CB0E15E938",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1199,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 16.5,
+      y: -3.5,
+      dependencies: [
+        "7DC186A95EE05916",
+      ],
+      size: 1.0,
+      id: "5D985B228604E8F6",
+      tasks: [
+        {
+          id: "38E6A24E15ED7938",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.plate",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8610,
+            },
+          },
+        },
+        {
+          id: "54825511A6008DF6",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.stick",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8610,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 18.5,
+      y: -3.5,
+      dependencies: [
+        "5D985B228604E8F6",
+      ],
+      size: 1.0,
+      id: "153BDFDA9F71455F",
+      tasks: [
+        {
+          id: "594C86A9C9E7DFC4",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1102,
+            },
+          },
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multiitem.randomtools",
+        count: 1,
+        components: {
+          "gregapi:subtype": 989,
+        },
+      },
+      x: 18.5,
+      y: 0.5,
+      dependencies: [
+        "1241866523ED736C",
+        "153BDFDA9F71455F",
+      ],
+      dependency_requirement: "one_started",
+      size: 1.0,
+      id: "1C3A64A7E29ED1B4",
+      tasks: [
+        {
+          id: "7A26251EDFBA10DA",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.randomtools",
+            count: 1,
+            components: {
+              "gregapi:subtype": 989,
+            },
+          },
+        },
+        {
+          id: "2663B3B28BBC66EE",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.randomtools",
+            count: 1,
+            components: {
+              "gregapi:subtype": 993,
+            },
+          },
+        },
+        {
+          id: "08AA87BB68F9D195",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.randomtools",
+            count: 1,
+            components: {
+              "gregapi:subtype": 900,
+            },
+          },
+        },
+        {
+          id: "153451ED5B45AABB",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.randomtools",
+            count: 1,
+            components: {
+              "gregapi:subtype": 902,
+            },
+          },
+        },
+        {
+          id: "52A87B68746AAA88",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.randomtools",
+            count: 1,
+            components: {
+              "gregapi:subtype": 906,
+            },
           },
         },
       ],
