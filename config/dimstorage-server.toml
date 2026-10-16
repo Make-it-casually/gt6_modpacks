@@ -1,0 +1,11 @@
+#DimStorage's config
+["DimChest/DimTank"]
+	#Allow players to change the DimChest/DimTank's frequency, default: true
+	allowFrequency = true
+	#Allow players to make DimChest/DimTank private, default: true
+	allowPrivateNetwork = true
+
+[DimTablet]
+	#A list of blocks that the DimTablet takes and transfers to the connected DimChest
+	#[/dimstorage add] adds the item you have in the main hand to this list
+	allow_list = ["minecraft:dirt", "minecraft:gravel", "minecraft:cobblestone", "minecraft:granite", "minecraft:diorite", "minecraft:andesite", "minecraft:sand", "minecraft:sandstone", "minecraft:netherrack", "minecraft:end_stone"]

@@ -1,22 +1,6 @@
 import { applyReforge } from '../src/lib/gt6_reforge.js'
 
 const REMOVE = [
-  'enderio:conductive_alloy_ingot',
-  'enderio:dark_steel_ingot',
-  'enderio:end_steel_ingot',
-  'enderio:energetic_alloy_ingot',
-  'enderio:item.enderio.conductive_alloy_nugget_to_ingot',
-  'enderio:item.enderio.dark_steel_nugget_to_ingot',
-  'enderio:item.enderio.end_steel_nugget_to_ingot',
-  'enderio:item.enderio.energetic_alloy_nugget_to_ingot',
-  'enderio:item.enderio.pulsating_alloy_nugget_to_ingot',
-  'enderio:item.enderio.redstone_alloy_nugget_to_ingot',
-  'enderio:item.enderio.soularium_nugget_to_ingot',
-  'enderio:item.enderio.vibrant_alloy_nugget_to_ingot',
-  'enderio:pulsating_alloy_ingot',
-  'enderio:redstone_alloy_ingot',
-  'enderio:soularium_ingot',
-  'enderio:vibrant_alloy_ingot',
   'extendedae:transform/entro_ingot',
   'mmcr:modularium',
   'minecraft:lead_ingot_from_blasting_deepslate_lead_ore',

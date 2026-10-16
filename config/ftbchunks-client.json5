@@ -214,9 +214,11 @@
       entity_icon: {
         "minecraft:bat": true,
         "minecraft:skeleton": true,
+        "minecraft:parched": true,
         "minecraft:witch": true,
         "minecraft:salmon": false,
         "minecraft:pig": true,
+        "minecraft:husk": true,
         "minecraft:squid": true,
         "minecraft:sheep": true,
         "minecraft:glow_squid": true,
@@ -229,6 +231,7 @@
         "minecraft:drowned": true,
         "minecraft:wolf": true,
         "minecraft:horse": true,
+        "minecraft:rabbit": true,
       },
       /*
        * Make entity icons on the minimap larger
