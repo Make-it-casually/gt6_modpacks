@@ -1,0 +1,218 @@
+{
+  id: "0D0B634698427FF8",
+  group: "171D75F171A899F0",
+  order_index: 0,
+  icon: {
+    id: "gregtech:gt.meta.rockgt",
+    count: 1,
+    components: {
+      "gregapi:subtype": 8500,
+    },
+  },
+  filename: "0d0b634698427ff8",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      x: -1.5,
+      y: -1.5,
+      dependencies: [
+        "40A17AF1D72D4BD0",
+      ],
+      size: 3.0,
+      id: "05A6926BD20D0CEC",
+      tasks: [
+        {
+          id: "49B2E188A1F34B4E",
+          type: "item",
+          item: {
+            id: "minecraft:crafting_table",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.meta.rockgt",
+        count: 1,
+        components: {
+          "gregapi:subtype": 8500,
+        },
+      },
+      x: 3.0,
+      y: -1.5,
+      dependencies: [
+        "05A6926BD20D0CEC",
+      ],
+      size: 1.0,
+      id: "1E8B2A8FC92B7ED2",
+      tasks: [
+        {
+          id: "3B88CE6A4CD76D96",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.rockgt",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8500,
+            },
+          },
+          count: 8,
+        },
+        {
+          id: "53D1164130C88DFA",
+          type: "item",
+          item: {
+            id: "minecraft:stick",
+            count: 1,
+          },
+          count: 4,
+        },
+      ],
+    },
+    {
+      x: 1.5,
+      y: 0.0,
+      dependencies: [
+        "1E8B2A8FC92B7ED2",
+      ],
+      size: 1.0,
+      id: "0BD6D2C5804C0381",
+      tasks: [
+        {
+          id: "294B89311B2C1C8F",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.meta.rockgt",
+        count: 1,
+        components: {
+          "gregapi:subtype": 9111,
+        },
+      },
+      x: 1.5,
+      y: -3.0,
+      dependencies: [
+        "1E8B2A8FC92B7ED2",
+      ],
+      size: 1.0,
+      id: "240ACC47879C32BD",
+      tasks: [
+        {
+          id: "4089F9DDDD912F3C",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.meta.rockgt",
+        count: 1,
+        components: {
+          "gregapi:subtype": 9111,
+        },
+      },
+      x: 3.0,
+      y: -3.0,
+      dependencies: [
+        "1E8B2A8FC92B7ED2",
+      ],
+      size: 1.0,
+      id: "52C1F342E19D3574",
+      tasks: [
+        {
+          id: "350C1CECD18199A1",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:white_bed",
+        count: 1,
+      },
+      x: 3.0,
+      y: 0.0,
+      dependencies: [
+        "1E8B2A8FC92B7ED2",
+      ],
+      size: 1.0,
+      id: "5BF75BDCC125400A",
+      tasks: [
+        {
+          id: "5DC7CCD2F0490C8E",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:stone_pickaxe",
+        count: 1,
+      },
+      x: 5.0,
+      y: -1.5,
+      dependencies: [
+        "1E8B2A8FC92B7ED2",
+      ],
+      size: 1.0,
+      id: "2B41D523E84B43D1",
+      tasks: [
+        {
+          id: "5A9AA3983D310009",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 7.0,
+      y: -1.5,
+      dependencies: [
+        "2B41D523E84B43D1",
+      ],
+      size: 1.0,
+      id: "354DBEA61B0C421A",
+      tasks: [
+        {
+          id: "7BC93299721BECE0",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.food",
+            count: 1,
+            components: {
+              "gregapi:subtype": 12001,
+            },
+          },
+          count: 16,
+        },
+      ],
+    },
+    {
+      x: 9.0,
+      y: -1.5,
+      dependencies: [
+        "354DBEA61B0C421A",
+      ],
+      size: 1.0,
+      id: "3F38718E4213C36F",
+      tasks: [
+        {
+          id: "2C98A4D9D83363DD",
+          type: "item",
+          item: {
+            id: "minecraft:furnace",
+            count: 1,
+          },
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}
