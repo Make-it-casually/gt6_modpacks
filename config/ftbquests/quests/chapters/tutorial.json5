@@ -42,6 +42,22 @@
         },
       ],
     },
+    {
+      x: 3.0,
+      y: 1.0,
+      size: 1.0,
+      id: "438D08005B198E17",
+      tasks: [
+        {
+          id: "778CACAD8170EE17",
+          type: "item",
+          item: {
+            id: "dimstorage:dimensional_tank",
+            count: 1,
+          },
+        },
+      ],
+    },
   ],
   quest_links: [
   ],
