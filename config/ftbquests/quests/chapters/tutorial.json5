@@ -1,7 +1,7 @@
 {
   id: "05A670B1356C2209",
   group: "",
-  order_index: 0,
+  order_index: 1,
   icon: {
     id: "minecraft:knowledge_book",
     count: 1,

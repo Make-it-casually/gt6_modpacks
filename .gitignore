@@ -19,3 +19,6 @@ nekojs/node_modules/
 # 从 config 白名单中排除
 config/mmcr-machine-appearance.properties
 config/jei/
+
+config/xaero/
+config/recipes/

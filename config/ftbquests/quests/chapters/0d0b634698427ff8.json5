@@ -501,9 +501,76 @@
         },
       ],
     },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1005,
+        },
+      },
+      x: 17.5,
+      y: -0.5,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 1.0,
+      id: "0A83ECE13D715296",
+      tasks: [
+        {
+          id: "0C3D293E462EB2BF",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "30F1754B7AF24E9F",
+          type: "xp",
+          xp: 20,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1055,
+        },
+      },
+      x: 17.5,
+      y: 1.5,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 1.0,
+      id: "24CE9ADFA2E0BB49",
+      tasks: [
+        {
+          id: "3D75437DCE8EF23D",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "32314BB00AF925F4",
+          type: "xp",
+          xp: 20,
+        },
+      ],
+    },
   ],
   quest_links: [
   ],
   images: [
+    {
+      x: 26.0,
+      y: 0.0,
+      width: 15.0,
+      height: 15.0,
+      rotation: 0.0,
+      image: "ftbquests:textures/picture/gt6_molds_sculpting.png",
+      id: "7AA37F650E435853",
+    },
   ],
 }
