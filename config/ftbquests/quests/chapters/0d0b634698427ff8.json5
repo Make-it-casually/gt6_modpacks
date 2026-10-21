@@ -559,12 +559,63 @@
         },
       ],
     },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1102,
+        },
+      },
+      x: 19.5,
+      y: -0.5,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 1.0,
+      id: "77FB75598D7D9A96",
+      tasks: [
+        {
+          id: "09D8E98A8728B3D6",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "3A597E6278AFE408",
+          type: "xp",
+          xp: 20,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1202,
+        },
+      },
+      x: 18.5,
+      y: 3.0,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 3.0,
+      id: "010BBDF1B38D93B0",
+      tasks: [
+        {
+          id: "2534D59AA8FA517E",
+          type: "checkmark",
+        },
+      ],
+    },
   ],
   quest_links: [
   ],
   images: [
     {
-      x: 26.0,
+      x: 26.5,
       y: 0.0,
       width: 15.0,
       height: 15.0,

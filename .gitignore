@@ -22,3 +22,25 @@ config/jei/
 
 config/xaero/
 config/recipes/
+config/enchdesc.json
+config/entity_texture_features.json
+config/etf_warnings.json
+config/ftbchunks-client.json5
+config/ftbchunks-world.json5
+config/ftbessentials.json5
+config/ftblibrary-client.json5
+config/ftbquests-client.json5
+config/ftbteams-server.json5
+config/immediatelyfast.json
+config/iris.properties
+/config/jade
+config/lithostitched.json
+config/lootr-client.jsonc
+config/lootr-common.jsonc
+config/modernfix-mixins.properties
+config/nerb-common.json5
+config/sky_aesthetics.json
+config/sodium-fingerprint.json
+config/sodium-options.json
+config/test-config.json
+config/thirstwastaken2.json
