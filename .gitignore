@@ -44,3 +44,4 @@ config/sodium-fingerprint.json
 config/sodium-options.json
 config/test-config.json
 config/thirstwastaken2.json
+config/ldlib2-client.toml
