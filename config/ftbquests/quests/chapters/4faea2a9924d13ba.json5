@@ -13,6 +13,122 @@
   default_quest_shape: "",
   default_hide_dependency_lines: false,
   quests: [
+    {
+      x: 0.0,
+      y: 0.0,
+      dependencies: [
+        "010BBDF1B38D93B0",
+      ],
+      size: 3.0,
+      id: "171707E1A8688AAF",
+      tasks: [
+        {
+          id: "36705BF0F16FC975",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1202,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 3.0,
+      y: 0.0,
+      dependencies: [
+        "171707E1A8688AAF",
+      ],
+      size: 1.0,
+      id: "35EEE7106152F82E",
+      tasks: [
+        {
+          id: "51118770282F569C",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1302,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: -2.0,
+      y: -1.5,
+      dependencies: [
+        "171707E1A8688AAF",
+      ],
+      size: 1.0,
+      id: "1D9E330F71B12B74",
+      tasks: [
+        {
+          id: "2B36806A94B9DF3F",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "381DE09119F005B0",
+          type: "xp",
+          xp: 30,
+        },
+      ],
+    },
+    {
+      x: -2.0,
+      y: 1.0,
+      dependencies: [
+        "171707E1A8688AAF",
+      ],
+      size: 1.0,
+      id: "4E6EBB2CAE8B81DF",
+      tasks: [
+        {
+          id: "061CF280BF508F34",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "2D6DB5CDF4A78813",
+          type: "xp",
+          xp: 30,
+        },
+      ],
+    },
+    {
+      x: 5.0,
+      y: 0.0,
+      dependencies: [
+        "35EEE7106152F82E",
+        "4066668448C48BDF",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      id: "22957BAC49E3EF47",
+      tasks: [
+        {
+          id: "59006742E286F94B",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.plate",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8630,
+            },
+          },
+          count: 15,
+          match_components: "strict",
+        },
+      ],
+    },
   ],
   quest_links: [
   ],

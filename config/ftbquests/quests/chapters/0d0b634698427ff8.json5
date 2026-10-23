@@ -187,6 +187,7 @@
             },
           },
           count: 16,
+          match_components: "strict",
         },
       ],
     },
@@ -272,6 +273,7 @@
               "gregapi:subtype": 32706,
             },
           },
+          match_components: "strict",
         },
       ],
     },
@@ -292,6 +294,7 @@
             count: 1,
           },
           count: 64,
+          match_components: "strict",
         },
       ],
     },
@@ -368,6 +371,7 @@
               "gregapi:subtype": 1199,
             },
           },
+          match_components: "strict",
         },
       ],
     },
@@ -390,6 +394,7 @@
               "gregapi:subtype": 8610,
             },
           },
+          match_components: "strict",
         },
         {
           id: "54825511A6008DF6",
@@ -401,6 +406,7 @@
               "gregapi:subtype": 8610,
             },
           },
+          match_components: "strict",
         },
       ],
     },
@@ -423,6 +429,7 @@
               "gregapi:subtype": 1102,
             },
           },
+          match_components: "strict",
         },
       ],
     },
@@ -454,6 +461,7 @@
               "gregapi:subtype": 989,
             },
           },
+          match_components: "strict",
         },
         {
           id: "2663B3B28BBC66EE",
@@ -465,6 +473,7 @@
               "gregapi:subtype": 993,
             },
           },
+          match_components: "strict",
         },
         {
           id: "08AA87BB68F9D195",
@@ -476,6 +485,7 @@
               "gregapi:subtype": 900,
             },
           },
+          match_components: "strict",
         },
         {
           id: "153451ED5B45AABB",
@@ -487,6 +497,7 @@
               "gregapi:subtype": 902,
             },
           },
+          match_components: "strict",
         },
         {
           id: "52A87B68746AAA88",
@@ -498,6 +509,7 @@
               "gregapi:subtype": 906,
             },
           },
+          match_components: "strict",
         },
       ],
     },
@@ -607,6 +619,58 @@
         {
           id: "2534D59AA8FA517E",
           type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 17.0,
+      y: 5.0,
+      dependencies: [
+        "010BBDF1B38D93B0",
+      ],
+      size: 1.0,
+      id: "4066668448C48BDF",
+      tasks: [
+        {
+          id: "1897899F81B3333A",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.plate",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8643,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 9005,
+        },
+      },
+      x: 18.5,
+      y: 5.0,
+      dependencies: [
+        "010BBDF1B38D93B0",
+      ],
+      size: 1.0,
+      id: "071733F0C24A8370",
+      tasks: [
+        {
+          id: "43AE96A07E4AA047",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "60B8E4B768F83C27",
+          type: "xp",
+          xp: 20,
         },
       ],
     },
