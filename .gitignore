@@ -47,3 +47,5 @@ config/thirstwastaken2.json
 config/ldlib2-client.toml
 config/gregtech/materiallist.log
 /versions
+/config/thaumaturge
+/config/voicechat

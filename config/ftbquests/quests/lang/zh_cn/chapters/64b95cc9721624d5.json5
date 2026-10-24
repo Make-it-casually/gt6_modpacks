@@ -1,5 +1,6 @@
 {
   "quest.512E5D03F95CD613.title": "小提示",
+  "quest.40A17AF1D72D4BD0.title": "关于本包",
   "quest.40A17AF1D72D4BD0.quest_desc": [
     "欢迎来到GregTech 6 Modern Community，",
     "一个高版本GregTech 6教程整合包。",
@@ -24,5 +25,4 @@
     "由于GregTech 6模组联动内容丰富，在安装联动模组后可能产生更强力的产线方案和材料组合。",
     "因此，本教程包只针对原版GregTech 6进行编写，对于联动内容仅少量提及。",
   ],
-  "quest.40A17AF1D72D4BD0.title": "关于本包",
 }

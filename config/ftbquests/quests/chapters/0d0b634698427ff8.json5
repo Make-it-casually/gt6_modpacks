@@ -674,6 +674,108 @@
         },
       ],
     },
+    {
+      x: 17.0,
+      y: 7.0,
+      dependencies: [
+        "4066668448C48BDF",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "17616608AED198A8",
+      tasks: [
+        {
+          id: "6FCEF06233C524BA",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 17000,
+            },
+          },
+          match_components: "strict",
+        },
+        {
+          id: "02C959B91847ABC6",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 18000,
+            },
+          },
+          count: 25,
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 5000,
+        },
+      },
+      x: 8.0,
+      y: 0.0,
+      dependencies: [
+        "3F38718E4213C36F",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "6B8F9A91CFD3641F",
+      tasks: [
+        {
+          id: "2D17736A6F333D33",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multiitem.food",
+        count: 1,
+        components: {
+          "gregapi:subtype": 12050,
+        },
+      },
+      x: 10.0,
+      y: 0.0,
+      dependencies: [
+        "3F38718E4213C36F",
+      ],
+      size: 1.0,
+      id: "63A76D55BA30DB35",
+      tasks: [
+        {
+          id: "046420D7ABAF991C",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32736,
+            },
+          },
+          match_components: "strict",
+        },
+        {
+          id: "1B22B4B5093084E8",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.food",
+            count: 1,
+            components: {
+              "gregapi:subtype": 12050,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
   ],
   quest_links: [
   ],

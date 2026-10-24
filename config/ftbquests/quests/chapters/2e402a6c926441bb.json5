@@ -1,0 +1,234 @@
+{
+  id: "2E402A6C926441BB",
+  group: "171D75F171A899F0",
+  order_index: 2,
+  icon: {
+    id: "gregtech:gt.multitileentity",
+    count: 1,
+    components: {
+      "gregapi:subtype": 17101,
+    },
+  },
+  filename: "2e402a6c926441bb",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      x: 0.0,
+      y: 0.0,
+      dependencies: [
+        "4066668448C48BDF",
+      ],
+      size: 3.0,
+      id: "12BD1323E2EDE6D2",
+      tasks: [
+        {
+          id: "78F866247F5EFB02",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 17101,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 0.0,
+      y: 4.0,
+      dependencies: [
+        "12BD1323E2EDE6D2",
+      ],
+      size: 1.0,
+      id: "0D7628ABC6FA8543",
+      tasks: [
+        {
+          id: "359F2F60FF8E7A22",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 1.5,
+      y: 4.0,
+      dependencies: [
+        "0D7628ABC6FA8543",
+      ],
+      size: 1.0,
+      id: "1FC2DE58F41C1BAA",
+      tasks: [
+        {
+          id: "34F72FE1002207E3",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.block.rockores",
+        count: 1,
+        components: {
+          "gregapi:subtype": 5,
+        },
+      },
+      x: -1.5,
+      y: 4.0,
+      dependencies: [
+        "0D7628ABC6FA8543",
+      ],
+      size: 1.0,
+      id: "2B7A52C70E91D618",
+      tasks: [
+        {
+          id: "4B96E89D5355D576",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 4.5,
+      y: 2.5,
+      dependencies: [
+        "12BD1323E2EDE6D2",
+      ],
+      size: 1.0,
+      id: "6E9947D3BC9FE34A",
+      tasks: [
+        {
+          id: "04166E9DCC728EF2",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 9149,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 7.5,
+      y: 2.5,
+      dependencies: [
+        "6E9947D3BC9FE34A",
+      ],
+      size: 1.0,
+      id: "2C26E493A03BA44F",
+      tasks: [
+        {
+          id: "7AD5DA5CFF052B8F",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 24817,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 4.5,
+      y: 1.0,
+      dependencies: [
+        "12BD1323E2EDE6D2",
+      ],
+      size: 1.0,
+      id: "5A9E64D6B2253E60",
+      tasks: [
+        {
+          id: "1AB98D6448D61603",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20491,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 4.5,
+      y: -1.5,
+      dependencies: [
+        "12BD1323E2EDE6D2",
+      ],
+      size: 1.0,
+      id: "1CFE23FFE8397318",
+      tasks: [
+        {
+          id: "47585CFE64611ED8",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20481,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 7.5,
+      y: -0.5,
+      dependencies: [
+        "1CFE23FFE8397318",
+        "5A9E64D6B2253E60",
+      ],
+      dependency_requirement: "one_completed",
+      size: 2.0,
+      id: "71CF5F05D0BC692A",
+      tasks: [
+        {
+          id: "6112968EBD125162",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8218,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 4.5,
+      y: 4.0,
+      dependencies: [
+        "12BD1323E2EDE6D2",
+      ],
+      size: 1.0,
+      id: "18A23A99A6672A43",
+      tasks: [
+        {
+          id: "4C1661E18470AA3D",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 17231,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}
