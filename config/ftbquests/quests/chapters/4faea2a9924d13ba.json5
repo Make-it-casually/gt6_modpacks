@@ -385,8 +385,8 @@
       ],
     },
     {
-      x: 6.5,
-      y: -1.0,
+      x: 5.5,
+      y: -3.5,
       dependencies: [
         "7AA635D03E727304",
       ],
@@ -652,6 +652,50 @@
             },
           },
           match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 7.0,
+      y: 0.0,
+      dependencies: [
+        "2D2236E68060C731",
+      ],
+      size: 1.0,
+      id: "4E74A94BCFE11D9F",
+      tasks: [
+        {
+          id: "3A71B5B7EDFD69FD",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "152A80FC436B2678",
+          type: "xp",
+          xp: 30,
+        },
+      ],
+    },
+    {
+      x: 7.0,
+      y: 1.5,
+      dependencies: [
+        "2D2236E68060C731",
+      ],
+      size: 1.0,
+      id: "7392E2897605330F",
+      tasks: [
+        {
+          id: "26278B9D7C8110B7",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "2CCD5FF5A8CF8C3C",
+          type: "xp",
+          xp: 30,
         },
       ],
     },

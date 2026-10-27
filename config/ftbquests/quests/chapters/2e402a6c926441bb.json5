@@ -271,6 +271,35 @@
         },
       ],
     },
+    {
+      x: 4.5,
+      y: 4.5,
+      dependencies: [
+        "6E9947D3BC9FE34A",
+      ],
+      size: 1.0,
+      id: "6E519F365E45A460",
+      tasks: [
+        {
+          id: "45B708A70A26574C",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 24829,
+            },
+          },
+        },
+      ],
+      rewards: [
+        {
+          id: "3A8CCEEFEB640CE1",
+          type: "xp",
+          xp: 40,
+        },
+      ],
+    },
   ],
   quest_links: [
   ],
