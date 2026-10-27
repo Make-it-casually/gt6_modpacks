@@ -17,9 +17,9 @@
       x: 0.0,
       y: 0.0,
       dependencies: [
-        "4066668448C48BDF",
+        "69612AA86A62883A",
       ],
-      size: 3.0,
+      size: 2.0,
       id: "12BD1323E2EDE6D2",
       tasks: [
         {
@@ -37,8 +37,8 @@
       ],
     },
     {
-      x: 0.0,
-      y: 4.0,
+      x: -3.5,
+      y: 0.0,
       dependencies: [
         "12BD1323E2EDE6D2",
       ],
@@ -50,10 +50,17 @@
           type: "checkmark",
         },
       ],
+      rewards: [
+        {
+          id: "4B4016797B1B02DE",
+          type: "xp",
+          xp: 40,
+        },
+      ],
     },
     {
-      x: 1.5,
-      y: 4.0,
+      x: -3.5,
+      y: 1.5,
       dependencies: [
         "0D7628ABC6FA8543",
       ],
@@ -65,6 +72,13 @@
           type: "checkmark",
         },
       ],
+      rewards: [
+        {
+          id: "41DEE8627FBCE826",
+          type: "xp",
+          xp: 40,
+        },
+      ],
     },
     {
       icon: {
@@ -74,8 +88,8 @@
           "gregapi:subtype": 5,
         },
       },
-      x: -1.5,
-      y: 4.0,
+      x: -3.5,
+      y: -1.5,
       dependencies: [
         "0D7628ABC6FA8543",
       ],
@@ -85,6 +99,13 @@
         {
           id: "4B96E89D5355D576",
           type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "54EC0870C29D82FB",
+          type: "xp",
+          xp: 40,
         },
       ],
     },
@@ -112,11 +133,13 @@
       ],
     },
     {
-      x: 7.5,
+      x: 2.5,
       y: 2.5,
       dependencies: [
-        "6E9947D3BC9FE34A",
+        "12BD1323E2EDE6D2",
+        "45AB3C94DF1E7D8F",
       ],
+      dependency_requirement: "one_completed",
       size: 1.0,
       id: "2C26E493A03BA44F",
       tasks: [
@@ -187,7 +210,7 @@
         "5A9E64D6B2253E60",
       ],
       dependency_requirement: "one_completed",
-      size: 2.0,
+      size: 1.5,
       id: "71CF5F05D0BC692A",
       tasks: [
         {
@@ -204,7 +227,7 @@
       ],
     },
     {
-      x: 4.5,
+      x: 0.0,
       y: 4.0,
       dependencies: [
         "12BD1323E2EDE6D2",
@@ -223,6 +246,28 @@
             },
           },
           match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 2.5,
+      y: 5.5,
+      dependencies: [
+        "1F5E756BA7897CA9",
+      ],
+      size: 1.0,
+      id: "45AB3C94DF1E7D8F",
+      tasks: [
+        {
+          id: "7EE4A7BCDED71182",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.bottles",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32764,
+            },
+          },
         },
       ],
     },

@@ -1,0 +1,275 @@
+{
+  id: "0AA5A2F9899A1F14",
+  group: "171D75F171A899F0",
+  order_index: 5,
+  icon: {
+    id: "gregtech:gt.multitileentity",
+    count: 1,
+    components: {
+      "gregapi:subtype": 1005,
+    },
+  },
+  filename: "0aa5a2f9899a1f14",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      x: 0.0,
+      y: 0.0,
+      size: 1.0,
+      id: "00C9B35EA2260B63",
+      tasks: [
+        {
+          id: "47EB4E3D3EDED4C2",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1005,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 2.5,
+      y: -2.0,
+      dependencies: [
+        "00C9B35EA2260B63",
+      ],
+      size: 1.0,
+      id: "58E5CF7A2DE8060C",
+      tasks: [
+        {
+          id: "31392AEF35D728A8",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1032,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 2.5,
+      y: 0.0,
+      dependencies: [
+        "00C9B35EA2260B63",
+      ],
+      size: 1.0,
+      id: "53BB667C0DFDABA3",
+      tasks: [
+        {
+          id: "616F6E5EE555E151",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1033,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 5.0,
+      y: -2.0,
+      dependencies: [
+        "53BB667C0DFDABA3",
+        "58E5CF7A2DE8060C",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      id: "05934E988CF132A2",
+      tasks: [
+        {
+          id: "20DD6FC3A27F1F1B",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1039,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 5.0,
+      y: 0.0,
+      dependencies: [
+        "53BB667C0DFDABA3",
+      ],
+      size: 1.0,
+      id: "66CCBD06F48B9BA7",
+      tasks: [
+        {
+          id: "06958D12C246BBA4",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1040,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 7.5,
+      y: 0.0,
+      dependencies: [
+        "66CCBD06F48B9BA7",
+      ],
+      size: 1.0,
+      id: "682E9338702F0BEE",
+      tasks: [
+        {
+          id: "211DD2F237FAC2D4",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1035,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 10.0,
+      y: -2.0,
+      dependencies: [
+        "682E9338702F0BEE",
+        "05934E988CF132A2",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      id: "0E03E7A12BFF4468",
+      tasks: [
+        {
+          id: "00242220447308C4",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1037,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 10.0,
+      y: 0.0,
+      dependencies: [
+        "682E9338702F0BEE",
+      ],
+      size: 1.0,
+      id: "515B508111166224",
+      tasks: [
+        {
+          id: "3CA3F618E9675D42",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1036,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 12.5,
+      y: 0.0,
+      dependencies: [
+        "0E03E7A12BFF4468",
+        "515B508111166224",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      id: "713579CD5EA20E05",
+      tasks: [
+        {
+          id: "2BE62FC987C20ADB",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1024,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 15.0,
+      y: 0.0,
+      dependencies: [
+        "58EF6EF61F2FEB80",
+        "713579CD5EA20E05",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      id: "7D41BF7193EC3CF4",
+      tasks: [
+        {
+          id: "7612897E5A43059E",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1043,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 12.5,
+      y: -2.0,
+      size: 1.0,
+      id: "58EF6EF61F2FEB80",
+      tasks: [
+        {
+          id: "09AFA6D127BE17F4",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1019,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

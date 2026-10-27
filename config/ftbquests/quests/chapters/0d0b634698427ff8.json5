@@ -19,7 +19,7 @@
       dependencies: [
         "40A17AF1D72D4BD0",
       ],
-      size: 3.0,
+      size: 2.0,
       id: "05A6926BD20D0CEC",
       tasks: [
         {
@@ -613,7 +613,7 @@
       dependencies: [
         "1C3A64A7E29ED1B4",
       ],
-      size: 3.0,
+      size: 1.5,
       id: "010BBDF1B38D93B0",
       tasks: [
         {

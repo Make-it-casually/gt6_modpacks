@@ -1,0 +1,184 @@
+{
+  id: "5E8D8281DF152758",
+  group: "171D75F171A899F0",
+  order_index: 4,
+  icon: {
+    id: "gregtech:gt.multiitem.technological",
+    count: 1,
+    components: {
+      "gregapi:subtype": 12001,
+    },
+  },
+  filename: "5e8d8281df152758",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      x: 0.0,
+      y: 0.0,
+      dependencies: [
+        "53D189E8E7F4FD2A",
+        "0D15FE6E63EAB039",
+      ],
+      size: 2.0,
+      id: "7CE8645C204AB306",
+      tasks: [
+        {
+          id: "7E84D7E1F3AF92DA",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 10111,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multiitem.randomtools",
+        count: 1,
+        components: {
+          "gregapi:subtype": 10003,
+        },
+      },
+      x: 0.0,
+      y: -2.0,
+      size: 1.0,
+      id: "607AF01115BBF1D6",
+      tasks: [
+        {
+          id: "23A47D7898F4EC93",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "268A1685E930669C",
+          type: "xp",
+          xp: 50,
+        },
+      ],
+    },
+    {
+      x: 2.5,
+      y: -2.0,
+      dependencies: [
+        "7CE8645C204AB306",
+      ],
+      size: 1.0,
+      id: "278585C7C54F4C26",
+      tasks: [
+        {
+          id: "2FF11502F521FB05",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20091,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 0.0,
+      y: 2.0,
+      size: 1.0,
+      id: "5A28BD71AADF82CE",
+      tasks: [
+        {
+          id: "751BE3989DA94FF9",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 28400,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 2.5,
+      y: 2.0,
+      dependencies: [
+        "5A28BD71AADF82CE",
+        "5A130D23A5AF0794",
+      ],
+      size: 1.0,
+      id: "620F58A0F60FD8A9",
+      tasks: [
+        {
+          id: "5D30BAED102F81B7",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 10113,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 2.5,
+      y: 0.0,
+      dependencies: [
+        "7CE8645C204AB306",
+      ],
+      size: 1.0,
+      id: "5A130D23A5AF0794",
+      tasks: [
+        {
+          id: "6558E4F4D4A6A14C",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20221,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: 4.5,
+      y: 0.0,
+      dependencies: [
+        "620F58A0F60FD8A9",
+      ],
+      size: 1.0,
+      id: "36D33A53FE71B9E0",
+      tasks: [
+        {
+          id: "18EABD20EF0760D2",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20093,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}
