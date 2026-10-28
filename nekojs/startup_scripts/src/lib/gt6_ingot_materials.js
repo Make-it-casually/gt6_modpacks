@@ -1,12 +1,10 @@
 export const GT6_INGOT_MATERIALS = Object.freeze([
 
   {
-    item: 'witchery:koboldite_ingot',
     material: null,
     tagMaterial: null,
     autoMaterial: 'Koboldite',
-    confidence: 'unknown',
-    note: 'GT6 has no Koboldite (witchery magic metal, obtained via kobold trades); registered as a GT unknown material'
+    confidence: 'unknown'
   }
 ])
 
