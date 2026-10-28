@@ -18,7 +18,6 @@ const HIDDEN = [
   'railcraft:steel_ingot',
   'railcraft:tin_ingot',
   'railcraft:zinc_ingot',
-  'witchery:koboldite_ingot',
   'railcraft:brass_plate',
   'railcraft:bronze_plate',
   'railcraft:copper_plate',
@@ -30,7 +29,7 @@ const HIDDEN = [
   'railcraft:silver_plate',
   'railcraft:steel_plate',
   'railcraft:tin_plate',
-  'railcraft:zinc_plate',
+  'railcraft:zinc_plate'
 ]
 
 RecipeViewerEvents.removeEntries('item', event => {

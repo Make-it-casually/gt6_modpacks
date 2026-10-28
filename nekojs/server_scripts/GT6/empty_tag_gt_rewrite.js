@@ -284,21 +284,11 @@ const EDITS = [
   // railcraft:zinc_gear
   //   key.a:  "#c:ingots/zinc"  ->  GT zinc ingot
   { id: 'railcraft:zinc_gear', path: 'key.a', value: gt('ingot', 'zinc') },
-  // theurgy:liquefaction/alchemical_sulfur_lead_from_ingots_lead
   //   ingredient:  "#c:ingots/lead"  ->  GT lead ingot
-  { id: 'theurgy:liquefaction/alchemical_sulfur_lead_from_ingots_lead', path: 'ingredient', value: gt('ingot', 'lead') },
-  // theurgy:liquefaction/alchemical_sulfur_nickel_from_ingots_nickel
   //   ingredient:  "#c:ingots/nickel"  ->  GT nickel ingot
-  { id: 'theurgy:liquefaction/alchemical_sulfur_nickel_from_ingots_nickel', path: 'ingredient', value: gt('ingot', 'nickel') },
-  // theurgy:liquefaction/alchemical_sulfur_silver_from_ingots_silver
   //   ingredient:  "#c:ingots/silver"  ->  GT silver ingot
-  { id: 'theurgy:liquefaction/alchemical_sulfur_silver_from_ingots_silver', path: 'ingredient', value: gt('ingot', 'silver') },
-  // theurgy:liquefaction/alchemical_sulfur_tin_from_ingots_tin
   //   ingredient:  "#c:ingots/tin"  ->  GT tin ingot
-  { id: 'theurgy:liquefaction/alchemical_sulfur_tin_from_ingots_tin', path: 'ingredient', value: gt('ingot', 'tin') },
-  // theurgy:liquefaction/alchemical_sulfur_zinc_from_ingots_zinc
   //   ingredient:  "#c:ingots/zinc"  ->  GT zinc ingot
-  { id: 'theurgy:liquefaction/alchemical_sulfur_zinc_from_ingots_zinc', path: 'ingredient', value: gt('ingot', 'zinc') },
 ]
 
 const REMOVE = [
@@ -329,11 +319,8 @@ const REMOVE = [
   // no GT equivalent: #c:ingots
   'extendedae:wireless_connector_upgrade',
   // no GT equivalent: #c:ingots
-  'theurgy:calcination/alchemical_salt_mineral_from_ingots',
   // no GT equivalent: #c:ingots/demonite
-  'theurgy:liquefaction/alchemical_sulfur_demonite_from_ingots_demonite',
   // no GT equivalent: #c:ingots/uraninite
-  'theurgy:liquefaction/alchemical_sulfur_uraninite_from_ingots_uraninite',
 ]
 
 ServerEvents.recipes(event => {

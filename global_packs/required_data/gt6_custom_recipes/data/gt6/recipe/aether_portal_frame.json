@@ -4,7 +4,7 @@
   "key": {
     "A": "minecraft:glowstone",
     "B": "cyclic:spark",
-    "C": "minecraft:painting"
+    "C": "minecraft:white_wool"
   },
   "pattern": [
     "ABA",
