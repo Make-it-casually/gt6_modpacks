@@ -232,7 +232,7 @@
           "gregapi:subtype": 20254,
         },
       },
-      x: 0.0,
+      x: 5.0,
       y: 4.5,
       size: 1.0,
       id: "7C1414368D9F6817",
@@ -303,6 +303,7 @@
       y: -1.0,
       dependencies: [
         "616B11528D22D5CE",
+        "1C9AC7BA638A928A",
       ],
       size: 1.0,
       optional: true,
@@ -327,6 +328,7 @@
       y: 1.0,
       dependencies: [
         "1871FB785B68A306",
+        "1C9AC7BA638A928A",
       ],
       size: 1.0,
       optional: true,
@@ -343,6 +345,175 @@
             },
           },
           match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: -2.0,
+      y: 2.0,
+      dependencies: [
+        "71CF5F05D0BC692A",
+      ],
+      size: 2.0,
+      id: "2A7018846454F62F",
+      tasks: [
+        {
+          id: "618A361FDA9B2024",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 30000,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -2.0,
+      y: 4.5,
+      dependencies: [
+        "2A7018846454F62F",
+      ],
+      size: 1.0,
+      id: "337DC97B1142DFB7",
+      tasks: [
+        {
+          id: "3175CD30EDF8EB0B",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 30002,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 0.0,
+      y: 4.5,
+      dependencies: [
+        "414D899FB86A7AA9",
+      ],
+      size: 1.0,
+      id: "1BF89AA525338398",
+      tasks: [
+        {
+          id: "0F92EBB84D4DFCB6",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 30102,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -2.0,
+      y: 6.5,
+      dependencies: [
+        "337DC97B1142DFB7",
+        "1BF89AA525338398",
+      ],
+      size: 1.0,
+      id: "1C9AC7BA638A928A",
+      tasks: [
+        {
+          id: "58A1F5DA4B9EBF11",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 30302,
+            },
+          },
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.meta.boule",
+        count: 1,
+        components: {
+          "gregapi:subtype": 140,
+        },
+      },
+      x: 2.5,
+      y: 4.5,
+      dependencies: [
+        "7C1414368D9F6817",
+      ],
+      size: 1.0,
+      id: "414D899FB86A7AA9",
+      tasks: [
+        {
+          id: "3D58F4E5F76D2E26",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "60DA8729C967B60E",
+          type: "xp",
+          xp: 50,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multiitem.technological",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1003,
+        },
+      },
+      x: 0.0,
+      y: 6.5,
+      dependencies: [
+        "1C9AC7BA638A928A",
+      ],
+      size: 1.0,
+      id: "79526AE637161944",
+      tasks: [
+        {
+          id: "77E45000B4142908",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1003,
+            },
+          },
+        },
+        {
+          id: "54848D56FF690CCB",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1005,
+            },
+          },
+        },
+        {
+          id: "15D863A0152FE9FC",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 1015,
+            },
+          },
         },
       ],
     },

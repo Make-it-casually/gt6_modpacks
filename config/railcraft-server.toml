@@ -68,6 +68,10 @@ cartDispenserDelay = 0
 changeDungeonLoot = true
 #An ordered list of mod ids from which the items will be chosen, which Railcraft does not add, and which are necessary for recipes based on tags to work.
 preferredOres = ["railcraft", "minecraft"]
+#Number of seconds a locking track in a train mode ignores the train it just released
+# Default: 10
+# Range: 1 ~ 60
+lockingTrackTrainDelay = 10
 
 #High Speed Track Configuration
 [highSpeedTrack]

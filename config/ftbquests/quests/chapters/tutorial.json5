@@ -20,8 +20,12 @@
           id: "0FF9376AC94FF2B2",
           type: "item",
           item: {
-            id: "dimpaintings:nether_painting",
+            id: "ftbquests:missing_item",
             count: 1,
+            components: {
+              "ftbquests:missing_item": "dimpaintings:nether_painting",
+              "ftbquests:missing_item_count": 1,
+            },
           },
         },
       ],
