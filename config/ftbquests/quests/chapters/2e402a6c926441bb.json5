@@ -272,29 +272,109 @@
       ],
     },
     {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 24799,
+        },
+      },
+      x: 7.0,
+      y: 6.5,
+      dependencies: [
+        "2050FDF802083E41",
+      ],
+      size: 1.0,
+      id: "6E519F365E45A460",
+      tasks: [
+        {
+          id: "0B7D694DDDD4162A",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "3A8CCEEFEB640CE1",
+          type: "xp",
+          xp: 40,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 24790,
+        },
+      },
+      x: 7.0,
+      y: 4.5,
+      dependencies: [
+        "2050FDF802083E41",
+      ],
+      size: 1.0,
+      id: "286867752CD888A7",
+      tasks: [
+        {
+          id: "45D582F775074DFA",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "16701D3A3CCCCCA9",
+          type: "xp",
+          xp: 40,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 24798,
+        },
+      },
+      x: 4.5,
+      y: 6.5,
+      dependencies: [
+        "2050FDF802083E41",
+      ],
+      size: 1.0,
+      id: "1D148ED9C7162496",
+      tasks: [
+        {
+          id: "3A66CF15D21A605E",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "2644B82312EB1AA9",
+          type: "xp",
+          xp: 40,
+        },
+      ],
+    },
+    {
       x: 4.5,
       y: 4.5,
       dependencies: [
         "6E9947D3BC9FE34A",
       ],
       size: 1.0,
-      id: "6E519F365E45A460",
+      id: "2050FDF802083E41",
       tasks: [
         {
-          id: "45B708A70A26574C",
-          type: "item",
-          item: {
-            id: "gregtech:gt.multitileentity",
-            count: 1,
-            components: {
-              "gregapi:subtype": 24829,
-            },
-          },
+          id: "1AEC1D623408BC81",
+          type: "checkmark",
         },
       ],
       rewards: [
         {
-          id: "3A8CCEEFEB640CE1",
+          id: "01DE0263D0F897A1",
           type: "xp",
           xp: 40,
         },
