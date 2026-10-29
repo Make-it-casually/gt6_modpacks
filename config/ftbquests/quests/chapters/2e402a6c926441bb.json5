@@ -14,6 +14,13 @@
   default_hide_dependency_lines: false,
   quests: [
     {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 17101,
+        },
+      },
       x: 0.0,
       y: 0.0,
       dependencies: [
@@ -32,6 +39,32 @@
               "gregapi:subtype": 17101,
             },
           },
+          match_components: "strict",
+        },
+        {
+          id: "3105841EE4726DCD",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 18102,
+            },
+          },
+          count: 72,
+          match_components: "strict",
+        },
+        {
+          id: "17597ACA331E5265",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 18101,
+            },
+          },
+          count: 9,
           match_components: "strict",
         },
       ],

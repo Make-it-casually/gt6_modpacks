@@ -87,8 +87,8 @@
       ],
     },
     {
-      x: 0.0,
-      y: 2.0,
+      x: 2.5,
+      y: 4.0,
       size: 1.0,
       id: "5A28BD71AADF82CE",
       tasks: [
@@ -154,7 +154,7 @@
       ],
     },
     {
-      x: 5.0,
+      x: 4.5,
       y: 2.0,
       dependencies: [
         "620F58A0F60FD8A9",
@@ -232,8 +232,8 @@
           "gregapi:subtype": 20254,
         },
       },
-      x: 5.0,
-      y: 4.5,
+      x: -0.5,
+      y: 5.0,
       size: 1.0,
       id: "7C1414368D9F6817",
       tasks: [
@@ -350,7 +350,7 @@
     },
     {
       x: -2.0,
-      y: 2.0,
+      y: 3.0,
       dependencies: [
         "71CF5F05D0BC692A",
       ],
@@ -367,12 +367,13 @@
               "gregapi:subtype": 30000,
             },
           },
+          match_components: "strict",
         },
       ],
     },
     {
-      x: -2.0,
-      y: 4.5,
+      x: -4.5,
+      y: 3.0,
       dependencies: [
         "2A7018846454F62F",
       ],
@@ -389,12 +390,13 @@
               "gregapi:subtype": 30002,
             },
           },
+          match_components: "strict",
         },
       ],
     },
     {
-      x: 0.0,
-      y: 4.5,
+      x: -4.5,
+      y: 5.0,
       dependencies: [
         "414D899FB86A7AA9",
       ],
@@ -411,12 +413,13 @@
               "gregapi:subtype": 30102,
             },
           },
+          match_components: "strict",
         },
       ],
     },
     {
-      x: -2.0,
-      y: 6.5,
+      x: -6.5,
+      y: 3.0,
       dependencies: [
         "337DC97B1142DFB7",
         "1BF89AA525338398",
@@ -434,6 +437,7 @@
               "gregapi:subtype": 30302,
             },
           },
+          match_components: "strict",
         },
       ],
     },
@@ -445,10 +449,11 @@
           "gregapi:subtype": 140,
         },
       },
-      x: 2.5,
-      y: 4.5,
+      x: -2.5,
+      y: 5.0,
       dependencies: [
         "7C1414368D9F6817",
+        "0ACAF0EA709D9E0B",
       ],
       size: 1.0,
       id: "414D899FB86A7AA9",
@@ -474,10 +479,11 @@
           "gregapi:subtype": 1003,
         },
       },
-      x: 0.0,
-      y: 6.5,
+      x: -6.5,
+      y: 5.0,
       dependencies: [
         "1C9AC7BA638A928A",
+        "23A67D579CF203EB",
       ],
       size: 1.0,
       id: "79526AE637161944",
@@ -492,6 +498,7 @@
               "gregapi:subtype": 1003,
             },
           },
+          match_components: "strict",
         },
         {
           id: "54848D56FF690CCB",
@@ -503,6 +510,7 @@
               "gregapi:subtype": 1005,
             },
           },
+          match_components: "strict",
         },
         {
           id: "15D863A0152FE9FC",
@@ -514,6 +522,327 @@
               "gregapi:subtype": 1015,
             },
           },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: -8.5,
+      y: 0.0,
+      dependencies: [
+        "00B2D0654ED7F7C8",
+        "2597D57B88836E35",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      id: "0637A970EF2AE227",
+      tasks: [
+        {
+          id: "025709F809F36076",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "31394C0105039E98",
+          type: "xp",
+          xp: 50,
+        },
+      ],
+    },
+    {
+      x: -10.5,
+      y: 0.0,
+      dependencies: [
+        "0637A970EF2AE227",
+      ],
+      size: 1.0,
+      id: "4C0E08C9C9A9D4E0",
+      tasks: [
+        {
+          id: "3205001A50DA7A31",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 30306,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: -8.5,
+      y: 7.0,
+      size: 1.0,
+      id: "1707E46AA4050289",
+      tasks: [
+        {
+          id: "5FF686184DBD8449",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.plate",
+            count: 1,
+            components: {
+              "gregapi:subtype": 140,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 10163,
+        },
+      },
+      x: -10.5,
+      y: 7.0,
+      dependencies: [
+        "1707E46AA4050289",
+      ],
+      size: 1.0,
+      id: "52C2CB0D21AC48F8",
+      tasks: [
+        {
+          id: "0C83923A4CCDE5EF",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "4BB4F188EAF9E9E6",
+          type: "xp",
+          xp: 50,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.meta.chemtube",
+        count: 1,
+        components: {
+          "gregapi:subtype": 20,
+        },
+      },
+      x: -2.5,
+      y: 7.0,
+      size: 1.0,
+      id: "0ACAF0EA709D9E0B",
+      tasks: [
+        {
+          id: "5D2D06685C8633EC",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "37E26D1A91AEA512",
+          type: "xp",
+          xp: 50,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 17111,
+        },
+      },
+      x: -10.5,
+      y: 5.0,
+      dependencies: [
+        "52C2CB0D21AC48F8",
+      ],
+      size: 1.0,
+      id: "64A5B458586AEC5E",
+      tasks: [
+        {
+          id: "7184C7A61E1B7D47",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 17111,
+            },
+          },
+          match_components: "strict",
+        },
+        {
+          id: "0E66566BFC245D0E",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 18102,
+            },
+          },
+          count: 72,
+          match_components: "strict",
+        },
+        {
+          id: "0B06F3CB6BF37379",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 18101,
+            },
+          },
+          count: 9,
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: -10.5,
+      y: 3.0,
+      dependencies: [
+        "64A5B458586AEC5E",
+        "4C0E08C9C9A9D4E0",
+      ],
+      size: 1.0,
+      id: "0C9CFAECE40EEF16",
+      tasks: [
+        {
+          id: "00CCD4AA78E97F74",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 30502,
+            },
+          },
+          match_components: "strict",
+        },
+        {
+          id: "1770465E98BAA53E",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 30503,
+            },
+          },
+          match_components: "strict",
+        },
+        {
+          id: "0D77C405874E5842",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 30504,
+            },
+          },
+          match_components: "strict",
+        },
+        {
+          id: "69486D061F92BA48",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.technological",
+            count: 1,
+            components: {
+              "gregapi:subtype": 30501,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      x: -8.5,
+      y: -2.0,
+      dependencies: [
+        "0637A970EF2AE227",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "1B169D16D60874FA",
+      tasks: [
+        {
+          id: "125259D9A1CAA1FE",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.randomtools",
+            count: 1,
+            components: {
+              "gregapi:subtype": 9000,
+            },
+          },
+          match_components: "strict",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 20393,
+        },
+      },
+      x: 0.0,
+      y: 2.0,
+      dependencies: [
+        "7CE8645C204AB306",
+      ],
+      size: 1.0,
+      id: "663629D0C593DDD6",
+      tasks: [
+        {
+          id: "5F411296C935D0D3",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "5FDBE23E420FB4F3",
+          type: "xp",
+          xp: 50,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 10085,
+        },
+      },
+      x: -8.5,
+      y: 3.0,
+      dependencies: [
+        "1C9AC7BA638A928A",
+      ],
+      size: 1.0,
+      id: "01600AF0D4EC1438",
+      tasks: [
+        {
+          id: "2F0A000749D950A4",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "0F4238E507AEE57E",
+          type: "xp",
+          xp: 50,
         },
       ],
     },

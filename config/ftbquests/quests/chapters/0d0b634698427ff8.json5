@@ -150,8 +150,20 @@
     },
     {
       icon: {
-        id: "minecraft:stone_pickaxe",
+        id: "gregtech:gt.metatool.01",
         count: 1,
+        components: {
+          "gregapi:subtype": 2,
+          "gregapi:data": {
+            ench: [
+            ],
+            "GT.ToolStats": {
+              a: "8630s",
+              c: "8630s",
+              j: "51200",
+            },
+          },
+        },
       },
       x: 5.0,
       y: -1.5,

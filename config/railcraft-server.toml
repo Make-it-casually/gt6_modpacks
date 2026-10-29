@@ -106,3 +106,6 @@ lockingTrackTrainDelay = 10
 	# Default: 1.0
 	# Range: 0.20000000298023224 ~ 6.0
 	fuelPerSteamMultiplier = 1.0
+	#Change to 'false' to stop boilers, also the ones of steam locomotives, from exploding
+	#when water is added while they are superheated and empty
+	boilersExplode = true
