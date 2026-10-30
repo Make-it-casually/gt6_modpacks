@@ -38,10 +38,14 @@
     },
     {
       icon: {
-        id: "gregtech:gt.meta.chemtube",
+        id: "gregapi:gt.display.fluid",
         count: 1,
         components: {
-          "gregapi:subtype": 9824,
+          "gregapi:subtype": 1134,
+          "gregapi:data": {
+            f: "sulfuricacid",
+            h: "300s",
+          },
         },
       },
       x: 4.5,
@@ -69,7 +73,6 @@
               "gregapi:subtype": 780,
             },
           },
-          match_components: "strict",
         },
         {
           id: "2B3EB17FFC47357E",
@@ -82,46 +85,6 @@
               "gregapi:subtype": 8234,
             },
           },
-          match_components: "strict",
-        },
-        {
-          id: "671A95B2DB540564",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 9835,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "502ACE7EC1AA72D8",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 9834,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "50B067AB50C4C31B",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 9824,
-            },
-          },
-          match_components: "strict",
         },
       ],
     },
@@ -143,29 +106,8 @@
       id: "69C4C65DF1AC560D",
       tasks: [
         {
-          id: "145BEC3B28DB6ED1",
-          type: "item",
-          item: {
-            id: "gregtech:gt.multitileentity",
-            count: 1,
-            components: {
-              "gregapi:subtype": 22002,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "38B2C463030B5FDD",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 9824,
-            },
-          },
-          match_components: "strict",
+          id: "15223FC4B96523ED",
+          type: "checkmark",
         },
       ],
     },
@@ -186,120 +128,15 @@
       id: "608EDDB70A449823",
       tasks: [
         {
-          id: "044F59067A8A4EB2",
-          type: "item",
-          item: {
-            id: "gregtech:gt.multitileentity",
-            count: 1,
-            components: {
-              "gregapi:subtype": 20091,
-            },
-          },
-          match_components: "strict",
+          id: "3805AF95E026D427",
+          type: "checkmark",
         },
+      ],
+      rewards: [
         {
-          id: "134E3A9335E0D7F3",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8404,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "4AD8047411C0B56F",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8405,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "55CFFA115BDC0E5D",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8406,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "4B708A062FB865A2",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8407,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "2B478DDBBF2C79BA",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8408,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "49C7DE3B1B062B8C",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8409,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "0396EE40C4D03ABA",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8410,
-            },
-          },
-          match_components: "strict",
-        },
-        {
-          id: "23F0C1C6F2EE00D0",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8412,
-            },
-          },
-          match_components: "strict",
+          id: "7D84CA9A361F5F1A",
+          type: "xp",
+          xp: 50,
         },
       ],
     },
@@ -322,16 +159,20 @@
               "gregapi:subtype": 32716,
             },
           },
-          match_components: "strict",
         },
       ],
     },
     {
       icon: {
-        id: "gregtech:gt.meta.chemtube",
+        id: "gregapi:gt.display.fluid",
         count: 1,
         components: {
-          "gregapi:subtype": 9826,
+          "gregapi:subtype": 1100,
+          "gregapi:data": {
+            s: "1b",
+            f: "hydrochloricacid",
+            h: "300s",
+          },
         },
       },
       x: 6.5,
@@ -372,27 +213,19 @@
           },
           match_components: "strict",
         },
-        {
-          id: "6E90AD15203B7592",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 9826,
-            },
-          },
-          match_components: "strict",
-        },
       ],
     },
     {
       icon: {
-        id: "gregtech:gt.meta.chemtube",
+        id: "gregapi:gt.display.fluid",
         count: 1,
         components: {
-          "gregapi:subtype": 9829,
+          "gregapi:subtype": 1102,
+          "gregapi:data": {
+            s: "1b",
+            f: "hydrogenfluoride",
+            h: "300s",
+          },
         },
       },
       x: 4.5,
@@ -404,13 +237,8 @@
       id: "154B691FED77B58A",
       tasks: [
         {
-          id: "319E33C790395D32",
-          type: "checkmark",
-        },
-        {
           id: "26882C901EF483AF",
           type: "item",
-          optional_task: true,
           item: {
             id: "gregtech:gt.meta.dust",
             count: 1,
@@ -418,29 +246,19 @@
               "gregapi:subtype": 9215,
             },
           },
-          match_components: "strict",
-        },
-        {
-          id: "50862811F0A576A4",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 9829,
-            },
-          },
-          match_components: "strict",
         },
       ],
     },
     {
       icon: {
-        id: "gregtech:gt.meta.chemtube",
+        id: "gregapi:gt.display.fluid",
         count: 1,
         components: {
-          "gregapi:subtype": 9825,
+          "gregapi:subtype": 1114,
+          "gregapi:data": {
+            f: "nitricacid",
+            h: "300s",
+          },
         },
       },
       x: 6.5,
@@ -458,7 +276,6 @@
         {
           id: "1ABC24A0B2F956A6",
           type: "item",
-          optional_task: true,
           item: {
             id: "gregtech:gt.meta.dust",
             count: 1,
@@ -467,26 +284,18 @@
             },
           },
         },
-        {
-          id: "37AC8130EB2B2971",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 9825,
-            },
-          },
-        },
       ],
     },
     {
       icon: {
-        id: "gregtech:gt.meta.chemtube",
+        id: "gregapi:gt.display.fluid",
         count: 1,
         components: {
-          "gregapi:subtype": 9827,
+          "gregapi:subtype": 1218,
+          "gregapi:data": {
+            f: "aquaregia",
+            h: "300s",
+          },
         },
       },
       x: 8.5,
@@ -501,19 +310,6 @@
         {
           id: "7D572645784C8B40",
           type: "checkmark",
-        },
-        {
-          id: "24457276CC399A28",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 9827,
-            },
-          },
-          match_components: "strict",
         },
       ],
     },
@@ -543,7 +339,6 @@
               "gregapi:subtype": 8103,
             },
           },
-          match_components: "strict",
         },
       ],
     },
@@ -573,16 +368,23 @@
               "gregapi:subtype": 780,
             },
           },
-          match_components: "strict",
+        },
+        {
+          id: "1C8B3E742BED4FA3",
+          type: "checkmark",
         },
       ],
     },
     {
       icon: {
-        id: "gregtech:gt.meta.chemtube",
+        id: "gregapi:gt.display.fluid",
         count: 1,
         components: {
-          "gregapi:subtype": 9825,
+          "gregapi:subtype": 1114,
+          "gregapi:data": {
+            f: "nitricacid",
+            h: "300s",
+          },
         },
       },
       x: 9.5,
@@ -626,7 +428,6 @@
               "gregapi:subtype": 780,
             },
           },
-          match_components: "strict",
         },
         {
           id: "51130A38EBBF5780",
@@ -638,7 +439,6 @@
               "gregapi:subtype": 770,
             },
           },
-          match_components: "strict",
         },
         {
           id: "39BF6E82D67D6756",
@@ -650,7 +450,6 @@
               "gregapi:subtype": 760,
             },
           },
-          match_components: "strict",
         },
         {
           id: "4AD45A73DBDD5D7C",
@@ -662,7 +461,6 @@
               "gregapi:subtype": 440,
             },
           },
-          match_components: "strict",
         },
         {
           id: "688D96A29B3CDFBE",
@@ -674,7 +472,6 @@
               "gregapi:subtype": 450,
             },
           },
-          match_components: "strict",
         },
         {
           id: "2772797501A29DAE",
@@ -686,7 +483,6 @@
               "gregapi:subtype": 460,
             },
           },
-          match_components: "strict",
         },
       ],
     },
@@ -707,10 +503,15 @@
     },
     {
       icon: {
-        id: "gregtech:gt.meta.chemtube",
+        id: "gregapi:gt.display.fluid",
         count: 1,
         components: {
-          "gregapi:subtype": 170,
+          "gregapi:subtype": 974,
+          "gregapi:data": {
+            s: "1b",
+            f: "chlorine",
+            h: "300s",
+          },
         },
       },
       x: 8.5,
@@ -724,19 +525,6 @@
         {
           id: "1A07A1BD0D2CABB6",
           type: "checkmark",
-        },
-        {
-          id: "7C979CD0FF63AE9D",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 170,
-            },
-          },
-          match_components: "strict",
         },
       ],
     },
@@ -767,7 +555,6 @@
               "gregapi:subtype": 130,
             },
           },
-          match_components: "strict",
         },
       ],
     },
@@ -787,7 +574,6 @@
               "gregapi:subtype": 9105,
             },
           },
-          match_components: "strict",
         },
       ],
     },
@@ -814,7 +600,6 @@
               "gregapi:subtype": 8008,
             },
           },
-          match_components: "strict",
         },
       ],
     },
@@ -845,7 +630,6 @@
               "gregapi:subtype": 22004,
             },
           },
-          match_components: "strict",
         },
         {
           id: "7B5EEEBA46D4A80F",
@@ -857,7 +641,6 @@
               "gregapi:subtype": 8012,
             },
           },
-          match_components: "strict",
         },
       ],
     },
@@ -903,16 +686,19 @@
               "gregapi:subtype": 8008,
             },
           },
-          match_components: "strict",
         },
       ],
     },
     {
       icon: {
-        id: "gregtech:gt.meta.dust",
+        id: "gregapi:gt.display.fluid",
         count: 1,
         components: {
-          "gregapi:subtype": 8009,
+          "gregapi:subtype": 1172,
+          "gregapi:data": {
+            f: "molten.cryolite",
+            h: "1285s",
+          },
         },
       },
       x: 2.5,
@@ -928,68 +714,23 @@
           id: "0768FDA88F9E8F03",
           type: "checkmark",
         },
-        {
-          id: "75E85C966AC59AA4",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8009,
-            },
-          },
-          match_components: "strict",
-        },
       ],
     },
     {
       icon: {
-        id: "gregtech:gt.meta.chemtube",
+        id: "gregapi:gt.display.fluid",
         count: 1,
         components: {
-          "gregapi:subtype": 8011,
-        },
-      },
-      x: 4.5,
-      y: -3.0,
-      dependencies: [
-        "154B691FED77B58A",
-      ],
-      size: 1.0,
-      id: "4F45EE077A447FE5",
-      tasks: [
-        {
-          id: "64E23DE426F9E9BB",
-          type: "checkmark",
-        },
-        {
-          id: "5A7A7AE5F499A912",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8011,
-            },
+          "gregapi:subtype": 1142,
+          "gregapi:data": {
+            f: "molten.aluminiumfluoride",
+            h: "1560s",
           },
-          match_components: "strict",
-        },
-      ],
-    },
-    {
-      icon: {
-        id: "gregtech:gt.meta.chemtube",
-        count: 1,
-        components: {
-          "gregapi:subtype": 8010,
         },
       },
       x: 4.5,
       y: -4.5,
       dependencies: [
-        "4F45EE077A447FE5",
         "7BE866156945A526",
       ],
       size: 1.0,
@@ -998,19 +739,6 @@
         {
           id: "4A8133B0C2F2669D",
           type: "checkmark",
-        },
-        {
-          id: "4F7F80C10A205ADB",
-          type: "item",
-          optional_task: true,
-          item: {
-            id: "gregtech:gt.meta.chemtube",
-            count: 1,
-            components: {
-              "gregapi:subtype": 8010,
-            },
-          },
-          match_components: "strict",
         },
       ],
     },
@@ -1057,7 +785,6 @@
               "gregapi:subtype": 8268,
             },
           },
-          match_components: "strict",
         },
       ],
     },
@@ -1082,7 +809,6 @@
               "gregapi:subtype": 8015,
             },
           },
-          match_components: "strict",
         },
       ],
     },

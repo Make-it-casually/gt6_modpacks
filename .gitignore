@@ -49,3 +49,5 @@ config/gregtech/materiallist.log
 /versions
 /config/thaumaturge
 /config/voicechat
+config/gtqualityneo-client.toml
+config/gtqualityneo-server.toml
