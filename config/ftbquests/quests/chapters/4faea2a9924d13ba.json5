@@ -677,6 +677,50 @@
         },
       ],
     },
+    {
+      x: 3.0,
+      y: -1.0,
+      dependencies: [
+        "35EEE7106152F82E",
+      ],
+      size: 1.0,
+      id: "3A464C578078C6CA",
+      tasks: [
+        {
+          id: "67F69AAF896E5EC9",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20231,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 4.0,
+      y: -1.0,
+      dependencies: [
+        "35EEE7106152F82E",
+      ],
+      size: 1.0,
+      id: "0EAC002FDF401221",
+      tasks: [
+        {
+          id: "7C6A44627FFE99D0",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20101,
+            },
+          },
+        },
+      ],
+    },
   ],
   quest_links: [
   ],

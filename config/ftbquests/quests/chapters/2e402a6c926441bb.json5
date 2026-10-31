@@ -406,6 +406,49 @@
         },
       ],
     },
+    {
+      x: -5.0,
+      y: 0.0,
+      dependencies: [
+        "5F67886138F63363",
+      ],
+      size: 1.0,
+      id: "4F03BFC5654C0150",
+      tasks: [
+        {
+          id: "2837802ADFC4A50D",
+          type: "item",
+          item: {
+            id: "gregtech:gt.armor.hazmat.biochemgas.chest",
+            count: 1,
+          },
+        },
+        {
+          id: "44EFF9F2BA3E78F4",
+          type: "item",
+          item: {
+            id: "gregtech:gt.armor.hazmat.biochemgas.head",
+            count: 1,
+          },
+        },
+        {
+          id: "764C07E6AFEC2F6F",
+          type: "item",
+          item: {
+            id: "gregtech:gt.armor.hazmat.biochemgas.legs",
+            count: 1,
+          },
+        },
+        {
+          id: "0B245B14816C5078",
+          type: "item",
+          item: {
+            id: "gregtech:gt.armor.hazmat.biochemgas.boots",
+            count: 1,
+          },
+        },
+      ],
+    },
   ],
   quest_links: [
   ],

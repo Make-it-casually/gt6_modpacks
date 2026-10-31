@@ -775,14 +775,5 @@
   quest_links: [
   ],
   images: [
-    {
-      x: 26.5,
-      y: 0.0,
-      width: 15.0,
-      height: 15.0,
-      rotation: 0.0,
-      image: "ftbquests:textures/picture/gt6_molds_sculpting.png",
-      id: "7AA37F650E435853",
-    },
   ],
 }
