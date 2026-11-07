@@ -829,6 +829,325 @@
         },
       ],
     },
+    {
+      x: -7.5,
+      y: -3.0,
+      dependencies: [
+        "1D1A4F2D73D66D9E",
+      ],
+      size: 1.0,
+      id: "60BEB5E567CD1F5F",
+      tasks: [
+        {
+          id: "6F13AD0FB6E80CB1",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 9192,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -5.5,
+      y: -3.0,
+      dependencies: [
+        "1D1A4F2D73D66D9E",
+      ],
+      size: 1.0,
+      id: "0EDAA054881C8AAE",
+      tasks: [
+        {
+          id: "7DF8D1A165A57EFC",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 9120,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -7.5,
+      y: -0.5,
+      dependencies: [
+        "1D1A4F2D73D66D9E",
+      ],
+      size: 1.0,
+      id: "3998AC0B49AB0EE0",
+      tasks: [
+        {
+          id: "3D9F69672D6AA342",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8018,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -9.5,
+      y: -0.5,
+      dependencies: [
+        "3998AC0B49AB0EE0",
+      ],
+      size: 1.0,
+      id: "1351EEBDE8EADFFF",
+      tasks: [
+        {
+          id: "1F06E7D2CFCD5031",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 120,
+            },
+          },
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregapi:gt.display.fluid",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1144,
+          "gregapi:data": {
+            f: "titaniumtetrachloride",
+            h: "300s",
+          },
+        },
+      },
+      x: -9.5,
+      y: -3.0,
+      dependencies: [
+        "60BEB5E567CD1F5F",
+        "0EDAA054881C8AAE",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      id: "57BA9263734ED6D8",
+      tasks: [
+        {
+          id: "218AD17A7141D40A",
+          type: "checkmark",
+        },
+      ],
+      rewards: [
+        {
+          id: "0BC6B2487865ECE8",
+          type: "xp",
+          xp: 50,
+        },
+      ],
+    },
+    {
+      x: -11.5,
+      y: -3.0,
+      dependencies: [
+        "57BA9263734ED6D8",
+      ],
+      size: 1.0,
+      id: "741C6D1E92C92B3F",
+      tasks: [
+        {
+          id: "750EA1BCE123E2A8",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 220,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -5.5,
+      y: 3.5,
+      dependencies: [
+        "63E6B1D806CEF401",
+        "1D1A4F2D73D66D9E",
+      ],
+      size: 1.0,
+      id: "7A03772380A5FFB7",
+      tasks: [
+        {
+          id: "3DBD80A11C3C15C0",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8027,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -7.5,
+      y: 3.5,
+      dependencies: [
+        "7A03772380A5FFB7",
+      ],
+      size: 1.0,
+      id: "4B4912D5F8E28656",
+      tasks: [
+        {
+          id: "194D9C5DEB8944CF",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8026,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -9.5,
+      y: 3.5,
+      dependencies: [
+        "4B4912D5F8E28656",
+      ],
+      size: 1.0,
+      id: "07E3853C78FB0934",
+      tasks: [
+        {
+          id: "26745A4F8ECA03BF",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 740,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -7.5,
+      y: 7.5,
+      size: 1.0,
+      id: "7A60EACBC8E86A1A",
+      tasks: [
+        {
+          id: "3D70CC5200FF0E43",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 110,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -5.5,
+      y: 5.5,
+      size: 1.0,
+      id: "132DDBC8BCD2F848",
+      tasks: [
+        {
+          id: "2436FBE2E106EF80",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8462,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -5.5,
+      y: 7.5,
+      dependencies: [
+        "154B691FED77B58A",
+      ],
+      size: 1.0,
+      id: "07E5E0F1D01D87BB",
+      tasks: [
+        {
+          id: "1B971F4DDC7C8860",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8036,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -7.5,
+      y: 5.5,
+      dependencies: [
+        "07E5E0F1D01D87BB",
+        "132DDBC8BCD2F848",
+      ],
+      size: 1.0,
+      id: "47E63C12369FA2DC",
+      tasks: [
+        {
+          id: "5F45D5DB703B6DF4",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.dust",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8038,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -9.5,
+      y: 5.5,
+      dependencies: [
+        "47E63C12369FA2DC",
+        "7A60EACBC8E86A1A",
+        "1D1A4F2D73D66D9E",
+      ],
+      size: 1.0,
+      id: "27FDD460B28DCE49",
+      tasks: [
+        {
+          id: "7A76DBD5DC03F7F2",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.gem",
+            count: 1,
+            components: {
+              "gregapi:subtype": 730,
+            },
+          },
+        },
+      ],
+    },
   ],
   quest_links: [
   ],

@@ -8,6 +8,9 @@
   ],
   "quest.7AB87161BDCC02A8.title": "Tip",
   "quest.156C13E8839DC9D0.quest_subtitle": "Much simpler than GTNH",
+  "quest.132DDBC8BCD2F848.quest_desc": [
+    "Electrolyze Tantalite.",
+  ],
   "quest.63E6B1D806CEF401.title": "Hydrochloric Acid",
   "quest.7ECCDB6F9E22F252.quest_desc": [
     "To mass-produce Aluminium, you must find an excellent source of aluminium raw material.",
@@ -31,10 +34,22 @@
   "quest.678A8A51BBABD764.quest_desc": [
     "Electrolyze Salt and Water; byproducts are Chlorine, Hydrogen and Oxygen.",
   ],
+  "quest.57BA9263734ED6D8.quest_desc": [
+    "Put Rutile Dust or Ilmenite together with Carbon Dust and Chlorine into the Burner Mixer to obtain it.",
+    "",
+    "The Carbon Dust here can be Charcoal Dust, Coal Dust, Coal Coke Dust, Carbon Dust or Petroleum Coke Dust.",
+    "",
+    "The Burner Mixer needs to be ignited, and if the recipe run is interrupted it must be re-ignited.",
+    "",
+    "Because in the titanium line the Burner Mixer runs much faster than the Electrolyzer recovers Chlorine and Magnesium, you need to use an Automatic Igniter together with Redstone to ignite it automatically.",
+  ],
   "quest.5358FEEF18B1FF07.quest_desc": [
     "Cryolite is one of the indispensable fluxes for aluminium smelting, but unfortunately there are no natural Cryolite deposits in Greg's world. Use Sodium Hydroxide, Alumina and Hydrogen Fluoride to make a batch of Molten Cryolite.",
   ],
   "quest.42F9BD1CC0337F62.quest_subtitle": "The third of the three industrial acids",
+  "quest.4B4912D5F8E28656.quest_desc": [
+    "Dry Tungstic Acid Dust.",
+  ],
   "quest.68C5F0F723D0EB00.quest_desc": [
     "Washing platinum-bearing ores (Purified Nickel/Platinum/Sperrylite... etc.) with Aqua Regia extracts Chloroplatinic Acid; some platinum group elements that do not dissolve in Aqua Regia are also produced as Platinum Group Sludge, to be refined in the next step.",
     "",
@@ -57,7 +72,15 @@
     "",
     "Aluminium Fluoride is one of the indispensable fluxes for aluminium smelting.",
   ],
+  "quest.27FDD460B28DCE49.quest_desc": [
+    "Reduce Potassium Heptafluorotantalate with Molten Sodium; the resulting Potassium Fluoride can be recycled on its own, and the Sodium Fluoride can be recycled after electrolysis.",
+  ],
   "quest.47EF318E651D65DE.title": "Aqua Regia",
+  "quest.3998AC0B49AB0EE0.quest_desc": [
+    "Wash Molten Magnesium Carbonate with Salt in the Bath.",
+    "",
+    "Magnesium Carbonate is Magnesite.",
+  ],
   "quest.75F4E89D9560C01A.quest_desc": [
     "Some fluids in GT6 are acidic. They corrode any fluid container that is not acid-proof, causing unnecessary losses.",
     "",
@@ -80,6 +103,21 @@
     "",
     "The Oxygen byproduced by this process can be used to recover Nitric Acid, but this is a lossy cycle; you must periodically replenish Oxygen from outside.",
   ],
+  "quest.7A60EACBC8E86A1A.quest_desc": [
+    "Processing Molten Sodium Carbonate in a Burner Mixer, or electrolyzing Sodium Hydroxide, can provide the small amount of Sodium needed to start the tantalum line.",
+  ],
+  "quest.0EDAA054881C8AAE.quest_desc": [
+    "Processing Ilmenite Dust is a bit more troublesome than Rutile Dust; you can skip it at first.",
+    "",
+    "Although Ilmenite Dust can be thrown directly into the Burner Mixer, the Ferric Chloride it produces is hard to deal with.",
+    "",
+    "The recommended approach is to convert it into Rutile Dust with Sulfuric Acid in the Bath; the resulting Green Vitriol (Ferrous Sulfate) can be electrolyzed directly to recover Sulfuric Acid.",
+  ],
+  "quest.7A03772380A5FFB7.quest_desc": [
+    "Wash Huebnerite Dust, Wolframite Dust, Scheelite Dust, Tungstate Dust or Ferberite Dust with Hydrochloric Acid in the Bath.",
+    "",
+    "Electrolyzing the byproducts to recover Chlorine is a good idea.",
+  ],
   "quest.154B691FED77B58A.title": "Hydrogen Fluoride",
   "quest.33C66CE7CBBDEFF9.quest_desc": [
     "Wash Pyrolusite with Hydrochloric Acid; the redox reaction between them produces Manganese Chloride and Chlorine.",
@@ -89,7 +127,22 @@
     "&oElectrolyzing Salt, Rock Salt or Lithium Chloride is not recommended; their processing times are extremely long.",
   ],
   "quest.42F9BD1CC0337F62.title": "Nitric Acid",
+  "quest.07E3853C78FB0934.quest_desc": [
+    "Mix Tungsten Trioxide Dust with Hydrogen.",
+    "",
+    "This step consumes a large amount of Hydrogen; if you don't have enough, you can wash Bauxite with Sulfuric Acid.",
+  ],
   "quest.33C66CE7CBBDEFF9.quest_subtitle": "Laboratory Chlorine Production",
+  "quest.1351EEBDE8EADFFF.quest_desc": [
+    "Electrolyze Magnesium Chloride to obtain Magnesium Dust.",
+    "",
+    "This recipe requires 64GU/t of power.",
+    "",
+    "If you process it into Molten Magnesium Chloride with a Smelter and then electrolyze it, only 16GU/t of power and half the energy are needed.",
+    "Sounds great, but in fact a full-speed LV Electrolyzer running the Molten Magnesium Chloride recipe takes twice as long as a full-speed MV Electrolyzer running the Magnesium Chloride recipe.",
+    "If you run the Molten Magnesium Chloride recipe in an MV Electrolyzer, the lossy overclocking means the actual time and energy consumption are no different from the Magnesium Chloride recipe.",
+    "Therefore, the Molten Magnesium Chloride recipe is only practically meaningful once you have a Large Electrolyzer capable of lossless overclocking.",
+  ],
   "quest.4D045217201E8E74.title": "Autoclave",
   "quest.704623ECFBDD966E.quest_desc": [
     "Lined with Stainless Steel and airtight, it allows multiple fluids to be mixed and also allows corrosive fluids to undergo chemical reactions inside it.",
@@ -97,6 +150,17 @@
     "&cDo not try to feed gases or corrosive fluids into the mixing bowl!",
   ],
   "quest.7BE866156945A526.title": "Obtaining Alumina",
+  "quest.07E5E0F1D01D87BB.quest_desc": [
+    "Mix Hydrogen Fluoride with Potassium Carbonate.",
+  ],
+  "quest.741C6D1E92C92B3F.quest_desc": [
+    "Reduce Titanium Tetrachloride with Magnesium in the Bath.",
+    "",
+    "Obtaining Titanium Dust is not the end of the titanium line; you also need to build a Magnesium Chloride recovery line to close the loop.",
+    "Otherwise your Chlorine and Magnesium will run out sooner or later.",
+    "",
+    "As for why Sodium is not used for the reduction: one Sodium can only reduce one, and Salt is very hard to recover.",
+  ],
   "quest.154B691FED77B58A.quest_subtitle": "Beware the Temptation to Make Fluorine",
   "quest.23A67D579CF203EB.quest_desc": [
     "Pour the previously prepared Molten Aluminium Fluoride and Molten Cryolite into the Electrolyzer and electrolyze them together with Carbon Dust (Charcoal, Coal Coke and similar substitutes also work) and Alumina Dust to obtain shiny elemental Aluminium.",
@@ -108,12 +172,22 @@
     "Washing [Sodium/Potassium] Aluminate with Water in the Bath releases the [Sodium/Potassium] Hydroxide added earlier and produces Aluminium Hydroxide Dust.",
   ],
   "quest.7B8C9C297BC5033A.title": "Placeholder Quest",
+  "quest.60BEB5E567CD1F5F.quest_desc": [
+    "Titanium processing has two starting points: Rutile Dust and Ilmenite Dust.",
+    "",
+    "Rutile needs to be processed into Titanium Tetrachloride in the Burner Mixer.",
+    "",
+    "Note that Titanium Tetrachloride is corrosive; Stainless Steel or Vanadiumsteel pipes are recommended.",
+    "",
+    "Ilmenite processing is more troublesome, so you can skip ilmenite processing at first.",
+  ],
   "quest.608EDDB70A449823.title": "Electrolyzing Sulfate",
   "quest.63E6B1D806CEF401.quest_desc": [
     "Mix Sulfuric Acid with [Salt/Rock Salt] Dust in the Mixer to produce Hydrochloric Acid. If you have elemental Chlorine, you can also mix Chlorine with Water to obtain Hydrochloric Acid directly.",
     "",
     "Hydrochloric Acid is also acidic, so remember to store it in acid-proof tanks.",
   ],
+  "quest.57BA9263734ED6D8.title": "Titanium Tetrachloride",
   "quest.47EF318E651D65DE.quest_desc": [
     "Mix Hydrochloric Acid and Nitric Acid to obtain Aqua Regia.",
     "",

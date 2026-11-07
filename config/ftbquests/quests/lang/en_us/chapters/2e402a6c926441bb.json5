@@ -17,6 +17,7 @@
     "The torque of the Electric Motor, Diesel Engine and Steam Turbine is fixed at 1.",
   ],
   "quest.12BD1323E2EDE6D2.title": "Distillation Tower",
+  "quest.769F537543AB2252.quest_subtitle": "Oil and Gas Storage",
   "quest.2050FDF802083E41.title": "More on RU",
   "quest.2C26E493A03BA44F.quest_subtitle": "Turning circular motion (RU) into linear motion (KU)",
   "quest.18A23A99A6672A43.title": "Gas Turbine",
@@ -39,6 +40,13 @@
     "It is time to replace the Steam Boiler and upgrade your ore processing and machines.",
     "",
     "&oThere are Diesel Engines of other materials in the game; check JEI yourself for their crafting recipes.",
+  ],
+  "quest.769F537543AB2252.quest_desc": [
+    "The Wood Tank can only hold 432,000 L of fluid (432 buckets). That may sound like a lot, but it fills up quickly. If you need more storage space, or need to store gases (gases can't be stored in treated wood), you need another kind of Tank. That's where the Invar Tank comes in. The Small Invar Tank holds 1,728,000 L and, like the Wood Tank, only needs a 3x3 space. It can also store gases. There are also Large versions of the Invar Tank, but they require far more Invar to make - although they can hold correspondingly larger amounts of non-acidic fluids.",
+    "",
+    "Likewise, they're great for storing your Oil and distilled products.",
+    "",
+    "Warning: the Invar Tank can store gases but not acids. You need a Stainless Steel Tank to store acids.",
   ],
   "quest.0D7628ABC6FA8543.quest_desc": [
     "Oil and Natural Gas resources are buried deep underground (at the Bedrock layer), and their traces are usually hard to find directly. However, some special indicators let you roughly learn what fluid deposits may lie beneath an area without drilling a shaft.",

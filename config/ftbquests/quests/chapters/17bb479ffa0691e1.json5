@@ -1,0 +1,408 @@
+{
+  id: "17BB479FFA0691E1",
+  group: "",
+  order_index: 1,
+  icon: {
+    id: "minecraft:piston",
+    count: 1,
+  },
+  filename: "17bb479ffa0691e1",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  autofocus_id: "51D3E23708F04954",
+  quests: [
+    {
+      icon: {
+        id: "gregtech:gt.multiitem.books",
+        count: 1,
+        components: {
+          "gregapi:subtype": 32005,
+          "gregapi:data": {
+            author: "Apature Atomics",
+            book: "Manual_Reactors",
+            title: "Fission Reactor Manual",
+          },
+        },
+      },
+      x: 0.0,
+      y: 0.0,
+      size: 1.0,
+      id: "51D3E23708F04954",
+      tasks: [
+        {
+          id: "20119EF0E77F6D24",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1005,
+        },
+      },
+      x: 2.0,
+      y: 0.0,
+      dependencies: [
+        "51D3E23708F04954",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "7603482FB49E6CDC",
+      tasks: [
+        {
+          id: "1BEA09687380C498",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1005,
+        },
+      },
+      x: 4.0,
+      y: 0.0,
+      dependencies: [
+        "7603482FB49E6CDC",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      optional: true,
+      id: "7BA9AA57C371CBC6",
+      tasks: [
+        {
+          id: "6CAA94CCBEDBE9DB",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1005,
+        },
+      },
+      x: 6.0,
+      y: 0.0,
+      dependencies: [
+        "7603482FB49E6CDC",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      optional: true,
+      id: "68270221023AC31D",
+      tasks: [
+        {
+          id: "5F857F5C0EED8AA4",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 10001,
+        },
+      },
+      x: 2.0,
+      y: -4.0,
+      dependencies: [
+        "7603482FB49E6CDC",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "01585DF06166FF53",
+      tasks: [
+        {
+          id: "2AC70916BAB3C67F",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1755,
+        },
+      },
+      x: 4.0,
+      y: -2.0,
+      dependencies: [
+        "7BA9AA57C371CBC6",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "619B53EA839D4920",
+      tasks: [
+        {
+          id: "14CF36FF522A3F50",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 10161,
+        },
+      },
+      x: 4.0,
+      y: -4.0,
+      dependencies: [
+        "7BA9AA57C371CBC6",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "08E3E6DDCFDC18BA",
+      tasks: [
+        {
+          id: "56347088F65BC67B",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 31004,
+        },
+      },
+      x: 6.0,
+      y: -2.0,
+      dependencies: [
+        "68270221023AC31D",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "2F6BB9CCE92566C7",
+      tasks: [
+        {
+          id: "3DE4C1CF674DAA9C",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 2.0,
+      y: -2.0,
+      dependencies: [
+        "7603482FB49E6CDC",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "56B3AB17F8E0EF86",
+      tasks: [
+        {
+          id: "0B4BA8403EEBE9B0",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 15011,
+            },
+          },
+        },
+        {
+          id: "7509975DB66F3D6E",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 15010,
+            },
+          },
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1043,
+        },
+      },
+      x: 8.0,
+      y: 0.0,
+      dependencies: [
+        "68270221023AC31D",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "4AEA35C52F5D8871",
+    },
+    {
+      x: 10.0,
+      y: 0.0,
+      dependencies: [
+        "68270221023AC31D",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "107EF5262CC742B8",
+      tasks: [
+        {
+          id: "11B6A03A6CF205EE",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20244,
+            },
+          },
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 20021,
+        },
+      },
+      x: 2.0,
+      y: 4.5,
+      size: 1.0,
+      id: "34B2D9DBEF81D5B7",
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 22002,
+        },
+      },
+      x: 4.0,
+      y: 6.5,
+      size: 1.0,
+      id: "7DDFB77FE39B5991",
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 22002,
+        },
+      },
+      x: 4.0,
+      y: 7.5,
+      size: 1.0,
+      id: "6C1745BB42167B23",
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 22002,
+        },
+      },
+      x: 4.0,
+      y: 5.5,
+      size: 1.0,
+      id: "6E13368D5BBEC3CB",
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multitileentity",
+        count: 1,
+        components: {
+          "gregapi:subtype": 32702,
+        },
+      },
+      x: 4.0,
+      y: 2.5,
+      size: 1.0,
+      id: "66BAA1D8181C9584",
+      tasks: [
+        {
+          id: "02F00E1DE5C4E191",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 2.0,
+      y: 2.5,
+      size: 1.0,
+      id: "5F2B5CF5364036BA",
+      tasks: [
+        {
+          id: "039C18192FE531C3",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 17999,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 4.0,
+      y: 4.5,
+      size: 1.0,
+      id: "6D7CAF4A18D53ECE",
+      tasks: [
+        {
+          id: "334F3376BE101754",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20291,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 6.0,
+      y: 4.5,
+      size: 1.0,
+      id: "77955D89F7CD9688",
+      tasks: [
+        {
+          id: "43B5747EBF868966",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 20081,
+            },
+          },
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

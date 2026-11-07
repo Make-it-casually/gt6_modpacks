@@ -771,6 +771,571 @@
         },
       ],
     },
+    {
+      x: 20.0,
+      y: 2.5,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+        "4066668448C48BDF",
+      ],
+      size: 1.0,
+      id: "23120973710EA78A",
+      tasks: [
+        {
+          id: "7C51999D2EF1281C",
+          type: "item",
+          item: {
+            id: "railcraft:tin_plate",
+            count: 1,
+          },
+          count: 16,
+        },
+      ],
+    },
+    {
+      x: 20.0,
+      y: 4.0,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 1.0,
+      id: "3EC644F22486D816",
+      tasks: [
+        {
+          id: "1E9EF5AC67C557DF",
+          type: "item",
+          item: {
+            id: "gregtech:gt.meta.plate",
+            count: 1,
+            components: {
+              "gregapi:subtype": 8660,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 18.5,
+      y: 2.5,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 1.0,
+      id: "62DF727AFE6590B2",
+      tasks: [
+        {
+          id: "67EF4551C4FB5668",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 16,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "51200",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: "21C88F32D46E985A",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 12,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "51200",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: "7BB0993858FF4D20",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 18,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "51200",
+                },
+              },
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 18.5,
+      y: 4.0,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "6C03DD5F6BECB49B",
+      tasks: [
+        {
+          id: "3FC209BFC08E61AC",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32028,
+              "gregapi:data": {
+                "gt.durability": "1000000",
+              },
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 18.5,
+      y: 5.5,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "67C022F846587021",
+      tasks: [
+        {
+          id: "392A9B9040EAA806",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32050,
+              "gregapi:data": {
+                "gt.durability": "800000",
+              },
+            },
+          },
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.meta.toolheadarrow",
+        count: 1,
+        components: {
+          "gregapi:subtype": 8002,
+        },
+      },
+      x: 16.5,
+      y: 2.5,
+      dependencies: [
+        "62DF727AFE6590B2",
+      ],
+      size: 1.0,
+      id: "0F6661FFB09F81B8",
+      tasks: [
+        {
+          id: "47B9E8C87AF8AE26",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.randomtools",
+            count: 1,
+            components: {
+              "gregapi:subtype": 923,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 16.5,
+      y: 4.0,
+      dependencies: [
+        "67C022F846587021",
+        "6C03DD5F6BECB49B",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      id: "22B86EDBC7256793",
+      tasks: [
+        {
+          id: "3FAA042FFC81DDB8",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 14.5,
+      y: 2.5,
+      dependencies: [
+        "22B86EDBC7256793",
+        "0F6661FFB09F81B8",
+      ],
+      size: 1.0,
+      id: "44EB8782F2412B47",
+      tasks: [
+        {
+          id: "4CB58AEB4DD31A72",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 52,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "51200",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: "3BCF58451A0A67E7",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 10,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "51200",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: "0B44CEA8D2F9DC3E",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 22,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "51200",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: "0534E9351D83B921",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 72,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "12800s",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: "5235FE5513176FE4",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 26,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "51200",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: "20FAB666A8995210",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 14,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "409600",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: "435B81033D3592B5",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 66,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "51200",
+                },
+              },
+            },
+          },
+        },
+        {
+          id: "70C2636D6B893DC6",
+          type: "item",
+          item: {
+            id: "gregtech:gt.metatool.01",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32,
+              "gregapi:data": {
+                ench: [
+                ],
+                "GT.ToolStats": {
+                  a: "8630s",
+                  c: "8630s",
+                  j: "51200",
+                },
+              },
+            },
+          },
+        },
+      ],
+      rewards: [
+        {
+          id: "4B2C32E02C776806",
+          type: "item",
+          item: {
+            id: "railcraft:bronze_plate",
+            count: 1,
+          },
+          count: 64,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:oak_trapdoor",
+        count: 1,
+      },
+      x: 15.5,
+      y: -1.5,
+      dependencies: [
+        "1241866523ED736C",
+        "153BDFDA9F71455F",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      optional: true,
+      id: "657750F062A5A84F",
+      tasks: [
+        {
+          id: "61CC2A3F6A46C61F",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 20.0,
+      y: 5.5,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 1.0,
+      id: "6593AA566467EE37",
+      tasks: [
+        {
+          id: "06E95E3EA8D20CCC",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.bottles",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32765,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 22.0,
+      y: 4.0,
+      dependencies: [
+        "23120973710EA78A",
+        "3EC644F22486D816",
+        "6593AA566467EE37",
+        "44EB8782F2412B47",
+      ],
+      size: 1.0,
+      id: "4D7BC873DE055F51",
+      tasks: [
+        {
+          id: "0B979D97F51154D3",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 31000,
+            },
+          },
+        },
+      ],
+      rewards: [
+        {
+          id: "4B462D73CC0E9FDD",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multiitem.randomtools",
+            count: 1,
+            components: {
+              "gregapi:subtype": 10000,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 20.0,
+      y: -1.5,
+      dependencies: [
+        "1C3A64A7E29ED1B4",
+      ],
+      size: 1.0,
+      id: "60B0D16EEAFB3DCB",
+      tasks: [
+        {
+          id: "4827AB587B98D085",
+          type: "item",
+          item: {
+            id: "railcraft:bronze_plate",
+            count: 1,
+          },
+          count: 16,
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregtech:gt.multiitem.randomtools",
+        count: 1,
+        components: {
+          "gregapi:subtype": 2000,
+        },
+      },
+      x: 9.0,
+      y: 0.0,
+      dependencies: [
+        "3F38718E4213C36F",
+      ],
+      size: 1.0,
+      optional: true,
+      id: "17F7F72BB3669B9A",
+      tasks: [
+        {
+          id: "7C5B3D0B92A707A2",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: 14.5,
+      y: 4.0,
+      dependencies: [
+        "44EB8782F2412B47",
+      ],
+      size: 1.0,
+      id: "5478330D8B7A7CD6",
+      tasks: [
+        {
+          id: "49B0B0732C8F0D06",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 6991,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 7.0,
+      y: -3.0,
+      dependencies: [
+        "3F38718E4213C36F",
+      ],
+      dependency_requirement: "all_started",
+      size: 1.0,
+      id: "0EBB329F010FC2D3",
+      tasks: [
+        {
+          id: "52DC219BBC085630",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32721,
+            },
+          },
+        },
+      ],
+    },
   ],
   quest_links: [
   ],

@@ -11,7 +11,7 @@
     "",
     "Immerse yourself in GregTech 6's challenging progression.",
     "",
-    "Click the checkbox to start the quest."
+    "Click the checkbox to start the quest.",
   ],
   "quest.512E5D03F95CD613.quest_desc": [
     "When playing GregTech 6, make sure to press F3+H to enable advanced tooltips.",
@@ -23,6 +23,6 @@
     "This pack includes light recipe tweaks that do not affect the main GregTech 6 progression.",
     "",
     "Because GregTech 6 has rich mod integration, installing integration mods may open up more powerful production lines and material combinations.",
-    "This tutorial pack is therefore written for vanilla GregTech 6 only, and mentions integration content only briefly."
-  ]
+    "This tutorial pack is therefore written for vanilla GregTech 6 only, and mentions integration content only briefly.",
+  ],
 }

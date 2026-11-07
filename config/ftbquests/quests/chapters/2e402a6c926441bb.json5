@@ -449,6 +449,40 @@
         },
       ],
     },
+    {
+      x: 0.0,
+      y: -3.5,
+      dependencies: [
+        "0B36E7078A6378A3",
+      ],
+      size: 1.0,
+      id: "769F537543AB2252",
+      tasks: [
+        {
+          id: "2E41BA6712DE586D",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 17007,
+            },
+          },
+        },
+        {
+          id: "70AC54CA068DF333",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 18007,
+            },
+          },
+          count: 25,
+        },
+      ],
+    },
   ],
   quest_links: [
   ],

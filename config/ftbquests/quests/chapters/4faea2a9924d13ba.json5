@@ -721,6 +721,206 @@
         },
       ],
     },
+    {
+      x: 0.0,
+      y: -3.5,
+      dependencies: [
+        "171707E1A8688AAF",
+      ],
+      size: 1.0,
+      id: "05065DA5898E4DDD",
+      tasks: [
+        {
+          id: "0247A6539BC6B60F",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 26004,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: -6.0,
+      y: 1.0,
+      dependencies: [
+        "4066668448C48BDF",
+      ],
+      size: 1.0,
+      id: "0B36E7078A6378A3",
+      tasks: [
+        {
+          id: "76B4637C31BC4BFB",
+          type: "item",
+          item: {
+            id: "railcraft:invar_plate",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "minecraft:redstone_ore",
+        count: 1,
+      },
+      x: -6.0,
+      y: 4.0,
+      dependencies: [
+        "010BBDF1B38D93B0",
+      ],
+      size: 2.0,
+      id: "6E8C8C32C0E6F1A2",
+      tasks: [
+        {
+          id: "44D0248B75331F94",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: -1.5,
+      y: -3.5,
+      dependencies: [
+        "080FEA3DA98041BC",
+      ],
+      size: 1.0,
+      id: "78035A506BF92913",
+      tasks: [
+        {
+          id: "00C7AB6F78CB95B5",
+          type: "item",
+          item: {
+            id: "gregtech:gt.block.planks",
+            count: 1,
+            components: {
+              "gregapi:subtype": 10,
+            },
+          },
+        },
+      ],
+    },
+    {
+      icon: {
+        id: "gregapi:gt.display.fluid",
+        count: 1,
+        components: {
+          "gregapi:subtype": 1218,
+          "gregapi:data": {
+            f: "creosote",
+            h: "300s",
+          },
+        },
+      },
+      x: -4.0,
+      y: -3.5,
+      dependencies: [
+        "17616608AED198A8",
+      ],
+      size: 1.0,
+      id: "080FEA3DA98041BC",
+      tasks: [
+        {
+          id: "0804A595A855E18D",
+          type: "checkmark",
+        },
+      ],
+    },
+    {
+      x: -1.5,
+      y: -5.5,
+      dependencies: [
+        "78035A506BF92913",
+      ],
+      size: 1.0,
+      id: "3DE7C10B402CCF39",
+      tasks: [
+        {
+          id: "009BE80721610722",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 17001,
+            },
+          },
+        },
+        {
+          id: "0E5020537A62FCAB",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 18001,
+            },
+          },
+          count: 25,
+        },
+      ],
+    },
+    {
+      x: 0.0,
+      y: -5.5,
+      dependencies: [
+        "080FEA3DA98041BC",
+        "05065DA5898E4DDD",
+      ],
+      size: 1.0,
+      id: "7A0BFA18FD6FAFC3",
+      tasks: [
+        {
+          id: "70F61626A6E711B3",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 26024,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 1.5,
+      y: -3.5,
+      dependencies: [
+        "05065DA5898E4DDD",
+        "171707E1A8688AAF",
+      ],
+      dependency_requirement: "one_completed",
+      size: 1.0,
+      id: "1EBE40CA8A114B07",
+      tasks: [
+        {
+          id: "689CCDA4739987F9",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 26122,
+            },
+          },
+        },
+        {
+          id: "68C378077DAE0963",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 26102,
+            },
+          },
+        },
+      ],
+    },
   ],
   quest_links: [
   ],
