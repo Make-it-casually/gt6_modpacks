@@ -1,0 +1,34 @@
+{
+  id: "2BD75A0AA98E65B6",
+  group: "39D922C6BDB335F1",
+  order_index: 1,
+  icon: {
+    id: "croptopia:transcendental_breakfast",
+    count: 1,
+  },
+  filename: "2bd75a0aa98e65b6",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      x: 0.0,
+      y: 0.0,
+      size: 1.0,
+      id: "6880CAE7CA245C27",
+      tasks: [
+        {
+          id: "67850667FA4B24E8",
+          type: "item",
+          item: {
+            id: "croptopia:transcendental_breakfast",
+            count: 1,
+          },
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

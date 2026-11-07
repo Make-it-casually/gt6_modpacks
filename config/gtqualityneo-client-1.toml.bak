@@ -1,0 +1,7 @@
+#Show animated rainbow tooltips on items with targeted GTQuality changes.
+modifiedItemTooltips = true
+jeiMultiblockPreview = true
+#Show tool durability/charge bars and fluid-colored battery charge bars in GUIs.
+gtmToolBars = true
+#Display configured GT6 resource generation rules in JEI. Restart required.
+jeiWorldgenDisplay = true

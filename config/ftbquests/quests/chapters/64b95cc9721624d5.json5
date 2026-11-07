@@ -44,6 +44,21 @@
           type: "checkmark",
         },
       ],
+      rewards: [
+        {
+          id: "1933E21572DF2725",
+          type: "item",
+          item: {
+            id: "gtqualityneo:scanner_mv",
+            count: 1,
+            components: {
+              "minecraft:custom_data": {
+                "gt.energy": 1024000,
+              },
+            },
+          },
+        },
+      ],
     },
   ],
   quest_links: [

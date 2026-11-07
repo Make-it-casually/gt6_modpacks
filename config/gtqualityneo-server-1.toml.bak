@@ -1,0 +1,13 @@
+drillRangeModes = true
+oneWayFluidPipes = true
+allowObstructedInteraction = true
+guiFluidInteraction = true
+allowSapBagHopperExtraction = true
+heatHazmatFireImmunity = true
+circuitSelectorGui = true
+# Default: 0.14
+# Range: 0.0 ~ 2.0
+scaffoldClimbUpSpeed = 0.14
+# Default: 0.15
+# Range: 0.0 ~ 2.0
+scaffoldClimbDownSpeed = 0.15

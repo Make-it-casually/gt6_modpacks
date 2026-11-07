@@ -35,6 +35,7 @@ export const GT_MATERIAL = Object.freeze({
   netherquartz: 8346,
   certusquartz: 8347,
   chargedcertusquartz: 8348,
+  skystone: 8528,
   fluix: 8389
 })
 
@@ -178,6 +179,7 @@ export const GT6_MATERIAL_NAME = Object.freeze({
   netherquartz: 'NetherQuartz',
   certusquartz: 'CertusQuartz',
   chargedcertusquartz: 'ChargedCertusQuartz',
+  skystone: 'SkyStone',
   fluix: 'Fluix'
 })
 

@@ -1,0 +1,7 @@
+showChunkResources = true
+# Default: 8
+# Range: 0 ~ 8192
+x = 8
+# Default: 20
+# Range: 0 ~ 8192
+y = 20

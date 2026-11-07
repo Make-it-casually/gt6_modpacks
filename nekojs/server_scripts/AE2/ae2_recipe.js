@@ -147,6 +147,20 @@ const REMOVE = [
 ]
 
 const RECIPES = [
+{ id: 'extendedae:machine_frame',
+      result: 'extendedae:machine_frame',
+      pattern: ['aaa', 'aba', 'aaa'],
+      keys: {
+      a: 'aether_ii:corrobonite_crystal',
+      b: gtBlock('machineCasing', 'titanium'),
+      } },
+{ id: 'ae2:sky_stone_tank',
+      result: 'ae2:sky_stone_tank',
+      pattern: ['aaa', 'aba', 'aaa'],
+      keys: {
+      a: gt('plate', 'skystone'),
+      b: 'enderio:fluid_tank',
+      } },
 { id: 'nekojs:ae2/medrive',
       result: 'ae2:drive',
       pattern: ['aba', 'c c', 'fdg'],
@@ -173,14 +187,15 @@ const RECIPES = [
       } },
 { id: 'nekojs:ae2/mecontroller',
       result: 'ae2:controller',
-      pattern: ['aba', 'e e', 'fcg'],
+      pattern: ['aba', 'e d', 'fcg'],
       keys: {
       a: gtIngredient('gregtech:gt.multiitem.technological', 12141),
       b: 'ae2:engineering_processor',
       c: gtBlock('machineCasing', 'aluminium'),
-      e: gtIngredient('gregtech:gt.multiitem.technological', 12101),
-      f: gtIngredient('gregtech:gt.multiitem.technological', 12001),
-      g: gtIngredient('gregtech:gt.multiitem.technological', 12041),
+      d: gtIngredient('gregtech:gt.multiitem.technological', 30501),
+      e: gtIngredient('gregtech:gt.multiitem.technological', 30502),
+      f: gtIngredient('gregtech:gt.multiitem.technological', 30503),
+      g: gtIngredient('gregtech:gt.multiitem.technological', 30504),
       } },
 { id: 'nekojs:ae2/energycell',
       result: 'ae2:energy_cell',

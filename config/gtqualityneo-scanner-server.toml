@@ -1,0 +1,23 @@
+#Global server tick budget, shared by all scans.
+# Default: 5
+# Range: 1 ~ 20
+tickBudgetMs = 5
+#EU cost = this multiplier times tier voltage.
+# Default: 50
+# Range: 0 ~ 8000
+consumptionMultiplier = 50
+#Allow scans to load/generate chunks. Can exceed tick budget during generation.
+#Default: scan loaded chunks only; unavailable chunks are visibly marked.
+loadChunks = false
+# Default: 9
+# Range: 1 ~ 31
+rangeTier2 = 9
+# Default: 11
+# Range: 1 ~ 31
+rangeTier3 = 11
+# Default: 13
+# Range: 1 ~ 31
+rangeTier4 = 13
+# Default: 15
+# Range: 1 ~ 31
+rangeTier5 = 15

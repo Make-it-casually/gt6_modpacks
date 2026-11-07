@@ -1,0 +1,18 @@
+{
+  id: "5A2C1952A3B2974B",
+  group: "3ACA683AE5542C59",
+  order_index: 2,
+  icon: {
+    id: "minecraft:end_stone",
+    count: 1,
+  },
+  filename: "5a2c1952a3b2974b",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

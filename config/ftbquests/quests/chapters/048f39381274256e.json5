@@ -1,0 +1,195 @@
+{
+  id: "048F39381274256E",
+  group: "39D922C6BDB335F1",
+  order_index: 0,
+  icon: {
+    id: "packedup:basicbackpack",
+    count: 1,
+    components: {
+      "packedup:inventory_id": 1,
+    },
+  },
+  filename: "048f39381274256e",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      x: 0.0,
+      y: -1.5,
+      size: 1.0,
+      id: "591B20D988674466",
+      tasks: [
+        {
+          id: "32BCED2B0229B6FD",
+          type: "item",
+          item: {
+            id: "packedup:basicbackpack",
+            count: 1,
+            components: {
+              "packedup:inventory_id": 1,
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 1.5,
+      y: 0.0,
+      size: 1.0,
+      id: "07ECCC8BF0724E01",
+      tasks: [
+        {
+          id: "49C6D39E41BEBE28",
+          type: "item",
+          item: {
+            id: "gtqualityneo:scanner_mv",
+            count: 1,
+            components: {
+              "minecraft:custom_data": {
+                "gt.energy": 1024000,
+              },
+            },
+          },
+        },
+      ],
+    },
+    {
+      x: 0.0,
+      y: 0.0,
+      size: 1.0,
+      id: "223FC6AB5673CD41",
+      tasks: [
+        {
+          id: "7885BA4368050B1F",
+          type: "item",
+          item: {
+            id: "gtqualityneo:powder_cell",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 0.0,
+      y: -3.0,
+      size: 1.0,
+      id: "1D1632E85F0EDDDD",
+      tasks: [
+        {
+          id: "44EBDDDD6305F3EA",
+          type: "item",
+          item: {
+            id: "naturescompass:naturescompass",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: -1.5,
+      y: 0.0,
+      size: 1.0,
+      id: "27855D466097DC20",
+      tasks: [
+        {
+          id: "0C664EF10A1FFA8C",
+          type: "item",
+          item: {
+            id: "entangled:item",
+            count: 1,
+          },
+        },
+        {
+          id: "5134F73DEF85F861",
+          type: "item",
+          item: {
+            id: "entangled:block",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 1.5,
+      y: -1.5,
+      size: 1.0,
+      id: "1B3058B5BE1F0E0D",
+      tasks: [
+        {
+          id: "2059C501E6B0481B",
+          type: "item",
+          item: {
+            id: "dimstorage:dimensional_tank",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: -1.5,
+      y: -1.5,
+      size: 1.0,
+      id: "5BA925265EB39222",
+      tasks: [
+        {
+          id: "02FE9CDDA32C8EA8",
+          type: "item",
+          item: {
+            id: "dimstorage:dimensional_chest",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 1.5,
+      y: -3.0,
+      size: 1.0,
+      id: "53FE50391A69F77A",
+      tasks: [
+        {
+          id: "5E7ABAB9A08F979F",
+          type: "item",
+          item: {
+            id: "nutritionalbalance:lunchbox",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: -1.5,
+      y: -3.0,
+      size: 1.0,
+      id: "55B73C29B2574EA7",
+      tasks: [
+        {
+          id: "47A289BB18329CC6",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32766,
+            },
+          },
+        },
+        {
+          id: "765818EF894BDFA7",
+          type: "item",
+          item: {
+            id: "gregtech:gt.multitileentity",
+            count: 1,
+            components: {
+              "gregapi:subtype": 32000,
+            },
+          },
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

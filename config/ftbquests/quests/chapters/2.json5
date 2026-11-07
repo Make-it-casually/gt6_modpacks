@@ -1,0 +1,159 @@
+{
+  id: "376EF456CAC9E9C0",
+  group: "3ACA683AE5542C59",
+  order_index: 3,
+  icon: {
+    id: "minecraft:glowstone",
+    count: 1,
+  },
+  filename: "2",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      x: 0.0,
+      y: 0.0,
+      size: 1.0,
+      id: "7FFCED17971CD5CC",
+      tasks: [
+        {
+          id: "667F5737105745AD",
+          type: "dimension",
+          dimension: "aether_ii:aether_holy_isles",
+        },
+      ],
+    },
+    {
+      x: 5.0,
+      y: -5.0,
+      size: 1.0,
+      id: "5D1C34111D4BA123",
+      tasks: [
+        {
+          id: "3A6BC2297B97B7A3",
+          type: "item",
+          item: {
+            id: "aether_ii:corrobonite_crystal",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 0.0,
+      y: -2.5,
+      size: 1.0,
+      id: "3C070FEC7D960BA3",
+      tasks: [
+        {
+          id: "10281C1326975785",
+          type: "item",
+          item: {
+            id: "aether_ii:ambrosium_shard",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 3.0,
+      y: -2.5,
+      size: 1.0,
+      id: "5A1C9AD90D2F5637",
+      tasks: [
+        {
+          id: "58A0DB3F023B9BDD",
+          type: "item",
+          item: {
+            id: "aether_ii:amber_hourglass",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 3.0,
+      y: 0.0,
+      size: 1.0,
+      id: "2A527FFB14BE1A14",
+      tasks: [
+        {
+          id: "5D3E58EF2401A9A1",
+          type: "item",
+          item: {
+            id: "aether_ii:fossilized_zanite",
+            count: 1,
+          },
+        },
+        {
+          id: "2E42C420AD56A74E",
+          type: "item",
+          item: {
+            id: "aether_ii:inert_arkenium",
+            count: 1,
+          },
+        },
+        {
+          id: "542AE4D3FE0A1AE3",
+          type: "item",
+          item: {
+            id: "aether_ii:fossilized_corrobonite",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 4.0,
+      y: -5.0,
+      size: 1.0,
+      id: "4B8B3E3B8E1D450E",
+      tasks: [
+        {
+          id: "0E4A87D8BFA72616",
+          type: "item",
+          item: {
+            id: "aether_ii:zanite_gemstone",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 3.0,
+      y: -5.0,
+      size: 1.0,
+      id: "7C8337D48FD8246C",
+      tasks: [
+        {
+          id: "4F7AAD652BB741F6",
+          type: "item",
+          item: {
+            id: "aether_ii:arkenium_plate",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 2.0,
+      y: -5.0,
+      size: 1.0,
+      id: "3C3E06AACAD89E47",
+      tasks: [
+        {
+          id: "3310C933B2F22D4E",
+          type: "item",
+          item: {
+            id: "aether_ii:gravitite_plate",
+            count: 1,
+          },
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

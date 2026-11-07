@@ -1,0 +1,50 @@
+{
+  id: "4FD94306AACA0132",
+  group: "171D75F171A899F0",
+  order_index: 6,
+  icon: {
+    id: "ae2:controller",
+    count: 1,
+  },
+  filename: "4fd94306aaca0132",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      x: 0.0,
+      y: 0.0,
+      size: 1.0,
+      id: "4EB02609129ED1B6",
+      tasks: [
+        {
+          id: "5790B0D09E23700F",
+          type: "item",
+          item: {
+            id: "ae2:controller",
+            count: 1,
+          },
+        },
+      ],
+    },
+    {
+      x: 2.0,
+      y: 0.0,
+      size: 1.0,
+      id: "18658CD5C36A3060",
+      tasks: [
+        {
+          id: "5CC1F089E5FB3212",
+          type: "item",
+          item: {
+            id: "extendedae:machine_frame",
+            count: 1,
+          },
+        },
+      ],
+    },
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}
