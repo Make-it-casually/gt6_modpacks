@@ -1,0 +1,41 @@
+{
+  "quest.00C9B35EA2260B63.quest_subtitle": "The Most Basic Crucible",
+  "quest.58EF6EF61F2FEB80.quest_subtitle": "A Crucible Beyond the Three Realms",
+  "quest.7D41BF7193EC3CF4.quest_desc": [
+    "The end of the Crucible tech tree.",
+  ],
+  "quest.58E5CF7A2DE8060C.quest_desc": [
+    "If you've picked up a lot of Meteorites, this is recommended.",
+    "",
+    "An unconventional route.",
+  ],
+  "quest.05934E988CF132A2.quest_desc": [
+    "Iridium can be produced as an ore byproduct. If that's not enough, you can mine Native Iridium Ore, but it's level 4.",
+    "Before obtaining Titanium, you can make an Ultimet Pickaxe to mine the level 3 Small Native Iridium Ore.",
+    "Unless, of course, you have Strong Dynamite.",
+    "",
+    "Upgrading from a Chromium Crucible to an Iridium Crucible is a terrible route, because Iridium's melting point is only 6K below the Chromium Crucible's limit.",
+    "With that choice, even the tiny shut-off delay of a Gas Burning Box is fatal!",
+    "It's recommended to use a Steel Liquid Burning Box in the final stage.",
+    "",
+    "Has a relatively large heat mass.",
+  ],
+  "quest.53BB667C0DFDABA3.quest_desc": [
+    "The next Crucible after the Ceramic Crucible on the regular route.",
+    "",
+    "Corrosion resistant.",
+  ],
+  "quest.66CCBD06F48B9BA7.quest_desc": [
+    "Requires developing the Chemical line.",
+    "",
+    "Niobium can be obtained by reducing Niobium Pentoxide Dust with Molten Aluminium.",
+  ],
+  "quest.58EF6EF61F2FEB80.quest_desc": [
+    "Not part of the main Crucible tech tree.",
+    "",
+    "Graphene Plates are not cast, but made with a Nanoscale Fabricator.",
+  ],
+  "quest.0E03E7A12BFF4468.quest_desc": [
+    "Has a relatively large heat mass.",
+  ],
+}

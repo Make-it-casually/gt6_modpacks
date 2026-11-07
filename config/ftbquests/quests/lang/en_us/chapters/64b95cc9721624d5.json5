@@ -1,0 +1,28 @@
+{
+  "quest.512E5D03F95CD613.title": "Tips",
+  "quest.40A17AF1D72D4BD0.title": "About This Pack",
+  "quest.40A17AF1D72D4BD0.quest_desc": [
+    "Welcome to GregTech 6 Modern Community,",
+    "a GregTech 6 tutorial modpack for modern Minecraft versions.",
+    "",
+    "Here you will experience the original GregTech 6 progression and automate it with AE2.",
+    "",
+    "To address GregTech 6's underwhelming early- and mid-game logistics, we also included Ender IO as a supplement.",
+    "",
+    "Immerse yourself in GregTech 6's challenging progression.",
+    "",
+    "Click the checkbox to start the quest."
+  ],
+  "quest.512E5D03F95CD613.quest_desc": [
+    "When playing GregTech 6, make sure to press F3+H to enable advanced tooltips.",
+    "",
+    "With advanced tooltips enabled, item tooltips show their material composition.",
+    "This is the basis for recycling items in the Crucible and the Mortar.",
+    "They also show each material's melting point, boiling point, and mass.",
+    "",
+    "This pack includes light recipe tweaks that do not affect the main GregTech 6 progression.",
+    "",
+    "Because GregTech 6 has rich mod integration, installing integration mods may open up more powerful production lines and material combinations.",
+    "This tutorial pack is therefore written for vanilla GregTech 6 only, and mentions integration content only briefly."
+  ]
+}
